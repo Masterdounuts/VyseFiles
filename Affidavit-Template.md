@@ -9,15 +9,15 @@ and says:
 
 1. PERSONAL INFORMATION
 
-    Name:           _____________________________________________
+Name:           _____________________________________________
 
-    Address:        _____________________________________________
+Address:        _____________________________________________
 
-                    _____________________________________________
+                _____________________________________________
 
-    Date of Birth:  _____________________________________________
+Date of Birth:  _____________________________________________
 
-    Place of Birth: _____________________________________________
+Place of Birth: _____________________________________________
 
 2. RELATIONSHIP TO THE PARTIES
 
@@ -27,7 +27,7 @@ and says:
 
 3. STATEMENT OF FACTS
 
-    Full details about the event and the nature of the relationship:
+Full details about the event and the nature of the relationship:
 
     ________________________________________________________________
 
@@ -47,8 +47,8 @@ and says:
 
 4. KNOWLEDGE OF THE MARRIAGE
 
-    Explanation of how the Affiant knows about the marriage and the
-    basis for the knowledge:
+Explanation of how the Affiant knows about the marriage and the
+basis for the knowledge:
 
     ________________________________________________________________
 
@@ -65,6 +65,7 @@ under the laws of the United States of America that the foregoing is
 true and correct.
 
 Executed on this _______ day of _______________, 20____.
+
 
 
 
