@@ -12,7 +12,6 @@ and says:
 Name:           _____________________________________________
 
 Address:        _____________________________________________
-
                 _____________________________________________
 
 Date of Birth:  _____________________________________________
@@ -65,7 +64,6 @@ under the laws of the United States of America that the foregoing is
 true and correct.
 
 Executed on this _______ day of _______________, 20____.
-
 
 
 
