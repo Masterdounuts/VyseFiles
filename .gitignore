@@ -1,4 +1,15 @@
--e node_modules/
+node_modules/
 .DS_Store
 *.log
+.openclaw/
 memory/
+*.json
+state/
+AGENTS.md
+SOUL.md
+MEMORY.md
+TOOLS.md
+USER.md
+IDENTITY.md
+HEARTBEAT.md
+DREAMS.md
