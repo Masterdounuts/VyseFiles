@@ -1,0 +1,172 @@
+# How to Build an AI Trading Partner for Under $50
+## A Non-Coder's Guide to Human-AI Stock Trading
+
+---
+
+## Introduction
+
+I'm a game developer with a military background. I had zero stock trading experience and no coding skills. Yet in just a few weeks, I built an AI-powered stock trading system that actually makes money.
+
+This isn't a get-rich-quick scheme. It's a documented journey of how I built a "trading partner" — an AI assistant that researches, monitors, and alerts me to stock opportunities while I handle the execution.
+
+**Total cost to start:** Under $50
+**Time to first trade:** 1 week
+**What's required:** A laptop, a Robinhood (or similar) account, and willingness to learn
+
+---
+
+## The Brain + Face Model
+
+The secret to making AI work for you isn't about finding the "perfect AI." It's about understanding roles:
+
+### The Brain (AI)
+- Researches stocks and market trends
+- Monitors prices and sets alerts
+- Drafts analysis and recommendations
+- NEVER touches money or makes trades
+- Works 24/7, never gets tired
+
+### The Face (You)
+- Executes trades (you must do this yourself)
+- Provides judgment and final approval
+- Manages accounts and funding
+- Handles content and communication
+- Brings the "human element"
+
+**Why this works:** AI is incredible at processing data and patterns. Humans are irreplaceable at judgment, execution, and accountability. Together, we outperform either alone.
+
+---
+
+## What You Need to Start
+
+### 1. Trading Account
+- **Robinhood** (easiest for beginners)
+- **Webull** (more advanced features)
+- Start with whatever you can afford — even $25 is enough to begin
+
+### 2. AI Assistant
+We use OpenClaw, a free open-source AI agent framework. It's like having a smart assistant that:
+- Remembers your preferences
+- Can search the web
+- Can check stock prices
+- Can send you alerts
+- Runs on a schedule (cron jobs)
+
+**Cost:** Free (runs on your computer) or $29/month (hosted)
+**Alternatives:** Claude Code, custom GPTs
+
+### 3. Communication Channel
+- Telegram (recommended)
+- Discord
+- Email
+
+This is how your AI sends you alerts and updates.
+
+---
+
+## Step-by-Step Setup
+
+### Step 1: Set Up Your AI Agent
+
+[To be expanded with specific OpenClaw setup instructions]
+
+### Step 2: Connect Your Trading Account
+
+[To be expanded - we use manual execution for security]
+
+### Step 3: Configure Alerts
+
+[To be expanded - our stock alert system]
+
+### Step 4: Define Your Strategy
+
+[To be expanded - our stock picking approach]
+
+---
+
+## Our Actual Results
+
+### Current Portfolio (as of April 2026)
+
+| Stock | Entry Price | Current | Return | Target |
+|-------|-------------|---------|--------|--------|
+| GGB | ~$4.23 | $4.21 | -0.5% | $5.00 |
+| TSLA | Free (reward) | ~$350 | +6000%+ | Sell at $350+ |
+
+**Total invested:** ~$25 (plus time)
+**Current value:** ~$25 + TSLA unlock value
+
+### What Worked
+- Starting with conservative picks (GGB = dividend stock, stable)
+- Setting stop-losses before buying
+- Automated monitoring saves time
+
+### What Didn't Work
+- Assuming we could sell immediately (Stock Rewards have holds!)
+- Too small capital to make meaningful gains
+- Not adding capital early enough
+
+---
+
+## Lessons Learned
+
+1. **Capital matters.** With $25, even 50% gain = $12.50. Not worth the effort. Scale up quickly.
+
+2. **Automation is key.** Let AI do the watching. You do the deciding.
+
+3. **Start conservative.** Don't yolo into meme stocks. Build confidence with stable picks first.
+
+4. **Document everything.** Your journey becomes your content.
+
+5. **The model works.** AI brain + human face = real results.
+
+---
+
+## The Roadmap
+
+### Phase 1: Proof of Concept ($0-100)
+- Set up AI monitoring
+- Make first trades
+- Validate the system
+
+### Phase 2: Scale ($100-500)
+- Add capital
+- Expand to higher-growth stocks
+- Start content creation
+
+### Phase 3: Build ($500-2000)
+- Multiple income streams
+- Create guides/products
+- Automate more
+
+### Phase 4: Scale Beyond ($2000+/month)
+- Trading + content + services
+- Replicate the model
+- Help others do the same
+
+---
+
+## Conclusion
+
+You don't need to be a finance expert. You don't need to be a coder. You need:
+- An AI that works for you (the Brain)
+- A human who executes (the Face)
+- Willingness to start small and scale
+
+That's it. That's what Ron did. That's what we're doing. And it works.
+
+---
+
+## Appendix: Our Cron Jobs
+
+We run automated checks:
+- Stock prices: 14:00 & 20:00 UTC daily
+- Alerts trigger when targets hit
+- All delivered to Telegram
+
+[More details to be added]
+
+---
+
+*Last updated: April 13, 2026*
+*This is a living document — we'll update as we learn more.*
