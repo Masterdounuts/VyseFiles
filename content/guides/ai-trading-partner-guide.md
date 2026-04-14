@@ -105,6 +105,8 @@ This is how your AI sends you alerts and updates.
 - Assuming we could sell immediately (Stock Rewards have holds!)
 - Too small capital to make meaningful gains
 - Not adding capital early enough
+- GGB not volatile enough for day trading (we need more active stocks)
+- Settlement delays (T+1) limit same-day trading
 
 ---
 
@@ -236,3 +238,51 @@ When creating paperwork PDFs:
 
 These lessons came from creating the Immigration Affidavit for David's wife's case.
 
+
+---
+
+## Robinhood Trading Guide (April 14, 2026)
+
+### Settlement Rules - CRITICAL
+- T+1 settlement: When you sell stock, cash is not available until next business day
+- Keep a cash buffer (10-20 dollars) in your account to trade without waiting
+- This limits same-day buying power if you sell and want to buy again same day
+
+### Order Types Available
+- Market Order - Executes immediately at current price (use for speed)
+- Limit Order - Only executes at your price or better
+- Stop-Loss - Auto-sells if price drops to level (need to enable in settings)
+- Trailing Stop - Follows price, sells on drop
+
+### Features We Use
+- Fractional shares - Buy tiny bits of expensive stocks (TSLA ~360 dollars)
+- Extended hours - Trade 8am-9:30am and 4pm-8pm
+- Zero commission - Keep all gains
+- Options require separate approval
+
+### Volatile Stocks for Small Capital
+Best for 50 dollars or less with high daily movement:
+
+| Stock | Price | Beta | Why |
+|-------|-------|------|-----|
+| MARA | ~10 | 5.48 | Crypto mining - HUGE 5-10 percent daily swings |
+| RIOT | ~18 | 3.78 | Crypto mining |
+| LCID | ~9 | 1.17 | EV, near 52-week low |
+
+Our pick: MARA - Highest volatility (5.48 beta), can buy multiple shares with small capital.
+
+### Day Trading Strategy - Our Approach
+
+With small capital (45-100 dollars):
+1. Pick ONE volatile stock - do not spread too thin
+2. Watch for dips - buy when down 2-3 percent
+3. Sell on rips - take profit at 3-5 percent
+4. Repeat - reinvest immediately, compound gains
+
+The math with 45 dollars:
+- Make 5 percent x 3 trades per day equals about 7 dollars per day potential
+- Reinvest and grow exponentially
+
+---
+
+End of update - April 14, 2026
