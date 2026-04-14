@@ -1,4 +1,4 @@
-# AFFIDAVIT OF SUPPORT -- BONA FIDE MARRIAGE
+# AFFIDAVIT OF SUPPORT FOR BONA FIDE MARRIAGE
 
 **For Immigration Case - USCIS Marriage-Based Petitions**
 
