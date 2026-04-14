@@ -70,7 +70,7 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ### Primary: DuckDuckGo (Unlimited)
 - Use freely, no restrictions
-- Humanize calls: add 1-2 second delays between searches
+- Humanize calls: add 10+ second delays between searches
 - Retry up to 3 times if needed
 - Don't batch too many at once
 

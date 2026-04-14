@@ -314,3 +314,11 @@ Keep files organized by category:
 - /research/ - analysis & logs
 - /FIXES.md - known issues & solutions
 - /AGENTS.md - protocols & rules
+
+### Dream Research Protocol
+During dream sessions:
+- Full web search access enabled
+- If something interests you or relates to goals → research it
+- Goals include: income generation, Ron path, stocks, immigration, content ideas
+- Use 10+ second delays between calls to same site
+- Save findings to memory for later
