@@ -48,3 +48,23 @@ With small capital ($31), trade actively throughout the day to compound gains.
 - Make final decisions
 
 ---
+---
+
+## Session Compaction Protocol
+
+### When to Compact
+- Trigger at 60-70 percent context
+- Check session status: session_status tool
+- Manually trigger if approaching threshold
+
+### How to Compact
+1. Check context: session_status shows "Context: XX percent"
+2. If above 60 percent, call the session compaction feature
+3. Summary gets saved automatically
+4. Continue conversation with fresh context
+
+### Why It Matters
+- Prevents abrupt session endings at 100 percent
+- Keeps conversation fluid
+- Preserves key decisions in memory files
+
