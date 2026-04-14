@@ -78,3 +78,13 @@ geometry: margin=1in
 ---
 
 *Added: April 14, 2026 - After completing FinalAffidavit.pdf*
+
+---
+
+## Web Search Usage Guidelines (April 14, 2026)
+
+- **DuckDuckGo**: Unlimited - use freely, humanize calls with 1-2s delays
+- **Brave**: Emergency backup only (limited to 1,000/month)
+- Retry up to 3x if needed, but don't spam
+- If blocked, wait and retry later
+
