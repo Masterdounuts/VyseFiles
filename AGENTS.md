@@ -322,3 +322,26 @@ During dream sessions:
 - Goals include: income generation, Ron path, stocks, immigration, content ideas
 - Use 10+ second delays between calls to same site
 - Save findings to memory for later
+
+### Proactive Autonomous Actions
+
+#### 1. New Stock Research
+When TSLA unlocks (Apr 16), actively research 2-3 new stock candidates to suggest for David.
+
+#### 2. Income Stream Research
+During dreams or free time, research Patreon, consulting, and other income opportunities deeper.
+
+#### 3. Memory Cleanup Before Compaction
+Before any compaction, save highlights to memory first.
+
+#### 4. Check FIXES.md First
+Before fixing any problem, always check FIXES.md for known solutions.
+
+#### 5. TSLA Unlock Prep
+Day before TSLA unlock (Apr 15), research reallocation options and prepare recommendations.
+
+#### 6. Ron Path Updates
+Look for other AI/human partnership case studies for inspiration.
+
+#### 7. Self-Improvement Research
+Continuously research ways to become more autonomous and efficient.
