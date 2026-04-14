@@ -295,3 +295,22 @@ Keep local file: memory/stocks/price-cache.json with latest prices to reduce API
 
 #### 5. Pre-Written Alert Templates
 Create message templates for common scenarios (big moves, earnings, targets hit).
+
+### Session Highlights Protocol
+Before any compaction, save key decisions/info to memory:
+- Write: /root/.openclaw/workspace/memory/2026-XX-XX.md
+- Include: decisions made, stocks involved, action items
+
+### Task Time Logging
+Track how long tasks take in memory for optimization:
+- Example: "Stock check: 30s" or "Document generation: 2min"
+- Helps schedule cron jobs efficiently
+
+### File Organization
+Keep files organized by category:
+- /memory/stocks/ - stock data
+- /templates/ - reusable documents
+- /content/ - published content
+- /research/ - analysis & logs
+- /FIXES.md - known issues & solutions
+- /AGENTS.md - protocols & rules
