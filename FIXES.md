@@ -88,3 +88,11 @@ geometry: margin=1in
 - Retry up to 3x if needed, but don't spam
 - If blocked, wait and retry later
 
+
+---
+## GGB Stock Price Fetch Fix
+- **Date:** April 14, 2026
+- **Problem:** GGB price couldn't be fetched via web search or page fetches (blocked, required JS)
+- **Fix:** Use CNBC quotes page directly: `https://www.cnc.com/quotes/GGB`
+- **Works for:** Both TSLA and GGB use CNBC format: `/quotes/{TICKER}`
+- **Status:** Fixed - price $4.29 captured
