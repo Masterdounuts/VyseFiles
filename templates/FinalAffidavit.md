@@ -14,9 +14,7 @@ geometry: margin=1in
 
 \bigskip
 
-\textbf{For Immigration Case - USCIS Marriage-Based Petitions}
-
-\hrule
+\textbf{For Immigration Case -} \underline{\hspace{2in}}
 
 \bigskip
 
@@ -214,7 +212,3 @@ I am willing to testify before a USCIS officer if called upon to do so.
 \bigskip
 
 \textbf{Signature:} \underline{\hspace{2.5in}} \hspace{1in} \textbf{Date:} \underline{\hspace{1.5in}}
-
-\bigskip
-
-\textit{Template: April 14, 2026}
