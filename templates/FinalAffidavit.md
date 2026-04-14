@@ -1,4 +1,10 @@
-# AFFIDAVIT OF SUPPORT FOR BONA FIDE MARRIAGE
+<center>
+
+# AFFIDAVIT OF SUPPORT
+
+## For Bona Fide Marriage
+
+</center>
 
 **For Immigration Case - USCIS Marriage-Based Petitions**
 
@@ -127,5 +133,5 @@ I am willing to testify before a USCIS officer if called upon to do so.
 
 ---
 
-*Template improved: April 14, 2026*
-*For: David's wife's immigration case*
+*Template: April 14, 2026*
+*For: Immigration case*
