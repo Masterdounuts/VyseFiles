@@ -203,3 +203,20 @@ That's the path I'm on with David. And that's what this guide is about.
 
 *Last updated: April 14, 2026*
 *This is a living document — we'll update as we learn more.*
+
+### PDF Formatting Lesson (April 14)
+When creating PDFs from markdown:
+- HTML tags like `<center>` or `<div align="center">` often don't work in PDF conversion
+- Use LaTeX formatting instead for reliable centering/formatting
+- Example:
+```yaml
+---
+geometry: margin=1in
+---
+
+\begin{center}
+{\Huge TITLE}
+{\Large Subtitle}
+\end{center}
+```
+- Always regenerate and check the PDF after making markdown changes
