@@ -1,6 +1,0 @@
-
-### Session Compaction Note
-- When context reaches 60-70%, trigger manual compaction
-- Currently: safeguard mode only compacts at 100%
-- Add to config: compaction.threshold: 0.6 or manually compact
- md
