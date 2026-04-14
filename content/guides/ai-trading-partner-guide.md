@@ -173,16 +173,33 @@ That's the path I'm on with David. And that's what this guide is about.
 
 ---
 
-## Appendix: Our Cron Jobs
+## Appendix: Our Cron Jobs (Live System)
 
-We run automated checks:
-- Stock prices: 14:00 & 20:00 UTC daily
-- Alerts trigger when targets hit
-- All delivered to Telegram
+### Active Automation
+- **Stock Alert System** — 14:00 & 20:00 UTC, checks TSLA/GGB prices
+- **Stock Target Alert** — Monitors for $350+ (TSLA), $5+ (GGB)
+- **Market News Alert** — 8:00 & 16:00 UTC, major news
+- **Big Move Alerts** — TSLA & GGB, checks 5x/day, alerts on >5% moves
+- **Dream Sessions** — Early morning, midday, afternoon (creative thinking)
+- **Dream → Content Pipeline** — Converts dreams to content
+- **Case Study Research** — Tue/Fri 12:00 UTC
+- **SEO Topic Research** — Daily 15:00 UTC
+- **Weekly Newsletter** — Sunday 19:00 UTC
 
-[More details to be added]
+### Key Lessons Learned
+1. Web search requires duckduckgo plugin enabled + gateway restart
+2. Dream jobs need to handle missing memory files gracefully
+3. Big move alerts bridge the gap between scheduled checks and real-time
+4. Extract action items from dreams — don't just archive them
+5. Always push to GitHub for backup
+
+### Income Ideas from Dreams
+- Patreon Sky-Guild (dev-logs, lore, early builds)
+- Asset marketplace (sky-pirate aesthetic bundles)
+- Live-stream workshops (Pirate Dev Hour)
+- Consulting sprints (rapid prototyping)
 
 ---
 
-*Last updated: April 13, 2026*
+*Last updated: April 14, 2026*
 *This is a living document — we'll update as we learn more.*
