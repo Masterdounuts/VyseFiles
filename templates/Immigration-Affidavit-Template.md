@@ -46,21 +46,6 @@ _________________________________________________________________
 
 *For each section, provide specific dates, events, and details. Vague statements carry less weight.*
 
-### 3.1 How They Met
-**When and where did they meet? Who introduced them?**
-_________________________________________________________________
-_________________________________________________________________
-
-### 3.2 Early Dating Period
-**How did their relationship develop? What activities did they do together?**
-_________________________________________________________________
-_________________________________________________________________
-
-### 3.3 Engagement/Marriage Proposal
-**When did they get engaged? How did it happen? Who was present?**
-_________________________________________________________________
-_________________________________________________________________
-
 ### 3.4 Wedding Ceremony
 **When and where was the wedding? How many guests attended? Who performed the ceremony?**
 _________________________________________________________________
@@ -81,18 +66,8 @@ _________________________________________________________________
 _________________________________________________________________
 _________________________________________________________________
 
-### 3.8 Social/Community Involvement
-**Do they attend church/temple together? Social groups? Community events?**
-_________________________________________________________________
-_________________________________________________________________
-
 ### 3.9 Travel & Vacations
 **Have they traveled together? When and where?**
-_________________________________________________________________
-_________________________________________________________________
-
-### 3.10 Family Integration
-**How does each spouse's family know the other? Family dinners? Holidays?**
 _________________________________________________________________
 _________________________________________________________________
 
@@ -149,17 +124,6 @@ I am willing to testify before a USCIS officer if called upon to do so.
 ---
 
 **Signature:** _________________________________     **Date:** _________________
-
----
-
-## CHECKLIST BEFORE SUBMITTING
-
-- [ ] Filled out all sections completely
-- [ ] Included specific dates and examples
-- [ ] Signed and dated
-- [ ] Notarized (if required by your attorney/case)
-- [ ] Made copies for your records
-- [ ] Included with other evidence package
 
 ---
 
