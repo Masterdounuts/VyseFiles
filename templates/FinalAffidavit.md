@@ -1,137 +1,154 @@
-<center>
-
-# AFFIDAVIT OF SUPPORT
-
-## For Bona Fide Marriage
-
-</center>
-
-**For Immigration Case - USCIS Marriage-Based Petitions**
-
+---
+geometry: margin=1in
 ---
 
-STATE OF _____________________
-COUNTY OF _____________________
+\begin{center}
 
----
+{\Huge AFFIDAVIT OF SUPPORT}
 
-I, _________________________________________________ (Full Legal Name of Affiant),
+\bigskip
+
+{\Large For Bona Fide Marriage}
+
+\end{center}
+
+\bigskip
+
+\textbf{For Immigration Case - USCIS Marriage-Based Petitions}
+
+\hrule
+
+\bigskip
+
+I, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Full Legal Name of Affiant),
 of legal age, having been duly sworn, do hereby depose and state as follows:
 
----
+\bigskip
 
-## 1. PERSONAL INFORMATION
+\hrule
 
-| Field | Your Answer |
-|-------|-------------|
-| Full Legal Name | _____________________________________________ |
-| Date of Birth | _____________________________________________ |
-| Place of Birth | _____________________________________________ |
-| Current Address | _____________________________________________ |
-| | _____________________________________________ |
-| Phone Number | _____________________________________________ |
-| Email (optional) | _____________________________________________ |
-| Relationship to Petitioner | _____________________________________________ |
+\section*{1. PERSONAL INFORMATION}
 
----
+\begin{tabular}{|l|p{3in}|}
+\hline
+Field & Your Answer \\
+\hline
+Full Legal Name & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+Date of Birth & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+Place of Birth & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+Current Address & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+ & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+Phone Number & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+Email (optional) & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+Relationship to Petitioner & \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+\hline
+\end{tabular}
 
-## 2. HOW I KNOW THE COUPLE
+\bigskip
 
-**How long have you known the Petitioner and Beneficiary?**
-_________________________________________________________________
+\hrule
 
-**In what capacity do you know them? (friend, family, coworker, neighbor, etc.)**
-_________________________________________________________________
+\section*{2. HOW I KNOW THE COUPLE}
 
-**How often do you see them together?**
-_________________________________________________________________
+\bigskip
 
----
+\textbf{How long have you known the Petitioner and Beneficiary?}
+\bigskip
 
-## 3. THE RELATIONSHIP - SPECIFIC EXAMPLES
+\textbf{In what capacity do you know them? (friend, family, coworker, neighbor, etc.)}
+\bigskip
 
-*For each section, provide specific dates, events, and details. Vague statements carry less weight.*
+\textbf{How often do you see them together?}
+\bigskip
 
-### 3.1 Wedding Ceremony
-**When and where was the wedding? How many guests attended? Who performed the ceremony?**
-_________________________________________________________________
-_________________________________________________________________
+\hrule
 
-### 3.2 Current Living Situation
-**Where do they live together? How long have they lived at this address?**
-_________________________________________________________________
-_________________________________________________________________
+\section*{3. THE RELATIONSHIP - SPECIFIC EXAMPLES}
 
-### 3.3 Shared Daily Life
-**Who handles household chores? How do they split responsibilities?**
-_________________________________________________________________
-_________________________________________________________________
+\bigskip
 
-### 3.4 Financial Matters
-**Do they share bank accounts? Who pays for what? Do they have shared expenses?**
-_________________________________________________________________
-_________________________________________________________________
+\subsection*{3.1 Wedding Ceremony}
+\textbf{When and where was the wedding? How many guests attended? Who performed the ceremony?}
+\bigskip
 
-### 3.5 Travel & Vacations
-**Have they traveled together? When and where?**
-_________________________________________________________________
-_________________________________________________________________
+\subsection*{3.2 Current Living Situation}
+\textbf{Where do they live together? How long have they lived at this address?}
+\bigskip
 
-### 3.6 Communication
-**How do they communicate when apart? Phone calls, texts, video chats? How frequently?**
-_________________________________________________________________
-_________________________________________________________________
+\subsection*{3.3 Shared Daily Life}
+\textbf{Who handles household chores? How do they split responsibilities?}
+\bigskip
 
-### 3.7 Signs of Affection
-**How do they show affection in public and private? Examples?**
-_________________________________________________________________
-_________________________________________________________________
+\subsection*{3.4 Financial Matters}
+\textbf{Do they share bank accounts? Who pays for what? Do they have shared expenses?}
+\bigskip
 
----
+\subsection*{3.5 Travel \& Vacations}
+\textbf{Have they traveled together? When and where?}
+\bigskip
 
-## 4. SPECIFIC MEMORABLE EVENTS
+\subsection*{3.6 Communication}
+\textbf{How do they communicate when apart? Phone calls, texts, video chats? How frequently?}
+\bigskip
 
-*Describe 2-3 specific memories or events that demonstrate their genuine relationship:*
+\subsection*{3.7 Signs of Affection}
+\textbf{How do they show affection in public and private? Examples?}
+\bigskip
 
-**Event 1:**
-Date: _______________
-Description: _________________________________________________________________
-_________________________________________________________________
+\hrule
 
-**Event 2:**
-Date: _______________
-Description: _________________________________________________________________
-_________________________________________________________________
+\section*{4. SPECIFIC MEMORABLE EVENTS}
 
-**Event 3:**
-Date: _______________
-Description: _________________________________________________________________
-_________________________________________________________________
+\bigskip
 
----
+\textbf{Event 1:}
+Date: \_\_\_\_\_\_\_\_\_\_\_\_\_
 
-## 5. OBSERVATIONS THAT PROVE BONA FIDE MARRIAGE
+Description: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-**Based on your observations, explain why you believe this is a genuine marriage, not a marriage of convenience:**
+\bigskip
 
-_________________________________________________________________
-_________________________________________________________________
-_________________________________________________________________
-_________________________________________________________________
+\textbf{Event 2:}
+Date: \_\_\_\_\_\_\_\_\_\_\_\_\_
 
----
+Description: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-## 6. CONCLUSION
+\bigskip
 
-I swear under penalty of perjury that the foregoing is true and correct to the best of my knowledge. I understand that making false statements in this affidavit may result in penalties including perjury charges.
+\textbf{Event 3:}
+Date: \_\_\_\_\_\_\_\_\_\_\_\_\_
 
-I am willing to testify before a USCIS officer if called upon to do so.
+Description: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
----
+\bigskip
 
-**Signature:** _________________________________     **Date:** _________________
+\hrule
 
----
+\section*{5. OBSERVATIONS THAT PROVE BONA FIDE MARRIAGE}
 
-*Template: April 14, 2026*
-*For: Immigration case*
+\bigskip
+
+\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_
+
+\bigskip
+
+\hrule
+
+\section*{6. CONCLUSION}
+
+I swear under penalty of perjury that the foregoing is true and correct. I am willing to testify before a USCIS officer if called upon to do so.
+
+\bigskip
+
+\textbf{Signature:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_     \textbf{Date:} \_\_\_\_\_\_\_\_\_\_\_
