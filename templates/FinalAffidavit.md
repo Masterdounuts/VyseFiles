@@ -4,7 +4,7 @@ geometry: margin=1in
 
 \begin{center}
 
-{\Huge AFFIDAVIT OF SUPPORT}
+{\Huge \textbf{AFFIDAVIT OF SUPPORT}}
 
 \bigskip
 
@@ -18,6 +18,10 @@ geometry: margin=1in
 
 \bigskip
 
+\hrule
+
+\bigskip
+
 I, \underline{\hspace{3in}} (Full Legal Name of Affiant),
 of legal age, having been duly sworn, do hereby depose and state as follows:
 
@@ -25,7 +29,9 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \hrule
 
-\section*{1. PERSONAL INFORMATION}
+\bigskip
+
+\section*{{\LARGE 1. PERSONAL INFORMATION}}
 
 \bigskip
 
@@ -42,9 +48,13 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
+\bigskip
+
 \hrule
 
-\section*{2. HOW I KNOW THE COUPLE}
+\bigskip
+
+\section*{{\LARGE 2. HOW I KNOW THE COUPLE}}
 
 \bigskip
 
@@ -66,9 +76,13 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
+\bigskip
+
 \hrule
 
-\section*{3. THE RELATIONSHIP - SPECIFIC EXAMPLES}
+\bigskip
+
+\section*{{\LARGE 3. THE RELATIONSHIP - SPECIFIC EXAMPLES}}
 
 \bigskip
 
@@ -135,9 +149,13 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
+\bigskip
+
 \hrule
 
-\section*{4. SPECIFIC MEMORABLE EVENTS}
+\bigskip
+
+\section*{{\LARGE 4. SPECIFIC MEMORABLE EVENTS}}
 
 \bigskip
 
@@ -177,9 +195,13 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
+\bigskip
+
 \hrule
 
-\section*{5. OBSERVATIONS THAT PROVE BONA FIDE MARRIAGE}
+\bigskip
+
+\section*{{\LARGE 5. OBSERVATIONS THAT PROVE BONA FIDE MARRIAGE}}
 
 \bigskip
 
@@ -197,9 +219,13 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
+\bigskip
+
 \hrule
 
-\section*{6. CONCLUSION}
+\bigskip
+
+\section*{{\LARGE 6. CONCLUSION}}
 
 I swear under penalty of perjury that the foregoing is true and correct to the best of my knowledge. I understand that making false statements in this affidavit may result in penalties including perjury charges.
 
@@ -207,8 +233,27 @@ I am willing to testify before a USCIS officer if called upon to do so.
 
 \bigskip
 
+\bigskip
+
 \hrule
 
 \bigskip
 
-\textbf{Signature:} \underline{\hspace{2.5in}} \hspace{1in} \textbf{Date:} \underline{\hspace{1.5in}}
+\fbox{
+\begin{minipage}{\textwidth}
+\bigskip
+
+\textbf{Signature:} \underline{\hspace{2.5in}} 
+
+\bigskip
+
+\textbf{Date:} \underline{\hspace{1.5in}}
+
+\bigskip
+
+\end{minipage}
+}
+
+\bigskip
+
+\end{document}
