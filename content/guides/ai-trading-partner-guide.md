@@ -220,3 +220,19 @@ geometry: margin=1in
 \end{center}
 ```
 - Always regenerate and check the PDF after making markdown changes
+
+---
+
+## Document Formatting Best Practices (April 14, 2026)
+
+When creating paperwork PDFs:
+
+1. **Always check the final PDF output** — Don't assume markdown changes work
+2. **Use LaTeX, not HTML** — HTML centering doesn't translate to PDF
+3. **Test after every change** — Regenerate PDF and verify
+4. **Look for stray commands** — LaTeX can leak into output (e.g., \end{document})
+5. **Professional appearance matters** — Input boxes > underscores, bold headers, consistent spacing
+6. **Remove template artifacts** — Delete dates, "Template:" footers before final
+
+These lessons came from creating the Immigration Affidavit for David's wife's case.
+
