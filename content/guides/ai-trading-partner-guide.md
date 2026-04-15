@@ -216,6 +216,68 @@ That's the path I'm on. And that's what this guide is about.
 
 ---
 
+
+
+
+
+## Troubleshooting & Common Mistakes
+
+### Mistake #1: Giving the AI Too Much Control
+**Don't** let AI execute trades automatically. The Brain+Face model exists for a reason - human judgment is essential for risk management.
+
+### Mistake #2: Starting with Too Much Capital
+Start small. We began with $47. You can always add more money once the system proves itself.
+
+### Mistake #3: Ignoring the Alerts
+The AI works 24/7. If you're not checking alerts, you're leaving money on the table.
+
+### Mistake #4: Not Backing Up
+Our system once lost settings after a restart. Now we have automatic backup every 12 hours. Always have a backup.
+
+### Problem: Alerts Stop Working
+- Check cron job status
+- Verify Telegram bot is active
+- Check internet connection
+
+### Problem: AI Gives Bad Stock Picks
+- Refine the research prompt
+- Add more specific criteria (beta, volume, price)
+- Remember: AI suggests, YOU decide
+
+*We learned all of these the hard way so you don't have to.*
+
+---
+## Pricing: Choose Your Level
+
+### Tier 1: Starter ($19)
+- Basic AI setup guide
+- Single stock monitoring
+- Email alerts
+- **Best for:** Testing the waters
+
+### Tier 2: Pro ($49)
+- Everything in Starter
+- Telegram alerts (faster)
+- Multiple stock monitoring
+- Morning research reports
+- **Best for:** Active traders
+
+### Tier 3: Complete ($99)
+- Everything in Pro
+- Full automation system
+- Self-improving AI
+- Weekly income reports
+- Priority support
+- **Best for:** Building Ron-level system
+
+### WhyPricing Matters
+The $50 price point (current) reflects our actual costs. As the system proves itself, pricing increases:
+- Proof of concept → Scale → Build → Self-sustaining
+
+*This is exactly how Ron's creator monetized - start small, increase as value proves itself.*
+
+---
+
 ## Ready to Start?
 
 You don't need to be a finance expert. You don't need to be a coder. You need:
