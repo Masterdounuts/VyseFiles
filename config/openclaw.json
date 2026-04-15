@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.11",
-    "lastTouchedAt": "2026-04-15T01:52:04.328Z"
+    "lastTouchedAt": "2026-04-15T02:10:04.704Z"
   },
   "update": {
     "checkOnStart": false
@@ -173,29 +173,6 @@
         "enabled": true
       },
       "browser": {
-        "enabled": true
-      },
-      "memory-core": {
-        "config": {
-          "dreaming": {
-            "enabled": true
-          }
-        }
-      },
-      "memory-wiki": {
-        "enabled": true,
-        "config": {
-          "vaultMode": "bridge",
-          "bridge": {
-            "enabled": true,
-            "readMemoryArtifacts": true,
-            "indexDreamReports": true,
-            "indexDailyNotes": true,
-            "indexMemoryRoot": true
-          }
-        }
-      },
-      "active-memory": {
         "enabled": true
       }
     }
