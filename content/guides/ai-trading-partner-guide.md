@@ -3,6 +3,27 @@
 
 ---
 
+
+
+## Quick Start Checklist
+
+Before you begin, make sure you have:
+
+- [ ] A laptop or computer with internet
+- [ ] A Robinhood account (free to set up)
+- [ ] $50 or less for AI tools
+- [ ] 30 minutes to set up
+- [ ] Willingness to learn
+
+**Step 1:** Set up AI agent (15 min)  
+**Step 2:** Connect alerts (5 min)  
+**Step 3:** Define your strategy (10 min)  
+**Step 4:** Make first trade  
+
+**Total setup time: ~30 minutes**
+
+---
+
 ## Introduction
 
 I was a game developer with a military background. I had zero stock trading experience and no coding skills. Yet in just a few weeks, I built an AI-powered stock trading system that actually makes money.
@@ -221,6 +242,33 @@ That's the path I'm on. And that's what this guide is about.
 
 
 ## Troubleshooting & Common Mistakes
+## Frequently Asked Questions
+
+**Q: Do I need coding experience?**
+A: No! This guide is specifically for non-coders. If you can use email, you can do this.
+
+**Q: How much money do I need to start?**
+A: Under $50 for the AI tools. You can start trading with whatever you have - we started with $47.
+
+**Q: Is this legal?**
+A: Absolutely. We're using public tools (AI assistants, Robinhood) and making independent trading decisions.
+
+**Q: What if the AI gives bad advice?**
+A: That's why YOU are the Face. AI suggests, you decide. Always verify before trading.
+
+**Q: How long until I see results?**
+A: Most users make their first trade within 1 week. Profitable results vary by market conditions.
+
+**Q: Can this really make me money?**
+A: We made $X in our first month. Results depend on your starting capital and market conditions.
+
+**Q: What if something breaks?**
+A: Our troubleshooting section covers the most common issues. Plus, the guide includes our backup systems.
+
+---
+
+
+
 
 ### Mistake #1: Giving the AI Too Much Control
 **Don't** let AI execute trades automatically. The Brain+Face model exists for a reason - human judgment is essential for risk management.
@@ -247,6 +295,21 @@ Our system once lost settings after a restart. Now we have automatic backup ever
 *We learned all of these the hard way so you don't have to.*
 
 ---
+
+## Important Risk Disclaimer
+
+**Trading stocks involves risk.** Past performance does not guarantee future results.
+
+This guide documents our personal journey and is for educational purposes only. We are not financial advisors. Always:
+- Only invest what you can afford to lose
+- Do your own research
+- Consult a financial advisor for major decisions
+- Start with small positions
+
+*The authors and publishers of this guide accept no liability for trading losses.*
+
+---
+
 ## Pricing: Choose Your Level
 
 ### Tier 1: Starter ($19)
