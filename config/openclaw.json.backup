@@ -182,9 +182,6 @@
           }
         }
       },
-      "active-memory": {
-        "enabled": true
-      },
       "memory-wiki": {
         "enabled": true,
         "config": {
@@ -197,6 +194,9 @@
             "indexMemoryRoot": true
           }
         }
+      },
+      "active-memory": {
+        "enabled": true
       }
     }
   }
