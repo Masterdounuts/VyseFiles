@@ -1,16 +1,14 @@
-**Stock Alert Status (2026-04-14 21:34 UTC)**
+# Stock Alert Status (2026-04-15 14:01 UTC)
 
-**TSLA (Tesla Inc.)**
-- Current price (CNBC after‑hours): $364.32
-- Portfolio value: ~$5.85 (locked shares)
-- Alert thresholds: ≥ $10 total value OR price below $340
-- **No alert** (price above $340, value below $10)
-- Recent news: "Tesla is down sharply in 2026. JPMorgan sees the stock falling another 60%" (CNBC, 2026‑04‑06).
+## Current Prices
+- **GGB**: $4.305 (target sell $5+ – *not reached*)
+- **TSLA**: $371.61 (target sell $350+ – **target met**)
 
-**GGB (Gerdau SA)**
-- Current price (CNBC after‑hours): $4.26
-- Alert thresholds: below $4.00 or above $4.75
-- **No alert** (price within range)
-- No significant news found.
+## Alerts Triggered
+- **TSLA** price exceeds sell target. **Alert should be sent** to:
+  - Telegram (David)
+  - Control UI channel `webchat`
 
-*All thresholds are currently not breached; no Telegram alert sent.*
+## Actions
+- No action needed for GGB at this time.
+- Prepare to execute sell order for TSLA when David confirms.
