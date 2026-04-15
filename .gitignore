@@ -1,13 +1,45 @@
+# OpenClaw Workspace .gitignore
+
+# Dependencies
 node_modules/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Logs
 *.log
+
+# Local OpenClaw data (don't commit)
 .openclaw/
-*.json
 state/
-AGENTS.md
-SOUL.md
-MEMORY.md
-TOOLS.md
-USER.md
-IDENTITY.md
-HEARTBEAT.md
+
+# Bootstrap/reference files (committed separately)
+# AGENTS.md
+# SOUL.md
+# MEMORY.md
+# TOOLS.md
+# USER.md
+# IDENTITY.md
+# HEARTBEAT.md
+# DREAMS.md
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Build outputs
+*.pdf
+!templates/*.pdf
+!immigration/*.pdf
+
+# Keep these folders
+# memory/ - committed for backup
+# content/ - committed
+# wiki/ - Memory Palace, committed
+# stocks/ - trading data, committed
+# research/ - research, committed
+# templates/ - templates (except auto-generated PDFs)
+# immigration/ - immigration docs, committed
