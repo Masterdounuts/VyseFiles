@@ -1,14 +1,6 @@
-# Stock Alert Status (2026-04-15 14:01 UTC)
+# Stock Alert Status (2026-04-15 14:39 UTC)
 
-## Current Prices
-- **GGB**: $4.305 (target sell $5+ – *not reached*)
-- **TSLA**: $371.61 (target sell $350+ – **target met**)
+- **GGB**: $4.29 (target sell $5+) – **Not hit**
+- **TSLA**: $377.97 (target sell $350+, unlocked Apr 16) – **Target hit**
 
-## Alerts Triggered
-- **TSLA** price exceeds sell target. **Alert should be sent** to:
-  - Telegram (David)
-  - Control UI channel `webchat`
-
-## Actions
-- No action needed for GGB at this time.
-- Prepare to execute sell order for TSLA when David confirms.
+Action: TSLA target reached, alert sent.

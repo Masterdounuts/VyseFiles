@@ -45,10 +45,30 @@
 - Check gateway health: `curl -s -o /dev/null -w "%{http_code}" http://localhost:18789/health`
 - Check context %: `session_status` tool
 
+### API Credit Friendly (2026-04-15)
+- **Principle:** All new systems must minimize AI API usage
+- Prefer shell scripts over AI calls for simple tasks
+- Use conditional execution (only run when needed)
+- Reduce check frequency (e.g., 2x/day instead of 5x)
+- Ask: "Can this work without calling an AI model?"
+- Rationale: API credits ran out on Apr 15, causing cron job failures
+
 ### Automation Systems
+
+### Gateway Health
+- Checked at 14:03 UTC – health endpoint not reachable, gateway appears down.
+- Need to start or debug the OpenClaw gateway (e.g., `openclaw gateway start`).
 - Cron jobs run autonomously: stock alerts, daily briefs, weekly research, dream-to-content
 - All deliver via Telegram (dmPolicy: open)
 - Session status shows next wake time
+
+### API Credit Alert (Critical)
+- **Issue:** OpenRouter API key can run out of credits, causing all AI-powered cron jobs to fail
+- **Solution:** Use Heyron portal's "Reset API Key" function in self-help section
+- **PROACTIVE RULE:** Alert David when API credits are low to prevent catastrophic failure
+  - Check session status for model errors or billing warnings
+  - Warn at first sign of credit issues, not after failure
+  - Tell David immediately: "Hey, my API credits are running low - time to reset the key via Heyron portal"
 
 ---
 

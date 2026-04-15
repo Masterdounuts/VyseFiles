@@ -20,7 +20,7 @@
     "providers": {
       "openrouter": {
         "baseUrl": "https://openrouter.ai/api/v1",
-        "apiKey": "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",
+        "apiKey": "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",
         "models": [
           {
             "id": "minimax/minimax-m2.5",
