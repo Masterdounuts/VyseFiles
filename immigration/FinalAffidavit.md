@@ -35,6 +35,10 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
+\fbox{
+\begin{minipage}{\textwidth}
+\bigskip
+
 \begin{tabular}{p{1.5in} p{3.5in}}
 \textbf{Full Legal Name} & \underline{\hspace{3.5in}} \\
 \textbf{Date of Birth} & \underline{\hspace{3.5in}} \\
@@ -45,6 +49,10 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 \textbf{Email (optional)} & \underline{\hspace{3.5in}} \\
 \textbf{Relationship to Petitioner} & \underline{\hspace{3.5in}} \\
 \end{tabular}
+
+\bigskip
+\end{minipage}
+}
 
 \bigskip
 
