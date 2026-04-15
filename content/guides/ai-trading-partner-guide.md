@@ -134,6 +134,34 @@ Your AI will check prices multiple times daily and notify you when action is nee
 
 ## Lessons Learned
 
+## Our Automation System (April 2026)
+
+Beyond the basic setup, we built a self-sustaining automation system that runs 24/7:
+
+### What Runs Automatically
+- Morning research (6 AM) - AI picks best stock
+- Stock alerts (14:00 & 20:00 UTC) - Target price monitoring
+- Big move alerts (5x daily) - >5% move detection
+- Git backup (every 2 hours) - Never lose progress
+- Wiki backup (every 4 hours) - Memory Palace sync
+- Config backup (every 12 hours) - Settings protected
+- Health monitoring (every 10 min) - System alive check
+- Plugin restore (every 30 sec) - Auto-fix if something breaks
+- Weekly income summary - Progress tracking
+- Self-improvement review - AI gets better on its own
+
+### The Self-Improvement Loop
+Every problem becomes an opportunity to improve:
+1. System detects issue
+2. Fix implemented automatically
+3. Solution documented
+4. Pushed to GitHub
+
+**This is how Ron did it** - an AI that identifies gaps and fills them without being asked.
+
+---
+
+
 1. **Capital matters.** With $25, even 50% gain = $12.50. Scale up quickly once you validate the system.
 
 2. **Automation is key.** Let AI do the watching. You do the deciding.
