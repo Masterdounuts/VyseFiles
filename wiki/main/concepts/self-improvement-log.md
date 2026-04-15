@@ -21,4 +21,14 @@
 - Add more specific stock filters
 - Create quick-access shortcuts for common tasks
 
+
+
+### April 15 Night - Gumroad Market Research
+- Gumroad: 23M+ customers, 10% flat fee - WORTH IT
+- $29-49 is sweet spot (2-4% conversion)
+- 70% choose middle tier - make $49 main
+- Educational guides = HIGH performer
+- Validated: AI trading guides have market demand
+- Action: Updated pricing tiers to match data
+
 *Self-improvement is ongoing* 🦜
