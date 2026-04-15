@@ -18,7 +18,7 @@ geometry: margin=1in
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -27,7 +27,7 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -58,7 +58,7 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -86,7 +86,7 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -159,7 +159,7 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -205,7 +205,7 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -229,7 +229,7 @@ of legal age, having been duly sworn, do hereby depose and state as follows:
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -243,7 +243,7 @@ I am willing to testify before a USCIS officer if called upon to do so.
 
 \bigskip
 
-\hrule
+\rule{\linewidth}{2pt}
 
 \bigskip
 
@@ -264,4 +264,3 @@ I am willing to testify before a USCIS officer if called upon to do so.
 
 \bigskip
 
-\end{document}
