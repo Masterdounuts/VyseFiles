@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T03:01:52.030Z",
+  "updatedAt": "2026-04-15T15:15:06.242Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -60504,18 +60504,20 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "# Daily Summary - 2026-04-14 **1. Stocks Checked / Prices** - GGB (Genius Brands International): Checked at market close. Price: $4.32 (within target buy zone $4.15-$4.10, near sell target $4.30). - TSLA: Locked position, price approx $185.50 (unlock expected ~Apr 16). **2. Decisions Made** - No new trades executed today. Hold existing GGB shares; monitor for a pull‑back to $4.15 before buying more. - TSLA will be sold on unlock and proceeds reallocated to GGB or new opportunities. **3. New Cron Jobs / Fixes** - Added a daily cron entry to fetch GGB price at market close and log to `/root/.openclaw/workspace/memory/stock_prices.log`. - No code fixes applied today. **4. Important for Dav",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4565584301948547,
-      "maxScore": 0.4565584301948547,
+      "totalScore": 0.9489845663309097,
+      "maxScore": 0.49242613613605496,
       "firstRecalledAt": "2026-04-14T22:24:09.068Z",
-      "lastRecalledAt": "2026-04-14T22:24:09.068Z",
+      "lastRecalledAt": "2026-04-15T15:07:07.202Z",
       "queryHashes": [
-        "998dd1865dc9"
+        "998dd1865dc9",
+        "9112861d5050"
       ],
       "recallDays": [
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-15"
       ],
       "conceptTags": [
         "4.32",
@@ -75579,6 +75581,68 @@
         "check",
         "completed",
         "restored"
+      ]
+    },
+    "memory:memory/2026-04-15.md:1:58": {
+      "key": "memory:memory/2026-04-15.md:1:58",
+      "path": "memory/2026-04-15.md",
+      "startLine": 1,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "# April 15, 2026 - Session Memories ## 🚨 DAY TRADING GOAL - DOUBLE OUR MONEY **Target: Turn ~$47 into ~$94+** - Current capital: ~$47 - Goal: Double to ~$94+ - The play: MARA (beta 5.48) high volatility - Exit: +100% sell OR -20% stop loss --- ## Trading Research - Day Trading Focus ### Portfolio Reality - **GGB:** 5 shares @ ~$4.26 = ~$21 - **TSLA:** 0.016567 shares (Stock Reward) = ~$6 - **Cash:** ~$20 - **Total:** ~$47 (small capital, need to scale) ### MARA - Top Day Trade Pick (April 14) - **Price:** $10.48 - **Beta:** 5.48 (highest volatility) - **Strategy:** Buy dip, sell +3-5% - **Why:** Affordable (4+ shares), high volume, crypto-correlated ### Morning Research Job - Runs 6:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5196089804172516,
+      "maxScore": 0.5196089804172516,
+      "firstRecalledAt": "2026-04-15T15:15:06.242Z",
+      "lastRecalledAt": "2026-04-15T15:15:06.242Z",
+      "queryHashes": [
+        "77b5598eae97"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "5.48",
+        "4.26",
+        "0.016567",
+        "10.48",
+        "3-5",
+        "crypto-correlated",
+        "april",
+        "memories"
+      ]
+    },
+    "memory:memory/2026-04-14.md:1:48": {
+      "key": "memory:memory/2026-04-14.md:1:48",
+      "path": "memory/2026-04-14.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# Today's Learnings - April 14, 2026 ## Trading Insights ### Stock Positions (CORRECTED) - **GGB:** 5 shares @ $4.26 = ~$21 (not what was originally thought) - **TSLA:** 0.016567 shares (Stock Reward) = ~$6.04 (was way overestimated) - **Total portfolio:** ~$47 (much smaller than expected) - **Lesson:** Always verify actual positions with David ### MARA as Top Day Trade Pick - Price: $10.48 (affordable, can buy 4+ shares) - Beta: 5.48 (highest volatility = biggest moves) - Strategy: Buy dip, sell on +3-5% - Created morning research job to verify before market open ### Market Hours (Oregon/PT) - Pre-market: 1:00 AM - 6:30 AM PT - Regular open: 6:30 AM PT - Key time: 6:30 AM PT for day tra",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5110988557338715,
+      "maxScore": 0.5110988557338715,
+      "firstRecalledAt": "2026-04-15T15:15:06.242Z",
+      "lastRecalledAt": "2026-04-15T15:15:06.242Z",
+      "queryHashes": [
+        "77b5598eae97"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "4.26",
+        "0.016567",
+        "6.04",
+        "10.48",
+        "5.48",
+        "3-5",
+        "oregon/pt",
+        "pre-market"
       ]
     }
   }
