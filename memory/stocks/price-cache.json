@@ -1,0 +1,15 @@
+{
+  "lastUpdated": "2026-04-14T17:40:00Z",
+  "prices": {
+    "TSLA": {
+      "lastPrice": null,
+      "lastMove": null,
+      "lastMoveTime": null
+    },
+    "GGB": {
+      "lastPrice": null,
+      "lastMove": null,
+      "lastMoveTime": null
+    }
+  }
+}
