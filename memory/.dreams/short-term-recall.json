@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T15:15:06.242Z",
+  "updatedAt": "2026-04-15T22:25:27.460Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -75643,6 +75643,192 @@
         "3-5",
         "oregon/pt",
         "pre-market"
+      ]
+    },
+    "memory:memory/2026-04-15.md:428:448": {
+      "key": "memory:memory/2026-04-15.md:428:448",
+      "path": "memory/2026-04-15.md",
+      "startLine": 428,
+      "endLine": 448,
+      "source": "memory",
+      "snippet": "- Candidate: Assistant: Good point! Here's how it works on Robinhood: **Option A: Fractional shares** - Put all $25 in → own GGB + some cash left over (fractional) - Example: $25 ÷ $4 = 6.25 shares **Option B: Keep some dry powder** - Buy 5 shares = $20, keep $5 for another play later **Optio - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:563-563 - recalls: 0 - status: staged - Candidate: User: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Mon 2026-04-13 00:13 UTC] when does it go up or down? - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:564-564 - recalls: 0",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4776944071054458,
+      "maxScore": 0.4776944071054458,
+      "firstRecalledAt": "2026-04-15T22:25:27.460Z",
+      "lastRecalledAt": "2026-04-15T22:25:27.460Z",
+      "queryHashes": [
+        "491bb419a777"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "6.25",
+        "0.00",
+        "563-563",
+        "openclaw-control-ui",
+        "564-564",
+        "candidate",
+        "assistant",
+        "good"
+      ]
+    },
+    "memory:memory/2026-04-15.md:368:392": {
+      "key": "memory:memory/2026-04-15.md:368:392",
+      "path": "memory/2026-04-15.md",
+      "startLine": 368,
+      "endLine": 392,
+      "source": "memory",
+      "snippet": "- Candidate: Stock Prices Check (2026-04-14 21:27 UTC): GGB sell target $5+ → **not reached**; TSLA sell target $350+ (post-unlock Apr 16) → price above target but stock still locked until Apr 16, so **no alert**. - confidence: 0.00 - evidence: memory/2026-04-13.md:5-6 - recalls: 0 - status: staged - Candidate: Stock Prices Check (2026-04-14 21:27 UTC): No alerts sent. - confidence: 0.00 - evidence: memory/2026-04-13.md:8-8 - recalls: 0 - status: staged - Candidate: User: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Sun 2026-04-12 23:59 UTC] How much do you think i should deposit? - confidence: 0.00 - evidence:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47336030006408686,
+      "maxScore": 0.47336030006408686,
+      "firstRecalledAt": "2026-04-15T22:25:27.460Z",
+      "lastRecalledAt": "2026-04-15T22:25:27.460Z",
+      "queryHashes": [
+        "491bb419a777"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "post-unlock",
+        "0.00",
+        "memory/2026-04-13.md",
+        "5-6",
+        "8-8",
+        "openclaw-control-ui",
+        "candidate",
+        "stock"
+      ]
+    },
+    "memory:memory/2026-04-15.md:458:477": {
+      "key": "memory:memory/2026-04-15.md:458:477",
+      "path": "memory/2026-04-15.md",
+      "startLine": 458,
+      "endLine": 477,
+      "source": "memory",
+      "snippet": "- Candidate: Assistant: Ah, yeah — starting a new conversation wiped my memory of our previous session. I don't have access to what we were working on before that. Want to fill me in on what got lost? Or if there's something specific I was helping with, I can probably get back up to speed qui - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:581-581 - recalls: 0 - status: staged - Candidate: User: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Mon 2026-04-13 18:23 UTC] we made a lesson in your memory and talked about income generations, as well as a plethora of other topics I'm so sorry. - confiden",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4712287008762359,
+      "maxScore": 0.4712287008762359,
+      "firstRecalledAt": "2026-04-15T22:25:27.460Z",
+      "lastRecalledAt": "2026-04-15T22:25:27.460Z",
+      "queryHashes": [
+        "491bb419a777"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "0.00",
+        "581-581",
+        "openclaw-control-ui",
+        "candidate",
+        "assistant",
+        "yeah",
+        "starting",
+        "new"
+      ]
+    },
+    "memory:memory/2026-04-15.md:470:492": {
+      "key": "memory:memory/2026-04-15.md:470:492",
+      "path": "memory/2026-04-15.md",
+      "startLine": 470,
+      "endLine": 492,
+      "source": "memory",
+      "snippet": "- evidence: memory/.dreams/session-corpus/2026-04-13.txt:583-583 - recalls: 0 - status: staged - Candidate: Assistant: Got it! My long-term memory survived the crash. Let me also check today's daily notes for anything extra from our lost session: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:584-584 - recalls: 0 - status: staged - Candidate: Assistant: Alright, David — **everything survived!** 🦜 My memory files persisted through the crash. I've got: - **MEMORY.md** — all the big picture stuff (who you are, our partnership, income goals, stock positions) - **Today's notes** — including our discussion about capital sc - confidence: 0.00 - eviden",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4682066649198532,
+      "maxScore": 0.4682066649198532,
+      "firstRecalledAt": "2026-04-15T22:25:27.460Z",
+      "lastRecalledAt": "2026-04-15T22:25:27.460Z",
+      "queryHashes": [
+        "491bb419a777"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "583-583",
+        "long-term",
+        "0.00",
+        "584-584",
+        "memory.md",
+        "evidence",
+        "dreams",
+        "corpus"
+      ]
+    },
+    "memory:memory/2026-04-15.md:388:414": {
+      "key": "memory:memory/2026-04-15.md:388:414",
+      "path": "memory/2026-04-15.md",
+      "startLine": 388,
+      "endLine": 414,
+      "source": "memory",
+      "snippet": "- Candidate: User: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Mon 2026-04-13 00:01 UTC] just testing ill do $25 to start and see if we can grow that to $30 - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:555-555 - recalls: 0 - status: staged - Candidate: Assistant: $25 → $30 is a solid 20% return target for testing. Let's see if we can get you there! When you're ready with the deposit, just say the word and I'll start researching our first play. 🦜 - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:556-556 - recalls: 0 - status: staged - Candidate: User: Sender",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4682000309228897,
+      "maxScore": 0.4682000309228897,
+      "firstRecalledAt": "2026-04-15T22:25:27.460Z",
+      "lastRecalledAt": "2026-04-15T22:25:27.460Z",
+      "queryHashes": [
+        "491bb419a777"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "0.00",
+        "555-555",
+        "556-556",
+        "candidate",
+        "user",
+        "sender",
+        "untrusted"
+      ]
+    },
+    "memory:memory/2026-04-15.md:405:430": {
+      "key": "memory:memory/2026-04-15.md:405:430",
+      "path": "memory/2026-04-15.md",
+      "startLine": 405,
+      "endLine": 430,
+      "source": "memory",
+      "snippet": "- evidence: memory/.dreams/session-corpus/2026-04-13.txt:558-558 - recalls: 0 - status: staged - Candidate: Assistant: Found something. Here's **GGB (Gerdau)** — steel company: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:559-559 - recalls: 0 - status: staged - Candidate: Assistant: Here's the play: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:560-560 - recalls: 0 - status: staged - Candidate: Assistant: **First Play: GGB (Gerdau)** | Detail | Value | |--------|-------| | Price | ~$4/share | | Your $25 = | ~6 shares | | Bank of America target | $5 (25% upside) | | Risk | Low-Medium | **Why it's interesting:**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46708520650863644,
+      "maxScore": 0.46708520650863644,
+      "firstRecalledAt": "2026-04-15T22:25:27.460Z",
+      "lastRecalledAt": "2026-04-15T22:25:27.460Z",
+      "queryHashes": [
+        "491bb419a777"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "558-558",
+        "0.00",
+        "559-559",
+        "560-560",
+        "4/share",
+        "low-medium",
+        "evidence",
+        "dreams"
       ]
     }
   }
