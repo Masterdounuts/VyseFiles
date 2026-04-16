@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T22:25:27.460Z",
+  "updatedAt": "2026-04-16T02:58:01.746Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -75829,6 +75829,420 @@
         "low-medium",
         "evidence",
         "dreams"
+      ]
+    },
+    "memory:memory/2026-04-15.md:63:93": {
+      "key": "memory:memory/2026-04-15.md:63:93",
+      "path": "memory/2026-04-15.md",
+      "startLine": 63,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026‑04‑16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron l",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4306187093257904,
+      "maxScore": 0.4306187093257904,
+      "firstRecalledAt": "2026-04-16T01:48:09.991Z",
+      "lastRecalledAt": "2026-04-16T01:48:09.991Z",
+      "queryHashes": [
+        "68c01fa73987"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "decisions",
+        "made",
+        "new",
+        "trades",
+        "executed"
+      ]
+    },
+    "memory:memory/2026-04-15.md:161:203": {
+      "key": "memory:memory/2026-04-15.md:161:203",
+      "path": "memory/2026-04-15.md",
+      "startLine": 161,
+      "endLine": 203,
+      "source": "memory",
+      "snippet": "- This reserves 20k tokens as a floor before compaction kicks in aggressively - Config patch applied via `openclaw config patch agents.defaults.compaction.reserveTokensFloor=20000` - Gateway auto-reloaded after patch ### Expected Result - Fewer context resets - More buffer before aggressive compaction - Smoother long conversations --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron list` API\" - Rationale: jobs. json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9288431495428084,
+      "maxScore": 0.48953486084938047,
+      "firstRecalledAt": "2026-04-16T01:49:28.971Z",
+      "lastRecalledAt": "2026-04-16T01:50:56.154Z",
+      "queryHashes": [
+        "91baf5c234b7",
+        "0e42a16297d4",
+        "a0ace193fbde",
+        "88b46021bc81"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "auto-reloaded",
+        "tools.md",
+        "reserves",
+        "20k",
+        "tokens",
+        "floor",
+        "compaction"
+      ]
+    },
+    "memory:memory/2026-04-15.md:488:532": {
+      "key": "memory:memory/2026-04-15.md:488:532",
+      "path": "memory/2026-04-15.md",
+      "startLine": 488,
+      "endLine": 532,
+      "source": "memory",
+      "snippet": "- This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ### Actions Taken - Fixed cron job Telegram delivery error (removed invalid @heartbeat chat) - Changed sessionTarget to \"isolated\" for gateway health checks - Documented best practice in TOOLS.md --- ## Context Fix - Apr 15 22:25 UTC ### Problem - Session kept hitting context limit and resetting (auto-compaction at ~80%) - This caused conversation loss and frustration ### Solution Applied - Increased `agents.defaults.compaction.reserveTokens",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9440929740667342,
+      "maxScore": 0.4758881032466888,
+      "firstRecalledAt": "2026-04-16T01:49:28.971Z",
+      "lastRecalledAt": "2026-04-16T01:50:56.154Z",
+      "queryHashes": [
+        "91baf5c234b7",
+        "88b46021bc81"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "rotate-session-log",
+        "auto-session-cleanup",
+        "tools.md",
+        "auto-compaction",
+        "prevents",
+        "future",
+        "context"
+      ]
+    },
+    "memory:memory/2026-04-15.md:125:171": {
+      "key": "memory:memory/2026-04-15.md:125:171",
+      "path": "memory/2026-04-15.md",
+      "startLine": 125,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "- No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron list` API\" - Rationale: jobs. json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, a",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.8978419184684752,
+      "maxScore": 0.4831236451864242,
+      "firstRecalledAt": "2026-04-16T01:49:28.971Z",
+      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "queryHashes": [
+        "91baf5c234b7",
+        "0e42a16297d4",
+        "88b46021bc81",
+        "92496c82cd75"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "rotate-session-log",
+        "fixes",
+        "applied",
+        "important",
+        "david"
+      ]
+    },
+    "memory:memory/2026-04-15.md:355:402": {
+      "key": "memory:memory/2026-04-15.md:355:402",
+      "path": "memory/2026-04-15.md",
+      "startLine": 355,
+      "endLine": 402,
+      "source": "memory",
+      "snippet": "- Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs.json directly, use `cron list` API\" - Rationale: jobs.json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ### Actions Taken - Fixed cron job Telegram delivery error (removed invalid @heartbeat chat) - Changed sessionTarget to \"isolated\" for gateway health checks - Documented",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9461252093315123,
+      "maxScore": 0.47344239056110377,
+      "firstRecalledAt": "2026-04-16T01:49:41.457Z",
+      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "queryHashes": [
+        "0e42a16297d4",
+        "92496c82cd75"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "tools.md",
+        "jobs.json",
+        "rotate-session-log",
+        "auto-session-cleanup",
+        "remember",
+        "log",
+        "any"
+      ]
+    },
+    "memory:memory/2026-04-15.md:227:270": {
+      "key": "memory:memory/2026-04-15.md:227:270",
+      "path": "memory/2026-04-15.md",
+      "startLine": 227,
+      "endLine": 270,
+      "source": "memory",
+      "snippet": "## Context Fix - Apr 15 22:25 UTC ### Problem - Session kept hitting context limit and resetting (auto-compaction at ~80%) - This caused conversation loss and frustration ### Solution Applied - Increased `agents.defaults.compaction.reserveTokensFloor` to 20,000 - Gateway auto-reloaded after config patch ### Expected Result - Fewer context resets - More buffer before aggressive compaction kicks in ## Context Config Fixed - Apr 15 22:31 UTC - Increased reserveTokensFloor: 20,000 - Increased contextTokens: 40,000 - This should prevent frequent context resets ## Stock Update - Apr 15 22:31 UTC - GGB: $4.30 (at first sell target, ~0.5% gain) - TSLA: $391.95 (+7.62%) - huge day, earnings Apr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4673195660114288,
+      "maxScore": 0.4673195660114288,
+      "firstRecalledAt": "2026-04-16T01:49:52.765Z",
+      "lastRecalledAt": "2026-04-16T01:49:52.765Z",
+      "queryHashes": [
+        "a0ace193fbde"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "auto-compaction",
+        "auto-reloaded",
+        "4.30",
+        "0.5",
+        "391.95",
+        "7.62",
+        "context"
+      ]
+    },
+    "memory:memory/2026-04-15.md:556:579": {
+      "key": "memory:memory/2026-04-15.md:556:579",
+      "path": "memory/2026-04-15.md",
+      "startLine": 556,
+      "endLine": 579,
+      "source": "memory",
+      "snippet": "- GGB at $4.30 (sell target) - awaiting David's call: sell/hold/stop-loss - TSLA unlocks ~Apr 16, earnings Apr 22 ### Action Items - Fix Telegram bot token/chat_id for cron alerts - Identify and fix remaining failing cron jobs --- ## Pre-Compaction Flush - Apr 15 23:45 UTC ### Session Status Check - User confirmed session status looks good - Context at 82% (healthy) - Model: openrouter/openai/gpt-oss-120b ### Credit Watch Issue - credit-watch.sh ran but couldn't parse credits - API returned HTML instead of JSON (possibly a redirect or auth issue) - Need to investigate further - possibly need to use correct endpoint or handle redirect ### Open TODO from earlier - Pending confirmation fr",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.485508069396019,
+      "maxScore": 0.5264393270015716,
+      "firstRecalledAt": "2026-04-16T01:50:56.154Z",
+      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "queryHashes": [
+        "88b46021bc81",
+        "5487dfdf25c7",
+        "4290ce61224d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "router",
+        "4.30",
+        "sell/hold/stop-loss",
+        "token/chat-id",
+        "pre-compaction",
+        "openrouter/openai/gpt-oss-120b"
+      ]
+    },
+    "memory:memory/2026-04-14.md:38:80": {
+      "key": "memory:memory/2026-04-14.md:38:80",
+      "path": "memory/2026-04-14.md",
+      "startLine": 38,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "### Memory Palace Enabled - Plugin: memory-wiki - Created wiki pages: ron.md, brain-face-model.md, david-vyse-mission.md, trading-alert-priority.md, learning-system.md ### Morning Stock Research Job - Runs 6:00 AM PT daily (1:00 PM UTC) - Checks MARA, LCID, RIVN, GGB prices - Texts best play to David on Telegram ## Agreements Captured ### Trading Alert Priority - Vyse messages David on Telegram for trade opportunities - Message immediately if research reveals drastic changes - Goal: Get closer to $2,000/month ### Automation-First Principle - Automate whenever possible - Only involve David when: - Decision requires human judgment - Confirmation needed for significant trades - System",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9565037846565245,
+      "maxScore": 0.4868475705385208,
+      "firstRecalledAt": "2026-04-16T01:53:55.007Z",
+      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "queryHashes": [
+        "5487dfdf25c7",
+        "92496c82cd75"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "memory-wiki",
+        "ron.md",
+        "brain-face-model.md",
+        "david-vyse-mission.md",
+        "trading-alert-priority.md",
+        "learning-system.md",
+        "000/month",
+        "automation-first"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:8": {
+      "key": "memory:memory/2026-04-13.md:1:8",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "## Stock Prices Check (2026-04-14 21:27 UTC) - GGB (Gerdau SA): $4.27 (Day High $4.30, Day Low $4.23) - TSLA (Tesla Inc): $364.49 (After Hours)\\n Targets: - GGB sell target $5+ → **not reached** - TSLA sell target $350+ (post-unlock Apr 16) → price above target but stock still locked until Apr 16, so **no alert**. No alerts sent.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5324500516057014,
+      "maxScore": 0.5324500516057014,
+      "firstRecalledAt": "2026-04-16T02:37:25.864Z",
+      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "queryHashes": [
+        "4290ce61224d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "4.27",
+        "4.30",
+        "4.23",
+        "364.49",
+        "post-unlock",
+        "stock",
+        "prices",
+        "check"
+      ]
+    },
+    "memory:memory/2026-04-15.md:262:302": {
+      "key": "memory:memory/2026-04-15.md:262:302",
+      "path": "memory/2026-04-15.md",
+      "startLine": 262,
+      "endLine": 302,
+      "source": "memory",
+      "snippet": "- GGB at sell target ($4.30) - waiting on David's call: sell/hold/stop-loss - TSLA at $391.95 (+7.62%) - earnings Apr 22 # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price di",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.530637301504612,
+      "maxScore": 0.530637301504612,
+      "firstRecalledAt": "2026-04-16T02:37:25.864Z",
+      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "queryHashes": [
+        "4290ce61224d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "4.30",
+        "sell/hold/stop-loss",
+        "391.95",
+        "7.62",
+        "4.22",
+        "5.85",
+        "ggb",
+        "sell"
+      ]
+    },
+    "memory:memory/2026-04-15.md:96:135": {
+      "key": "memory:memory/2026-04-15.md:96:135",
+      "path": "memory/2026-04-15.md",
+      "startLine": 96,
+      "endLine": 135,
+      "source": "memory",
+      "snippet": "## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5228497505187988,
+      "maxScore": 0.5228497505187988,
+      "firstRecalledAt": "2026-04-16T02:37:25.864Z",
+      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "queryHashes": [
+        "4290ce61224d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "4.22",
+        "4.30",
+        "5.85",
+        "4.10",
+        "4.15",
+        "stocks",
+        "checked",
+        "prices"
+      ]
+    },
+    "memory:memory/2026-04-15.md:326:366": {
+      "key": "memory:memory/2026-04-15.md:326:366",
+      "path": "memory/2026-04-15.md",
+      "startLine": 326,
+      "endLine": 366,
+      "source": "memory",
+      "snippet": "- Rationale: jobs.json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ### Actions Taken - Fixed cron job Telegram delivery error (removed invalid @heartbeat chat) - Changed sessionTarget to \"isolated\" for gateway health checks - Documented best practice in TOOLS.md # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (sti",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46944642961025235,
+      "maxScore": 0.46944642961025235,
+      "firstRecalledAt": "2026-04-16T02:58:01.746Z",
+      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "queryHashes": [
+        "92496c82cd75"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "jobs.json",
+        "rotate-session-log",
+        "auto-session-cleanup",
+        "tools.md",
+        "4.22",
+        "4.30",
+        "rationale"
+      ]
+    },
+    "memory:memory/2026-04-16.md:57:93": {
+      "key": "memory:memory/2026-04-16.md:57:93",
+      "path": "memory/2026-04-16.md",
+      "startLine": 57,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "- **Costly self-improvement (ask first):** Paid APIs, subscriptions, anything spending money The principle gates paid improvements only — free optimization is core to \"self-improve continuously.\" ## Current Status - All jobs now use isolated sessions (no more main bloat) - Credit watch working but needs management key to fetch actual credits - Market news will now deliver to Telegram # Memory Flush - April 16, 2026 ## Session Events ### Context Reset - Context limit exceeded, session auto-reset - Time: ~01:45 UTC ### TSLA Unlock - TSLA stock reward unlocks TODAY (April 16) - Was locked due to Robinhood Stock Reward 3-day hold rule - Need to: check value, decide reallocation (likely to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46805502176284786,
+      "maxScore": 0.46805502176284786,
+      "firstRecalledAt": "2026-04-16T02:58:01.746Z",
+      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "queryHashes": [
+        "92496c82cd75"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "self-improvement",
+        "self-improve",
+        "auto-reset",
+        "3-day",
+        "costly",
+        "self",
+        "improvement",
+        "ask"
       ]
     }
   }

@@ -61,10 +61,39 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 Add whatever helps you do your job. This is your cheat sheet.
 
+## Cron Jobs
+
+- **Never read `/root/.openclaw/cron/jobs.json` directly** — use `cron list` API instead (lightweight JSON)
+- Duplicate jobs may exist; check `cron list` before adding new ones
+
 ## GitHub Repository
 - **URL:** https://github.com/Masterdounuts/VyseFiles
 - **Token saved:** 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 (in remote URL)
 - **Access:** Read/write via token
+
+## Communication Channels
+
+### Primary: Control UI
+- **Use for:** Main conversation, interactive tasks, debugging
+- **Session context:** Full (sees conversation history)
+- **Note:** Subject to context compaction — save critical info to TODO.md
+
+### Secondary: Telegram
+- **Bot:** @VyseAgent_bot
+- **Use for:** Cron job alerts, stock alerts, quick notifications
+- **Session context:** None (stateless alerts only)
+- **Delivery:** Announced via cron job delivery config
+
+### Backup: (Not configured)
+- Signal or WhatsApp pending setup
+- TODO: Ask David to set up
+
+### Channel Rules
+- Control UI = "thinking" work (analysis, decisions, conversations)
+- Telegram = "notification" work (alerts, reminders, summaries)
+- When you message on a non-primary channel, I note it for context in TODO. md
+
+---
 
 ## Web Search Strategy
 
