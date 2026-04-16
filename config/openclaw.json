@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.11",
-    "lastTouchedAt": "2026-04-15T02:26:05.228Z"
+    "lastTouchedAt": "2026-04-15T22:38:05.406Z"
   },
   "update": {
     "checkOnStart": false
@@ -20,7 +20,7 @@
     "providers": {
       "openrouter": {
         "baseUrl": "https://openrouter.ai/api/v1",
-        "apiKey": "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",
+        "apiKey": "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",
         "models": [
           {
             "id": "minimax/minimax-m2.5",
@@ -92,14 +92,16 @@
         "model": "openrouter/openai/gpt-oss-120b"
       },
       "compaction": {
-        "mode": "safeguard"
+        "mode": "safeguard",
+        "reserveTokensFloor": 20000
       },
       "imageGenerationModel": {
         "primary": "google/gemini-2.5-flash-preview-05-20"
       },
       "sandbox": {
         "mode": "off"
-      }
+      },
+      "contextTokens": 40000
     }
   },
   "tools": {
@@ -174,29 +176,6 @@
       },
       "browser": {
         "enabled": true
-      },
-      "memory-core": {
-        "config": {
-          "dreaming": {
-            "enabled": true
-          }
-        }
-      },
-      "active-memory": {
-        "enabled": true
-      },
-      "memory-wiki": {
-        "enabled": true,
-        "config": {
-          "vaultMode": "bridge",
-          "bridge": {
-            "enabled": true,
-            "readMemoryArtifacts": true,
-            "indexDreamReports": true,
-            "indexDailyNotes": true,
-            "indexMemoryRoot": true
-          }
-        }
       }
     }
   }
