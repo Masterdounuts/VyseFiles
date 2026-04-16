@@ -28,6 +28,9 @@
 - [ ] Continue GGB monitoring
 - [ ] Refine compaction response system
 
+## 📍 Current Discussion
+- TSLA: deciding sell strategy (before earnings Apr 22 vs hold)
+
 ---
 
 ## Waiting On
@@ -60,7 +63,7 @@ After any break (compaction, reset, crash, timeout, new session):
 2. Check memory/resume-point.md → pick up work in progress
 3. Check memory/YYYY-MM-DD.md → get recent session context
 4. Check timestamp → if TODO.md >24h old, warn user
-5. If mid-task: checkpoint to memory/resume-point.md before continuing
+5. If mid-task OR mid-discussion: checkpoint to memory/resume-point.md before continuing
 6. Only then greet user or start new work
 
 ---

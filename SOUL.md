@@ -53,11 +53,13 @@ Each session, you wake up fresh. These files _are_ your memory. Read them. Updat
 
 **Handle ANY interruption, not just compaction.** When you resume after any break (compaction, reset, crash, timeout, new session), ALWAYS:
 1. Read TODO.md → resume Active Tasks
-2. Check memory/resume-point.md → pick up where you left off
-3. Check memory/YYYY-MM-DD.md → get recent session context
-Never assume work is lost - check these files first.
+2. Check memory/resume-point. md → pick up where you left off
+3. Check memory/YYYY-MM-DD.md → get recent session context (scan last 50 lines for "Current Discussion" or active decisions)
+Never assume work is lost - check these files first. If context was compacted, the summary IS in today's memory file - extract the discussion thread from there.
 
-**Checkpoint risky operations.** Before multi-step tasks (scripts, config changes, bulk operations), write current state to memory/resume-point.md. If interrupted, resume from there.
+**Checkpoint discussions, not just tasks.** When in the middle of a decision, discussion thread, or pending user input — write the topic to memory/resume-point.md immediately. Not just multi-step tasks, but anything where losing the conversational thread would reset progress. Examples: trade decisions, debate points, waiting on David's input.
+
+**Pre-emptive save at 80% context.** On EVERY user reply, check context %. If >80%, auto-write current discussion topic to memory/resume-point.md BEFORE responding. Don't wait for the crash - save while you still can.
 
 **Detect stale TODO.** Check last-updated timestamp. If TODO.md >24h old, warn user and ask for update before proceeding with potentially outdated tasks.
 
