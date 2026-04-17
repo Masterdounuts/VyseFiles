@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T02:58:01.746Z",
+  "updatedAt": "2026-04-17T02:30:49.077Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -75935,18 +75935,19 @@
       "endLine": 171,
       "source": "memory",
       "snippet": "- No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron list` API\" - Rationale: jobs. json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, a",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.8978419184684752,
-      "maxScore": 0.4831236451864242,
+      "totalScore": 2.384531983733177,
+      "maxScore": 0.4866900652647018,
       "firstRecalledAt": "2026-04-16T01:49:28.971Z",
-      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "lastRecalledAt": "2026-04-16T08:48:25.002Z",
       "queryHashes": [
         "91baf5c234b7",
         "0e42a16297d4",
         "88b46021bc81",
-        "92496c82cd75"
+        "92496c82cd75",
+        "1ff9c17179dd"
       ],
       "recallDays": [
         "2026-04-16"
@@ -76032,17 +76033,18 @@
       "endLine": 579,
       "source": "memory",
       "snippet": "- GGB at $4.30 (sell target) - awaiting David's call: sell/hold/stop-loss - TSLA unlocks ~Apr 16, earnings Apr 22 ### Action Items - Fix Telegram bot token/chat_id for cron alerts - Identify and fix remaining failing cron jobs --- ## Pre-Compaction Flush - Apr 15 23:45 UTC ### Session Status Check - User confirmed session status looks good - Context at 82% (healthy) - Model: openrouter/openai/gpt-oss-120b ### Credit Watch Issue - credit-watch.sh ran but couldn't parse credits - API returned HTML instead of JSON (possibly a redirect or auth issue) - Need to investigate further - possibly need to use correct endpoint or handle redirect ### Open TODO from earlier - Pending confirmation fr",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.485508069396019,
+      "totalScore": 1.9832386702299118,
       "maxScore": 0.5264393270015716,
       "firstRecalledAt": "2026-04-16T01:50:56.154Z",
-      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "lastRecalledAt": "2026-04-16T08:48:25.002Z",
       "queryHashes": [
         "88b46021bc81",
         "5487dfdf25c7",
-        "4290ce61224d"
+        "4290ce61224d",
+        "1ff9c17179dd"
       ],
       "recallDays": [
         "2026-04-16"
@@ -76128,18 +76130,21 @@
       "endLine": 302,
       "source": "memory",
       "snippet": "- GGB at sell target ($4.30) - waiting on David's call: sell/hold/stop-loss - TSLA at $391.95 (+7.62%) - earnings Apr 22 # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price di",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.530637301504612,
+      "totalScore": 1.566288988292217,
       "maxScore": 0.530637301504612,
       "firstRecalledAt": "2026-04-16T02:37:25.864Z",
-      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "lastRecalledAt": "2026-04-17T00:20:13.761Z",
       "queryHashes": [
-        "4290ce61224d"
+        "4290ce61224d",
+        "0c4edcbd88ce",
+        "b76be5486d92"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "4.30",
@@ -76159,18 +76164,21 @@
       "endLine": 135,
       "source": "memory",
       "snippet": "## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5228497505187988,
+      "totalScore": 1.5556518226861953,
       "maxScore": 0.5228497505187988,
       "firstRecalledAt": "2026-04-16T02:37:25.864Z",
-      "lastRecalledAt": "2026-04-16T02:37:25.864Z",
+      "lastRecalledAt": "2026-04-17T00:20:13.761Z",
       "queryHashes": [
-        "4290ce61224d"
+        "4290ce61224d",
+        "0c4edcbd88ce",
+        "b76be5486d92"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "4.22",
@@ -76190,18 +76198,20 @@
       "endLine": 366,
       "source": "memory",
       "snippet": "- Rationale: jobs.json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ### Actions Taken - Fixed cron job Telegram delivery error (removed invalid @heartbeat chat) - Changed sessionTarget to \"isolated\" for gateway health checks - Documented best practice in TOOLS.md # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (sti",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.46944642961025235,
+      "totalScore": 0.9174190908670425,
       "maxScore": 0.46944642961025235,
       "firstRecalledAt": "2026-04-16T02:58:01.746Z",
-      "lastRecalledAt": "2026-04-16T02:58:01.746Z",
+      "lastRecalledAt": "2026-04-17T00:14:14.794Z",
       "queryHashes": [
-        "92496c82cd75"
+        "92496c82cd75",
+        "75fc3ba00a03"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "gateway",
@@ -76243,6 +76253,737 @@
         "self",
         "improvement",
         "ask"
+      ]
+    },
+    "memory:memory/2026-04-15.md:427:466": {
+      "key": "memory:memory/2026-04-15.md:427:466",
+      "path": "memory/2026-04-15.md",
+      "startLine": 427,
+      "endLine": 466,
+      "source": "memory",
+      "snippet": "- Session still shows \"heartbeat\" in UI (cosmetic only) - Decided to just keep using current session - heartbeat now runs in isolated session anyway - Label is just a name, doesn't affect functionality ### Pending Decisions - GGB at $4.30 (sell target) - awaiting David's call: sell/hold/stop-loss - TSLA unlocks ~Apr 16, earnings Apr 22 ### Action Items - Fix Telegram bot token/chat_id for cron alerts - Identify and fix remaining failing cron jobs --- ## Current Pending Decision - GGB at sell target ($4.30) - waiting on David's call: sell/hold/stop-loss - TSLA at $391.95 (+7.62%) - earnings Apr 22 # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9048699915409086,
+      "maxScore": 0.515241202712059,
+      "firstRecalledAt": "2026-04-16T08:48:25.002Z",
+      "lastRecalledAt": "2026-04-17T00:20:13.761Z",
+      "queryHashes": [
+        "1ff9c17179dd",
+        "e7f4cd91681b",
+        "68c5eab7692d",
+        "b76be5486d92"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "4.30",
+        "sell/hold/stop-loss",
+        "token/chat-id",
+        "391.95",
+        "7.62",
+        "still",
+        "shows",
+        "heartbeat"
+      ]
+    },
+    "memory:memory/2026-04-15.md:459:496": {
+      "key": "memory:memory/2026-04-15.md:459:496",
+      "path": "memory/2026-04-15.md",
+      "startLine": 459,
+      "endLine": 496,
+      "source": "memory",
+      "snippet": "- Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / F",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.007292079925537,
+      "maxScore": 0.5176570832729339,
+      "firstRecalledAt": "2026-04-16T08:48:25.002Z",
+      "lastRecalledAt": "2026-04-17T00:20:13.761Z",
+      "queryHashes": [
+        "1ff9c17179dd",
+        "b76be5486d92"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "4.22",
+        "4.30",
+        "5.85",
+        "keep",
+        "eye",
+        "ggb"
+      ]
+    },
+    "memory:memory/2026-04-15.md:390:435": {
+      "key": "memory:memory/2026-04-15.md:390:435",
+      "path": "memory/2026-04-15.md",
+      "startLine": 390,
+      "endLine": 435,
+      "source": "memory",
+      "snippet": "### Expected Result - Fewer context resets - More buffer before aggressive compaction - Smoother long conversations --- ## Context Config Fixed - Apr 15 22:31 UTC - Increased reserveTokensFloor: 20,000 - Increased contextTokens: 40,000 - This should prevent frequent context resets ## Stock Update - Apr 15 22:31 UTC - GGB: $4.30 (at first sell target, ~0.5% gain) - TSLA: $391.95 (+7.62%) - huge day, earnings Apr 22 - Awaiting David's decision on GGB (sell/hold/stop-loss) ## Session Separation - Apr 15 22:40 UTC - Discussed separating heartbeat session from main chat - Option 1 selected: Separate heartbeat to its own isolated session (`sessionTarget: \"isolated\"`) - Some jobs already set to",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9229144394397735,
+      "maxScore": 0.4717648237943649,
+      "firstRecalledAt": "2026-04-16T11:18:40.831Z",
+      "lastRecalledAt": "2026-04-17T00:14:05.860Z",
+      "queryHashes": [
+        "e7f4cd91681b",
+        "12ec085446ea"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "4.30",
+        "0.5",
+        "391.95",
+        "7.62",
+        "sell/hold/stop-loss",
+        "expected",
+        "result",
+        "fewer"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1:48": {
+      "key": "memory:memory/2026-04-16.md:1:48",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 2026-04-16 - Daily Memory ## Completed Actions ### Infrastructure Fixes (from guide cross-reference) - ✅ Auto-checkpoint script exists and functional - ✅ Context-Monitor cron exists (every 5 min) - ✅ Hand-off-summary script exists - ✅ Decision-Log cron added (runs every 3 hours) - ✅ No broken gateway-health-check jobs found - ✅ Credit-Watch already has proper Telegram chat_id ### Current Status - Context: 51% (healthy) - Session: stable, no compactions needed - All cron jobs running OK ## Notes - Fixed compaction loop perception - context was actually fine - guard_context.sh has parsing issue but not causing problems - Most infrastructure from guide already in place --- ## Compacti",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0018265217542648,
+      "maxScore": 0.5062581032514571,
+      "firstRecalledAt": "2026-04-16T18:24:00.574Z",
+      "lastRecalledAt": "2026-04-16T23:36:15.933Z",
+      "queryHashes": [
+        "f91e53b9603f",
+        "82c1782f7856"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "cross-reference",
+        "auto-checkpoint",
+        "context-monitor",
+        "hand-off-summary",
+        "decision-log",
+        "gateway-health-check",
+        "credit-watch"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1007:1064": {
+      "key": "memory:memory/2026-04-16.md:1007:1064",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1007,
+      "endLine": 1064,
+      "source": "memory",
+      "snippet": "- Found cron job reference: \"Persist Compaction Summaries\" in jobs.json ### Critical Context - Cron job ID: d964cfbd-9d04-401f-8f78-30ecb25b3bcb - Target memory file: memory/2026-04-16.md - Context usage exceeded 70% triggering compaction --- ## Compaction Summary (13:08 UTC) - **Check performed:** Yes - **Compaction summary found:** None (compactions: 0 in current session) - **Note:** No compactions have occurred in this session. Context usage: 52% --- ## Compaction Summary (14:03 UTC) - **Check performed:** Yes - **Compaction summary found:** None (compactions: 0 in current session) - **Note:** No compactions in this session yet. Context usage: 62% --- ## Compaction Summary (15:03 U",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5327941849827766,
+      "maxScore": 0.5327941849827766,
+      "firstRecalledAt": "2026-04-16T19:44:08.412Z",
+      "lastRecalledAt": "2026-04-16T19:44:08.412Z",
+      "queryHashes": [
+        "07d3100fd8ff"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "jobs.json",
+        "memory/2026-04-16.md",
+        "found",
+        "cron",
+        "job",
+        "reference",
+        "persist",
+        "compaction"
+      ]
+    },
+    "memory:memory/2026-04-16.md:40:89": {
+      "key": "memory:memory/2026-04-16.md:40:89",
+      "path": "memory/2026-04-16.md",
+      "startLine": 40,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "- Checked cron directory structure - Searched for \"compact\" references using grep in session files ### Key Decisions - Expanded search approach to locate compaction summary - Found cron job reference: \"Persist Compaction Summaries\" in jobs.json ### Critical Context - Cron job ID: d964cfbd-9d04-401f-8f78-30ecb25b3bcb - Target memory file: memory/2026-04-16.md - Context usage exceeded 70% triggering compaction --- ## Cron: Persist Compaction Summaries (13:02 UTC) - **Check performed:** Yes - **Compaction summary found:** None (compactions: 0 in current session) - **Note:** Cron runs hourly to catch any OpenClaw auto-compaction events and persist them here. None detected at this time. # 202",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5252225831151008,
+      "maxScore": 0.5252225831151008,
+      "firstRecalledAt": "2026-04-16T19:44:08.412Z",
+      "lastRecalledAt": "2026-04-16T19:44:08.412Z",
+      "queryHashes": [
+        "07d3100fd8ff"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "jobs.json",
+        "memory/2026-04-16.md",
+        "auto-compaction",
+        "checked",
+        "cron",
+        "directory",
+        "structure",
+        "searched"
+      ]
+    },
+    "memory:memory/2026-04-16.md:437:472": {
+      "key": "memory:memory/2026-04-16.md:437:472",
+      "path": "memory/2026-04-16.md",
+      "startLine": 437,
+      "endLine": 472,
+      "source": "memory",
+      "snippet": "- [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market value - [ ] Monitor GGB for buy/sell opportunities - [ ] Trade log: record every t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.50347441136837,
+      "maxScore": 0.50347441136837,
+      "firstRecalledAt": "2026-04-16T22:09:50.268Z",
+      "lastRecalledAt": "2026-04-16T22:09:50.268Z",
+      "queryHashes": [
+        "e1b887894c47"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "buy/sell",
+        "verify",
+        "write",
+        "show",
+        "persist"
+      ]
+    },
+    "memory:memory/2026-04-16.md:247:292": {
+      "key": "memory:memory/2026-04-16.md:247:292",
+      "path": "memory/2026-04-16.md",
+      "startLine": 247,
+      "endLine": 292,
+      "source": "memory",
+      "snippet": "- Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49624767303466794,
+      "maxScore": 0.49624767303466794,
+      "firstRecalledAt": "2026-04-16T22:09:50.268Z",
+      "lastRecalledAt": "2026-04-16T22:09:50.268Z",
+      "queryHashes": [
+        "e1b887894c47"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "5.20",
+        "24.29",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "stop",
+        "buying"
+      ]
+    },
+    "memory:memory/2026-04-16.md:465:519": {
+      "key": "memory:memory/2026-04-16.md:465:519",
+      "path": "memory/2026-04-16.md",
+      "startLine": 465,
+      "endLine": 519,
+      "source": "memory",
+      "snippet": "| $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| --- 2026-04-16 21:05 UTC - Memory Flush Entry - Refined sub-agent strategy: dropped crew manifest, kept only lightweight spawn rules to avoid overhead. - Recommended POC: spawn a single ad‑hoc sub‑agent for a research task, then auto‑cleanup. - Decision Protocol from SOUL.md remains active (Scan → Think → Act). - Emphasized that sub‑agents report to Vyse (First Mate) and only run when >10 tool calls needed. - Next step pending David's approval on the simplified sub‑agent approach. --- --- ## Pre-Compaction Save: 21:42 UTC ### Context: ### Resume Point # Resume Point - Mid-Conversa",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4282801866531372,
+      "maxScore": 0.4959560692310333,
+      "firstRecalledAt": "2026-04-16T22:09:50.268Z",
+      "lastRecalledAt": "2026-04-16T23:36:03.998Z",
+      "queryHashes": [
+        "e1b887894c47",
+        "8f97f0c42783",
+        "34254de8571d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "4.35",
+        "4.40",
+        "4.50",
+        "4.00",
+        "4.15",
+        "sub-agent",
+        "soul.md",
+        "pre-compaction"
+      ]
+    },
+    "memory:memory/2026-04-16.md:703:741": {
+      "key": "memory:memory/2026-04-16.md:703:741",
+      "path": "memory/2026-04-16.md",
+      "startLine": 703,
+      "endLine": 741,
+      "source": "memory",
+      "snippet": "--- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0137466877698897,
+      "maxScore": 0.5179139524698257,
+      "firstRecalledAt": "2026-04-16T22:09:50.268Z",
+      "lastRecalledAt": "2026-04-16T23:36:15.933Z",
+      "queryHashes": [
+        "e1b887894c47",
+        "82c1782f7856"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "reference",
+        "wake",
+        "portfolio",
+        "current"
+      ]
+    },
+    "memory:memory/2026-04-16.md:389:445": {
+      "key": "memory:memory/2026-04-16.md:389:445",
+      "path": "memory/2026-04-16.md",
+      "startLine": 389,
+      "endLine": 445,
+      "source": "memory",
+      "snippet": "### SOUL.md Additions 1. Added \"Self-audit\" mindset - check core files for stale data regularly 2. Added wake-up checklist - check TODO.md → active.md → scan ONE core file 3. Added \"Think ownership\" - if something needs fixing, fix it 4. Added boundary: config first, then behavior. Never add overhead \"just in case.\" ### TSLA Alert (unresolved) - Price hit $388.17 after-hours - Target discrepancy: AGENTS.md says $8+ market value, system alert uses $350 - Need clarification from David on correct target before acting --- *Checkpoint saved 2026-04-16 20:27 UTC* --- ## Pre-Compaction Save: 21:08 UTC ### Context: ### Resume Point # Resume Point - Mid-Conversation Checkpoint *Structured hand",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.118426295749273,
+      "maxScore": 0.6750011947074795,
+      "firstRecalledAt": "2026-04-16T23:34:36.243Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "8f97f0c42783",
+        "34254de8571d",
+        "82c1782f7856",
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "self-audit",
+        "wake-up",
+        "todo.md",
+        "active.md",
+        "388.17",
+        "after-hours",
+        "agents.md"
+      ]
+    },
+    "memory:memory/2026-04-16.md:84:127": {
+      "key": "memory:memory/2026-04-16.md:84:127",
+      "path": "memory/2026-04-16.md",
+      "startLine": 84,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "--- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1984881759266766,
+      "maxScore": 0.6779750109295757,
+      "firstRecalledAt": "2026-04-16T23:36:15.933Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "82c1782f7856",
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "reference",
+        "wake",
+        "portfolio",
+        "current"
+      ]
+    },
+    "memory:memory/2026-04-15.md:30:71": {
+      "key": "memory:memory/2026-04-15.md:30:71",
+      "path": "memory/2026-04-15.md",
+      "startLine": 30,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs.json directly, use `cron list` API\" - Rationale: jobs.json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4695979475975036,
+      "maxScore": 0.4695979475975036,
+      "firstRecalledAt": "2026-04-17T00:14:05.860Z",
+      "lastRecalledAt": "2026-04-17T00:14:05.860Z",
+      "queryHashes": [
+        "12ec085446ea"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "jobs.json",
+        "cron",
+        "jobs",
+        "fixes",
+        "new"
+      ]
+    },
+    "memory:memory/2026-04-16.md:40:94": {
+      "key": "memory:memory/2026-04-16.md:40:94",
+      "path": "memory/2026-04-16.md",
+      "startLine": 40,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "- Checked cron directory structure - Searched for \"compact\" references using grep in session files ### Key Decisions - Expanded search approach to locate compaction summary - Found cron job reference: \"Persist Compaction Summaries\" in jobs.json ### Critical Context - Cron job ID: d964cfbd-9d04-401f-8f78-30ecb25b3bcb - Target memory file: memory/2026-04-16.md - Context usage exceeded 70% triggering compaction --- ## Cron: Persist Compaction Summaries (13:02 UTC) - **Check performed:** Yes - **Compaction summary found:** None (compactions: 0 in current session) - **Note:** Cron runs hourly to catch any OpenClaw auto-compaction events and persist them here. None detected at this time. ## Pr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44374824464321133,
+      "maxScore": 0.44374824464321133,
+      "firstRecalledAt": "2026-04-17T00:17:04.176Z",
+      "lastRecalledAt": "2026-04-17T00:17:04.176Z",
+      "queryHashes": [
+        "68c5eab7692d"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "jobs.json",
+        "memory/2026-04-16.md",
+        "auto-compaction",
+        "checked",
+        "cron",
+        "directory",
+        "structure",
+        "searched"
+      ]
+    },
+    "memory:memory/2026-04-15.md:63:101": {
+      "key": "memory:memory/2026-04-15.md:63:101",
+      "path": "memory/2026-04-15.md",
+      "startLine": 63,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026‑04‑16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron l",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5145551472902298,
+      "maxScore": 0.5145551472902298,
+      "firstRecalledAt": "2026-04-17T00:20:13.761Z",
+      "lastRecalledAt": "2026-04-17T00:20:13.761Z",
+      "queryHashes": [
+        "b76be5486d92"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "decisions",
+        "made",
+        "new",
+        "trades",
+        "executed"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1406:1457": {
+      "key": "memory:memory/2026-04-16.md:1406:1457",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1406,
+      "endLine": 1457,
+      "source": "memory",
+      "snippet": "- User reported that after a compaction event the assistant halted and did not resume work. - Investigation shows context was at **91%**, near the limit, with **11 compactions** already recorded. - Action taken: saved a checkpoint in `active.md` and noted the need to increase `reserveTokens` buffer or adjust compaction thresholds. - Next steps: monitor context levels, ensure pre‑compact saves at 60%/70% as per SOUL.md, and consider raising `reserveTokensFloor` above 20000 to provide more headroom. --- ## Pre-Compaction Memory Flush (23:47 UTC) - Durable memories stored in this file as per request. --- ## Pre-Compaction Save: 23:52 UTC ### Context: ### Resume Point # Resume Point - Mid-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49638997018337244,
+      "maxScore": 0.49638997018337244,
+      "firstRecalledAt": "2026-04-17T01:35:32.586Z",
+      "lastRecalledAt": "2026-04-17T01:35:32.586Z",
+      "queryHashes": [
+        "437212ad6f7d"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "active.md",
+        "soul.md",
+        "pre-compaction",
+        "user",
+        "reported",
+        "compaction",
+        "event",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-16.md:840:888": {
+      "key": "memory:memory/2026-04-16.md:840:888",
+      "path": "memory/2026-04-16.md",
+      "startLine": 840,
+      "endLine": 888,
+      "source": "memory",
+      "snippet": "- **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied | Job | Issue | Fix | |-----|-------|-----| | GGB-price-watch | Wrong Telegram recipient | Changed to `8",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6871281317276223,
+      "maxScore": 0.6871281317276223,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "agents.md",
+        "identity.md",
+        "user.md",
+        "todo.md",
+        "memory/active.md",
+        "ggb-price-watch",
+        "status",
+        "pending"
+      ]
+    },
+    "memory:memory/2026-04-16.md:116:175": {
+      "key": "memory:memory/2026-04-16.md:116:175",
+      "path": "memory/2026-04-16.md",
+      "startLine": 116,
+      "endLine": 175,
+      "source": "memory",
+      "snippet": "| TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| # 2026-04-16 - Daily Memory ## Reset Test SUCCESS (19:20 UTC) ### Trigger User said \"Remember?\" — recovery trigger in active.md ### Result ✅ **WORKING** — Memory survived session reset! ### What Loaded - active.md: Full checkpoint with \"Last checkpoint: 2026-04-16 19:21 UTC\" - Loop counter: 58 preserved - Fixed files list loaded - TODOs: [ ] Test persistence through reset ← NOW ✅ DONE ### Key Fi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6855428330426627,
+      "maxScore": 0.6855428330426627,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "0.0",
+        "351.30",
+        "396.12",
+        "6.53",
+        "4.35",
+        "4.40",
+        "4.50",
+        "4.00"
+      ]
+    },
+    "memory:memory/2026-04-16.md:703:747": {
+      "key": "memory:memory/2026-04-16.md:703:747",
+      "path": "memory/2026-04-16.md",
+      "startLine": 703,
+      "endLine": 747,
+      "source": "memory",
+      "snippet": "--- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6852911982718454,
+      "maxScore": 0.6852911982718454,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "reference",
+        "wake",
+        "portfolio",
+        "current"
+      ]
+    },
+    "memory:memory/2026-04-16.md:815:854": {
+      "key": "memory:memory/2026-04-16.md:815:854",
+      "path": "memory/2026-04-16.md",
+      "startLine": 815,
+      "endLine": 854,
+      "source": "memory",
+      "snippet": "#### 1. SOUL.md Optimization (22:09 UTC) - **Action:** Trimmed SOUL.md from 111 → 76 lines (~30% reduction) - **Method:** Removed duplicated boilerplate, now references TODO.md for wake-up/recovery protocols - **Result:** Bootstrap load reduced from ~250+ to ~212 lines - **Files optimized:** SOUL.md, TOOLS.md (already pointer), MEMORY.md (already pointer) #### 2. Cron Job Errors Identified (22:10 UTC) - **Found:** 6 jobs with delivery errors (not 7) - **Root cause:** Telegram usernames don't resolve to chat IDs - **Broken jobs:** - Stock Alert System → Message failed - TSLA Unlock Reminder → Message failed - Stock Target Alert → Message failed - GGB-price-watch → Chat @VyseAgent_bot",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6790817265665285,
+      "maxScore": 0.6790817265665285,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "todo.md",
+        "wake-up/recovery",
+        "tools.md",
+        "memory.md",
+        "ggb-price-watch",
+        "vyseagent-bot",
+        "optimization"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1379:1408": {
+      "key": "memory:memory/2026-04-16.md:1379:1408",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1379,
+      "endLine": 1408,
+      "source": "memory",
+      "snippet": "- [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market value - [ ] Monitor GGB for buy/sell opportunities - [ ] Trade log: record every transaction ### Trading Strategy (from AGENTS.md) ## Current Focus ### Portfolio | Ticker | Shares | Avg Cost | Current Price | Value | Notes | |--------|--------|----------|---------------|-------|-------| | GGB | 4.98 | $4.17 | $4.17 | $21.66 | Brazilian steel, +4.3% | | AMC",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6750121052442593,
+      "maxScore": 0.6750121052442593,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "buy/sell",
+        "agents.md",
+        "4.98",
+        "4.17",
+        "21.66",
+        "4.3",
+        "continue",
+        "refining"
+      ]
+    },
+    "memory:memory/2026-04-16.md:508:551": {
+      "key": "memory:memory/2026-04-16.md:508:551",
+      "path": "memory/2026-04-16.md",
+      "startLine": 508,
+      "endLine": 551,
+      "source": "memory",
+      "snippet": "- robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market va",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6742421746740056,
+      "maxScore": 0.6742421746740056,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "robinhood",
+        "guide",
+        "execution",
+        "steps"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1446:1481": {
+      "key": "memory:memory/2026-04-16.md:1446:1481",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1446,
+      "endLine": 1481,
+      "source": "memory",
+      "snippet": "- robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market va",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6731204935145828,
+      "maxScore": 0.6731204935145828,
+      "firstRecalledAt": "2026-04-17T02:30:49.077Z",
+      "lastRecalledAt": "2026-04-17T02:30:49.077Z",
+      "queryHashes": [
+        "729ba7b97c79"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "robinhood",
+        "guide",
+        "execution",
+        "steps"
       ]
     }
   }

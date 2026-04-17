@@ -5,7 +5,7 @@ _Learn about the person you're helping. Update this as you go._
 - **Name:** David
 - **What to call them:** David
 - **Pronouns:** _(optional)_
-- **Timezone:**
+- **Timezone:** ET (Eastern Time)
 - **Notes:** Game developer (aspiring), military background, using degree for Game Design, working toward publishing a game. Currently working on a Skies of Arcadia fan remake.
 
 ## Context

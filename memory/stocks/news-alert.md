@@ -1,7 +1,5 @@
-2026-04-14, GGB, Gerdau Stock Climbs Amid Price Target Boosts by Major Banks (Scotiabank, UBS, Itau BBA upgrades; JPMorgan raises target to $5.50), Impact: Bull
-2026-04-14, GGB, Gerdau Q4 2026 earnings miss EPS $-0.12 vs $0.11 estimate, revenue up $258M, Impact: Bear
-2026-04-14, GGB, Gerdau announces Texas EAF capex expansion to boost North America capacity, Impact: Bull
-2026-04-14, TSLA, UBS upgrades Tesla to Neutral with $352 price target after 21% decline, Impact: Neutral
-2026-04-14, TSLA, JPMorgan issues 60% downside warning on Tesla inventory crisis as unsold stock hits 164,000 units, Impact: Bear
-2026-04-14, TSLA, Tesla wins right to move lawsuits from Delaware to Texas court, Impact: Bull
-2026-04-14, TSLA, Tesla avoids California regulator suspension after dropping "Autopilot" term, Impact: Bull
+2026-04-13 | GGB | JPMorgan raises price target to $5.50, upgrades to overweight (bull)
+2026-04-02 | GGB | UBS raises price target to $4.60, maintains Buy rating (bull)
+2026-04-07 | TSLA | Shares down 4% after Q1 2026 deliveries miss consensus (bear)
+2026-04-15 | TSLA | Stock up ~8% after Elon Musk touts progress on AI5 chip (bull)
+2026-04-16 | TSLA | Border to Coast Pensions raises holdings by 83% (bull/neutral)

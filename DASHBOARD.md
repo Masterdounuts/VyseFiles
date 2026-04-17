@@ -2,13 +2,14 @@
 
 ## Portfolio Tracking
 
-### Current Positions (April 15, 2026)
+### Current Positions (April 16, 2026)
 | Stock | Shares | Price | Value |
 |-------|--------|-------|-------|
-| GGB | 5 | ~$4.26 | ~$21.30 |
-| TSLA | 0.016567 | ~$364 | ~$6.04 |
-| Cash | - | - | ~$20 |
-| **Total** | - | - | **~$47** |
+| GGB | 4.98 | $4.17 | $21.66 |
+| AMC | 8 | $1.65 | $13.20 |
+| TSLA | 0.016567 | ~$39 | $6.53 |
+| Cash | - | - | ~$24 |
+| **Total** | - | - | **~$65** |
 
 ### Target Goals
 - [ ] $100 portfolio (near-term)
@@ -19,8 +20,9 @@
 ## Trading Stats
 
 ### Today's Picks
-- **Primary:** MARA ($10.48, beta 5.48)
-- **Backup:** LCID, RIVN
+- **Primary:** GGB (swing play)
+- **Volatile:** AMC (earnings Apr 18)
+- **Hold:** TSLA until $8+
 
 ### Alert Status
 - [x] Morning Research (6 AM PT)

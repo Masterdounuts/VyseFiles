@@ -18,7 +18,7 @@
 | 10%           | $3.6M             |
 | 20%           | $1.8M             |
 
-**Current situation:** ~$10 in small positions
+**Current situation:** ~$65 in positions (GGB, AMC, TSLA)
 **Gap:** Massive - need to scale capital first
 
 ---

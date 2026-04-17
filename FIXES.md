@@ -96,3 +96,19 @@ geometry: margin=1in
 - **Fix:** Use CNBC quotes page directly: `https://www.cnc.com/quotes/GGB`
 - **Works for:** Both TSLA and GGB use CNBC format: `/quotes/{TICKER}`
 - **Status:** Fixed - price $4.29 captured
+
+---
+## Cron Job Telegram Delivery Fix
+- **Date:** April 16, 2026
+- **Problem:** Vyse-Readiness-Check (5 errors) + GGB-price-watch (1 error) failing on Telegram delivery
+- **Root Cause:** Jobs configured with @username (@VyseAgent_bot) instead of numeric chat ID, or missing delivery.to
+- **Fix:** Updated delivery.to to numeric ID 8742211590
+- **Status:** ✅ FIXED (23:11 UTC)
+
+---
+## Gateway Watch Cron Path Bug
+- **Date:** April 17, 2026
+- **Problem:** gateway-watch cron failing with ENOENT on script path
+- **Root Cause:** Cron triggers `/root/.openclaw/workspace/scripts/gateway_watch. sh` (space before .sh), actual file is `/home/openclaw/.openclaw/workspace/scripts/gateway_watch.sh`
+- **Fix:** Script path needs correction in cron config (space vs no space + wrong directory)
+- **Status:** ⚠️ Workaround: Gateway is healthy anyway; cron path bug needs fixing in OpenClaw config

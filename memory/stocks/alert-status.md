@@ -1,6 +1,6 @@
-# Stock Alert Status (2026-04-15 20:00 UTC)
+# Stock Alert Status (2026-04-16 14:00 UTC)
 
-- **GGB**: $4.31 (target $5+) – not reached.
-- **TSLA**: $391.28 (target $350+) – target reached! 🚀
+- **TSLA**: Current price $383.16. Target sell $350 not reached.
+- **GGB**: Current price $4.35. Target sell $5+ not reached.
 
-Action: Sent Telegram alert to David.
+No alerts sent.

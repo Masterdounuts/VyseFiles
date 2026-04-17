@@ -16,7 +16,7 @@
 
 ---
 
-## Best for Our Capital ($45)
+## Best for Our Capital ($65)
 
 ### 🥇 MARA (MARA Holdings)
 - **Price:** $10.42
@@ -38,14 +38,14 @@
 
 ## How Volatility Helps Us
 
-**With our $45 capital:**
+**With our $65 capital:**
 - Buy 4 shares MARA @ $10.42 = $41.68
 - If it moves 5% → +$2.08 (5% of $41.68)
 - If it moves 10% → +$4.17
 - Trade 2-3x/day → potential $5-10/day
 
 **The compound math:**
-- $45 start
+- $65 start
 - Make 5% (2.25) x 3 trades = $6.75/day
 - Reinvest → $51.75
 - Next day → could be $60+

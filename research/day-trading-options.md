@@ -5,9 +5,10 @@
 
 ---
 
-## Current Portfolio: ~$31.53
-- GGB: 6 shares @ $4.28 = $25.68 (bulk - swing)
-- TSLA: ~$5.85 (locked until ~Apr 16)
+## Current Portfolio: ~$65
+- GGB: 4.98 shares @ $4.17 = $21.66
+- AMC: 8 shares @ $1.64 = $13.20
+- TSLA: ~$6.53 (HOLD until $8+)
 
 ---
 

@@ -1,22 +1,31 @@
 # Resume Point - Mid-Conversation Checkpoint
 
-*Lightweight checkpoint for active discussions - NOT for tasks (use TODO.md)*
+*Structured handoff per Long-Chats Guide. Update before context hits 80%.* 
 
-Last updated: 2026-04-16 04:10 UTC
+---
+## Current Status (as of 13:09 UTC)
 
-## Current Discussion
-- **TSLA sell decision**: Sell before earnings Apr 22, or hold through?
-- Context: TSLA unlocks today (was locked due to Stock Reward rule)
-- Current price: ~$393 (up huge from free reward)
-- Earnings: Apr 22 (6 days away)
-- David's pending decision
+**Decision Made:** Go with AMC, NOT RIVN
 
-## Quick Recall (from TODO.md)
-- GGB: 6 shares @ ~$4.28
-- TSLA: Stock Reward unlocking TODAY
-- Focus: Check TSLA unlock → decide reallocation
+**Strategy:**
+- TSLA: HOLD until $8+ (alert set)
+- After TSLA sells: 70% GGB / 30% AMC
+- Total capital: ~$32 (TSLA $8 + cash $24.29)
 
-## Notes
-- Read TODO.md first for full task list
-- This file = active conversation thread only
-- Auto-updated by scripts/auto-checkpoint.sh
+**Volatile Pick: AMC**
+- Earnings: April 18 (2 days!)
+- Target: $6.60-$6.80
+- Stop: $5.20
+
+**Buying Power:** $24.29 (waiting for TSLA target)
+
+---
+## Files to Reference on Wake
+- portfolio. md (current holdings & plan)
+- robinhood-guide. md (execution steps)
+- AGENTS. md (strategy rules)
+
+**Wake-up:** Ask David if TSLA has hit $8 yet. If yes, execute GGB/AMC split.
+
+---
+*Updated: 2026-04-16 13:09 UTC*
