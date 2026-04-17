@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.4.11",
-    "lastTouchedAt": "2026-04-16T11:52:05.246Z"
+    "lastTouchedVersion": "2026.4.14",
+    "lastTouchedAt": "2026-04-17T00:23:09.783Z"
   },
   "update": {
     "checkOnStart": false
@@ -93,7 +93,12 @@
       },
       "compaction": {
         "mode": "safeguard",
-        "reserveTokensFloor": 20000
+        "reserveTokensFloor": 20000,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 15000
+        },
+        "reserveTokens": 25000
       },
       "imageGenerationModel": {
         "primary": "google/gemini-2.5-flash-preview-05-20"
@@ -175,6 +180,9 @@
         "enabled": true
       },
       "browser": {
+        "enabled": true
+      },
+      "telegram": {
         "enabled": true
       }
     }
