@@ -1,32 +1,50 @@
 # Stock Subagent
 
-Automated price monitoring for David's portfolio.
+Automated price monitoring for David's portfolio with **volatile opportunity detection**.
+
+## How It Works
+
+1. **Cron** runs `stock-trading-subagent.sh` every 30 minutes
+2. **Subagent** fetches prices via Stooq, checks targets, detects volatility
+3. **Volatility Detection**: If stock moves >3% since last check → writes to pending queue
+4. **Conferral**: Main agent reviews pending opportunities and decides whether to alert David
+5. **Alerts**: Via Telegram (auto-alerts for targets, approved alerts for volatile opportunities)
 
 ## Files
 
 - `config.yaml` - Settings (check interval, alert channel)
 - `state.json` - Portfolio positions, price targets, alert history
-
-## How It Works
-
-1. Cron runs `stock-agent.sh` every 30 minutes
-2. Script fetches current prices via web search
-3. Compares against buy/sell targets in `state.json`
-4. Alerts David when price hits any target
+- `pending-opportunities.json` - Volatile opportunities waiting for review
+- `last-prices.txt` - Price history for volatility tracking
+- `trading.log` - Execution log
+- `alerts.log` - Alert history
 
 ## Targets
 
 **GGB:**
-- Sell: $0.30, $0.40, $0.50
-- Buy: $0.15, $0.10, $0.00
+- Sell: $4.45, $4.60, $4.75
+- Buy: $4.10, $3.90
 
 **AMC:**
-- Sell: $1.80, $2.00, $2.20
-- Buy: $1.50, $1.40, $1.30
+- Sell: $2.00, $2.20
+- Buy: $1.60, $1.40
 
-**TSLA:**
-- Sell: $8.00+ (Stock Reward value)
-- Buy: N/A (holding)
+## Volatility Detection
+
+- **Threshold**: >3% price change since last check
+- **Flow**: Detected → Written to `pending-opportunities.json` → **Main agent reviews** → If approved → Telegram alert to David
+
+## Scripts
+
+- `stock-trading-subagent.sh` - Main monitoring script
+- `check-pending-opportunities.sh` - Main agent uses to review pending alerts
+
+## Cron Jobs
+
+| Job | Frequency | Purpose |
+|-----|-----------|---------|
+| Stock Price Monitor | */30 min | Run subagent, check targets |
+| Volatile Opportunity Review | */15 min | Main agent reviews pending |
 
 ## Adding Stocks
 
@@ -41,8 +59,3 @@ Edit `state.json` to add new stocks:
 ```
 
 Then add targets in the `targets` section.
-
-## Logs
-
-- `$WORKSPACE/logs/stock-agent.log` - Agent execution log
-- `$WORKSPACE/logs/alerts.log` - Alert history

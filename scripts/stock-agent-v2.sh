@@ -30,8 +30,8 @@ research_stock() {
 # === PRICE CHECK ===
 get_price() {
     local symbol=$1
-    # Quick fetch from finviz
-    local price=$(curl -s "https://www.finviz.com/quote.ashx?t=$symbol" 2>/dev/null | grep -oP 'Price:\K[0-9]+\.[0-9]{2}' | head -1)
+    # Fetch from Stooq (free, reliable)
+    local price=$(curl -s "https://stooq.com/q/l/?s=${symbol}.us&f=sd2t2ohlcv&h&e=csv" 2>/dev/null | tail -1 | cut -d',' -f7)
     echo "$price"
 }
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T15:20:35.203Z",
+  "updatedAt": "2026-04-20T23:46:57.574Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -77187,6 +77187,391 @@
         "stocks",
         "active",
         "trading"
+      ]
+    },
+    "memory:memory/2026-04-16.md:884:939": {
+      "key": "memory:memory/2026-04-16.md:884:939",
+      "path": "memory/2026-04-16.md",
+      "startLine": 884,
+      "endLine": 939,
+      "source": "memory",
+      "snippet": "## Subagent Readiness Loop Design (22:16 UTC) ### Proposed Purpose Validate Vyse can reliably run a trading subagent before spawning — ensuring stability, tool access, and system health. ### Check Sequence | # | Check | What It Validates | |---|-------|-------------------| | 1 | Context Health | `session_status` — context <80% | | 2 | Gateway Health | `openclaw gateway status` — running | | 3 | Cron Stability | `cron list` — error count = 0 | | 4 | Tool Access | Can reach web_fetch/web_search | | 5 | Messaging | Can reach delivery channel | | 6 | Subagent Runtime | `sessions_spawn` responsive | | 7 | Memory Access | Can read/write memory files | ### Pass/Fail Logic - **PASS**: All checks",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.505224746465683,
+      "maxScore": 0.5200228333473206,
+      "firstRecalledAt": "2026-04-20T23:26:25.337Z",
+      "lastRecalledAt": "2026-04-20T23:31:25.485Z",
+      "queryHashes": [
+        "04846ca4150b",
+        "7c544c4e007f",
+        "25d7fc9b22f3"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "gateway",
+        "session-status",
+        "web-fetch/web-search",
+        "sessions-spawn",
+        "read/write",
+        "pass/fail",
+        "subagent",
+        "readiness"
+      ]
+    },
+    "memory:memory/2026-04-16.md:843:892": {
+      "key": "memory:memory/2026-04-16.md:843:892",
+      "path": "memory/2026-04-16.md",
+      "startLine": 843,
+      "endLine": 892,
+      "source": "memory",
+      "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.0143153995275496,
+      "maxScore": 0.5162181109189987,
+      "firstRecalledAt": "2026-04-20T23:26:25.337Z",
+      "lastRecalledAt": "2026-04-20T23:31:25.485Z",
+      "queryHashes": [
+        "04846ca4150b",
+        "7c544c4e007f",
+        "0f484008438a",
+        "25d7fc9b22f3"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "agents.md",
+        "identity.md",
+        "user.md",
+        "todo.md",
+        "memory/active.md",
+        "subagent",
+        "polls",
+        "prices"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1170:1238": {
+      "key": "memory:memory/2026-04-16.md:1170:1238",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1170,
+      "endLine": 1238,
+      "source": "memory",
+      "snippet": "**Price monitoring** - Core to day trading, GGB-price-watch exists but fails silently ### Options Presented to David A) Fix GGB/Tesla price fetching B) Build self-healing cron system C) Something else Awaiting David's decision. --- ## Self-Healing Cron System Built (23:24 UTC) ### Created 1. **scripts/cron-health-monitor.sh** - Checks job health, auto-restarts failures 2. **Cron-Health-Monitor job** - Runs every 15 minutes via OpenClaw cron ### How It Works - Monitors all cron jobs for failures - Auto-restarts jobs after 2 consecutive failures - Alerts after 3 failures - Logs to /root/.openclaw/workspace/logs/cron-health.log --- ## Subagent Setup for Stock Research (23:24 UTC) ### C",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.2660855848349017,
+      "maxScore": 0.7644019950188086,
+      "firstRecalledAt": "2026-04-20T23:26:25.337Z",
+      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "queryHashes": [
+        "04846ca4150b",
+        "0f484008438a",
+        "25d7fc9b22f3",
+        "6d1944169365"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "ggb-price-watch",
+        "ggb/tesla",
+        "self-healing",
+        "scripts/cron-health-monitor.sh",
+        "auto-restarts",
+        "cron-health-monitor",
+        "price",
+        "monitoring"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2404:2444": {
+      "key": "memory:memory/2026-04-16.md:2404:2444",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2404,
+      "endLine": 2444,
+      "source": "memory",
+      "snippet": "- **Sent Telegram to David** asking about TSLA reallocation now that it's unlocked The new session is running independently. You can keep chatting here while the subagent handles the stock monitoring and alerts. What's next? assistant: Nice! The subagent delivered exactly what we needed. 📊 **What's happening now:** - David will see the Telegram alert with current prices - He's got the decision prompt: reallocate TSLA → GGB or new pick? - Once he replies, the subagent will execute the trade **In the meantime**, want me to: 1. **Monitor for his reply** and execute when he responds? 2. **Research new stock candidates** in case he wants to diversify? 3. **Something else entirely**? Let me k",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0162694215774535,
+      "maxScore": 0.5223531395196914,
+      "firstRecalledAt": "2026-04-20T23:26:25.337Z",
+      "lastRecalledAt": "2026-04-20T23:26:27.225Z",
+      "queryHashes": [
+        "04846ca4150b",
+        "7c544c4e007f"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "sent",
+        "telegram",
+        "david",
+        "asking",
+        "tsla",
+        "reallocation",
+        "now",
+        "it's"
+      ]
+    },
+    "memory:memory/2026-04-16.md:785:823": {
+      "key": "memory:memory/2026-04-16.md:785:823",
+      "path": "memory/2026-04-16.md",
+      "startLine": 785,
+      "endLine": 823,
+      "source": "memory",
+      "snippet": "### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market value - [ ] Monitor GGB for buy/sell opportunities - [ ] Trade log: record every transaction ### Trading Strategy (from AGENTS.md) ## Current Focus ### Portfolio | Ticker | Shares | Avg Cost | Current Price | Value | Notes | |--------|--------|---",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.209240266766747,
+      "maxScore": 0.7327463806535803,
+      "firstRecalledAt": "2026-04-20T23:26:25.337Z",
+      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "queryHashes": [
+        "04846ca4150b",
+        "0f484008438a",
+        "25d7fc9b22f3",
+        "6d1944169365"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "stock-research-worker",
+        "long-term",
+        "buy/sell",
+        "agents.md",
+        "subagent",
+        "stock",
+        "research",
+        "worker"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2371:2410": {
+      "key": "memory:memory/2026-04-16.md:2371:2410",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2371,
+      "endLine": 2410,
+      "source": "memory",
+      "snippet": "\"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 11:26 UTC] let's switch gears, Does that mean we should go to a new session? assistant: Good question. Here's the trade-off: **Stay in current session:** - Context at 51% — healthy buffer - Just added Decision-Log cron - Everything running smoothly **Start new session:** - Clean slate, no compaction risk for a while - We lose the in-progress conversation but memory files persist - Good for \"switching gears\" to a totally different focus **My take:** Since we've been stuck in loops before and you're ready to switch gears, this is a good natural break point. New session = fresh context before we do more wo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5143583595752715,
+      "maxScore": 0.5143583595752715,
+      "firstRecalledAt": "2026-04-20T23:26:27.225Z",
+      "lastRecalledAt": "2026-04-20T23:26:27.225Z",
+      "queryHashes": [
+        "7c544c4e007f"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "trade-off",
+        "decision-log",
+        "in-progress",
+        "label",
+        "openclaw",
+        "control",
+        "thu"
+      ]
+    },
+    "memory:memory/2026-04-16.md:429:471": {
+      "key": "memory:memory/2026-04-16.md:429:471",
+      "path": "memory/2026-04-16.md",
+      "startLine": 429,
+      "endLine": 471,
+      "source": "memory",
+      "snippet": "- Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infr",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2367634718429394,
+      "maxScore": 0.7284385656129666,
+      "firstRecalledAt": "2026-04-20T23:26:29.493Z",
+      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "queryHashes": [
+        "0f484008438a",
+        "6d1944169365"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "6.60",
+        "6.80",
+        "5.20",
+        "24.29",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04-16.md:702:744": {
+      "key": "memory:memory/2026-04-16.md:702:744",
+      "path": "memory/2026-04-16.md",
+      "startLine": 702,
+      "endLine": 744,
+      "source": "memory",
+      "snippet": "- Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5083249062299728,
+      "maxScore": 0.5083249062299728,
+      "firstRecalledAt": "2026-04-20T23:26:29.493Z",
+      "lastRecalledAt": "2026-04-20T23:26:29.493Z",
+      "queryHashes": [
+        "0f484008438a"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "6.60",
+        "6.80",
+        "5.20",
+        "24.29",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04-16.md:80:123": {
+      "key": "memory:memory/2026-04-16.md:80:123",
+      "path": "memory/2026-04-16.md",
+      "startLine": 80,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "- Total capital: ~$32 (TSLA $8 + cash $24.29) **Volatile Pick: AMC** - Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automatio",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4780761331319809,
+      "maxScore": 0.4780761331319809,
+      "firstRecalledAt": "2026-04-20T23:31:25.485Z",
+      "lastRecalledAt": "2026-04-20T23:31:25.485Z",
+      "queryHashes": [
+        "25d7fc9b22f3"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "24.29",
+        "6.60",
+        "6.80",
+        "5.20",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04-16.md:501:544": {
+      "key": "memory:memory/2026-04-16.md:501:544",
+      "path": "memory/2026-04-16.md",
+      "startLine": 501,
+      "endLine": 544,
+      "source": "memory",
+      "snippet": "- Total capital: ~$32 (TSLA $8 + cash $24.29) **Volatile Pick: AMC** - Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automatio",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4780761331319809,
+      "maxScore": 0.4780761331319809,
+      "firstRecalledAt": "2026-04-20T23:31:25.485Z",
+      "lastRecalledAt": "2026-04-20T23:31:25.485Z",
+      "queryHashes": [
+        "25d7fc9b22f3"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "24.29",
+        "6.60",
+        "6.80",
+        "5.20",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04-20.md:189:237": {
+      "key": "memory:memory/2026-04-20.md:189:237",
+      "path": "memory/2026-04-20.md",
+      "startLine": 189,
+      "endLine": 237,
+      "source": "memory",
+      "snippet": "- Fixed broken links in INDEX.md → new `kb/` paths - Removed stray `kb/{stocks` directory - Pushed commit `6cbc3e1` **Stock System Assessment:** - No dedicated subagent — just disabled cron alerts - Gap: price-target alerts not implemented - Recommendation: build price-check cron for buy/sell zones vs arbitrary % moves --- ## Stock Subagent Design - 2026-04-20 23:34 UTC **Portfolio Update (post-session refresh):** - GGB: 4.99 shares @ $4.28 = $21.36 - Cash: $31.32 - **Total Capital:** $52.68 ** David's Goals:** - Eventual: $70/day profit - Strategy: Reinvest 100% (no withdrawals until goal met) - Starting capital: ~$52 (realistic daily target: $2-5/day) **Research - GGB (Apr 20):** - C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7560516845043499,
+      "maxScore": 0.7560516845043499,
+      "firstRecalledAt": "2026-04-20T23:46:57.574Z",
+      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "queryHashes": [
+        "6d1944169365"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "index.md",
+        "price-target",
+        "price-check",
+        "buy/sell",
+        "post-session",
+        "4.99",
+        "4.28",
+        "21.36"
+      ]
+    },
+    "memory:memory/2026-04-16.md:816:854": {
+      "key": "memory:memory/2026-04-16.md:816:854",
+      "path": "memory/2026-04-16.md",
+      "startLine": 816,
+      "endLine": 854,
+      "source": "memory",
+      "snippet": "### Context: Pre-compaction memory flush ### Key Durable Memories #### 1. SOUL.md Optimization (22:09 UTC) - **Action:** Trimmed SOUL.md from 111 → 76 lines (~30% reduction) - **Method:** Removed duplicated boilerplate, now references TODO.md for wake-up/recovery protocols - **Result:** Bootstrap load reduced from ~250+ to ~212 lines - **Files optimized:** SOUL.md, TOOLS.md (already pointer), MEMORY.md (already pointer) #### 2. Cron Job Errors Identified (22:10 UTC) - **Found:** 6 jobs with delivery errors (not 7) - **Root cause:** Telegram usernames don't resolve to chat IDs - **Broken jobs:** - Stock Alert System → Message failed - TSLA Unlock Reminder → Message failed - Stock Tar",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7446436431248271,
+      "maxScore": 0.7446436431248271,
+      "firstRecalledAt": "2026-04-20T23:46:57.574Z",
+      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "queryHashes": [
+        "6d1944169365"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "pre-compaction",
+        "soul.md",
+        "todo.md",
+        "wake-up/recovery",
+        "tools.md",
+        "memory.md",
+        "context",
+        "pre"
       ]
     }
   }

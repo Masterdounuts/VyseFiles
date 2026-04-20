@@ -1,6 +1,5 @@
 [[index|Home]] • [[memory/[[memory/trading_rules]]|Trading Rules]]
 
-
 # Day Trading Protocol for David
 
 ## Concept
@@ -8,17 +7,15 @@ Trade small capital actively to compound gains.
 - Small gains + frequent trades = growth
 - David executes; I monitor/research
 
-## Capital (Apr 16, 2026)
-- **GGB:** 4.98 shares @ $4.17 (now ~$21.66 value)
-- **AMC:** 8 shares @ $1.64 (now ~$13.20 value)
-- **TSLA:** 0.016567 shares @ $351.30 (now ~$6.53) - HOLD until $8+
-- **Cash:** ~$24
-- **Total:** ~$65
+## Capital (Apr 20, 2026)
+- **GGB:** 4.99 shares @ $4.17 (now ~$21.36 value)
+- **Cash:** $31.32
+- **Total:** $52.68
+- **Goal:** Compound to $70/day eventual (reinvest 100%)
 
 ## Strategy
-**TSLA Unlock (Apr 16):**
-- ✅ Decision: HOLD until market value reaches $8+ (Stock Reward)
-- **Reallocation after sell:** 70% GGB / 30% AMC
+- Focus on GGB for now (solid setup, near 52W high)
+- No active AMC position - dropped from monitoring
 
 ## Rules (GGB)
 1. Set target prices (buy support, sell resistance)
@@ -27,45 +24,66 @@ Trade small capital actively to compound gains.
 4. Stop-loss max 5%
 5. Reinvest immediately
 
-## Levels (Apr 16)
-- **Buy:** $4.15, $4.10, $4.00
-- **Sell:** $4.30, $4.40, $4.50
-- **52-wk range:** $2.47-$4.66
+## GGB Levels (Apr 20)
+- **Buy:** $4.10, $3.90
+- **Sell:** $4.45, $4.60, $4.75 (scale: 50% at $4.45, 50% at $4.60)
+- **52-wk range:** $2.48-$4.66
+- **Analyst Target:** $4.81 (Itau BBA upgrade Apr 1)
 
-## Volatile Picks (for small positions)
-- **AMC:** ~$1.65, earnings Apr 18, high volatility
-- **NOK:** $3.92, earnings Apr 19, 5G news
-- **DT:** $7.18, earnings Apr 23, mobile growth
-
----
-## Stock Subagent (Automated)
-
-**Status:** Active ✅
-- Cron: Every 30 minutes
-- Script: `scripts/stock-agent.sh`
-- Config: `kb/stocks/agent/config.yaml`
-- State: `kb/stocks/agent/state.json`
+## Volatile Opportunity System (New!)
 
 **How it works:**
-1. Checks prices against buy/sell targets
-2. Alerts David when price hits any target
-3. Logs all alerts to `logs/alerts.log`
+1. Subagent monitors GGB every 30 min via cron
+2. If price moves >3% since last check → writes to `pending-opportunities.json`
+3. Main agent reviews pending opportunities every 15 min
+4. If I think it's a good opportunity → Telegram alert to David
+5. David decides whether to act
 
-**Adding stocks:** Edit `kb/stocks/agent/state.json`
+**Why this system?**
+- Catches sudden moves without spamming you
+- I evaluate before alerting - only good setups get through
+- You get notified with my take on whether it's worth a look
 
 ---
+
+## Stock Subagent (V3 - Active)
+
+**Scripts:**
+- `stock-trading-subagent.sh` - Price monitor + volatility detector
+- `check-pending-opportunities.sh` - Main agent reviews pending
+- `clear-pending.sh` - Clears queue after review
+
+**Files:**
+- State: `kb/stocks/agent/state.json`
+- Pending: `kb/stocks/agent/pending-opportunities.json`
+- Logs: `kb/stocks/agent/trading.log`, `alerts.log`
+
+**Cron Jobs:**
+| Job | Frequency | Purpose |
+|-----|-----------|---------|
+| Stock Price Monitor | */30 min | Run subagent, check GGB targets |
+| Volatile Opportunity Review | */15 min | Main agent reviews pending |
+
+**Capabilities:**
+- ✅ Live prices via Stooq
+- ✅ Auto-alerts on buy/sell target hits
+- ✅ Volatile opportunity detection (>3% move)
+- ✅ Conferral system (I review → Telegram alert)
+
+---
+
 ## Daily Routine
-1. Check market open prices
-2. Set alerts for targets
-3. Monitor opportunities
+1. Check market prices
+2. Monitor GGB for targets
+3. Review any volatile opportunities
 4. David executes trades
 5. Log every trade
 6. Reinvest gains
 
 ## My Role
-- Monitor prices (CNBC)
-- Research setups
-- Alert on opportunities
+- Monitor GGB prices
+- Alert on target hits (auto)
+- Evaluate volatile opportunities (conferral)
 - Track portfolio
 - Log trades
 
@@ -73,14 +91,6 @@ Trade small capital actively to compound gains.
 - Execute trades
 - Watch charts
 - Make final decisions
-
----
-## Session Compaction Protocol
-- **FIXED (Apr 16):** config patch reserveTokens=25000 — prevents crashes
-- Trigger at 60-70% context
-- Check session_status
-- Run compaction when needed
-- **Rule:** Config first, then behavior. Never add overhead "just in case."
 
 ---
 *Keep it lean, act fast.*
