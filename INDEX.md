@@ -58,6 +58,7 @@ Your knowledge base + my operating system. Organized by context.
 - [[references/obsidian-guide.md|Obsidian Guide]] - Quick reference
 - [[references/vyse-obsidian-workflow.md|Vyse Workflow]] - Our workflow
 - [[obsidian-prototype/MIGRATION.md|Migration]] - Vault setup
+- [[obsidian-prototype/daily-note-template.md|Daily Note Template]] - Daily log template
 
 ## 🔧 Custom Systems
 
@@ -67,6 +68,13 @@ Your knowledge base + my operating system. Organized by context.
 | **Context Protection** | [[TODO.md|Todo]] → [[loop-progress.md|Loop Progress]] |
 | **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
 | **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
+
+## 📋 Templates
+
+| File | Purpose |
+|------|---------|
+| [[obsidian-prototype/daily-note-template.md|Daily Note]] | Daily log template |
+| [[obsidian-prototype/decision-log-template.md|Decision Log]] | Track decisions |
 
 ## ⚡ Quick Scripts
 
