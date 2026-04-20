@@ -1,4 +1,6 @@
 # Vyse + Obsidian Workflow
+---
+[[INDEX.md|← Back]]
 
 ## Daily Flow
 

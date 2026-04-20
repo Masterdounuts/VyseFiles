@@ -1,4 +1,6 @@
 # Obsidian Quick Reference
+---
+[[INDEX.md|← Back]]
 
 ## Wikilinks
 | Type | Syntax |
