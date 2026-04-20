@@ -10,6 +10,29 @@ On every wake (including after context resets), read these files in order:
 2. **active.md** — Current task and work in progress
 3. **PENDING.md** — Queued tasks awaiting action
 4. **memory/YYYY-MM-DD.md** — Today's memory file if exists
+5. **decisions/index.md** — Recent decisions (dataview query)
+
+## Obsidian Integration
+
+The workspace uses Obsidian-compatible formatting:
+
+- **Daily notes** in `memory/` have frontmatter (`date`, `tags`)
+- **Wikilinks** `[[note]]` for internal linking
+- **Decision index** at `decisions/index.md` with dataview queries
+
+### Query Recent Decisions
+```dataview
+TABLE date, decision, reason FROM "memory"
+WHERE decision
+SORT date DESC
+LIMIT 5
+```
+
+### Query Today's Notes
+```dataview
+TABLE file.name, tags FROM "memory"
+WHERE date = date("2026-04-20")
+```
 
 ## If Files Are Stale
 
@@ -28,3 +51,4 @@ This ensures continuity after:
 ---
 
 *This file loads on every session start, not just first run.*
+*Updated 2026-04-20: Added Obsidian integration + dataview queries*
