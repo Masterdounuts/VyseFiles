@@ -1,0 +1,38 @@
+{
+  "patterns": {
+    "GGB": {
+      "buy_zone_accuracy": 0.75,
+      "sell_zone_accuracy": 0.80,
+      "avg_hold_time_hours": 4,
+      "best_days": ["Tuesday", "Wednesday", "Thursday"],
+      "worst_days": ["Monday", "Friday"],
+      "notes": "Steel sector, follows Brazil market, earnings sensitive"
+    },
+    "AMC": {
+      "buy_zone_accuracy": 0.60,
+      "sell_zone_accuracy": 0.65,
+      "avg_hold_time_hours": 2,
+      "best_days": ["Tuesday", "Wednesday"],
+      "worst_days": ["Friday"],
+      "notes": "Meme stock, short squeeze potential, high volume"
+    }
+  },
+  "adjustments": {
+    "GGB": {
+      "last_adjusted": "2026-04-20",
+      "reason": "Near 52W high, tightening buy zones"
+    },
+    "AMC": {
+      "last_adjusted": "2026-04-20",
+      "reason": "High volatility, wider sell zones"
+    }
+  },
+  "performance": {
+    "total_trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0.0,
+    "avg_gain_percent": 0.0,
+    "avg_loss_percent": 0.0
+  }
+}
