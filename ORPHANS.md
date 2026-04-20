@@ -1,5 +1,7 @@
 # Orphan Files
 
+*Last updated: 2026-04-20 22:00 UTC*
+
 Files not yet linked to the graph. Click to view.
 
 ## Root Files
@@ -38,6 +40,12 @@ Files not yet linked to the graph. Click to view.
 
 ## Tests
 - [[Test folder for obsidian/Testing Github|Testing]]
+
+## Obsidian Prototype (New Apr 20)
+- [[obsidian-prototype/MIGRATION.md|Migration Guide]] - How to migrate to Obsidian vault
+- [[obsidian-prototype/daily-note-template.md|Daily Note Template]]
+- [[obsidian-prototype/decision-log-template.md|Decision Log Template]]
+- [[obsidian-prototype/memory/2026-04-20.md|Example Daily Note]]
 
 ---
 *Linked to [[INDEX.md]] or [[SOUL.md]] to connect to graph*

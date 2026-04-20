@@ -74,6 +74,7 @@ Quick navigation for the VyseFiles repo.
 - [[memory/trading_rules|Trading Rules]]
 
 - [[ORPHANS.md|Orphans]] - Unlinked files
+- [[obsidian-prototype/MIGRATION.md|Obsidian Migration]] - Vault setup guide
 
 ---
 *Last updated: 2026-04-20*
