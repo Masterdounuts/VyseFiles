@@ -4,3 +4,5 @@
 - **GGB**: Current price $4.35. Target sell $5+ not reached.
 
 No alerts sent.
+---
+[[INDEX.md|← Back]]

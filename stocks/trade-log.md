@@ -13,4 +13,5 @@
 ---
 
 *Start logging from first trade*
-*Goal: Prove the system works*
+*Goal: Prove the system works*---
+[[INDEX.md|← Back to Index]]

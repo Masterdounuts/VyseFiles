@@ -115,3 +115,5 @@ geometry: margin=1in
 - **Root Cause:** Cron triggers `/root/.openclaw/workspace/scripts/gateway_watch. sh` (space before .sh), actual file is `/home/openclaw/.openclaw/workspace/scripts/gateway_watch.sh`
 - **Fix:** Script path corrected - now points to correct location `/root/.openclaw/workspace/scripts/gateway_watch.sh`
 - **Status:** ✅ FIXED (verified Apr 20, 2026) - cron runs successfully with 0 errors
+---
+[[INDEX.md|← Back to Index]]

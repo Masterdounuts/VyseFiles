@@ -81,3 +81,5 @@
 | Wild‑Card | SAVA | $1.75 | $5 | +185% | Potential breakthrough in Alzheimer’s therapy, high risk |
 
 Feel free to set alerts on the target levels or ask for deeper dive on any of these.
+---
+[[INDEX.md|← Back]]

@@ -11,3 +11,5 @@
 | # | Time | Context % |
 |---|------|-----------|
 | 1 | 17:26 UTC | 82% |
+---
+[[INDEX.md|← Back to Index]]

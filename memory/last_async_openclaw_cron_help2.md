@@ -5,3 +5,5 @@
 - Details: This output is from running `openclaw cron --help`. It confirms the installed version (2026.4.11) and provides a brief description of the `cron` subcommand, indicating it manages cron jobs via the Gateway scheduler.
 - Implication: Confirms the CLI is functional and the `cron` management commands are available. No immediate action required.
 - Next steps: Keep this reference for future cron job creation, editing, or troubleshooting.
+---
+[[INDEX.md|← Back]]
