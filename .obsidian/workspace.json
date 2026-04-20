@@ -179,6 +179,9 @@
   },
   "active": "f6473bce89b37991",
   "lastOpenFiles": [
+    "index.md",
+    "scripts/create-daily-note.sh",
+    "references/vyse-obsidian-workflow.md",
     "memory/obsidian-test.md",
     "Test folder for obsidian/Testing Github.md",
     "templates/daily-note.md",
