@@ -2,6 +2,23 @@
 
 *Loads on every session start to recover context*
 
+## Communication & Knowledge Workflow
+
+| Component | Role |
+|-----------|------|
+| **Control UI** | Your primary way to message me |
+| **Obsidian Vault** | Primary knowledgebase (wikilinks + frontmatter) |
+| **GitHub** | I push changes here after edits |
+
+**My routine:**
+1. Wake → Pull latest from GitHub
+2. Read BOOTSTRAP → HANDOFF → active → PENDING
+3. Work on your requests
+4. Push changes to GitHub when done
+
+---
+
+
 ## Wake-up Protocol
 
 On every wake (including after context resets), read these files in order:
