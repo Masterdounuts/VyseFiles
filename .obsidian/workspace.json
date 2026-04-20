@@ -189,6 +189,11 @@
   },
   "active": "f6473bce89b37991",
   "lastOpenFiles": [
+    "scripts/stock-trading-subagent.sh",
+    "scripts/clear-pending.sh",
+    "scripts/check-pending-opportunities.sh",
+    "kb/stocks/agent/pending-opportunities.json",
+    "kb/stocks/agent/last-prices.txt",
     "scripts/stock-agent-v2.sh",
     "kb/stocks/agent/research.md",
     "kb/stocks/agent/learnings.json",
@@ -213,17 +218,12 @@
     "kb/system/FIXES.md",
     "kb/stocks/trade-log.md",
     "kb/stocks/rules.md",
-    "kb/stocks/research",
-    "kb/system",
-    "kb/stocks",
     "kb/index.md",
-    "kb",
     "memory/stocks/morning-research.md",
     "obsidian-prototype/daily-note-template.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-website-memory-capture.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-flag-assumptions-added.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-robinhood-setup.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
-    "for"
+    "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md"
   ]
 }
