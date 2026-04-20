@@ -189,6 +189,9 @@
   },
   "active": "f6473bce89b37991",
   "lastOpenFiles": [
+    "scripts/stock-agent-v2.sh",
+    "kb/stocks/agent/research.md",
+    "kb/stocks/agent/learnings.json",
     "scripts/stock-agent.sh",
     "kb/stocks/agent/state.json",
     "kb/stocks/agent/README.md",
@@ -221,9 +224,6 @@
     "memory/archive/2026-04-16-timestamped/2026-04-16-flag-assumptions-added.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-robinhood-setup.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-heyron-guide.md",
-    "for",
-    "folder",
-    "Test"
+    "for"
   ]
 }
