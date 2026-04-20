@@ -62,5 +62,14 @@ Quick navigation for the VyseFiles repo.
 3. **Trading** — stock alerts, research, trade logging
 4. **Context Protection** — guard_context, detect-loop
 
+## 📈 Trading Research
+
+- [[memory/stocks/morning-research|Morning Research]]
+- [[memory/stocks/weekly-research|Weekly Research]]
+- [[memory/stocks/day-trade-research|Day Trade Research]]
+- [[memory/stocks/research|Stock Research]]
+- [[memory/stocks/news-alert|News Alert]]
+- [[memory/stocks/alert-status|Alert Status]]
+
 ---
 *Last updated: 2026-04-20*
