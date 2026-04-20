@@ -11,14 +11,10 @@
             "id": "f6473bce89b37991",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "memory/stocks/morning-research.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "morning-research"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
