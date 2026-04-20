@@ -38,4 +38,6 @@ Create a summary of today:
 
 ---
 
-*Last updated: April 16, 2026*
+*Last updated: April 16, 2026*-e 
+---
+[[INDEX.md|← Back]]

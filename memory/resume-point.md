@@ -2,6 +2,8 @@
 
 *Structured handoff per Long-Chats Guide. Update before context hits 80%.* 
 
+Related: [[../workspace/resume-point.md|Resume Point (workspace)]] | [[../workspace/portfolio.md|Portfolio]] | [[INDEX.md]]
+
 ---
 ## Current Status (as of 13:09 UTC)
 
@@ -21,9 +23,9 @@
 
 ---
 ## Files to Reference on Wake
-- portfolio. md (current holdings & plan)
-- robinhood-guide. md (execution steps)
-- AGENTS. md (strategy rules)
+- portfolio.md (current holdings & plan)
+- robinhood-guide.md (execution steps)
+- AGENTS.md (strategy rules)
 
 **Wake-up:** Ask David if TSLA has hit $8 yet. If yes, execute GGB/AMC split.
 

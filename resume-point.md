@@ -1,13 +1,16 @@
 [[index|Home]]
 
-
 # Resume Point
+
+*Mid-conversation checkpoint.*
 
 **Last updated:** 2026-04-17 17:23 UTC
 **Context:** 99% (compaction imminent)
 
 ## Current Task
 Workflow self-audit - completing autonomous system setup
+
+Related: [[HANDOFF.md|Handoff]] | [[BOOTSTRAP.md|Bootstrap]] | [[active.md|Active]] | [[INDEX.md|Index]]
 
 ## Completed
 - detect-loop.sh ✓

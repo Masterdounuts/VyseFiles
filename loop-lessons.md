@@ -1,10 +1,13 @@
 [[index|Home]]
 
-
 # Loop Lessons Learned
+
+*Legacy iteration tracking system.*
 
 ## Lessons Log
 - Started: 2026-04-16 17:26 UTC
+
+Related: [[SOUL.md|Vyse Soul]] | [[INDEX.md|Index]]
 
 ---
 

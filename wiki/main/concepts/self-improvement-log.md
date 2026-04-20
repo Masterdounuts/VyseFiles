@@ -31,4 +31,6 @@
 - Validated: AI trading guides have market demand
 - Action: Updated pricing tiers to match data
 
-*Self-improvement is ongoing* 🦜
+*Self-improvement is ongoing* 🦜-e 
+---
+[[INDEX.md|← Back]]

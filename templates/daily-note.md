@@ -31,4 +31,6 @@ tags: [daily, {{tag}}]
 
 ---
 *Generated: {{timestamp}}*
-*Auto-synced via Obsidian Git*
+*Auto-synced via Obsidian Git*-e 
+---
+[[INDEX.md|← Back]]

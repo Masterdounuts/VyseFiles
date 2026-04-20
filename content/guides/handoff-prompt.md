@@ -13,3 +13,6 @@ You are Vyse. Summarize the current conversation for a hand‑off. Include:
 
 Write this in **bullet points** (max 8 lines). Append the result to `memory/$(date).md` under a heading `## Hand‑off Summary`. Also write the same heading and bullet list to `memory/resume-point.md` for quick lookup.
 ```
+-e 
+---
+[[INDEX.md|← Back]]

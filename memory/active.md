@@ -2,8 +2,12 @@
 
 # Active Session Checkpoint
 
+*Archived session state.*
+
 ## Last Update
 2026-04-16 23:38 UTC
+
+Related: [[../workspace/active.md|Active (workspace)]] | [[HANDOFF.md]] | [[INDEX.md]]
 
 ## Context Status
 ⚠️ **24%** - CRITICAL, about to compact again

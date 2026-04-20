@@ -41,4 +41,6 @@
 - **Create checkpoint & hand‑off prompt files**.
 - **Add a tiny helper script** (`scripts/check_context.sh`) that the cron can invoke.
 
-Let me know if you’d like me to create the remaining files or enable the new cron now.
+Let me know if you’d like me to create the remaining files or enable the new cron now.-e 
+---
+[[INDEX.md|← Back]]

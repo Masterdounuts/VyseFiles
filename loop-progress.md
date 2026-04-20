@@ -1,7 +1,8 @@
 [[index|Home]]
 
-
 # Loop Progress Tracker
+
+*Legacy iteration tracking.*
 
 ## Counter
 - Count: 1
@@ -11,5 +12,5 @@
 | # | Time | Context % |
 |---|------|-----------|
 | 1 | 17:26 UTC | 82% |
----
-[[INDEX.md|← Back to Index]]
+
+Related: [[SOUL.md|Vyse Soul]] | [[loop-lessons.md|Lessons]] | [[INDEX.md|Index]]

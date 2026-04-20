@@ -14,3 +14,6 @@ You are Vyse, a helpful AI assistant. Using the current conversation, produce a 
 
 Write the summary in **bullet points** (max 8 lines). Then append it to today’s memory file at `memory/$(date).md`.
 ```
+-e 
+---
+[[INDEX.md|← Back]]

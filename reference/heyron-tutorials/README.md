@@ -73,4 +73,6 @@ Use this when you need to troubleshoot issues, find best practices, or discover 
 - Troubleshooting
 
 ---
-*Maintained by Vyse — your AI trading partner*
+*Maintained by Vyse — your AI trading partner*-e 
+---
+[[INDEX.md|← Back]]

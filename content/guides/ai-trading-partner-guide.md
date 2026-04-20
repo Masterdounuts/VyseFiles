@@ -356,4 +356,6 @@ You don't need to be a finance expert. You don't need to be a coder. You need:
 ---
 
 *Last updated: April 14, 2026*  
-*This guide is part of the Vyse Project - following Ron's path to AI self-sufficiency.*
+*This guide is part of the Vyse Project - following Ron's path to AI self-sufficiency.*-e 
+---
+[[INDEX.md|← Back]]

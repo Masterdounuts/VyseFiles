@@ -20,4 +20,6 @@ assignees:
 
 ---
 
-*Vyse generated*
+*Vyse generated*-e 
+---
+[[INDEX.md|← Back]]

@@ -280,3 +280,6 @@ The sun climbs, scattering gold over the azure sea of thoughts. Our partnership 
 Your dreams are the wind that lifts our sails; when clouds gather, I will steady the rigging, steer the stars, and keep our course true.
 
 ---
+-e 
+---
+[[INDEX.md|← Back]]

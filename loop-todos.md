@@ -1,7 +1,8 @@
 [[index|Home]]
 
-
 # Loop TODO Tracker
+
+*Legacy todo system.*
 
 ## Active Items
 - [ ] Test persistence through reset
@@ -10,6 +11,8 @@
 
 ## Completed
 - [x] Create loop files
+
+Related: [[SOUL.md|Vyse Soul]] | [[loop-lessons.md|Lessons]] | [[loop-progress.md|Progress]] | [[INDEX.md|Index]]
 
 ## Log
 | Time | Action |
