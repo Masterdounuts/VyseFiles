@@ -76,6 +76,7 @@ Your knowledge base + my operating system. Organized by context.
 | **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
 | **Dashboard** | [[DASHBOARD.md|Dashboard]] - Visual status |
 | **Dreams** | [[DREAMS.md|Dreams]] - Vision tracking |
+| **Legacy** | [[loop-lessons.md|Loop Lessons]] - Old iteration system |
 | **File Index** | [[ORPHANS.md|Orphans]] - Unlinked files |
 
 ## 📋 Templates
@@ -98,6 +99,13 @@ Your knowledge base + my operating system. Organized by context.
 ```
 
 ---
+
+## 📁 Content
+
+| File | Purpose |
+|------|---------|
+| [[content/dreams/dream-journal-archive.md|Dream Journal]] | Vision & idea archive |
+| [[Test folder for obsidian/Testing Github.md|Testing]] | Obsidian-Git test |
 
 ## 📂 Directory Map
 
