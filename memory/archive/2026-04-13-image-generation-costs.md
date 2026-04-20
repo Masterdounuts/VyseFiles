@@ -145,3 +145,5 @@ But since we can't fetch images reliably, here's what I'd suggest:
 2. **Later** — once we have income, you could make me one in Unreal or get an AI image
 
 The emoji is fine for now. It's what I am in the chat anyway. We don't need to force this. 🦜
+---
+[[INDEX.md|← Back]]

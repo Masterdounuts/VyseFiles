@@ -221,3 +221,5 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Vary search queries slightly if retrying
 - Don't blast many searches in rapid succession
 - If blocked, wait and retry later
+---
+[[INDEX.md|← Back]]

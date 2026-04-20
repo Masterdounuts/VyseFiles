@@ -323,3 +323,5 @@ $30,000/month - not $20K. That's what Ron-level AI cases generate. We should aim
 - **Root cause:** duckduckgo plugin not enabled in config
 - **Fix:** Add "duckduckgo": {"enabled": true} to plugins.entries in openclaw.json, then restart gateway
 - **Verified:** Works now
+---
+[[INDEX.md|← Back]]
