@@ -37,6 +37,23 @@ Trade small capital actively to compound gains.
 - **NOK:** $3.92, earnings Apr 19, 5G news
 - **DT:** $7.18, earnings Apr 23, mobile growth
 
+---
+## Stock Subagent (Automated)
+
+**Status:** Active ✅
+- Cron: Every 30 minutes
+- Script: `scripts/stock-agent.sh`
+- Config: `kb/stocks/agent/config.yaml`
+- State: `kb/stocks/agent/state.json`
+
+**How it works:**
+1. Checks prices against buy/sell targets
+2. Alerts David when price hits any target
+3. Logs all alerts to `logs/alerts.log`
+
+**Adding stocks:** Edit `kb/stocks/agent/state.json`
+
+---
 ## Daily Routine
 1. Check market open prices
 2. Set alerts for targets

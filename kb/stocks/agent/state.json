@@ -1,0 +1,39 @@
+{
+  "portfolio": {
+    "GGB": {
+      "shares": 6,
+      "avg_cost": 0.30,
+      "notes": "Penny stock, high volatility"
+    },
+    "AMC": {
+      "shares": 8,
+      "avg_cost": 1.64,
+      "notes": "Meme stock, earnings Apr 18"
+    },
+    "TSLA": {
+      "shares": 0.016567,
+      "avg_cost": 351.30,
+      "notes": "Stock reward, HOLD until $8+ value"
+    }
+  },
+  "targets": {
+    "GGB": {
+      "buy": [0.15, 0.10, 0.00],
+      "sell": [0.30, 0.40, 0.50],
+      "last_price": null
+    },
+    "AMC": {
+      "buy": [1.50, 1.40, 1.30],
+      "sell": [1.80, 2.00, 2.20],
+      "last_price": null
+    },
+    "TSLA": {
+      "buy": [],
+      "sell": [8.00],
+      "last_price": null,
+      "notes": "Sell when value reaches $8+ (Stock Reward unlock)"
+    }
+  },
+  "alerts_sent": [],
+  "last_check": null
+}
