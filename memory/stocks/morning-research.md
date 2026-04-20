@@ -32,5 +32,8 @@
 **Telegram note for David** (to be sent manually):
 ```
 Morning Research: Best play today is MARA. Price: $11.26. Reason: High volatility (beta 5.43) and recent AI/HPC pivot news give short‑term swing potential.
-```---
+```
+
+**Related:** [[memory/stocks/alert-status]] | [[research/volatile-stocks]] | [[stocks/trade-log]]
+---
 [[INDEX.md|← Back]]
