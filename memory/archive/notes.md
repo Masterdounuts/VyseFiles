@@ -84,3 +84,5 @@
 ---
 
 *Disclaimer: Research only. Not financial advice. David makes all trading decisions.*
+---
+[[INDEX.md|← Back]]

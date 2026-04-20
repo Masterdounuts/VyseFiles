@@ -20,4 +20,5 @@ LIMIT 10
 
 ---
 
-*This file auto-updates based on dataview queries. Open in Obsidian to see the rendered table.*
+*This file auto-updates based on dataview queries. Open in Obsidian to see the rendered table.*---
+[[INDEX.md|← Back]]

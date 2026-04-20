@@ -32,4 +32,5 @@
 ## What to Do on Wake
 1. FIRST: Check context % — if >70%, save checkpoint immediately
 2. Continue investigation: find where decision protocol failed
-3. Fix the config to prevent compaction loop
+3. Fix the config to prevent compaction loop---
+[[INDEX.md|← Back]]

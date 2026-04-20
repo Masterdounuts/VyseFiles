@@ -20,4 +20,5 @@ If the query above shows this note, dataview is working ✅
 
 ---
 
-*Vyse wrote this to test the workflow*
+*Vyse wrote this to test the workflow*---
+[[INDEX.md|← Back]]

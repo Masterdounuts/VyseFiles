@@ -210,3 +210,5 @@ assistant: ✅ Saved to memory. Ready for the reset!
 - INDEX.md for navigation
 
 See you on the other side 🦜
+---
+[[INDEX.md|← Back]]

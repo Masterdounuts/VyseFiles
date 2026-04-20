@@ -34,4 +34,5 @@ Find best volatile stock for day trading tomorrow with ~$47 capital.
 2. Look for dip opportunity
 3. Execute if setup is right
 
-*Research done: 2026-04-14 23:19 UTC*
+*Research done: 2026-04-14 23:19 UTC*---
+[[INDEX.md|← Back]]

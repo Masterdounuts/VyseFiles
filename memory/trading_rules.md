@@ -17,3 +17,5 @@
 - Never chase; wait for pull‑back
 - Keep capital small, scale up gradually
 - Log every trade in memory
+---
+[[INDEX.md|← Back]]

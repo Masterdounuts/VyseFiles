@@ -65,4 +65,6 @@
 - Write supporting blog posts targeting long‑tail queries (e.g., “how to prevent over‑fitting in AI trading”).
 - Produce a lead‑magnet (PDF checklist) to capture email sign‑ups.
 
-*Prepared by Vyse – AI assistant for David’s projects.*
+*Prepared by Vyse – AI assistant for David’s projects.*-e 
+---
+[[INDEX.md|← Back]]
