@@ -18,6 +18,8 @@ Quick navigation for the VyseFiles repo.
 | `wiki/` | Knowledge base |
 | `templates/` | Reusable templates |
 | `content/` | Dreams & guides |
+| `research/` | Research notes |
+| `references/` | Reference docs |
 
 ## 🔑 Key Files
 
@@ -29,6 +31,11 @@ Quick navigation for the VyseFiles repo.
 - [[system_summary.md|System]] - Full overview
 - [[TOOLS.md|Tools]] - Available tools
 - [[loop-progress.md|Loop Progress]] - Iteration tracking
+- [[content/guides/ai-trading-partner-guide.md|AI Trading Partner Guide]] - Build your own
+- [[content/guides/handoff-prompt.md|Handoff Prompt]] - Session continuity
+- [[content/guides/checkpoint-prompt.md|Checkpoint Prompt]] - Context rescue
+- [[content/guides/long-chat-best-practices.md|Long Chat Best Practices]]
+- [[robinhood-guide.md|Robinhood Guide]] - Trading setup
 
 ## ⚡ Quick Scripts
 
