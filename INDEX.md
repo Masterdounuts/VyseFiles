@@ -15,6 +15,7 @@ Your knowledge base + my operating system. Organized by context.
 | [[USER.md|User]] | About you, preferences |
 | [[AGENTS.md|Agents]] | Trading protocol |
 | [[BOOTSTRAP.md|Bootstrap]] | Wake-up protocol |
+| [[SUBAGENTS.md|Subagents]] | Spawning child agents |
 
 ## 🧠 My Memory
 
@@ -26,6 +27,8 @@ Your knowledge base + my operating system. Organized by context.
 | [[memory/recent-dailies|Dailies]] | Auto-generated list |
 | [[memory/decisions|Decisions]] | Key decisions log |
 | [[memory/active|Active Task]] | Current work |
+| [[active.md|Session Active]] | Current task (root) |
+| [[PENDING.md|Pending]] | Queued tasks |
 
 ### Archive
 - [[memory/2026-04-17|Apr 17]] | [[memory/2026-04-16|Apr 16]] | [[memory/2026-04-15|Apr 15]] | [[memory/2026-04-14|Apr 14]]
@@ -35,6 +38,7 @@ Your knowledge base + my operating system. Organized by context.
 | File | Purpose |
 |------|---------|
 | [[stocks/trade-log|Trade Log]] | All executed trades |
+| [[portfolio.md|Portfolio]] | Current positions |
 | [[memory/trading_rules|Trading Rules]] | Strategy & rules |
 | [[memory/stocks/morning-research|Morning Research]] | Daily picks |
 | [[memory/stocks/alert-status|Alert Status]] | Active price alerts |
@@ -50,6 +54,8 @@ Your knowledge base + my operating system. Organized by context.
 | File | Purpose |
 |------|---------|
 | [[robinhood-guide.md|Robinhood Guide]] | Trading setup |
+| [[CONTROL-UI.md|Control UI]] | Your primary comms |
+| [[Github.md|GitHub]] | Version control |
 | [[content/guides/ai-trading-partner-guide.md|AI Trading Partner]] | Build your own |
 | [[content/guides/handoff-prompt.md|Handoff]] | Session continuity |
 | [[content/guides/checkpoint-prompt.md|Checkpoint]] | Context rescue |
@@ -68,6 +74,9 @@ Your knowledge base + my operating system. Organized by context.
 | **Context Protection** | [[TODO.md|Todo]] → [[loop-progress.md|Loop Progress]] |
 | **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
 | **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
+| **Dashboard** | [[DASHBOARD.md|Dashboard]] - Visual status |
+| **Dreams** | [[DREAMS.md|Dreams]] - Vision tracking |
+| **File Index** | [[ORPHANS.md|Orphans]] - Unlinked files |
 
 ## 📋 Templates
 
