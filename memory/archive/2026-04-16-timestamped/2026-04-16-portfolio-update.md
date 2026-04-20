@@ -121,3 +121,5 @@ assistant: Done! ✅ Updated:
 - Need: **Your pick** (AMC, NOK, or DT) + **split %**
 
 What's the split and which volatile stock? 🦜
+---
+[[INDEX.md|← Back]]

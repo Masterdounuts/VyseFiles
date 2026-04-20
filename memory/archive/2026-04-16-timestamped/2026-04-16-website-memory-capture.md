@@ -40,3 +40,5 @@ user: Sender (untrusted metadata):
 ```
 
 [Thu 2026-04-16 08:23 UTC] did you finish?
+---
+[[INDEX.md|← Back]]

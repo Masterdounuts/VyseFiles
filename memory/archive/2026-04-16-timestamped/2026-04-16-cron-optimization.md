@@ -82,3 +82,5 @@ user: Sender (untrusted metadata):
 user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory/2026-04-16.md already exists, APPEND new content only and do not overwrite existing entries. Do NOT create timestamped variant files (e.g., 2026-04-16-HHMM.md); always use the canonical 2026-04-16.md filename. If nothing to store, reply with NO_REPLY.
 Current time: Thursday, April 16th, 2026 - 10:09 AM (UTC) / 2026-04-16 10:09 UTC
 assistant: NO_REPLY
+---
+[[INDEX.md|← Back]]

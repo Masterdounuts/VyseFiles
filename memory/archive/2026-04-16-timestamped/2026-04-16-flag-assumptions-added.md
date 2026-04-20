@@ -143,3 +143,5 @@ user: Sender (untrusted metadata):
 assistant: Got it. Fresh session coming up — context will start clean.
 
 When you're ready with the next task, just ping me in the new session. 🦜
+---
+[[INDEX.md|← Back]]
