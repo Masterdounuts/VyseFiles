@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Decision‑Log – appends extracted decisions from the latest checkpoint to a cumulative log
 
-WORKSPACE="/root/.openclaw/workspace"
+WORKSPACE="/home/openclaw/.openclaw/workspace"
 CHECKPOINT="$WORKSPACE/memory/2026-04-16.md"
 DECISION_LOG="$WORKSPACE/memory/decisions.md"
 
