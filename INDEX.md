@@ -21,14 +21,14 @@ Quick navigation for the VyseFiles repo.
 
 ## 🔑 Key Files
 
-| File | Purpose |
-|------|---------|
-| `FIXES.md` | Known issues & solutions |
-| `SOUL.md` | Vyse persona |
-| `DREAMS.md` | Long-term goals |
-| `TODO.md` | Task list |
-| `USER.md` | User preferences |
-| `system_summary.md` | Full system overview |
+- [[FIXES.md|Fixes]] - Known issues & solutions
+- [[SOUL.md|Vyse Soul]] - Who I am
+- [[DREAMS.md|Dreams]] - Long-term goals
+- [[TODO.md|Todo]] - Task list
+- [[USER.md|User]] - About you
+- [[system_summary.md|System]] - Full overview
+- [[TOOLS.md|Tools]] - Available tools
+- [[loop-progress.md|Loop Progress]] - Iteration tracking
 
 ## ⚡ Quick Scripts
 
@@ -49,11 +49,11 @@ Quick navigation for the VyseFiles repo.
 
 ## 📅 Memory Files
 
-- `memory/2026-04-14.md` - April 14 log
-- `memory/2026-04-15.md` - April 15 log
-- `memory/2026-04-16.md` - April 16 log (consolidated)
-- `memory/2026-04-17.md` - April 17 log
-- `memory/2026-04-20.md` - Today
+- [[memory/2026-04-20|Apr 20]] | [[memory/2026-04-19|Apr 19]] | [[memory/2026-04-18|Apr 18]]
+- [[memory/2026-04-17|Apr 17]] | [[memory/2026-04-16|Apr 16]] | [[memory/2026-04-15|Apr 15]]
+- [[memory/2026-04-14|Apr 14]]
+- [[memory/active|Active Task]] | [[memory/decisions|Decisions]]
+- [[memory/recent-dailies|Dailies]]
 
 ## 🛠️ Custom Systems
 
@@ -62,14 +62,16 @@ Quick navigation for the VyseFiles repo.
 3. **Trading** — stock alerts, research, trade logging
 4. **Context Protection** — guard_context, detect-loop
 
-## 📈 Trading Research
+## 📈 Trading
 
+- [[stocks/trade-log|Trade Log]] - All trades
 - [[memory/stocks/morning-research|Morning Research]]
 - [[memory/stocks/weekly-research|Weekly Research]]
 - [[memory/stocks/day-trade-research|Day Trade Research]]
 - [[memory/stocks/research|Stock Research]]
 - [[memory/stocks/news-alert|News Alert]]
 - [[memory/stocks/alert-status|Alert Status]]
+- [[memory/trading_rules|Trading Rules]]
 
 ---
 *Last updated: 2026-04-20*
