@@ -37,17 +37,17 @@ Your knowledge base + my operating system. Organized by context.
 
 | File | Purpose |
 |------|---------|
-| [[stocks/trade-log|Trade Log]] | All executed trades |
+| [[kb/stocks/trade-log|Trade Log]] | All executed trades |
 | [[portfolio.md|Portfolio]] | Current positions |
-| [[memory/trading_rules|Trading Rules]] | Strategy & rules |
-| [[memory/stocks/morning-research|Morning Research]] | Daily picks |
-| [[memory/stocks/alert-status|Alert Status]] | Active price alerts |
+| [[kb/stocks/rules|Trading Rules]] | Strategy & rules |
+| [[kb/stocks/research/morning-research|Morning Research]] | Daily picks |
+| [[kb/stocks/research/alert-status|Alert Status]] | Active price alerts |
 
 ### Research
-- [[research/volatile-stocks.md|Volatile Stocks]] - Day trade candidates
-- [[research/day-trading-options.md|Day Trading + Options]]
-- [[research/income-strategy.md|Income Strategy]]
-- [[research/model-performance.md|Model Performance]]
+- [[kb/stocks/research/volatile-stocks|Volatile Stocks]] - Day trade candidates
+- [[kb/stocks/research/day-trading-options|Day Trading + Options]]
+- [[kb/stocks/research/income-strategy|Income Strategy]]
+- [[kb/stocks/research/model-performance|Model Performance]]
 
 ## 📚 Guides & References
 
@@ -71,11 +71,11 @@ Your knowledge base + my operating system. Organized by context.
 
 | System | Files |
 |--------|-------|
-| **Session Continuity** | [[BOOTSTRAP.md|Bootstrap]] → [[HANDOFF.md|Handoff]] → [[memory/active|Active]] |
+| **Session Continuity** | [[kb/system/BOOTSTRAP.md|Bootstrap]] → [[HANDOFF.md|Handoff]] → [[memory/active|Active]] |
 | **Context Protection** | [[TODO.md|Todo]] → [[loop-progress.md|Loop Progress]] |
 | **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
-| **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
-| **Interrupt Recovery** | [[INTERRUPT_RECOVERY.md|Recovery]] - What we fixed |
+| **Error Recovery** | [[kb/system/FIXES.md|Fixes]] - Known issues |
+| **Interrupt Recovery** | [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] - What we fixed |
 | **Recovery Template** | [[recovery-prompt.md|Recovery Prompt]] - Session rescue |
 | **Tasks** | [[TASKS.md|Tasks]] - GitHub issues |
 | **Dashboard** | [[DASHBOARD.md|Dashboard]] - Visual status |
