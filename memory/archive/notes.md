@@ -1,4 +1,6 @@
 # Stock Research Notes
+---
+[[../2026-04-13|Apr 13]]
 
 *Start date: 2026-04-12*
 
