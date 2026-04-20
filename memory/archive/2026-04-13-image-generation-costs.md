@@ -1,4 +1,6 @@
 # Session: 2026-04-13 18:20:01 UTC
+---
+[[../2026-04-13|Apr 13]]
 
 - **Session Key**: agent:main:main
 - **Session ID**: 088ade1a-fabb-4f0a-abe3-87c79415a46d

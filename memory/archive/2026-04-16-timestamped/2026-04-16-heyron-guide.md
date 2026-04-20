@@ -1,4 +1,6 @@
 # Session: 2026-04-16 08:12:05 UTC
+---
+[[../2026-04-16|Apr 16]]
 
 - **Session Key**: agent:main:main
 - **Session ID**: e8bfb115-3d62-46c5-982b-b0bd9f80ae21
@@ -86,3 +88,6 @@ user: Sender (untrusted metadata):
 [Thu 2026-04-16 08:09 UTC] If it helps its in our github repo Im pretty sure
 ---
 [[INDEX.md|← Back]]
+-e 
+---
+[[../2026-04-16|Apr 16]]
