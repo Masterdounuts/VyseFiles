@@ -7,27 +7,18 @@
 
 ---
 
-## Queue (2026-04-17)
+## Queue (2026-04-20)
 
-- [ ] **Check TSLA price** – Verify if TSLA has reached $8 target and update portfolio accordingly.
-
-
-- [x] **active.md creation** - Verified ✅
-- [x] **PENDING.md creation** - Done ✅
-- [x] **Auto-wake protocol refinement** - Implemented (control-UI integration) ✅
-- [x] **State merge (TODO+active+resume-point)** - Done (single JSON) ✅
-- [x] **Gaps audit (Apr 20)** - Fixed jq, stale files, cron errors
+- [ ] **Update stock prices** - Verify current GGB/AMC/TSLA prices
 
 ---
 
-## Completed Today
+## Completed ✅
 
-- [x] Version upgrade v2026.3.2 → v2026.4.15
-- [x] Orphan transcript cleanup (722 files)
-- [x] Pre-compact path fix
-- [x] AUTO-CHECKPOINT added to SOUL.md
-- [x] Memory flush to memory/2026-04-17.md
+- [x] Graph reorganization - INDEX + ORPHANS connected (Apr 20)
+- [x] Obsidian vault setup (Apr 20)
+- [x] Connect stray files to graph (Apr 20)
+- [x] Active.md + PENDING.md created (Apr 16)
 
 ---
-
-*Update this file on every task start/complete. Read on wake.*
+*[[INDEX.md|← Back]]
