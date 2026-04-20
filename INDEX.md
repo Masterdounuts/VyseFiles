@@ -76,6 +76,8 @@ Your knowledge base + my operating system. Organized by context.
 | **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
 | **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
 | **Interrupt Recovery** | [[INTERRUPT_RECOVERY.md|Recovery]] - What we fixed |
+| **Recovery Template** | [[recovery-prompt.md|Recovery Prompt]] - Session rescue |
+| **Tasks** | [[TASKS.md|Tasks]] - GitHub issues |
 | **Dashboard** | [[DASHBOARD.md|Dashboard]] - Visual status |
 | **Dreams** | [[DREAMS.md|Dreams]] - Vision tracking |
 | **Legacy** | [[loop-lessons.md|Loop Lessons]] - Old iteration system |
