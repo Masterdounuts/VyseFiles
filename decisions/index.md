@@ -23,13 +23,8 @@ SORT date DESC
 
 ## Recent Decisions
 
-### 2026-04-20
 - [[memory/2026-04-20|Obsidian Integration]] - Adopt Obsidian workflow with Git sync
-
-### 2026-04-17
 - [[memory/2026-04-17|Workflow Audit Fixes]] - Fixed auto-resume and self-audit issues
-
-### 2026-04-16
 - [[memory/2026-04-16|TSLA Hold Strategy]] - Hold until $8+ for stock reward
 
 ---
