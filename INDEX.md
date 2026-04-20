@@ -1,87 +1,107 @@
 [[index|Home]]
 
-
 # VyseFiles Index
 
-Quick navigation for the VyseFiles repo.
+Your knowledge base + my operating system. Organized by context.
 
-## 📁 Directory Structure
+---
 
-| Folder | Purpose |
-|--------|---------|
-| `scripts/` | Automation scripts (25) |
-| `cron/` | Scheduled jobs |
-| `memory/` | Daily logs & history |
-| `stocks/` | Trading research & logs |
-| `config/` | Config backups |
-| `reference/` | Tutorials & guides |
-| `wiki/` | Knowledge base |
-| `templates/` | Reusable templates |
-| `content/` | Dreams & guides |
-| `research/` | Research notes |
-| `references/` | Reference docs |
+## 🎯 My Identity (System)
 
-## 🔑 Key Files
+| File | Purpose |
+|------|---------|
+| [[SOUL.md|Vyse Soul]] | Who I am, my principles |
+| [[IDENTITY.md|Identity]] | Name, vibe, avatar |
+| [[USER.md|User]] | About you, preferences |
+| [[AGENTS.md|Agents]] | Trading protocol |
+| [[BOOTSTRAP.md|Bootstrap]] | Wake-up protocol |
 
-- [[FIXES.md|Fixes]] - Known issues & solutions
-- [[SOUL.md|Vyse Soul]] - Who I am
-- [[DREAMS.md|Dreams]] - Long-term goals
-- [[TODO.md|Todo]] - Task list
-- [[USER.md|User]] - About you
-- [[system_summary.md|System]] - Full overview
-- [[TOOLS.md|Tools]] - Available tools
-- [[loop-progress.md|Loop Progress]] - Iteration tracking
-- [[content/guides/ai-trading-partner-guide.md|AI Trading Partner Guide]] - Build your own
-- [[content/guides/handoff-prompt.md|Handoff Prompt]] - Session continuity
-- [[content/guides/checkpoint-prompt.md|Checkpoint Prompt]] - Context rescue
-- [[content/guides/long-chat-best-practices.md|Long Chat Best Practices]]
-- [[robinhood-guide.md|Robinhood Guide]] - Trading setup
+## 🧠 My Memory
+
+| File | Purpose |
+|------|---------|
+| [[memory/2026-04-20|Apr 20]] | Today's session |
+| [[memory/2026-04-19|Apr 19]] | Yesterday |
+| [[memory/2026-04-18|Apr 18]] | Earlier this week |
+| [[memory/recent-dailies|Dailies]] | Auto-generated list |
+| [[memory/decisions|Decisions]] | Key decisions log |
+| [[memory/active|Active Task]] | Current work |
+
+### Archive
+- [[memory/2026-04-17|Apr 17]] | [[memory/2026-04-16|Apr 16]] | [[memory/2026-04-15|Apr 15]] | [[memory/2026-04-14|Apr 14]]
+
+## 📈 Trading (Your Focus)
+
+| File | Purpose |
+|------|---------|
+| [[stocks/trade-log|Trade Log]] | All executed trades |
+| [[memory/trading_rules|Trading Rules]] | Strategy & rules |
+| [[memory/stocks/morning-research|Morning Research]] | Daily picks |
+| [[memory/stocks/alert-status|Alert Status]] | Active price alerts |
+
+### Research
+- [[research/volatile-stocks.md|Volatile Stocks]] - Day trade candidates
+- [[research/day-trading-options.md|Day Trading + Options]]
+- [[research/income-strategy.md|Income Strategy]]
+- [[research/model-performance.md|Model Performance]]
+
+## 📚 Guides & References
+
+| File | Purpose |
+|------|---------|
+| [[robinhood-guide.md|Robinhood Guide]] | Trading setup |
+| [[content/guides/ai-trading-partner-guide.md|AI Trading Partner]] | Build your own |
+| [[content/guides/handoff-prompt.md|Handoff]] | Session continuity |
+| [[content/guides/checkpoint-prompt.md|Checkpoint]] | Context rescue |
+
+### Obsidian Vault
+- [[references/obsidian-guide.md|Obsidian Guide]] - Quick reference
+- [[references/vyse-obsidian-workflow.md|Vyse Workflow]] - Our workflow
+- [[obsidian-prototype/MIGRATION.md|Migration]] - Vault setup
+
+## 🔧 Custom Systems
+
+| System | Files |
+|--------|-------|
+| **Session Continuity** | [[BOOTSTRAP.md|Bootstrap]] → [[HANDOFF.md|Handoff]] → [[memory/active|Active]] |
+| **Context Protection** | [[TODO.md|Todo]] → [[loop-progress.md|Loop Progress]] |
+| **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
+| **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
 
 ## ⚡ Quick Scripts
 
 ```bash
-# Session management
-./scripts/generate-handoff.sh    # Create session handoff
-./scripts/checkpoint.sh          # Manual checkpoint
-./scripts/resume-on-restart.sh   # Auto-resume
+# Session
+./scripts/generate-handoff.sh    # Save state
+./scripts/checkpoint.sh          # Rescue context
 
-# Health monitoring
-./scripts/gateway_watch.sh       # Gateway health
-./scripts/vyse-unified-health.sh # Full system check
-
-# Context protection
-./scripts/guard_context.sh       # Prevent context overflow
-./scripts/detect-loop.sh         # Detect loops
+# System
+./scripts/vyse-unified-health.sh # Full check
+./scripts/guard_context.sh       # Prevent overflow
 ```
 
-## 📅 Memory Files
+---
 
-- [[memory/2026-04-20|Apr 20]] | [[memory/2026-04-19|Apr 19]] | [[memory/2026-04-18|Apr 18]]
-- [[memory/2026-04-17|Apr 17]] | [[memory/2026-04-16|Apr 16]] | [[memory/2026-04-15|Apr 15]]
-- [[memory/2026-04-14|Apr 14]]
-- [[memory/active|Active Task]] | [[memory/decisions|Decisions]]
-- [[memory/recent-dailies|Dailies]]
+## 📂 Directory Map
 
-## 🛠️ Custom Systems
+```
+VyseFiles/
+├── 🎯 System/          # My identity & config
+├── 🧠 Memory/          # Daily logs & decisions
+├── 📈 Trading/         # Your stocks & research
+├── 📚 Guides/          # How-to & references
+├── 🔧 Scripts/         # Automation
+├── 📋 Templates/       # Reusable templates
+└── 📦 Archive/         # Old sessions
+```
 
-1. **Session Continuity** — handoff, checkpoint, resume-on-restart
-2. **Health Monitoring** — gateway watch, unified health check
-3. **Trading** — stock alerts, research, trade logging
-4. **Context Protection** — guard_context, detect-loop
+## 🔍 Search Tags
 
-## 📈 Trading
-
-- [[stocks/trade-log|Trade Log]] - All trades
-- [[memory/stocks/morning-research|Morning Research]]
-- [[memory/stocks/weekly-research|Weekly Research]]
-- [[memory/stocks/day-trade-research|Day Trade Research]]
-- [[memory/stocks/research|Stock Research]]
-- [[memory/stocks/news-alert|News Alert]]
-- [[memory/stocks/alert-status|Alert Status]]
-- [[memory/trading_rules|Trading Rules]]
-
-- [[ORPHANS.md|Orphans]] - Unlinked files
-- [[obsidian-prototype/MIGRATION.md|Obsidian Migration]] - Vault setup guide
+- `#daily` - Session logs
+- `#trading` - Stock activity
+- `#system` - OpenClaw config
+- `#meta` - Vault management
 
 ---
-*Last updated: 2026-04-20*
+*Last updated: 2026-04-20 22:16 UTC*
+*Owner: Vyse (your AI trading partner)* 🦜
