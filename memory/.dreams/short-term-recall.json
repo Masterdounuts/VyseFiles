@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-17T16:33:23.585Z",
+  "updatedAt": "2026-04-20T15:20:35.203Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -75745,21 +75745,23 @@
       "endLine": 203,
       "source": "memory",
       "snippet": "- This reserves 20k tokens as a floor before compaction kicks in aggressively - Config patch applied via `openclaw config patch agents.defaults.compaction.reserveTokensFloor=20000` - Gateway auto-reloaded after patch ### Expected Result - Fewer context resets - More buffer before aggressive compaction - Smoother long conversations --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron list` API\" - Rationale: jobs. json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9288431495428084,
-      "maxScore": 0.48953486084938047,
+      "totalScore": 2.4621347799897193,
+      "maxScore": 0.5332916304469109,
       "firstRecalledAt": "2026-04-16T01:49:28.971Z",
-      "lastRecalledAt": "2026-04-16T01:50:56.154Z",
+      "lastRecalledAt": "2026-04-20T15:13:44.387Z",
       "queryHashes": [
         "91baf5c234b7",
         "0e42a16297d4",
         "a0ace193fbde",
-        "88b46021bc81"
+        "88b46021bc81",
+        "b286af2fc26e"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-20"
       ],
       "conceptTags": [
         "gateway",
@@ -75779,19 +75781,21 @@
       "endLine": 532,
       "source": "memory",
       "snippet": "- This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ### Actions Taken - Fixed cron job Telegram delivery error (removed invalid @heartbeat chat) - Changed sessionTarget to \"isolated\" for gateway health checks - Documented best practice in TOOLS.md --- ## Context Fix - Apr 15 22:25 UTC ### Problem - Session kept hitting context limit and resetting (auto-compaction at ~80%) - This caused conversation loss and frustration ### Solution Applied - Increased `agents.defaults.compaction.reserveTokens",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9440929740667342,
-      "maxScore": 0.4758881032466888,
+      "totalScore": 1.4357104718685147,
+      "maxScore": 0.49161749780178066,
       "firstRecalledAt": "2026-04-16T01:49:28.971Z",
-      "lastRecalledAt": "2026-04-16T01:50:56.154Z",
+      "lastRecalledAt": "2026-04-20T14:22:22.808Z",
       "queryHashes": [
         "91baf5c234b7",
-        "88b46021bc81"
+        "88b46021bc81",
+        "0ce5dc677c37"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-20"
       ],
       "conceptTags": [
         "gateway",
@@ -76624,18 +76628,20 @@
       "endLine": 1457,
       "source": "memory",
       "snippet": "- User reported that after a compaction event the assistant halted and did not resume work. - Investigation shows context was at **91%**, near the limit, with **11 compactions** already recorded. - Action taken: saved a checkpoint in `active.md` and noted the need to increase `reserveTokens` buffer or adjust compaction thresholds. - Next steps: monitor context levels, ensure pre‑compact saves at 60%/70% as per SOUL.md, and consider raising `reserveTokensFloor` above 20000 to provide more headroom. --- ## Pre-Compaction Memory Flush (23:47 UTC) - Durable memories stored in this file as per request. --- ## Pre-Compaction Save: 23:52 UTC ### Context: ### Resume Point # Resume Point - Mid-",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49638997018337244,
-      "maxScore": 0.49638997018337244,
+      "totalScore": 1.0220363155007361,
+      "maxScore": 0.5256463453173637,
       "firstRecalledAt": "2026-04-17T01:35:32.586Z",
-      "lastRecalledAt": "2026-04-17T01:35:32.586Z",
+      "lastRecalledAt": "2026-04-20T15:13:44.387Z",
       "queryHashes": [
-        "437212ad6f7d"
+        "437212ad6f7d",
+        "b286af2fc26e"
       ],
       "recallDays": [
-        "2026-04-17"
+        "2026-04-17",
+        "2026-04-20"
       ],
       "conceptTags": [
         "active.md",
@@ -77084,6 +77090,103 @@
         "pre-compaction",
         "mid-conversation",
         "long-chats"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1293:1342": {
+      "key": "memory:memory/2026-04-16.md:1293:1342",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1293,
+      "endLine": 1342,
+      "source": "memory",
+      "snippet": "- All cron jobs running OK ## Notes - Fixed compaction loop perception - context was actually fine - guard_context.sh has parsing issue but not causing problems - Most infrastructure from guide already in place --- ## Compaction Summary (12:08 UTC) ### Goal - Read the latest compaction summary from the system (if any) - Append it to today's memory file at memory/$(date).md - Confirm when done ### Constraints & Preferences - Must append to memory file with format memory/$(date).md (today: 2026-04-16) - If no compaction summary exists, note that (implicit in \"if any\") ### Progress - Searched for compaction-related files using find command - Listed contents of /root/.openclaw/ directory -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49783225953578947,
+      "maxScore": 0.49783225953578947,
+      "firstRecalledAt": "2026-04-20T14:22:22.808Z",
+      "lastRecalledAt": "2026-04-20T14:22:22.808Z",
+      "queryHashes": [
+        "0ce5dc677c37"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "guard-context.sh",
+        "compaction-related",
+        "all",
+        "cron",
+        "jobs",
+        "running",
+        "fixed",
+        "compaction"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:10": {
+      "key": "memory:memory/2026-04-20.md:1:10",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "## Session Events 2026-04-20 15:03 UTC - User requested audit of Control UI integration vs our systems at 14:52 UTC - Completed audit: Control UI has visual metrics, session control, live view. We have custom health scripts, memory files, cron self-healing. ## Session Events 2026-04-20 15:05 UTC - Integrated Control UI features: - Created scripts/vyse-metrics.sh for terminal metrics display - Updated .vyse-status.md with Control UI-style card format (context %, cost, cache hit, compactions) - Can now run `openclaw status` for real-time session metrics - Memory updated",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.975654935053132,
+      "maxScore": 0.7759156453782192,
+      "firstRecalledAt": "2026-04-20T15:18:46.410Z",
+      "lastRecalledAt": "2026-04-20T15:20:35.203Z",
+      "queryHashes": [
+        "1718e276edbf",
+        "93d8d5a20e4d",
+        "703d52228215"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "self-healing",
+        "scripts/vyse-metrics.sh",
+        "vyse-status.md",
+        "ui-style",
+        "real-time",
+        "events",
+        "utc",
+        "user"
+      ]
+    },
+    "memory:memory/2026-04-17.md:349:386": {
+      "key": "memory:memory/2026-04-17.md:349:386",
+      "path": "memory/2026-04-17.md",
+      "startLine": 349,
+      "endLine": 386,
+      "source": "memory",
+      "snippet": "## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market value - [ ] Monitor GGB for buy/sell opportunities - [ ] Trade log: record every transaction ### Trading Strategy (from AGENTS.md) --- ## Pre-Compact: 17:46 UTC - FULL STATE SAVED Raw file: 2026-04-17-raw.md --- ## Pre-Compact: 17:47 UTC - FULL STATE SAVED Raw file: 2026-04-17-raw.md --- ## Pre-Compact: 18:06 UTC - FULL STATE SAVED Raw file: 2026-04-17-raw.md ## Control UI Integration: 18:34 UTC ### Problem - Memory reads bloat context → compaction loses session state - Control UI needs lightweight state access ### Solution Implemented 1. **state/control-ui.json** - Lightweight JSON (~500 bytes) for UI reads",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9248597620291714,
+      "maxScore": 0.750069471361904,
+      "firstRecalledAt": "2026-04-20T15:18:46.410Z",
+      "lastRecalledAt": "2026-04-20T15:20:35.203Z",
+      "queryHashes": [
+        "1718e276edbf",
+        "93d8d5a20e4d",
+        "703d52228215"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "buy/sell",
+        "agents.md",
+        "pre-compact",
+        "2026-04-17-raw.md",
+        "state/control-ui.json",
+        "stocks",
+        "active",
+        "trading"
       ]
     }
   }
