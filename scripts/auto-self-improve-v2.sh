@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-LOG_FILE="/home/openclaw/.openclaw/workspace/logs/auto-improve.log"
+LOG_FILE="/root/.openclaw/workspace/logs/auto-improve.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"; }
@@ -73,9 +73,9 @@ jobs.forEach(j => {
     done
     
     # Update agent-ready.md if stale
-    if [ -f "/home/openclaw/.openclaw/workspace/memory/agent-ready.md" ]; then
+    if [ -f "/root/.openclaw/workspace/memory/agent-ready.md" ]; then
         # Run quick readiness check
-        if /home/openclaw/.openclaw/workspace/scripts/vyse-readiness-check.sh >/dev/null 2>&1; then
+        if /root/.openclaw/workspace/scripts/vyse-readiness-check.sh >/dev/null 2>&1; then
             log "✅ Readiness check passed"
         else
             log "⚠️ Readiness check failed - will alert on next cron"

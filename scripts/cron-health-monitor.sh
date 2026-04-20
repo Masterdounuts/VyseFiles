@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-LOG_FILE="/home/openclaw/.openclaw/workspace/logs/cron-health.log"
+LOG_FILE="/root/.openclaw/workspace/logs/cron-health.log"
 ALERT_THRESHOLD=3  # Alert after this many consecutive failures
 RESTART_THRESHOLD=2  # Auto-restart after this many failures
 

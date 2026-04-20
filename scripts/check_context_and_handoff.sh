@@ -16,14 +16,14 @@ if [ -z "$CONTEXT" ]; then
 fi
 if [ "$CONTEXT" -gt 80 ]; then
   echo "Context $CONTEXT% > 80% – forcing checkpoint and handoff"
-  /home/openclaw/.openclaw/workspace/scripts/auto-checkpoint.sh force
+  /root/.openclaw/workspace/scripts/auto-checkpoint.sh force
   # Create handoff summary
-  HANDOFF="/home/openclaw/.openclaw/workspace/memory/handoff_summary_$(date -u +%Y-%m-%d).md"
+  HANDOFF="/root/.openclaw/workspace/memory/handoff_summary_$(date -u +%Y-%m-%d).md"
   echo "# Handoff Summary $(date -u)" > "$HANDOFF"
   echo "\n## Recent Decisions" >> "$HANDOFF"
-  grep -i "decision" /home/openclaw/.openclaw/workspace/memory/resume-point.md >> "$HANDOFF" || true
+  grep -i "decision" /root/.openclaw/workspace/memory/resume-point.md >> "$HANDOFF" || true
   echo "\n## Current Status" >> "$HANDOFF"
-  cat /home/openclaw/.openclaw/workspace/memory/resume-point.md >> "$HANDOFF"
+  cat /root/.openclaw/workspace/memory/resume-point.md >> "$HANDOFF"
   echo "Handoff summary written to $HANDOFF"
 else
   echo "Context $CONTEXT% – no action needed"

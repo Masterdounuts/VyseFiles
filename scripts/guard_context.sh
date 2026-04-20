@@ -22,7 +22,7 @@ echo "Context usage: ${usage}%"
 if [ "$usage" -gt 60 ]; then
   echo "Context usage high ($usage%). Signaling need for compaction."
   # CRITICAL: Save to memory BEFORE compaction
-  /usr/bin/bash /home/openclaw/.openclaw/workspace/scripts/pre-compact-save.sh 2>/dev/null || true
+  /usr/bin/bash /root/.openclaw/workspace/scripts/pre-compact-save.sh 2>/dev/null || true
   exit 1
 else
   echo "Context OK ($usage%)."

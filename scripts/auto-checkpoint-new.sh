@@ -8,7 +8,7 @@
 # - If >70% or forced, update resume-point.md with structured handoff
 # - Also update HANDOFF.md for new session automation
 
-WORKSPACE="/home/openclaw/.openclaw/workspace"
+WORKSPACE="/root/.openclaw/workspace"
 RESUME_FILE="$WORKSPACE/memory/resume-point.md"
 HANDOFF_FILE="$WORKSPACE/HANDOFF.md"
 LOG_FILE="$WORKSPACE/logs/checkpoint.log"

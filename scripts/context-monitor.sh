@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Context‑Monitor – alerts when session context exceeds threshold and creates a hand‑off summary
 
-WORKSPACE="/home/openclaw/.openclaw/workspace"
+WORKSPACE="/root/.openclaw/workspace"
 STATUS_URL="http://localhost:18789/api/session/status"
 THRESHOLD=80
 
@@ -16,5 +16,5 @@ if [ "$CONTEXT" -gt $THRESHOLD ]; then
   MSG="⚠️ Context usage $CONTEXT% exceeds $THRESHOLD% – creating hand‑off summary."
   curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID" -d "text=$MSG"
   # Run hand‑off summary script
-  /home/openclaw/.openclaw/workspace/scripts/hand-off-summary.sh
+  /root/.openclaw/workspace/scripts/hand-off-summary.sh
 fi

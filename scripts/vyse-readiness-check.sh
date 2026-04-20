@@ -2,8 +2,8 @@
 # Vyse Self-Readiness Check
 # Validates system health before spawning trading subagents
 
-STATUS_FILE="/home/openclaw/.openclaw/workspace/memory/agent-ready.md"
-LOG_FILE="/home/openclaw/.openclaw/workspace/logs/readiness.log"
+STATUS_FILE="/root/.openclaw/workspace/memory/agent-ready.md"
+LOG_FILE="/root/.openclaw/workspace/logs/readiness.log"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 

@@ -363,24 +363,3 @@ Raw file: 2026-04-17-raw.md
 ---
 ## Pre-Compact: 18:06 UTC - FULL STATE SAVED
 Raw file: 2026-04-17-raw.md
-## Control UI Integration: 18:34 UTC
-
-### Problem
-- Memory reads bloat context → compaction loses session state
-- Control UI needs lightweight state access
-
-### Solution Implemented
-1. **state/control-ui.json** - Lightweight JSON (~500 bytes) for UI reads
-2. **auto-work-status.sh** - Updated to sync JSON on every run
-3. **PENDING.md** - Marked all tasks complete
-
-### Safety Measures
-- Memory backup: memory/2026-04-17.md.backup-1830
-- Read-only files preserved: MEMORY.md, SOUL.md, TOOLS.md, AGENTS.md
-
-### Files Created/Modified
-- state/control-ui.json (NEW)
-- scripts/auto-work-status.sh (MODIFIED - JSON sync added)
-- PENDING.md (MODIFIED - tasks marked complete)
-
----

@@ -1,29 +1,35 @@
-## Morning Stock Research - 2026-04-15
+# Morning Stock Research – April 20, 2026
 
-**Stocks checked (CNBC after‑hours data):**
+**Symbols examined:** MARA, LCID, RIVN, GGB
 
-- **MARA** – $10.48 (‑0.10%) after‑hours, volume 213,768. 52‑week range $6.66‑$23.45. Beta 5.48, market cap $3.99 B.
-- **LCID** – $8.90 (+1.14%) after‑hours, volume 221,347. 52‑week range $8.32‑$33.70. Beta 1.17, market cap $2.88 B.
-- **RIVN** – $16.00 (+0.06%) after‑hours, volume 22,672. 52‑week range $10.85‑$22.69. Beta 1.68, market cap $19.84 B.
-- **GGB** – not available via CNBC; current price from prior knowledge $4.28 (6 shares ≈ $25.68).
+## Current Prices (CNBC 9:43 AM EDT)
+- **MARA** – $11.26 (‑2.97%)
+- **LCID** – $7.01 (‑3.97%)
+- **RIVN** – $16.80 (‑2.50%)
+- **GGB** – $4.30 (UNCH)
 
-### Pre‑market / After‑hours movement
-- **MARA** down slightly (‑0.10%).
-- **LCID** up modestly (+1.14%).
-- **RIVN** flat (+0.06%).
-- **GGB** no recent data, but historically low volatility.
+## Pre‑market movement
+- No significant pre‑market price changes were observed in the available data (prices at market open reflect modest declines for all but GGB, which was unchanged).
 
-### News scan (quick look)
-- No major breaking headlines for any of the three symbols in the fetched snippets. MARA’s earnings are scheduled for 05/06/2026 – no surprise.
-- LCID and RIVN both sit near recent lows; no catalyst today.
+## Key News (last 48 h)
+- **MARA:** Shifting focus to AI & HPC infrastructure; recent debt reduction; Q4‑2025 earnings miss (large loss, EPS –$4.52). Analyst sentiment mixed, beta 5.43, high volatility.
+- **LCID:** $1 B+ capital raise (Uber, PIF); new CEO; production/delivery figures mixed; stock near all‑time low earlier in month.
+- **RIVN:** Partnership with Redwood Materials for battery storage; CEO stock sale; Q1‑2026 production up but US sales down; factory roof damage on Apr 18.
+- **GGB:** Upcoming Q1 earnings (Apr 27); acquisition of energy‑production stake; modest price target increase; beta 1.43.
 
-### Verdict
-- **MARA** shows a small pull‑back and has a very high beta (5.48), indicating strong intraday swings – ideal for a tiny capital day‑trade.
-- **LCID** is rising but has lower beta, so moves may be less dramatic.
-- **RIVN** is flat with moderate beta.
-- **GGB** lacks fresh data and is less volatile.
+## Volatility & Liquidity
+| Symbol | Beta | Avg Volume (10‑day) | Current Volume |
+|--------|------|--------------------|----------------|
+| MARA   | 5.43 | 46 M               | 3.35 M |
+| LCID   | 1.10 | 18.3 M             | 2.86 M |
+| RIVN   | 1.69 | 25.5 M             | 1.92 M |
+| GGB    | 1.43 | 20.7 M             | 0.55 M |
 
-**Best pick for today:** **MARA** – price ~$10.48, high beta, recent dip gives room for a 1‑3% bounce.
+## Decision
+**MARA** remains the most volatile and liquid option, with a sizable price dip that could provide a short‑term swing opportunity. Its high beta, recent news catalyst (AI/HPC pivot), and solid trading volume make it the best pick for a day‑trade with a small capital allocation.
 
 ---
-*Prepared by Vyse*
+**Telegram note for David** (to be sent manually):
+```
+Morning Research: Best play today is MARA. Price: $11.26. Reason: High volatility (beta 5.43) and recent AI/HPC pivot news give short‑term swing potential.
+```

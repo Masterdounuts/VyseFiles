@@ -93,12 +93,12 @@
       },
       "compaction": {
         "mode": "safeguard",
-        "reserveTokensFloor": 20000,
+        "reserveTokensFloor": 35000,
         "memoryFlush": {
           "enabled": true,
-          "softThresholdTokens": 15000
+          "softThresholdTokens": 20000
         },
-        "reserveTokens": 25000
+        "reserveTokens": 40000
       },
       "imageGenerationModel": {
         "primary": "google/gemini-2.5-flash-preview-05-20"
@@ -106,7 +106,7 @@
       "sandbox": {
         "mode": "off"
       },
-      "contextTokens": 40000
+      "contextTokens": 50000
     }
   },
   "tools": {

@@ -24,11 +24,31 @@
 
 ### Infrastructure
 - ✅ All 4 fixes verified (auto-checkpoint, temp cleanup, Error Monitor)
+- ✅ Version upgrade to v2026.4.15
+- ✅ Orphan transcript cleanup (722 files)
+- ✅ Pre-compact path fixed
+- ✅ active.md + PENDING.md created
+- ✅ Auto-wake protocol updated
+- ✅ 2026-04-17: Created vyse-unified-health.sh (consolidates 4 health checks)
+- ✅ 2026-04-17: Disabled redundant Vyse-Readiness-Check cron
+- ✅ 2026-04-17: Fixed path symlinks /home/openclaw → /root
+- ✅ 2026-04-17: Archived stale memory files (Apr 12-14)
+- ✅ 2026-04-17: Added detect-loop.sh + resume-on-restart.sh
+- ✅ 2026-04-17: Added Auto-Resume + Vyse-Self-Audit crons
 
 ### API Credits
 - Status: CHECK session_status
 
 ---
+
+### Communication Protocol
+- ✅ Priority prefixes (🔴🟡✅💡)
+- ✅ TL;DR + bullet structure
+- ✅ Decision/commitment footers
+- ✅ Compact status line
+- ✅ Status shows on ANY action
+- ✅ HANDOFF.md auto-generation (scripts/generate-handoff.sh)
+- ✅ Wake-up now reads HANDOFF.md
 
 ## 🐔 Foundational Systems (Long-term)
 

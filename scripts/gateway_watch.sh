@@ -7,7 +7,7 @@ if [ "$status" != "200" ]; then
   openclaw gateway restart
   # Notify Telegram (requires bot token env var TG_BOT)
   if [ -n "$TG_BOT" ]; then
-    curl -s -X POST "https://api.telegram.org/bot${TG_BOT}/sendMessage" -d "chat_id=@VyseAgent_bot&text=Gateway restarted due to health check failure."
+    curl -s -X POST "https://api.telegram.org/bot${TG_BOT}/sendMessage" -d "chat_id=8742211590&text=Gateway restarted due to health check failure."
   fi
 else
   echo "Gateway healthy."
