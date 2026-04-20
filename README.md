@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # VyseFiles 🦜
 
 Repository for Vyse (AI trading partner) and David's projects.

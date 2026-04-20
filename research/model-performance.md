@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Model Performance Log
 
 Tracking which models work best for different tasks.

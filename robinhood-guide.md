@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Robinhood Trading Guide
 *Current strategy reference*
 *Last updated: 2026-04-16 17:05 UTC*

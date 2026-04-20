@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # TOOLS.md
 
 *See `memory/archive/TOOLS.md` for full content.*

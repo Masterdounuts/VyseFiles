@@ -1,3 +1,5 @@
+[[index|Home]] • [[decisions/index|Decisions]]
+
 # Trading Rules Summary
 
 ## GGB (active day‑trading)

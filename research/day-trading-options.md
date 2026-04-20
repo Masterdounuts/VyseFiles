@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Day Trading + Options Strategy
 ## For Quick Income with Small Capital
 

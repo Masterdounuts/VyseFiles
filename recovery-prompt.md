@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Recovery Prompt Template
 
 *Use when starting a fresh session after compaction/reset*

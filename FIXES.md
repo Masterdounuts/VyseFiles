@@ -1,3 +1,6 @@
+[[index|Home]] • [[[[INTERRUPT_RECOVERY]]|Interrupt Recovery]]
+
+
 # FIXES & SOLUTIONS LOG
 
 A running record of problems we've solved so we don't fix them twice.

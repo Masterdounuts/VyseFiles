@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Robinhood Android App Research
 
 *Research date: April 14, 2026*

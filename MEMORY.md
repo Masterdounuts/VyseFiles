@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # MEMORY.md
 
 *See `memory/archive/MEMORY.md` for full content.*

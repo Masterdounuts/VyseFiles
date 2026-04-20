@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Resume Point
 
 **Last updated:** 2026-04-17 17:23 UTC

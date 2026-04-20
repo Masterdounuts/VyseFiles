@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Active Session
 
 **Started:** 2026-04-20 16:43 UTC

@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Control UI Integration Guide
 
 ## Quick Commands

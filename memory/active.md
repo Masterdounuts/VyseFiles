@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Active Session Checkpoint
 
 ## Last Update

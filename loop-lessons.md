@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Loop Lessons Learned
 
 ## Lessons Log

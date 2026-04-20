@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Loop Progress Tracker
 
 ## Counter

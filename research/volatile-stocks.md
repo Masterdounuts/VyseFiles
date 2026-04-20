@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Volatile Stocks for Day Trading (Under $20)
 
 *Research: April 14, 2026*

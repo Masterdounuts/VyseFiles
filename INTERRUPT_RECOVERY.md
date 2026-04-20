@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Interrupt Recovery - What We Fixed (Apr 17, 2026)
 
 ## ✅ FIXED: Script Path Bug

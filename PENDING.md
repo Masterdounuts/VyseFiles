@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # PENDING.md - Action Queue
 
 *Persistent queue for in-flight tasks. Survives compactions.*

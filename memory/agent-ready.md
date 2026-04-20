@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Agent Ready Status
 
 **Last Check:** 2026-04-17T18:07:11+00:00

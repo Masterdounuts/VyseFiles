@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # TODO.md - Persistent Task List
 
 *Read on every wake-up FIRST. This file survives compactions.*

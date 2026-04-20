@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # Trade Log
 
 ## Format: YYYY-MM-DD | STOCK | ACTION | SHARES | PRICE | TOTAL | NOTES

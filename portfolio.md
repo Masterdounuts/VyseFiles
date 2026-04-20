@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Portfolio Tracker
 *Our official holdings - updated manually by David*
 *Both Vyse and stock-research-worker reference this file*

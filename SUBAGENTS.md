@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # SUBAGENTS.md - Subagent Configuration
 *Vyse (First Mate) manages all subagents on behalf of David (Captain)*
 

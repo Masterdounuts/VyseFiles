@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Robinhood Alerts Setup Guide
 *Step-by-step for our price targets*
 *Last updated: 2026-04-16 13:24 UTC*

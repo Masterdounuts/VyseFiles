@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Session Handoff
 *Auto-generated. Loaded automatically on session start.*
 

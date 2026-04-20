@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Vyse Dashboard 🦜
 
 ## Portfolio Tracking

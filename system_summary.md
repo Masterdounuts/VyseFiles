@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # System Summary & Lessons Learned
 
 ## 1. Core System Architecture (how the pieces talk to each other)

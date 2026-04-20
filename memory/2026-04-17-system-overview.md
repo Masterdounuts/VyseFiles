@@ -1,3 +1,5 @@
+[[index|Home]]
+
 # System Overview (2026-04-17)
 
 - **File:** `system_summary.md` – comprehensive architecture, interaction flow, and lessons learned.

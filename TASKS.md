@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # Vyse Workspace - Task Tracking
 
 ## Open Issues (GitHub)

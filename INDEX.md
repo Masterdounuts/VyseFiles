@@ -1,3 +1,6 @@
+[[index|Home]]
+
+
 # VyseFiles Index
 
 Quick navigation for the VyseFiles repo.

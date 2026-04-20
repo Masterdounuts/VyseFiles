@@ -1,3 +1,6 @@
+[[index|Home]] • [[memory/[[memory/trading_rules]]|Trading Rules]]
+
+
 # Day Trading Protocol for David
 
 ## Concept
