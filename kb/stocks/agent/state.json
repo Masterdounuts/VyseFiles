@@ -1,14 +1,14 @@
 {
   "portfolio": {
     "GGB": {
-      "shares": 6,
+      "shares": 4.99,
       "avg_cost": 0.30,
       "notes": "Penny stock, high volatility"
     },
     "AMC": {
       "shares": 8,
       "avg_cost": 1.64,
-      "notes": "Meme stock, earnings Apr 18"
+      "notes": "Meme stock"
     },
     "TSLA": {
       "shares": 0.016567,
@@ -16,6 +16,7 @@
       "notes": "Stock reward, HOLD until $8+ value"
     }
   },
+  "buying_power": 31.32,
   "targets": {
     "GGB": {
       "buy": [0.15, 0.10, 0.00],
