@@ -181,8 +181,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "f6473bce89b37991",
+  "active": "eadd760b2ee089b1",
   "lastOpenFiles": [
+    "templates/daily-note.md",
+    "references/obsidian-guide.md",
+    "references",
+    "memory/recent-dailies.md",
+    "decisions/index.md",
+    "decisions",
     "robinhood-guide.md",
     "Test folder for obsidian/Testing Github.md",
     "Test folder for obsidian",
