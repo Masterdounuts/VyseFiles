@@ -54,6 +54,7 @@ Your knowledge base + my operating system. Organized by context.
 | File | Purpose |
 |------|---------|
 | [[robinhood-guide.md|Robinhood Guide]] | Trading setup |
+| [[robinhood-alerts-guide.md|Alerts Guide]] | Price alerts setup |
 | [[CONTROL-UI.md|Control UI]] | Your primary comms |
 | [[Github.md|GitHub]] | Version control |
 | [[content/guides/ai-trading-partner-guide.md|AI Trading Partner]] | Build your own |
@@ -74,6 +75,7 @@ Your knowledge base + my operating system. Organized by context.
 | **Context Protection** | [[TODO.md|Todo]] → [[loop-progress.md|Loop Progress]] |
 | **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
 | **Error Recovery** | [[FIXES.md|Fixes]] - Known issues |
+| **Interrupt Recovery** | [[INTERRUPT_RECOVERY.md|Recovery]] - What we fixed |
 | **Dashboard** | [[DASHBOARD.md|Dashboard]] - Visual status |
 | **Dreams** | [[DREAMS.md|Dreams]] - Vision tracking |
 | **Legacy** | [[loop-lessons.md|Loop Lessons]] - Old iteration system |
