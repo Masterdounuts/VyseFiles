@@ -1,0 +1,81 @@
+[
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "SOFI",
+  "price": "19.5",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "MARA",
+  "price": "11.63",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "RIOT",
+  "price": "18.11",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "NOK",
+  "price": "10.6",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "DKNG",
+  "price": "22.885",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "GME",
+  "price": "24.92",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "LCID",
+  "price": "6.75",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "BBAI",
+  "price": "3.84",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "DNA",
+  "price": "7.98",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+,
+{
+  "timestamp": "2026-04-21 00:09 UTC",
+  "symbol": "QS",
+  "price": "7.18",
+  "type": "WATCHLIST_SCAN",
+  "status": "NEEDS_REVIEW"
+}
+]

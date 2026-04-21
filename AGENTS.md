@@ -32,17 +32,23 @@ Trade small capital actively to compound gains.
 
 ## Volatile Opportunity System (New!)
 
-**How it works:**
-1. Subagent monitors GGB every 30 min via cron
-2. If price moves >3% since last check → writes to `pending-opportunities.json`
-3. Main agent reviews pending opportunities every 15 min
-4. If I think it's a good opportunity → Telegram alert to David
-5. David decides whether to act
+**Position Sizing:**
+- **Max $10 per volatile play** (small position to limit risk)
+- **Min $5** if opportunity is strong
+- **Max 3 volatile positions** at once
 
-**Why this system?**
-- Catches sudden moves without spamming you
-- I evaluate before alerting - only good setups get through
-- You get notified with my take on whether it's worth a look
+**How it works:**
+1. Subagent monitors GGB + watchlist every 30 min via cron
+2. Watchlist stocks: BBAI, LCID, QS, MARA, SOFI
+3. If price moves >3% since last check → writes to `pending-opportunities.json`
+4. Main agent reviews pending opportunities every 15 min
+5. If I think it's a good opportunity → Telegram alert to David with position size
+6. David decides whether to act
+
+**Why small positions?**
+- Small gains + frequent trades = compound growth
+- Don't lose too much in one stock
+- Volatile = high risk, keep exposure low
 
 ---
 
