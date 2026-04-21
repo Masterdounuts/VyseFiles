@@ -23,21 +23,40 @@ log() {
     echo "$(date -u +'%Y-%m-%d %H:%M UTC') [TRADER] $1" | tee -a "$LOG"
 }
 
-# === MARKET HOURS CHECK ===
+# === UPDATE STATE.JSON ===
+update_state() {
+    local timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+    jq --arg ts "$timestamp" '.last_check = $ts' "$STATE" > "${STATE}.tmp" && mv "${STATE}.tmp" "$STATE"
+}
+
+# === MARKET HOURS CHECK (with DST support) ===
 # Returns 0 if in market hours (Mon-Fri 9:30 AM - 4:00 PM ET)
 is_market_open() {
-    # Convert current UTC to ET
     local hour_utc minute_utc
     hour_utc=$(date -u +'%H')
     minute_utc=$(date -u +'%M')
     
-    # ET = UTC - 5 (or -4 during DST, simplified to -4 for now)
-    local hour_et=$((10#$hour_utc - 4))
+    # Determine DST: US DST = 2nd Sunday March - 1st Sunday November
+    local month=$(date -u +'%m')
+    local day=$(date -u +'%d')
+    local dst_offset=4  # Default DST
+    
+    if [ "$month" -lt "4" ] || [ "$month" -gt "10" ]; then
+        dst_offset=5  # Standard time
+    elif [ "$month" -eq "4" ] && [ "$day" -lt "15" ]; then
+        dst_offset=5  # Before DST transition
+    elif [ "$month" -eq "10" ] && [ "$day" -gt "7" ]; then
+        dst_offset=5  # After DST transition
+    fi
+    
+    local hour_et=$((10#$hour_utc - dst_offset))
     local minute_et=$((10#$minute_utc))
     
     # Handle wrap around
     if [ $hour_et -lt 0 ]; then
         hour_et=$((hour_et + 24))
+    elif [ $hour_et -ge 24 ]; then
+        hour_et=$((hour_et - 24))
     fi
     
     local day_of_week=$(date -u +'%u')  # 1=Monday
@@ -56,6 +75,47 @@ is_market_open() {
         return 0
     fi
     
+    return 1
+}
+
+# === EXTENDED HOURS CHECK ===
+# Returns 0 if in pre-market (4-9:30 AM) or after-hours (4-8 PM)
+is_extended_hours() {
+    local hour_utc minute_utc
+    hour_utc=$(date -u +'%H')
+    minute_utc=$(date -u +'%M')
+    
+    local month=$(date -u +'%m')
+    local day=$(date -u +'%d')
+    local dst_offset=4
+    
+    if [ "$month" -lt "4" ] || [ "$month" -gt "10" ]; then
+        dst_offset=5
+    elif [ "$month" -eq "4" ] && [ "$day" -lt "15" ]; then
+        dst_offset=5
+    elif [ "$month" -eq "10" ] && [ "$day" -gt "7" ]; then
+        dst_offset=5
+    fi
+    
+    local hour_et=$((10#$hour_utc - dst_offset))
+    local minute_et=$((10#$minute_utc))
+    
+    if [ $hour_et -lt 0 ]; then
+        hour_et=$((hour_et + 24))
+    elif [ $hour_et -ge 24 ]; then
+        hour_et=$((hour_et - 24))
+    fi
+    
+    local et_minutes=$((hour_et * 60 + minute_et))
+    local pre_market_open=$((4 * 60))
+    local market_open=$((9 * 60 + 30))
+    local market_close=$((16 * 60))
+    local after_close=$((20 * 60))
+    
+    if ([ $et_minutes -ge $pre_market_open ] && [ $et_minutes -lt $market_open ]) || \
+       [ $et_minutes -ge $market_close ] && [ $et_minutes -lt $after_close ]; then
+        return 0
+    fi
     return 1
 }
 
@@ -254,12 +314,29 @@ alert() {
     echo "$(date -u +'%Y-%m-%d %H:%M UTC') [$type] $msg" >> "$ALERTS"
 }
 
-# === SEND TELEGRAM NOTIFICATION (optional) ===
+# === SEND TELEGRAM NOTIFICATION ===
 send_telegram() {
     local message="$1"
-    # Placeholder - add Telegram bot API call here if needed
-    # curl -s -X POST "https://api.telegram.org/bot<TOKEN>/sendMessage" ...
-    log "TG_NOTIF: $message"
+    local token="$TG_BOT_TOKEN"
+    local chat_id="$TG_CHAT_ID"
+    
+    # Try to get from config if not set
+    if [ -z "$token" ]; then
+        token=$(jq -r '.telegram.bot_token // empty' "$WORKSPACE/config.json" 2>/dev/null)
+    fi
+    if [ -z "$chat_id" ]; then
+        chat_id=$(jq -r '.telegram.chat_id // empty' "$WORKSPACE/config.json" 2>/dev/null)
+    fi
+    
+    if [ -n "$token" ] && [ -n "$chat_id" ]; then
+        curl -s -X POST "https://api.telegram.org/bot${token}/sendMessage" \
+            -d "chat_id=${chat_id}" \
+            -d "text=${message}" \
+            -d "parse_mode=Markdown" > /dev/null 2>&1
+        log "TG sent: $message"
+    else
+        log "TG_NOTIF (no config): $message"
+    fi
 }
 
 # === MAIN ===
@@ -358,6 +435,9 @@ if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
 else
     log "No volatile watchlist configured"
 fi
+
+# Update state.json with last check time
+update_state
 
 log "=== Scan Complete ==="
 exit 0
