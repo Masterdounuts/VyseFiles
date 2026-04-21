@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3fedda64a368af2b",
+        "id": "60b50d6496e6fbd8",
         "type": "tabs",
         "children": [
           {
-            "id": "8d499ea3fcd205bb",
+            "id": "ec66fc393d940c91",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -187,7 +187,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "8d499ea3fcd205bb",
+  "active": "ec66fc393d940c91",
   "lastOpenFiles": [
     "kb/stocks/agent/research.md",
     "kb/system/FIXES.md",
