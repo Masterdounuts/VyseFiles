@@ -11,11 +11,12 @@
 - [[stocks/rules|Trading Rules]] - Strategy & levels (move from memory/trading_rules.md if exists)
 
 ### Research (`kb/stocks/research/`)
-- morning-research, weekly-research
-- alert-status, day-trade-research, news-alert
-- volatile-stocks, day-trading-options
-- income-strategy, model-performance
-- robinhood-android-app
+- [[stocks/research/morning-research|Morning Research]]
+- [[stocks/research/weekly-research|Weekly Research]]
+- [[stocks/research/day-trade-research|Day Trade Research]]
+- [[stocks/research/volatile-stocks|Volatile Stocks]]
+- [[stocks/research/research|Research Index]]
+- *Archived:* alert-status, day-trading-options, income-strategy, model-performance, news-alert, robinhood-android-app
 
 ---
 
@@ -27,17 +28,19 @@
 
 ---
 
-## 👤 Personal (`kb/personal/`)
+## 👤 Personal
 
-- [[IDENTITY|Identity]] - Name, vibe
-- [[SOUL|Soul]] - Core principles
-- [[USER|User]] - Your prefs
+- [[../IDENTITY|Identity]] - Name, vibe
+- [[../SOUL|Soul]] - Core principles
+- [[../USER|User]] - Your prefs
+
+*(Files in workspace root)
 
 ---
 
 ## 📚 Reference (`kb/reference/`)
 
-(In progress)
+*(Empty - add reference docs here)*
 
 ---
 
