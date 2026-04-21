@@ -190,6 +190,7 @@
   },
   "active": "e2e592e10dd2ea2a",
   "lastOpenFiles": [
+    "decisions/index.md",
     "kb/index.md",
     "projects.md",
     "memory/hub-archive.md",
@@ -224,7 +225,6 @@
     "scripts/context-monitor-light.sh",
     "scripts/stock-research-scanner.sh",
     "kb/stocks/agent/research-opportunities.json",
-    "memory/2026-04-21.md",
-    "kb/stocks/research/weekly-research.md"
+    "memory/2026-04-21.md"
   ]
 }
