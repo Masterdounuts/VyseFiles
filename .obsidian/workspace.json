@@ -188,8 +188,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "8b36030970eaef4d",
+  "active": "43df365299646f4c",
   "lastOpenFiles": [
+    "projects.md",
+    "memory/hub-archive.md",
+    "knowledge.md",
+    "kb/system/hub-system.md",
+    "kb/stocks/hub-portfolio.md",
+    "QUICK-RECALL.md",
     "kb/index.md",
     "memory/2026-04-16.md",
     "scripts/morning-scan.sh",
@@ -219,12 +225,6 @@
     "scripts/stock-research-scanner.sh",
     "kb/stocks/agent/research-opportunities.json",
     "memory/2026-04-21.md",
-    "kb/stocks/research/weekly-research.md",
-    "kb/stocks/research/volatile-stocks.md",
-    "kb/stocks/research/robinhood-android-app.md",
-    "kb/stocks/research/research.md",
-    "kb/stocks/research/news-alert.md",
-    "kb/stocks/research/morning-research.md",
-    "kb/stocks/research/model-performance.md"
+    "kb/stocks/research/weekly-research.md"
   ]
 }
