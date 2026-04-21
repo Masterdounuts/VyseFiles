@@ -11,18 +11,34 @@
   "targets": {
     "GGB": {
       "current_price": 4.28,
-      "52w_range": [2.48, 4.66],
+      "52w_range": [
+        2.48,
+        4.66
+      ],
       "analyst_target": 4.81,
-      "buy": [4.10, 3.90],
-      "sell": [4.45, 4.60, 4.75],
+      "buy": [
+        4.10,
+        3.90
+      ],
+      "sell": [
+        4.45,
+        4.60,
+        4.75
+      ],
       "last_price": null,
       "strategy": "Scale out: sell half at $4.45, rest at $4.60"
     }
   },
   "alerts_sent": [],
   "volatility_threshold_percent": 3,
-  "volatile_watchlist": ["BBAI", "LCID", "QS", "MARA", "SOFI"],
-  "last_check": null,
+  "volatile_watchlist": [
+    "BBAI",
+    "LCID",
+    "QS",
+    "MARA",
+    "SOFI"
+  ],
+  "last_check": "2026-04-21T14:00:41Z",
   "goal": "Compound to $70/day eventual",
   "position_sizing": {
     "volatile_max": 10,
