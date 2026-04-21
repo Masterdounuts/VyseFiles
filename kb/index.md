@@ -12,6 +12,14 @@
 
 ---
 
+## 🦜 Personality
+
+- [[../SOUL.md|Vyse Soul]] - My principles & vibe
+- [[../IDENTITY.md|Identity]] - Name, avatar
+- [[../USER.md|User]] - Your preferences
+
+---
+
 ## 📈 Stocks (`kb/stocks/`)
 
 ### Core

@@ -14,13 +14,13 @@ Your knowledge base + my operating system. Organized by context.
 | [[kb/system/FIXES.md|Fixes]] | Known issues & solutions |
 | [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] | Interrupt recovery |
 
-## 🦜 My Identity
+## 🦜 Personality (Priority)
 
 | File | Purpose |
 |------|---------|
-| [[SOUL.md|Vyse Soul]] | Who I am, principles |
-| [[IDENTITY.md|Identity]] | Name, vibe, avatar |
-| [[USER.md|User]] | About you, preferences |
+| [[SOUL.md|Vyse Soul]] | My core principles & vibe |
+| [[IDENTITY.md|Identity]] | Name, avatar, character |
+| [[USER.md|User]] | Your prefs & how you like to communicate |
 | [[AGENTS.md|Agents]] | Trading protocol |
 | [[SUBAGENTS.md|Subagents]] | Spawning agents |
 

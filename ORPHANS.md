@@ -12,14 +12,14 @@
 | [[kb/system/FIXES.md|Fixes]] | ✅ Known issues |
 | [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] | ✅ Recovery |
 
-## 📁 Root Files
+## 🦜 Personality → [[INDEX.md|Main Index]]
 
 | File | Status |
 |------|--------|
-| [[SOUL.md|Vyse Soul]] | ✅ Identity |
-| [[IDENTITY.md|Identity]] | ✅ |
-| [[USER.md|User]] | ✅ |
-| [[AGENTS.md|Agents]] | ✅ |
+| [[SOUL.md|Vyse Soul]] | ✅ Core principles |
+| [[IDENTITY.md|Identity]] | ✅ Name, vibe |
+| [[USER.md|User]] | ✅ Your prefs |
+| [[AGENTS.md|Agents]] | ✅ Trading protocol |
 
 ## 📅 Memory / Daily Logs → [[memory/2026-04-20|Apr 20]]
 
