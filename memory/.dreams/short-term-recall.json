@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T00:34:17.705Z",
+  "updatedAt": "2026-04-21T00:53:18.679Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78208,6 +78208,223 @@
         "351.30",
         "396.12",
         "6.53"
+      ]
+    },
+    "memory:memory/2026-04-17.md:193:243": {
+      "key": "memory:memory/2026-04-17.md:193:243",
+      "path": "memory/2026-04-17.md",
+      "startLine": 193,
+      "endLine": 243,
+      "source": "memory",
+      "snippet": "- The audit task itself was context-heavy (multiple file reads, script creations) - Even with buffer, long-running tasks can still overflow ### Recommendations - Run compaction manually at 60-70% instead of waiting for auto-trigger - Break large tasks into smaller chunks with explicit checkpoints - Use `session_status` to monitor context during heavy work ### Pending User Decision Awaiting approval to disable 4 redundant cron jobs: - guard-context (deprecated) - vyse-readiness-check (duplicated) - gateway-watch (wrong path) - Cron-Health-Monitor (duplicates unified-health) *17:27 UTC - Session reset, awaiting user response* --- ## Pre-Compaction Save: 17:38 UTC ### Resume Point # Resume",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5389551445841789,
+      "maxScore": 0.5389551445841789,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "context-heavy",
+        "long-running",
+        "60-70",
+        "auto-trigger",
+        "session-status",
+        "guard-context",
+        "vyse-readiness-check"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2580:2615": {
+      "key": "memory:memory/2026-04-16.md:2580:2615",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2580,
+      "endLine": 2615,
+      "source": "memory",
+      "snippet": "- Waiting on David's go for the next 3 SOUL.md recommendations Ready when you are. 🦜 user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 16:20 UTC] we are going to have a context exceeded limit happen and our chat is about to be reset I hope we have a persistent memory protocol for this! assistant: We do! Here's what's in place: ✅ **Recovery Protocol:** - **Triggers:** Say \"What were we working on?\" or \"Remember?\" and I read `memory/active.md` immediately - **Wake-up checklist** (in SOUL.md): TODO → active.md → check triggers → recent memory - **Checkpoint just saved** — current state is in `active.md` The pr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5239488244056701,
+      "maxScore": 0.5239488244056701,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "openclaw-control-ui",
+        "memory/active.md",
+        "wake-up",
+        "active.md",
+        "waiting",
+        "david's",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2602:2619": {
+      "key": "memory:memory/2026-04-16.md:2602:2619",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2602,
+      "endLine": 2619,
+      "source": "memory",
+      "snippet": "1. Message me with **\"What were we working on?\"** or **\"Remember?\"** 2. I read the checkpoint and pick up where we left off We're covered. 🦜 === 2026-04-16-cron-optimization.md === # Session: 2026-04-16 10:12:34 UTC - **Session Key**: agent:main:main - **Session ID**: 5dc9039d-6682-44da-a3d0-8950edd5c286 - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5225237876176834,
+      "maxScore": 0.5225237876176834,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "2026-04-16-cron-optimization.md",
+        "1-3",
+        "message",
+        "what",
+        "working",
+        "remember",
+        "read",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1661:1667": {
+      "key": "memory:memory/2026-04-16.md:1661:1667",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1661,
+      "endLine": 1667,
+      "source": "memory",
+      "snippet": "| **3️⃣ Save decisions (not full transcript) to a file** | ✅ *Daily Summary Generator* creates a daily memory file. <br>✅ *Morning Stock Research* and other stock‑related jobs write their own focused files. | No universal “decision‑log” that is updated after every major decision (e.g., after a trade or a planning step). | | **4️⃣ Start a fresh chat when the thread feels bloated** | No automatic detector or trigger. | **Missing** – a job that checks the session‑context percent and, when it exceeds a threshold (≈ 80 %), (a) alerts you on Telegram, and (b) creates a hand‑off summary file you can paste into a new session. | | **Context‑limit monitoring** | No job specifically watches `session_st",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5200827687978744,
+      "maxScore": 0.5200827687978744,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "e.g",
+        "session-st",
+        "save",
+        "decisions",
+        "not",
+        "full",
+        "transcript",
+        "summary"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1411:1462": {
+      "key": "memory:memory/2026-04-16.md:1411:1462",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1411,
+      "endLine": 1462,
+      "source": "memory",
+      "snippet": "- User reported that after a compaction event the assistant halted and did not resume work. - Investigation shows context was at **91%**, near the limit, with **11 compactions** already recorded. - Action taken: saved a checkpoint in `active.md` and noted the need to increase `reserveTokens` buffer or adjust compaction thresholds. - Next steps: monitor context levels, ensure pre‑compact saves at 60%/70% as per SOUL.md, and consider raising `reserveTokensFloor` above 20000 to provide more headroom. --- ## Pre-Compaction Memory Flush (23:47 UTC) - Durable memories stored in this file as per request. --- ## Pre-Compaction Save: 23:52 UTC ### Context: ### Resume Point # Resume Point - Mid-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5197703450918197,
+      "maxScore": 0.5197703450918197,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "active.md",
+        "soul.md",
+        "pre-compaction",
+        "user",
+        "reported",
+        "compaction",
+        "event",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1870:1886": {
+      "key": "memory:memory/2026-04-16.md:1870:1886",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1870,
+      "endLine": 1886,
+      "source": "memory",
+      "snippet": "\"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:01 UTC] continue what you were doing assistant: Hey David 👋 Here’s where we left off after you opened the “Long Chats and Lost Work” guide: | Area | What we’ve set up | Why it matters | |------|-------------------|----------------| | **Auto‑checkpoint** | Added `scripts/auto-checkpoint.sh` and a **2‑minute cron job** (`Frequent Checkpoint (2min)`) that updates `memory/resume-point.md` whenever the session context exceeds 70 % (or when forced). | Keeps a fresh resume point so we never lose the latest decisions even if the context window fills up. | | **Compaction handling** | Enabled the **Context‑mon",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5162928164005279,
+      "maxScore": 0.5162928164005279,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "scripts/auto-checkpoint.sh",
+        "memory/resume-point.md",
+        "label",
+        "openclaw",
+        "control",
+        "thu",
+        "utc"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2566:2591": {
+      "key": "memory:memory/2026-04-16.md:2566:2591",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2566,
+      "endLine": 2591,
+      "source": "memory",
+      "snippet": "1. **Add failure handling** — New Boundaries line: \"When something breaks, fix or disable — don't let it rot.\" 2. **Compact by default** — Add to Core Truths: \"Prefer small, focused files over long ones. Duplicate content is technical debt.\" 3. **Time-box thinking** — New Core Truth: \"Don't overthink. Make a call, test it, iterate. Perfect is the enemy of done.\" Want me to implement these? 🦜 user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5139987051486968,
+      "maxScore": 0.5139987051486968,
+      "firstRecalledAt": "2026-04-21T00:53:18.679Z",
+      "lastRecalledAt": "2026-04-21T00:53:18.679Z",
+      "queryHashes": [
+        "a37e00451966"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "time-box",
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md",
+        "tools.md"
       ]
     }
   }

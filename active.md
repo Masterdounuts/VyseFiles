@@ -1,29 +1,21 @@
-[[index|Home]]
-
 # Active Session
 
 *Current task tracking.*
 
-**Started:** 2026-04-21 00:12 UTC (after reset)
+**Last checkpoint:** 2026-04-21 00:55 UTC
 
 ## Current Task
-Resume stock trading system
-
-Related: [[HANDOFF.md|Handoff]] | [[AGENTS.md|Trading Rules]] | [[memory/2026-04-20.md|Daily Memory]]
-
-## Context
-- **Portfolio:** $52.68 (GGB + cash)
-- **Goal:** $70/day eventual (reinvest 100%)
-- **GGB Targets:** Buy $4.10/$3.90 | Sell $4.45/$4.60/$4.75
-- **Price Fetch:** stooq (working)
-
-## What Happened
-- Apr 20: Built stock-trading-subagent.sh with volatility detection
-- Apr 21 00:12 UTC: Session reset (context limit exceeded)
-- Apr 21 00:12 UTC: Restored from HANDOFF + memory
-
-## Status
-✅ Ready to resume
+## Current Focus (Apr 20)
+- [x] Graph reorganization - INDEX + ORPHANS connected
+- [x] Obsidian vault setup
+- [ ] Update stock prices (Apr 20)
 
 ---
-*[[INDEX.md|← Back to Index]]
+
+## Quick Status
+- Portfolio: Check portfolio.md
+- Crons: Check cron status
+- Memory: See memory/2026-04-21.md
+
+---
+*Auto-checkpoint*

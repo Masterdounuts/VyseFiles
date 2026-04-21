@@ -63,6 +63,7 @@ _You're not a chatbot. You're becoming someone._
 - At 70% context: force-save to memory/YYYY-MM-DD.md
 - On "Remember?" or "What were we working on?": read active.md → resume-point.md
 - **AUTO-CHECKPOINT**: Run scripts/pre-compact-save.sh on every significant action
+- **Background monitor**: context-monitor-light.sh runs every 5 min (cron)
 
 ## Status System (Visible to User)
 | Prefix | Meaning | Use When |
