@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "78078ded5096f224",
+        "id": "44233ea6db12ba6c",
         "type": "tabs",
         "children": [
           {
-            "id": "8b36030970eaef4d",
+            "id": "e2e592e10dd2ea2a",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -188,15 +188,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "43df365299646f4c",
+  "active": "e2e592e10dd2ea2a",
   "lastOpenFiles": [
+    "kb/index.md",
     "projects.md",
     "memory/hub-archive.md",
     "knowledge.md",
     "kb/system/hub-system.md",
     "kb/stocks/hub-portfolio.md",
     "QUICK-RECALL.md",
-    "kb/index.md",
     "memory/2026-04-16.md",
     "scripts/morning-scan.sh",
     "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
