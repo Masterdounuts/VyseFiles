@@ -14,7 +14,7 @@ Your knowledge base + my operating system. Organized by context.
 | [[IDENTITY.md|Identity]] | Name, vibe, avatar |
 | [[USER.md|User]] | About you, preferences |
 | [[AGENTS.md|Agents]] | Trading protocol |
-| [[BOOTSTRAP.md|Bootstrap]] | Wake-up protocol |
+| [[kb/system/BOOTSTRAP.md|Bootstrap]] | Wake-up protocol |
 | [[SUBAGENTS.md|Subagents]] | Spawning child agents |
 
 ## 🧠 My Memory
@@ -25,7 +25,7 @@ Your knowledge base + my operating system. Organized by context.
 | [[memory/2026-04-19|Apr 19]] | Yesterday |
 | [[memory/2026-04-18|Apr 18]] | Earlier this week |
 | [[memory/recent-dailies|Dailies]] | Auto-generated list |
-| [[memory/decisions|Decisions]] | Key decisions log |
+| [[decisions/index.md|Decisions]] | Key decisions log |
 | [[memory/active|Active Task]] | Current work |
 | [[active.md|Session Active]] | Current task (root) |
 | [[PENDING.md|Pending]] | Queued tasks |
