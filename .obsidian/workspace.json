@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "029ded6164f48ada",
+        "id": "9258aecc69855679",
         "type": "tabs",
         "children": [
           {
-            "id": "24075776ad020c56",
+            "id": "6b343fded933fcc9",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -188,10 +188,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "43df365299646f4c",
+  "active": "6b343fded933fcc9",
   "lastOpenFiles": [
-    "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
     "memory/2026-04-16.md",
+    "scripts/morning-scan.sh",
+    "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
     "INDEX.md",
     "kb/stocks/research/archive/robinhood-android-app.md",
     "kb/stocks/research/archive/news-alert.md",
@@ -216,7 +217,6 @@
     "scripts/context-monitor-light.sh",
     "scripts/stock-research-scanner.sh",
     "kb/stocks/agent/research-opportunities.json",
-    "kb/stocks/agent/alert-history.json",
     "memory/2026-04-21.md",
     "kb/stocks/research/weekly-research.md",
     "kb/stocks/research/volatile-stocks.md",
@@ -224,7 +224,6 @@
     "kb/stocks/research/research.md",
     "kb/stocks/research/news-alert.md",
     "kb/stocks/research/morning-research.md",
-    "kb/stocks/research/model-performance.md",
-    "kb/stocks/research/income-strategy.md"
+    "kb/stocks/research/model-performance.md"
   ]
 }
