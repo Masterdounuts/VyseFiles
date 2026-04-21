@@ -41,13 +41,13 @@ Your knowledge base + my operating system. Organized by context.
 | [[portfolio.md|Portfolio]] | Current positions |
 | [[kb/stocks/rules|Trading Rules]] | Strategy & rules |
 | [[kb/stocks/research/morning-research|Morning Research]] | Daily picks |
-| [[kb/stocks/research/alert-status|Alert Status]] | Active price alerts |
+| [[kb/stocks/agent/README.md|Stock Agent]] | Price monitoring |
 
 ### Research
 - [[kb/stocks/research/volatile-stocks|Volatile Stocks]] - Day trade candidates
-- [[kb/stocks/research/day-trading-options|Day Trading + Options]]
-- [[kb/stocks/research/income-strategy|Income Strategy]]
-- [[kb/stocks/research/model-performance|Model Performance]]
+- [[kb/stocks/research/archive/day-trading-options|Day Trading + Options]] *(archived)*
+- [[kb/stocks/research/archive/income-strategy|Income Strategy]] *(archived)*
+- [[kb/stocks/research/archive/model-performance|Model Performance]] *(archived)*
 
 ## 📚 Guides & References
 
