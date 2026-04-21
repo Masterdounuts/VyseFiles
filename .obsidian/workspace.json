@@ -189,6 +189,7 @@
   },
   "active": "6e290570b2e87e26",
   "lastOpenFiles": [
+    "kb/stocks/subagent-assessment.md",
     "scripts/pre-compact-save.sh",
     "scripts/git-sync.sh",
     "scripts/context-monitor-light.sh",
@@ -200,7 +201,6 @@
     "scripts/clear-pending.sh",
     "scripts/check-pending-opportunities.sh",
     "kb/stocks/agent/pending-opportunities.json",
-    "kb/stocks/agent/last-prices.txt",
     "kb/stocks/agent/research.md",
     "kb/stocks/agent/README.md",
     "kb/stocks/research/weekly-research.md",
