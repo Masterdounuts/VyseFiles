@@ -189,6 +189,8 @@
   },
   "active": "6e290570b2e87e26",
   "lastOpenFiles": [
+    "memory/obsidian-ai-workflow-research.md",
+    "learnings.json",
     "kb/stocks/subagent-assessment.md",
     "scripts/pre-compact-save.sh",
     "scripts/git-sync.sh",
@@ -200,7 +202,6 @@
     "scripts/stock-trading-subagent.sh",
     "scripts/clear-pending.sh",
     "scripts/check-pending-opportunities.sh",
-    "kb/stocks/agent/pending-opportunities.json",
     "kb/stocks/agent/research.md",
     "kb/stocks/agent/README.md",
     "kb/stocks/research/weekly-research.md",
@@ -223,7 +224,6 @@
     "memory/stocks/morning-research.md",
     "obsidian-prototype/daily-note-template.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-website-memory-capture.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-flag-assumptions-added.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-robinhood-setup.md"
+    "memory/archive/2026-04-16-timestamped/2026-04-16-flag-assumptions-added.md"
   ]
 }
