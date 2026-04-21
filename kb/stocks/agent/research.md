@@ -1,5 +1,7 @@
 # Stock Subagent - Autonomous Research System
 
+[[../../Index|← Back to Stocks]]
+
 ## Architecture
 
 ```

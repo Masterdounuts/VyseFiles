@@ -1,5 +1,7 @@
 # Stock Trading Subagent Assessment
 
+[[../../INDEX|← Back to KB]]
+
 **Date:** 2026-04-21
 **Analyst:** Vyse
 

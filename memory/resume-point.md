@@ -1,5 +1,7 @@
 # Resume Point
 
+[[hub-archive|← Back to Memory]]
+
 **Checkpoint:** 2026-04-21 01:40 UTC
 
 ## What's Happening

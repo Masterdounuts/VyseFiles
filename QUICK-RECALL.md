@@ -1,5 +1,7 @@
 # Quick Recall - Fast Memory Access
 
+[[INDEX|← Back to Index]]
+
 *Instant-access notes for fast recovery after context resets.*
 
 ---

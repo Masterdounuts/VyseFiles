@@ -1,3 +1,5 @@
+[[../../INDEX|← Back to KB]]
+
 # Stock Subagent
 
 Automated price monitoring for David's portfolio with **volatile opportunity detection**.
@@ -59,3 +61,7 @@ Edit `state.json` to add new stocks:
 ```
 
 Then add targets in the `targets` section.
+
+---
+
+[[../../kb/stocks/trade-log|Trade Log]]
