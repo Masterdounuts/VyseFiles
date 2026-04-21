@@ -35,9 +35,9 @@
 
 | File | Purpose |
 |------|---------|
-| [[stocks/trade-log|Trade Log]] | All trades |
-| [[memory/trading_rules|Rules]] | Strategy |
-| [[research/volatile-stocks.md|Volatile Stocks]] | Picks |
+| [[kb/stocks/trade-log.md|Trade Log]] | All trades |
+| [[kb/stocks/rules.md|Rules]] | Strategy |
+| [[kb/stocks/research/volatile-stocks.md|Volatile Stocks]] | Picks |
 
 ## 🧪 Tests
 
