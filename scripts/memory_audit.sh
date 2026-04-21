@@ -3,7 +3,7 @@
 # Purpose: ensure all memory writes are logged, detect duplicate sections, and verify
 # that pre‑compaction flushes have been performed.
 
-MEMORY_DIR="/root/.openclaw/workspace/memory"
+MEMORY_DIR="/home/openclaw/.openclaw/workspace/memory"
 TODAY=$(date -u +"%Y-%m-%d")
 LOG_FILE="${MEMORY_DIR}/${TODAY}.md"
 
@@ -38,7 +38,7 @@ else
 fi
 
 # 4. Summarize recent cron health status (pull from latest cron‑health.log if exists)
-CRON_LOG="/root/.openclaw/workspace/cron-health.log"
+CRON_LOG="/home/openclaw/.openclaw/workspace/cron-health.log"
 if [ -f "$CRON_LOG" ]; then
   echo "\n### Recent Cron Health Summary" >> "${LOG_FILE}"
   tail -n 20 "$CRON_LOG" >> "${LOG_FILE}"

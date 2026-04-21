@@ -1,35 +1,33 @@
-# Resume Point - Mid-Conversation Checkpoint
+# Resume Point
 
-*Structured handoff per Long-Chats Guide. Update before context hits 80%.* 
+**Checkpoint:** 2026-04-21 01:40 UTC
 
-Related: [[../workspace/resume-point.md|Resume Point (workspace)]] | [[../workspace/portfolio.md|Portfolio]] | [[INDEX.md]]
+## What's Happening
+
+**GGB Targets:**
+- **Buy:** $4.10, $3.90
+- **Sell:** $4.45, $4.60, $4.75
+- **Strategy:** Scale out 50% at $4.45, 50% at $4.60
+
+**Status:**
+- Monitoring: GGB only (AMC dropped)
+- Subagent: Built & active (scripts/stock-trading-subagent.sh)
+- Volatile system: Active, conferral enabled
+- **⚠️ Session reset Apr 21 00:12 UTC** (context limit)
+
+**Key Files:**
+- `AGENTS.md` - Trading rules & system info
+- `kb/stocks/agent/state.json` - Live portfolio & targets
+
+## Key Files
+- portfolio.md - holdings & targets
+- AGENTS.md - trading rules
+- TODO.md - task list
+
+## On Wake
+1. Read HANDOFF.md
+2. Check TODO.md for active tasks
+3. Check PENDING.md for queued actions
 
 ---
-## Current Status (as of 13:09 UTC)
-
-**Decision Made:** Go with AMC, NOT RIVN
-
-**Strategy:**
-- TSLA: HOLD until $8+ (alert set)
-- After TSLA sells: 70% GGB / 30% AMC
-- Total capital: ~$32 (TSLA $8 + cash $24.29)
-
-**Volatile Pick: AMC**
-- Earnings: April 18 (2 days!)
-- Target: $6.60-$6.80
-- Stop: $5.20
-
-**Buying Power:** $24.29 (waiting for TSLA target)
-
----
-## Files to Reference on Wake
-- portfolio.md (current holdings & plan)
-- robinhood-guide.md (execution steps)
-- AGENTS.md (strategy rules)
-
-**Wake-up:** Ask David if TSLA has hit $8 yet. If yes, execute GGB/AMC split.
-
----
-*Updated: 2026-04-16 13:09 UTC*
----
-[[INDEX.md|← Back]]
+*Updated: 2026-04-21 01:40 UTC*

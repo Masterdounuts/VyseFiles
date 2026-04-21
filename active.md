@@ -1,31 +1,21 @@
-[[index|Home]]
-
 # Active Session
 
 *Current task tracking.*
 
-**Started:** 2026-04-20 23:34 UTC
+**Last checkpoint:** 2026-04-21 01:40 UTC
 
 ## Current Task
-Build stock trading subagent
-
-Related: [[HANDOFF.md|Handoff]] | [[AGENTS.md|Trading Rules]] | [[memory/2026-04-20.md|Daily Memory]]
-
-## Context
-- **Portfolio:** $52.68 (GGB + cash)
-- **Goal:** $70/day eventual (reinvest 100%)
-- **GGB Targets:** Buy $4.10/$3.90 | Sell $4.45/$4.60/$4.75
-- **Fetch:** Fixed (finviz → stooq)
-
-## Today's Work
-- ✅ Fixed stock price fetch (stooq working)
-- ✅ Updated portfolio targets
-- ✅ Saved memory (memory/2026-04-20.md)
-- ✅ Updated HANDOFF.md
-- ⏳ Build trading subagent (next)
-
-## Status
-✅ Ready to build
+## Current Focus (Apr 20)
+- [x] Graph reorganization - INDEX + ORPHANS connected
+- [x] Obsidian vault setup
+- [ ] Update stock prices (Apr 20)
 
 ---
-*[[INDEX.md|← Back]]
+
+## Quick Status
+- Portfolio: Check portfolio.md
+- Crons: Check cron status
+- Memory: See memory/2026-04-21.md
+
+---
+*Auto-checkpoint*
