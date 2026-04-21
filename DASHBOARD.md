@@ -1,60 +1,56 @@
 [[index|Home]]
 
-
 # Vyse Dashboard 🦜
 
 ## Portfolio Tracking
 
-### Current Positions (April 16, 2026)
-| Stock | Shares | Price | Value |
-|-------|--------|-------|-------|
-| GGB | 4.98 | $4.17 | $21.66 |
-| AMC | 8 | $1.65 | $13.20 |
-| TSLA | 0.016567 | ~$39 | $6.53 |
-| Cash | - | - | ~$24 |
-| **Total** | - | - | **~$65** |
+### Current Positions (Apr 21, 2026)
+| Stock | Shares | Avg Cost | Current | Value | P/L |
+|-------|--------|----------|---------|-------|-----|
+| GGB | 4.99 | $4.17 | $4.28 | $21.36 | +$0.55 (+2.6%) |
+| Cash | - | - | - | $31.32 | - |
+| **Total** | - | - | - | **$52.68** | **+2.6%** |
 
-### Target Goals
-- [ ] $100 portfolio (near-term)
-- [ ] $500 portfolio (start scaling trades)
-- [ ] $2,000/month income (short-term goal)
-- [ ] $30,000/month income (Ron-level)
+### GGB Targets
+- **Sell:** $4.45, $4.60, $4.75
+- **Buy:** $4.10, $3.90
 
-## Trading Stats
+### Goal
+- [ ] $70/day passive income (eventual)
 
-### Today's Picks
-- **Primary:** GGB (swing play)
-- **Volatile:** AMC (earnings Apr 18)
-- **Hold:** TSLA until $8+
+## Today's Status
 
-### Alert Status
-- [x] Morning Research (6 AM PT)
-- [x] Stock Target Alerts (14:00 & 20:00 UTC)
-- [x] Big Move Alerts (5x daily)
-- [x] MARA/GGB/TSLA specific alerts
+```dataview
+TABLE WITHOUT ID
+  choice(completed, "✅", "⬜") as "Done",
+  choice(date = date(today), "📅 Today", date) as "When",
+  summary as "Task"
+FROM "memory"
+WHERE date >= date(today) - dur("2 days")
+SORT date desc
+```
 
-## Automation Status
+## Recent Decisions
 
-| Automation | Status | Last Run |
-|------------|--------|----------|
-| Auto-commit Memory | ✅ | Every 2 hrs |
-| Wiki Backup | ✅ | Every 4 hrs |
-| Config Sync | ✅ | Every 12 hrs |
-| Daily Git Push | ✅ | 3 AM UTC |
-| Weekly Cleanup | ✅ | Sunday 4 AM |
+```dataview
+TABLE WITHOUT ID
+  date,
+  choice(contains(tags, "decision"), "🔴", "⚪") as "Decision",
+  choice(contains(tags, "trading"), "📈", " ") as "Trading",
+  summary as "Summary"
+FROM "memory"
+WHERE date >= date(today) - dur("7 days")
+SORT date desc
+LIMIT 10
+```
 
-## Immigration
+## Quick Links
 
-- [x] FinalAffidavit.pdf complete
-- [ ] Submit to USCIS
-
-## GitHub
-
-- [x] Repo connected
-- [x] Auto-backup working
-- [x] Wiki synced
-- [x] Config backed up
+- [[memory/2026-04-21|Today's Memory]]
+- [[portfolio.md|Portfolio]]
+- [[AGENTS.md|Trading Protocol]]
+- [[active.md|Active Session]]
 
 ---
 
-*Updated: 2026-04-15 01:40 UTC*
+*Updated: 2026-04-21 14:05 UTC*
