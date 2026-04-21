@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[projects|Home]]
 
 # Loop Lessons Learned
 

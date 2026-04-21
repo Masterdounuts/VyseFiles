@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T14:21:00.097Z",
+  "updatedAt": "2026-04-21T21:59:09.681Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78611,6 +78611,99 @@
         "opportunities.sh",
         "opportunities.json",
         "scripts"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2507:2527": {
+      "key": "memory:memory/2026-04-16.md:2507:2527",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2507,
+      "endLine": 2527,
+      "source": "memory",
+      "snippet": "1. **Add failure handling** — New Boundaries line: \"When something breaks, fix or disable — don't let it rot.\" 2. **Compact by default** — Add to Core Truths: \"Prefer small, focused files over long ones. Duplicate content is technical debt.\" 3. **Time-box thinking** — New Core Truth: \"Don't overthink. Make a call, test it, iterate. Perfect is the enemy of done.\" Want me to implement these? 🦜 user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4751775979995727,
+      "maxScore": 0.4751775979995727,
+      "firstRecalledAt": "2026-04-21T21:59:09.681Z",
+      "lastRecalledAt": "2026-04-21T21:59:09.681Z",
+      "queryHashes": [
+        "a2387ca32ba8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "time-box",
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md",
+        "tools.md"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1336:1362": {
+      "key": "memory:memory/2026-04-21.md:1336:1362",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1336,
+      "endLine": 1362,
+      "source": "memory",
+      "snippet": "- kb/system/FIXES.md, kb/system/BOOTSTRAP.md - accessible - decisions/index.md - exists - All memory/ date files - exist ### Git Commit - Pushed: 40700ed ### Lesson Learned **Always verify link destinations exist, not just fix patterns.** --- [[INDEX.md|← Back]] --- ## 2026-04-21 16:57 UTC – Pre‑compaction memory flush **Key durable memories** - **KB sync issue resolved** – User couldn’t see `kb/` folder in Obsidian after pulling. Verified that all KB files are present on GitHub and pushed a forced push. Confirmed that a manual pull in Obsidian (with the vault open at `C:\\Users\\jacqu\\Documents\\GitHub\\VyseFiles`) brings the KB files into the vault. User will keep Obsidian open for auto‑s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47400648891925806,
+      "maxScore": 0.47400648891925806,
+      "firstRecalledAt": "2026-04-21T21:59:09.681Z",
+      "lastRecalledAt": "2026-04-21T21:59:09.681Z",
+      "queryHashes": [
+        "a2387ca32ba8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "kb/system/fixes.md",
+        "kb/system/bootstrap.md",
+        "decisions/index.md",
+        "index.md",
+        "system",
+        "fixes.md",
+        "bootstrap.md",
+        "accessible"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2619:2656": {
+      "key": "memory:memory/2026-04-16.md:2619:2656",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2619,
+      "endLine": 2656,
+      "source": "memory",
+      "snippet": "user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory/2026-04-16.md already exists, APPEND new content only and do not overwrite existing entries. Do NOT create timestamped variant files (e.g., 2026-04-16-HHMM.md); always use the canonical 2026-04-16.md filename. If nothing to store, reply with NO_REPLY. Current time: Thursday, April 16th, 2026 - 9:49 AM (UTC) / 2026-04-16 09:49 UTC assistant: NO_REPLY user: Sender (untrusted metadata): ```json {",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47145761549472803,
+      "maxScore": 0.47145761549472803,
+      "firstRecalledAt": "2026-04-21T21:59:09.681Z",
+      "lastRecalledAt": "2026-04-21T21:59:09.681Z",
+      "queryHashes": [
+        "a2387ca32ba8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md",
+        "tools.md",
+        "agents.md"
       ]
     }
   }

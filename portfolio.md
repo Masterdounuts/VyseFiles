@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[kb/stocks/hub-portfolio|Home]]
 
 
 # Portfolio Tracker

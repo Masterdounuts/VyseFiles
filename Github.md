@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[knowledge|Home]]
 
 
 # GitHub Notes

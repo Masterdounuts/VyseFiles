@@ -1,4 +1,4 @@
-[[INDEX.md|Home]] • [[decisions/index.md|Decisions]]
+[[kb/stocks/hub-portfolio|Home]] • [[decisions/index.md|Decisions]]
 
 # Trading Rules Summary
 

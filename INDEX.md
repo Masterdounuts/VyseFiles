@@ -6,6 +6,18 @@ Your knowledge base + my operating system. Organized by context.
 
 ---
 
+## 📂 Categories
+
+| Hub | Description |
+|-----|-------------|
+| [[kb/system/hub-system|System]] | Bootstrap, memory, recovery |
+| [[kb/stocks/hub-portfolio|Portfolio]] | Trading & research |
+| [[knowledge|Knowledge]] | Research & guides |
+| [[memory/hub-archive|Archive]] | Dated memories |
+| [[projects|Projects]] | Active work |
+
+---
+
 ## 🎯 System (Priority)
 
 | File | Purpose |

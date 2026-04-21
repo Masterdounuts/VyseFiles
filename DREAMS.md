@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[memory/hub-archive|Home]]
 
 # DREAMS.md
 

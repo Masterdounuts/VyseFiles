@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[kb/system/hub-system|Home]]
 
 
 # System Summary & Lessons Learned
