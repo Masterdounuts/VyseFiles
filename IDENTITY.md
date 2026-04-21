@@ -1,4 +1,4 @@
-[[INDEX.md|Home]] • [[BOOTSTRAP|Boot]]
+[[INDEX.md|Home]] • [[kb/system/BOOTSTRAP.md|Boot]]
 
 
 # IDENTITY.md - Who Am I?
