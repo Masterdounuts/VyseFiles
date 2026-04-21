@@ -1,4 +1,4 @@
-[[INDEX.md|Home]] • [[INTERRUPT_RECOVERY.md|Interrupt Recovery]]
+[[../INDEX.md|Home]] • [[INTERRUPT_RECOVERY.md|Interrupt Recovery]]
 
 
 # FIXES & SOLUTIONS LOG
