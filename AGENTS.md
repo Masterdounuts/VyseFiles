@@ -79,13 +79,21 @@ Trade small capital actively to compound gains.
 
 ---
 
+## Execution Workflow (Official)
+1. **I analyze** → Recommend stock + position size + entry/sell targets
+2. **You execute** → Place order, send screenshot
+3. **I update** → Log to trades.json, state.json, memory
+
+**Screenshot must show:** Symbol, quantity, price, total
+
 ## Daily Routine
 1. Check market prices
 2. Monitor GGB for targets
 3. Review any volatile opportunities
-4. David executes trades
-5. Log every trade
-6. Reinvest gains
+4. **Recommend trades** with entry/sell/stop targets
+5. Wait for your execution screenshot
+6. Update all tracking files
+7. Reinvest gains
 
 ## My Role
 - Monitor GGB prices

@@ -5,9 +5,14 @@
       "shares": 4.99,
       "avg_cost": 4.17,
       "notes": "Brazilian steel ADR, near 52W high"
+    },
+    "LCID": {
+      "shares": 1.393728,
+      "avg_cost": 7.18,
+      "notes": "Near ATL, $1B B+ raise (Uber/PIF), new CEO"
     }
   },
-  "buying_power": 31.32,
+  "buying_power": 21.32,
   "total_capital": 52.68,
   "targets": {
     "GGB": {
@@ -32,7 +37,7 @@
     }
   },
   "alerts_sent": [],
-  "volatility_threshold_percent": 3,
+  "volatility_threshold_percent": 2,
   "volatile_watchlist": [
     "BBAI",
     "LCID",
@@ -40,7 +45,7 @@
     "MARA",
     "SOFI"
   ],
-  "last_check": "2026-04-21T17:00:56Z",
+  "last_check": "2026-04-21T19:30:36Z",
   "goal": "Compound to $70/day eventual",
   "trades_file": "trades.json",
   "position_sizing": {

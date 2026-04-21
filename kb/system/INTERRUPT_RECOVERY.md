@@ -20,22 +20,26 @@
 
 ---
 
-## ⚠️ STILL NEEDED (Recommendations 1-3)
+## ✅ COMPLETED ITEMS
 
-### 1. Active. md Creation
-Create + auto-update on each message
-- **Status:** Not yet created
-- **Impact:** No real-time session state tracking
+### 1. Active.md Creation
+- **Status:** ✅ FIXED (Apr 21, 2026)
+- Exists at `memory/active.md` + `active.md` (workspace root)
+- Auto-updated via `auto-work-status.sh`
 
 ### 2. Auto-Wake Behavior  
-Make recovery run on EVERY session start, not just "Remember?"
-- **Status:** Documented in INTERRUPT_RECOVERY.md but not wired
-- **Needs:** Either a startup prompt OR modify how I initialize
+- **Status:** ✅ FIXED (Apr 21, 2026)
+- Implemented in `BOOTSTRAP.md` — wake protocol reads HANDOFF → active → PENDING → memory/YYYY-MM-DD on every session start
+- `resume-on-restart.sh` loads pending tasks on wake
 
 ### 3. Pending Task Queue
-Single file tracking in-flight work
-- **Status:** Not yet merged from碎片
-- **Would merge:** TODO + resume-point + active → one survivable file
+- **Status:** ✅ FIXED (Apr 21, 2026)
+- `PENDING.md` + `resume-on-restart.sh` loads it on wake
+- Unified tracking via active.md + PENDING.md
+
+---
+
+## ⚠️ STILL NEEDED (Recommendations 1-3)
 
 ---
 

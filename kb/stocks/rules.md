@@ -13,6 +13,11 @@ See `kb/stocks/agent/state.json` for live GGB targets:
 - Buy: $4.10, $3.90
 - Sell: $4.45, $4.60, $4.75
 
+## Execution Workflow
+1. **I recommend** → Send stock + position size + entry/sell/stop targets to you
+2. **You execute** → Place order, send screenshot of the confirmation
+3. **I update** → Log to trades.json, state.json, memory
+
 ## General Rules
 - Stop‑loss: max 5% loss
 - Take profit: 1‑3% per trade
@@ -20,5 +25,6 @@ See `kb/stocks/agent/state.json` for live GGB targets:
 - Never chase; wait for pull‑back
 - Keep capital small, scale up gradually
 - Log every trade in memory
+- Max $10 per volatile play
 ---
 [[INDEX.md|← Back]]
