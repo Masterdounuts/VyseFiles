@@ -44,7 +44,7 @@ Your knowledge base + my operating system. Organized by context.
 | [[memory/2026-04-20|Apr 20]] | Yesterday |
 | [[memory/2026-04-17|Apr 17]] | Earlier this week |
 | [[memory/recent-dailies|Dailies]] | Auto-generated list |
-| [[decisions/index.md|Decisions]] | Key decisions log |
+| [[INDEX.md|Decisions]] | Key decisions log |
 | [[memory/active|Active Task]] | Current work |
 | [[active.md|Session Active]] | Current task (root) |
 | [[PENDING.md|Pending]] | Queued tasks |

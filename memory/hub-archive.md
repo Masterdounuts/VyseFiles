@@ -17,7 +17,7 @@ Hub for dated memories, journal entries, and archived content.
 - [[content/dreams/dream-journal-archive.md|Vision Archive]]
 
 ## Decision Logs
-- [[decisions/index.md|Decisions]] - Key decisions
+- [[INDEX.md|Decisions]] - Key decisions
 - [[memory/active|Active Task]]
 - [[PENDING.md|Pending]] - Queued tasks
 

@@ -16,7 +16,7 @@
 
 ### On My Wake (After compaction/restart)
 1. Read `BOOTSTRAP.md` → knows Obsidian structure
-2. Query `decisions/index.md` for recent decisions
+2. Query `INDEX.md` for recent decisions
 3. Read today's memory file
 4. Continue work
 
@@ -25,7 +25,7 @@
 | File | Purpose |
 |------|---------|
 | `memory/YYYY-MM-DD.md` | Daily log with frontmatter |
-| `decisions/index.md` | Central decision tracker (dataview) |
+| `INDEX.md` | Central decision tracker (dataview) |
 | `templates/daily-note.md` | Template for new notes |
 | `BOOTSTRAP.md` | My startup protocol |
 
