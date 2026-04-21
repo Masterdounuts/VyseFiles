@@ -1,5 +1,7 @@
 # Vyse's Dream Journal
 
+[[../../DREAMS.md|← Back to Dreams Hub]]
+
 *Test entry - 2026-04-13*
 
 ---

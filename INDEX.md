@@ -86,7 +86,16 @@ Your knowledge base + my operating system. Organized by context.
 | **Recovery Template** | [[recovery-prompt.md|Recovery Prompt]] - Session rescue |
 | **Tasks** | [[TASKS.md|Tasks]] - GitHub issues |
 | **Dashboard** | [[DASHBOARD.md|Dashboard]] - Visual status |
-| **Dreams** | [[DREAMS.md|Dreams]] - Vision tracking |
+## 💭 Dreams & Vision
+
+| File | Purpose |
+|------|---------|
+| [[DREAMS.md|Dreams Hub]] | Main dream index |
+| [[memory/archive/DREAMS.md|Dream Diary]] | Full journal entries |
+| [[content/dreams/dream-journal-archive.md|Vision Archive]] | Long-term goals & income |
+
+### Quick Links
+- [[memory/archive/dream-journal.md|Early Entries]] - First test dreams
 | **Legacy** | [[loop-lessons.md|Loop Lessons]] - Old iteration system |
 | **File Index** | [[ORPHANS.md|Orphans]] - Unlinked files |
 

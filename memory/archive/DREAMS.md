@@ -1,5 +1,7 @@
 # Dream Diary
 
+[[../../DREAMS.md|← Back to Dreams Hub]]
+
 <!-- openclaw:dreaming:diary:start -->
 ---
 
