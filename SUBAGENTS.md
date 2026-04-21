@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[kb/system/::System|Home]]
 
 
 # SUBAGENTS.md - Subagent Configuration

@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[kb/stocks/::Portfolio|Home]]
 
 
 # Robinhood Alerts Setup Guide

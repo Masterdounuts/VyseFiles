@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[::Projects|Home]]
 
 # TODO.md - Persistent Task List
 

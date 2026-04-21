@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[memory/::Archive|Home]]
 
 # DREAMS.md
 

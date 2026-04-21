@@ -1,4 +1,4 @@
-[[INDEX.md|Home]]
+[[::Projects|Home]]
 
 
 # Vyse Workspace - Task Tracking
