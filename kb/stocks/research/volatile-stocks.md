@@ -1,4 +1,4 @@
-[[index|Home]]
+[[INDEX.md|Home]]
 
 # Volatile Stocks for Day Trading (Under $20)
 

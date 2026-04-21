@@ -1,4 +1,4 @@
-[[index|Home]]
+[[INDEX.md|Home]]
 
 - [x] TSLA unlock decision: HOLD until $8+ market value
 - [x] TSLA unlock decision: HOLD until $8+ market value

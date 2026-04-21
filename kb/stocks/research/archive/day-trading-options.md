@@ -1,4 +1,4 @@
-[[index|Home]]
+[[INDEX.md|Home]]
 
 # Day Trading + Options Strategy
 ## For Quick Income with Small Capital

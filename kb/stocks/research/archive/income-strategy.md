@@ -1,4 +1,4 @@
-[[index|Home]]
+[[INDEX.md|Home]]
 
 # Stock Income Strategy Research
 ## Goal: $100/day → $30,000/month
