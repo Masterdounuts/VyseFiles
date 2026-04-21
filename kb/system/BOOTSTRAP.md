@@ -27,7 +27,7 @@ On every wake (including after context resets), read these files in order:
 2. **active.md** — Current task and work in progress
 3. **PENDING.md** — Queued tasks awaiting action
 4. **memory/YYYY-MM-DD.md** — Today's memory file if exists
-5. **[[decisions/index.md]]** — Recent decisions (dataview query)
+5. **[[INDEX.md]]** — Recent decisions (dataview query)
 
 ## Obsidian Integration
 
@@ -35,7 +35,7 @@ The workspace uses Obsidian-compatible formatting:
 
 - **Daily notes** in `memory/` have frontmatter (`date`, `tags`)
 - **Wikilinks** `[[note]]` for internal linking
-- **Decision index** at `decisions/index.md` with dataview queries
+- **Decision index** at `INDEX.md` with dataview queries
 
 ### Query Recent Decisions
 ```dataview
