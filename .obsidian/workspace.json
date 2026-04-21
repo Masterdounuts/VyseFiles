@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "26a4e7f42e1dd49d",
+        "id": "3fedda64a368af2b",
         "type": "tabs",
         "children": [
           {
-            "id": "f6473bce89b37991",
+            "id": "8d499ea3fcd205bb",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -187,8 +187,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "6e290570b2e87e26",
+  "active": "8d499ea3fcd205bb",
   "lastOpenFiles": [
+    "kb/stocks/agent/research.md",
+    "kb/system/FIXES.md",
+    "obsidian-prototype/decision-log-template.md",
+    "links.md",
+    "kb/stocks/agent/README.md",
+    "memory/resume-point.md",
     "memory/obsidian-ai-workflow-research.md",
     "learnings.json",
     "kb/stocks/subagent-assessment.md",
@@ -202,8 +208,6 @@
     "scripts/stock-trading-subagent.sh",
     "scripts/clear-pending.sh",
     "scripts/check-pending-opportunities.sh",
-    "kb/stocks/agent/research.md",
-    "kb/stocks/agent/README.md",
     "kb/stocks/research/weekly-research.md",
     "kb/stocks/research/volatile-stocks.md",
     "kb/stocks/research/robinhood-android-app.md",
@@ -217,13 +221,9 @@
     "kb/stocks/research/alert-status.md",
     "kb/system/INTERRUPT_RECOVERY.md",
     "kb/system/BOOTSTRAP.md",
-    "kb/system/FIXES.md",
     "kb/stocks/trade-log.md",
     "kb/stocks/rules.md",
     "kb/index.md",
-    "memory/stocks/morning-research.md",
-    "obsidian-prototype/daily-note-template.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-website-memory-capture.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-flag-assumptions-added.md"
+    "memory/stocks/morning-research.md"
   ]
 }
