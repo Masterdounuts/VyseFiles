@@ -7,10 +7,11 @@ Trade small capital actively to compound gains.
 - Small gains + frequent trades = growth
 - David executes; I monitor/research
 
-## Capital (Apr 20, 2026)
-- **GGB:** 4.99 shares @ $4.17 (now ~$21.36 value)
+## Capital (Apr 21, 2026)
+- **GGB:** 4.99 shares @ $4.17 (now $4.28 = $21.36 value)
 - **Cash:** $31.32
 - **Total:** $52.68
+- **Unrealized:** +$0.55 (+2.64%)
 - **Goal:** Compound to $70/day eventual (reinvest 100%)
 
 ## Strategy
@@ -71,7 +72,7 @@ Trade small capital actively to compound gains.
 | Volatile Opportunity Review | */15 min | Main agent reviews pending |
 
 **Capabilities:**
-- ✅ Live prices via Stooq
+- ✅ Live prices via Alpha Vantage (API key: VSJ5QVVM11QT0LHP)
 - ✅ Auto-alerts on buy/sell target hits
 - ✅ Volatile opportunity detection (>3% move)
 - ✅ Conferral system (I review → Telegram alert)

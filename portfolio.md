@@ -38,5 +38,6 @@
 **Strategy:** Scale out 50% at $4.45, 50% at $4.60
 
 ---
-*Last updated: 2026-04-21 00:34 UTC*
+*Last updated: 2026-04-21 13:44 UTC*
+*Price source: Alpha Vantage API*
 *[[INDEX.md|← Back]]

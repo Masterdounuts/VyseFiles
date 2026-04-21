@@ -3,6 +3,26 @@
 # Reads from state.json - dynamic portfolio & targets
 # Includes: volatility detection, target alerts, stop-loss, market hours filter
 
+# Add jq to PATH
+export PATH="/tmp:$PATH"
+
+# Alpha Vantage API key
+export ALPHA_VANTAGE_KEY="VSJ5QVVM11QT0LHP"
+
+# === CALC: bc replacement using awk ===
+calc() {
+    # Usage: calc "expression" (e.g., calc "(5-3)/3*100")
+    awk "BEGIN { printf \"%.2f\", ($1) }"
+}
+
+calc_int() {
+    awk "BEGIN { printf \"%.0f\", ($1) }"
+}
+
+calc_bool() {
+    awk "BEGIN { if (($1)) print 1; else print 0 }"
+}
+
 WORKSPACE="/home/openclaw/.openclaw/workspace"
 AGENT_DIR="$WORKSPACE/kb/stocks/agent"
 STATE="$AGENT_DIR/state.json"
@@ -13,6 +33,9 @@ LAST_PRICE_FILE="$AGENT_DIR/last-prices.txt"
 ALERT_HISTORY="$AGENT_DIR/alert-history.json"
 
 mkdir -p "$AGENT_DIR"
+
+# Load research database
+source "$WORKSPACE/scripts/stock-research.sh"
 
 # Initialize files if missing
 [ ! -f "$PENDING" ] && echo "[]" > "$PENDING"
@@ -108,13 +131,26 @@ is_extended_hours() {
     return 1
 }
 
-# === GET PRICE (Stooq with retry) ===
+# === GET PRICE (Alpha Vantage with Stooq fallback) ===
 get_price() {
     local symbol=$1
     local retries=2
     local delay=2
     local price=""
     
+    # Try Alpha Vantage first
+    if [ -n "$ALPHA_VANTAGE_KEY" ]; then
+        for i in $(seq 1 $retries); do
+            price=$(curl -s --max-time 10 "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${ALPHA_VANTAGE_KEY}" 2>/dev/null | jq -r '.["Global Quote"]["05. price"] // empty')
+            if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "" ]; then
+                echo "$price"
+                return 0
+            fi
+            [ $i -lt $retries ] && sleep $delay
+        done
+    fi
+    
+    # Fallback to Stooq
     for i in $(seq 1 $retries); do
         price=$(curl -s --max-time 10 "https://stooq.com/q/l/?s=${symbol}.us&f=sd2t2ohlcv&h&e=csv" 2>/dev/null | tail -1 | cut -d',' -f7)
         if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "N/D" ]; then
@@ -196,7 +232,7 @@ check_volatility() {
     fi
     
     # Calculate % change
-    local change=$(echo "scale=2; (($current - $last) / $last) * 100" | bc -l 2>/dev/null)
+    local change=$(calc "(($current - $last) / $last) * 100")
     local abs_change=$(echo "$change" | tr -d '-')
     
     log "$symbol change: $change% (last: \$$last, current: \$$current)"
@@ -205,7 +241,7 @@ check_volatility() {
     local threshold=$(jq -r '.volatility_threshold_percent // 3' "$STATE")
     
     # Volatile if >threshold% move
-    if (( $(echo "$abs_change > $threshold" | bc -l 2>/dev/null || echo "0") )); then
+    if [ $(calc_bool "$abs_change > $threshold") -eq 1 ]; then
         log "VOLATILITY DETECTED: $symbol moved $change%"
         return 0
     fi
@@ -221,9 +257,9 @@ check_stop_loss() {
     
     # Calculate 5% stop loss threshold
     local stop_pct=5
-    local stop_threshold=$(echo "scale=2; $avg_cost * (1 - $stop_pct/100)" | bc -l)
+    local stop_threshold=$(calc "$avg_cost * (1 - $stop_pct/100)")
     
-    if (( $(echo "$current < $stop_threshold" | bc -l 2>/dev/null || echo "0") )); then
+    if [ $(calc_bool "$current < $stop_threshold") -eq 1 ]; then
         log "STOP LOSS TRIGGERED: $symbol at \$$current (avg: \$$avg_cost, stop: \$$stop_threshold)"
         return 0
     fi
@@ -241,10 +277,11 @@ check_targets() {
     # Get buy targets
     local buy_targets=$(jq -r ".targets.$symbol.buy[]" "$STATE" 2>/dev/null)
     for target in $buy_targets; do
-        if (( $(echo "$current <= $target" | bc -l 2>/dev/null || echo "0") )); then
+        if [ $(calc_bool "$current <= $target") -eq 1 ]; then
             if ! alert_already_sent "$symbol" "BUY" "$target"; then
                 alert "$symbol" "BUY ZONE" "$current" "$target" "AUTO"
                 record_alert "$symbol" "BUY" "$target" "$current"
+                queue_alert "$symbol" "BUY_TARGET" "$current" "$target" "Price hit buy zone"
             fi
         fi
     done
@@ -252,10 +289,11 @@ check_targets() {
     # Get sell targets
     local sell_targets=$(jq -r ".targets.$symbol.sell[]" "$STATE" 2>/dev/null)
     for target in $sell_targets; do
-        if (( $(echo "$current >= $target" | bc -l 2>/dev/null || echo "0") )); then
+        if [ $(calc_bool "$current >= $target") -eq 1 ]; then
             if ! alert_already_sent "$symbol" "SELL" "$target"; then
                 alert "$symbol" "SELL TARGET" "$current" "$target" "AUTO"
                 record_alert "$symbol" "SELL" "$target" "$current"
+                queue_alert "$symbol" "SELL_TARGET" "$current" "$target" "Price hit sell target"
             fi
         fi
     done
@@ -273,11 +311,11 @@ confer_volatile_opportunity() {
     # Calculate suggested shares (use min $5, max $10 for volatile)
     local max_invest=$(jq -r '.position_sizing.volatile_max // 10' "$STATE")
     local min_invest=$(jq -r '.position_sizing.volatile_min // 5' "$STATE")
-    local shares=$(echo "scale=0; $max_invest / $price" | bc -l 2>/dev/null)
-    local est_value=$(echo "scale=2; $shares * $price" | bc -l 2>/dev/null)
-    if (( $(echo "$est_value < $min_invest" | bc -l 2>/dev/null || echo "0") )); then
-        shares=$(echo "scale=0; $min_invest / $price" | bc -l 2>/dev/null)
-        est_value=$(echo "scale=2; $shares * $price" | bc -l 2>/dev/null)
+    local shares=$(calc_int "$max_invest / $price")
+    local est_value=$(calc "$shares * $price")
+    if [ $(calc_bool "$est_value < $min_invest") -eq 1 ]; then
+        shares=$(calc_int "$min_invest / $price")
+        est_value=$(calc "$shares * $price")
     fi
     shares=$(printf "%.0f" "$shares" 2>/dev/null || echo "1")
     log "Calculated: $shares shares @ \$$price = \$$est_value"
@@ -340,20 +378,53 @@ send_telegram() {
     fi
 }
 
+# === ROUTE ALL ALERTS THROUGH MAIN AGENT ===
+# No direct Telegram - everything goes to pending for me to review
+
+# === QUEUE ALERT FOR MAIN AGENT REVIEW ===
+queue_alert() {
+    local symbol=$1
+    local alert_type=$2
+    local price=$3
+    local target=$4
+    local details=$5
+    
+    local tmp=$(mktemp)
+    local new_item="{\"timestamp\":\"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\",\"symbol\":\"$symbol\",\"price\":\"$price\",\"type\":\"$alert_type\",\"target\":\"$target\",\"details\":\"$details\",\"status\":\"PENDING_REVIEW\"}"
+    
+    if [ -s "$PENDING" ] && [ "$(cat "$PENDING")" != "[]" ]; then
+        sed 's/\]$/,\n  /' "$PENDING" > "$tmp"
+        echo "$new_item" >> "$tmp"
+        echo "]" >> "$tmp"
+    else
+        echo "[$new_item]" > "$tmp"
+    fi
+    
+    cat "$tmp" > "$PENDING"
+    rm "$tmp"
+    log "Queued $alert_type alert for $symbol - awaiting main agent review"
+}
+
 # === MAIN ===
 log "=== Stock Trading Subagent Starting ==="
 
-# Check market hours
-if ! is_market_open; then
-    log "Outside market hours - skipping run"
-    log "=== Scan Complete (market closed) ==="
+# Check market hours - include pre-market and after-hours
+if ! is_market_open && ! is_extended_hours; then
+    log "Outside all trading hours (pre-market, market, after-hours) - skipping run"
+    log "=== Scan Complete (closed) ==="
     exit 0
 fi
 
+if is_market_open; then
+    log "Market status: OPEN (regular trading)"
+elif is_extended_hours; then
+    log "Market status: EXTENDED HOURS (pre/after-market)"
+fi
+
 # Clean up stale pending opportunities (older than 1 hour)
-if [ -s "$PENDING" ] && [ "$(cat \"$PENDING\")" != "[]" ]; then
-    local one_hour_ago=$(date -u -d '1 hour ago' +'%Y-%m-%dT%H:%M')
-    local cleaned=$(jq --arg cutoff "$one_hour_ago" '[.[] | select(.timestamp > $cutoff)]' "$PENDING" 2>/dev/null)
+if [ -s "$PENDING" ] && [ "$(cat "$PENDING")" != "[]" ]; then
+    one_hour_ago=$(date -u -d '1 hour ago' +'%Y-%m-%dT%H:%M')
+    cleaned=$(node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('$PENDING')); const f=d.filter(i=>i.timestamp>'$one_hour_ago'); console.log(JSON.stringify(f));" 2>/dev/null)
     if [ -n "$cleaned" ]; then
         echo "$cleaned" > "$PENDING"
         log "Cleaned stale pending opportunities"
@@ -380,20 +451,20 @@ for stock in $stocks; do
         # Get avg_cost for stop-loss
         avg_cost=$(jq -r ".portfolio.$stock.avg_cost // 0" "$STATE")
         
-        # Check stop-loss first
+        # Check stop-loss first - queue for main agent review
         if [ "$avg_cost" != "0" ] && [ "$avg_cost" != "null" ]; then
             if check_stop_loss "$stock" "$price" "$avg_cost"; then
-                alert "$stock" "STOP LOSS" "$price" "$avg_cost" "CRITICAL"
+                alert "$stock" "STOP LOSS" "price" "$avg_cost" "CRITICAL"
                 record_alert "$stock" "STOP_LOSS" "$avg_cost" "$price"
-                send_telegram "🛑 *STOP LOSS TRIGGERED* \n\n*Symbol:* $stock\n*Current:* \$$price\n*Avg Cost:* \$$avg_cost\n*Stop:* 5%"
+                queue_alert "$stock" "STOP_LOSS" "$price" "$avg_cost" "5% stop loss triggered"
             fi
         fi
         
         # Check volatility FIRST (before targets)
         if check_volatility "$stock" "$price"; then
             last=$(get_last_price "$stock")
-            change=$(echo "scale=2; (($price - $last) / $last) * 100" | bc -l)
-            if (( $(echo "$change > 0" | bc -l 2>/dev/null || echo "0") )); then
+            change=$(calc "(($price - $last) / $last) * 100")
+            if [ $(calc_bool "$change > 0") -eq 1 ]; then
                 direction="UP"
             else
                 direction="DOWN"
@@ -421,6 +492,13 @@ if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
     
     for symbol in $watchlist; do
         log "Watchlist scan: $symbol"
+        
+        # Show research info
+        research=$(get_stock_info "$symbol" 2>/dev/null)
+        if [ -n "$research" ] && [ "$research" != "Unknown" ]; then
+            log "$research"
+        fi
+        
         price=$(get_price "$symbol")
         
         if [ -n "$price" ] && [ "$price" != "null" ]; then
@@ -429,8 +507,8 @@ if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
             # Check volatility - for watchlist, only confer on UP moves (we want to buy)
             if check_volatility "$symbol" "$price"; then
                 last=$(get_last_price "$symbol")
-                change=$(echo "scale=2; (($price - $last) / $last) * 100" | bc -l)
-                if (( $(echo "$change > 0" | bc -l 2>/dev/null || echo "0") )); then
+                change=$(calc "(($price - $last) / $last) * 100")
+                if [ $(calc_bool "$change > 0") -eq 1 ]; then
                     direction="UP"
                     confer_volatile_opportunity "$symbol" "$price" "$direction" "$change"
                     log "Volatile opportunity queued: $symbol $direction $change%"
