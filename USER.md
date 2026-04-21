@@ -1,4 +1,4 @@
-[[INDEX.md|Home]] • [[BOOTSTRAP|Boot]]
+[[INDEX.md|Home]] • [[kb/system/BOOTSTRAP.md|Boot]]
 
 
 # USER.md - About Your Human
