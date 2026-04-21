@@ -3,12 +3,12 @@
 
 ---
 
-## Current Context (Updated: 2026-04-20 23:52 UTC)
+## Current Context (Updated: 2026-04-21 00:12 UTC)
 
 **Portfolio:**
 | Stock | Shares | Avg Cost | Current | Value |
 |-------|--------|----------|---------|-------|
-| GGB | 4.99 | $4.17 | $4.28 | $21.36 |
+| GGB | 4.99 | $4.17 | ~$4.28 | $21.36 |
 | Cash | - | - | - | $31.32 |
 | **Total** | | | | **$52.68** |
 
@@ -21,17 +21,15 @@
 
 **Status:**
 - Monitoring: GGB only (AMC dropped)
-- Subagent: Active, runs every 30 min
+- Subagent: Built & active (scripts/stock-trading-subagent.sh)
 - Volatile system: Active, conferral enabled
-
-**Volatile Opportunity System:**
-- Threshold: >3% price move since last check
-- Flow: Detected → Pending queue → I review → Telegram alert if I agree
+- **⚠️ Session reset Apr 21 00:12 UTC** (context limit)
 
 **Key Files:**
 - `AGENTS.md` - Trading rules & system info
 - `kb/stocks/agent/state.json` - Live portfolio & targets
 - `scripts/stock-trading-subagent.sh` - Price monitor
+- `memory/2026-04-20.md` - Yesterday's log
 
 ---
-*Auto-updated by Vyse on 2026-04-20 23:52 UTC*
+*Auto-updated by Vyse on 2026-04-21 00:12 UTC*

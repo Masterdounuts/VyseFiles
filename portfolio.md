@@ -1,4 +1,4 @@
-[[index|Home]]
+[[index|Home]
 
 
 # Portfolio Tracker
@@ -6,42 +6,37 @@
 *Both Vyse and stock-research-worker reference this file*
 
 ---
-## Holdings (Updated: 2026-04-20)
+## Holdings (Updated: 2026-04-21)
 
 ⚠️ **Prices may be stale** - verify with Robinhood before trading
 
 | Ticker | Shares | Avg Cost | Current Price | Value | Notes |
 |--------|--------|----------|---------------|-------|-------|
-| GGB | ~6 | ~$4.17 | ~$4.35 | ~$26 | Brazilian steel |
-| AMC | 8 | $1.64 | ~$1.65 | ~$13 | Volatile |
-| TSLA | 0.016567 | $351.30 | HOLD | - | Stock Reward - unlock Apr 16 |
+| GGB | ~5 | ~$4.17 | ~$4.28 | ~$21 | Brazilian steel |
+| Cash | - | - | - | ~$31 | Available buying power |
+
+**Total:** ~$52.68
+
+---
+## Sold/Closed Positions
+| Ticker | Shares | Sell Price | Date | Notes |
+|--------|--------|------------|------|-------|
+| AMC | 8 | ??? | ??? | Dropped from monitoring |
+| TSLA | 0.016567 | ??? | ??? | Stock Reward - sold/closed |
 
 ---
 
 ## Strategy
 
-**Note:** Using ALERTS only (not orders) for now - monitoring prices.
+**GGB Only** - focusing on small caps with clear levels.
 
 ### GGB
 | Current | Target 1 | Target 2 | Buy Zone | Stop Alert |
 |---------|----------|----------|----------|------------|
-| ~$4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 |
+| ~$4.28 | $4.45 | $4.60 | $4.10-$3.90 | $3.80 |
 
-### TSLA: HOLD until $8+ (market value)
-- Stock Reward unlocked Apr 16
-- Target: $8+ total value (not stock price)
-- Earnings: Apr 22 - decide sell before or hold
-
-### AMC
-| Current | Target | Stop Alert |
-|---------|--------|------------|
-| ~$1.65 | $2.00 | $1.30 |
+**Strategy:** Scale out 50% at $4.45, 50% at $4.60
 
 ---
-
-## Key Dates
-- **Apr 22:** TSLA earnings
-
----
-*Last updated: 2026-04-20 22:19 UTC*
+*Last updated: 2026-04-21 00:34 UTC*
 *[[INDEX.md|← Back]]
