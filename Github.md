@@ -1,4 +1,4 @@
-[[::Knowledge|Home]]
+[[knowledge|Home]]
 
 
 # GitHub Notes

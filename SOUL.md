@@ -1,4 +1,4 @@
-[[kb/system/::System|Home]] • [[kb/system/BOOTSTRAP.md|Boot]]
+[[kb/system/hub-system|Home]] • [[kb/system/BOOTSTRAP.md|Boot]]
 
 
 # SOUL.md - Who You Are

@@ -10,11 +10,11 @@ Your knowledge base + my operating system. Organized by context.
 
 | Hub | Description |
 |-----|-------------|
-| [[kb/system/::System|System]] | Bootstrap, memory, recovery |
-| [[kb/stocks/::Portfolio|Portfolio]] | Trading & research |
-| [[::Knowledge|Knowledge]] | Research & guides |
-| [[memory/::Archive|Archive]] | Dated memories |
-| [[::Projects|Projects]] | Active work |
+| [[kb/system/hub-system|System]] | Bootstrap, memory, recovery |
+| [[kb/stocks/hub-portfolio|Portfolio]] | Trading & research |
+| [[knowledge|Knowledge]] | Research & guides |
+| [[memory/hub-archive|Archive]] | Dated memories |
+| [[projects|Projects]] | Active work |
 
 ---
 

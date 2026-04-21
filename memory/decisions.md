@@ -1,4 +1,4 @@
-[[memory/::Archive|Home]]
+[[memory/hub-archive|Home]]
 
 - [x] TSLA unlock decision: HOLD until $8+ market value
 - [x] TSLA unlock decision: HOLD until $8+ market value

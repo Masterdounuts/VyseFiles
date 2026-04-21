@@ -1,4 +1,4 @@
-[[::Projects|Home]]
+[[projects|Home]]
 
 
 # Control UI Integration Guide

@@ -1,4 +1,4 @@
-[[::Projects|Home]]
+[[projects|Home]]
 
 # Loop Lessons Learned
 

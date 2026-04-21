@@ -1,4 +1,4 @@
-[[kb/system/::System|Home]] • [[kb/stocks/rules|Trading Rules]]
+[[kb/system/hub-system|Home]] • [[kb/stocks/rules|Trading Rules]]
 
 # Day Trading Protocol for David
 

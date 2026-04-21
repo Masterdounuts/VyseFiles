@@ -1,4 +1,4 @@
-[[kb/system/::System|Home]]
+[[kb/system/hub-system|Home]]
 
 
 # HEARTBEAT.md

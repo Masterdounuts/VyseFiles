@@ -1,4 +1,4 @@
-[[kb/stocks/::Portfolio|Home]]
+[[kb/stocks/hub-portfolio|Home]]
 
 # Trade Log
 

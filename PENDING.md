@@ -1,4 +1,4 @@
-[[memory/::Archive|Home]]
+[[memory/hub-archive|Home]]
 
 
 # PENDING.md - Action Queue
