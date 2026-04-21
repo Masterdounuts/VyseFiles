@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T21:59:09.681Z",
+  "updatedAt": "2026-04-21T23:32:19.773Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78704,6 +78704,161 @@
         "soul.md",
         "tools.md",
         "agents.md"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1:46": {
+      "key": "memory:memory/2026-04-21.md:1:46",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "## Hindsight Attempt (21:54 UTC) **Attempted:** Set up Hindsight (semantic memory Docker container) **Result:** Failed - no Docker/Podman available on system **Alternatives to explore:** 1. Use external Hindsight API (if service exists) 2. Improve local memory search with aliases/index file 3. Add `memory_index.md` - manually curated semantic-like index **Decision needed from David:** Skip Hindsight or try alternative approach? ## Hindsight Attempt (21:54 UTC) **Attempted:** Set up Hindsight (semantic memory Docker container) **Result:** Failed - no Docker/Podman available on system **Alternatives to explore:** 1. Use external Hindsight API (if service exists) 2. Improve local memory se",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47104340791702265,
+      "maxScore": 0.47104340791702265,
+      "firstRecalledAt": "2026-04-21T23:12:36.770Z",
+      "lastRecalledAt": "2026-04-21T23:12:36.770Z",
+      "queryHashes": [
+        "305847a623d5"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "docker/podman",
+        "aliases/index",
+        "memory-index.md",
+        "semantic-like",
+        "hindsight",
+        "attempt",
+        "utc",
+        "attempted"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1748:1798": {
+      "key": "memory:memory/2026-04-16.md:1748:1798",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1748,
+      "endLine": 1798,
+      "source": "memory",
+      "snippet": "Remove the broken gateway‑health‑check jobs (gateway-health-check duplicate entries). Update the Credit‑Watch job to include the correct Telegram chat ID. Add a “Decision‑Log” cron (runs after every checkpoint) that appends decisions to memory/decisions.md. user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 07:53 UTC] Finish what you were doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 07:54 UTC] keep going with what you are doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"opencl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4727526634931564,
+      "maxScore": 0.4727526634931564,
+      "firstRecalledAt": "2026-04-21T23:32:19.773Z",
+      "lastRecalledAt": "2026-04-21T23:32:19.773Z",
+      "queryHashes": [
+        "83366f4804b6"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway-health-check",
+        "memory/decisions.md",
+        "openclaw-control-ui",
+        "remove",
+        "the",
+        "broken",
+        "health"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2649:2688": {
+      "key": "memory:memory/2026-04-16.md:2649:2688",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2649,
+      "endLine": 2688,
+      "source": "memory",
+      "snippet": "[Thu 2026-04-16 09:53 UTC] we got interrupted continue assistant: We made good progress on infrastructure already (33 → 13 cron jobs). Want me to: 1. Review remaining cron jobs for any more redundancies? 2. Check memory management / compaction settings? 3. Look at something else? What area sounds most useful? 🦜 user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:55 UTC] do an audit of cron jobs and make sure our optimization went through. assistant: **Audit Summary** - **Total jobs:** ~20 (list shows many; exact count needs a full parse) - **Duplicates:** 2× `gateway-health-check` (both failing) - **Broken",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4709689319133758,
+      "maxScore": 0.4709689319133758,
+      "firstRecalledAt": "2026-04-21T23:32:19.773Z",
+      "lastRecalledAt": "2026-04-21T23:32:19.773Z",
+      "queryHashes": [
+        "83366f4804b6"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-control-ui",
+        "gateway-health-check",
+        "thu",
+        "utc",
+        "got",
+        "interrupted",
+        "continue"
+      ]
+    },
+    "memory:memory/2026-04-17.md:130:172": {
+      "key": "memory:memory/2026-04-17.md:130:172",
+      "path": "memory/2026-04-17.md",
+      "startLine": 130,
+      "endLine": 172,
+      "source": "memory",
+      "snippet": "- Vyse-Self-Audit: simplified prompt to just run detect-loop - Created vyse-unified-health.sh (all-in-one health) ### Next Level Improvements Possible - Disable redundant cron jobs (guard-context, vyse-readiness-check) - Wire vyse-unified-health.sh to run on wake instead of multiple jobs - Add automatic stale memory cleanup --- ## Extended Audit: 17:05 UTC ### Duplicate Scripts Found & Consolidated - auto-checkpoint.sh + auto-checkpoint-new.sh → kept new - auto-self-improve.sh + auto-self-improve-v2.sh → kept v2 - hand-off-summary.sh + generate-handoff.sh → kept generate-handoff ### Path Issues Found - /root/.openclaw/workspace/scripts/ = primary (working) - /home/openclaw/.openclaw/wo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46939519345760344,
+      "maxScore": 0.46939519345760344,
+      "firstRecalledAt": "2026-04-21T23:32:19.773Z",
+      "lastRecalledAt": "2026-04-21T23:32:19.773Z",
+      "queryHashes": [
+        "83366f4804b6"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "vyse-self-audit",
+        "detect-loop",
+        "vyse-unified-health.sh",
+        "all-in-one",
+        "guard-context",
+        "vyse-readiness-check",
+        "auto-checkpoint.sh",
+        "auto-checkpoint-new.sh"
+      ]
+    },
+    "memory:memory/2026-04-17.md:35:78": {
+      "key": "memory:memory/2026-04-17.md:35:78",
+      "path": "memory/2026-04-17.md",
+      "startLine": 35,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "3. Path inconsistency: /home/openclaw vs /root paths → not critical 4. Overlapping health: 4 cron jobs doing similar things → CONSOLIDATED ### New Script: vyse-unified-health.sh - Checks: Gateway, Context, Memory staleness, Loop detection - Updates agent-ready.md automatically - Replaces need for separate checks ### Consolidations Made - Auto-Resume-On-Wake: delivery mode → none (fixed error) - Vyse-Self-Audit: simplified prompt to just run detect-loop - Created vyse-unified-health.sh (all-in-one health) ### Next Level Improvements Possible - Disable redundant cron jobs (guard-context, vyse-readiness-check) - Wire vyse-unified-health.sh to run on wake instead of multiple jobs - Add autom",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46802725493907926,
+      "maxScore": 0.46802725493907926,
+      "firstRecalledAt": "2026-04-21T23:32:19.773Z",
+      "lastRecalledAt": "2026-04-21T23:32:19.773Z",
+      "queryHashes": [
+        "83366f4804b6"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "home/openclaw",
+        "vyse-unified-health.sh",
+        "agent-ready.md",
+        "auto-resume-on-wake",
+        "vyse-self-audit",
+        "detect-loop",
+        "all-in-one"
       ]
     }
   }
