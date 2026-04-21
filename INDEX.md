@@ -21,9 +21,9 @@ Your knowledge base + my operating system. Organized by context.
 
 | File | Purpose |
 |------|---------|
-| [[memory/2026-04-20|Apr 20]] | Today's session |
-| [[memory/2026-04-19|Apr 19]] | Yesterday |
-| [[memory/2026-04-18|Apr 18]] | Earlier this week |
+| [[memory/2026-04-21|Apr 21]] | Today's session |
+| [[memory/2026-04-20|Apr 20]] | Yesterday |
+| [[memory/2026-04-17|Apr 17]] | Earlier this week |
 | [[memory/recent-dailies|Dailies]] | Auto-generated list |
 | [[decisions/index.md|Decisions]] | Key decisions log |
 | [[memory/active|Active Task]] | Current work |
