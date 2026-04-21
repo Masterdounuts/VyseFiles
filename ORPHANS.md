@@ -4,7 +4,15 @@
 
 *All files linked to graph. Last audit: 2026-04-20 22:16 UTC*
 
-## 📁 Root Files → [[INDEX.md|Main Index]]
+## ⚙️ System (Priority) → [[INDEX.md|Main Index]]
+
+| File | Status |
+|------|--------|
+| [[kb/system/BOOTSTRAP.md|Bootstrap]] | ✅ Wake protocol |
+| [[kb/system/FIXES.md|Fixes]] | ✅ Known issues |
+| [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] | ✅ Recovery |
+
+## 📁 Root Files
 
 | File | Status |
 |------|--------|
@@ -12,8 +20,6 @@
 | [[IDENTITY.md|Identity]] | ✅ |
 | [[USER.md|User]] | ✅ |
 | [[AGENTS.md|Agents]] | ✅ |
-| [[kb/system/BOOTSTRAP.md|Bootstrap]] | ✅ Wake protocol |
-| [[kb/system/FIXES.md|Fixes]] | ✅ Known issues |
 
 ## 📅 Memory / Daily Logs → [[memory/2026-04-20|Apr 20]]
 

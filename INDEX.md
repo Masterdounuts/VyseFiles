@@ -6,16 +6,23 @@ Your knowledge base + my operating system. Organized by context.
 
 ---
 
-## 🎯 My Identity (System)
+## 🎯 System (Priority)
 
 | File | Purpose |
 |------|---------|
-| [[SOUL.md|Vyse Soul]] | Who I am, my principles |
+| [[kb/system/BOOTSTRAP.md|Bootstrap]] | Wake-up protocol |
+| [[kb/system/FIXES.md|Fixes]] | Known issues & solutions |
+| [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] | Interrupt recovery |
+
+## 🦜 My Identity
+
+| File | Purpose |
+|------|---------|
+| [[SOUL.md|Vyse Soul]] | Who I am, principles |
 | [[IDENTITY.md|Identity]] | Name, vibe, avatar |
 | [[USER.md|User]] | About you, preferences |
 | [[AGENTS.md|Agents]] | Trading protocol |
-| [[kb/system/BOOTSTRAP.md|Bootstrap]] | Wake-up protocol |
-| [[SUBAGENTS.md|Subagents]] | Spawning child agents |
+| [[SUBAGENTS.md|Subagents]] | Spawning agents |
 
 ## 🧠 My Memory
 

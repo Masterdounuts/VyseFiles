@@ -4,6 +4,14 @@
 
 ---
 
+## ⚙️ System (Priority)
+
+- [[kb/system/BOOTSTRAP.md|Wake-up Protocol]]
+- [[kb/system/FIXES.md|Known Issues]]
+- [[kb/system/INTERRUPT_RECOVERY.md|Recovery]]
+
+---
+
 ## 📈 Stocks (`kb/stocks/`)
 
 ### Core
@@ -17,14 +25,6 @@
 - [[kb/stocks/research/volatile-stocks.md|Volatile Stocks]]
 - [[kb/stocks/research/research.md|Research Index]]
 - *Archived:* alert-status, day-trading-options, income-strategy, model-performance, news-alert, robinhood-android-app
-
----
-
-## ⚙️ System (`kb/system/`)
-
-- [[kb/system/BOOTSTRAP.md|Wake-up Protocol]]
-- [[kb/system/FIXES.md|Known Issues]]
-- [[kb/system/INTERRUPT_RECOVERY.md|Recovery]]
 
 ---
 
