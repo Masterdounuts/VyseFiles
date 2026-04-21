@@ -29,27 +29,16 @@ update_state() {
     jq --arg ts "$timestamp" '.last_check = $ts' "$STATE" > "${STATE}.tmp" && mv "${STATE}.tmp" "$STATE"
 }
 
-# === MARKET HOURS CHECK (with DST support) ===
+# === MARKET HOURS CHECK (simplified UTC-based) ===
 # Returns 0 if in market hours (Mon-Fri 9:30 AM - 4:00 PM ET)
+# ET = UTC-4 (DST) or UTC-5 (Standard). Use UTC-4 as safe default during market hours.
 is_market_open() {
     local hour_utc minute_utc
     hour_utc=$(date -u +'%H')
     minute_utc=$(date -u +'%M')
     
-    # Determine DST: US DST = 2nd Sunday March - 1st Sunday November
-    local month=$(date -u +'%m')
-    local day=$(date -u +'%d')
-    local dst_offset=4  # Default DST
-    
-    if [ "$month" -lt "4" ] || [ "$month" -gt "10" ]; then
-        dst_offset=5  # Standard time
-    elif [ "$month" -eq "4" ] && [ "$day" -lt "15" ]; then
-        dst_offset=5  # Before DST transition
-    elif [ "$month" -eq "10" ] && [ "$day" -gt "7" ]; then
-        dst_offset=5  # After DST transition
-    fi
-    
-    local hour_et=$((10#$hour_utc - dst_offset))
+    # Convert to ET (approximate - works during market hours Apr-Oct)
+    local hour_et=$((10#$hour_utc - 4))
     local minute_et=$((10#$minute_utc))
     
     # Handle wrap around
@@ -281,9 +270,21 @@ confer_volatile_opportunity() {
     
     log "CONFER: Volatile $symbol $direction - asking main agent"
     
+    # Calculate suggested shares (use min $5, max $10 for volatile)
+    local max_invest=$(jq -r '.position_sizing.volatile_max // 10' "$STATE")
+    local min_invest=$(jq -r '.position_sizing.volatile_min // 5' "$STATE")
+    local shares=$(echo "scale=0; $max_invest / $price" | bc -l 2>/dev/null)
+    local est_value=$(echo "scale=2; $shares * $price" | bc -l 2>/dev/null)
+    if (( $(echo "$est_value < $min_invest" | bc -l 2>/dev/null || echo "0") )); then
+        shares=$(echo "scale=0; $min_invest / $price" | bc -l 2>/dev/null)
+        est_value=$(echo "scale=2; $shares * $price" | bc -l 2>/dev/null)
+    fi
+    shares=$(printf "%.0f" "$shares" 2>/dev/null || echo "1")
+    log "Calculated: $shares shares @ \$$price = \$$est_value"
+    
     # Read existing array, append new item, write back
     local tmp=$(mktemp)
-    local new_item="{\"timestamp\":\"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\",\"symbol\":\"$symbol\",\"price\":\"$price\",\"direction\":\"$direction\",\"change\":\"$change%\",\"type\":\"VOLATILE_OPPORTUNITY\",\"status\":\"PENDING_REVIEW\"}"
+    local new_item="{\"timestamp\":\"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\",\"symbol\":\"$symbol\",\"price\":\"$price\",\"direction\":\"$direction\",\"change\":\"$change%\",\"shares\":\"$shares\",\"est_value\":\"$est_value\",\"type\":\"VOLATILE_OPPORTUNITY\",\"status\":\"PENDING_REVIEW\"}"
     
     if [ -s "$PENDING" ] && [ "$(cat "$PENDING")" != "[]" ]; then
         # Remove trailing ], add comma + new item + ]
@@ -349,6 +350,16 @@ if ! is_market_open; then
     exit 0
 fi
 
+# Clean up stale pending opportunities (older than 1 hour)
+if [ -s "$PENDING" ] && [ "$(cat \"$PENDING\")" != "[]" ]; then
+    local one_hour_ago=$(date -u -d '1 hour ago' +'%Y-%m-%dT%H:%M')
+    local cleaned=$(jq --arg cutoff "$one_hour_ago" '[.[] | select(.timestamp > $cutoff)]' "$PENDING" 2>/dev/null)
+    if [ -n "$cleaned" ]; then
+        echo "$cleaned" > "$PENDING"
+        log "Cleaned stale pending opportunities"
+    fi
+fi
+
 # Read stocks from portfolio in state.json
 stocks=$(jq -r '.portfolio | keys | join(" ")' "$STATE")
 
@@ -374,6 +385,7 @@ for stock in $stocks; do
             if check_stop_loss "$stock" "$price" "$avg_cost"; then
                 alert "$stock" "STOP LOSS" "$price" "$avg_cost" "CRITICAL"
                 record_alert "$stock" "STOP_LOSS" "$avg_cost" "$price"
+                send_telegram "🛑 *STOP LOSS TRIGGERED* \n\n*Symbol:* $stock\n*Current:* \$$price\n*Avg Cost:* \$$avg_cost\n*Stop:* 5%"
             fi
         fi
         
@@ -400,6 +412,7 @@ for stock in $stocks; do
 done
 
 # === SCAN VOLATILE WATCHLIST (stocks we don't own) ===
+# Only alert on UP moves - we're buyers, not short sellers
 log "Scanning volatile watchlist..."
 watchlist=$(jq -r '.volatile_watchlist | join(" ")' "$STATE" 2>/dev/null)
 
@@ -413,17 +426,17 @@ if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
         if [ -n "$price" ] && [ "$price" != "null" ]; then
             log "$symbol price: \$$price"
             
-            # Check volatility - for watchlist, always confer (we don't own it)
+            # Check volatility - for watchlist, only confer on UP moves (we want to buy)
             if check_volatility "$symbol" "$price"; then
                 last=$(get_last_price "$symbol")
                 change=$(echo "scale=2; (($price - $last) / $last) * 100" | bc -l)
                 if (( $(echo "$change > 0" | bc -l 2>/dev/null || echo "0") )); then
                     direction="UP"
+                    confer_volatile_opportunity "$symbol" "$price" "$direction" "$change"
+                    log "Volatile opportunity queued: $symbol $direction $change%"
                 else
-                    direction="DOWN"
+                    log "Skipping DOWN move for watchlist: $symbol $change%"
                 fi
-                confer_volatile_opportunity "$symbol" "$price" "$direction" "$change"
-                log "Volatile opportunity queued: $symbol $direction $change%"
             fi
             
             # Save price for next run
