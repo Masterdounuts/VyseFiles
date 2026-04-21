@@ -1,4 +1,4 @@
-[[INDEX.md|Home]] • [[decisions/index|Decisions]]
+[[INDEX.md|Home]] • [[decisions/index.md|Decisions]]
 
 # Trading Rules Summary
 

@@ -21,8 +21,8 @@
 |------|---------|
 | [[memory/2026-04-21|Apr 21]] | Today |
 | [[memory/2026-04-20|Apr 20]] | Yesterday |
-| [[memory/2026-04-17|Apr 17]] | This week |
-| [[memory/2026-04-16|Apr 16]] | Key trading day |
+| [[memory/2026-04-17.md|Apr 17]] | This week |
+| [[memory/2026-04-16.md|Apr 16]] | Key trading day |
 | [[memory/decisions|Decisions]] | Decision log |
 | [[memory/active|Active]] | Current task |
 
