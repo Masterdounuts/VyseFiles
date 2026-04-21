@@ -21,6 +21,12 @@
   },
   "alerts_sent": [],
   "volatility_threshold_percent": 3,
+  "volatile_watchlist": ["BBAI", "LCID", "QS", "MARA", "SOFI"],
   "last_check": null,
-  "goal": "Compound to $70/day eventual"
+  "goal": "Compound to $70/day eventual",
+  "position_sizing": {
+    "volatile_max": 10,
+    "volatile_min": 5,
+    "max_positions": 3
+  }
 }

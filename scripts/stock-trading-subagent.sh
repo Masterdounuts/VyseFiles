@@ -1,7 +1,7 @@
 #!/bin/bash
 # Stock Trading Subagent - Autonomous Price Monitoring & Alerts
-# Runs every 30 min during market hours
-# Now with Volatile Opportunity Detection + Conferral
+# Reads from state.json - dynamic portfolio & targets
+# Includes: volatility detection, target alerts, stop-loss, market hours filter
 
 WORKSPACE="/home/openclaw/.openclaw/workspace"
 AGENT_DIR="$WORKSPACE/kb/stocks/agent"
@@ -10,18 +10,73 @@ LOG="$AGENT_DIR/trading.log"
 ALERTS="$AGENT_DIR/alerts.log"
 PENDING="$AGENT_DIR/pending-opportunities.json"
 LAST_PRICE_FILE="$AGENT_DIR/last-prices.txt"
+ALERT_HISTORY="$AGENT_DIR/alert-history.json"
 
 mkdir -p "$AGENT_DIR"
+
+# Initialize files if missing
+[ ! -f "$PENDING" ] && echo "[]" > "$PENDING"
+[ ! -f "$ALERT_HISTORY" ] && echo "[]" > "$ALERT_HISTORY"
+[ ! -f "$LAST_PRICE_FILE" ] && touch "$LAST_PRICE_FILE"
 
 log() {
     echo "$(date -u +'%Y-%m-%d %H:%M UTC') [TRADER] $1" | tee -a "$LOG"
 }
 
-# === GET PRICE (Stooq) ===
+# === MARKET HOURS CHECK ===
+# Returns 0 if in market hours (Mon-Fri 9:30 AM - 4:00 PM ET)
+is_market_open() {
+    # Convert current UTC to ET
+    local hour_utc minute_utc
+    hour_utc=$(date -u +'%H')
+    minute_utc=$(date -u +'%M')
+    
+    # ET = UTC - 5 (or -4 during DST, simplified to -4 for now)
+    local hour_et=$((10#$hour_utc - 4))
+    local minute_et=$((10#$minute_utc))
+    
+    # Handle wrap around
+    if [ $hour_et -lt 0 ]; then
+        hour_et=$((hour_et + 24))
+    fi
+    
+    local day_of_week=$(date -u +'%u')  # 1=Monday
+    
+    # Check if weekday (Mon-Fri = 1-5)
+    if [ "$day_of_week" -lt 1 ] || [ "$day_of_week" -gt 5 ]; then
+        return 1
+    fi
+    
+    # Check time (9:30 - 16:00 ET)
+    local et_minutes=$((hour_et * 60 + minute_et))
+    local market_open=$((9 * 60 + 30))  # 9:30 AM
+    local market_close=$((16 * 60))     # 4:00 PM
+    
+    if [ $et_minutes -ge $market_open ] && [ $et_minutes -lt $market_close ]; then
+        return 0
+    fi
+    
+    return 1
+}
+
+# === GET PRICE (Stooq with retry) ===
 get_price() {
     local symbol=$1
-    local price=$(curl -s "https://stooq.com/q/l/?s=${symbol}.us&f=sd2t2ohlcv&h&e=csv" 2>/dev/null | tail -1 | cut -d',' -f7)
-    echo "$price"
+    local retries=2
+    local delay=2
+    local price=""
+    
+    for i in $(seq 1 $retries); do
+        price=$(curl -s --max-time 10 "https://stooq.com/q/l/?s=${symbol}.us&f=sd2t2ohlcv&h&e=csv" 2>/dev/null | tail -1 | cut -d',' -f7)
+        if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "N/D" ]; then
+            echo "$price"
+            return 0
+        fi
+        [ $i -lt $retries ] && sleep $delay
+    done
+    
+    echo ""
+    return 1
 }
 
 # === GET LAST PRICE ===
@@ -41,8 +96,46 @@ save_price() {
     fi
 }
 
+# === CHECK ALERT SENT (prevent duplicates) ===
+alert_already_sent() {
+    local symbol=$1
+    local alert_type=$2
+    local target=$3
+    
+    # Check if this specific alert was already sent today
+    local today=$(date -u +'%Y-%m-%d')
+    if grep -q "\"$symbol.*$alert_type.*$target.*$today\"" "$ALERT_HISTORY" 2>/dev/null; then
+        return 0  # Already sent
+    fi
+    return 1
+}
+
+# === RECORD ALERT SENT ===
+record_alert() {
+    local symbol=$1
+    local alert_type=$2
+    local target=$3
+    local price=$4
+    
+    local today=$(date -u +'%Y-%m-%d')
+    local entry="{\"symbol\":\"$symbol\",\"type\":\"$alert_type\",\"target\":\"$target\",\"price\":\"$price\",\"date\":\"$today\"}"
+    
+    # Append to alert history (as JSON array)
+    local tmp=$(mktemp)
+    if [ -s "$ALERT_HISTORY" ]; then
+        # Remove closing bracket, add comma, add new entry, add closing bracket
+        sed 's/\]/$/' "$ALERT_HISTORY" > "$tmp"
+        sed -i 's/\[$/\[\n/' "$tmp"
+        echo "  $entry," >> "$tmp"
+        sed -i 's/,\s*\]/\n]/' "$tmp"
+        cat "$tmp" > "$ALERT_HISTORY"
+        rm "$tmp"
+    else
+        echo "[$entry]" > "$ALERT_HISTORY"
+    fi
+}
+
 # === CHECK VOLATILITY ===
-# Returns 0 if volatile, 1 if not
 check_volatility() {
     local symbol=$1
     local current=$2
@@ -59,8 +152,11 @@ check_volatility() {
     
     log "$symbol change: $change% (last: \$$last, current: \$$current)"
     
-    # Volatile if >3% move
-    if (( $(echo "$abs_change > 3" | bc -l 2>/dev/null || echo "0") )); then
+    # Get threshold from state.json
+    local threshold=$(jq -r '.volatility_threshold_percent // 3' "$STATE")
+    
+    # Volatile if >threshold% move
+    if (( $(echo "$abs_change > $threshold" | bc -l 2>/dev/null || echo "0") )); then
         log "VOLATILITY DETECTED: $symbol moved $change%"
         return 0
     fi
@@ -68,34 +164,55 @@ check_volatility() {
     return 1
 }
 
-# === CHECK TARGETS (Auto-alert) ===
+# === CHECK STOP LOSS ===
+check_stop_loss() {
+    local symbol=$1
+    local current=$2
+    local avg_cost=$3
+    
+    # Calculate 5% stop loss threshold
+    local stop_pct=5
+    local stop_threshold=$(echo "scale=2; $avg_cost * (1 - $stop_pct/100)" | bc -l)
+    
+    if (( $(echo "$current < $stop_threshold" | bc -l 2>/dev/null || echo "0") )); then
+        log "STOP LOSS TRIGGERED: $symbol at \$$current (avg: \$$avg_cost, stop: \$$stop_threshold)"
+        return 0
+    fi
+    
+    return 1
+}
+
+# === CHECK TARGETS (dynamic from state.json) ===
 check_targets() {
     local symbol=$1
     local current=$2
     
     log "Checking $symbol targets: \$$current"
     
-    # BUY check - auto-alert (not volatile, just hitting buy zone)
-    if (( $(echo "$current <= 4.10" | bc -l 2>/dev/null || echo "0") )); then
-        alert "$symbol" "BUY ZONE" "$current" "4.10" "AUTO"
-    fi
+    # Get buy targets
+    local buy_targets=$(jq -r ".targets.$symbol.buy[]" "$STATE" 2>/dev/null)
+    for target in $buy_targets; do
+        if (( $(echo "$current <= $target" | bc -l 2>/dev/null || echo "0") )); then
+            if ! alert_already_sent "$symbol" "BUY" "$target"; then
+                alert "$symbol" "BUY ZONE" "$current" "$target" "AUTO"
+                record_alert "$symbol" "BUY" "$target" "$current"
+            fi
+        fi
+    done
     
-    # SELL checks - auto-alert
-    if (( $(echo "$current >= 4.45" | bc -l 2>/dev/null || echo "0") )); then
-        alert "$symbol" "SELL 1" "$current" "4.45" "AUTO"
-    fi
-    
-    if (( $(echo "$current >= 4.60" | bc -l 2>/dev/null || echo "0") )); then
-        alert "$symbol" "SELL 2" "$current" "4.60" "AUTO"
-    fi
-    
-    if (( $(echo "$current >= 4.75" | bc -l 2>/dev/null || echo "0") )); then
-        alert "$symbol" "SELL 3" "$current" "4.75" "AUTO"
-    fi
+    # Get sell targets
+    local sell_targets=$(jq -r ".targets.$symbol.sell[]" "$STATE" 2>/dev/null)
+    for target in $sell_targets; do
+        if (( $(echo "$current >= $target" | bc -l 2>/dev/null || echo "0") )); then
+            if ! alert_already_sent "$symbol" "SELL" "$target"; then
+                alert "$symbol" "SELL TARGET" "$current" "$target" "AUTO"
+                record_alert "$symbol" "SELL" "$target" "$current"
+            fi
+        fi
+    done
 }
 
 # === CONFER WITH MAIN AGENT ===
-# For volatile opportunities, ask main agent before alerting
 confer_volatile_opportunity() {
     local symbol=$1
     local price=$2
@@ -104,18 +221,22 @@ confer_volatile_opportunity() {
     
     log "CONFER: Volatile $symbol $direction - asking main agent"
     
-    # Write to pending file for main agent to review
-    cat >> "$PENDING" << EOF
-{
-  "timestamp": "$(date -u +'%Y-%m-%d %H:%M UTC')",
-  "symbol": "$symbol",
-  "price": "$price",
-  "direction": "$direction",
-  "change": "$change%",
-  "type": "VOLATILE_OPPORTUNITY",
-  "status": "PENDING_REVIEW"
-}
-EOF
+    # Read existing array, append new item, write back
+    local tmp=$(mktemp)
+    local new_item="{\"timestamp\":\"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\",\"symbol\":\"$symbol\",\"price\":\"$price\",\"direction\":\"$direction\",\"change\":\"$change%\",\"type\":\"VOLATILE_OPPORTUNITY\",\"status\":\"PENDING_REVIEW\"}"
+    
+    if [ -s "$PENDING" ] && [ "$(cat "$PENDING")" != "[]" ]; then
+        # Remove trailing ], add comma + new item + ]
+        sed 's/\]/$/' "$PENDING" > "$tmp"
+        sed -i 's/\[$/\[\n  /' "$tmp"
+        echo "$new_item," >> "$tmp"
+        sed -i 's/,\s*\]/\n]/' "$tmp"
+    else
+        echo "[$new_item]" > "$tmp"
+    fi
+    
+    cat "$tmp" > "$PENDING"
+    rm "$tmp"
     
     log "Wrote to pending review queue: $PENDING"
 }
@@ -133,11 +254,33 @@ alert() {
     echo "$(date -u +'%Y-%m-%d %H:%M UTC') [$type] $msg" >> "$ALERTS"
 }
 
+# === SEND TELEGRAM NOTIFICATION (optional) ===
+send_telegram() {
+    local message="$1"
+    # Placeholder - add Telegram bot API call here if needed
+    # curl -s -X POST "https://api.telegram.org/bot<TOKEN>/sendMessage" ...
+    log "TG_NOTIF: $message"
+}
+
 # === MAIN ===
 log "=== Stock Trading Subagent Starting ==="
 
-# Monitor stocks
-stocks="GGB"
+# Check market hours
+if ! is_market_open; then
+    log "Outside market hours - skipping run"
+    log "=== Scan Complete (market closed) ==="
+    exit 0
+fi
+
+# Read stocks from portfolio in state.json
+stocks=$(jq -r '.portfolio | keys | join(" ")' "$STATE")
+
+if [ -z "$stocks" ]; then
+    log "No stocks in portfolio - exiting"
+    exit 0
+fi
+
+log "Monitoring: $stocks"
 
 for stock in $stocks; do
     log "Checking $stock..."
@@ -145,6 +288,17 @@ for stock in $stocks; do
     
     if [ -n "$price" ] && [ "$price" != "null" ]; then
         log "$stock price: \$$price"
+        
+        # Get avg_cost for stop-loss
+        avg_cost=$(jq -r ".portfolio.$stock.avg_cost // 0" "$STATE")
+        
+        # Check stop-loss first
+        if [ "$avg_cost" != "0" ] && [ "$avg_cost" != "null" ]; then
+            if check_stop_loss "$stock" "$price" "$avg_cost"; then
+                alert "$stock" "STOP LOSS" "$price" "$avg_cost" "CRITICAL"
+                record_alert "$stock" "STOP_LOSS" "$avg_cost" "$price"
+            fi
+        fi
         
         # Check volatility FIRST (before targets)
         if check_volatility "$stock" "$price"; then
@@ -167,6 +321,43 @@ for stock in $stocks; do
         log "ERROR: Could not fetch price for $stock"
     fi
 done
+
+# === SCAN VOLATILE WATCHLIST (stocks we don't own) ===
+log "Scanning volatile watchlist..."
+watchlist=$(jq -r '.volatile_watchlist | join(" ")' "$STATE" 2>/dev/null)
+
+if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
+    log "Watchlist: $watchlist"
+    
+    for symbol in $watchlist; do
+        log "Watchlist scan: $symbol"
+        price=$(get_price "$symbol")
+        
+        if [ -n "$price" ] && [ "$price" != "null" ]; then
+            log "$symbol price: \$$price"
+            
+            # Check volatility - for watchlist, always confer (we don't own it)
+            if check_volatility "$symbol" "$price"; then
+                last=$(get_last_price "$symbol")
+                change=$(echo "scale=2; (($price - $last) / $last) * 100" | bc -l)
+                if (( $(echo "$change > 0" | bc -l 2>/dev/null || echo "0") )); then
+                    direction="UP"
+                else
+                    direction="DOWN"
+                fi
+                confer_volatile_opportunity "$symbol" "$price" "$direction" "$change"
+                log "Volatile opportunity queued: $symbol $direction $change%"
+            fi
+            
+            # Save price for next run
+            save_price "$symbol" "$price"
+        else
+            log "ERROR: Could not fetch price for $symbol"
+        fi
+    done
+else
+    log "No volatile watchlist configured"
+fi
 
 log "=== Scan Complete ==="
 exit 0

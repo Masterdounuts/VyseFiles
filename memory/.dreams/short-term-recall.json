@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T23:46:57.574Z",
+  "updatedAt": "2026-04-21T00:34:17.705Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -77229,21 +77229,23 @@
       "endLine": 892,
       "source": "memory",
       "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.0143153995275496,
-      "maxScore": 0.5162181109189987,
+      "totalScore": 2.691650845943309,
+      "maxScore": 0.6773354464157592,
       "firstRecalledAt": "2026-04-20T23:26:25.337Z",
-      "lastRecalledAt": "2026-04-20T23:31:25.485Z",
+      "lastRecalledAt": "2026-04-21T00:00:35.426Z",
       "queryHashes": [
         "04846ca4150b",
         "7c544c4e007f",
         "0f484008438a",
-        "25d7fc9b22f3"
+        "25d7fc9b22f3",
+        "2e064df6aa56"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "agents.md",
@@ -77297,19 +77299,21 @@
       "endLine": 2444,
       "source": "memory",
       "snippet": "- **Sent Telegram to David** asking about TSLA reallocation now that it's unlocked The new session is running independently. You can keep chatting here while the subagent handles the stock monitoring and alerts. What's next? assistant: Nice! The subagent delivered exactly what we needed. 📊 **What's happening now:** - David will see the Telegram alert with current prices - He's got the decision prompt: reallocate TSLA → GGB or new pick? - Once he replies, the subagent will execute the trade **In the meantime**, want me to: 1. **Monitor for his reply** and execute when he responds? 2. **Research new stock candidates** in case he wants to diversify? 3. **Something else entirely**? Let me k",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.0162694215774535,
+      "totalScore": 1.503594848513603,
       "maxScore": 0.5223531395196914,
       "firstRecalledAt": "2026-04-20T23:26:25.337Z",
-      "lastRecalledAt": "2026-04-20T23:26:27.225Z",
+      "lastRecalledAt": "2026-04-21T00:30:09.240Z",
       "queryHashes": [
         "04846ca4150b",
-        "7c544c4e007f"
+        "7c544c4e007f",
+        "ef890628cf47"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "sent",
@@ -77394,19 +77398,21 @@
       "endLine": 471,
       "source": "memory",
       "snippet": "- Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infr",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2367634718429394,
+      "totalScore": 1.7191888784181424,
       "maxScore": 0.7284385656129666,
       "firstRecalledAt": "2026-04-20T23:26:29.493Z",
-      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "lastRecalledAt": "2026-04-21T00:09:24.888Z",
       "queryHashes": [
         "0f484008438a",
-        "6d1944169365"
+        "6d1944169365",
+        "a8306fc8eee3"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "6.60",
@@ -77426,18 +77432,20 @@
       "endLine": 744,
       "source": "memory",
       "snippet": "- Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infr",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5083249062299728,
+      "totalScore": 0.9907503128051758,
       "maxScore": 0.5083249062299728,
       "firstRecalledAt": "2026-04-20T23:26:29.493Z",
-      "lastRecalledAt": "2026-04-20T23:26:29.493Z",
+      "lastRecalledAt": "2026-04-21T00:09:24.888Z",
       "queryHashes": [
-        "0f484008438a"
+        "0f484008438a",
+        "a8306fc8eee3"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "6.60",
@@ -77519,18 +77527,20 @@
       "endLine": 237,
       "source": "memory",
       "snippet": "- Fixed broken links in INDEX.md → new `kb/` paths - Removed stray `kb/{stocks` directory - Pushed commit `6cbc3e1` **Stock System Assessment:** - No dedicated subagent — just disabled cron alerts - Gap: price-target alerts not implemented - Recommendation: build price-check cron for buy/sell zones vs arbitrary % moves --- ## Stock Subagent Design - 2026-04-20 23:34 UTC **Portfolio Update (post-session refresh):** - GGB: 4.99 shares @ $4.28 = $21.36 - Cash: $31.32 - **Total Capital:** $52.68 ** David's Goals:** - Eventual: $70/day profit - Strategy: Reinvest 100% (no withdrawals until goal met) - Starting capital: ~$52 (realistic daily target: $2-5/day) **Research - GGB (Apr 20):** - C",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7560516845043499,
+      "totalScore": 1.4607057597968365,
       "maxScore": 0.7560516845043499,
       "firstRecalledAt": "2026-04-20T23:46:57.574Z",
-      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
       "queryHashes": [
-        "6d1944169365"
+        "6d1944169365",
+        "4d6d4863f0f8"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "index.md",
@@ -77572,6 +77582,632 @@
         "memory.md",
         "context",
         "pre"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1130:1184": {
+      "key": "memory:memory/2026-04-16.md:1130:1184",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1130,
+      "endLine": 1184,
+      "source": "memory",
+      "snippet": "### Key Principles Established - **Scan** → What I'm observing - **Think** → Show tradeoffs before recommending - **Act** → Execute with approval on ambiguous issues; fix known issues and flag ### Resolution Decision protocol is solid. Problem was execution, not framework. - For known fixes (Telegram delivery): Fix and flag (autonomy-aligned) - For ambiguous issues: Ask first --- ## Cron Job Fixes (23:14 UTC) ### Issue 7 cron jobs failed - Telegram delivery issues ### Fixes Applied 1. **Vyse-Readiness-Check** - Added numeric `delivery.to` chat ID 2. **GGB-price-watch** - Fixed from @VyseAgent_bot to numeric chat ID ### Logged Added to FIXES.md: \"230416 - Cron Telegram delivery - use nu",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6873916347171832,
+      "maxScore": 0.6873916347171832,
+      "firstRecalledAt": "2026-04-21T00:00:35.426Z",
+      "lastRecalledAt": "2026-04-21T00:00:35.426Z",
+      "queryHashes": [
+        "2e064df6aa56"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "autonomy-aligned",
+        "vyse-readiness-check",
+        "delivery.to",
+        "ggb-price-watch",
+        "vyseagent-bot",
+        "fixes.md",
+        "key",
+        "principles"
+      ]
+    },
+    "memory:memory/2026-04-15.md:418:463": {
+      "key": "memory:memory/2026-04-15.md:418:463",
+      "path": "memory/2026-04-15.md",
+      "startLine": 418,
+      "endLine": 463,
+      "source": "memory",
+      "snippet": "## Gateway Restart - Apr 15 22:38 UTC - Restarted gateway to apply 40k context limit - Fresh session now has 40k context tokens --- ## Late Night Update - Apr 15 23:02 UTC ### Cron Job Health Check Failed - Script detected 2 failed cron jobs (lastRunStatus: \"error\") - Telegram alert failed: 404 error (bot token or chat_id issue) - Failed job identified: \"gateway-health-check\" - delivery error needs `to` field ### Session Label Issue - Session still shows \"heartbeat\" in UI (cosmetic only) - Decided to just keep using current session - heartbeat now runs in isolated session anyway - Label is just a name, doesn't affect functionality ### Pending Decisions - GGB at $4.30 (sell target) - awa",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3641717821011041,
+      "maxScore": 0.6916444776579181,
+      "firstRecalledAt": "2026-04-21T00:00:35.426Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "2e064df6aa56",
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "chat-id",
+        "gateway-health-check",
+        "4.30",
+        "restart",
+        "apr",
+        "utc",
+        "restarted"
+      ]
+    },
+    "memory:memory/archive/2026-04-13.md:1:12": {
+      "key": "memory:memory/archive/2026-04-13.md:1:12",
+      "path": "memory/archive/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "## Stock Prices Check (2026-04-14 21:27 UTC) --- [[../2026-04-13|Apr 13]] - GGB (Gerdau SA): $4.27 (Day High $4.30, Day Low $4.23) - TSLA (Tesla Inc): $364.49 (After Hours)\\n Targets: - GGB sell target $5+ → **not reached** - TSLA sell target $350+ (post-unlock Apr 16) → price above target but stock still locked until Apr 16, so **no alert**. No alerts sent.--- [[INDEX.md|← Back]]",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7157843345638268,
+      "maxScore": 0.7157843345638268,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.27",
+        "4.30",
+        "4.23",
+        "364.49",
+        "post-unlock",
+        "index.md",
+        "stock",
+        "prices"
+      ]
+    },
+    "memory:memory/2026-04-15.md:321:358": {
+      "key": "memory:memory/2026-04-15.md:321:358",
+      "path": "memory/2026-04-15.md",
+      "startLine": 321,
+      "endLine": 358,
+      "source": "memory",
+      "snippet": "- Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs.json directly, use `cron list` API\" - Rationale: jobs.json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7048542988834184,
+      "maxScore": 0.7048542988834184,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "jobs.json",
+        "rotate-session-log",
+        "auto-session-cleanup",
+        "keep",
+        "eye"
+      ]
+    },
+    "memory:memory/2026-04-16.md:966:997": {
+      "key": "memory:memory/2026-04-16.md:966:997",
+      "path": "memory/2026-04-16.md",
+      "startLine": 966,
+      "endLine": 997,
+      "source": "memory",
+      "snippet": "| Ticker | Shares | Avg Cost | Current Price | Value | Notes | |--------|--------|----------|---------------|-------|-------| | GGB | 4.98 | $4.17 | $4.17 | $21.66 | Brazilian steel, +4.3% | | AMC | 8.00 | $1.64 | $1.65 | $13.20 | Volatile - earnings Apr 18 | | TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| # 2026-04-16 - Daily Memory ## Full System Audit (22:57 UTC) ### Action Taken Scanned every system file and folder in the workspace per David'",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7007614101163903,
+      "maxScore": 0.7007614101163903,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.98",
+        "4.17",
+        "21.66",
+        "4.3",
+        "8.00",
+        "1.64",
+        "1.65",
+        "13.20"
+      ]
+    },
+    "memory:memory/2026-04-15.md:64:102": {
+      "key": "memory:memory/2026-04-15.md:64:102",
+      "path": "memory/2026-04-15.md",
+      "startLine": 64,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026‑04‑16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7005467140406015,
+      "maxScore": 0.7005467140406015,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.22",
+        "4.30",
+        "5.85",
+        "4.10",
+        "4.15",
+        "stocks",
+        "checked",
+        "prices"
+      ]
+    },
+    "memory:memory/2026-04-16.md:3148:3167": {
+      "key": "memory:memory/2026-04-16.md:3148:3167",
+      "path": "memory/2026-04-16.md",
+      "startLine": 3148,
+      "endLine": 3167,
+      "source": "memory",
+      "snippet": "System: | Ticker | After‑hours price | % change (after‑hours) | Recent 52‑wk range | System: |--------|-------------------|------------------------|--------------------| System: | **MARA** | $10.49 | **+0.19 %** | $6.66 – $23.45 | System: | **LCID** | $8.29 | **+0.97 %** | $8.11 – $33.70 | System: | **RIVN** | $16.53 | **+0.73 %** | $10.85 – $22.69 | System: | **GGB** | $4.29 | **‑0.46 %** | $2.47 – $4.66 | System: System: **Observations** System: System: 1. All four tickers are trading in pre‑market/after‑hours. System: 2. LCID shows the strongest upward move (+0.97 %) but its price is near the low end of a very wide 52‑wk range, indicating limited upside momentum. System: 3. RIVN is",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1941629308749129,
+      "maxScore": 0.6936894017744948,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:09:24.888Z",
+      "queryHashes": [
+        "4d6d4863f0f8",
+        "a8306fc8eee3"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "10.49",
+        "0.19",
+        "6.66",
+        "23.45",
+        "8.29",
+        "0.97",
+        "8.11",
+        "33.70"
+      ]
+    },
+    "memory:memory/2026-04-15.md:32:69": {
+      "key": "memory:memory/2026-04-15.md:32:69",
+      "path": "memory/2026-04-15.md",
+      "startLine": 32,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "- No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026‑04‑16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs.json directly, use `cron list` API\" - Rationale:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6911140903836938,
+      "maxScore": 0.6911140903836938,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "jobs.json",
+        "new",
+        "trades",
+        "executed",
+        "decided"
+      ]
+    },
+    "memory:memory/2026-04-15.md:96:133": {
+      "key": "memory:memory/2026-04-15.md:96:133",
+      "path": "memory/2026-04-15.md",
+      "startLine": 96,
+      "endLine": 133,
+      "source": "memory",
+      "snippet": "- Fixed cron job Telegram delivery error (removed invalid @heartbeat chat) - Changed sessionTarget to \"isolated\" for gateway health checks - Documented best practice in TOOLS. md # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6900116551819359,
+      "maxScore": 0.6900116551819359,
+      "firstRecalledAt": "2026-04-21T00:04:04.661Z",
+      "lastRecalledAt": "2026-04-21T00:04:04.661Z",
+      "queryHashes": [
+        "4d6d4863f0f8"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gateway",
+        "4.22",
+        "4.30",
+        "5.85",
+        "fixed",
+        "cron",
+        "job",
+        "telegram"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2258:2269": {
+      "key": "memory:memory/2026-04-16.md:2258:2269",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2258,
+      "endLine": 2269,
+      "source": "memory",
+      "snippet": "System: | **AMC** (AMC Entertainment Holdings) | **$1.71** | Upcoming earnings on **May 6 2026** should spark heightened volatility as the theater chain tries to prove a post‑pandemic recovery, while its ultra‑low price provides big percentage moves on modest volume. | Extremely thin liquidity; price can swing wildly on news or “meme” sentiment, leading to rapid losses. | System: | **NOK** (Nokia Oyj) | **$3.38** | Scheduled earnings on **April 23 2026** plus ongoing 5G rollout contracts make the stock prone to sharp intraday swings, especially after any guidance miss or beat. | Susceptible to macro‑tech sector pullbacks; a mis‑step in earnings can trigger a steep decline. | System: | **SNDL",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7298580520531444,
+      "maxScore": 0.7298580520531444,
+      "firstRecalledAt": "2026-04-21T00:04:23.311Z",
+      "lastRecalledAt": "2026-04-21T00:04:23.311Z",
+      "queryHashes": [
+        "770621860f4f"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1.71",
+        "3.38",
+        "system",
+        "amc",
+        "entertainment",
+        "holdings",
+        "upcoming",
+        "earnings"
+      ]
+    },
+    "memory:memory/2026-04-16.md:2265:2320": {
+      "key": "memory:memory/2026-04-16.md:2265:2320",
+      "path": "memory/2026-04-16.md",
+      "startLine": 2265,
+      "endLine": 2320,
+      "source": "memory",
+      "snippet": "System: 2. **Watch earnings calendars** (AMC May 6, NOK Apr 23, SNDL Apr 30) – volatility spikes typically start a day before. System: 3. **Apply your day‑trade rules** (stop‑loss ≤ 5 %, target 1‑3 % gain) and reinvest any wins immediately. System: System: These three tickers meet all the stated criteria and should provide enough daily movement for active trading with a small capital base. Happy trading! 🦜 Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 10:34 UTC] Did you finish? assistant: Yep, both jobs delivered! - **Credit Watch**: Ran clean (no output = credits OK) - **Daily Stock Research**: Delivere",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6881917603124792,
+      "maxScore": 0.6881917603124792,
+      "firstRecalledAt": "2026-04-21T00:04:23.311Z",
+      "lastRecalledAt": "2026-04-21T00:04:23.311Z",
+      "queryHashes": [
+        "770621860f4f"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "system",
+        "watch",
+        "earnings",
+        "calendars",
+        "amc",
+        "may",
+        "nok"
+      ]
+    },
+    "memory:memory/2026-04-16.md:285:338": {
+      "key": "memory:memory/2026-04-16.md:285:338",
+      "path": "memory/2026-04-16.md",
+      "startLine": 285,
+      "endLine": 338,
+      "source": "memory",
+      "snippet": "|--------|--------|----------|---------------|-------|-------| | GGB | 4.98 | $4.17 | $4.17 | $21.66 | Brazilian steel, +4.3% | | AMC | 8.00 | $1.64 | $1.65 | $13.20 | Volatile - earnings Apr 18 | | TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| --- ## Pre-Compaction Save: 20:27 UTC ### Context: ### Resume Point # Resume Point - Mid-Conversation Checkpoint *Structured handoff per Long-Chats Guide. Update before context hits 80%.* --- ## Curre",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0008071810007095,
+      "maxScore": 0.5249481797218323,
+      "firstRecalledAt": "2026-04-21T00:09:24.888Z",
+      "lastRecalledAt": "2026-04-21T00:34:17.705Z",
+      "queryHashes": [
+        "a8306fc8eee3",
+        "feaa309c0ee7"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.98",
+        "4.17",
+        "21.66",
+        "4.3",
+        "8.00",
+        "1.64",
+        "1.65",
+        "13.20"
+      ]
+    },
+    "memory:memory/2026-04-16.md:540:593": {
+      "key": "memory:memory/2026-04-16.md:540:593",
+      "path": "memory/2026-04-16.md",
+      "startLine": 540,
+      "endLine": 593,
+      "source": "memory",
+      "snippet": "| GGB | 4.98 | $4.17 | $4.17 | $21.66 | Brazilian steel, +4.3% | | AMC | 8.00 | $1.64 | $1.65 | $13.20 | Volatile - earnings Apr 18 | | TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| --- ## Pre-Compaction Save: 21:48 UTC ### Context: ### Resume Point # Resume Point - Mid-Conversation Checkpoint *Structured handoff per Long-Chats Guide. Update before context hits 80%.* --- ## Current Status (as of 13:09 UTC) **Decision Made:** Go with AMC, NO",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.999840223789215,
+      "maxScore": 0.5240818172693252,
+      "firstRecalledAt": "2026-04-21T00:09:24.888Z",
+      "lastRecalledAt": "2026-04-21T00:34:17.705Z",
+      "queryHashes": [
+        "a8306fc8eee3",
+        "feaa309c0ee7"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.98",
+        "4.17",
+        "21.66",
+        "4.3",
+        "8.00",
+        "1.64",
+        "1.65",
+        "13.20"
+      ]
+    },
+    "memory:memory/2026-04-16.md:3199:3249": {
+      "key": "memory:memory/2026-04-16.md:3199:3249",
+      "path": "memory/2026-04-16.md",
+      "startLine": 3199,
+      "endLine": 3249,
+      "source": "memory",
+      "snippet": "When TSLA hits $8, you'll get a notification — then you can sell! --- **While we wait for TSLA**, you still have $24.29 buying power. Want to: - A) Put some into GGB now while we wait? - B) Hold cash and wait for TSLA first? - C) Look at other volatile picks (MARA just popped up in research!) 🦜 user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 13:05 UTC] I dont know if you guys looked into Rivn. why dont you put your agent on the case assistant: Here's what I found on **RIVN**: --- ### Rivian (RIVN) Quick Intel | Metric | Value | |--------|-------| | **Current Price** | ~$16.53 (+0.73% AH) | | **52-wk Rang",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4755475372076034,
+      "maxScore": 0.4755475372076034,
+      "firstRecalledAt": "2026-04-21T00:09:24.888Z",
+      "lastRecalledAt": "2026-04-21T00:09:24.888Z",
+      "queryHashes": [
+        "a8306fc8eee3"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "24.29",
+        "openclaw-control-ui",
+        "16.53",
+        "0.73",
+        "52-wk",
+        "when",
+        "tsla",
+        "hits"
+      ]
+    },
+    "memory:memory/2026-04-16.md:924:970": {
+      "key": "memory:memory/2026-04-16.md:924:970",
+      "path": "memory/2026-04-16.md",
+      "startLine": 924,
+      "endLine": 970,
+      "source": "memory",
+      "snippet": "**Decision Made:** Go with AMC, NOT RIVN **Strategy:** - TSLA: HOLD until $8+ (alert set) - After TSLA sells: 70% GGB / 30% AMC - Total capital: ~$32 (TSLA $8 + cash $24.29) **Volatile Pick: AMC** - Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ###",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0109423846006393,
+      "maxScore": 0.5354921460151671,
+      "firstRecalledAt": "2026-04-21T00:09:24.888Z",
+      "lastRecalledAt": "2026-04-21T00:34:17.705Z",
+      "queryHashes": [
+        "a8306fc8eee3",
+        "feaa309c0ee7"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "24.29",
+        "6.60",
+        "6.80",
+        "5.20",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "decision"
+      ]
+    },
+    "memory:memory/2026-04-16.md:739:792": {
+      "key": "memory:memory/2026-04-16.md:739:792",
+      "path": "memory/2026-04-16.md",
+      "startLine": 739,
+      "endLine": 792,
+      "source": "memory",
+      "snippet": "| AMC | 8.00 | $1.64 | $1.65 | $13.20 | Volatile - earnings Apr 18 | | TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| --- ## Pre-Compaction Save: 22:10 UTC ### Context: ### Resume Point # Resume Point - Mid-Conversation Checkpoint *Structured handoff per Long-Chats Guide. Update before context hits 80%.* --- ## Current Status (as of 13:09 UTC) **Decision Made:** Go with AMC, NOT RIVN **Strategy:** - TSLA: HOLD until $8+ (alert set) - After",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0043320238590239,
+      "maxScore": 0.5294527679681778,
+      "firstRecalledAt": "2026-04-21T00:09:24.888Z",
+      "lastRecalledAt": "2026-04-21T00:34:17.705Z",
+      "queryHashes": [
+        "a8306fc8eee3",
+        "feaa309c0ee7"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "8.00",
+        "1.64",
+        "1.65",
+        "13.20",
+        "0.0",
+        "351.30",
+        "396.12",
+        "6.53"
+      ]
+    },
+    "memory:memory/2026-04-16.md:3073:3127": {
+      "key": "memory:memory/2026-04-16.md:3073:3127",
+      "path": "memory/2026-04-16.md",
+      "startLine": 3073,
+      "endLine": 3127,
+      "source": "memory",
+      "snippet": "### Quick Summary: | Order | Action | Shares | Price | Type | |-------|--------|--------|-------|------| | 1️⃣ | **SELL TSLA** | All | ~$396 | Market | | 2️⃣ | **BUY GGB** | 5 | $4.30 | Limit | | 3️⃣ | **BUY AMC** | 1.6 | $5.84 | Limit | ### Alerts to Set: - GGB: $4.50 / $4.80 - AMC: $6.60 / $6.80 / $5.20 (stop) --- **Full guide:** Check `robinhood-guide.md` in workspace — has screenshots-level detail. Ready when you are, David! 🚀 user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 12:56 UTC] You realize that all my shares of tesla doesn't equal 1 right? its fractional shares so its all worth only 6.53 in to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4839188694953918,
+      "maxScore": 0.4839188694953918,
+      "firstRecalledAt": "2026-04-21T00:30:09.240Z",
+      "lastRecalledAt": "2026-04-21T00:30:09.240Z",
+      "queryHashes": [
+        "ef890628cf47"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.30",
+        "1.6",
+        "5.84",
+        "4.50",
+        "4.80",
+        "6.60",
+        "6.80",
+        "5.20"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1451:1492": {
+      "key": "memory:memory/2026-04-16.md:1451:1492",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1451,
+      "endLine": 1492,
+      "source": "memory",
+      "snippet": "- robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market va",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4833681225776672,
+      "maxScore": 0.4833681225776672,
+      "firstRecalledAt": "2026-04-21T00:30:09.240Z",
+      "lastRecalledAt": "2026-04-21T00:30:09.240Z",
+      "queryHashes": [
+        "ef890628cf47"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term",
+        "robinhood",
+        "guide",
+        "execution",
+        "steps"
+      ]
+    },
+    "memory:memory/2026-04-16.md:245:289": {
+      "key": "memory:memory/2026-04-16.md:245:289",
+      "path": "memory/2026-04-16.md",
+      "startLine": 245,
+      "endLine": 289,
+      "source": "memory",
+      "snippet": "- TSLA: HOLD until $8+ (alert set) - After TSLA sells: 70% GGB / 30% AMC - Total capital: ~$32 (TSLA $8 + cash $24.29) **Volatile Pick: AMC** - Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5271061271429062,
+      "maxScore": 0.5271061271429062,
+      "firstRecalledAt": "2026-04-21T00:34:17.705Z",
+      "lastRecalledAt": "2026-04-21T00:34:17.705Z",
+      "queryHashes": [
+        "feaa309c0ee7"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "24.29",
+        "6.60",
+        "6.80",
+        "5.20",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04-16.md:466:516": {
+      "key": "memory:memory/2026-04-16.md:466:516",
+      "path": "memory/2026-04-16.md",
+      "startLine": 466,
+      "endLine": 516,
+      "source": "memory",
+      "snippet": "| AMC | 8.00 | $1.64 | $1.65 | $13.20 | Volatile - earnings Apr 18 | | TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| --- 2026-04-16 21:05 UTC - Memory Flush Entry - Refined sub-agent strategy: dropped crew manifest, kept only lightweight spawn rules to avoid overhead. - Recommended POC: spawn a single ad‑hoc sub‑agent for a research task, then auto‑cleanup. - Decision Protocol from SOUL.md remains active (Scan → Think → Act). - Emphasized that sub",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5221226185560226,
+      "maxScore": 0.5221226185560226,
+      "firstRecalledAt": "2026-04-21T00:34:17.705Z",
+      "lastRecalledAt": "2026-04-21T00:34:17.705Z",
+      "queryHashes": [
+        "feaa309c0ee7"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "8.00",
+        "1.64",
+        "1.65",
+        "13.20",
+        "0.0",
+        "351.30",
+        "396.12",
+        "6.53"
       ]
     }
   }
