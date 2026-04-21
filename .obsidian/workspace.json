@@ -189,6 +189,14 @@
   },
   "active": "6e290570b2e87e26",
   "lastOpenFiles": [
+    "kb/stocks/research/archive/robinhood-android-app.md",
+    "kb/stocks/research/archive/news-alert.md",
+    "kb/stocks/research/archive/model-performance.md",
+    "kb/stocks/research/archive/income-strategy.md",
+    "kb/stocks/research/archive/day-trading-options.md",
+    "kb/stocks/research/archive/alert-status.md",
+    "kb/stocks/research/archive",
+    "kb/stocks/agent/trades.json",
     "scripts/stock-research.sh",
     "kb/stocks/agent/research.md",
     "kb/system/FIXES.md",
@@ -206,9 +214,6 @@
     "kb/stocks/agent/research-opportunities.json",
     "kb/stocks/agent/alert-history.json",
     "memory/2026-04-21.md",
-    "scripts/stock-trading-subagent.sh",
-    "scripts/clear-pending.sh",
-    "scripts/check-pending-opportunities.sh",
     "kb/stocks/research/weekly-research.md",
     "kb/stocks/research/volatile-stocks.md",
     "kb/stocks/research/robinhood-android-app.md",
@@ -219,11 +224,6 @@
     "kb/stocks/research/income-strategy.md",
     "kb/stocks/research/day-trading-options.md",
     "kb/stocks/research/day-trade-research.md",
-    "kb/stocks/research/alert-status.md",
-    "kb/system/INTERRUPT_RECOVERY.md",
-    "kb/system/BOOTSTRAP.md",
-    "kb/stocks/trade-log.md",
-    "kb/stocks/rules.md",
-    "kb/index.md"
+    "kb/stocks/research/alert-status.md"
   ]
 }
