@@ -187,8 +187,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "ec66fc393d940c91",
+  "active": "6e290570b2e87e26",
   "lastOpenFiles": [
+    "scripts/stock-research.sh",
     "kb/stocks/agent/research.md",
     "kb/system/FIXES.md",
     "obsidian-prototype/decision-log-template.md",
@@ -223,7 +224,6 @@
     "kb/system/BOOTSTRAP.md",
     "kb/stocks/trade-log.md",
     "kb/stocks/rules.md",
-    "kb/index.md",
-    "memory/stocks/morning-research.md"
+    "kb/index.md"
   ]
 }
