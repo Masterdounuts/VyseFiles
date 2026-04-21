@@ -1,19 +1,32 @@
 {
+  "last_updated": "2026-04-21T14:52:00Z",
   "patterns": {
     "GGB": {
       "buy_zone_accuracy": 0.75,
-      "sell_zone_accuracy": 0.80,
+      "sell_zone_accuracy": 0.8,
       "avg_hold_time_hours": 4,
-      "best_days": ["Tuesday", "Wednesday", "Thursday"],
-      "worst_days": ["Monday", "Friday"],
+      "best_days": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "worst_days": [
+        "Monday",
+        "Friday"
+      ],
       "notes": "Steel sector, follows Brazil market, earnings sensitive"
     },
     "AMC": {
-      "buy_zone_accuracy": 0.60,
+      "buy_zone_accuracy": 0.6,
       "sell_zone_accuracy": 0.65,
       "avg_hold_time_hours": 2,
-      "best_days": ["Tuesday", "Wednesday"],
-      "worst_days": ["Friday"],
+      "best_days": [
+        "Tuesday",
+        "Wednesday"
+      ],
+      "worst_days": [
+        "Friday"
+      ],
       "notes": "Meme stock, short squeeze potential, high volume"
     }
   },
@@ -25,14 +38,49 @@
     "AMC": {
       "last_adjusted": "2026-04-20",
       "reason": "High volatility, wider sell zones"
+    },
+    "KB_Drift_Fix": {
+      "date": "2026-04-21",
+      "issue": "Multiple files had different target prices - state.json, AGENTS.md, portfolio.md, rules.md all out of sync",
+      "fix": "Made state.json the single source of truth, deprecated rules.md to point to state.json",
+      "lesson": "Always use state.json as canonical source; subagent reads it directly"
     }
   },
+  "trade_tracking": {
+    "enabled": true,
+    "file": "kb/stocks/agent/trades.json",
+    "format": "User says: 'executed BUY GGB 5@4.20' or 'executed SELL GGB 2.5@4.45'",
+    "how_it_works": "1. On BUY: log to open_positions in trades.json. 2. On SELL: calculate real P/L, log to trades[], create lesson in learnings.json with type TRADE_PNL",
+    "mock_test": "2026-04-21 - BUY 5@4.20 -> SELL 5@4.45 = +$1.25 (+5.95%)"
+  },
+  "subagent_gaps": [
+    {
+      "date": "2026-04-21",
+      "script": "stock-trading-subagent.sh",
+      "issue": "Did not write to learnings.json",
+      "impact": "Can't auto-learn from target hits/misses",
+      "status": "FIXED",
+      "fix_date": "2026-04-21"
+    }
+  ],
   "performance": {
     "total_trades": 0,
     "wins": 0,
     "losses": 0,
-    "win_rate": 0.0,
-    "avg_gain_percent": 0.0,
-    "avg_loss_percent": 0.0
-  }
+    "win_rate": 0,
+    "avg_gain_percent": 0,
+    "avg_loss_percent": 0
+  },
+  "lessons": [
+    {
+      "timestamp": "2026-04-21T14:48:30Z",
+      "symbol": "GGB",
+      "type": "TRADE_PNL",
+      "entry": 4.2,
+      "exit": 4.45,
+      "pnl": "1.25",
+      "pnl_pct": "5.95",
+      "notes": "First mock trade - successful"
+    }
+  ]
 }

@@ -31,11 +31,11 @@
 **GGB Only** - focusing on small caps with clear levels.
 
 ### GGB
-| Current | Target 1 | Target 2 | Buy Zone | Stop Alert |
-|---------|----------|----------|----------|------------|
-| ~$4.28 | $4.45 | $4.60 | $4.10-$3.90 | $3.80 |
+| Current | Sell 1 | Sell 2 | Sell 3 | Buy Zone | Stop |
+|---------|--------|--------|--------|----------|------|
+| ~$4.28 | $4.45 | $4.60 | $4.75 | $4.10-$3.90 | 5% |
 
-**Strategy:** Scale out 50% at $4.45, 50% at $4.60
+**Strategy:** Scale out 50% at $4.45, 50% at $4.60 (or all at $4.60 if quick move)
 
 ---
 *Last updated: 2026-04-21 13:44 UTC*

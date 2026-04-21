@@ -1,4 +1,4 @@
-[[index|Home]] • [[memory/[[memory/trading_rules]]|Trading Rules]]
+[[INDEX.md|Home]] • [[kb/stocks/rules|Trading Rules]]
 
 # Day Trading Protocol for David
 

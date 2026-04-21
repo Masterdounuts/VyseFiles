@@ -1,4 +1,4 @@
-[[index|Home]]
+[[../INDEX.md|Home]]
 
 
 # Interrupt Recovery - What We Fixed (Apr 17, 2026)

@@ -1,4 +1,4 @@
-[[index|Home]]
+[[INDEX.md|Home]]
 
 
 # PENDING.md - Action Queue

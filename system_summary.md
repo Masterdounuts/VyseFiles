@@ -1,4 +1,4 @@
-[[index|Home]]
+[[INDEX.md|Home]]
 
 
 # System Summary & Lessons Learned

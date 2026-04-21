@@ -1,4 +1,4 @@
-[[index|Home]] • [[[[INTERRUPT_RECOVERY]]|Interrupt Recovery]]
+[[INDEX.md|Home]] • [[INTERRUPT_RECOVERY.md|Interrupt Recovery]]
 
 
 # FIXES & SOLUTIONS LOG
@@ -116,4 +116,4 @@ geometry: margin=1in
 - **Fix:** Script path corrected - now points to correct location `/root/.openclaw/workspace/scripts/gateway_watch.sh`
 - **Status:** ✅ FIXED (verified Apr 20, 2026) - cron runs successfully with 0 errors
 ---
-[[INDEX.md|← Back to Index]]
+[[../INDEX.md|← Back to Index]]

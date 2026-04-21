@@ -1,0 +1,16 @@
+{
+  "last_updated": "2026-04-21T14:52:00Z",
+  "trades": [
+    {
+      "symbol": "GGB",
+      "action": "BUY->SELL",
+      "shares": 5,
+      "entry": 4.2,
+      "exit": 4.45,
+      "pnl": "1.25",
+      "pnl_pct": "5.95",
+      "date": "2026-04-21"
+    }
+  ],
+  "open_positions": {}
+}

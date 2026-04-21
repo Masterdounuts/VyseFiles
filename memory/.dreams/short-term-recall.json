@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T00:53:18.679Z",
+  "updatedAt": "2026-04-21T14:21:00.097Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78425,6 +78425,192 @@
         "dreams.md",
         "soul.md",
         "tools.md"
+      ]
+    },
+    "memory:memory/2026-04-21.md:780:820": {
+      "key": "memory:memory/2026-04-21.md:780:820",
+      "path": "memory/2026-04-21.md",
+      "startLine": 780,
+      "endLine": 820,
+      "source": "memory",
+      "snippet": "- No alerts sent to David; no Telegram messages triggered. ### Market Status - Market remains closed (outside 9:30 AM‑4 PM ET). - Price monitor skipped as expected. ### Subagent Status - Scripts continue to run per cron schedule. - State unchanged; ready for next trading session. --- ## Pre‑Compaction Save (05:54 UTC) ### Subagent Refinements Applied User asked to refine subagent before market opens (09:30 ET). Applied 5 fixes to `scripts/stock-trading-subagent.sh`: 1. **Stop‑loss Telegram alerts** - was logging only, now sends immediate TG alert 2. **Pending opportunities include shares/est_value** - was showing \"?\" for shares 3. **Simplified market hours check** - removed fragile DST",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5366806432604789,
+      "maxScore": 0.5366806432604789,
+      "firstRecalledAt": "2026-04-21T14:21:00.097Z",
+      "lastRecalledAt": "2026-04-21T14:21:00.097Z",
+      "queryHashes": [
+        "4c61fe80971c"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "shares/est-value",
+        "alerts",
+        "sent",
+        "david",
+        "telegram",
+        "messages",
+        "triggered",
+        "market"
+      ]
+    },
+    "memory:memory/2026-04-21.md:1194:1205": {
+      "key": "memory:memory/2026-04-21.md:1194:1205",
+      "path": "memory/2026-04-21.md",
+      "startLine": 1194,
+      "endLine": 1205,
+      "source": "memory",
+      "snippet": "- No targets hit — holding position - Subagent now uses Alpha Vantage for live prices # 2026-04-21 ## Session: 13:59 UTC (New Session Started) - Session started fresh at 13:59 UTC (9:59 AM ET - market OPEN) - Verified state: GGB 4.99 shares @ $4.17 ($4.28 current), cash $31.32 - Pending opportunities: empty - GGB sell targets: $4.45, $4.60, $4.75 - TSLA earnings Apr 22 (not owned, just watching for volatility) ---",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5312847107648849,
+      "maxScore": 0.5312847107648849,
+      "firstRecalledAt": "2026-04-21T14:21:00.097Z",
+      "lastRecalledAt": "2026-04-21T14:21:00.097Z",
+      "queryHashes": [
+        "4c61fe80971c"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "4.99",
+        "4.17",
+        "4.28",
+        "31.32",
+        "4.45",
+        "4.60",
+        "4.75",
+        "targets"
+      ]
+    },
+    "memory:memory/2026-04-21.md:374:428": {
+      "key": "memory:memory/2026-04-21.md:374:428",
+      "path": "memory/2026-04-21.md",
+      "startLine": 374,
+      "endLine": 428,
+      "source": "memory",
+      "snippet": "- `scripts/stock-trading-subagent.sh` - operational - Monitors: GGB (owned) + watchlist (BBAI, LCID, QS, MARA, SOFI) - Volatility threshold: 3% ### GitHub Sync - Pushed memory/2026-04-21.md, portfolio.md, HANDOFF.md to GitHub (Obsidian) - Commit: User asked to commit only intended changes; auto-generated files left for later --- ## Session: 00:42 UTC (Apr 21) **Focus:** Session refresh recovery ### What Happened - Session interrupted/refreshed at 00:42 UTC - Restored state from AGENTS.md - Checked pending-opportunities.json: empty - Market closed (after-hours) ### Status at EOD Apr 20 | Asset | Shares | Basis | Current | |-------|--------|-------|---------| | GGB | 4.99 | $4.17 | ~$4.2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5307179316878319,
+      "maxScore": 0.5307179316878319,
+      "firstRecalledAt": "2026-04-21T14:21:00.097Z",
+      "lastRecalledAt": "2026-04-21T14:21:00.097Z",
+      "queryHashes": [
+        "4c61fe80971c"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "memory/2026-04-21.md",
+        "portfolio.md",
+        "handoff.md",
+        "auto-generated",
+        "interrupted/refreshed",
+        "agents.md",
+        "pending-opportunities.json",
+        "after-hours"
+      ]
+    },
+    "memory:memory/2026-04-21.md:172:229": {
+      "key": "memory:memory/2026-04-21.md:172:229",
+      "path": "memory/2026-04-21.md",
+      "startLine": 172,
+      "endLine": 229,
+      "source": "memory",
+      "snippet": "- Discovered portfolio.md had stale AMC/TSLA (should've been sold/closed) - Fixed portfolio.md to show only GGB + cash - Tested subagent: works, but market closed (8:35 PM ET) ### Current State | Asset | Shares | Value | |-------|--------|-------| | GGB | ~5 | ~$21 | | Cash | - | ~$31 | | **Total** | | **~$52.68** | ### GGB Targets - **Buy:** $4.10, $3.90 - **Sell:** $4.45, $4.60 ### Files Updated - `portfolio.md` - fixed holdings - `kb/stocks/agent/state.json` - confirmed current - `HANDOFF.md` - current state ### Subagent Status - `scripts/stock-trading-subagent.sh` - operational - Monitors: GGB (owned) + watchlist (BBAI, LCID, QS, MARA, SOFI) - Volatility threshold: 3% ### GitHub Syn",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5296764567494392,
+      "maxScore": 0.5296764567494392,
+      "firstRecalledAt": "2026-04-21T14:21:00.097Z",
+      "lastRecalledAt": "2026-04-21T14:21:00.097Z",
+      "queryHashes": [
+        "4c61fe80971c"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "portfolio.md",
+        "amc/tsla",
+        "sold/closed",
+        "52.68",
+        "4.10",
+        "3.90",
+        "4.45",
+        "4.60"
+      ]
+    },
+    "memory:memory/2026-04-21.md:937:996": {
+      "key": "memory:memory/2026-04-21.md:937:996",
+      "path": "memory/2026-04-21.md",
+      "startLine": 937,
+      "endLine": 996,
+      "source": "memory",
+      "snippet": "- Discovered portfolio.md had stale AMC/TSLA (should've been sold/closed) - Fixed portfolio.md to show only GGB + cash - Tested subagent: works, but market closed (8:35 PM ET) ### Current State | Asset | Shares | Value | |-------|--------|-------| | GGB | ~5 | ~$21 | | Cash | - | ~$31 | | **Total** | | **~$52.68** | ### GGB Targets - **Buy:** $4.10, $3.90 - **Sell:** $4.45, $4.60 ### Files Updated - `portfolio.md` - fixed holdings - `kb/stocks/agent/state.json` - confirmed current - `HANDOFF.md` - current state ### Subagent Status - `scripts/stock-trading-subagent.sh` - operational - Monitors: GGB (owned) + watchlist (BBAI, LCID, QS, MARA, SOFI) - Volatility threshold: 3% ### GitHub Syn",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5286480098962784,
+      "maxScore": 0.5286480098962784,
+      "firstRecalledAt": "2026-04-21T14:21:00.097Z",
+      "lastRecalledAt": "2026-04-21T14:21:00.097Z",
+      "queryHashes": [
+        "4c61fe80971c"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "portfolio.md",
+        "amc/tsla",
+        "sold/closed",
+        "52.68",
+        "4.10",
+        "3.90",
+        "4.45",
+        "4.60"
+      ]
+    },
+    "memory:memory/2026-04-21.md:501:543": {
+      "key": "memory:memory/2026-04-21.md:501:543",
+      "path": "memory/2026-04-21.md",
+      "startLine": 501,
+      "endLine": 543,
+      "source": "memory",
+      "snippet": "- Scripts operational: `stock-trading-subagent.sh`, `check-pending-opportunities.sh` - Cron jobs active: 30-min price monitor, 15-min volatile opportunity review - Market status: Closed (checks skip outside 9:30 AM-4 PM ET) - Volatility detection: Active (>3% move triggers pending opportunity) ## Pre‑Compaction Save (03:59 UTC) ### Volatile Opportunity Checks - Ran check‑pending‑opportunities.sh at 02:45, 03:00, 03:15, 03:30, 03:45 UTC. - Result: No pending opportunities; pending‑opportunities.json empty each time. - No alerts sent to David; no Telegram messages triggered. ### Market Status - Market remains closed (outside 9:30 AM‑4 PM ET). - Price monitor skipped as expected. ### Subagen",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5286220163106918,
+      "maxScore": 0.5286220163106918,
+      "firstRecalledAt": "2026-04-21T14:21:00.097Z",
+      "lastRecalledAt": "2026-04-21T14:21:00.097Z",
+      "queryHashes": [
+        "4c61fe80971c"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "stock-trading-subagent.sh",
+        "check-pending-opportunities.sh",
+        "30-min",
+        "15-min",
+        "am-4",
+        "opportunities.sh",
+        "opportunities.json",
+        "scripts"
       ]
     }
   }

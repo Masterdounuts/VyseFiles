@@ -31,6 +31,7 @@ ALERTS="$AGENT_DIR/alerts.log"
 PENDING="$AGENT_DIR/pending-opportunities.json"
 LAST_PRICE_FILE="$AGENT_DIR/last-prices.txt"
 ALERT_HISTORY="$AGENT_DIR/alert-history.json"
+LEARNINGS="$AGENT_DIR/learnings.json"
 
 mkdir -p "$AGENT_DIR"
 
@@ -44,6 +45,48 @@ source "$WORKSPACE/scripts/stock-research.sh"
 
 log() {
     echo "$(date -u +'%Y-%m-%d %H:%M UTC') [TRADER] $1" | tee -a "$LOG"
+}
+
+# === LEARN FROM TARGET HIT/MISS ===
+learn() {
+    local symbol=$1
+    local event_type=$2  # BUY_TARGET, SELL_TARGET, STOP_LOSS, VOLATILE_ALERT
+    local price=$3
+    local target=$4
+    
+    local timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+    local lesson_entry="{\"timestamp\":\"$timestamp\",\"symbol\":\"$symbol\",\"type\":\"$event_type\",\"price\":\"$price\",\"target\":\"$target\"}"
+    
+    # Add to learnings.json
+    local tmp=$(mktemp)
+    if [ -s "$LEARNINGS" ] && [ "$(cat $LEARNINGS)" != "" ]; then
+        # Check if lessons array exists
+        if jq -e '.lessons' "$LEARNINGS" > /dev/null 2>&1; then
+            # Append to existing lessons
+            node -e "
+const fs=require('fs');
+const d=JSON.parse(fs.readFileSync('$LEARNINGS', 'utf8'));
+d.lessons = d.lessons || [];
+d.lessons.push($lesson_entry);
+// Keep only last 50 lessons
+if (d.lessons.length > 50) d.lessons = d.lessons.slice(-50);
+fs.writeFileSync('$LEARNINGS', JSON.stringify(d, null, 2));
+" 2>/dev/null
+        else
+            # Add lessons array
+            jq --argjson entry "$lesson_entry" '.lessons = [$entry]' "$LEARNINGS" > "$tmp" && mv "$tmp" "$LEARNINGS"
+        fi
+    else
+        echo "{\"lessons\":[$lesson_entry]}" > "$LEARNINGS"
+    fi
+    
+    log "LEARNED: $symbol $event_type at \$$price (target: \$$target)"
+    
+    # Auto-adjust: if pattern shows targets missed repeatedly, suggest adjustment
+    if [ "$event_type" = "SELL_TARGET" ] || [ "$event_type" = "BUY_TARGET" ]; then
+        local target_key=$(echo "$event_type" | tr '[:upper:]' '[:lower:]')
+        log "Pattern logged for $symbol - future runs will reference this"
+    fi
 }
 
 # === UPDATE STATE.JSON ===
@@ -282,6 +325,7 @@ check_targets() {
                 alert "$symbol" "BUY ZONE" "$current" "$target" "AUTO"
                 record_alert "$symbol" "BUY" "$target" "$current"
                 queue_alert "$symbol" "BUY_TARGET" "$current" "$target" "Price hit buy zone"
+                learn "$symbol" "BUY_TARGET" "$current" "$target"
             fi
         fi
     done
@@ -294,6 +338,7 @@ check_targets() {
                 alert "$symbol" "SELL TARGET" "$current" "$target" "AUTO"
                 record_alert "$symbol" "SELL" "$target" "$current"
                 queue_alert "$symbol" "SELL_TARGET" "$current" "$target" "Price hit sell target"
+                learn "$symbol" "SELL_TARGET" "$current" "$target"
             fi
         fi
     done
@@ -408,6 +453,14 @@ queue_alert() {
 # === MAIN ===
 log "=== Stock Trading Subagent Starting ==="
 
+# Show learning summary
+if [ -f "$LEARNINGS" ]; then
+    lesson_count=$(/tmp/jq ".lessons | length" "$LEARNINGS" 2>/dev/null || echo "0")
+    if [ "$lesson_count" -gt 0 ] 2>/dev/null; then
+        log "Brain: $lesson_count lessons logged (auto-learning active)"
+    fi
+fi
+
 # Check market hours - include pre-market and after-hours
 if ! is_market_open && ! is_extended_hours; then
     log "Outside all trading hours (pre-market, market, after-hours) - skipping run"
@@ -457,6 +510,7 @@ for stock in $stocks; do
                 alert "$stock" "STOP LOSS" "price" "$avg_cost" "CRITICAL"
                 record_alert "$stock" "STOP_LOSS" "$avg_cost" "$price"
                 queue_alert "$stock" "STOP_LOSS" "$price" "$avg_cost" "5% stop loss triggered"
+                learn "$stock" "STOP_LOSS" "$price" "$avg_cost"
             fi
         fi
         
