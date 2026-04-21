@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9258aecc69855679",
+        "id": "78078ded5096f224",
         "type": "tabs",
         "children": [
           {
-            "id": "6b343fded933fcc9",
+            "id": "8b36030970eaef4d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -188,8 +188,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "6b343fded933fcc9",
+  "active": "8b36030970eaef4d",
   "lastOpenFiles": [
+    "kb/index.md",
     "memory/2026-04-16.md",
     "scripts/morning-scan.sh",
     "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
