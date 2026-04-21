@@ -187,8 +187,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "f6473bce89b37991",
+  "active": "6e290570b2e87e26",
   "lastOpenFiles": [
+    "scripts/stock-research-scanner.sh",
+    "kb/stocks/agent/research-opportunities.json",
+    "kb/stocks/agent/alert-history.json",
+    "memory/2026-04-21.md",
     "scripts/stock-trading-subagent.sh",
     "scripts/clear-pending.sh",
     "scripts/check-pending-opportunities.sh",
@@ -198,10 +202,7 @@
     "kb/stocks/agent/research.md",
     "kb/stocks/agent/learnings.json",
     "scripts/stock-agent.sh",
-    "kb/stocks/agent/state.json",
     "kb/stocks/agent/README.md",
-    "kb/stocks/agent/config.yaml",
-    "kb/stocks/agent",
     "kb/stocks/research/weekly-research.md",
     "kb/stocks/research/volatile-stocks.md",
     "kb/stocks/research/robinhood-android-app.md",
@@ -223,7 +224,6 @@
     "obsidian-prototype/daily-note-template.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-website-memory-capture.md",
     "memory/archive/2026-04-16-timestamped/2026-04-16-flag-assumptions-added.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-robinhood-setup.md",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md"
+    "memory/archive/2026-04-16-timestamped/2026-04-16-robinhood-setup.md"
   ]
 }
