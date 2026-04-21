@@ -12,17 +12,16 @@
 | [[IDENTITY.md|Identity]] | ✅ |
 | [[USER.md|User]] | ✅ |
 | [[AGENTS.md|Agents]] | ✅ |
-| [[BOOTSTRAP.md|Bootstrap]] | ✅ Wake protocol |
-| [[FIXES.md|Fixes]] | ✅ Known issues |
+| [[kb/system/BOOTSTRAP.md|Bootstrap]] | ✅ Wake protocol |
+| [[kb/system/FIXES.md|Fixes]] | ✅ Known issues |
 
 ## 📅 Memory / Daily Logs → [[memory/2026-04-20|Apr 20]]
 
 | File | Purpose |
 |------|---------|
-| [[memory/2026-04-20|Apr 20]] | Today |
-| [[memory/2026-04-19|Apr 19]] | Yesterday |
-| [[memory/2026-04-18|Apr 18]] | This week |
-| [[memory/2026-04-17|Apr 17]] | Last week |
+| [[memory/2026-04-21|Apr 21]] | Today |
+| [[memory/2026-04-20|Apr 20]] | Yesterday |
+| [[memory/2026-04-17|Apr 17]] | This week |
 | [[memory/2026-04-16|Apr 16]] | Key trading day |
 | [[memory/decisions|Decisions]] | Decision log |
 | [[memory/active|Active]] | Current task |
