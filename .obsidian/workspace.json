@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "60b50d6496e6fbd8",
+        "id": "029ded6164f48ada",
         "type": "tabs",
         "children": [
           {
-            "id": "ec66fc393d940c91",
+            "id": "24075776ad020c56",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -187,8 +187,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "ec66fc393d940c91",
+  "active": "24075776ad020c56",
   "lastOpenFiles": [
+    "memory/2026-04-16.md",
     "INDEX.md",
     "kb/stocks/research/archive/robinhood-android-app.md",
     "kb/stocks/research/archive/news-alert.md",
@@ -223,7 +224,6 @@
     "kb/stocks/research/morning-research.md",
     "kb/stocks/research/model-performance.md",
     "kb/stocks/research/income-strategy.md",
-    "kb/stocks/research/day-trading-options.md",
-    "kb/stocks/research/day-trade-research.md"
+    "kb/stocks/research/day-trading-options.md"
   ]
 }
