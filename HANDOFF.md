@@ -30,7 +30,7 @@
 
 **What we did:**
 - Deleted duplicate `index.md` (lowercase) from David's local vault
-- Fixed orphan files by adding links: `kb/stocks/agent/README.md`, `kb/stocks/agent/research.md`, `kb/stocks/subagent-assessment.md`, `memory/2026-04-20.md`, `memory/2026-04-21.md`, `memory/resume-point.md`, `QUICK-RECALL.md`
+- Fixed orphan files by adding links: `kb/stocks/agent.md`, `kb/stocks/agent/research.md`, `kb/stocks/subagent-assessment.md`, `memory/2026-04-20.md`, `memory/2026-04-21.md`, `memory/resume-point.md`, `QUICK-RECALL.md`
 - Deleted empty `links.md`
 - Committed & pushed: `fce1daa`
 

@@ -3,14 +3,14 @@
 Hub for trading and investment notes.
 
 ## Sub-Hubs
-- [[kb/stocks/research/README.md|Research Hub]] – Stock analysis & ideas
-- [[kb/stocks/trading-ops/README.md|Trading Ops]] – How we trade
-- [[kb/stocks/positions/README.md|Positions]] – Current holdings
+- [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
+- [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
+- [[kb/stocks/positions.md|Positions]] – Current holdings
 
 ## Core Files
 - [[kb/stocks/trade-log|Trade Log]] - Executed trades
 - [[kb/stocks/rules|Trading Rules]] - Strategy & rules
-- [[kb/stocks/agent/README.md|Stock Agent]] - Price monitoring
+- [[kb/stocks/agent.md|Stock Agent]] - Price monitoring
 
 ## Portfolio
 - [[kb/stocks/agent/state.json|State]] - Positions, targets, buying power
