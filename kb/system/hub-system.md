@@ -19,6 +19,7 @@ Hub for bootstrap and system configuration notes.
 - [[kb/system/fixes/README.md|Fixes & Solutions]] – Known issues & solutions
 - [[kb/system/config|Config Hub]] – Identity, user preferences, agents
 - [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
+- [[kb/system/automation/README.md|Automation Hub]] – Scripts & cron jobs
 
 ### Stocks
 - [[kb/stocks/research/README.md|Research Hub]] – Stock analysis & ideas
@@ -27,7 +28,8 @@ Hub for bootstrap and system configuration notes.
 
 ## Quick Access
 - [[brain.md|Vyse Brain]] - My quick context
-- [[projects.md|Projects]] - Project tracking
+- [[kb/personal/projects/README.md|Projects]] - Game dev & work
+- [[kb/reference/templates/README.md|Templates]] - Reusable formats
 - [[ORPHANS.md|Orphans]] - File audit
 
 ## Recovery & Fixes
