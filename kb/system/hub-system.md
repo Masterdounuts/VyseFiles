@@ -12,6 +12,11 @@ Hub for bootstrap and system configuration notes.
 - [[HEARTBEAT.md|Heartbeat]] - Periodic tasks
 - [[AGENTS.md|Agents]] - Trading protocol
 
+## Quick Access
+- [[brain.md|Vyse Brain]] - My quick context
+- [[projects.md|Projects]] - Project tracking
+- [[ORPHANS.md|Orphans]] - File audit
+
 ## Recovery & Fixes
 - [[kb/system/FIXES.md|Fixes]] - Known issues
 - [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] - Interrupt recovery
