@@ -1,6 +1,8 @@
 # Session Handoff
 *Auto-generated. Loaded automatically on session start.*
 
+[[kb/system/hub-system|System Hub]] | [[kb/stocks/hub-portfolio|Portfolio Hub]]
+
 ---
 
 ## Current Context (Updated: 2026-04-21 00:12 UTC)
@@ -28,7 +30,7 @@
 
 **What we did:**
 - Deleted duplicate `index.md` (lowercase) from David's local vault
-- Fixed orphan files by adding links: `kb/stocks/agent/README.md`, `kb/stocks/agent/research.md`, `kb/stocks/subagent-assessment.md`, `memory/2026-04-20.md`, `memory/2026-04-21.md`, `memory/resume-point.md`, `QUICK-RECALL.md`
+- Fixed orphan files by adding links: `kb/stocks/agent.md`, `kb/stocks/agent/research.md`, `kb/stocks/subagent-assessment.md`, `memory/2026-04-20.md`, `memory/2026-04-21.md`, `memory/resume-point.md`, `QUICK-RECALL.md`
 - Deleted empty `links.md`
 - Committed & pushed: `fce1daa`
 
@@ -46,10 +48,9 @@
 **David's call:** Tell me which direction to go
 
 **Key Files:**
-- `AGENTS.md` - Trading rules & system info
-- `kb/stocks/agent/state.json` - Live portfolio & targets
-- `scripts/stock-trading-subagent.sh` - Price monitor
-- `memory/2026-04-20.md` - Yesterday's log
+- [[AGENTS.md]] - Trading rules & system info
+- [[kb/stocks/agent/state.json]] - Live portfolio & targets
+- [[memory/2026-04-20|Yesterday's log]]
 
 ---
 *Auto-updated by Vyse on 2026-04-21 00:12 UTC*

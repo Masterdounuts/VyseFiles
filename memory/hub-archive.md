@@ -29,5 +29,9 @@ Hub for dated memories, journal entries, and archived content.
 
 ---
 
+## Related
+- [[kb/system/hub-system|System]] - Bootstrap & config
+- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & research
+
 *Links: [[INDEX|← Back]]*
 *Folder: [[memory/2026-04|2026-04]]*

@@ -121,9 +121,9 @@ is_market_open() {
         return 1
     fi
     
-    # Check time (9:30 - 16:00 ET)
+    # Check time (9:00 - 16:00 ET) - includes 30 min pre-market
     local et_minutes=$((hour_et * 60 + minute_et))
-    local market_open=$((9 * 60 + 30))  # 9:30 AM
+    local market_open=$((9 * 60))       # 9:00 AM (30 min before open)
     local market_close=$((16 * 60))     # 4:00 PM
     
     if [ $et_minutes -ge $market_open ] && [ $et_minutes -lt $market_close ]; then
@@ -461,18 +461,14 @@ if [ -f "$LEARNINGS" ]; then
     fi
 fi
 
-# Check market hours - include pre-market and after-hours
-if ! is_market_open && ! is_extended_hours; then
-    log "Outside all trading hours (pre-market, market, after-hours) - skipping run"
+# Only run during trading window: 9:00 AM - 4:00 PM ET
+if ! is_market_open; then
+    log "Outside trading window (9AM-4PM ET) - skipping run"
     log "=== Scan Complete (closed) ==="
     exit 0
 fi
 
-if is_market_open; then
-    log "Market status: OPEN (regular trading)"
-elif is_extended_hours; then
-    log "Market status: EXTENDED HOURS (pre/after-market)"
-fi
+log "Market status: OPEN (trading window)"
 
 # Clean up stale pending opportunities (older than 1 hour)
 if [ -s "$PENDING" ] && [ "$(cat "$PENDING")" != "[]" ]; then

@@ -2,10 +2,25 @@
 
 Hub for trading and investment notes.
 
+## Sub-Hubs
+- [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
+- [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
+- [[kb/stocks/positions.md|Positions]] – Current holdings
+
 ## Core Files
 - [[kb/stocks/trade-log|Trade Log]] - Executed trades
 - [[kb/stocks/rules|Trading Rules]] - Strategy & rules
-- [[kb/stocks/agent/README.md|Stock Agent]] - Price monitoring
+- [[kb/stocks/agent.md|Stock Agent]] - Price monitoring
+
+## Portfolio
+- [[kb/stocks/agent/state.json|State]] - Positions, targets, buying power
+- [[kb/stocks/positions/GGB|GGB]] - Brazilian steel ADR
+- [[kb/stocks/positions/LCID|LCID]] - Lucid Motors
+
+## Automation
+- [[kb/stocks/agent/trading.sh|Trading Script]] - Price monitor
+- [[kb/stocks/agent/subagent.md|Subagent]] - Volatility detector
+- [[kb/stocks/volatility|Volatility]] - 3% move detector
 
 ## Research
 - [[kb/stocks/research/morning-research|Morning Research]] - Daily picks
@@ -14,5 +29,9 @@ Hub for trading and investment notes.
 - [[kb/stocks/research/day-trade-research|Day Trade Research]] - Quick setups
 
 ---
+
+## Related
+- [[kb/system/hub-system|System]] - Bootstrap & config
+- [[memory/hub-archive|Archive]] - Dated memories
 
 *Links: [[INDEX|← Back]]*

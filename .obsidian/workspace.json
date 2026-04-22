@@ -4,31 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "26dc3613ce5d38ea",
+        "id": "07f49fbf72b8abfc",
         "type": "tabs",
         "children": [
           {
-            "id": "2f9055d519a502a8",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "5bd86e6f32572ac2",
-            "type": "leaf",
-            "state": {
-              "type": "smart-release-notes-view",
-              "state": {},
-              "icon": "file-text",
-              "title": "Release Notes"
-            }
-          },
-          {
-            "id": "aad92344264c24b4",
+            "id": "c6e30cce308af28d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -37,8 +17,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,10 +200,43 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "e335d1982c817152",
+  "active": "c6e30cce308af28d",
   "lastOpenFiles": [
+    "memory/archive/DREAMS.md",
+    "links.md",
+    "kb/system/hub-system.md",
     "INDEX.md",
-    "TASKS.md",
-    "kb/stocks/hub-portfolio.md"
+    "kb/system/recovery/README.md",
+    "kb/system/hub-tools.md",
+    "kb/system/hub-recovery.md",
+    "kb/system/hub-fixes.md",
+    "kb/system/hub-config.md",
+    "kb/system/hub-bootstrap.md",
+    "kb/system/hub-automation.md",
+    "kb/stocks/trading-ops.md",
+    "kb/stocks/research.md",
+    "kb/stocks/positions.md",
+    "kb/stocks/agent.md",
+    "kb/reference/templates.md",
+    "kb/personal/projects.md",
+    "kb/system/config/README.md",
+    "kb/system/fixes/README.md",
+    "kb/system/fixes",
+    "kb/system/automation/README.md",
+    "kb/system/automation",
+    "kb/reference/templates/README.md",
+    "kb/reference/templates",
+    "kb/reference",
+    "kb/personal/projects/README.md",
+    "kb/personal/projects",
+    "kb/personal",
+    "kb/stocks/trading-ops/README.md",
+    "kb/stocks/trading-ops",
+    "kb/stocks/research/README.md",
+    "kb/system/tools/README.md",
+    "kb/system/tools",
+    "kb/system/recovery",
+    "kb/system/config",
+    "kb/system/bootstrap/README.md"
   ]
 }

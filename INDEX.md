@@ -2,29 +2,20 @@
 
 # VyseFiles Index
 
-Your knowledge base + my operating system. Organized by context.
+*Start here. Navigate through hubs to find specific files.*
 
 ---
 
-## 📂 Hubs (Start Here)
+## 📂 Hubs
 
 | Hub | Description |
 |-----|-------------|
-| [[kb/system/hub-system|System]] | Bootstrap, recovery, config |
-| [[kb/stocks/hub-portfolio|Portfolio]] | Trading & research |
+| [[kb/system/hub-system|System]] | Bootstrap, recovery, fixes, automation |
+| [[kb/stocks/hub-portfolio|Portfolio]] | Trading, research, positions |
+| [[kb/personal/projects|Projects]] | Game dev & work-in-progress |
+| [[kb/reference/templates|Templates]] | Reusable prompts & formats |
 | [[memory/hub-archive|Archive]] | Dated memories |
 
 ---
 
-## ⚡ Quick Access
-
-| File | Purpose |
-|------|---------|
-| [[brain.md|Vyse Brain]] | My quick context (for me) |
-| [[SOUL.md|Vyse Soul]] | My core principles |
-| [[IDENTITY.md|Identity]] | My name & avatar |
-| [[USER.md|User]] | Your prefs |
-
----
-
-*Navigate through hubs to find specific files.*
+*All files are organized through their respective hubs.*

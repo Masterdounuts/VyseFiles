@@ -1,4 +1,18 @@
 # OpenClaw Workspace .gitignore
+# ===========================================
+# OBSIDIAN EXCLUSIONS (manual vault settings)
+# Exclude these folders in Obsidian: Vault Settings → Files & Links → Excluded folders
+# - bin/           # Bot scripts, not notes
+# - config/        # Config files
+# - cron/          # Cron jobs
+# - scripts/       # Operational scripts
+# - obsidian-prototype/  # Migration templates
+# - logs/          # Log files
+# - tmp/           # Temp files
+# - state/         # Bot state
+# - .openclaw/     # OpenClaw data
+# - .github/       # GitHub workflows
+# ===========================================
 
 # Dependencies
 node_modules/

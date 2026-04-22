@@ -12,6 +12,26 @@ Hub for bootstrap and system configuration notes.
 - [[HEARTBEAT.md|Heartbeat]] - Periodic tasks
 - [[AGENTS.md|Agents]] - Trading protocol
 
+## Sub‑Hubs
+### System
+- [[kb/system/bootstrap|Bootstrap Hub]] – Boot & startup docs
+- [[kb/system/recovery|Recovery Hub]] – Interrupt recovery, prompts
+- [[kb/system/hub-fixes.md|Fixes & Solutions]] – Known issues & solutions
+- [[kb/system/config|Config Hub]] – Identity, user preferences, agents
+- [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
+- [[kb/system/hub-automation.md|Automation Hub]] – Scripts & cron jobs
+
+### Stocks
+- [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
+- [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
+- [[kb/stocks/positions.md|Positions]] – Current holdings
+
+## Quick Access
+- [[brain.md|Vyse Brain]] - My quick context
+- [[kb/personal/projects.md|Projects]] - Game dev & work
+- [[kb/reference/templates.md|Templates]] - Reusable formats
+- [[ORPHANS.md|Orphans]] - File audit
+
 ## Recovery & Fixes
 - [[kb/system/FIXES.md|Fixes]] - Known issues
 - [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] - Interrupt recovery
@@ -27,5 +47,9 @@ Hub for bootstrap and system configuration notes.
 - `obsidian-prototype/` - Migration templates & legacy workflow
 
 ---
+
+## Related
+- [[memory/hub-archive|Archive]] - Dated memories & journal
+- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & research
 
 *Links: [[INDEX|← Back]]*
