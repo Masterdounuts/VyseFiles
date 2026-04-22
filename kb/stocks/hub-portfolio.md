@@ -15,4 +15,8 @@ Hub for trading and investment notes.
 
 ---
 
+## Related
+- [[kb/system/hub-system|System]] - Bootstrap & config
+- [[memory/hub-archive|Archive]] - Dated memories
+
 *Links: [[INDEX|← Back]]*
