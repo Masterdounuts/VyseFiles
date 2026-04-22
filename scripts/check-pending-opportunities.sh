@@ -71,9 +71,15 @@ if [ ! -s "$PENDING" ] || [ "$(cat "$PENDING")" = "[]" ]; then
     exit 0
 fi
 
-# Parse pending opportunities and send alerts
+# Check if there are any pending opportunities
 count=$(jq 'length' "$PENDING")
 log "Found $count pending opportunity(ies)"
+
+# Exit silently if nothing pending (no alert needed)
+if [ "$count" -eq 0 ]; then
+    log "No pending opportunities to review"
+    exit 0
+fi
 
 # Get each pending opportunity and evaluate
 for i in $(seq 0 $((count - 1))); do
