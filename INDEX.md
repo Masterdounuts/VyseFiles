@@ -2,11 +2,11 @@
 
 # VyseFiles Index
 
-Your knowledge base + my operating system. Organized by context.
+*Start here. Navigate through hubs to find specific files.*
 
 ---
 
-## 📂 Hubs (Start Here)
+## 📂 Hubs
 
 | Hub | Description |
 |-----|-------------|
@@ -16,17 +16,4 @@ Your knowledge base + my operating system. Organized by context.
 
 ---
 
-## ⚡ Quick Access
-
-| File | Purpose |
-|------|---------|
-| [[brain.md|Vyse Brain]] | My quick context (for me) |
-| [[SOUL.md|Vyse Soul]] | My core principles |
-| [[IDENTITY.md|Identity]] | My name & avatar |
-| [[USER.md|User]] | Your prefs |
-| [[projects.md|Projects]] | Project tracking |
-| [[ORPHANS.md|Orphans]] | File audit |
-
----
-
-*Navigate through hubs to find specific files.*
+*All files are organized through their respective hubs.*
