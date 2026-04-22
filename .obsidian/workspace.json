@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ab861c03e65f98d9",
+        "id": "85bcf21139667aca",
         "type": "tabs",
         "children": [
           {
-            "id": "8c01e232da0a2531",
+            "id": "73fc2d71a28eb1c9",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -200,8 +200,9 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "8c01e232da0a2531",
+  "active": "73fc2d71a28eb1c9",
   "lastOpenFiles": [
+    "links.md",
     "kb/system/hub-system.md",
     "INDEX.md",
     "kb/system/recovery/README.md",
@@ -236,7 +237,6 @@
     "kb/system/recovery",
     "kb/system/config",
     "kb/system/bootstrap/README.md",
-    "kb/stocks/positions/README.md",
-    "kb/stocks/volatility.md"
+    "kb/stocks/positions/README.md"
   ]
 }
