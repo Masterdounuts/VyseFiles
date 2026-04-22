@@ -221,8 +221,11 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "aad92344264c24b4",
+  "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/stocks/trading-ops/README.md",
+    "kb/stocks/trading-ops",
+    "kb/stocks/research/README.md",
     "kb/system/tools/README.md",
     "kb/system/tools",
     "kb/system/recovery/README.md",
