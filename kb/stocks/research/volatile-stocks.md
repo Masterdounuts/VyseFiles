@@ -64,11 +64,11 @@
 
 ---
 
-## Warning
-- High volatility = HIGH RISK
-- Can lose money fast
-- Only trade what you can afford to lose
-- Start small, learn first
+## Related
+- [[kb/stocks/research/morning-research|Morning Research]] - Daily analysis
+- [[kb/stocks/research/weekly-research|Weekly Research]] - Week-long outlook
+- [[kb/stocks/research/day-trade-research|Day Trade Research]] - Quick setups
+- [[kb/stocks/hub-portfolio|Portfolio Hub]] - Main hub
 
 ---
 

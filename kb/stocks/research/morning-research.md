@@ -34,6 +34,6 @@
 Morning Research: Best play today is MARA. Price: $11.26. Reason: High volatility (beta 5.43) and recent AI/HPC pivot news give short‑term swing potential.
 ```
 
-**Related:** [[memory/stocks/alert-status]] | [[research/volatile-stocks]] | [[stocks/trade-log]]
+**Related:** [[kb/stocks/research/volatile-stocks|Volatile Stocks]] | [[kb/stocks/research/weekly-research|Weekly Research]] | [[kb/stocks/trade-log|Trade Log]] | [[kb/stocks/hub-portfolio|Portfolio Hub]]
 ---
 [[INDEX.md|← Back]]
