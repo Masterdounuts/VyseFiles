@@ -16,29 +16,8 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
-          },
-          {
-            "id": "5bd86e6f32572ac2",
-            "type": "leaf",
-            "state": {
-              "type": "smart-release-notes-view",
-              "state": {},
-              "icon": "file-text",
-              "title": "Release Notes"
-            }
-          },
-          {
-            "id": "aad92344264c24b4",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -221,8 +200,9 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "aad92344264c24b4",
+  "active": "2f9055d519a502a8",
   "lastOpenFiles": [
+    "kb/system/config/README.md",
     "kb/system/fixes/README.md",
     "kb/system/fixes",
     "kb/system/automation/README.md",
@@ -240,7 +220,6 @@
     "kb/system/tools",
     "kb/system/recovery/README.md",
     "kb/system/recovery",
-    "kb/system/config/README.md",
     "kb/system/config",
     "kb/system/bootstrap/README.md",
     "kb/stocks/positions/README.md",
