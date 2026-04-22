@@ -202,6 +202,19 @@
   },
   "active": "2f9055d519a502a8",
   "lastOpenFiles": [
+    "kb/system/recovery/README.md",
+    "kb/system/hub-tools.md",
+    "kb/system/hub-recovery.md",
+    "kb/system/hub-fixes.md",
+    "kb/system/hub-config.md",
+    "kb/system/hub-bootstrap.md",
+    "kb/system/hub-automation.md",
+    "kb/stocks/trading-ops.md",
+    "kb/stocks/research.md",
+    "kb/stocks/positions.md",
+    "kb/stocks/agent.md",
+    "kb/reference/templates.md",
+    "kb/personal/projects.md",
     "kb/system/config/README.md",
     "kb/system/fixes/README.md",
     "kb/system/fixes",
@@ -218,17 +231,12 @@
     "kb/stocks/research/README.md",
     "kb/system/tools/README.md",
     "kb/system/tools",
-    "kb/system/recovery/README.md",
     "kb/system/recovery",
     "kb/system/config",
     "kb/system/bootstrap/README.md",
     "kb/stocks/positions/README.md",
     "kb/stocks/volatility.md",
     "kb/stocks/positions/LCID.md",
-    "kb/stocks/positions/GGB.md",
-    "INDEX.md",
-    "memory/2026-04-22.md",
-    "TASKS.md",
-    "kb/stocks/hub-portfolio.md"
+    "kb/stocks/positions/GGB.md"
   ]
 }
