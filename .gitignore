@@ -43,3 +43,8 @@ state/
 # research/ - research, committed
 # templates/ - templates (except auto-generated PDFs)
 # immigration/ - immigration docs, committed
+
+
+
+# Ignore Smart Environment folder
+.smart-env
