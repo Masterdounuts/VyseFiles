@@ -30,5 +30,6 @@ Hub for bootstrap and system configuration notes.
 
 ## Related
 - [[memory/hub-archive|Archive]] - Dated memories & journal
+- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & research
 
 *Links: [[INDEX|← Back]]*
