@@ -13,10 +13,16 @@ Hub for bootstrap and system configuration notes.
 - [[AGENTS.md|Agents]] - Trading protocol
 
 ## Sub‑Hubs
+### System
 - [[kb/system/bootstrap|Bootstrap Hub]] – Boot & startup docs
 - [[kb/system/recovery|Recovery Hub]] – Fixes, interrupt recovery, prompts
 - [[kb/system/config|Config Hub]] – Identity, user preferences, agents
 - [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
+
+### Stocks
+- [[kb/stocks/research/README.md|Research Hub]] – Stock analysis & ideas
+- [[kb/stocks/trading-ops/README.md|Trading Ops]] – How we trade
+- [[kb/stocks/positions/README.md|Positions]] – Current holdings
 
 ## Quick Access
 - [[brain.md|Vyse Brain]] - My quick context
