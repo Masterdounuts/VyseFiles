@@ -24,6 +24,8 @@ Your knowledge base + my operating system. Organized by context.
 | [[SOUL.md|Vyse Soul]] | My core principles |
 | [[IDENTITY.md|Identity]] | My name & avatar |
 | [[USER.md|User]] | Your prefs |
+| [[projects.md|Projects]] | Project tracking |
+| [[ORPHANS.md|Orphans]] | File audit |
 
 ---
 
