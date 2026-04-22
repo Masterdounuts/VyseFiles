@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "1b1ad929a860ea5c",
+    "id": "4db45078a4e74628",
     "type": "split",
     "children": [
       {
-        "id": "3d2ced16b51ceb2d",
+        "id": "26dc3613ce5d38ea",
         "type": "tabs",
         "children": [
           {
-            "id": "4ee27b4f815108eb",
+            "id": "2f9055d519a502a8",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e6bb26d407507a62",
+    "id": "a9d6b3a793325eaa",
     "type": "split",
     "children": [
       {
-        "id": "e84139c8e7e6fd75",
+        "id": "5aff9ea3e73e5b5f",
         "type": "tabs",
         "children": [
           {
-            "id": "18d897657097c45f",
+            "id": "5a6eb3d65a4ab30e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "bc4e91a318b731bb",
+            "id": "ecf4f61ed8db4241",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "f463fb96650169de",
+            "id": "747c350de400108e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -70,23 +70,22 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "64ef2418d9152f23",
+    "id": "24ed85c9600dcd5f",
     "type": "split",
     "children": [
       {
-        "id": "43e626dfb6f2fe0b",
+        "id": "70e41ca24dd6ec2d",
         "type": "tabs",
         "children": [
           {
-            "id": "3f0cb63d996b0ee7",
+            "id": "26415369a595ab3b",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -104,7 +103,7 @@
             }
           },
           {
-            "id": "1a0d3e0d5fdd7221",
+            "id": "4d9317c86626d4d8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -117,7 +116,7 @@
             }
           },
           {
-            "id": "e0b8a7a75cd2d5b7",
+            "id": "1ba80864ceb0f449",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,7 +131,7 @@
             }
           },
           {
-            "id": "7109eee869e88ebd",
+            "id": "b8f80a133423177a",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,7 +145,7 @@
             }
           },
           {
-            "id": "d7e4743e7e819025",
+            "id": "424939ea8d7176fd",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -160,7 +159,7 @@
             }
           },
           {
-            "id": "60f5d599cb486045",
+            "id": "001d2f639b3929db",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -188,10 +187,6 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ee27b4f815108eb",
-  "lastOpenFiles": [
-    "memory/obsidian-ai-workflow-research.md",
-    "links.md",
-    "kb/index.md"
-  ]
+  "active": "2f9055d519a502a8",
+  "lastOpenFiles": []
 }
