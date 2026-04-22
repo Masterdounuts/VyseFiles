@@ -23,7 +23,27 @@
 - Monitoring: GGB only (AMC dropped)
 - Subagent: Built & active (scripts/stock-trading-subagent.sh)
 - Volatile system: Active, conferral enabled
-- **⚠️ Session reset Apr 21 00:12 UTC** (context limit)
+
+## 🗂️ Obsidian Graph Cleanup (Tonight)
+
+**What we did:**
+- Deleted duplicate `index.md` (lowercase) from David's local vault
+- Fixed orphan files by adding links: `kb/stocks/agent/README.md`, `kb/stocks/agent/research.md`, `kb/stocks/subagent-assessment.md`, `memory/2026-04-20.md`, `memory/2026-04-21.md`, `memory/resume-point.md`, `QUICK-RECALL.md`
+- Deleted empty `links.md`
+- Committed & pushed: `fce1daa`
+
+**Approach:** Outside-in (orphans → clusters → hubs)
+
+**What's done:** 
+- ✅ Phase 1 - Fixed orphans, committed
+- ✅ Phase 2 - Linked obsidian-ai-workflow-research.md → knowledge hub, deleted links.md
+
+**What's next:**
+- Option A: Run another orphan scan to find more
+- Option B: Phase 2 - Prune archived files (`memory/archive/`, `obsidian-prototype/`)
+- Option C: Strengthen hub links (INDEX → hubs already in place)
+
+**David's call:** Tell me which direction to go
 
 **Key Files:**
 - `AGENTS.md` - Trading rules & system info
