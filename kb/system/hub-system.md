@@ -28,4 +28,7 @@ Hub for bootstrap and system configuration notes.
 
 ---
 
+## Related
+- [[memory/hub-archive|Archive]] - Dated memories & journal
+
 *Links: [[INDEX|← Back]]*

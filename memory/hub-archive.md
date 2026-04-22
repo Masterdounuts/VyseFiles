@@ -29,5 +29,8 @@ Hub for dated memories, journal entries, and archived content.
 
 ---
 
+## Related
+- [[kb/system/hub-system|System]] - Bootstrap & config
+
 *Links: [[INDEX|← Back]]*
 *Folder: [[memory/2026-04|2026-04]]*
