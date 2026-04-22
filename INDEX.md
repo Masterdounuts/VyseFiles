@@ -13,8 +13,6 @@ Your knowledge base + my operating system. Organized by context.
 | [[kb/system/hub-system|System]] | Bootstrap, recovery, config |
 | [[kb/stocks/hub-portfolio|Portfolio]] | Trading & research |
 | [[memory/hub-archive|Archive]] | Dated memories |
-| [[knowledge|Knowledge]] | Guides & references |
-| [[projects|Projects]] | Active work |
 
 ---
 
