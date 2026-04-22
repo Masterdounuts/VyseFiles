@@ -1,1 +1,7 @@
-[]
+[$
+  {"symbol":"GGB","type":"STOP_LOSS","target":"4.17","price":"4.28","date":"2026-04-21"},
+  {"symbol":"GGB","type":"BUY","target":"4.10","price":"4.28","date":"2026-04-21"},
+  {"symbol":"GGB","type":"BUY","target":"3.90","price":"4.28","date":"2026-04-21"},
+  {"symbol":"GGB","type":"SELL","target":"4.45","price":"4.28","date":"2026-04-21"},
+  {"symbol":"GGB","type":"SELL","target":"4.60","price":"4.28","date":"2026-04-21"},
+  {"symbol":"GGB","type":"SELL","target":"4.75","price":"4.28","date":"2026-04-21"},
