@@ -7,6 +7,16 @@ Hub for trading and investment notes.
 - [[kb/stocks/rules|Trading Rules]] - Strategy & rules
 - [[kb/stocks/agent/README.md|Stock Agent]] - Price monitoring
 
+## Portfolio
+- [[kb/stocks/agent/state.json|State]] - Positions, targets, buying power
+- [[kb/stocks/positions/GGB|GGB]] - Brazilian steel ADR
+- [[kb/stocks/positions/LCID|LCID]] - Lucid Motors
+
+## Automation
+- [[kb/stocks/agent/trading.sh|Trading Script]] - Price monitor
+- [[kb/stocks/agent/subagent.md|Subagent]] - Volatility detector
+- [[kb/stocks/volatility|Volatility]] - 3% move detector
+
 ## Research
 - [[kb/stocks/research/morning-research|Morning Research]] - Daily picks
 - [[kb/stocks/research/volatile-stocks|Volatile Stocks]] - Day trade candidates
