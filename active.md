@@ -13,9 +13,8 @@
 ---
 
 ## Quick Status
-- Portfolio: Check portfolio.md
-- Crons: Check cron status
-- Memory: See memory/2026-04-21.md
+- Portfolio: [[portfolio.md]]
+- Memory: [[memory/2026-04-21]]
 
 ---
 *Auto-checkpoint*
