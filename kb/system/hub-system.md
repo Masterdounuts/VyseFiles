@@ -15,7 +15,8 @@ Hub for bootstrap and system configuration notes.
 ## Sub‑Hubs
 ### System
 - [[kb/system/bootstrap|Bootstrap Hub]] – Boot & startup docs
-- [[kb/system/recovery|Recovery Hub]] – Fixes, interrupt recovery, prompts
+- [[kb/system/recovery|Recovery Hub]] – Interrupt recovery, prompts
+- [[kb/system/fixes/README.md|Fixes & Solutions]] – Known issues & solutions
 - [[kb/system/config|Config Hub]] – Identity, user preferences, agents
 - [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
 
