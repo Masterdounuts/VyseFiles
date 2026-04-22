@@ -26,6 +26,12 @@ Your knowledge base + my operating system. Organized by context.
 | [[kb/system/FIXES.md|Fixes]] | Known issues & solutions |
 | [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] | Interrupt recovery |
 
+## 🧠 Quick Access
+
+| File | Purpose |
+|------|---------|
+| [[brain.md|Vyse Brain]] | My quick context file |
+
 ## 🦜 Personality (Priority)
 
 | File | Purpose |
