@@ -12,6 +12,12 @@ Hub for bootstrap and system configuration notes.
 - [[HEARTBEAT.md|Heartbeat]] - Periodic tasks
 - [[AGENTS.md|Agents]] - Trading protocol
 
+## Sub‑Hubs
+- [[kb/system/bootstrap|Bootstrap Hub]] – Boot & startup docs
+- [[kb/system/recovery|Recovery Hub]] – Fixes, interrupt recovery, prompts
+- [[kb/system/config|Config Hub]] – Identity, user preferences, agents
+- [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
+
 ## Quick Access
 - [[brain.md|Vyse Brain]] - My quick context
 - [[projects.md|Projects]] - Project tracking
