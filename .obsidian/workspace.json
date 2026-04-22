@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "c260cfd7c66de09a",
+    "id": "1b1ad929a860ea5c",
     "type": "split",
     "children": [
       {
-        "id": "44233ea6db12ba6c",
+        "id": "3d2ced16b51ceb2d",
         "type": "tabs",
         "children": [
           {
-            "id": "e2e592e10dd2ea2a",
+            "id": "4ee27b4f815108eb",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d6bf7eb0c9dfb018",
+    "id": "e6bb26d407507a62",
     "type": "split",
     "children": [
       {
-        "id": "8f13e751d94c4160",
+        "id": "e84139c8e7e6fd75",
         "type": "tabs",
         "children": [
           {
-            "id": "eadd760b2ee089b1",
+            "id": "18d897657097c45f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "43df365299646f4c",
+            "id": "bc4e91a318b731bb",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "17714baea5fa1c19",
+            "id": "f463fb96650169de",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,15 +78,15 @@
     "width": 300
   },
   "right": {
-    "id": "90b84502f24cb212",
+    "id": "64ef2418d9152f23",
     "type": "split",
     "children": [
       {
-        "id": "f269a60ff80a8b96",
+        "id": "43e626dfb6f2fe0b",
         "type": "tabs",
         "children": [
           {
-            "id": "c44324058780e187",
+            "id": "3f0cb63d996b0ee7",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -104,7 +104,7 @@
             }
           },
           {
-            "id": "6528ede6e168432b",
+            "id": "1a0d3e0d5fdd7221",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -117,7 +117,7 @@
             }
           },
           {
-            "id": "212dede21f2e021e",
+            "id": "e0b8a7a75cd2d5b7",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,7 +132,7 @@
             }
           },
           {
-            "id": "79a79b0d4a4501e1",
+            "id": "7109eee869e88ebd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -146,7 +146,7 @@
             }
           },
           {
-            "id": "930c0bad1643d033",
+            "id": "d7e4743e7e819025",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -160,7 +160,7 @@
             }
           },
           {
-            "id": "6e290570b2e87e26",
+            "id": "60f5d599cb486045",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -178,53 +178,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e2e592e10dd2ea2a",
+  "active": "4ee27b4f815108eb",
   "lastOpenFiles": [
-    "decisions/index.md",
-    "kb/index.md",
-    "projects.md",
-    "memory/hub-archive.md",
-    "knowledge.md",
-    "kb/system/hub-system.md",
-    "kb/stocks/hub-portfolio.md",
-    "QUICK-RECALL.md",
-    "memory/2026-04-16.md",
-    "scripts/morning-scan.sh",
-    "memory/archive/2026-04-16-timestamped/2026-04-16-cron-optimization.md",
-    "INDEX.md",
-    "kb/stocks/research/archive/robinhood-android-app.md",
-    "kb/stocks/research/archive/news-alert.md",
-    "kb/stocks/research/archive/model-performance.md",
-    "kb/stocks/research/archive/income-strategy.md",
-    "kb/stocks/research/archive/day-trading-options.md",
-    "kb/stocks/research/archive/alert-status.md",
-    "kb/stocks/research/archive",
-    "kb/stocks/agent/trades.json",
-    "scripts/stock-research.sh",
-    "kb/stocks/agent/research.md",
-    "kb/system/FIXES.md",
-    "obsidian-prototype/decision-log-template.md",
-    "links.md",
-    "kb/stocks/agent/README.md",
-    "memory/resume-point.md",
     "memory/obsidian-ai-workflow-research.md",
-    "learnings.json",
-    "kb/stocks/subagent-assessment.md",
-    "scripts/pre-compact-save.sh",
-    "scripts/git-sync.sh",
-    "scripts/context-monitor-light.sh",
-    "scripts/stock-research-scanner.sh",
-    "kb/stocks/agent/research-opportunities.json",
-    "memory/2026-04-21.md"
+    "links.md",
+    "kb/index.md"
   ]
 }
