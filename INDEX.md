@@ -50,7 +50,7 @@ Your knowledge base + my operating system. Organized by context.
 | [[PENDING.md|Pending]] | Queued tasks |
 
 ### Archive
-- [[memory/2026-04-17|Apr 17]] | [[memory/2026-04-16|Apr 16]] | [[memory/2026-04-15|Apr 15]] | [[memory/2026-04-14|Apr 14]]
+- [[memory/hub-archive|View All]] → dated memories & archived content
 
 ## 📈 Trading (Your Focus)
 

@@ -22,6 +22,10 @@ Hub for bootstrap and system configuration notes.
 > These link to ::System instead of INDEX directly
 - BOOTSTRAP, CONTROL-UI, SUBAGENTS, HEARTBEAT
 
+## Vault Exclusions
+> These folders exist in Git but should be excluded from Obsidian vault view
+- `obsidian-prototype/` - Migration templates & legacy workflow
+
 ---
 
 *Links: [[INDEX|← Back]]*

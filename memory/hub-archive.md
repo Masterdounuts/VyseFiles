@@ -21,6 +21,13 @@ Hub for dated memories, journal entries, and archived content.
 - [[memory/active|Active Task]]
 - [[PENDING.md|Pending]] - Queued tasks
 
+## Archived (Excluded from Main Graph)
+> These older files are kept but not linked from INDEX directly
+- [[memory/archive/2026-04-13|Apr 13, 2026]]
+- [[memory/archive/2026-04-13-image-generation-costs.md|Image Gen Costs]]
+- [[memory/archive/notes.md|Archive Notes]]
+- [[memory/archive/seo-research.md|SEO Research]]
+
 ---
 
 *Links: [[INDEX|← Back]]*
