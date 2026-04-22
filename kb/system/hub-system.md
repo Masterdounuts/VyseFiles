@@ -16,20 +16,20 @@ Hub for bootstrap and system configuration notes.
 ### System
 - [[kb/system/bootstrap|Bootstrap Hub]] – Boot & startup docs
 - [[kb/system/recovery|Recovery Hub]] – Interrupt recovery, prompts
-- [[kb/system/fixes/README.md|Fixes & Solutions]] – Known issues & solutions
+- [[kb/system/hub-fixes.md|Fixes & Solutions]] – Known issues & solutions
 - [[kb/system/config|Config Hub]] – Identity, user preferences, agents
 - [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
-- [[kb/system/automation/README.md|Automation Hub]] – Scripts & cron jobs
+- [[kb/system/hub-automation.md|Automation Hub]] – Scripts & cron jobs
 
 ### Stocks
-- [[kb/stocks/research/README.md|Research Hub]] – Stock analysis & ideas
-- [[kb/stocks/trading-ops/README.md|Trading Ops]] – How we trade
-- [[kb/stocks/positions/README.md|Positions]] – Current holdings
+- [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
+- [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
+- [[kb/stocks/positions.md|Positions]] – Current holdings
 
 ## Quick Access
 - [[brain.md|Vyse Brain]] - My quick context
-- [[kb/personal/projects/README.md|Projects]] - Game dev & work
-- [[kb/reference/templates/README.md|Templates]] - Reusable formats
+- [[kb/personal/projects.md|Projects]] - Game dev & work
+- [[kb/reference/templates.md|Templates]] - Reusable formats
 - [[ORPHANS.md|Orphans]] - File audit
 
 ## Recovery & Fixes
