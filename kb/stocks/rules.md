@@ -26,5 +26,11 @@ See `kb/stocks/agent/state.json` for live GGB targets:
 - Keep capital small, scale up gradually
 - Log every trade in memory
 - Max $10 per volatile play
+
+## Research
+- [[kb/stocks/research/morning-research|Morning Research]]
+- [[kb/stocks/research/volatile-stocks|Volatile Stocks]]
+- [[kb/stocks/trade-log|Trade Log]]
+
 ---
-[[INDEX.md|← Back]]
+[[kb/stocks/hub-portfolio|← Portfolio Hub]] | [[INDEX.md|Index]]

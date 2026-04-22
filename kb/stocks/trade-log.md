@@ -13,5 +13,12 @@
 ---
 
 *Start logging from first trade*
-*Goal: Prove the system works*---
+*Goal: Prove the system works*
+
+## Related
+- [[kb/stocks/hub-portfolio|Portfolio Hub]]
+- [[kb/stocks/rules|Trading Rules]]
+- [[kb/stocks/research/morning-research|Morning Research]]
+
+---
 [[INDEX.md|← Back to Index]]
