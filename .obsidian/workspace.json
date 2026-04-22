@@ -221,8 +221,12 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "aad92344264c24b4",
+  "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/stocks/volatility.md",
+    "kb/stocks/positions/LCID.md",
+    "kb/stocks/positions/GGB.md",
+    "kb/stocks/positions",
     "INDEX.md",
     "memory/2026-04-22.md",
     "TASKS.md",
