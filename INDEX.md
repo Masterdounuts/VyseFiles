@@ -38,19 +38,15 @@ Your knowledge base + my operating system. Organized by context.
 
 ## 🧠 My Memory
 
-| File | Purpose |
-|------|---------|
-| [[memory/2026-04-21|Apr 21]] | Today's session |
-| [[memory/2026-04-20|Apr 20]] | Yesterday |
-| [[memory/2026-04-17|Apr 17]] | Earlier this week |
-| [[memory/recent-dailies|Dailies]] | Auto-generated list |
-| [[INDEX.md|Decisions]] | Key decisions log |
-| [[memory/active|Active Task]] | Current work |
-| [[active.md|Session Active]] | Current task (root) |
-| [[PENDING.md|Pending]] | Queued tasks |
+| Hub | Purpose |
+|-----|---------|
+| [[memory/hub-archive|Archive Hub]] | All dated memories & daily logs
+| [[memory/active|Active Task]] | Current work
+| [[PENDING.md|Pending]] | Queued tasks
 
-### Archive
-- [[memory/hub-archive|View All]] → dated memories & archived content
+### Quick Access
+- [[memory/hub-archive|Archive Hub]] - Browse all sessions
+- [[kb/system/DECISIONS.md|Decisions]] - Key decisions
 
 ## 📈 Trading (Your Focus)
 
@@ -91,7 +87,7 @@ Your knowledge base + my operating system. Organized by context.
 | System | Files |
 |--------|-------|
 | **Session Continuity** | [[kb/system/BOOTSTRAP.md|Bootstrap]] → [[HANDOFF.md|Handoff]] → [[memory/active|Active]] |
-| **Context Protection** | [[TODO.md|Todo]] → [[loop-progress.md|Loop Progress]] |
+| **Context Protection** | [[TODO.md|Todo]] → [[memory/active|Active]] |
 | **Health Monitoring** | Scripts in `scripts/gateway_watch.sh` |
 | **Error Recovery** | [[kb/system/FIXES.md|Fixes]] - Known issues |
 | **Interrupt Recovery** | [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] - What we fixed |
@@ -137,7 +133,6 @@ Your knowledge base + my operating system. Organized by context.
 | File | Purpose |
 |------|---------|
 | [[content/dreams/dream-journal-archive.md|Dream Journal]] | Vision & idea archive |
-| [[Test folder for obsidian/Testing Github.md|Testing]] | Obsidian-Git test |
 
 ## 📂 Directory Map
 
