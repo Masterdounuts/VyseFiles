@@ -1,5 +1,7 @@
 # Obsidian AI Workflow Research
 
+[[knowledge|← Knowledge]]
+
 **Researched:** Tue 2026-04-21 06:19-06:24 UTC
 
 ## Relevant AI+Obsidian Tools
