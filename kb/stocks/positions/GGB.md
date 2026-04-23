@@ -23,6 +23,9 @@ Purchase history: 5.988023 @ $4.18 (Apr 12) + 1 @ $4.28 (Apr 14)
 
 **⚠️ Settlement:** Sold shares take 1 market day to clear before reuse.
 
+## Update (Apr 23)
+Captain David notes: Unable to sell at target - price didn't reach sell level. Apologies from Captain. Continuing to monitor.
+
 **Last updated:** 2026-04-23
 
 ## Earnings
