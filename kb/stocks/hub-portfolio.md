@@ -13,8 +13,14 @@ Hub for trading and investment notes.
 - [[kb/stocks/agent.md|Stock Agent]] - Price monitoring
 
 ## Portfolio
-- [[kb/stocks/positions/GGB|GGB]] - Brazilian steel ADR
-- [[kb/stocks/positions/LCID|LCID]] - Lucid Motors
+- [[kb/stocks/positions/GGB|GGB]] - Brazilian steel ADR (6.99 shares @ $4.34)
+- [[kb/stocks/positions/MARA|MARA]] - Bitcoin mining
+- [[kb/stocks/positions/RIOT|RIOT]] - Bitcoin mining
+- [[kb/stocks/positions/SOFI|SOFI]] - Fintech
+
+## Closed Positions
+- LCID - Sold Apr 23 @ $6.60 (-8.1%)
+- BBAI - Sold Apr 23 @ $3.78 (-2.6%)
 
 ## Automation
 - [[kb/stocks/agent/trading.sh|Trading Script]] - Price monitor
