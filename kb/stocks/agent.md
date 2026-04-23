@@ -27,7 +27,8 @@ Reference: skill:trading, skill:alerts, skill:time
 
 | Date | What happened | Lessons | Improve? |
 |------|---------------|---------|----------|
-| | | | |
+| Apr 23 | Monitored GGB, price didn't hit sell target $4.30 | Need better timing/alerts when price approaches target zone | Yes - will add "alert captain when approaching target" |
+| Apr 23 | Running every 30 min via cron | System working, no successful exits yet | In progress |
 
 Add rows as you learn. This is how we grow as a crew.
 
