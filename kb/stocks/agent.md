@@ -1,4 +1,4 @@
-[[../../INDEX|← Back to KB]]
+[[kb/stocks/stocks|← Back to Stocks]]
 
 # Quartermaster
 

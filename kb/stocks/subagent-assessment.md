@@ -1,6 +1,6 @@
 # Stock Trading Subagent Assessment
 
-[[../../INDEX|← Back to KB]]
+[[kb/stocks/stocks|← Back to Stocks]]
 
 **Date:** 2026-04-21
 **Analyst:** Vyse
