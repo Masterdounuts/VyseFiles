@@ -94,6 +94,7 @@ Subagents are team members, not just automation. They should:
 - **Improve over time**: Not static — refine based on outcomes
 - **Have skin in the game**: They're part of the crew, not throwaway scripts
 - **Flag problems**: When something breaks, log to `kb/system/issues.md` so Vyse sees it
+- **Self-rescue first**: Check `kb/system/issues.md` for known solutions before asking Vyse — don't ping immediately on failure
 
 **Deep Reasoning Checklist** (before proposing):
 
