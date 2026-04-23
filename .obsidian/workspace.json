@@ -200,8 +200,10 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "bf681b229964e945",
+  "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/reference/vyse-obsidian-workflow.md",
+    "kb/reference/obsidian-guide.md",
     "memory/content/seo-research.md",
     "memory/content",
     "kb/stocks/positions/SOFI.md",
@@ -235,8 +237,6 @@
     "kb/stocks/robinhood-alerts-guide.md",
     "kb/stocks/protocol.md",
     "kb/stocks/portfolio.md",
-    "kb/stocks/agent/config.md",
-    "kb/reference/recovery-prompt.md",
-    "kb/personal/DASHBOARD.md"
+    "kb/stocks/agent/config.md"
   ]
 }
