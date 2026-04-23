@@ -8,7 +8,7 @@
 
 | File | Purpose |
 |------|---------|
-| [[kb/system/hub-system|System Hub]] | Main entry point |
+| [[kb/system/system|System Hub]] | Main entry point |
 | [[kb/system/FIXES.md|Fixes]] | Known issues |
 | [[kb/system/summary.md|Summary]] | Lessons learned |
 | [[kb/system/brain|Brain]] | Quick access |
@@ -33,11 +33,11 @@
 | [[memory/2026-04-21|Apr 21]] | Day before |
 | [[memory/active|Active]] | Current task |
 
-## 📈 Trading → [[kb/stocks/hub-portfolio|Portfolio]]
+## 📈 Trading → [[kb/stocks/stocks|Portfolio]]
 
 | File | Purpose |
 |------|---------|
-| [[kb/stocks/hub-portfolio|Portfolio Hub]] | Main trading hub |
+| [[kb/stocks/stocks|Portfolio Hub]] | Main trading hub |
 | [[kb/stocks/positions/|Positions]] | Stock positions |
 | [[kb/stocks/agent/|Subagent]] | Auto-trading |
 

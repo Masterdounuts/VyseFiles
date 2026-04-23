@@ -1,4 +1,4 @@
-[[kb/system/hub-system|Home]]
+[[kb/system/system|Home]]
 
 # Trading Session State
 

@@ -1,4 +1,4 @@
-[[kb/stocks/hub-portfolio|Home]] • [[INDEX.md|Decisions]]
+[[kb/stocks/stocks|Home]] • [[INDEX.md|Decisions]]
 
 # Trading Rules Summary
 
@@ -33,4 +33,4 @@ See `kb/stocks/positions/GGB.md` for live GGB targets:
 - [[kb/stocks/trade-log|Trade Log]]
 
 ---
-[[kb/stocks/hub-portfolio|← Portfolio Hub]] | [[INDEX.md|Index]]
+[[kb/stocks/stocks|← Portfolio Hub]] | [[INDEX.md|Index]]

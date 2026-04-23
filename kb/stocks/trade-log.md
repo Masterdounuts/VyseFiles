@@ -1,4 +1,4 @@
-[[kb/stocks/hub-portfolio|Home]]
+[[kb/stocks/stocks|Home]]
 
 # Trade Log
 
@@ -16,7 +16,7 @@
 *Goal: Prove the system works*
 
 ## Related
-- [[kb/stocks/hub-portfolio|Portfolio Hub]]
+- [[kb/stocks/stocks|Portfolio Hub]]
 - [[kb/stocks/rules|Trading Rules]]
 - [[kb/stocks/research/morning-research|Morning Research]]
 

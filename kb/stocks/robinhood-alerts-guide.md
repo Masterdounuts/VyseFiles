@@ -1,4 +1,4 @@
-[[kb/stocks/hub-portfolio|Home]]
+[[kb/stocks/stocks|Home]]
 
 
 # Robinhood Alerts Setup Guide
