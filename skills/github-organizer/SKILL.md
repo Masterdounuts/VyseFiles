@@ -67,6 +67,32 @@ After cleanup, commit with descriptive message:
 git add -A && git commit -m "Cleanup: <what was fixed>"
 ```
 
+## Conflict Resolution
+
+**If push fails (conflict):**
+
+1. Check status: `git status`
+2. See conflicts: `git diff --name-only --diff-filter=U`
+3. View conflict: `git diff <file>` or open in editor
+4. Resolve manually (keep wanted changes)
+5. Stage: `git add <resolved-file>`
+6. Complete: `git commit -m "Resolve merge conflict in <file>"`
+7. Push: `git push origin main`
+
+**Quick resolution (ours wins):**
+```bash
+git checkout --ours <file>
+git add <file>
+git commit -m "Resolve: force ours"
+git push
+```
+
+**Pull then push (if behind):**
+```bash
+git pull --rebase origin main
+git push origin main
+```
+
 ---
 
 ## Trigger Phrases
