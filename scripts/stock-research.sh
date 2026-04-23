@@ -15,6 +15,7 @@ STOCK_INFO["LCID"]="Lucid Group|EV|1.17|2.96|12.00|$1B+ capital raise (Uber, PIF
 STOCK_INFO["QS"]="QuantumScape|Battery Tech|2.50|3.50|15.00|Solid-state battery, partnership VW"
 STOCK_INFO["MARA"]="Mara Holdings|Crypto Mining|5.48|8.50|23.00|AI/HPC pivot, debt reduction, Q4 EPS -$4.52, Bitcoin proxy - HIGH VOLATILITY"
 STOCK_INFO["SOFI"]="SoFi Technologies|Fintech|1.80|3.50|15.00|Financial services, regulatory headwinds"
+STOCK_INFO["RIOT"]="Riot Platforms|Crypto Mining|4.50|10.00|28.00|Bitcoin mining, Texas facility expansion, sustainable energy focus"
 
 get_stock_info() {
     local symbol=$1

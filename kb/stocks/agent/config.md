@@ -30,6 +30,7 @@
 - QS
 - MARA
 - SOFI
+- RIOT
 
 ## Sector News
 Manual check via web before trading. Sources:
@@ -38,6 +39,9 @@ Manual check via web before trading. Sources:
 
 ## Active Plan (updated 03:49 UTC)
 - **GGB:** Scale 1/3 at $4.40, move stop to $4.20
-- **LCID:** Hold, stop at $6.68
-- **BBAI:** Hold, tighten stop to $3.75
 - **Review:** Tomorrow 6AM ET
+
+## Trading Constraints
+- **Buying Power:** $11.61 (limited)
+- **Settlement:** Robinhood requires 1 market day for funds to clear after a sale before they can be reused for buys
+- **Pending clears:** LCID $9.17, BBAI $9.45 (both clear tomorrow)

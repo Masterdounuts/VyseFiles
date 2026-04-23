@@ -27,6 +27,8 @@ Thumbs.db
 # Local OpenClaw data (don't commit)
 .openclaw/
 state/
+.vyse-*.txt
+headline-requests.json
 
 # Bootstrap/reference files (committed separately)
 # AGENTS.md
