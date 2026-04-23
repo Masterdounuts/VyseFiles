@@ -8,6 +8,7 @@ Hub for all sub-hubs and system configuration.
 |---------|-------------|
 | [[kb/system/dreams|Dreams]] | Vision, goals, dream journal |
 | [[kb/stocks/stocks|Stocks]] | Trading, research, positions |
+| [[kb/immigration/immigration|Immigration]] | Legal documents |
 | [[kb/personal/projects|Projects]] | Game dev & work-in-progress |
 | [[kb/reference/templates|Templates]] | Reusable prompts & formats |
 | [[memory/archive|Archive]] | Dated memories |

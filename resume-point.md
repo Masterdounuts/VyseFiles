@@ -10,7 +10,7 @@
 ## Current Task
 Workflow self-audit - completing autonomous system setup
 
-Related: [[HANDOFF.md|Handoff]] | [[BOOTSTRAP.md|Bootstrap]] | [[active.md|Active]] | [[INDEX.md|Index]]
+Related: [[HANDOFF.md|Handoff]] | [[kb/system/bootstrap/BOOTSTRAP.md|Bootstrap]] | [[active.md|Active]] | [[INDEX.md|Index]]
 
 ## Completed
 - detect-loop.sh ✓
