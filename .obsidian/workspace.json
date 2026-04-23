@@ -202,6 +202,18 @@
   },
   "active": "bf681b229964e945",
   "lastOpenFiles": [
+    "wiki/main/sources/obsidian-guide.md",
+    "wiki/main/sources/vyse-obsidian-workflow.md",
+    "wiki/main/sources/ai-trading-partner-guide.md",
+    "wiki/main/sources",
+    "wiki/main/entities/ron.md",
+    "wiki/main/entities/david-vyse-mission.md",
+    "wiki/main/entities",
+    "wiki/main/concepts/trading-alert-priority.md",
+    "wiki/main/concepts/learning-system.md",
+    "wiki/main/concepts/brain-face-model.md",
+    "memory/stocks/news-alert.md",
+    "memory/stocks/alert-status.md",
     "scripts/stock-data-reader.sh",
     "kb/stocks/research/archive.md",
     "scripts/quartermaster-performance.sh",
@@ -225,18 +237,6 @@
     "memory/archive/DREAMS.md",
     "links.md",
     "kb/system/hub-system.md",
-    "INDEX.md",
-    "kb/system/recovery/README.md",
-    "kb/system/hub-tools.md",
-    "kb/system/hub-recovery.md",
-    "kb/system/hub-fixes.md",
-    "kb/system/hub-config.md",
-    "kb/system/hub-bootstrap.md",
-    "kb/system/hub-automation.md",
-    "kb/stocks/trading-ops.md",
-    "kb/system/fixes",
-    "kb/system/automation",
-    "kb/reference/templates",
-    "kb/reference"
+    "kb/system/fixes"
   ]
 }
