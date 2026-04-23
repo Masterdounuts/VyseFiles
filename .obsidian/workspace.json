@@ -200,8 +200,12 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "001d2f639b3929db",
+  "active": "5a6eb3d65a4ab30e",
   "lastOpenFiles": [
+    "memory/archive.md",
+    "kb/system/system.md",
+    "kb/system/dreams.md",
+    "kb/stocks/stocks.md",
     "kb/system/hub-dreams.md",
     "kb/reference/vyse-obsidian-workflow.md",
     "kb/reference/obsidian-guide.md",
@@ -233,10 +237,6 @@
     "kb/stocks/positions/BBAI.md",
     "memory/archive/legacy/TASKS.md",
     "memory/archive/legacy/loop-todos.md",
-    "memory/archive/legacy/loop-lessons.md",
-    "memory/archive/legacy",
-    "kb/stocks/robinhood-alerts-guide.md",
-    "kb/stocks/protocol.md",
-    "kb/stocks/portfolio.md"
+    "memory/archive/legacy"
   ]
 }
