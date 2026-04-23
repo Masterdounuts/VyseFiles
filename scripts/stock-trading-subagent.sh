@@ -47,7 +47,7 @@ source "$WORKSPACE/scripts/stock-research.sh"
 [ ! -f "$LAST_PRICE_FILE" ] && touch "$LAST_PRICE_FILE"
 
 log() {
-    echo "$(date -u +'%Y-%m-%d %H:%M UTC') [TRADER] $1" | tee -a "$LOG"
+    echo "$(date -u +'%Y-%m-%d %H:%M UTC') [QUARTERMASTER] $1" | tee -a "$LOG"
 }
 
 # === LEARN FROM TARGET HIT/MISS ===
@@ -478,7 +478,7 @@ queue_alert() {
 }
 
 # === MAIN ===
-log "=== Stock Trading Subagent Starting ==="
+log "=== Quartermaster Starting ==="
 
 # Show learning summary
 if [ -f "$LEARNINGS" ]; then

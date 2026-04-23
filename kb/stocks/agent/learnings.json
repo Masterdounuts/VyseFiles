@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T14:52:00Z",
+  "last_updated": "2026-04-23T02:54:56.175Z",
   "patterns": {
     "GGB": {
       "buy_zone_accuracy": 0.75,
@@ -64,19 +64,22 @@
     }
   ],
   "performance": {
-    "total_trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "win_rate": 0,
-    "avg_gain_percent": 0,
-    "avg_loss_percent": 0
+    "total_trades": 2,
+    "wins": 1,
+    "losses": 1,
+    "win_rate": "50.0",
+    "avg_gain_percent": "3.0",
+    "avg_loss_percent": "0.0",
+    "total_pnl": "0.40",
+    "best_trade": 3.05,
+    "worst_trade": 0
   },
   "lessons": [
     {
       "timestamp": "2026-04-22T08:02:00Z",
       "symbol": "GGB",
       "type": "PRICE_ALERT",
-      "price": 4.30,
+      "price": 4.3,
       "note": "Price approaching 52W high (4.66) and within target range. Upcoming Q1 earnings Apr 27 may cause volatility. Consider tightening sell target if volatility rises."
     },
     {
@@ -88,6 +91,47 @@
       "pnl": "1.25",
       "pnl_pct": "5.95",
       "notes": "First mock trade - successful"
+    },
+    {
+      "timestamp": "2026-04-23T02:50:51.344Z",
+      "symbol": "AMC",
+      "type": "SELL_TARGET_HIT",
+      "entry": 1.64,
+      "exit": 1.69,
+      "pnl": "0.40",
+      "pnl_pct": "3.05",
+      "reason": "TARGET",
+      "notes": "TARGET hit - recording for pattern learning"
+    },
+    {
+      "timestamp": "2026-04-23T02:52:34.124Z",
+      "symbol": "GGB",
+      "type": "SELL_TARGET_HIT",
+      "entry": 4.28,
+      "exit": 4.28,
+      "pnl": "0.00",
+      "pnl_pct": "0.00",
+      "reason": "TARGET",
+      "notes": "TARGET hit - recording for pattern learning"
+    },
+    {
+      "timestamp": "2026-04-23T02:54:02.345Z",
+      "symbol": "TSLA",
+      "type": "SELL_TARGET_HIT",
+      "entry": 0,
+      "exit": 401.43,
+      "pnl": "6.65",
+      "pnl_pct": "inf",
+      "reason": "TARGET",
+      "notes": "TARGET hit - recording for pattern learning"
+    },
+    {
+      "timestamp": "2026-04-23T02:54:56.175Z",
+      "symbol": "TSLA",
+      "type": "FREE_STOCK",
+      "note": "Free sign-up bonus - not real trading performance",
+      "pnl": 6.65,
+      "notes": "Exclude from performance metrics"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T23:32:19.773Z",
+  "updatedAt": "2026-04-23T01:17:24.173Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -77229,23 +77229,25 @@
       "endLine": 892,
       "source": "memory",
       "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.691650845943309,
+      "totalScore": 3.219998271106101,
       "maxScore": 0.6773354464157592,
       "firstRecalledAt": "2026-04-20T23:26:25.337Z",
-      "lastRecalledAt": "2026-04-21T00:00:35.426Z",
+      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
       "queryHashes": [
         "04846ca4150b",
         "7c544c4e007f",
         "0f484008438a",
         "25d7fc9b22f3",
-        "2e064df6aa56"
+        "2e064df6aa56",
+        "60545d212956"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-22"
       ],
       "conceptTags": [
         "agents.md",
@@ -77265,21 +77267,23 @@
       "endLine": 1238,
       "source": "memory",
       "snippet": "**Price monitoring** - Core to day trading, GGB-price-watch exists but fails silently ### Options Presented to David A) Fix GGB/Tesla price fetching B) Build self-healing cron system C) Something else Awaiting David's decision. --- ## Self-Healing Cron System Built (23:24 UTC) ### Created 1. **scripts/cron-health-monitor.sh** - Checks job health, auto-restarts failures 2. **Cron-Health-Monitor job** - Runs every 15 minutes via OpenClaw cron ### How It Works - Monitors all cron jobs for failures - Auto-restarts jobs after 2 consecutive failures - Alerts after 3 failures - Logs to /root/.openclaw/workspace/logs/cron-health.log --- ## Subagent Setup for Stock Research (23:24 UTC) ### C",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.2660855848349017,
+      "totalScore": 2.8068698871887605,
       "maxScore": 0.7644019950188086,
       "firstRecalledAt": "2026-04-20T23:26:25.337Z",
-      "lastRecalledAt": "2026-04-20T23:46:57.574Z",
+      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
       "queryHashes": [
         "04846ca4150b",
         "0f484008438a",
         "25d7fc9b22f3",
-        "6d1944169365"
+        "6d1944169365",
+        "60545d212956"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-22"
       ],
       "conceptTags": [
         "ggb-price-watch",
@@ -77299,21 +77303,23 @@
       "endLine": 2444,
       "source": "memory",
       "snippet": "- **Sent Telegram to David** asking about TSLA reallocation now that it's unlocked The new session is running independently. You can keep chatting here while the subagent handles the stock monitoring and alerts. What's next? assistant: Nice! The subagent delivered exactly what we needed. 📊 **What's happening now:** - David will see the Telegram alert with current prices - He's got the decision prompt: reallocate TSLA → GGB or new pick? - Once he replies, the subagent will execute the trade **In the meantime**, want me to: 1. **Monitor for his reply** and execute when he responds? 2. **Research new stock candidates** in case he wants to diversify? 3. **Something else entirely**? Let me k",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.503594848513603,
-      "maxScore": 0.5223531395196914,
+      "totalScore": 2.0332520708441733,
+      "maxScore": 0.5296572223305702,
       "firstRecalledAt": "2026-04-20T23:26:25.337Z",
-      "lastRecalledAt": "2026-04-21T00:30:09.240Z",
+      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
       "queryHashes": [
         "04846ca4150b",
         "7c544c4e007f",
-        "ef890628cf47"
+        "ef890628cf47",
+        "60545d212956"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-21"
+        "2026-04-21",
+        "2026-04-22"
       ],
       "conceptTags": [
         "sent",
@@ -78859,6 +78865,660 @@
         "vyse-self-audit",
         "detect-loop",
         "all-in-one"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1170:1238": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1170:1238",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1170,
+      "endLine": 1238,
+      "source": "memory",
+      "snippet": "**Price monitoring** - Core to day trading, GGB-price-watch exists but fails silently ### Options Presented to David A) Fix GGB/Tesla price fetching B) Build self-healing cron system C) Something else Awaiting David's decision. --- ## Self-Healing Cron System Built (23:24 UTC) ### Created 1. **scripts/cron-health-monitor.sh** - Checks job health, auto-restarts failures 2. **Cron-Health-Monitor job** - Runs every 15 minutes via OpenClaw cron ### How It Works - Monitors all cron jobs for failures - Auto-restarts jobs after 2 consecutive failures - Alerts after 3 failures - Logs to /root/.openclaw/workspace/logs/cron-health.log --- ## Subagent Setup for Stock Research (23:24 UTC) ### C",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5407843023538589,
+      "maxScore": 0.5407843023538589,
+      "firstRecalledAt": "2026-04-22T05:24:04.073Z",
+      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
+      "queryHashes": [
+        "60545d212956"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "ggb-price-watch",
+        "ggb/tesla",
+        "self-healing",
+        "scripts/cron-health-monitor.sh",
+        "auto-restarts",
+        "cron-health-monitor",
+        "price",
+        "monitoring"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2404:2444": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2404:2444",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2404,
+      "endLine": 2444,
+      "source": "memory",
+      "snippet": "- **Sent Telegram to David** asking about TSLA reallocation now that it's unlocked The new session is running independently. You can keep chatting here while the subagent handles the stock monitoring and alerts. What's next? assistant: Nice! The subagent delivered exactly what we needed. 📊 **What's happening now:** - David will see the Telegram alert with current prices - He's got the decision prompt: reallocate TSLA → GGB or new pick? - Once he replies, the subagent will execute the trade **In the meantime**, want me to: 1. **Monitor for his reply** and execute when he responds? 2. **Research new stock candidates** in case he wants to diversify? 3. **Something else entirely**? Let me k",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5296572223305702,
+      "maxScore": 0.5296572223305702,
+      "firstRecalledAt": "2026-04-22T05:24:04.073Z",
+      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
+      "queryHashes": [
+        "60545d212956"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "sent",
+        "telegram",
+        "david",
+        "asking",
+        "tsla",
+        "reallocation",
+        "now",
+        "it's"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:843:892": {
+      "key": "memory:memory/2026-04/2026-04-16.md:843:892",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 843,
+      "endLine": 892,
+      "source": "memory",
+      "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5283474251627922,
+      "maxScore": 0.5283474251627922,
+      "firstRecalledAt": "2026-04-22T05:24:04.073Z",
+      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
+      "queryHashes": [
+        "60545d212956"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "agents.md",
+        "identity.md",
+        "user.md",
+        "todo.md",
+        "memory/active.md",
+        "subagent",
+        "polls",
+        "prices"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1821:1835": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1821:1835",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1821,
+      "endLine": 1835,
+      "source": "memory",
+      "snippet": "user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:12 AM (UTC) / 2026-04-16 08:12 UTC assistant: 🦜 Hey David! I’m Vyse, your adventurous sky‑pirate assistant (running on gpt‑oss‑120b — default model is minimax‑m2.5). What w",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.247996839223883,
+      "maxScore": 0.7573428147421095,
+      "firstRecalledAt": "2026-04-22T13:08:40.602Z",
+      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "queryHashes": [
+        "5d1141f9382e",
+        "81863fdd1b39"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "gpt",
+        "1-3",
+        "default-model",
+        "m2.5",
+        "user",
+        "new",
+        "was",
+        "started"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:3276:3294": {
+      "key": "memory:memory/2026-04/2026-04-16.md:3276:3294",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 3276,
+      "endLine": 3294,
+      "source": "memory",
+      "snippet": "| **Buying Power** | $24.29 waiting | **On wake:** Check if TSLA hit $8 yet. If yes → execute GGB/AMC trades. --- See you on the other side, David! 🦜🚀 === 2026-04-16-website-memory-capture.md === # Session: 2026-04-16 08:24:19 UTC - **Session Key**: agent:main:main - **Session ID**: df7b2461-6964-4de9-9abc-88b07c44bfe9 - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2354577361721848,
+      "maxScore": 0.7553482203860138,
+      "firstRecalledAt": "2026-04-22T13:08:40.602Z",
+      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "queryHashes": [
+        "5d1141f9382e",
+        "81863fdd1b39"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "24.29",
+        "ggb/amc",
+        "1-3",
+        "buying",
+        "power",
+        "waiting",
+        "wake",
+        "check"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:3292:3305": {
+      "key": "memory:memory/2026-04/2026-04-16.md:3292:3305",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 3292,
+      "endLine": 3305,
+      "source": "memory",
+      "snippet": "user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:15 AM (UTC) / 2026-04-16 08:15 UTC assistant: Hey David! 🦜 I’m Vyse, your adventurous sky‑pirate assistant (running on gpt‑oss‑120b, default is minimax‑m2.5). What would yo",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2384532810340887,
+      "maxScore": 0.7532950640808111,
+      "firstRecalledAt": "2026-04-22T13:08:40.602Z",
+      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "queryHashes": [
+        "5d1141f9382e",
+        "81863fdd1b39"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "gpt",
+        "1-3",
+        "default-model",
+        "m2.5",
+        "user",
+        "new",
+        "was",
+        "started"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2849:2866": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2849:2866",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2849,
+      "endLine": 2866,
+      "source": "memory",
+      "snippet": "user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:04 AM (UTC) / 2026-04-16 08:04 UTC user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48262313306331633,
+      "maxScore": 0.48262313306331633,
+      "firstRecalledAt": "2026-04-22T13:10:58.579Z",
+      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "queryHashes": [
+        "81863fdd1b39"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "1-3",
+        "default-model",
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "user",
+        "new",
+        "was",
+        "started"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1927:1994": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1927:1994",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1927,
+      "endLine": 1994,
+      "source": "memory",
+      "snippet": "[Thu 2026-04-16 09:01 UTC] continue what you were doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:04 UTC] continue what you were doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:07 UTC] continue vyse \"i know we have protocols to keep you going after compaction but i dont know why they are not working\" user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:07 UTC] continue vyse user: Sender (untrusted metadata): ```json { \"label\":",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4865220874547958,
+      "maxScore": 0.4865220874547958,
+      "firstRecalledAt": "2026-04-22T15:59:31.256Z",
+      "lastRecalledAt": "2026-04-22T15:59:31.256Z",
+      "queryHashes": [
+        "ca0d88ac1fa0"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "thu",
+        "utc",
+        "continue",
+        "what",
+        "you",
+        "doing",
+        "user"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2602:2619": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2602:2619",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2602,
+      "endLine": 2619,
+      "source": "memory",
+      "snippet": "1. Message me with **\"What were we working on?\"** or **\"Remember?\"** 2. I read the checkpoint and pick up where we left off We're covered. 🦜 === 2026-04-16-cron-optimization.md === # Session: 2026-04-16 10:12:34 UTC - **Session Key**: agent:main:main - **Session ID**: 5dc9039d-6682-44da-a3d0-8950edd5c286 - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4837166786193847,
+      "maxScore": 0.4837166786193847,
+      "firstRecalledAt": "2026-04-22T15:59:31.256Z",
+      "lastRecalledAt": "2026-04-22T15:59:31.256Z",
+      "queryHashes": [
+        "ca0d88ac1fa0"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "2026-04-16-cron-optimization.md",
+        "1-3",
+        "message",
+        "what",
+        "working",
+        "remember",
+        "read",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2304:2350": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2304:2350",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2304,
+      "endLine": 2350,
+      "source": "memory",
+      "snippet": "# Session: 2026-04-16 11:30:49 UTC - **Session Key**: agent:main:main - **Session ID**: 05e35ae1-cddc-433f-b396-395886a34621 - **Source**: webchat ## Conversation Summary user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 11:21 UTC] Finish what you were doing assistant: Let me check the cron jobs for broken gateway-health-check entries and verify the Credit Watch job: assistant: Let me check if the Decision-Log cron job exists: assistant: Now let me update memory with what we just completed: assistant: Done! Just added the **Decision-Log cron** (runs every 3 hours) - that was the last pending item from our",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4812299519777298,
+      "maxScore": 0.4812299519777298,
+      "firstRecalledAt": "2026-04-22T15:59:31.256Z",
+      "lastRecalledAt": "2026-04-22T15:59:31.256Z",
+      "queryHashes": [
+        "ca0d88ac1fa0"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-control-ui",
+        "gateway-health-check",
+        "decision-log",
+        "utc",
+        "key",
+        "agent:main:main",
+        "05e35ae1"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2339:2383": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2339:2383",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2339,
+      "endLine": 2383,
+      "source": "memory",
+      "snippet": "What's next? Want me to check anything specific - stocks, the GitHub repo, or other systems? user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 11:21 UTC] Finish what you were doing assistant: Let me check the cron jobs for broken gateway-health-check entries and verify the Credit Watch job: assistant: Let me check if the Decision-Log cron job exists: assistant: Now let me update memory with what we just completed: assistant: Done! Just added the **Decision-Log cron** (runs every 3 hours) - that was the last pending item from our infrastructure list. **What's now complete:** - ✅ Auto-checkpoint script (works",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4800004094839096,
+      "maxScore": 0.4800004094839096,
+      "firstRecalledAt": "2026-04-22T15:59:31.256Z",
+      "lastRecalledAt": "2026-04-22T15:59:31.256Z",
+      "queryHashes": [
+        "ca0d88ac1fa0"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-control-ui",
+        "gateway-health-check",
+        "decision-log",
+        "auto-checkpoint",
+        "what's",
+        "want",
+        "check"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1678:1683": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1678:1683",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1678,
+      "endLine": 1683,
+      "source": "memory",
+      "snippet": "| **Create/verify `auto‑checkpoint.sh`** – script that (1) runs `session_status`, (2) extracts the current context percent, (3) writes a short “checkpoint” summary (goal, decisions, next step) to `memory/$(date).md`. | `write` (create script) | Guarantees the existing “Frequent Checkpoint” cron actually does something useful. | | **Add a “Context‑Monitor” cron** (run every 5 min). Payload: `session_status` → if `Context % > 80` then (a) send Telegram alert, (b) invoke the hand‑off script. | `cron add` | Proactively warns before the context limit is hit. | | **Create a “hand‑off‑summary.sh” script** that reads the latest checkpoint file, appends a “Next steps” bullet list, and writes to `memo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5145131319761276,
+      "maxScore": 0.5145131319761276,
+      "firstRecalledAt": "2026-04-22T19:27:01.271Z",
+      "lastRecalledAt": "2026-04-22T19:27:01.271Z",
+      "queryHashes": [
+        "0bdd67578f25"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "create/verify",
+        "checkpoint.sh",
+        "session-status",
+        "summary.sh",
+        "create",
+        "verify",
+        "auto",
+        "script"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1298:1347": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1298:1347",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1298,
+      "endLine": 1347,
+      "source": "memory",
+      "snippet": "- All cron jobs running OK ## Notes - Fixed compaction loop perception - context was actually fine - guard_context.sh has parsing issue but not causing problems - Most infrastructure from guide already in place --- ## Compaction Summary (12:08 UTC) ### Goal - Read the latest compaction summary from the system (if any) - Append it to today's memory file at memory/$(date).md - Confirm when done ### Constraints & Preferences - Must append to memory file with format memory/$(date).md (today: 2026-04-16) - If no compaction summary exists, note that (implicit in \"if any\") ### Progress - Searched for compaction-related files using find command - Listed contents of /root/.openclaw/ directory -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5137073725461959,
+      "maxScore": 0.5137073725461959,
+      "firstRecalledAt": "2026-04-22T19:27:01.271Z",
+      "lastRecalledAt": "2026-04-22T19:27:01.271Z",
+      "queryHashes": [
+        "0bdd67578f25"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "guard-context.sh",
+        "compaction-related",
+        "all",
+        "cron",
+        "jobs",
+        "running",
+        "fixed",
+        "compaction"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2780:2821": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2780:2821",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2780,
+      "endLine": 2821,
+      "source": "memory",
+      "snippet": "Could we make the cron just *trigger* memoryFlush instead of running parallel scripts? That would reduce overhead while keeping the proactive timing. Want me to check if the checkpoint scripts are actually running, and see if they're generating noise? user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 18:25 UTC] yes please assistant: **Findings:** | Item | Status | Details | |------|--------|---------| | **Cron schedule** | ⚠️ Mismatch | Name says \"2min\" but runs every **5 min** (300000ms) | | **Checkpoint script** | ✅ Good logic | Has 2-min skip built-in to prevent noise | | **resume-point.md** | ✅ Clean | La",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.509652727842331,
+      "maxScore": 0.509652727842331,
+      "firstRecalledAt": "2026-04-22T19:27:01.271Z",
+      "lastRecalledAt": "2026-04-22T19:27:01.271Z",
+      "queryHashes": [
+        "0bdd67578f25"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "2-min",
+        "built-in",
+        "resume-point.md",
+        "the",
+        "cron",
+        "trigger",
+        "memoryflush"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1748:1798": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1748:1798",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1748,
+      "endLine": 1798,
+      "source": "memory",
+      "snippet": "Remove the broken gateway‑health‑check jobs (gateway-health-check duplicate entries). Update the Credit‑Watch job to include the correct Telegram chat ID. Add a “Decision‑Log” cron (runs after every checkpoint) that appends decisions to memory/decisions.md. user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 07:53 UTC] Finish what you were doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 07:54 UTC] keep going with what you are doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"opencl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5057354152202606,
+      "maxScore": 0.5057354152202606,
+      "firstRecalledAt": "2026-04-22T19:27:01.271Z",
+      "lastRecalledAt": "2026-04-22T19:27:01.271Z",
+      "queryHashes": [
+        "0bdd67578f25"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway-health-check",
+        "memory/decisions.md",
+        "openclaw-control-ui",
+        "remove",
+        "the",
+        "broken",
+        "health"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:429:471": {
+      "key": "memory:memory/2026-04/2026-04-16.md:429:471",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 429,
+      "endLine": 471,
+      "source": "memory",
+      "snippet": "- Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5444987878203391,
+      "maxScore": 0.5444987878203391,
+      "firstRecalledAt": "2026-04-23T01:17:24.173Z",
+      "lastRecalledAt": "2026-04-23T01:17:24.173Z",
+      "queryHashes": [
+        "ca36d2b76f20"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "6.60",
+        "6.80",
+        "5.20",
+        "24.29",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:702:744": {
+      "key": "memory:memory/2026-04/2026-04-16.md:702:744",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 702,
+      "endLine": 744,
+      "source": "memory",
+      "snippet": "- Earnings: April 18 (2 days!) - Target: $6.60-$6.80 - Stop: $5.20 **Buying Power:** $24.29 (waiting for TSLA target) --- ## Files to Reference on Wake - portfolio. md (current holdings & plan) - robinhood-guide. md (execution steps) ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructure ### API Credits ## 🐔 Foundational Systems (Long-term) - [ ] Continue refining compaction handling - [ ] Refine checkpoint automation - [ ] Test continuity after multiple resets - [ ] When changing infr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5444987878203391,
+      "maxScore": 0.5444987878203391,
+      "firstRecalledAt": "2026-04-23T01:17:24.173Z",
+      "lastRecalledAt": "2026-04-23T01:17:24.173Z",
+      "queryHashes": [
+        "ca36d2b76f20"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "6.60",
+        "6.80",
+        "5.20",
+        "24.29",
+        "robinhood-guide",
+        "resume-point",
+        "stock-research-worker",
+        "long-term"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:321:358": {
+      "key": "memory:memory/2026-04/2026-04-15.md:321:358",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 321,
+      "endLine": 358,
+      "source": "memory",
+      "snippet": "- Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs.json directly, use `cron list` API\" - Rationale: jobs.json is ~10k lines; reading it bloats context - This prevents future context issues from large file reads ### Issues Found - Context at 94% (approaching compaction) - 2 cron jobs with lastRunStatus: \"error\" - Duplicate cron jobs (rotate-session-log, auto-session-cleanup) - can't remove via API ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.543170267343521,
+      "maxScore": 0.543170267343521,
+      "firstRecalledAt": "2026-04-23T01:17:24.173Z",
+      "lastRecalledAt": "2026-04-23T01:17:24.173Z",
+      "queryHashes": [
+        "ca36d2b76f20"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "jobs.json",
+        "rotate-session-log",
+        "auto-session-cleanup",
+        "keep",
+        "eye"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:125:166": {
+      "key": "memory:memory/2026-04/2026-04-15.md:125:166",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 125,
+      "endLine": 166,
+      "source": "memory",
+      "snippet": "- No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json directly, use `cron list` API\" - Rationale",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5407931685447692,
+      "maxScore": 0.5407931685447692,
+      "firstRecalledAt": "2026-04-23T01:17:24.173Z",
+      "lastRecalledAt": "2026-04-23T01:17:24.173Z",
+      "queryHashes": [
+        "ca36d2b76f20"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "new",
+        "trades",
+        "executed",
+        "decided",
+        "hold"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:350:391": {
+      "key": "memory:memory/2026-04/2026-04-15.md:350:391",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 350,
+      "endLine": 391,
+      "source": "memory",
+      "snippet": "- No new trades executed today. Decided to hold GGB at current level and wait for pull‑back before buying additional shares. - TSLA remains locked; plan to re‑evaluate after expected unlock ~2026-04-16. ## 3. Cron Jobs / Fixes - No new cron jobs added today. - No fixes applied. ## 4. Important for David - Keep an eye on GGB price dip to $4.10–$4.15 for potential buy entry. - Monitor TSLA unlock announcement tomorrow; be ready to sell on unlock and re‑allocate funds. - Remember to log any trade decisions in the memory wiki promptly. --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs.json directly, use `cron list` API\" - Rationale:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5405723378062248,
+      "maxScore": 0.5405723378062248,
+      "firstRecalledAt": "2026-04-23T01:17:24.173Z",
+      "lastRecalledAt": "2026-04-23T01:17:24.173Z",
+      "queryHashes": [
+        "ca36d2b76f20"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "4.10",
+        "4.15",
+        "tools.md",
+        "jobs.json",
+        "new",
+        "trades",
+        "executed",
+        "decided"
+      ]
+    },
+    "memory:memory/2026-04-22.md:694:734": {
+      "key": "memory:memory/2026-04-22.md:694:734",
+      "path": "memory/2026-04-22.md",
+      "startLine": 694,
+      "endLine": 734,
+      "source": "memory",
+      "snippet": "- **GGB:** 4.99 shares @ $4.17 avg → ~$4.28 = $21.36 (+2.6%) - **Cash:** ~$31.32 - **Total:** ~$52.68 - **Targets:** Buy $4.10, $3.90 | Sell $4.45 (½), $4.60, $4.75 ### Next Session Tasks 1. Complete guard-context cron fix (convert to exec payload) 2. Verify both cron jobs report ok status 3. Test stock-trading-subagent.sh with Yahoo Finance API--- ### Checkpoint 2026-04-22 21:14 UTC Context checkpoint saved. State: active.md + resume-point.md --- ### Checkpoint 2026-04-22 22:02 UTC Context checkpoint saved. State: active.md + resume-point.md --- ### Checkpoint 2026-04-22 22:37 UTC Context checkpoint saved. State: active.md + resume-point.md --- ### Checkpoint 2026-04-22 22:38 UTC Context c",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5395696967840194,
+      "maxScore": 0.5395696967840194,
+      "firstRecalledAt": "2026-04-23T01:17:24.173Z",
+      "lastRecalledAt": "2026-04-23T01:17:24.173Z",
+      "queryHashes": [
+        "ca36d2b76f20"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "4.99",
+        "4.17",
+        "4.28",
+        "21.36",
+        "2.6",
+        "31.32",
+        "52.68",
+        "4.10"
       ]
     }
   }

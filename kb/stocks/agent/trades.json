@@ -1,34 +1,108 @@
 {
-  "last_updated": "2026-04-21T14:52:00Z",
-  "open_positions": {},
+  "last_updated": "2026-04-23T02:54:53.422Z",
+  "open_positions": {
+    "BBAI": {
+      "shares": 2.5,
+      "avg_cost": 3.88,
+      "current": 3.92
+    },
+    "LCID": {
+      "shares": 1.39,
+      "avg_cost": 7.18,
+      "current": 6.94
+    }
+  },
   "trades": [
     {
       "symbol": "GGB",
-      "action": "BUY->SELL",
-      "shares": 5,
-      "entry": 4.2,
-      "exit": 4.45,
-      "pnl": "1.25",
-      "pnl_pct": "5.95",
-      "date": "2026-04-21"
+      "action": "BUY",
+      "shares": 5.988023,
+      "price": 4.18,
+      "date": "2026-04-12",
+      "total": 25.03
+    },
+    {
+      "symbol": "GGB",
+      "action": "BUY",
+      "shares": 1,
+      "price": 4.28,
+      "date": "2026-04-14",
+      "total": 4.28
+    },
+    {
+      "symbol": "AMC",
+      "action": "BUY",
+      "shares": 8,
+      "price": 1.64,
+      "date": "2026-04-16",
+      "total": 13.12
+    },
+    {
+      "symbol": "AMC",
+      "action": "SELL",
+      "shares": 8,
+      "price": "SOLD",
+      "date": "2026-04-22",
+      "note": "Sold - removed from positions"
     },
     {
       "symbol": "LCID",
       "action": "BUY",
       "shares": 1.393728,
-      "entry": 7.18,
+      "price": 7.18,
       "date": "2026-04-21",
-      "time": "12:37 ET",
-      "order_type": "MARKET",
-      "total": 10.00
+      "total": 10
     },
     {
-      "symbol": "LCID",
+      "symbol": "BBAI",
       "action": "BUY",
-      "shares": 1.4,
-      "price": 7.14,
-      "date": "2026-04-21",
-      "reason": "Near all-time low, fresh $1B B+ capital raise, new CEO"
+      "shares": 2.5,
+      "price": 3.88,
+      "date": "2026-04-22",
+      "total": 9.7
+    },
+    {
+      "symbol": "AMC",
+      "action": "SELL",
+      "shares": 8,
+      "entry": 1.64,
+      "exit": 1.69,
+      "pnl": "0.40",
+      "pnl_pct": "3.05",
+      "date": "2026-04-23",
+      "reason": "TARGET"
+    },
+    {
+      "symbol": "GGB",
+      "action": "SELL",
+      "shares": 1,
+      "entry": 4.28,
+      "exit": 4.28,
+      "pnl": "0.00",
+      "pnl_pct": "0.00",
+      "date": "2026-04-23",
+      "reason": "TARGET"
+    },
+    {
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 0.016567,
+      "entry": 0,
+      "exit": 401.43,
+      "pnl": "6.65",
+      "pnl_pct": "inf",
+      "date": "2026-04-23",
+      "reason": "TARGET"
+    },
+    {
+      "symbol": "TSLA",
+      "action": "SELL",
+      "shares": 0.016567,
+      "price": 401.43,
+      "date": "2026-04-17",
+      "total": 6.65,
+      "pnl": 6.65,
+      "note": "FREE STOCK - sign up bonus, cost basis $0"
     }
   ]
 }

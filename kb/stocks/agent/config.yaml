@@ -1,5 +1,5 @@
-# Stock Subagent Configuration
-# Vyse's automated stock monitoring
+# Quartermaster Configuration
+# Vyse's firstmate - autonomous stock trading
 
 check_interval_minutes: 30
 
