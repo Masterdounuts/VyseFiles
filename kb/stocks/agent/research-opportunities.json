@@ -1,80 +1,80 @@
 [
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "SOFI",
-  "price": "18.83",
+  "price": "19.06",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "MARA",
-  "price": "11.23",
+  "price": "11.84",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "RIOT",
-  "price": "17.41",
+  "price": "18.48",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "NOK",
-  "price": "10.4",
+  "price": "9.86",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "DKNG",
-  "price": "22.99",
+  "price": "22.47",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "GME",
-  "price": "24.46",
+  "price": "25.66",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:06 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "LCID",
-  "price": "7.11",
+  "price": "6.91",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:07 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "BBAI",
-  "price": "3.79",
+  "price": "3.99",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:07 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "DNA",
-  "price": "8.21",
+  "price": "8.44",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }
 ,
 {
-  "timestamp": "2026-04-22 13:07 UTC",
+  "timestamp": "2026-04-23 13:01 UTC",
   "symbol": "QS",
-  "price": "6.98",
+  "price": "7.31",
   "type": "WATCHLIST_SCAN",
   "status": "NEEDS_REVIEW"
 }

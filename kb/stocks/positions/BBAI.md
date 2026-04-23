@@ -1,24 +1,12 @@
 # BBAI - BigBear.ai
 
-*Position tracking for BBAI (AI/analytics defense contractor)*
+*Position tracking for BBAI (AI/analytics defense contractor) — CLOSED 2026-04-23*
 
-## Current Position
-- **Shares:** 2.50
+## Trade Summary
+- **Shares:** 2.5 SOLD @ $3.78
 - **Avg Cost:** $3.88
+- **Realized Loss:** -$0.25 (-2.6%)
+- **Sold:** April 23, 2026
 
-## Targets
-- **Buy:** $3.88 (DCA), $3.50, $3.00, $2.50
-- **Sell:** $4.50, $5.00
-- **Stop-loss:** 7% ($3.65)
-
-## Sector
-AI/Defense. Watch for government contracts, defense spending news.
-
-## Notes
-AI defense contractor. Current price $3.92 (slightly up).
-Purchase: 2.5 @ $3.88 (Apr 22)
-
-**Last updated:** 2026-04-23
-
-## Earnings
-- **Next ER:** April 29, 2026 (est)
+## Exit Rationale
+Tight stop hit ($3.75 threshold). Capital preserved for reallocation.

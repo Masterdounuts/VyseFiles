@@ -1,24 +1,12 @@
 # LCID - Lucid Group
 
-*Position tracking for LCID (EV manufacturer)*
+*Position tracking for LCID (EV manufacturer) — CLOSED 2026-04-23*
 
-## Current Position
-- **Shares:** 1.39
+## Trade Summary
+- **Shares:** 1.39 SOLD @ $6.60
 - **Avg Cost:** $7.18
+- **Realized Loss:** -$0.81 (-8.1%)
+- **Sold:** April 23, 2026
 
-## Targets
-- **Buy:** $6.50 (DCA), $6.00, $5.50, $5.00
-- **Sell:** $8.00, $9.00
-- **Stop-loss:** 7% ($6.68)
-
-## Sector
-EV/Automotive. Watch for Lucid production news, EV market sentiment.
-
-## Notes
-EV manufacturer. Current price $6.94 (down from avg cost).
-Purchase: 1.393728 @ $7.18 (Apr 21)
-
-**Last updated:** 2026-04-23
-
-## Earnings
-- **Next ER:** May 5, 2026
+## Exit Rationale
+Hit stop-loss zone (7% threshold). Capital preserved for reallocation.
