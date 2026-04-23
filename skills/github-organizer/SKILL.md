@@ -8,6 +8,8 @@ access: vyse-only
 
 *Maintaining a clean, navigable workspace*
 
+⚠️ **Important:** GitHub is linked to Obsidian. Changes made in Obsidian auto-commit on close. When cleaning up, expect small/auto-generated commits from Obsidian.
+
 ---
 
 ## Core Tasks
