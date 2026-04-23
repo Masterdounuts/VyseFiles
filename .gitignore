@@ -69,4 +69,8 @@ bin/
 
 
 # Ignore Smart Environment folder
-.smart-env
+.smart-env-e 
+# Runtime state (generated)
+memory/agent-ready.md
+memory/current_task_state.md
+memory/resume-point.md

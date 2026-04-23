@@ -29,7 +29,7 @@
 - `check memory` → memory/2026-04/2026-04-23.md
 - `check active` → active.md
 - `check handoff` → HANDOFF.md
-- `check system` → kb/system/hub-system
+- `check system` → kb/system/system
 
 ---
 

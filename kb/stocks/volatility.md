@@ -23,4 +23,4 @@
 
 ---
 
-*Related: [[kb/stocks/hub-portfolio|Portfolio]] | [[kb/stocks/agent/subagent.md|Subagent]]
+*Related: [[kb/stocks/stocks|Portfolio]] | [[kb/stocks/agent/subagent.md|Subagent]]

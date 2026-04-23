@@ -1,6 +1,6 @@
 # Agent Setup for David
 
-[[kb/system/hub-system|Home]] • [[kb/stocks/protocol|Trading Protocol]]
+[[kb/system/system|Home]] • [[kb/stocks/protocol|Trading Protocol]]
 
 ## Crew Hierarchy
 

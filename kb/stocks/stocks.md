@@ -23,8 +23,8 @@ Hub for trading and investment notes.
 - BBAI - Sold Apr 23 @ $3.78 (-2.6%)
 
 ## Automation
-- [[kb/stocks/agent/trading.sh|Trading Script]] - Price monitor
-- [[kb/stocks/agent/subagent.md|Subagent]] - Volatility detector
+- [[kb/stocks/agent.md|Stock Agent]] - Price monitoring
+- [[kb/stocks/agent/config.md|Agent Config]] - Configuration
 - [[kb/stocks/volatility|Volatility]] - 3% move detector
 
 ## Research

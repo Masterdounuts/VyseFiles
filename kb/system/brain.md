@@ -3,17 +3,17 @@
 Quick access file for context after resets.
 
 ## Active
-- [[memory/active]] - Current task
+- [[active.md]] - Current task
 - [[PENDING.md]] - Waiting on
 - [[HANDOFF.md]] - Session continuity
 
 ## Quick Links
-- [[kb/stocks/hub-portfolio]] - Portfolio (subagent manages)
+- [[kb/stocks/stocks]] - Portfolio (subagent manages)
 - [[kb/stocks/trade-log]] - Trade history
 - [[kb/stocks/rules]] - Trading rules
 - [[AGENTS.md]] - Trading protocol
 - [[SOUL.md]] - My principles
-- [[kb/system/hub-system]] - System hub
+- [[kb/system/system]] - System hub
 
 ---
 
