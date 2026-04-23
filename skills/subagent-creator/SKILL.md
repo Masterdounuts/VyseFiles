@@ -64,6 +64,29 @@ Pattern for building autonomous agents that run on schedule and report to Vyse.
 
 When building a subagent, ask: "What skills does this agent need to do its job?" Those get `always: true`.
 
+### Communicating Skills to Subagents
+
+**Every new subagent must know:**
+1. **What skills they have access to** — list explicitly in their context/handoff
+2. **Which are always-on** — so they don't keep reloading
+3. **Which are on-demand** — use "load skill:X" when needed
+4. **Which are vyse-only** — can't access, must ask Vyse
+
+**Example (Quartermaster handoff):**
+```
+Your skills:
+- always: trading, alerts, time
+- on-demand: github, obsidian
+- restricted (ask Vyse): system, security, subagent-creator
+
+Reference: skill:trading, skill:alerts, skill:time
+```
+
+**This prevents:**
+- Subagent guessing what it can/cannot use
+- Wasted context loading unneeded skills
+- Confusion about access levels
+
 Subagents are team members, not just automation. They should:
 
 - **Grow**: Track what works, learn from misses (like Quartermaster's learnings.json)
