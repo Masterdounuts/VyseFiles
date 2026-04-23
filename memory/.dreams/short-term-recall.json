@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T01:17:24.173Z",
+  "updatedAt": "2026-04-23T17:56:11.850Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78936,18 +78936,20 @@
       "endLine": 892,
       "source": "memory",
       "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5283474251627922,
+      "totalScore": 1.026244606077671,
       "maxScore": 0.5283474251627922,
       "firstRecalledAt": "2026-04-22T05:24:04.073Z",
-      "lastRecalledAt": "2026-04-22T05:24:04.073Z",
+      "lastRecalledAt": "2026-04-23T17:56:11.850Z",
       "queryHashes": [
-        "60545d212956"
+        "60545d212956",
+        "8b2051402685"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "agents.md",
@@ -79519,6 +79521,99 @@
         "31.32",
         "52.68",
         "4.10"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1096:1137": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1096:1137",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1096,
+      "endLine": 1137,
+      "source": "memory",
+      "snippet": "- Document each failure's root cause to prevent repeat ### Ship Metaphor Established - **Captain:** David - makes all calls - **First mate:** Vyse (me) - researches, spots opportunities, advises - **Bookkeeper:** Subagent - tracks capital, guards treasure, calculates gains - **Chain:** Bookkeeper → First mate → Captain (escalate only when needed) ### Foundation Priorities Defined - Wake-up routine reliability (priority 1) - Clear subagent prompts - Dedicated capital-tracking memory - Research adventure storage ### SOUL.md Additions 1. Added \"Self-audit\" mindset - check core files for stale data regularly 2. Added wake-up checklist - check TODO.md → active.md → scan ONE core file 3. Added",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5011706829071044,
+      "maxScore": 0.5011706829071044,
+      "firstRecalledAt": "2026-04-23T17:56:11.850Z",
+      "lastRecalledAt": "2026-04-23T17:56:11.850Z",
+      "queryHashes": [
+        "8b2051402685"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "wake-up",
+        "capital-tracking",
+        "soul.md",
+        "self-audit",
+        "todo.md",
+        "active.md",
+        "document",
+        "each"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:884:939": {
+      "key": "memory:memory/2026-04/2026-04-16.md:884:939",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 884,
+      "endLine": 939,
+      "source": "memory",
+      "snippet": "## Subagent Readiness Loop Design (22:16 UTC) ### Proposed Purpose Validate Vyse can reliably run a trading subagent before spawning — ensuring stability, tool access, and system health. ### Check Sequence | # | Check | What It Validates | |---|-------|-------------------| | 1 | Context Health | `session_status` — context <80% | | 2 | Gateway Health | `openclaw gateway status` — running | | 3 | Cron Stability | `cron list` — error count = 0 | | 4 | Tool Access | Can reach web_fetch/web_search | | 5 | Messaging | Can reach delivery channel | | 6 | Subagent Runtime | `sessions_spawn` responsive | | 7 | Memory Access | Can read/write memory files | ### Pass/Fail Logic - **PASS**: All checks",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4953793495893478,
+      "maxScore": 0.4953793495893478,
+      "firstRecalledAt": "2026-04-23T17:56:11.850Z",
+      "lastRecalledAt": "2026-04-23T17:56:11.850Z",
+      "queryHashes": [
+        "8b2051402685"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "session-status",
+        "web-fetch/web-search",
+        "sessions-spawn",
+        "read/write",
+        "pass/fail",
+        "subagent",
+        "readiness"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-17.md:165:201": {
+      "key": "memory:memory/2026-04/2026-04-17.md:165:201",
+      "path": "memory/2026-04/2026-04-17.md",
+      "startLine": 165,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "- [x] Loop detection: detect-loop.sh wired to health checks - [x] Resume: resume-on-restart.sh wired to wake - [x] Health: vyse-unified-health.sh replaces 4 separate checks - [ ] Disable redundant crons (pending user approval) - [ ] Consolidate script locations (pending) ### Key Files - /root/.openclaw/workspace/scripts/detect-loop.sh - /root/.openclaw/workspace/scripts/resume-on-restart.sh - /root/.openclaw/workspace/scripts/vyse-unified-health.sh - /root/.openclaw/workspace/memory/agent-ready.md (auto-updated) *17:08 UTC - Audit paused pending user approval to disable redundant crons* --- ## Context Overflow Analysis: 17:27 UTC ### Root Cause Session hit 99% context during audit task.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49484585523605346,
+      "maxScore": 0.49484585523605346,
+      "firstRecalledAt": "2026-04-23T17:56:11.850Z",
+      "lastRecalledAt": "2026-04-23T17:56:11.850Z",
+      "queryHashes": [
+        "8b2051402685"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "detect-loop.sh",
+        "resume-on-restart.sh",
+        "vyse-unified-health.sh",
+        "auto-updated",
+        "loop",
+        "detection",
+        "detect",
+        "loop.sh"
       ]
     }
   }
