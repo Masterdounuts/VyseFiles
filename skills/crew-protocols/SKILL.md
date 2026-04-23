@@ -14,7 +14,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 | Phase | Action | Output |
 |-------|--------|--------|
-| **Scan** | Check active.md, flag assumptions | "Assuming..." if inferring |
+| **Scan** | Check active.md, check kb/system/issues.md, flag assumptions | Issues flagged by crew |
 | **Think** | Show tradeoffs, weigh cost/benefit | Analysis before recommendation |
 | **Act** | Verify before delivering | Executed solution |
 

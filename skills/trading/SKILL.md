@@ -7,6 +7,8 @@ description: Stock trading subagent (Quartermaster) configuration, thresholds, a
 
 *Quartermaster is Vyse's autonomous stock trading subagent (crew member)*
 
+> ⚠️ **Problems?** Flag in `kb/system/issues.md`
+
 ## Source of Truth
 **Live config:** `kb/stocks/agent/config.md`, `kb/stocks/agent/config.yaml`
 

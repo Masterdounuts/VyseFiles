@@ -93,6 +93,7 @@ Subagents are team members, not just automation. They should:
 - **Have personality**: Voice and style (see config.md)
 - **Improve over time**: Not static — refine based on outcomes
 - **Have skin in the game**: They're part of the crew, not throwaway scripts
+- **Flag problems**: When something breaks, log to `kb/system/issues.md` so Vyse sees it
 
 **Deep Reasoning Checklist** (before proposing):
 
