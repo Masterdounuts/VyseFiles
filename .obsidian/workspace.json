@@ -202,6 +202,8 @@
   },
   "active": "bf681b229964e945",
   "lastOpenFiles": [
+    "memory/content/seo-research.md",
+    "memory/content",
     "kb/stocks/positions/SOFI.md",
     "kb/stocks/positions/RIOT.md",
     "kb/stocks/positions/MARA.md",
@@ -235,8 +237,6 @@
     "kb/stocks/portfolio.md",
     "kb/stocks/agent/config.md",
     "kb/reference/recovery-prompt.md",
-    "kb/personal/DASHBOARD.md",
-    "BOOTSTRAP.md",
-    "kb/system/fixes"
+    "kb/personal/DASHBOARD.md"
   ]
 }
