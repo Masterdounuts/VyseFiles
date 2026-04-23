@@ -1,4 +1,4 @@
-# ::Portfolio
+# ::Stocks
 
 Hub for trading and investment notes.
 
@@ -36,7 +36,7 @@ Hub for trading and investment notes.
 ---
 
 ## Related
-- [[kb/system/hub-system|System]] - Bootstrap & config
-- [[memory/hub-archive|Archive]] - Dated memories
+- [[kb/system/system|System]] - Bootstrap & config
+- [[memory/archive|Archive]] - Dated memories
 
-*Links: [[kb/system/hub-system|← System Hub]]*
+*Links: [[kb/system/system|← System Hub]]*
