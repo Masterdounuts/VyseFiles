@@ -1,5 +1,6 @@
 ---
 name: control-ui
+always: true
 description: OpenClaw Control UI, dashboard, and status monitoring. Use when discussing the web interface, status cards, metrics, or dashboard setup.
 ---
 

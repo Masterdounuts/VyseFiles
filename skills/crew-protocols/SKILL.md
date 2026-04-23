@@ -131,6 +131,15 @@ Prevention: How to avoid next time
 
 This prevents skills from auto-loading and eating context just because they're "available."
 
+### Skill Modes
+
+| Mode | Frontmatter | Description |
+|------|-------------|-------------|
+| **always** | `always: true` | Load on startup (control-ui, time, system) |
+| **on-demand** | (default) | Load only when needed |
+
+Add to skill frontmatter to control behavior.
+
 ## Trigger Phrases
 - "protocol", "crew", "how we decide"
 - "thinking", "reasoning", "learning"

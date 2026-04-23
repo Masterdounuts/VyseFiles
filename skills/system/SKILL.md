@@ -1,6 +1,7 @@
 ---
 name: system
 access: vyse-only
+always: true
 description: Debugging, recovery, FIXES, and system maintenance. Use when troubleshooting issues, checking health, or system recovery.
 ---
 
