@@ -31,6 +31,12 @@ Captain David notes: Unable to sell at target - price didn't reach sell level. A
 - Communication: Captain should be alerted earlier when price approaches target zone
 - Consider trailing stop if price spikes to lock in gains
 
+---
+**Quartermaster Process:** End-of-day review (EOD) - at market close (4PM ET), document:
+1. What happened today
+2. Lessons learned
+3. Adjustments for tomorrow
+
 **Last updated:** 2026-04-23
 
 ## Earnings
