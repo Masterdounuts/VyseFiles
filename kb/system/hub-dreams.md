@@ -15,5 +15,5 @@ Hub for vision tracking, dream journal, and goal setting.
 - [[memory/hub-archive|Archive]] - Dated memories
 - [[kb/personal/projects|Projects]] - Active projects
 
-*Links: [[INDEX|← Back]]*
+*Links: [[kb/system/hub-system|← System Hub]]*
 *Folder: [[content/dreams|content/dreams]]*
