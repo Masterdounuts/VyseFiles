@@ -20,6 +20,8 @@ description: Stock trading subagent (Quartermaster) configuration, thresholds, a
 3. **Adjustments** — tweaks for tomorrow's strategy
 4. **Captain update** — brief message if significant
 
+⚠️ **Skip weekends** — market closed Sat/Sun. Only run Mon-Fri.
+
 Add to each position file under "## Lessons Learned" section.
 
 ## Personality
