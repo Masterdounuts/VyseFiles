@@ -24,6 +24,23 @@ David (Captain)
 - Quartermaster flags opportunities >3% move
 - Vyse reviews → decides if Captain gets alert
 
+## Skills (15)
+
+| Category | Skills |
+|----------|--------|
+| **Core** | [[skills/workflow|workflow]], [[skills/memory|memory]], [[skills/crew-protocols|crew-protocols]] |
+| **Trading** | [[skills/trading|trading]], [[skills/alerts|alerts]] |
+| **System** | [[skills/system|system]], [[skills/security|security]], [[skills/time|time]], [[skills/control-ui|control-ui]] |
+| **Tools** | [[skills/github|github]], [[skills/obsidian|obsidian]] |
+| **Creative** | [[skills/dreams|dreams]], [[skills/projects|projects]] |
+| **Meta** | [[skills/subagent-creator|subagent-creator]], [[skills/skill-creator|skill-creator]] |
+
+*See [[skills/index|Full Skills Index]] for details.*
+
+## Skill Creation Rule
+
+> **Only Vyse creates skills.** Other crew members (Quartermaster) can recommend, but David must approve before any skill is built.
+
 ---
 
 *Agent configuration and workflow documentation.*

@@ -1,16 +1,1 @@
-[{"timestamp":"2026-04-23T17:30:27Z","symbol":"MARA","price":"11.84","type":"SELL_TARGET","target":"$15.00","details":"Price hit sell target","status":"PENDING_REVIEW"},
-  
-{"timestamp":"2026-04-23T17:30:28Z","symbol":"RIOT","price":"18.16","type":"SELL_TARGET","target":"$21.00","details":"Price hit sell target","status":"PENDING_REVIEW"}
-,
-  
-{"timestamp":"2026-04-23T17:30:28Z","symbol":"RIOT","price":"18.16","type":"SELL_TARGET","target":"$23.00","details":"Price hit sell target","status":"PENDING_REVIEW"}
-,
-  
-{"timestamp":"2026-04-23T17:30:29Z","symbol":"SOFI","price":"18.20","type":"SELL_TARGET","target":"$20.00","details":"Price hit sell target","status":"PENDING_REVIEW"}
-,
-  
-{"timestamp":"2026-04-23T17:30:29Z","symbol":"SOFI","price":"18.20","type":"SELL_TARGET","target":"$21.00","details":"Price hit sell target","status":"PENDING_REVIEW"}
-,
-  
-{"timestamp":"2026-04-23T17:30:29Z","symbol":"SOFI","price":"18.20","type":"SELL_TARGET","target":"$22.00","details":"Price hit sell target","status":"PENDING_REVIEW"}
-]
+[]
