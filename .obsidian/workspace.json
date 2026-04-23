@@ -201,8 +201,9 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "bf681b229964e945",
+  "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/system/bootstrap/BOOTSTRAP.md",
     "kb/system/dev/github.md",
     "kb/system/dev/dev.md",
     "kb/system/dev",
@@ -236,7 +237,6 @@
     "kb/immigration/FinalAffidavit.md",
     "kb/immigration",
     "kb/dreams/dreams.md",
-    "kb/dreams/dream-journal-archive.md",
     "kb/dreams",
     "kb/system/workflow"
   ]
