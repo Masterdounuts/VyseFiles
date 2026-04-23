@@ -1,38 +1,49 @@
 # ::System
 
-Hub for bootstrap and system configuration notes.
+Hub for all sub-hubs and system configuration.
 
-## Core Files
+## 📂 Sub-Hubs
+
+| Sub-Hub | Description |
+|---------|-------------|
+| [[kb/system/hub-dreams|Dreams]] | Vision, goals, dream journal |
+| [[kb/stocks/hub-portfolio|Portfolio]] | Trading, research, positions |
+| [[kb/personal/projects|Projects]] | Game dev & work-in-progress |
+| [[kb/reference/templates|Templates]] | Reusable prompts & formats |
+| [[memory/hub-archive|Archive]] | Dated memories |
+
+---
+
+## Core Files (System)
 - [[BOOTSTRAP.md|Bootstrap]] - Wake-up protocol
 - [[SOUL.md|Vyse Soul]] - Core principles
 - [[IDENTITY.md|Identity]] - Name & avatar
 - [[USER.md|User]] - Your prefs
-- [[SUBAGENTS.md|Subagents]] - Agent spawning
-- [[TOOLS.md|Tools]] - Available tools
-- [[HEARTBEAT.md|Heartbeat]] - Periodic tasks
 - [[AGENTS.md|Agents]] - Trading protocol
+- [[HEARTBEAT.md|Heartbeat]] - Periodic tasks
 
-## Sub‑Hubs
-### System
-- [[kb/system/bootstrap|Bootstrap Hub]] – Boot & startup docs
-- [[kb/system/recovery|Recovery Hub]] – Interrupt recovery, prompts
-- [[kb/system/hub-fixes.md|Fixes & Solutions]] – Known issues & solutions
-- [[kb/system/config|Config Hub]] – Identity, user preferences, agents
-- [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
-- [[kb/system/hub-automation.md|Automation Hub]] – Scripts & cron jobs
+## Sub-Hubs Detail
 
 ### Dreams
 - [[kb/system/hub-dreams|Dreams Hub]] – Vision & goal tracking
 
 ### Stocks
+- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & positions
 - [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
 - [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
 - [[kb/stocks/positions.md|Positions]] – Current holdings
 
+### Personal
+- [[kb/personal/projects|Projects]] - Game dev & work
+
+### Reference
+- [[kb/reference/templates|Templates]] - Reusable formats
+
+### Archive
+- [[memory/hub-archive|Archive]] - Dated memories
+
 ## Quick Access
-- [[brain.md|Vyse Brain]] - My quick context
-- [[kb/personal/projects.md|Projects]] - Game dev & work
-- [[kb/reference/templates.md|Templates]] - Reusable formats
+- [[brain.md|Vyse Brain]] - Quick context
 - [[ORPHANS.md|Orphans]] - File audit
 
 ## Recovery & Fixes
@@ -41,18 +52,6 @@ Hub for bootstrap and system configuration notes.
 - [[recovery-prompt.md|Recovery Prompt]] - Session rescue
 - [[handoff-prompt.md|Handoff]] - Session continuity
 
-## Excluded from INDEX
-> These link to ::System instead of INDEX directly
-- BOOTSTRAP, CONTROL-UI, SUBAGENTS, HEARTBEAT
-
-## Vault Exclusions
-> These folders exist in Git but should be excluded from Obsidian vault view
-- `obsidian-prototype/` - Migration templates & legacy workflow
-
 ---
-
-## Related
-- [[memory/hub-archive|Archive]] - Dated memories & journal
-- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & research
 
 *Links: [[INDEX|← Back]]*
