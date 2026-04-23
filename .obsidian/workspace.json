@@ -11,10 +11,14 @@
             "id": "bf681b229964e945",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "kb/system/bootstrap/BOOTSTRAP.md",
+                "bFile": "kb/system/bootstrap/BOOTSTRAP.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: BOOTSTRAP  (Working Tree)"
             }
           }
         ]
