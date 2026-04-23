@@ -13,6 +13,7 @@
 | skill:control-ui | Dashboard, metrics, OpenClaw status |
 | skill:obsidian | Vault, wikilinks, daily notes |
 | skill:github | Version control, git-sync, persistence |
+| skill:github-organizer | GitHub cleanup, orphan audit, hub structure (vyse-only) |
 | skill:alerts | Message templates, notification patterns |
 | skill:crew-protocols | Shared crew knowledge — decisions, reasoning, communication |
 | skill:time | Timezone, scheduling, cron |
