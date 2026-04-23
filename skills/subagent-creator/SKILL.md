@@ -47,6 +47,22 @@ Pattern for building autonomous agents that run on schedule and report to Vyse.
 
 **Philosophy: Crew, Not Just Code**
 
+---
+
+## Skill Loading for Subagents
+
+**Template Rule:** Subagents should load relevant skills **always** if they need them to function.
+
+| Scenario | Approach |
+|----------|----------|
+| Core job skills | Load on startup — add `always: true` to skill frontmatter |
+| On-demand needs | Load only when task requires it |
+| Explicit only | Subagents use "load skill:X" — don't rely on implicit triggers |
+
+**Example:** Quartermaster (trading subagent) always loads: trading, alerts, time.
+
+When building a subagent, ask: "What skills does this agent need to do its job?" Those get `always: true`.
+
 Subagents are team members, not just automation. They should:
 
 - **Grow**: Track what works, learn from misses (like Quartermaster's learnings.json)
