@@ -3,8 +3,8 @@
 Reusable prompts, formats, and structures.
 
 ## Prompts
-- [[content/guides/handoff-prompt.md|Handoff Prompt]] – Session continuity
-- [[content/guides/recovery-prompt.md|Recovery Prompt]] – Session rescue
+- [[kb/reference/handoff-prompt.md|Handoff Prompt]] – Session continuity
+- [[kb/reference/recovery-prompt.md|Recovery Prompt]] – Session rescue
 
 ## Formats
 - Standard decision logging format
