@@ -13,7 +13,6 @@ Hub for trading and investment notes.
 - [[kb/stocks/agent.md|Stock Agent]] - Price monitoring
 
 ## Portfolio
-- [[kb/stocks/agent/state.json|State]] - Positions, targets, buying power
 - [[kb/stocks/positions/GGB|GGB]] - Brazilian steel ADR
 - [[kb/stocks/positions/LCID|LCID]] - Lucid Motors
 

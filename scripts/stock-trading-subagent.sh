@@ -1,10 +1,10 @@
 #!/bin/bash
 # Stock Trading Subagent - Autonomous Price Monitoring & Alerts
-# Reads from state.json - dynamic portfolio & targets
+# Reads from markdown files (positions/*.md, config.md)
 # Includes: volatility detection, target alerts, stop-loss, market hours filter
 
-# Add jq to PATH
-export PATH="/tmp:$PATH"
+# Add jq (in /tmp) to PATH - system paths first
+export PATH="/usr/local/bin:/usr/bin:/bin:/tmp:$PATH"
 
 # Alpha Vantage API key
 export ALPHA_VANTAGE_KEY="VSJ5QVVM11QT0LHP"
@@ -25,13 +25,16 @@ calc_bool() {
 
 WORKSPACE="/home/openclaw/.openclaw/workspace"
 AGENT_DIR="$WORKSPACE/kb/stocks/agent"
-STATE="$AGENT_DIR/state.json"
+# STATE="$AGENT_DIR/state.json"  # DEPRECATED - using markdown now
 LOG="$AGENT_DIR/trading.log"
 ALERTS="$AGENT_DIR/alerts.log"
 PENDING="$AGENT_DIR/pending-opportunities.json"
 LAST_PRICE_FILE="$AGENT_DIR/last-prices.txt"
 ALERT_HISTORY="$AGENT_DIR/alert-history.json"
 LEARNINGS="$AGENT_DIR/learnings.json"
+
+# Source markdown reader
+source "$WORKSPACE/scripts/stock-data-reader.sh"
 
 mkdir -p "$AGENT_DIR"
 
@@ -68,7 +71,7 @@ const fs=require('fs');
 const d=JSON.parse(fs.readFileSync('$LEARNINGS', 'utf8'));
 d.lessons = d.lessons || [];
 d.lessons.push($lesson_entry);
-// Keep only last 50 lessons
+# Keep only last 50 lessons
 if (d.lessons.length > 50) d.lessons = d.lessons.slice(-50);
 fs.writeFileSync('$LEARNINGS', JSON.stringify(d, null, 2));
 " 2>/dev/null
@@ -174,32 +177,53 @@ is_extended_hours() {
     return 1
 }
 
-# === GET PRICE (Alpha Vantage with Stooq fallback) ===
+# === GET PRICE AND VOLUME (Yahoo Finance via Node.js) ===
+get_stock_data() {
+    local symbol=$1
+    local retries=2
+    local delay=2
+    
+    # Use Yahoo Finance scraper (no rate limits!)
+    for i in $(seq 1 $retries); do
+        local result=$(node "$WORKSPACE/scripts/get-stock-price.js" "$symbol" 2>/dev/null)
+        
+        # Parse JSON result
+        local price=$(echo "$result" | node -e "const d=JSON.parse(require('fs').readFileSync(0,'utf8')); console.log(d[0]?.price || '')")
+        local volume=$(echo "$result" | node -e "const d=JSON.parse(require('fs').readFileSync(0,'utf8')); console.log(d[0]?.volume?.replace(/,/g,'') || '')")
+        
+        if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "" ]; then
+            # Volume might have commas, strip them
+            volume=$(echo "$volume" | tr -d ',')
+            echo "${price}:${volume:-0}"
+            return 0
+        fi
+        
+        log "Attempt $i: Failed to get price/volume for $symbol. Retrying..."
+        [ $i -lt $retries ] && sleep $delay
+    done
+    
+    log "ERROR: Could not fetch price/volume for $symbol after $retries attempts."
+    echo ""
+    return 1
+}
+
+# === GET PRICE (Yahoo Finance via Node.js) ===
 get_price() {
     local symbol=$1
     local retries=2
     local delay=2
-    local price=""
     
-    # Try Alpha Vantage first
-    if [ -n "$ALPHA_VANTAGE_KEY" ]; then
-        for i in $(seq 1 $retries); do
-            price=$(curl -s --max-time 10 "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${ALPHA_VANTAGE_KEY}" 2>/dev/null | jq -r '.["Global Quote"]["05. price"] // empty')
-            if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "" ]; then
-                echo "$price"
-                return 0
-            fi
-            [ $i -lt $retries ] && sleep $delay
-        done
-    fi
-    
-    # Fallback to Stooq
+    # Use Yahoo Finance scraper (no rate limits!)
     for i in $(seq 1 $retries); do
-        price=$(curl -s --max-time 10 "https://stooq.com/q/l/?s=${symbol}.us&f=sd2t2ohlcv&h&e=csv" 2>/dev/null | tail -1 | cut -d',' -f7)
-        if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "N/D" ]; then
+        local result=$(node "$WORKSPACE/scripts/get-stock-price.js" "$symbol" 2>/dev/null)
+        local price=$(echo "$result" | node -e "const d=JSON.parse(require('fs').readFileSync(0,'utf8')); console.log(d[0]?.price || '')")
+        
+        if [ -n "$price" ] && [ "$price" != "null" ] && [ "$price" != "" ]; then
             echo "$price"
             return 0
         fi
+        
+        log "Attempt $i: Failed to get price for $symbol. Retrying..."
         [ $i -lt $retries ] && sleep $delay
     done
     
@@ -263,33 +287,51 @@ record_alert() {
     fi
 }
 
-# === CHECK VOLATILITY ===
-check_volatility() {
+# === CHECK LIQUIDITY AND VOLATILITY ===
+check_liquidity_and_volatility() {
     local symbol=$1
     local current=$2
-    local last=$(get_last_price "$symbol")
+    local volume=$3
     
-    if [ -z "$last" ] || [ "$last" = "null" ]; then
-        log "No previous price for $symbol - skipping volatility check"
+    # Read thresholds from config.md, with defaults
+    local min_volume_threshold=$(get_config "min_volume") # Default 100k shares
+    local volatility_threshold=$(get_config "volatility_threshold") # Default 3%
+    
+    # Defaults if empty
+    [ -z "$min_volume_threshold" ] && min_volume_threshold=100000
+    [ -z "$volatility_threshold" ] && volatility_threshold=3
+    
+    # 1. Check Volume - skip if 0 (API rate limited)
+    if [ -z "$volume" ] || [ "$volume" = "0" ]; then
+        log "$symbol: No volume data (rate limited) - skipping volatility check."
         return 1
     fi
     
-    # Calculate % change
+    if [ $(calc_bool "$volume < $min_volume_threshold") -eq 1 ]; then
+        log "$symbol: Low volume ($volume) - below threshold ($min_volume_threshold). Skipping."
+        return 1
+    fi
+    
+    # 2. Get Last Price for volatility calculation
+    local last=$(get_last_price "$symbol")
+    if [ -z "$last" ] || [ "$last" = "null" ]; then
+        log "$symbol: No previous price - skipping volatility check."
+        return 1
+    fi
+    
+    # 3. Calculate % change
     local change=$(calc "(($current - $last) / $last) * 100")
     local abs_change=$(echo "$change" | tr -d '-')
     
-    log "$symbol change: $change% (last: \$$last, current: \$$current)"
+    log "$symbol: Volume OK ($volume). Change: $change% (last: \$$last, current: \$$current)"
     
-    # Get threshold from state.json
-    local threshold=$(jq -r '.volatility_threshold_percent // 3' "$STATE")
-    
-    # Volatile if >threshold% move
-    if [ $(calc_bool "$abs_change > $threshold") -eq 1 ]; then
-        log "VOLATILITY DETECTED: $symbol moved $change%"
-        return 0
+    # 4. Check Volatility
+    if [ $(calc_bool "$abs_change > $volatility_threshold") -eq 1 ]; then
+        log "LIQUID AND VOLATILE: $symbol moved $change%"
+        return 0 # Liquid and Volatile
     fi
     
-    return 1
+    return 1 # Liquid but not volatile
 }
 
 # === CHECK STOP LOSS ===
@@ -298,8 +340,9 @@ check_stop_loss() {
     local current=$2
     local avg_cost=$3
     
-    # Calculate 5% stop loss threshold
-    local stop_pct=5
+    # Calculate stop loss threshold from position config
+    local stop_pct=$(get_stop_loss_pct "$symbol")
+    [ -z "$stop_pct" ] && stop_pct=5
     local stop_threshold=$(calc "$avg_cost * (1 - $stop_pct/100)")
     
     if [ $(calc_bool "$current < $stop_threshold") -eq 1 ]; then
@@ -310,15 +353,15 @@ check_stop_loss() {
     return 1
 }
 
-# === CHECK TARGETS (dynamic from state.json) ===
+# === CHECK TARGETS (from positions/*.md) ===
 check_targets() {
     local symbol=$1
     local current=$2
     
     log "Checking $symbol targets: \$$current"
     
-    # Get buy targets
-    local buy_targets=$(jq -r ".targets.$symbol.buy[]" "$STATE" 2>/dev/null)
+    # Get buy targets from markdown
+    local buy_targets=$(get_buy_targets "$symbol")
     for target in $buy_targets; do
         if [ $(calc_bool "$current <= $target") -eq 1 ]; then
             if ! alert_already_sent "$symbol" "BUY" "$target"; then
@@ -330,8 +373,8 @@ check_targets() {
         fi
     done
     
-    # Get sell targets
-    local sell_targets=$(jq -r ".targets.$symbol.sell[]" "$STATE" 2>/dev/null)
+    # Get sell targets from markdown
+    local sell_targets=$(get_sell_targets "$symbol")
     for target in $sell_targets; do
         if [ $(calc_bool "$current >= $target") -eq 1 ]; then
             if ! alert_already_sent "$symbol" "SELL" "$target"; then
@@ -353,9 +396,11 @@ confer_volatile_opportunity() {
     
     log "CONFER: Volatile $symbol $direction - asking main agent"
     
-    # Calculate suggested shares (use min $5, max $10 for volatile)
-    local max_invest=$(jq -r '.position_sizing.volatile_max // 10' "$STATE")
-    local min_invest=$(jq -r '.position_sizing.volatile_min // 5' "$STATE")
+    # Calculate suggested shares (use min $5, max $10 for volatile) from config
+    local max_invest=$(get_config "volatile_max")
+    local min_invest=$(get_config "volatile_min")
+    [ -z "$max_invest" ] && max_invest=10
+    [ -z "$min_invest" ] && min_invest=5
     local shares=$(calc_int "$max_invest / $price")
     local est_value=$(calc "$shares * $price")
     if [ $(calc_bool "$est_value < $min_invest") -eq 1 ]; then
@@ -401,26 +446,8 @@ alert() {
 # === SEND TELEGRAM NOTIFICATION ===
 send_telegram() {
     local message="$1"
-    local token="$TG_BOT_TOKEN"
-    local chat_id="$TG_CHAT_ID"
-    
-    # Try to get from config if not set
-    if [ -z "$token" ]; then
-        token=$(jq -r '.telegram.bot_token // empty' "$WORKSPACE/config.json" 2>/dev/null)
-    fi
-    if [ -z "$chat_id" ]; then
-        chat_id=$(jq -r '.telegram.chat_id // empty' "$WORKSPACE/config.json" 2>/dev/null)
-    fi
-    
-    if [ -n "$token" ] && [ -n "$chat_id" ]; then
-        curl -s -X POST "https://api.telegram.org/bot${token}/sendMessage" \
-            -d "chat_id=${chat_id}" \
-            -d "text=${message}" \
-            -d "parse_mode=Markdown" > /dev/null 2>&1
-        log "TG sent: $message"
-    else
-        log "TG_NOTIF (no config): $message"
-    fi
+    send_telegram "$message"
+    send_telegram "$message"
 }
 
 # === ROUTE ALL ALERTS THROUGH MAIN AGENT ===
@@ -480,8 +507,8 @@ if [ -s "$PENDING" ] && [ "$(cat "$PENDING")" != "[]" ]; then
     fi
 fi
 
-# Read stocks from portfolio in state.json
-stocks=$(jq -r '.portfolio | keys | join(" ")' "$STATE")
+# Read stocks from positions/*.md
+stocks=$(get_positions)
 
 if [ -z "$stocks" ]; then
     log "No stocks in portfolio - exiting"
@@ -497,8 +524,8 @@ for stock in $stocks; do
     if [ -n "$price" ] && [ "$price" != "null" ]; then
         log "$stock price: \$$price"
         
-        # Get avg_cost for stop-loss
-        avg_cost=$(jq -r ".portfolio.$stock.avg_cost // 0" "$STATE")
+        # Get avg_cost from position file
+        avg_cost=$(get_position_avg_cost "$stock")
         
         # Check stop-loss first - queue for main agent review
         if [ "$avg_cost" != "0" ] && [ "$avg_cost" != "null" ]; then
@@ -510,25 +537,40 @@ for stock in $stocks; do
             fi
         fi
         
-        # Check volatility FIRST (before targets)
-        if check_volatility "$stock" "$price"; then
-            last=$(get_last_price "$stock")
-            change=$(calc "(($price - $last) / $last) * 100")
-            if [ $(calc_bool "$change > 0") -eq 1 ]; then
-                direction="UP"
-            else
-                direction="DOWN"
+        # Get current price and volume for liquidity/volatility check
+        stock_data=$(get_stock_data "$stock")
+        if [ -n "$stock_data" ]; then
+            current_price=$(echo "$stock_data" | cut -d':' -f1)
+            current_volume=$(echo "$stock_data" | cut -d':' -f2)
+            
+            log "$stock price: \$$current_price, Volume: $current_volume"
+
+            # Check liquidity & volatility FIRST (before targets)
+            if [ "$(jq -r '.volatile_check_enabled // true' "$STATE")" = "true" ] && check_liquidity_and_volatility "$stock" "$current_price" "$current_volume"; then
+                last=$(get_last_price "$stock")
+                change=$(calc "(($current_price - $last) / $last) * 100")
+                if [ $(calc_bool "$change > 0") -eq 1 ]; then
+                    direction="UP"
+                else
+                    direction="DOWN"
+                fi
+                confer_volatile_opportunity "$stock" "$current_price" "$direction" "$change"
             fi
-            confer_volatile_opportunity "$stock" "$price" "$direction" "$change"
+            
+            # Then check targets (auto-alert)
+            check_targets "$stock" "$current_price"
+
+            # Save price for next run
+            save_price "$stock" "$current_price"
+        else
+            log "ERROR: Could not fetch price/volume data for $stock. Using Stooq fallback price: \$$price"
+            current_price=$price # Use the price fetched by get_price if get_stock_data fails
+            # Check targets with fallback price
+            check_targets "$stock" "$current_price"
+            save_price "$stock" "$current_price"
         fi
-        
-        # Then check targets (auto-alert)
-        check_targets "$stock" "$price"
-        
-        # Save price for next run
-        save_price "$stock" "$price"
     else
-        log "ERROR: Could not fetch price for $stock"
+        log "ERROR: Could not fetch price for $stock (Stooq fallback failed)"
     fi
 done
 
@@ -554,31 +596,41 @@ if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
         if [ -n "$price" ] && [ "$price" != "null" ]; then
             log "$symbol price: \$$price"
             
-            # Check volatility - for watchlist, only confer on UP moves (we want to buy)
-            if check_volatility "$symbol" "$price"; then
-                last=$(get_last_price "$symbol")
-                change=$(calc "(($price - $last) / $last) * 100")
-                if [ $(calc_bool "$change > 0") -eq 1 ]; then
-                    direction="UP"
-                    confer_volatile_opportunity "$symbol" "$price" "$direction" "$change"
-                    log "Volatile opportunity queued: $symbol $direction $change%"
-                else
-                    log "Skipping DOWN move for watchlist: $symbol $change%"
+            # Fetch price and volume, then check liquidity & volatility
+            stock_data=$(get_stock_data "$symbol")
+            if [ -n "$stock_data" ]; then
+                price=$(echo "$stock_data" | cut -d':' -f1)
+                volume=$(echo "$stock_data" | cut -d':' -f2)
+                log "$symbol price: \$$price, Volume: $volume"
+                
+                # Check liquidity & volatility - for watchlist, only confer on UP moves (we want to buy)
+                if [ "$(jq -r '.volatile_check_enabled // true' "$STATE")" = "true" ] && check_liquidity_and_volatility "$symbol" "$price" "$volume"; then
+                    last=$(get_last_price "$symbol")
+                    change=$(calc "(($price - $last) / $last) * 100")
+                    if [ $(calc_bool "$change > 0") -eq 1 ]; then
+                        direction="UP"
+                        confer_volatile_opportunity "$symbol" "$price" "$direction" "$change"
+                        log "Volatile opportunity queued: $symbol $direction $change%"
+                    else
+                        log "Skipping DOWN move for watchlist: $symbol $change%"
+                    fi
                 fi
+                
+                # Save price for next run
+                save_price "$symbol" "$price"
+            else
+                log "ERROR: Could not fetch price/volume for $symbol"
             fi
-            
-            # Save price for next run
-            save_price "$symbol" "$price"
         else
-            log "ERROR: Could not fetch price for $symbol"
+            log "ERROR: Could not fetch price for $symbol (Stooq fallback failed)"
+
+            # If Stooq fails, still try to save the price from get_price if it was fetched
+            if [ -n "$price" ] && [ "$price" != "null" ]; then
+                 save_price "$symbol" "$price"
+            fi
         fi
     done
-else
-    log "No volatile watchlist configured"
 fi
-
-# Update state.json with last check time
-update_state
 
 log "=== Scan Complete ==="
 exit 0

@@ -3,22 +3,21 @@
 Hub for research, references, and guides.
 
 ## Research
-- [[research.md|Research]] - Main research hub
-- [[weekly-research.md|Weekly Research]]
-- [[seo-research.md|SEO Research]]
-- [[long-chat-best-prac.md|Long Chat Best Practices]]
-- [[image-generation-costs.md|Image Generation Costs]]
-- [[model-performance.md|Model Performance]]
+- [[kb/stocks/research/research.md|Research]] - Main research hub
+- [[kb/stocks/research/weekly-research.md|Weekly Research]]
+- [[kb/stocks/research/volatile-stocks.md|Volatile Stocks]]
+- [[image-generation-costs.md|Image Generation Costs]] - (stale?)
+- [[model-performance.md|Model Performance]] - (stale?)
 
 ## Guides
-- [[Github.md|GitHub]] - Version control
-- [[references/obsidian-guide.md|Obsidian Guide]]
-- [[references/vyse-obsidian-workflow.md|Vyse Workflow]]
+- [[kb/system/github|GitHub]] - Version control
+- [[kb/system/control-ui|Control UI]] - Primary comms
+- [[kb/system/subagents|Subagents]] - Agent config
 
-## Templates
-- [[obsidian-prototype/daily-note-template.md|Daily Note Template]]
-- [[obsidian-prototype/decision-log-template.md|Decision Log Template]]
+## Personal
+- [[kb/personal/dashboard|Dashboard]] - My workspace
+- [[kb/personal/projects|Projects]] - Active projects
 
 ---
 
-*Links: [[INDEX|← Back]]*
+*Links: [[INDEX|← Back]]

@@ -20,11 +20,13 @@ echo "Context usage: ${usage}%"
 
 # Compare as integers (usage is already a whole number).
 if [ "$usage" -gt 60 ]; then
-  echo "Context usage high ($usage%). Signaling need for compaction."
+  echo "⚠️ Context high ($usage%) - triggered pre-compact save"
   # CRITICAL: Save to memory BEFORE compaction
-  /usr/bin/bash /root/.openclaw/workspace/scripts/pre-compact-save.sh 2>/dev/null || true
-  exit 1
+  /usr/bin/bash /home/openclaw/.openclaw/workspace/scripts/pre-compact-save.sh 2>/dev/null || true
+  echo "Done."
+  # Exit 0 so cron doesn't treat as failure - the alert is in the output
+  exit 0
 else
-  echo "Context OK ($usage%)."
+  echo "✅ Context OK ($usage%)"
   exit 0
 fi

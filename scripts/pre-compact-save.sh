@@ -7,22 +7,22 @@ TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
 TODAY=$(date -u +"%Y-%m-%d")
 
 # 1. Update active.md with current state (always keep this fresh)
-echo "# Active Session
+# Get current task from memory if available, otherwise use TODO
+CURRENT_TASK=$(tail -50 $WORKSPACE/memory/2026-04-22.md 2>/dev/null | grep -A3 "## " | head -8 || cat $WORKSPACE/TODO.md 2>/dev/null | grep -A5 "## Current Focus" | head -8)
+
+cat > "$WORKSPACE/active.md" << EOF
+# Active Session
 
 *Current task tracking.*
 
 **Last checkpoint:** $TIMESTAMP
 
 ## Current Task
-$(cat $WORKSPACE/TODO.md 2>/dev/null | grep -A5 "## Current Focus" | head -8)
-
-## Quick Status
-- Portfolio: Check portfolio.md
-- Crons: Check cron status
-- Memory: See memory/$TODAY.md
+$CURRENT_TASK
 
 ---
-*Auto-checkpoint*" > "$WORKSPACE/active.md"
+*Auto-checkpoint*
+EOF
 
 # 2. Update resume-point.md (critical for session recovery)
 echo "# Resume Point
@@ -33,7 +33,7 @@ echo "# Resume Point
 $(tail -20 $WORKSPACE/HANDOFF.md 2>/dev/null | head -15)
 
 ## Key Files
-- portfolio.md - holdings & targets
+- kb/stocks/portfolio.md - holdings & targets
 - AGENTS.md - trading rules
 - TODO.md - task list
 

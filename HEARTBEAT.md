@@ -1,8 +1,12 @@
 [[kb/system/hub-system|Home]]
 
+# Trading Session State
 
-# HEARTBEAT.md
+## Current (Apr 22, 2026)
+- **GGB:** 6 shares @ 4.34 (at first sell target 4.30)
+- **Cash:** ~1
+- **Status:** Waiting on GGB sell at 4.30/4.40/4.50
+- **Last Updated:** 2026-04-23 01:49 UTC
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
-
-# Add tasks below when you want the agent to check something periodically.
+---
+# HEARTBEAT.md (original)

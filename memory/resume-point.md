@@ -1,28 +1,26 @@
 # Resume Point
 
-[[hub-archive|← Back to Memory]]
-
-**Checkpoint:** 2026-04-21 01:40 UTC
+**Checkpoint:** 2026-04-23 01:57 UTC
 
 ## What's Happening
+---
 
-**GGB Targets:**
-- **Buy:** $4.10, $3.90
-- **Sell:** $4.45, $4.60, $4.75
-- **Strategy:** Scale out 50% at $4.45, 50% at $4.60
+**Last Updated:** 2026-04-23 01:53 UTC
 
-**Status:**
-- Monitoring: GGB only (AMC dropped)
-- Subagent: Built & active (scripts/stock-trading-subagent.sh)
-- Volatile system: Active, conferral enabled
-- **⚠️ Session reset Apr 21 00:12 UTC** (context limit)
+**Status:** Workspace reorganization complete
 
-**Key Files:**
-- `AGENTS.md` - Trading rules & system info
-- `kb/stocks/agent/state.json` - Live portfolio & targets
+**Just Done:**
+- Reorganized workspace: 34 → 19 root files
+- Moved docs to kb/: CONTROL-UI, SUBAGENTS, DASHBOARD
+- Fixed links: knowledge.md, projects.md
+- Updated ORPHANS.md with new structure
+- PENDING.md has "Just Finished" section for recall
+
+**Stock:**
+- Positions in kb/stocks/positions/ (subagent owns)
 
 ## Key Files
-- portfolio.md - holdings & targets
+- kb/stocks/portfolio.md - holdings & targets
 - AGENTS.md - trading rules
 - TODO.md - task list
 
@@ -32,4 +30,4 @@
 3. Check PENDING.md for queued actions
 
 ---
-*Updated: 2026-04-21 01:40 UTC*
+*Updated: 2026-04-23 01:57 UTC*

@@ -15,7 +15,7 @@ Automated price monitoring for David's portfolio with **volatile opportunity det
 ## Files
 
 - `config.yaml` - Settings (check interval, alert channel)
-- `state.json` - Portfolio positions, price targets, alert history
+- `positions/*.md` - Portfolio positions and price targets (markdown format)
 - `pending-opportunities.json` - Volatile opportunities waiting for review
 - `last-prices.txt` - Price history for volatility tracking
 - `trading.log` - Execution log
@@ -50,17 +50,25 @@ Automated price monitoring for David's portfolio with **volatile opportunity det
 
 ## Adding Stocks
 
-Edit `state.json` to add new stocks:
+Create a new `positions/NEWTICKER.md` file:
 
-```json
-"NEWTICKER": {
-  "shares": 10,
-  "avg_cost": 5.00,
-  "notes": "..."
-}
+```markdown
+# NEWTICKER - Company Name
+
+*Position tracking for NEWTICKER*
+
+## Current Position
+- **Shares:** 10
+- **Avg Cost:** $5.00
+
+## Targets
+- **Buy:** $4.50, $4.00
+- **Sell:** $5.50, $6.00
+- **Stop-loss:** 5%
+
+## Notes
+Your notes here...
 ```
-
-Then add targets in the `targets` section.
 
 ---
 

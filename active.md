@@ -2,19 +2,17 @@
 
 *Current task tracking.*
 
-**Last checkpoint:** 2026-04-21 01:40 UTC
+**Last checkpoint:** 2026-04-23 01:53 UTC
 
 ## Current Task
-## Current Focus (Apr 20)
-- [x] Graph reorganization - INDEX + ORPHANS connected
-- [x] Obsidian vault setup
-- [ ] Update stock prices (Apr 20)
 
----
+### Workspace Reorganization (Apr 23, 2026 01:45-01:53 UTC)
+- Moved docs from root to kb/ (34 → 19 files)
+- Fixed PENDING.md with "Just Finished" section for recall
+- Updated HANDOFF.md with recent work
+- Verified: Subagent reads positions from kb/stocks/positions/
 
-## Quick Status
-- Portfolio: [[portfolio.md]]
-- Memory: [[memory/2026-04-21]]
+### Status: ✅ Complete
 
 ---
 *Auto-checkpoint*

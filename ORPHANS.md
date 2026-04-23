@@ -2,59 +2,53 @@
 
 # File Index
 
-*All files linked to graph. Last audit: 2026-04-20 22:16 UTC*
+*All files linked to graph. Last audit: 2026-04-23 01:46 UTC*
 
-## ⚙️ System (Priority) → [[INDEX.md|Main Index]]
+## ⚙️ System → [[INDEX.md|Main Index]]
 
-| File | Status |
-|------|--------|
-| [[kb/system/BOOTSTRAP.md|Bootstrap]] | ✅ Wake protocol |
-| [[kb/system/FIXES.md|Fixes]] | ✅ Known issues |
-| [[kb/system/INTERRUPT_RECOVERY.md|Recovery]] | ✅ Recovery |
+| File | Purpose |
+|------|---------|
+| [[kb/system/hub-system|System Hub]] | Main entry point |
+| [[kb/system/FIXES.md|Fixes]] | Known issues |
+| [[kb/system/summary.md|Summary]] | Lessons learned |
+| [[kb/system/brain|Brain]] | Quick access |
+| [[kb/system/quick-recall|Quick Recall]] | Fast recovery |
+| [[kb/reference/|Reference]] | Templates & guides |
 
 ## 🦜 Personality → [[INDEX.md|Main Index]]
 
-| File | Status |
-|------|--------|
-| [[SOUL.md|Vyse Soul]] | ✅ Core principles |
-| [[IDENTITY.md|Identity]] | ✅ Name, vibe |
-| [[USER.md|User]] | ✅ Your prefs |
-| [[AGENTS.md|Agents]] | ✅ Trading protocol |
+| File | Purpose |
+|------|---------|
+| [[SOUL.md|Vyse Soul]] | Core principles |
+| [[IDENTITY.md|Identity]] | Name, vibe |
+| [[USER.md|User]] | Your prefs |
+| [[AGENTS.md|Agents]] | Trading protocol |
 
-## 📅 Memory / Daily Logs → [[memory/2026-04-20|Apr 20]]
+## 📅 Memory → [[memory/2026-04-23|Apr 23]]
 
 | File | Purpose |
 |------|---------|
-| [[memory/2026-04-21|Apr 21]] | Today |
-| [[memory/2026-04-20|Apr 20]] | Yesterday |
-| [[memory/2026-04-17.md|Apr 17]] | This week |
-| [[memory/2026-04-16.md|Apr 16]] | Key trading day |
-| [[memory/decisions|Decisions]] | Decision log |
+| [[memory/2026-04-23|Today]] | Current session |
+| [[memory/2026-04-22|Apr 22]] | Yesterday |
+| [[memory/2026-04-21|Apr 21]] | Day before |
 | [[memory/active|Active]] | Current task |
 
-### Archive (Timestamped)
-- [[memory/2026-04-16-timestamped/2026-04-16-0804.md|08:04]] → Apr 16
-- [[memory/2026-04-16-timestamped/2026-04-16-0815.md|08:15]] → Apr 16
-- [[memory/2026-04-16-timestamped/2026-04-16-0909.md|09:09]] → Apr 16
-
-## 📈 Trading → [[INDEX.md|Index]]
+## 📈 Trading → [[kb/stocks/hub-portfolio|Portfolio]]
 
 | File | Purpose |
 |------|---------|
-| [[kb/stocks/trade-log.md|Trade Log]] | All trades |
-| [[kb/stocks/rules.md|Rules]] | Strategy |
-| [[kb/stocks/research/volatile-stocks.md|Volatile Stocks]] | Picks |
+| [[kb/stocks/hub-portfolio|Portfolio Hub]] | Main trading hub |
+| [[kb/stocks/positions/|Positions]] | Stock positions |
+| [[kb/stocks/agent/|Subagent]] | Auto-trading |
 
-## 🧪 Tests
-
-- [[Test folder for obsidian/Testing Github|Obsidian Test]]
-
-## 🚧 Legacy / Cleanup
-
-These files are deprecated or need review:
-- [[loop-progress.md|Loop Progress]] → may be stale
-- [[memory/2026-04-20-auto-wake|Auto-wake]] → system file
+## 📁 Workspace Structure
+- **Root (23 files):** Bootstrap + workflow files only
+- **kb/system/:** System docs, fixes, brain
+- **kb/stocks/:** Trading data + subagent
+- **kb/personal/:** David's projects
+- **kb/reference/:** Templates
+- **memory/:** Daily logs
+- **scripts/:** Automation
 
 ---
-*Graph fully connected. No true orphans remain.*
 *[[INDEX.md|← Back to Index]]

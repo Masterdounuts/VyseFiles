@@ -3,7 +3,7 @@
 # TODO.md - Persistent Task List
 
 *Read on every wake-up FIRST. This file survives compactions.*
-*Last updated: 2026-04-20 22:19 UTC*
+*Last updated: 2026-04-23 01:30 UTC*
 
 ---
 
@@ -11,29 +11,29 @@
 - [ ] Verify every memory write (show file+line)
 - [ ] Persist compaction summaries to daily memory file
 
-### Stocks (Outdated - check portfolio.md)
-- GGB, AMC, TSLA positions tracked in portfolio.md
+### API Credits
+- Alpha Vantage: OK (key: VSJ5QVVM11QT0LHP)
 
-### Infrastructure
-- ✅ Obsidian workflow integrated (Apr 20)
-- ✅ All cron jobs healthy
-- ✅ Compact working (reserveTokensFloor = 25000)
+### Foundational Systems
+- ✅ Obsidian workflow integrated
+- ✅ Compact working
+- ✅ Identity files separated from trading
+- ✅ state.json deleted (now using positions/*.md)
+- ✅ Stock data moved to subagent (kb/stocks/agent/)
 
 ---
 
-## Current Focus (Apr 20)
-- [x] Graph reorganization - INDEX + ORPHANS connected
-- [x] Obsidian vault setup
-- [ ] Update stock prices (Apr 20)
+## Current Focus (Apr 23)
+- [x] Separate trading data from core identity files
+- [x] Delete state.json, use positions/*.md
+- [x] Clean stock data from workflow files (HANDOFF.md, TODO.md)
+- [ ] Verify subagent is updating positions correctly
 
 ---
 
 ## 📋 TEMPLATE (Copy when updating)
 
 ```
-### Stocks
-- TICKER: X shares @ $Y = $Z
-
 ### API Credits
 - Status: OK / LOW / CRITICAL
 
@@ -44,5 +44,4 @@
 ---
 
 *Wake-up protocol: Read TODO.md → Check critical status → Resume tasks*
-*Entries under 10 words. Update before deep work or compaction.*
 *[[INDEX.md|← Back]]

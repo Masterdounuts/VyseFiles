@@ -5,3 +5,8 @@
   {"symbol":"GGB","type":"SELL","target":"4.45","price":"4.28","date":"2026-04-21"},
   {"symbol":"GGB","type":"SELL","target":"4.60","price":"4.28","date":"2026-04-21"},
   {"symbol":"GGB","type":"SELL","target":"4.75","price":"4.28","date":"2026-04-21"},
+  {"symbol":"BBAI","type":"BUY","target":"null","price":"empty","date":"2026-04-22"},
+  {"symbol":"BBAI","type":"SELL","target":"null","price":"empty","date":"2026-04-22"},
+  {"symbol":"GGB","type":"BUY","target":"4.1","price":"empty","date":"2026-04-22"},
+  {"symbol":"GGB","type":"BUY","target":"3.9","price":"empty","date":"2026-04-22"},
+  {"symbol":"LCID","type":"BUY","target":"6.5","price":"empty","date":"2026-04-22"},

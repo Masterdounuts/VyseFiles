@@ -73,6 +73,13 @@
   },
   "lessons": [
     {
+      "timestamp": "2026-04-22T08:02:00Z",
+      "symbol": "GGB",
+      "type": "PRICE_ALERT",
+      "price": 4.30,
+      "note": "Price approaching 52W high (4.66) and within target range. Upcoming Q1 earnings Apr 27 may cause volatility. Consider tightening sell target if volatility rises."
+    },
+    {
       "timestamp": "2026-04-21T14:48:30Z",
       "symbol": "GGB",
       "type": "TRADE_PNL",
