@@ -1,23 +1,23 @@
 # Resume Point
 
-**Checkpoint:** 2026-04-23 01:53 UTC
+**Checkpoint:** 2026-04-23 01:57 UTC
 
 ## What's Happening
-# Session Handoff
-*Auto-generated. Loaded on session start.*
-
 ---
 
-**Last Updated:** 2026-04-23 01:49 UTC
+**Last Updated:** 2026-04-23 01:53 UTC
 
-**Status:** Workflow audit complete - lean handoff implemented
+**Status:** Workspace reorganization complete
 
-**Done:**
-- Fixed heartbeat path bug
-- Refreshed .vyse-status.md
-- Cleaned stock data from workflow files (subagent owns it now)
+**Just Done:**
+- Reorganized workspace: 34 → 19 root files
+- Moved docs to kb/: CONTROL-UI, SUBAGENTS, DASHBOARD
+- Fixed links: knowledge.md, projects.md
+- Updated ORPHANS.md with new structure
+- PENDING.md has "Just Finished" section for recall
 
-**Note:** Stock positions/trading now managed by subagent → kb/stocks/agent/
+**Stock:**
+- Positions in kb/stocks/positions/ (subagent owns)
 
 ## Key Files
 - kb/stocks/portfolio.md - holdings & targets
@@ -30,4 +30,4 @@
 3. Check PENDING.md for queued actions
 
 ---
-*Updated: 2026-04-23 01:53 UTC*
+*Updated: 2026-04-23 01:57 UTC*
