@@ -2,17 +2,15 @@
 
 Reusable prompts, formats, and structures.
 
-## Prompts
-- [[kb/reference/handoff-prompt.md|Handoff Prompt]] – Session continuity
-- [[kb/reference/recovery-prompt.md|Recovery Prompt]] – Session rescue
+## Sub-Hubs
+- [[kb/reference/prompts/prompts|Prompts]] - Session management
+- [[kb/reference/guides/guides|Guides]] - How-tos & docs
+- [[kb/reference/legal/legal|Legal]] - Immigration templates
 
-## Formats
-- Standard decision logging format
-- Trade execution screenshot requirements
-- Research document structure
-
-## Coming Soon
-- More templates as we develop them
+## Quick Formats
+- [[kb/reference/alert-templates.md|Alerts]] - Trading alerts
+- [[kb/reference/daily-note.md|Daily Note]] - Daily journal
+- [[kb/reference/quick-prompts.md|Quick Prompts]] - Fast access
 
 ---
-*Templates Hub — Reusable formats*
+*Links: [[kb/system/system|← System]]*

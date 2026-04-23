@@ -3,7 +3,7 @@
 Hub for vision tracking, dream journal, and goal setting.
 
 ## Core Files
-- [[content/dreams/dream-journal-archive.md|Vision Archive]] - Dream journal & goals
+- [[kb/dreams/dream-journal-archive.md|Vision Archive]] - Dream journal & goals
 
 ## Vision & Goals
 - Help David build $20K/month passive income
@@ -15,4 +15,4 @@ Hub for vision tracking, dream journal, and goal setting.
 - [[kb/personal/projects|Projects]] - Active projects
 
 *Links: [[kb/system/system|← System Hub]]*
-*Folder: [[content/dreams|content/dreams]]*
+*Folder: [[kb/dreams|kb/dreams]]*

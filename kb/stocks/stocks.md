@@ -28,15 +28,9 @@ Hub for trading and investment notes.
 - [[kb/stocks/volatility|Volatility]] - 3% move detector
 
 ## Research
-- [[kb/stocks/research/morning-research|Morning Research]] - Daily picks
-- [[kb/stocks/research/volatile-stocks|Volatile Stocks]] - Day trade candidates
-- [[kb/stocks/research/weekly-research|Weekly Research]] - Week-long outlook
-- [[kb/stocks/research/day-trade-research|Day Trade Research]] - Quick setups
+- [[kb/stocks/research/daily|Daily Research]] - Morning, volatile, day-trade
+- [[kb/stocks/research/weekly|Weekly Research]] - Week-long outlook
+- [[kb/stocks/research/archive|Archive]] - Past research
 
 ---
-
-## Related
-- [[kb/system/system|System]] - Bootstrap & config
-- [[memory/archive|Archive]] - Dated memories
-
-*Links: [[kb/system/system|← System Hub]]*
+*Links: [[kb/system/system|← System]]*

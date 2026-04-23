@@ -74,3 +74,8 @@ bin/
 memory/agent-ready.md
 memory/current_task_state.md
 memory/resume-point.md
+
+# Stock agent runtime (local only)
+kb/stocks/agent/*.json
+kb/stocks/agent/*.log
+kb/stocks/agent/*.txt

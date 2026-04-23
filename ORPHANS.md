@@ -9,10 +9,10 @@
 | File | Purpose |
 |------|---------|
 | [[kb/system/system|System Hub]] | Main entry point |
-| [[kb/system/FIXES.md|Fixes]] | Known issues |
-| [[kb/system/summary.md|Summary]] | Lessons learned |
-| [[kb/system/brain|Brain]] | Quick access |
-| [[kb/system/quick-recall|Quick Recall]] | Fast recovery |
+| [[kb/system/bootstrap/FIXES.md|Fixes]] | Known issues |
+| [[kb/system/workflow/summary.md|Summary]] | Lessons learned |
+| [[kb/system/workflow/brain|Brain]] | Quick access |
+| [[kb/system/workflow/quick-recall|Quick Recall]] | Fast recovery |
 | [[kb/reference/|Reference]] | Templates & guides |
 
 ## 🦜 Personality → [[INDEX.md|Main Index]]
