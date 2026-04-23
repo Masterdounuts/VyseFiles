@@ -19,6 +19,8 @@
 
 Reference: skill:trading, skill:alerts, skill:time
 
+⚠️ **Need help?** Flag issues in `kb/system/issues.md` so Vyse sees it
+
 ---
 
 ## Self-Review & Learning
