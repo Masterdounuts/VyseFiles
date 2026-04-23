@@ -2,19 +2,15 @@
 
 # VyseFiles Index
 
-*Start here. Navigate through hubs to find specific files.*
+*Start here. Navigate through the hub system to find specific files.*
 
 ---
 
-## 📂 Hubs
+## 📂 Main Hub
 
 | Hub | Description |
 |-----|-------------|
-| [[kb/system/hub-system|System]] | Bootstrap, recovery, fixes, automation |
-| [[kb/stocks/hub-portfolio|Portfolio]] | Trading, research, positions |
-| [[kb/personal/projects|Projects]] | Game dev & work-in-progress |
-| [[kb/reference/templates|Templates]] | Reusable prompts & formats |
-| [[memory/hub-archive|Archive]] | Dated memories |
+| [[kb/system/hub-system|System]] | All sub-hubs: Dreams, Stocks, Personal, Reference, Archive |
 
 ---
 
