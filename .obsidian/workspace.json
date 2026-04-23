@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "agent.md",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -202,6 +203,20 @@
   },
   "active": "bf681b229964e945",
   "lastOpenFiles": [
+    "kb/stocks/agent.md",
+    "memory/decisions-hub.md",
+    "memory/2026.md",
+    "kb/system/workflow/workflow.md",
+    "kb/system/workflow/summary.md",
+    "kb/system/workflow/SUBAGENTS.md",
+    "kb/system/workflow/quick-recall.md",
+    "kb/system/workflow/CONTROL-UI.md",
+    "kb/system/workflow/brain.md",
+    "kb/system/workflow",
+    "kb/system/bootstrap/INTERRUPT_RECOVERY.md",
+    "kb/system/bootstrap/FIXES.md",
+    "kb/system/bootstrap/bootstrap.md",
+    "kb/system/bootstrap",
     "kb/reference/quick-prompts.md",
     "kb/reference/long-chat-best-practices.md",
     "kb/reference/handoff-prompt.md",
@@ -216,27 +231,13 @@
     "kb/system/dreams.md",
     "kb/stocks/stocks.md",
     "kb/system/hub-dreams.md",
-    "kb/reference/vyse-obsidian-workflow.md",
-    "kb/reference/obsidian-guide.md",
-    "memory/content/seo-research.md",
     "memory/content",
-    "kb/stocks/positions/SOFI.md",
-    "kb/stocks/positions/RIOT.md",
-    "kb/stocks/positions/MARA.md",
-    "wiki/main/sources/obsidian-guide.md",
-    "wiki/main/sources/vyse-obsidian-workflow.md",
-    "wiki/main/sources/ai-trading-partner-guide.md",
     "wiki/main/sources",
-    "wiki/main/entities/ron.md",
-    "wiki/main/entities/david-vyse-mission.md",
     "wiki/main/entities",
-    "wiki/main/concepts/trading-alert-priority.md",
     "scripts/stock-data-reader.sh",
     "scripts/quartermaster-performance.sh",
     "logs/guard_context_output.txt",
     "logs",
-    "kb/system/hub-audit-missing.txt",
-    "kb/stocks/trades.json",
-    "memory/archive/legacy"
+    "kb/system/hub-audit-missing.txt"
   ]
 }
