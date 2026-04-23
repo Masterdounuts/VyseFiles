@@ -2,21 +2,21 @@
 
 # Trading Rules Summary
 
-> ⚠️ **DEPRECATED** - See kb/stocks/agent/state.json for current targets
+> ⚠️ **DEPRECATED** - See `kb/stocks/positions/*.md` for current targets
 
 ## Historical (outdated)
 - GGB old targets: Buy $4.15/$4.10/$4.00, Sell $4.30/$4.40/$4.50
 - TSLA: Unlocked Apr 16 - position sold/closed
 
 ## Current Targets
-See `kb/stocks/agent/state.json` for live GGB targets:
+See `kb/stocks/positions/GGB.md` for live GGB targets:
 - Buy: $4.10, $3.90
 - Sell: $4.45, $4.60, $4.75
 
 ## Execution Workflow
 1. **I recommend** → Send stock + position size + entry/sell/stop targets to you
 2. **You execute** → Place order, send screenshot of the confirmation
-3. **I update** → Log to trades.json, state.json, memory
+3. **I update** → Log to trades.json, positions/*.md, memory
 
 ## General Rules
 - Stop‑loss: max 5% loss

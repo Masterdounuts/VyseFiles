@@ -41,18 +41,8 @@ is_trading_window() {
 # === SEND TELEGRAM ===
 send_tg() {
     local msg="$1"
-    local token=$(jq -r '.telegram.bot_token // empty' "$WORKSPACE/config.json" 2>/dev/null)
-    local chat_id=$(jq -r '.telegram.chat_id // empty' "$WORKSPACE/config.json" 2>/dev/null)
-    
-    if [ -n "$token" ] && [ -n "$chat_id" ]; then
-        curl -s -X POST "https://api.telegram.org/bot${token}/sendMessage" \
-            -d "chat_id=${chat_id}" \
-            -d "text=${msg}" \
-            -d "parse_mode=Markdown" > /dev/null 2>&1
-        log "TG alert sent"
-    else
-        log "TG not configured - would alert: $msg"
-    fi
+    send_tg "$msg"
+    log "TG alert suppressed (disabled) for message: $msg"
 }
 
 log "=== Checking Pending Opportunities ==="

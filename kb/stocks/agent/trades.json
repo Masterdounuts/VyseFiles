@@ -1,6 +1,5 @@
 {
   "last_updated": "2026-04-21T14:52:00Z",
-  
   "open_positions": {},
   "trades": [
     {
@@ -22,20 +21,14 @@
       "time": "12:37 ET",
       "order_type": "MARKET",
       "total": 10.00
-    }
-  ],
+    },
     {
-      "timestamp": "2026-04-21T19:33:00Z",
       "symbol": "LCID",
       "action": "BUY",
       "shares": 1.4,
       "price": 7.14,
-      "reason": "Near all-time low ($2.96-$12 range), fresh $1B B+ capital raise (Uber + PIF), new CEO, best risk/reward vs QS/MARA",
-      "entry_target": 7.00,
-      "sell_target": 7.60,
-      "stop_loss": 6.85,
-      "risk_pct": 3,
-      "upside_pct": 6.4
+      "date": "2026-04-21",
+      "reason": "Near all-time low, fresh $1B B+ capital raise, new CEO"
     }
   ]
 }

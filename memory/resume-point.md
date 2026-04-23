@@ -1,28 +1,26 @@
 # Resume Point
 
-[[hub-archive|← Back to Memory]]
-
-**Checkpoint:** 2026-04-21 01:40 UTC
+**Checkpoint:** 2026-04-23 01:53 UTC
 
 ## What's Happening
+# Session Handoff
+*Auto-generated. Loaded on session start.*
 
-**GGB Targets:**
-- **Buy:** $4.10, $3.90
-- **Sell:** $4.45, $4.60, $4.75
-- **Strategy:** Scale out 50% at $4.45, 50% at $4.60
+---
 
-**Status:**
-- Monitoring: GGB only (AMC dropped)
-- Subagent: Built & active (scripts/stock-trading-subagent.sh)
-- Volatile system: Active, conferral enabled
-- **⚠️ Session reset Apr 21 00:12 UTC** (context limit)
+**Last Updated:** 2026-04-23 01:49 UTC
 
-**Key Files:**
-- `AGENTS.md` - Trading rules & system info
-- `kb/stocks/agent/state.json` - Live portfolio & targets
+**Status:** Workflow audit complete - lean handoff implemented
+
+**Done:**
+- Fixed heartbeat path bug
+- Refreshed .vyse-status.md
+- Cleaned stock data from workflow files (subagent owns it now)
+
+**Note:** Stock positions/trading now managed by subagent → kb/stocks/agent/
 
 ## Key Files
-- portfolio.md - holdings & targets
+- kb/stocks/portfolio.md - holdings & targets
 - AGENTS.md - trading rules
 - TODO.md - task list
 
@@ -32,4 +30,4 @@
 3. Check PENDING.md for queued actions
 
 ---
-*Updated: 2026-04-21 01:40 UTC*
+*Updated: 2026-04-23 01:53 UTC*

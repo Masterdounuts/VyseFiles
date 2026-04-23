@@ -9,7 +9,7 @@
 
 - Clean code, well-structured
 - Stop-loss protection (5%)
-- Dynamic targets from state.json
+- Dynamic targets from positions/*.md
 - Volatility detection (>3% threshold)
 - Telegram integration for alerts
 - Extended hours detection
@@ -50,7 +50,7 @@ Check 50-day MA before suggesting buys — only buy above MA.
 |---------|--------|-------|
 | Price monitoring | ✅ Done | Stooq API |
 | Stop-loss | ✅ Done | 5% threshold, Telegram alert |
-| Buy/Sell targets | ✅ Done | Dynamic from state.json |
+| Buy/Sell targets | ✅ Done | Dynamic from positions/*.md |
 | Volatility detection | ✅ Done | >3% triggers conferral |
 | Trailing stop | 🔲 Not done | Needs implementation |
 | Take-profit tiers | 🔲 Not done | Needs implementation |

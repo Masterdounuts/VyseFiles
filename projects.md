@@ -2,19 +2,18 @@
 
 Hub for active projects and ongoing work.
 
-## Active Projects
-- [[obsidian-prototype/MIGRATION.md|Migration]] - Vault setup
-- [[Test folder for obsidian/Testing Github.md|Testing]] - Obsidian-Git test
+## My Workspace
+- [[kb/personal/dashboard|Dashboard]] - Main workspace view
+- [[kb/personal/projects|Game Dev]] - David's projects (Skies of Arcadia)
 
 ## Workflow Systems
-- [[content/guides/checkpoint-prompt.md|Checkpoint]] - Context rescue
-- [[content/guides/handoff-prompt.md|Handoff]] - Session continuity
-- [[CONTROL-UI.md|Control UI]] - Primary comms
+- [[kb/system/hub-system|System Hub]] - All system docs
+- [[kb/system/subagents|Subagents]] - Agent configuration
+- [[HANDOFF.md|Handoff]] - Session continuity
 
 ## Legacy / Cleanup
-- [[loop-lessons.md|Loop Lessons]] - Old iteration system
-- [[ORPHANS.md|Orphans]] - Unlinked files
+- [[ORPHANS.md|File Audit]] - Unlinked files audit
 
 ---
 
-*Links: [[INDEX|← Back]]*
+*Links: [[INDEX|← Back]]

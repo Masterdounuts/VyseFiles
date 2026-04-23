@@ -6,11 +6,11 @@
 
 ```
 stock-agent/
-├── config.yaml        # Settings
-├── state.json         # Portfolio & targets
-├── research.log       # AI research history
-├── performance.log    # Trade outcomes
-└── learnings.json     # Pattern database
+├── config.yaml              # Settings
+├── positions/*.md           # Portfolio & targets (markdown)
+├── research.log             # AI research history
+├── performance.log          # Trade outcomes
+└── learnings.json           # Pattern database
 ```
 
 ## Core Capabilities
