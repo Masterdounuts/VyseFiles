@@ -10,6 +10,21 @@ Pattern for building autonomous agents that run on schedule and report to Vyse.
 
 ---
 
+## Spawn Checklist
+
+*When adding a new subagent, do these in order:*
+
+| ✅ | Step | Where |
+|---|------|-------|
+| 1 | Create agent.md | `kb/[domain]/agent.md` |
+| 2 | Define skills (always/on-demand/restricted) | agent.md + update skills/index.md |
+| 3 | Add skills to workspace | Create `skills/[name]/SKILL.md` |
+| 4 | Set up cron if scheduled | Add job to cron (via gateway) |
+| 5 | Add to AGENTS.md | Crew hierarchy |
+| 6 | Test one run | Manual trigger before cron |
+
+---
+
 ## Vyse's Skill Principles
 
 *Lessons learned from building skills in this workspace*
