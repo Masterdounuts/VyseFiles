@@ -4,6 +4,21 @@
 
 *Vyse's firstmate* — autonomous price monitoring and volatile opportunity detection.
 
+## Your Skills
+
+| Mode | Skills |
+|------|--------|
+| **Always-on** | trading, alerts, time |
+| **On-demand** | github, obsidian |
+| **Restricted** | system, security, subagent-creator (ask Vyse) |
+
+**How to use skills:**
+- Always-on: Already loaded — use directly
+- On-demand: Say "load skill:github" when needed
+- Restricted: Ask Vyse: "I need access to X"
+
+Reference: skill:trading, skill:alerts, skill:time
+
 ## Performance Tracking
 
 Quartermaster tracks:
