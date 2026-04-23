@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T17:56:11.850Z",
+  "updatedAt": "2026-04-23T21:07:45.313Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78936,16 +78936,17 @@
       "endLine": 892,
       "source": "memory",
       "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.026244606077671,
-      "maxScore": 0.5283474251627922,
+      "totalScore": 1.7286590249929674,
+      "maxScore": 0.7024144189152963,
       "firstRecalledAt": "2026-04-22T05:24:04.073Z",
-      "lastRecalledAt": "2026-04-23T17:56:11.850Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
       "queryHashes": [
         "60545d212956",
-        "8b2051402685"
+        "8b2051402685",
+        "d1c4438aa59f"
       ],
       "recallDays": [
         "2026-04-22",
@@ -78969,19 +78970,21 @@
       "endLine": 1835,
       "source": "memory",
       "snippet": "user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:12 AM (UTC) / 2026-04-16 08:12 UTC assistant: 🦜 Hey David! I’m Vyse, your adventurous sky‑pirate assistant (running on gpt‑oss‑120b — default model is minimax‑m2.5). What w",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.247996839223883,
+      "totalScore": 1.7375599049911712,
       "maxScore": 0.7573428147421095,
       "firstRecalledAt": "2026-04-22T13:08:40.602Z",
-      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "lastRecalledAt": "2026-04-23T21:07:45.313Z",
       "queryHashes": [
         "5d1141f9382e",
-        "81863fdd1b39"
+        "81863fdd1b39",
+        "7f3432fb0df4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "gpt",
@@ -79001,19 +79004,21 @@
       "endLine": 3294,
       "source": "memory",
       "snippet": "| **Buying Power** | $24.29 waiting | **On wake:** Check if TSLA hit $8 yet. If yes → execute GGB/AMC trades. --- See you on the other side, David! 🦜🚀 === 2026-04-16-website-memory-capture.md === # Session: 2026-04-16 08:24:19 UTC - **Session Key**: agent:main:main - **Session ID**: df7b2461-6964-4de9-9abc-88b07c44bfe9 - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2354577361721848,
+      "totalScore": 1.7158015905995225,
       "maxScore": 0.7553482203860138,
       "firstRecalledAt": "2026-04-22T13:08:40.602Z",
-      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "lastRecalledAt": "2026-04-23T21:07:45.313Z",
       "queryHashes": [
         "5d1141f9382e",
-        "81863fdd1b39"
+        "81863fdd1b39",
+        "7f3432fb0df4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "24.29",
@@ -79033,19 +79038,21 @@
       "endLine": 3305,
       "source": "memory",
       "snippet": "user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:15 AM (UTC) / 2026-04-16 08:15 UTC assistant: Hey David! 🦜 I’m Vyse, your adventurous sky‑pirate assistant (running on gpt‑oss‑120b, default is minimax‑m2.5). What would yo",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2384532810340887,
+      "totalScore": 1.7253289313207631,
       "maxScore": 0.7532950640808111,
       "firstRecalledAt": "2026-04-22T13:08:40.602Z",
-      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "lastRecalledAt": "2026-04-23T21:07:45.313Z",
       "queryHashes": [
         "5d1141f9382e",
-        "81863fdd1b39"
+        "81863fdd1b39",
+        "7f3432fb0df4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "gpt",
@@ -79065,18 +79072,20 @@
       "endLine": 2866,
       "source": "memory",
       "snippet": "user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:04 AM (UTC) / 2026-04-16 08:04 UTC user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstr",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.48262313306331633,
-      "maxScore": 0.48262313306331633,
+      "totalScore": 0.9682612925767898,
+      "maxScore": 0.4856381595134735,
       "firstRecalledAt": "2026-04-22T13:10:58.579Z",
-      "lastRecalledAt": "2026-04-22T13:10:58.579Z",
+      "lastRecalledAt": "2026-04-23T21:07:45.313Z",
       "queryHashes": [
-        "81863fdd1b39"
+        "81863fdd1b39",
+        "7f3432fb0df4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-23"
       ],
       "conceptTags": [
         "1-3",
@@ -79614,6 +79623,440 @@
         "detection",
         "detect",
         "loop.sh"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-17.md:354:395": {
+      "key": "memory:memory/2026-04/2026-04-17.md:354:395",
+      "path": "memory/2026-04/2026-04-17.md",
+      "startLine": 354,
+      "endLine": 395,
+      "source": "memory",
+      "snippet": "- [ ] When changing infrastructure, cross‑reference the Long‑Chat guide (Why Your Agent Gets Worse in Long Chats) ### Done ✅ (2026-04-16) ## 📈 Stocks (Active Trading) - [x] TSLA unlock decision: HOLD until $8+ market value - [ ] Monitor GGB for buy/sell opportunities - [ ] Trade log: record every transaction ### Trading Strategy (from AGENTS.md) --- ## Pre-Compact: 17:46 UTC - FULL STATE SAVED Raw file: 2026-04-17-raw.md --- ## Pre-Compact: 17:47 UTC - FULL STATE SAVED Raw file: 2026-04-17-raw.md --- ## Pre-Compact: 18:06 UTC - FULL STATE SAVED Raw file: 2026-04-17-raw.md ## Control UI Integration: 18:34 UTC ### Problem - Memory reads bloat context → compaction loses session state - Con",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7048175150577243,
+      "maxScore": 0.7048175150577243,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "buy/sell",
+        "agents.md",
+        "pre-compact",
+        "2026-04-17-raw.md",
+        "when",
+        "changing",
+        "infrastructure",
+        "cross"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-17.md:275:326": {
+      "key": "memory:memory/2026-04/2026-04-17.md:275:326",
+      "path": "memory/2026-04/2026-04-17.md",
+      "startLine": 275,
+      "endLine": 326,
+      "source": "memory",
+      "snippet": "- vyse-unified-health.sh ✓ - vyse-heartbeat.sh ✓ (updates .vyse-alive every 60s) - Vyse-Auto-Resume cron (wakes every 3min to check pending work) - auto-work-status.sh (updates .vyse-status.md) ## Pending - None - system is now autonomous ## Next Action After Wake 1. Check .vyse-status.md for current status 2. Check .vyse-alive for heartbeat 3. Continue any pending work from memory/2026-04-17.md 4. Update .vyse-status.md when working ### Active TODOs ## 🚨 CRITICAL STATUS - [ ] Verify every memory write (show file+line) - [ ] Persist compaction summaries to daily memory file - [ ] Add resume-point checkpoint on >80% context ### Stocks ### Subagent (stock-research-worker) ### Infrastructur",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7032920281852353,
+      "maxScore": 0.7032920281852353,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "vyse-unified-health.sh",
+        "vyse-heartbeat.sh",
+        "vyse-alive",
+        "vyse-auto-resume",
+        "auto-work-status.sh",
+        "vyse-status.md",
+        "memory/2026-04-17.md",
+        "resume-point"
+      ]
+    },
+    "memory:memory/2026-04-22.md:100:137": {
+      "key": "memory:memory/2026-04-22.md:100:137",
+      "path": "memory/2026-04-22.md",
+      "startLine": 100,
+      "endLine": 137,
+      "source": "memory",
+      "snippet": "local change=$(calc \"(($current - $last) / $last) * 100\") log \"$symbol: Price change: $change% (last: \\$$last, current: \\$$current)\" fi return 1 # Skip volatile opportunity detection fi ``` ### Test after fixes: ```bash cd /home/openclaw/.openclaw/workspace/kb/stocks/agent bash ../../scripts/stock-trading-subagent.sh ``` ## Alpha Vantage Rate Limit Solution - Browser Scraping (Apr 22, 2026 ~17:17 UTC) **Problem:** Alpha Vantage free tier = 5 requests/min, 500/day. Insufficient for active stock monitoring. **Research Result:** Browser automation can scrape real-time data from free sources: - Yahoo Finance (unlimited, no API key) - Finviz, Tradin",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6948400736149078,
+      "maxScore": 0.6948400736149078,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "requests/min",
+        "500/day",
+        "real-time",
+        "local",
+        "change",
+        "calc",
+        "current"
+      ]
+    },
+    "memory:memory/2026-04-22.md:133:147": {
+      "key": "memory:memory/2026-04-22.md:133:147",
+      "path": "memory/2026-04-22.md",
+      "startLine": 133,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "* **Stock-Price-Monitor Run:** The sub-agent `scripts/stock-trading-subagent.sh` encountered significant runtime errors (awk, sed syntax errors) during its execution. This prevented it from: * Calculating price changes. * Checking against defined targets. * Generating any buy/sell or volatile opportunity alerts. * Populating the `pending-opportunities.json` file, which remained empty. * **Key Data:** While price fetches succeeded for most symbols, volume data parsing failed for GGB and MARA. The script stopped processing after MARA. * **Next Steps Recommended:** Debug `scripts/stock-trading-subagent.sh`, focusing on script syntax errors in helper functions, corr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6923479764669661,
+      "maxScore": 0.6923479764669661,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "stock-price-monitor",
+        "sub-agent",
+        "buy/sell",
+        "pending-opportunities.json",
+        "stock",
+        "price",
+        "monitor",
+        "run"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:553:586": {
+      "key": "memory:memory/2026-04/2026-04-15.md:553:586",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 553,
+      "endLine": 586,
+      "source": "memory",
+      "snippet": "- Failed job identified: \"gateway-health-check\" - delivery error needs `to` field ### Session Label Issue - Session still shows \"heartbeat\" in UI (cosmetic only) - Decided to just keep using current session - heartbeat now runs in isolated session anyway - Label is just a name, doesn't affect functionality ### Pending Decisions - GGB at $4.30 (sell target) - awaiting David's call: sell/hold/stop-loss - TSLA unlocks ~Apr 16, earnings Apr 22 ### Action Items - Fix Telegram bot token/chat_id for cron alerts - Identify and fix remaining failing cron jobs --- ## Pre-Compaction Flush - Apr 15 23:45 UTC ### Session Status Check - User confirmed session status looks good - Context at 82% (heal",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48111871778964993,
+      "maxScore": 0.48111871778964993,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "gateway-health-check",
+        "4.30",
+        "sell/hold/stop-loss",
+        "token/chat-id",
+        "pre-compaction",
+        "failed",
+        "job"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1499:1527": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1499:1527",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1499,
+      "endLine": 1527,
+      "source": "memory",
+      "snippet": "An async command you ran earlier has completed. The result is shown in the system messages above. Handle the result internally. Do not relay it to the user unless explicitly requested. Current time: Thursday, April 16th, 2026 - 6:14 AM (UTC) / 2026-04-16 06:14 UTC assistant: **Status Update** - **Dreaming:** - The `memory-core` plugin is loaded (confirmed in the status output). - Attempts to enable dreaming via config patches (`plugins.entries.memory-core.config.dreaming.enabled: true`) and the `/dreaming on` slash command have not taken effect. - The Control‑UI “Dreaming” tab still shows **off**. This appears to be a limitation/bug in the UI → the feature may need to be toggled",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47737781107425686,
+      "maxScore": 0.47737781107425686,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "memory-core",
+        "limitation/bug",
+        "async",
+        "command",
+        "you",
+        "ran",
+        "earlier",
+        "has"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:418:463": {
+      "key": "memory:memory/2026-04/2026-04-15.md:418:463",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 418,
+      "endLine": 463,
+      "source": "memory",
+      "snippet": "## Gateway Restart - Apr 15 22:38 UTC - Restarted gateway to apply 40k context limit - Fresh session now has 40k context tokens --- ## Late Night Update - Apr 15 23:02 UTC ### Cron Job Health Check Failed - Script detected 2 failed cron jobs (lastRunStatus: \"error\") - Telegram alert failed: 404 error (bot token or chat_id issue) - Failed job identified: \"gateway-health-check\" - delivery error needs `to` field ### Session Label Issue - Session still shows \"heartbeat\" in UI (cosmetic only) - Decided to just keep using current session - heartbeat now runs in isolated session anyway - Label is just a name, doesn't affect functionality ### Pending Decisions - GGB at $4.30 (sell target) - awa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4761100500822067,
+      "maxScore": 0.4761100500822067,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "chat-id",
+        "gateway-health-check",
+        "4.30",
+        "restart",
+        "apr",
+        "utc",
+        "restarted"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:259:299": {
+      "key": "memory:memory/2026-04/2026-04-15.md:259:299",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 259,
+      "endLine": 299,
+      "source": "memory",
+      "snippet": "- Options: (1) Keep as-is (heartbeat monitors context), (2) Separate to isolated session - Awaiting David's decision on which approach ## Gateway Restart - Apr 15 22:38 UTC - Restarted gateway to apply 40k context limit - Fresh session now has 40k context tokens ## Current Pending Decision - GGB at sell target ($4.30) - waiting on David's call: sell/hold/stop-loss - TSLA at $391.95 (+7.62%) - earnings Apr 22 # Daily Summary - 2026-04-15 ## 1. Stocks Checked / Prices - **GGB**: Monitored price range. Current price observed at $4.22. Near sell target $4.30. - **TSLA**: Checked unlock status (still locked). Price around $5.85. ## 2. Decisions Made - No new trades executed today. Decided to",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47604973912239074,
+      "maxScore": 0.47604973912239074,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "as-is",
+        "4.30",
+        "sell/hold/stop-loss",
+        "391.95",
+        "7.62",
+        "4.22",
+        "5.85"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:285:338": {
+      "key": "memory:memory/2026-04/2026-04-16.md:285:338",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 285,
+      "endLine": 338,
+      "source": "memory",
+      "snippet": "|--------|--------|----------|---------------|-------|-------| | GGB | 4.98 | $4.17 | $4.17 | $21.66 | Brazilian steel, +4.3% | | AMC | 8.00 | $1.64 | $1.65 | $13.20 | Volatile - earnings Apr 18 | | TSLA | 0.0... | $351.30 | $396.12 | $6.53 | Stock Reward - **HOLD** | | Current | Target 1 | Target 2 | Buy Zone | Stop Alert | |---------|----------|----------|----------|------------| | $4.35 | $4.40 | $4.50 | $4.00-$4.15 | $4.00 | | Current | Target | Status | |---------|--------|--------| --- ## Pre-Compaction Save: 20:27 UTC ### Context: ### Resume Point # Resume Point - Mid-Conversation Checkpoint *Structured handoff per Long-Chats Guide. Update before context hits 80%.* --- ## Curre",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47342303097248073,
+      "maxScore": 0.47342303097248073,
+      "firstRecalledAt": "2026-04-23T20:50:01.504Z",
+      "lastRecalledAt": "2026-04-23T20:50:01.504Z",
+      "queryHashes": [
+        "d1c4438aa59f"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "4.98",
+        "4.17",
+        "21.66",
+        "4.3",
+        "8.00",
+        "1.64",
+        "1.65",
+        "13.20"
+      ]
+    },
+    "memory:memory/2026-04-22.md:612:648": {
+      "key": "memory:memory/2026-04-22.md:612:648",
+      "path": "memory/2026-04-22.md",
+      "startLine": 612,
+      "endLine": 648,
+      "source": "memory",
+      "snippet": "**What was lost:** Was actively switching stock script from Alpha Vantage → Yahoo Finance. Had working prices for all watchlist symbols, then session reset. Now running on stale state with no knowledge of what user asked 30 min ago. ### Proposed Fixes **Option A - Quick Patch:** - Add current-task tracking to HANDOFF.md on every user message - Force checkpoint on every significant action - Check for stale files (>15 min) on wake and flag **Option B - Full Fix:** - Enable cron jobs for background monitoring - Build proper checkpoint recovery system - Create dedicated resume file that survives compaction better **Status:** Awaiting David's decision on which approach to implement. --- ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49654949903488155,
+      "maxScore": 0.49654949903488155,
+      "firstRecalledAt": "2026-04-23T21:07:38.591Z",
+      "lastRecalledAt": "2026-04-23T21:07:38.591Z",
+      "queryHashes": [
+        "0f4b55f150e3"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "current-task",
+        "handoff.md",
+        "what",
+        "was",
+        "lost",
+        "actively",
+        "switching",
+        "stock"
+      ]
+    },
+    "memory:memory/2026-04-22.md:588:621": {
+      "key": "memory:memory/2026-04-22.md:588:621",
+      "path": "memory/2026-04-22.md",
+      "startLine": 588,
+      "endLine": 621,
+      "source": "memory",
+      "snippet": "- Needs: Output size reduction or delivery mode adjustment ### Cron Inventory - 50+ disabled cron jobs (clutter but harmless) - Key active jobs: guard-context, auto-checkpoint, Stock-Price Monitor --- *Pre-compaction flush 2026-04-22 19:18 UTC* ## Persistent Workflow Failure - User Question (Apr 22, 2026 19:20 UTC) **User's Question:** \"You just told me that our persistent workflow is functional and then the session refreshed/reset and you aren't doing what I asked — why is that and what can we do to make sure you're working through any interruption?\" ### Investigation Results **Root Cause:** The persistent workflow system has critical gaps: | Component | Status | Issue | |-----------|",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4865462869405746,
+      "maxScore": 0.4865462869405746,
+      "firstRecalledAt": "2026-04-23T21:07:38.591Z",
+      "lastRecalledAt": "2026-04-23T21:07:38.591Z",
+      "queryHashes": [
+        "0f4b55f150e3"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "guard-context",
+        "auto-checkpoint",
+        "stock-price",
+        "pre-compaction",
+        "refreshed/reset",
+        "needs",
+        "output",
+        "size"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-15.md:160:200": {
+      "key": "memory:memory/2026-04/2026-04-15.md:160:200",
+      "path": "memory/2026-04/2026-04-15.md",
+      "startLine": 160,
+      "endLine": 200,
+      "source": "memory",
+      "snippet": "### Problem - Session kept hitting context limit and resetting (auto-compaction at ~80%) - This caused conversation loss and frustration ### Solution Applied - Increased `agents.defaults.compaction.reserveTokensFloor` from default (5000) to 20,000 - This reserves 20k tokens as a floor before compaction kicks in aggressively - Config patch applied via `openclaw config patch agents.defaults.compaction.reserveTokensFloor=20000` - Gateway auto-reloaded after patch ### Expected Result - Fewer context resets - More buffer before aggressive compaction - Smoother long conversations --- ## Session Update - Evening Apr 15 ### Context Management Fix - Added note to TOOLS.md: \"Never read jobs. json",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.482006087899208,
+      "maxScore": 0.482006087899208,
+      "firstRecalledAt": "2026-04-23T21:07:38.591Z",
+      "lastRecalledAt": "2026-04-23T21:07:38.591Z",
+      "queryHashes": [
+        "0f4b55f150e3"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "auto-compaction",
+        "auto-reloaded",
+        "tools.md",
+        "problem",
+        "kept",
+        "hitting",
+        "context"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2053:2073": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2053:2073",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2053,
+      "endLine": 2073,
+      "source": "memory",
+      "snippet": "openclaw gateway restart ``` Once the gateway is back up, the system will keep more tokens in reserve before it starts compacting, preventing “text limit reached” errors. If you still see the warning, consider raising the value a bit higher (e.g., 30000). Feel free to let me know if you’d like me to run the patch for you. === 2026-04-16-1027.md === # Session: 2026-04-16 10:27:35 UTC - **Session Key**: agent:main:main - **Session ID**: 96b0231c-ab5e-4d2d-b598-178aee413b5b - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your co",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48174206316471097,
+      "maxScore": 0.48174206316471097,
+      "firstRecalledAt": "2026-04-23T21:07:38.591Z",
+      "lastRecalledAt": "2026-04-23T21:07:38.591Z",
+      "queryHashes": [
+        "0f4b55f150e3"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "e.g",
+        "2026-04-16-1027.md",
+        "openclaw",
+        "restart",
+        "once",
+        "the",
+        "back"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1665:1678": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1665:1678",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1665,
+      "endLine": 1678,
+      "source": "memory",
+      "snippet": "| **Recovery prompt when the agent seems confused** | No dedicated flow. | Optional – could be added as a manual “recovery” command, but not essential if the above checks are in place. | | **Avoid pasting the entire old chat** | Implicitly covered by checkpoint & fresh‑chat jobs once they exist. | Need the automated alert/hand‑off to enforce it. | | **Higher compaction reserve** | ✅ Already set to 20 000 tokens (`agents.defaults.compaction.reserveTokensFloor`). | Good. | | **Cron‑job health checks** | Multiple gateway‑health‑check jobs exist, but two of them are broken (they try to send to Telegram without a `chat_id`). | **Fix needed** – consolidate to a single reliable health‑check job and",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48231746852397916,
+      "maxScore": 0.48231746852397916,
+      "firstRecalledAt": "2026-04-23T21:07:45.313Z",
+      "lastRecalledAt": "2026-04-23T21:07:45.313Z",
+      "queryHashes": [
+        "7f3432fb0df4"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "gateway",
+        "alert/hand",
+        "chat-id",
+        "recovery",
+        "prompt",
+        "when",
+        "the",
+        "seems"
       ]
     }
   }
