@@ -52,6 +52,3 @@ Hub for all sub-hubs and system configuration.
 - [[recovery-prompt.md|Recovery Prompt]] - Session rescue
 - [[handoff-prompt.md|Handoff]] - Session continuity
 
----
-
-*Links: [[INDEX|← Back]]*
