@@ -3,7 +3,7 @@
 Quick access file for context after resets.
 
 ## Active
-- [[memory/active]] - Current task
+- [[active.md]] - Current task
 - [[PENDING.md]] - Waiting on
 - [[HANDOFF.md]] - Session continuity
 
