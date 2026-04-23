@@ -2,16 +2,27 @@
 
 [[kb/system/hub-system|Home]] • [[kb/stocks/protocol|Trading Protocol]]
 
+## Crew Hierarchy
+
+```
+David (Captain)
+    │
+    └── Vyse (First Mate)
+            │
+            └── Quartermaster (Stock Trading Subagent)
+```
+
 ## Active Systems
 
-### Stock Trading
-- **State:** `kb/stocks/agent/state.json`
-- **Trades:** `kb/stocks/trades.json`
+### Stock Trading (Quartermaster)
+- **Role:** Autonomous price monitoring + volatile opportunity detection
+- **Runs:** Every 30 min (cron)
+- **Positions:** `kb/stocks/positions/*.md`
 - **Protocol:** [[kb/stocks/protocol|Trading Rules]]
 
-### Subagents
-- Stock monitor: Runs every 30 min
-- Volatility checker: Runs every 15 min
+### Volatility Detection
+- Quartermaster flags opportunities >3% move
+- Vyse reviews → decides if Captain gets alert
 
 ---
 

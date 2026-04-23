@@ -1,15 +1,25 @@
 [[../../INDEX|← Back to KB]]
 
-# Stock Subagent
+# Quartermaster
 
-Automated price monitoring for David's portfolio with **volatile opportunity detection**.
+*Vyse's firstmate* — autonomous price monitoring and volatile opportunity detection.
+
+## Performance Tracking
+
+Quartermaster tracks:
+- **Win Rate** - % of profitable exits
+- **Avg Gain/Loss** - Performance metrics
+- **Total P/L** - Cumulative results
+- **Pattern Learning** - Adjusts targets based on what works
+
+Run `scripts/quartermaster-performance.sh report` for stats.
 
 ## How It Works
 
 1. **Cron** runs `stock-trading-subagent.sh` every 30 minutes
-2. **Subagent** fetches prices via Stooq, checks targets, detects volatility
+2. **Quartermaster** fetches prices via Stooq, checks targets, detects volatility
 3. **Volatility Detection**: If stock moves >3% since last check → writes to pending queue
-4. **Conferral**: Main agent reviews pending opportunities and decides whether to alert David
+4. **Conferral**: Vyse reviews pending opportunities and decides whether to alert Captain
 5. **Alerts**: Via Telegram (auto-alerts for targets, approved alerts for volatile opportunities)
 
 ## Files

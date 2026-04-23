@@ -5,7 +5,7 @@
 ## Thresholds
 - **Min Volume:** 100000
 - **Volatility Threshold:** 3%
-- **Stop Loss %:** 5
+- **Stop Loss %:** 5% (7% for volatile)
 
 ## Position Sizing
 - **Max per volatile play:** $10

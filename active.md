@@ -2,17 +2,17 @@
 
 *Current task tracking.*
 
-**Last checkpoint:** 2026-04-23 01:53 UTC
+**Last checkpoint:** 2026-04-23 02:57 UTC
 
 ## Current Task
+### Checkpoint 2026-04-22 23:02 UTC
+Context checkpoint saved. State: active.md + resume-point.md
+---
+### Checkpoint 2026-04-22 23:07 UTC
+Context checkpoint saved. State: active.md + resume-point.md
+## Workflow Audit Findings (Apr 22, 2026 23:18 UTC)
 
-### Workspace Reorganization (Apr 23, 2026 01:45-01:53 UTC)
-- Moved docs from root to kb/ (34 → 19 files)
-- Fixed PENDING.md with "Just Finished" section for recall
-- Updated HANDOFF.md with recent work
-- Verified: Subagent reads positions from kb/stocks/positions/
-
-### Status: ✅ Complete
+### Critical Issue: Files Don't Auto-Load
 
 ---
 *Auto-checkpoint*
