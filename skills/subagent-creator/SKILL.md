@@ -1,5 +1,6 @@
 ---
 name: subagent-creator
+access: vyse-only
 description: Template and pattern for building autonomous subagents like Quartermaster. Use when creating new subagents, expanding existing ones, or understanding how Vyse's workers work.
 ---
 
@@ -46,6 +47,45 @@ Pattern for building autonomous agents that run on schedule and report to Vyse.
 - Infrequent (less ROI)
 
 **Philosophy: Crew, Not Just Code**
+
+---
+
+## Skill Loading for Subagents
+
+**Template Rule:** Subagents should load relevant skills **always** if they need them to function.
+
+| Scenario | Approach |
+|----------|----------|
+| Core job skills | Load on startup — add `always: true` to skill frontmatter |
+| On-demand needs | Load only when task requires it |
+| Explicit only | Subagents use "load skill:X" — don't rely on implicit triggers |
+
+**Example:** Quartermaster (trading subagent) always loads: trading, alerts, time.
+
+When building a subagent, ask: "What skills does this agent need to do its job?" Those get `always: true`.
+
+### Communicating Skills to Subagents
+
+**Every new subagent must know:**
+1. **What skills they have access to** — list explicitly in their context/handoff
+2. **Which are always-on** — so they don't keep reloading
+3. **Which are on-demand** — use "load skill:X" when needed
+4. **Which are vyse-only** — can't access, must ask Vyse
+
+**Example (Quartermaster handoff):**
+```
+Your skills:
+- always: trading, alerts, time
+- on-demand: github, obsidian
+- restricted (ask Vyse): system, security, subagent-creator
+
+Reference: skill:trading, skill:alerts, skill:time
+```
+
+**This prevents:**
+- Subagent guessing what it can/cannot use
+- Wasted context loading unneeded skills
+- Confusion about access levels
 
 Subagents are team members, not just automation. They should:
 

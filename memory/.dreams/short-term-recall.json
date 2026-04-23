@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T21:07:45.313Z",
+  "updatedAt": "2026-04-23T22:05:56.205Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -80057,6 +80057,130 @@
         "when",
         "the",
         "seems"
+      ]
+    },
+    "memory:memory/2026-04-23.md:465:503": {
+      "key": "memory:memory/2026-04-23.md:465:503",
+      "path": "memory/2026-04-23.md",
+      "startLine": 465,
+      "endLine": 503,
+      "source": "memory",
+      "snippet": "2. Delete knowledge.md (duplicate hub)? 3. What to do with DREAMS.md at root? 4. Consolidate references/ → kb/reference/? ### Hub Structure (Good) - kb/system/system.md ✅ - kb/stocks/stocks.md ✅ (just updated) - memory/archive.md ✅ (just cleaned) - kb/personal/ ✅ - kb/reference/ ✅ # System Audit & Hub Cleanup (Apr 23, 2026) ## Summary Performed a full audit of the GitHub repo to enforce the new hub-naming convention (one-word hub names) and clean up old broken links. Over a dozen commits. ## Changes Made ### Hub-Naming Migration - Replaced all old `hub-*.md` references with one-word names: `system`, `dreams`, `stocks`, `archive` - Fixed broken links across ~21 files: `hub-system` → `syst",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5134361714124679,
+      "maxScore": 0.5134361714124679,
+      "firstRecalledAt": "2026-04-23T22:05:56.205Z",
+      "lastRecalledAt": "2026-04-23T22:05:56.205Z",
+      "queryHashes": [
+        "f8b16606e2cb"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "knowledge.md",
+        "dreams.md",
+        "kb/reference",
+        "kb/system/system.md",
+        "kb/stocks/stocks.md",
+        "memory/archive.md",
+        "kb/personal",
+        "hub-naming"
+      ]
+    },
+    "memory:memory/2026-04-23.md:496:534": {
+      "key": "memory:memory/2026-04-23.md:496:534",
+      "path": "memory/2026-04-23.md",
+      "startLine": 496,
+      "endLine": 534,
+      "source": "memory",
+      "snippet": "- These are runtime state, shouldn't be in repo ### Specific File Fixes - Fixed `stocks.md` automation links (missing `agent/`) - Fixed `agent.md` broken INDEX link (`../stocks|← Back to KB]]`) - Fixed `subagent-assessment.md` broken INDEX link - Fixed `brain.md` broken `memory/active` link - Fixed `templates.md` broken links after folder move - Updated `README.md` to reflect current structure ### Stocks Sub-Hub Cleanup - Fixed `trading-ops.md` broken link (hub-portfolio → stocks) - Fixed typo \"Tading\" → \"Trading\" in trading-ops.md - Updated `positions.md` with current + closed positions - Deleted empty `trading-ops/` folder - Verified `research/` works as sub-hub ### Commits - 12+ commit",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5099231153726578,
+      "maxScore": 0.5099231153726578,
+      "firstRecalledAt": "2026-04-23T22:05:56.205Z",
+      "lastRecalledAt": "2026-04-23T22:05:56.205Z",
+      "queryHashes": [
+        "f8b16606e2cb"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "stocks.md",
+        "agent.md",
+        "subagent-assessment.md",
+        "brain.md",
+        "memory/active",
+        "templates.md",
+        "readme.md",
+        "sub-hub"
+      ]
+    },
+    "memory:memory/2026-04-23.md:441:477": {
+      "key": "memory:memory/2026-04-23.md:441:477",
+      "path": "memory/2026-04-23.md",
+      "startLine": 441,
+      "endLine": 477,
+      "source": "memory",
+      "snippet": "- Removed `bin/jq` (3.8MB binary) - Removed `.obsidian/` (3.3MB app data - user-specific) - Removed test files: Test, folder, for - Removed runtime output: status_full.txt, scripts/resume-output.txt - Removed backup: config/openclaw.json.backup - Cleaned commit pushed: bbf4ae8 ### Obsidian Restore - David uploaded old .obsidian/ folder to workspace - Added community-plugins.json with: dataview, obsidian-git, smart-connections - Pushed to GitHub for future clones ### Hub Updates - **archive.md**: Removed broken links to memory/archive/, added Apr 22/23 to dated memories - **stocks.md**: Updated portfolio (GGB, MARA, RIOT, SOFI), added Closed Positions section (LCID, BBAI) ### Deep Analysis",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.496675169467926,
+      "maxScore": 0.496675169467926,
+      "firstRecalledAt": "2026-04-23T22:05:56.205Z",
+      "lastRecalledAt": "2026-04-23T22:05:56.205Z",
+      "queryHashes": [
+        "f8b16606e2cb"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "backup",
+        "bin/jq",
+        "3.8mb",
+        "3.3mb",
+        "user-specific",
+        "status-full.txt",
+        "scripts/resume-output.txt",
+        "config/openclaw.json.backup"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-21.md:38:84": {
+      "key": "memory:memory/2026-04/2026-04-21.md:38:84",
+      "path": "memory/2026-04/2026-04-21.md",
+      "startLine": 38,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "- `memory/hub-archive.md` - Dated memories - `::Projects.md` - Active work **Updated:** 25+ files to link to hubs instead of INDEX directly. **Graph should now show:** INDEX → 5 hubs → individual files --- ## New Session (22:02 UTC) - Session started via /new - Portfolio: GGB 4.99 shares @ $4.17 avg (~$4.28 current), cash $31.32, total ~$52.68 - Stock subagent active: runs every 30 min monitoring GGB targets + volatile opportunities - Status: Awaiting David's direction # 2026-04-21 [[hub-archive|← Back to Memory]] ## Obsidian Graph Cleanup - Phase 1 (23:45 UTC) **Problem:** Graph had duplicate \"index\" node (lowercase index.md vs INDEX.md), plus several orphan files with no links. **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4904067724943161,
+      "maxScore": 0.4904067724943161,
+      "firstRecalledAt": "2026-04-23T22:05:56.205Z",
+      "lastRecalledAt": "2026-04-23T22:05:56.205Z",
+      "queryHashes": [
+        "f8b16606e2cb"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "memory/hub-archive.md",
+        "projects.md",
+        "4.99",
+        "4.17",
+        "4.28",
+        "31.32",
+        "52.68",
+        "hub-archive"
       ]
     }
   }

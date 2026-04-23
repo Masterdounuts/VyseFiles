@@ -23,6 +23,20 @@ Purchase history: 5.988023 @ $4.18 (Apr 12) + 1 @ $4.28 (Apr 14)
 
 **⚠️ Settlement:** Sold shares take 1 market day to clear before reuse.
 
+## Update (Apr 23)
+Captain David notes: Unable to sell at target - price didn't reach sell level. Apologies from Captain. Continuing to monitor.
+
+## Lessons Learned (Apr 23)
+- Targets weren't reached - need to be more patient or adjust expectations
+- Communication: Captain should be alerted earlier when price approaches target zone
+- Consider trailing stop if price spikes to lock in gains
+
+---
+**Quartermaster Process:** End-of-day review (EOD) - at market close (4PM ET), document:
+1. What happened today
+2. Lessons learned
+3. Adjustments for tomorrow
+
 **Last updated:** 2026-04-23
 
 ## Earnings
