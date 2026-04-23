@@ -13,7 +13,7 @@ Hub for dated memories, journal entries, and archived content.
 - [[memory/2026-04/2026-04-14|Apr 14]]
 
 ## Journal & Dreams
-- [[DREAMS.md|Dreams Hub]]
+- [[kb/system/dreams|Dreams Hub]]
 - [[content/dreams/dream-journal-archive.md|Vision Archive]]
 
 ## Decision Logs
@@ -24,8 +24,8 @@ Hub for dated memories, journal entries, and archived content.
 ---
 
 ## Related
-- [[kb/system/hub-system|System]] - Bootstrap & config
-- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & research
+- [[kb/system/system|System]] - Bootstrap & config
+- [[kb/stocks/stocks|Stocks]] - Trading & research
 
-*Links: [[kb/system/hub-system|← System Hub]]*
+*Links: [[kb/system/system|← System Hub]]*
 *Folder: [[memory/2026-04|2026-04]]*

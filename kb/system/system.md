@@ -6,11 +6,11 @@ Hub for all sub-hubs and system configuration.
 
 | Sub-Hub | Description |
 |---------|-------------|
-| [[kb/system/hub-dreams|Dreams]] | Vision, goals, dream journal |
-| [[kb/stocks/hub-portfolio|Portfolio]] | Trading, research, positions |
+| [[kb/system/dreams|Dreams]] | Vision, goals, dream journal |
+| [[kb/stocks/stocks|Stocks]] | Trading, research, positions |
 | [[kb/personal/projects|Projects]] | Game dev & work-in-progress |
 | [[kb/reference/templates|Templates]] | Reusable prompts & formats |
-| [[memory/hub-archive|Archive]] | Dated memories |
+| [[memory/archive|Archive]] | Dated memories |
 
 ---
 
@@ -25,10 +25,10 @@ Hub for all sub-hubs and system configuration.
 ## Sub-Hubs Detail
 
 ### Dreams
-- [[kb/system/hub-dreams|Dreams Hub]] – Vision & goal tracking
+- [[kb/system/dreams|Dreams]] – Vision & goal tracking
 
 ### Stocks
-- [[kb/stocks/hub-portfolio|Portfolio]] - Trading & positions
+- [[kb/stocks/stocks|Stocks]] - Trading & positions
 - [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
 - [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
 - [[kb/stocks/positions.md|Positions]] – Current holdings
@@ -40,7 +40,7 @@ Hub for all sub-hubs and system configuration.
 - [[kb/reference/templates|Templates]] - Reusable formats
 
 ### Archive
-- [[memory/hub-archive|Archive]] - Dated memories
+- [[memory/archive|Archive]] - Dated memories
 
 ## Quick Access
 - [[brain.md|Vyse Brain]] - Quick context

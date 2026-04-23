@@ -10,7 +10,7 @@
 
 | Hub | Description |
 |-----|-------------|
-| [[kb/system/hub-system|System]] | All sub-hubs: Dreams, Stocks, Personal, Reference, Archive |
+| [[kb/system/system|System]] | All sub-hubs: Dreams, Stocks, Personal, Reference, Archive |
 
 ---
 
