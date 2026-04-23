@@ -11,6 +11,7 @@
 | Hub | Description |
 |-----|-------------|
 | [[kb/system/hub-system|System]] | Bootstrap, recovery, fixes, automation |
+| [[kb/system/hub-dreams|Dreams]] | Vision, goals, dream journal |
 | [[kb/stocks/hub-portfolio|Portfolio]] | Trading, research, positions |
 | [[kb/personal/projects|Projects]] | Game dev & work-in-progress |
 | [[kb/reference/templates|Templates]] | Reusable prompts & formats |
