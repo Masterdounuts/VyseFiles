@@ -3,7 +3,7 @@
 Hub for trading and investment notes.
 
 ## Sub-Hubs
-- [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
+- [[kb/stocks/research/|Research]] – Stock analysis & ideas
 - [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
 - [[kb/stocks/positions.md|Positions]] – Current holdings
 

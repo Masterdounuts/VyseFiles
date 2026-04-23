@@ -11,8 +11,6 @@
 ---
 
 ## Related
-- [[kb/stocks/hub-portfolio|Portfolio Hub]]
+- [[kb/stocks/stocks|Stocks Hub]]
 - [[kb/stocks/research/morning-research|Morning Research]]
 - [[kb/stocks/research/volatile-stocks|Volatile Stocks]]
-
-[[INDEX.md|← Back]]
