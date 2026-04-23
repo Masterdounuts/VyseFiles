@@ -26,7 +26,7 @@ get_config() {
             grep "Min per volatile play:" "$CONFIG_FILE" | awk '{print $4}' | tr -d '$'
             ;;
         "volatile_check_enabled")
-            grep "Volatile Check:" "$CONFIG_FILE" | awk '{print $3}' | grep -q "enabled" && echo "true" || echo "false"
+            grep "Volatile Check:" "$CONFIG_FILE" | sed 's/.*enabled/enabled/;s/[^enabled].*//' | grep -q "enabled" && echo "true" || echo "false"
             ;;
         "volatile_watchlist")
             sed -n '/## Watchlist/,/^##/p' "$CONFIG_FILE" | grep "^- " | sed 's/^- //' | tr '\n' ' '
@@ -74,6 +74,34 @@ get_sell_targets() {
     local file="$POSITIONS_DIR/$symbol.md"
     if [ -f "$file" ]; then
         sed -n '/## Targets/,/^##/p' "$file" | grep "Sell:" | sed 's/.*Sell: //' | tr ',' ' '
+    fi
+}
+
+# === GET EARNINGS DATE ===
+get_earnings_date() {
+    local symbol="$1"
+    local file="$POSITIONS_DIR/$symbol.md"
+    if [ -f "$file" ]; then
+        grep "Next ER:" "$file" | sed 's/.*\*\*Next ER:\*\* //' | sed 's/ (est)//'
+    fi
+}
+
+# === GET DAYS TO EARNINGS ===
+days_to_earnings() {
+    local symbol="$1"
+    local er_date=$(get_earnings_date "$symbol")
+    if [ -z "$er_date" ]; then
+        echo "999"
+        return
+    fi
+    # Parse date like "April 27, 2026" or "May 5, 2026"
+    local er_epoch=$(date -d "$er_date" +%s 2>/dev/null)
+    local today_epoch=$(date -u +%s)
+    if [ -n "$er_epoch" ]; then
+        local days=$(( (er_epoch - today_epoch) / 86400 ))
+        echo "$days"
+    else
+        echo "999"
     fi
 }
 

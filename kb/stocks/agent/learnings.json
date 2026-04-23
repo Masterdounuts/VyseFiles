@@ -133,5 +133,12 @@
       "pnl": 6.65,
       "notes": "Exclude from performance metrics"
     }
-  ]
+  ],
+  "plan": {
+    "status": "ACTIVE",
+    "updated": "2026-04-23T03:49:00Z",
+    "directive": "Scale GGB 1/3 at $4.40. Hold LCID/BBAI. Tighten BBAI stop to $3.75.",
+    "review_time": "2026-04-23T10:00:00Z",
+    "notes": "GGB earnings in 3 days - de-risk approved by Captain"
+  }
 }
