@@ -201,8 +201,9 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "bf681b229964e945",
+  "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/system/issues.md",
     "skills/github-organizer/SKILL.md",
     "skills/github-organizer",
     "skills/workflow/SKILL.md",
@@ -237,7 +238,6 @@
     "kb/stocks/research/daily/morning-research.md",
     "kb/stocks/research/daily/day-trade-research.md",
     "kb/stocks/positions/closed/LCID.md",
-    "kb/stocks/positions/closed/BBAI.md",
-    "kb/reference/prompts/recovery-prompt.md"
+    "kb/stocks/positions/closed/BBAI.md"
   ]
 }
