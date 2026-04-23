@@ -30,6 +30,12 @@ state/
 .vyse-*.txt
 headline-requests.json
 
+# Obsidian vault (user-specific)
+.obsidian/
+
+# Binaries (install system-wide)
+bin/
+
 # Bootstrap/reference files (committed separately)
 # AGENTS.md
 # SOUL.md
