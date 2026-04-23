@@ -50,6 +50,71 @@ log() {
     echo "$(date -u +'%Y-%m-%d %H:%M UTC') [QUARTERMASTER] $1" | tee -a "$LOG"
 }
 
+# === SECTOR CONTEXT FOR QUARTERMASTER ===
+get_sector_context() {
+    local symbol=$1
+    local sector=""
+    local warning=""
+    
+    case "$symbol" in
+        GGB|LCID|BBAI|AMC|TSLA)
+            # Read earnings from position file - no hardcoding!
+            local days_to_er=$(days_to_earnings "$symbol")
+            if [ "$days_to_er" -le 3 ] && [ "$days_to_er" -ge 0 ]; then
+                warning="⚠️ EARNINGS IN $days_to_er DAYS"
+                request_headlines "$symbol"
+            fi
+            ;;
+    esac
+    
+    if [ -n "$warning" ]; then
+        log "$symbol: $sector | $warning"
+    else
+        log "$symbol: $sector"
+    fi
+}
+
+# === REQUEST HEADLINES FROM MAIN AGENT ===
+request_headlines() {
+    local symbol=$1
+    local request_file="$AGENT_DIR/headline-requests.json"
+    
+    # Check if already requested recently (within 2 hours)
+    if [ -f "$request_file" ]; then
+        local recent=$(node -e "
+            const fs=require('fs');
+            const d=JSON.parse(fs.readFileSync('$request_file'));
+            const twoHoursAgo = new Date(Date.now() - 2*60*60*1000).toISOString();
+            const exists = d.requests?.some(r => r.symbol === '$symbol' && r.requestedAt > twoHoursAgo);
+            console.log(exists ? 'true' : 'false');
+        " 2>/dev/null)
+        if [ "$recent" = "true" ]; then
+            log "Headlines for $symbol already requested recently"
+            return
+        fi
+    fi
+    
+    # Queue the request
+    local tmp=$(mktemp)
+    local new_request="{\"symbol\":\"$symbol\",\"requestedAt\":\"$(date -u +'%Y-%m-%dT%H:%M:%SZ')\"}"
+    
+    if [ -f "$request_file" ]; then
+        node -e "
+            const fs=require('fs');
+            const d=JSON.parse(fs.readFileSync('$request_file'));
+            if (!d.requests) d.requests = [];
+            d.requests.push($new_request.replace(/^\{/, '').replace(/\}$/, ''));
+            const obj = {...JSON.parse('{'+new_request+'}'), ...d};
+            console.log(JSON.stringify(obj));
+        " > "$tmp" 2>/dev/null || echo "{\"requests\":[$new_request]}" > "$tmp"
+    else
+        echo "{\"requests\":[$new_request]}" > "$tmp"
+    fi
+    
+    mv "$tmp" "$request_file"
+    log "Queued HEADLINES_REQUEST for $symbol - awaiting main agent"
+}
+
 # === LEARN FROM TARGET HIT/MISS ===
 learn() {
     local symbol=$1
@@ -93,9 +158,9 @@ fs.writeFileSync('$LEARNINGS', JSON.stringify(d, null, 2));
 }
 
 # === UPDATE STATE.JSON ===
+# DEPRECATED - using markdown files now. Kept for reference.
 update_state() {
-    local timestamp=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-    jq --arg ts "$timestamp" '.last_check = $ts' "$STATE" > "${STATE}.tmp" && mv "${STATE}.tmp" "$STATE"
+    log "STATE UPDATE: Deprecated - using position files instead"
 }
 
 # === MARKET HOURS CHECK (simplified UTC-based) ===
@@ -444,10 +509,9 @@ alert() {
 }
 
 # === SEND TELEGRAM NOTIFICATION ===
+# DEPRECATED - all alerts route through pending queue for main agent review
 send_telegram() {
-    local message="$1"
-    send_telegram "$message"
-    send_telegram "$message"
+    log "TELEGRAM: $1"  # Log only - actual send handled by main agent
 }
 
 # === ROUTE ALL ALERTS THROUGH MAIN AGENT ===
@@ -517,6 +581,13 @@ fi
 
 log "Monitoring: $stocks"
 
+# Pre-trade sector check
+log "=== Sector Check ==="
+for stock in $stocks; do
+    get_sector_context "$stock"
+done
+log "=== End Sector Check ==="
+
 for stock in $stocks; do
     log "Checking $stock..."
     price=$(get_price "$stock")
@@ -546,7 +617,7 @@ for stock in $stocks; do
             log "$stock price: \$$current_price, Volume: $current_volume"
 
             # Check liquidity & volatility FIRST (before targets)
-            if [ "$(jq -r '.volatile_check_enabled // true' "$STATE")" = "true" ] && check_liquidity_and_volatility "$stock" "$current_price" "$current_volume"; then
+            if [ "$(get_config "volatile_check_enabled")" = "true" ] && check_liquidity_and_volatility "$stock" "$current_price" "$current_volume"; then
                 last=$(get_last_price "$stock")
                 change=$(calc "(($current_price - $last) / $last) * 100")
                 if [ $(calc_bool "$change > 0") -eq 1 ]; then
@@ -577,12 +648,17 @@ done
 # === SCAN VOLATILE WATCHLIST (stocks we don't own) ===
 # Only alert on UP moves - we're buyers, not short sellers
 log "Scanning volatile watchlist..."
-watchlist=$(jq -r '.volatile_watchlist | join(" ")' "$STATE" 2>/dev/null)
+watchlist=$(get_config "volatile_watchlist")
 
 if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
     log "Watchlist: $watchlist"
-    
-    for symbol in $watchlist; do
+
+# Pre-trade sector check for watchlist
+for symbol in $watchlist; do
+    get_sector_context "$symbol"
+done
+
+for symbol in $watchlist; do
         log "Watchlist scan: $symbol"
         
         # Show research info
@@ -604,7 +680,7 @@ if [ -n "$watchlist" ] && [ "$watchlist" != "null" ]; then
                 log "$symbol price: \$$price, Volume: $volume"
                 
                 # Check liquidity & volatility - for watchlist, only confer on UP moves (we want to buy)
-                if [ "$(jq -r '.volatile_check_enabled // true' "$STATE")" = "true" ] && check_liquidity_and_volatility "$symbol" "$price" "$volume"; then
+                if [ "$(get_config "volatile_check_enabled")" = "true" ] && check_liquidity_and_volatility "$symbol" "$price" "$volume"; then
                     last=$(get_last_price "$symbol")
                     change=$(calc "(($price - $last) / $last) * 100")
                     if [ $(calc_bool "$change > 0") -eq 1 ]; then
