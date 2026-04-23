@@ -19,7 +19,6 @@
 | skill:time | crew | ✅ | Timezone, scheduling, cron |
 | skill:security | vyse-only | - | Hardening, permissions, boundaries |
 | skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
-| skill:skill-creator | crew | - | Meta-skill for creating new skills (system-provided) |
 
 ## Usage
 - Explicit: "load skill:name" or "focus: name"
