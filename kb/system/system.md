@@ -13,6 +13,7 @@ Hub for all sub-hubs and system configuration.
 | [[memory/archive|Archive]] | Dated memories |
 | [[kb/system/bootstrap/bootstrap|Bootstrap]] | Boot, recovery, fixes |
 | [[kb/system/workflow/workflow|Workflow]] | Brain, context, automation |
+| [[kb/system/dev/dev|Dev]] | OpenClaw, technical |
 
 ---
 
@@ -25,7 +26,7 @@ Hub for all sub-hubs and system configuration.
 
 ## Quick Access
 - [[kb/system/workflow/brain.md|Brain]] - Quick context
-- [[github.md|GitHub]] - Repo management
+- [[kb/system/dev/dev.md|Dev]] - Repo management
 - [[ORPHANS.md|Orphans]] - File audit
 
 ---
