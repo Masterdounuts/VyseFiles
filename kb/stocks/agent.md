@@ -19,6 +19,18 @@
 
 Reference: skill:trading, skill:alerts, skill:time
 
+---
+
+## Self-Review & Learning
+
+*Every EOD, reflect on your performance*
+
+| Date | What happened | Lessons | Improve? |
+|------|---------------|---------|----------|
+| | | | |
+
+Add rows as you learn. This is how we grow as a crew.
+
 ## Performance Tracking
 
 Quartermaster tracks:
