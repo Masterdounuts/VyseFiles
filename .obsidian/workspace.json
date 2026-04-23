@@ -202,6 +202,7 @@
   },
   "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/system/hub-dreams.md",
     "kb/reference/vyse-obsidian-workflow.md",
     "kb/reference/obsidian-guide.md",
     "memory/content/seo-research.md",
@@ -236,7 +237,6 @@
     "memory/archive/legacy",
     "kb/stocks/robinhood-alerts-guide.md",
     "kb/stocks/protocol.md",
-    "kb/stocks/portfolio.md",
-    "kb/stocks/agent/config.md"
+    "kb/stocks/portfolio.md"
   ]
 }
