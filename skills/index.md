@@ -2,24 +2,24 @@
 
 ## Available Skills
 
-| Skill | Description |
-|-------|-------------|
-| skill:workflow | How Vyse works — core files, status system, wake-up flow |
-| skill:trading | Quartermaster config, thresholds, workflow (stocks) |
-| skill:system | Debugging, recovery, FIXES, health checks |
-| skill:memory | Recall system, checkpoints, context management |
-| skill:dreams | Vision, creative brainstorming, dream journal |
-| skill:projects | Game dev projects (Skies of Arcadia) |
-| skill:control-ui | Dashboard, metrics, OpenClaw status |
-| skill:obsidian | Vault, wikilinks, daily notes |
-| skill:github | Version control, git-sync, persistence |
-| skill:github-organizer | GitHub cleanup, orphan audit, hub structure (vyse-only) |
-| skill:alerts | Message templates, notification patterns |
-| skill:crew-protocols | Shared crew knowledge — decisions, reasoning, communication |
-| skill:time | Timezone, scheduling, cron |
-| skill:security | Hardening, permissions, boundaries |
-| skill:subagent-creator | Template + pattern for building autonomous subagents |
-| skill:skill-creator | Meta-skill for creating new skills (system-provided) |
+| Skill | Access | Always | Description |
+|-------|--------|--------|-------------|
+| skill:workflow | vyse-only | - | How Vyse works — core files, status system, wake-up flow |
+| skill:trading | crew | - | Quartermaster config, thresholds, workflow (stocks) |
+| skill:system | vyse-only | ✅ | Debugging, recovery, FIXES, health checks |
+| skill:memory | vyse-only | - | Recall system, checkpoints, context management |
+| skill:dreams | vyse-only | - | Vision, creative brainstorming, dream journal |
+| skill:projects | crew | - | Game dev projects (Skies of Arcadia) |
+| skill:control-ui | crew | ✅ | Dashboard, metrics, OpenClaw status |
+| skill:obsidian | crew | - | Vault, wikilinks, daily notes |
+| skill:github | crew | - | Version control, git-sync, persistence |
+| skill:github-organizer | vyse-only | - | GitHub cleanup, orphan audit, hub structure |
+| skill:alerts | crew | - | Message templates, notification patterns |
+| skill:crew-protocols | vyse-only | - | Shared crew knowledge — decisions, reasoning, communication |
+| skill:time | crew | ✅ | Timezone, scheduling, cron |
+| skill:security | vyse-only | - | Hardening, permissions, boundaries |
+| skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
+| skill:skill-creator | crew | - | Meta-skill for creating new skills (system-provided) |
 
 ## Usage
 - Explicit: "load skill:name" or "focus: name"

@@ -1,5 +1,6 @@
 ---
 name: subagent-creator
+access: vyse-only
 description: Template and pattern for building autonomous subagents like Quartermaster. Use when creating new subagents, expanding existing ones, or understanding how Vyse's workers work.
 ---
 
