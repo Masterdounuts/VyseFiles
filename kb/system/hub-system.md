@@ -21,6 +21,9 @@ Hub for bootstrap and system configuration notes.
 - [[kb/system/tools|Tools Hub]] – Subagents, tools, heartbeat
 - [[kb/system/hub-automation.md|Automation Hub]] – Scripts & cron jobs
 
+### Dreams
+- [[kb/system/hub-dreams|Dreams Hub]] – Vision & goal tracking
+
 ### Stocks
 - [[kb/stocks/research.md|Research Hub]] – Stock analysis & ideas
 - [[kb/stocks/trading-ops.md|Trading Ops]] – How we trade
