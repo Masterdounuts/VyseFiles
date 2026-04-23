@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "07f49fbf72b8abfc",
+        "id": "6ec84ee3520c6719",
         "type": "tabs",
         "children": [
           {
-            "id": "c6e30cce308af28d",
+            "id": "bf681b229964e945",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -200,8 +200,28 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "c6e30cce308af28d",
+  "active": "bf681b229964e945",
   "lastOpenFiles": [
+    "scripts/stock-data-reader.sh",
+    "kb/stocks/research/archive.md",
+    "scripts/quartermaster-performance.sh",
+    "memory/2026-04-23.md",
+    "logs/guard_context_output.txt",
+    "logs",
+    "kb/system/hub-audit-missing.txt",
+    "kb/stocks/trades.json",
+    "kb/stocks/positions/BBAI.md",
+    "memory/archive/legacy/TASKS.md",
+    "memory/archive/legacy/loop-todos.md",
+    "memory/archive/legacy/loop-lessons.md",
+    "memory/archive/legacy",
+    "kb/stocks/robinhood-alerts-guide.md",
+    "kb/stocks/protocol.md",
+    "kb/stocks/portfolio.md",
+    "kb/stocks/agent/config.md",
+    "kb/reference/recovery-prompt.md",
+    "kb/personal/DASHBOARD.md",
+    "BOOTSTRAP.md",
     "memory/archive/DREAMS.md",
     "links.md",
     "kb/system/hub-system.md",
@@ -214,29 +234,9 @@
     "kb/system/hub-bootstrap.md",
     "kb/system/hub-automation.md",
     "kb/stocks/trading-ops.md",
-    "kb/stocks/research.md",
-    "kb/stocks/positions.md",
-    "kb/stocks/agent.md",
-    "kb/reference/templates.md",
-    "kb/personal/projects.md",
-    "kb/system/config/README.md",
-    "kb/system/fixes/README.md",
     "kb/system/fixes",
-    "kb/system/automation/README.md",
     "kb/system/automation",
-    "kb/reference/templates/README.md",
     "kb/reference/templates",
-    "kb/reference",
-    "kb/personal/projects/README.md",
-    "kb/personal/projects",
-    "kb/personal",
-    "kb/stocks/trading-ops/README.md",
-    "kb/stocks/trading-ops",
-    "kb/stocks/research/README.md",
-    "kb/system/tools/README.md",
-    "kb/system/tools",
-    "kb/system/recovery",
-    "kb/system/config",
-    "kb/system/bootstrap/README.md"
+    "kb/reference"
   ]
 }
