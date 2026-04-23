@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "4db45078a4e74628",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ec84ee3520c6719",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf681b229964e945",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a9d6b3a793325eaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aff9ea3e73e5b5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a6eb3d65a4ab30e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ecf4f61ed8db4241",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "747c350de400108e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "24ed85c9600dcd5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "70e41ca24dd6ec2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26415369a595ab3b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "4d9317c86626d4d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1ba80864ceb0f449",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b8f80a133423177a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "424939ea8d7176fd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "001d2f639b3929db",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "e335d1982c817152",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Lookup: Open lookup view": false
+    }
+  },
+  "active": "bf681b229964e945",
+  "lastOpenFiles": [
+    "kb/stocks/positions/SOFI.md",
+    "kb/stocks/positions/RIOT.md",
+    "kb/stocks/positions/MARA.md",
+    "wiki/main/sources/obsidian-guide.md",
+    "wiki/main/sources/vyse-obsidian-workflow.md",
+    "wiki/main/sources/ai-trading-partner-guide.md",
+    "wiki/main/sources",
+    "wiki/main/entities/ron.md",
+    "wiki/main/entities/david-vyse-mission.md",
+    "wiki/main/entities",
+    "wiki/main/concepts/trading-alert-priority.md",
+    "wiki/main/concepts/learning-system.md",
+    "wiki/main/concepts/brain-face-model.md",
+    "memory/stocks/news-alert.md",
+    "memory/stocks/alert-status.md",
+    "scripts/stock-data-reader.sh",
+    "kb/stocks/research/archive.md",
+    "scripts/quartermaster-performance.sh",
+    "memory/2026-04-23.md",
+    "logs/guard_context_output.txt",
+    "logs",
+    "kb/system/hub-audit-missing.txt",
+    "kb/stocks/trades.json",
+    "kb/stocks/positions/BBAI.md",
+    "memory/archive/legacy/TASKS.md",
+    "memory/archive/legacy/loop-todos.md",
+    "memory/archive/legacy/loop-lessons.md",
+    "memory/archive/legacy",
+    "kb/stocks/robinhood-alerts-guide.md",
+    "kb/stocks/protocol.md",
+    "kb/stocks/portfolio.md",
+    "kb/stocks/agent/config.md",
+    "kb/reference/recovery-prompt.md",
+    "kb/personal/DASHBOARD.md",
+    "BOOTSTRAP.md",
+    "kb/system/fixes"
+  ]
+}
