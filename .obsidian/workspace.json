@@ -203,6 +203,9 @@
   },
   "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/crew/handoffs/2026-04-24-wiki-fix-done.md",
+    "kb/crew/handoffs/2026-04-24-subagent-spawn-issue.md",
+    "kb/crew/handoffs/2026-04-24-spawn-fix-done.md",
     "wiki/main/concepts/self-improvement.md",
     "memory/2026-04-24.md",
     "kb/index.md",
@@ -231,13 +234,10 @@
     "skills/github/SKILL.md",
     "skills/dreams/SKILL.md",
     "skills/crew-protocols/SKILL.md",
-    "skills/control-ui/SKILL.md",
-    "skills/alerts/SKILL.md",
     "skills/workflow",
     "skills/trading",
     "skills/time",
     "skills/system",
-    "skills/subagent-creator",
-    "skills/index.md"
+    "skills/subagent-creator"
   ]
 }
