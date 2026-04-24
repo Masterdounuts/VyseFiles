@@ -203,6 +203,7 @@
   },
   "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "wiki/main/concepts/self-improvement.md",
     "memory/2026-04-24.md",
     "kb/index.md",
     "kb/crew/handoffs/2026-04-24-intro.md",
@@ -237,7 +238,6 @@
     "skills/time",
     "skills/system",
     "skills/subagent-creator",
-    "skills/index.md",
-    "kb/system/bootstrap/BOOTSTRAP.md"
+    "skills/index.md"
   ]
 }
