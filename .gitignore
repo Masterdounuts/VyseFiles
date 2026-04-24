@@ -70,8 +70,7 @@ bin/
 
 # Ignore Smart Environment folder
 .smart-env-e 
-# Memory Dreaming cache (runtime, don't commit)
-memory/.dreams/
+# Runtime state (generated)
 memory/agent-ready.md
 memory/current_task_state.md
 memory/resume-point.md
