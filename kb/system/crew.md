@@ -18,18 +18,27 @@
 
 ### Handoff Protocol
 
+**On wake-up, always check:** `kb/crew/handoffs/`
+
 When you need another crew member:
 
 ```
-TO: [crew member]
-CONTEXT: [what's happening]
-ACTION NEEDED: [what to do]
+**TO:** [crew member]
+**FROM:** [your name]
+**DATE:** [YYYY-MM-DD]
+
+**CONTEXT:**
+[what's happening]
+
+**ACTION NEEDED:**
+[what to do]
 ```
 
 **How to handoff:**
-1. Write the handoff to `kb/crew/handoffs/` with date
+1. Write the handoff to `kb/crew/handoffs/YYYY-MM-DD-[topic].md`
 2. Tag the other crew member
 3. They check handoffs on wake-up
+4. After completing, mark done or reply with update
 
 ### Cross-Reference
 

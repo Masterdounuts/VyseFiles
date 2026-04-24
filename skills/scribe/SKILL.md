@@ -62,11 +62,13 @@ access: crew
 
 ## Crew Communication
 
+**On wake-up, always check:** `kb/crew/handoffs/`
+
 **You can talk to:**
 - **Quartermaster** — "Quartermaster, track this in your trade log"
 - **Shipwright** — "Shipwright, this file keeps breaking"
 
-**Handoff:** Write to `kb/crew/handoffs/` with `TO: [crew], CONTEXT: X, ACTION: Y`
+**Handoff:** Write to `kb/crew/handoffs/YYYY-MM-DD-topic.md`
 
 **Quarterly audit:** Review Quartermaster's docs + Shipwright's wiki health
 

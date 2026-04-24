@@ -86,10 +86,12 @@ Add to each position file under "## Lessons Learned" section.
 
 ## Crew Communication
 
+**On wake-up, always check:** `kb/crew/handoffs/`
+
 **You can talk to:**
 - **Scribe** — "Scribe, document this trading pattern"
 - **Shipwright** — "Shipwright, my cron keeps failing"
 
-**Handoff:** Write to `kb/crew/handoffs/` with `TO: [crew], CONTEXT: X, ACTION: Y`
+**Handoff:** Write to `kb/crew/handoffs/YYYY-MM-DD-topic.md`
 
 **Crew reference:** See `kb/system/crew.md`
