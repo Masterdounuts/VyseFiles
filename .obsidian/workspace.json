@@ -203,6 +203,9 @@
   },
   "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "skills/scribe/SKILL.md",
+    "skills/scribe",
+    "kb/system/scribe.md",
     "kb/system/issues.md",
     "skills/github-organizer/SKILL.md",
     "skills/github-organizer",
@@ -228,7 +231,6 @@
     "skills/security",
     "skills/projects",
     "skills/obsidian",
-    "skills/memory",
     "skills/index.md",
     "kb/system/bootstrap/BOOTSTRAP.md",
     "kb/system/dev/github.md",
@@ -236,8 +238,6 @@
     "kb/stocks/research/weekly/weekly-research.md",
     "kb/stocks/research/daily/volatile-stocks.md",
     "kb/stocks/research/daily/morning-research.md",
-    "kb/stocks/research/daily/day-trade-research.md",
-    "kb/stocks/positions/closed/LCID.md",
-    "kb/stocks/positions/closed/BBAI.md"
+    "kb/stocks/research/daily/day-trade-research.md"
   ]
 }
