@@ -29,3 +29,5 @@ access: crew
 - **Shipwright** — "Shipwright, this file keeps breaking"
 
 **Completion:** Write handoff to `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
+
+*Reference: skill:wiki-maintainer, skill:github, skill:obsidian, skill:memory*

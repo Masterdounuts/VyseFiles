@@ -28,3 +28,5 @@ access: crew
 - **Scribe** — "Scribe, document this fix"
 
 **Completion:** Write handoff to `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
+
+*Reference: skill:system, skill:time, skill:security, skill:healthcheck*
