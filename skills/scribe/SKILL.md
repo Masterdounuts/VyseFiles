@@ -57,3 +57,17 @@ access: crew
 ---
 
 *Reference: skill:wiki-maintainer, skill:github, skill:obsidian, skill:memory*
+
+---
+
+## Crew Communication
+
+**You can talk to:**
+- **Quartermaster** — "Quartermaster, track this in your trade log"
+- **Shipwright** — "Shipwright, this file keeps breaking"
+
+**Handoff:** Write to `kb/crew/handoffs/` with `TO: [crew], CONTEXT: X, ACTION: Y`
+
+**Quarterly audit:** Review Quartermaster's docs + Shipwright's wiki health
+
+**Crew reference:** See `kb/system/crew.md`
