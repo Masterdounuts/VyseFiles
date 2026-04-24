@@ -203,6 +203,7 @@
   },
   "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "memory/2026-04-24.md",
     "kb/index.md",
     "kb/crew/handoffs/2026-04-24-intro.md",
     "kb/crew/handoffs",
@@ -237,7 +238,6 @@
     "skills/system",
     "skills/subagent-creator",
     "skills/index.md",
-    "kb/system/bootstrap/BOOTSTRAP.md",
-    "kb/system/dev/github.md"
+    "kb/system/bootstrap/BOOTSTRAP.md"
   ]
 }
