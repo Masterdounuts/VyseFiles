@@ -189,10 +189,10 @@ is_market_open() {
         return 1
     fi
     
-    # Check time (9:00 - 16:00 ET) - includes 30 min pre-market
+    # Check time (9:30 - 16:00 ET) - market opens 9:30am ET, closes 4pm ET
     local et_minutes=$((hour_et * 60 + minute_et))
-    local market_open=$((9 * 60))       # 9:00 AM (30 min before open)
-    local market_close=$((16 * 60))     # 4:00 PM
+    local market_open=$((9 * 60 + 30))   # 9:30 AM ET (market open)
+    local market_close=$((16 * 60))      # 4:00 PM
     
     if [ $et_minutes -ge $market_open ] && [ $et_minutes -lt $market_close ]; then
         return 0
@@ -554,7 +554,7 @@ fi
 
 # Only run during trading window: 9:00 AM - 4:00 PM ET
 if ! is_market_open; then
-    log "Outside trading window (9AM-4PM ET) - skipping run"
+    log "Outside trading window (9:30AM-4PM ET) - skipping run"
     log "=== Scan Complete (closed) ==="
     exit 0
 fi

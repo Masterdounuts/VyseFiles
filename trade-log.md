@@ -1,0 +1,7 @@
+- Date: 2026-04-24
+- Stock: GGB
+- Action: SELL
+- Shares: 6.99
+- Price: 4.35
+- Total: 30.39
+- Notes: "Exited - seeking better piggy bank"

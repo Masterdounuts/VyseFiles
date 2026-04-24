@@ -3,12 +3,11 @@
 *Position tracking for GGB (Grupo Argos steel arm)*
 
 ## Current Position
-- **Shares:** 4.988023 (FULL POSITION SOLD Apr 24, 2026 @ 7:15 AM @ $4.32)
-- **Order Type:** Market sell
-- **Proceeds:** $21.57
+- **Shares:** 6.99
+- **Current Price:** $4.33 (live market)
 - **Avg Cost:** $4.20
-- **Profit:** $0.68
-- **Status:** CLOSED
+- **Day Range:** $4.295 - $4.38
+- **Volume:** 16.6M
 
 ## Targets
 - **Buy:** $4.20 (DCA), $4.10, $3.90, $3.70, $3.50

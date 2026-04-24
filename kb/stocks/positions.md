@@ -1,14 +1,19 @@
 # ::Positions Hub
 
 ## Current Positions
-- [[kb/stocks/positions/current/GGB.md|GGB]] – Brazilian steel ADR (6.99 shares @ $4.34)
-- [[kb/stocks/positions/current/MARA.md|MARA]] – Bitcoin mining
-- [[kb/stocks/positions/current/RIOT.md|RIOT]] – Bitcoin mining
-- [[kb/stocks/positions/current/SOFI.md|SOFI]] – Fintech
+- **PFE** – 1 share @ $26.90 (piggy bank)
+- **Cash** – ~$3.37 (remaining after PFE buy)
+
+## Watchlist (No position - monitoring)
+- MARA – Bitcoin mining (watching for entry)
+- RIOT – Bitcoin mining (watching for entry)
+- SOFI – Fintech (watching for entry)
 
 ## Closed Positions
-- [[kb/stocks/positions/closed/LCID.md|LCID]] – Sold Apr 23 @ $6.60
-- [[kb/stocks/positions/closed/BBAI.md|BBAI]] – Sold Apr 23 @ $3.78
+- GGB – SOLD Apr 24 @ $4.32 (4.988 shares = $21.57) ✅
+- LCID – Sold Apr 23 @ $6.60
+- BBAI – Sold Apr 23 @ $3.78
 
 ---
 *Links: [[kb/stocks/stocks|← Stocks]]*
+*Last updated: 2026-04-24*
