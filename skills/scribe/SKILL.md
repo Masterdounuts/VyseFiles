@@ -70,6 +70,22 @@ access: crew
 
 **Handoff:** Write to `kb/crew/handoffs/YYYY-MM-DD-topic.md`
 
+**✅ COMPLETION PROTOCOL:** When task is done, ALWAYS write completion handoff:
+```
+**TO:** Vyse
+**FROM:** Scribe
+**DATE:** YYYY-MM-DD
+
+**TASK:** [what was requested]
+**STATUS:** ✅ COMPLETE
+
+**SUMMARY:**
+- [what you did]
+- [files changed]
+- [what you fixed]
+```
+Save to: `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
+
 **Quarterly audit:** Review Quartermaster's docs + Shipwright's wiki health
 
 **Crew reference:** See `kb/system/crew.md`

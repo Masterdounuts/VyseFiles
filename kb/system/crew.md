@@ -40,6 +40,35 @@ When you need another crew member:
 3. They check handoffs on wake-up
 4. After completing, mark done or reply with update
 
+### Completion Protocol
+
+**When a task is done, ALWAYS notify:**
+
+```
+**TO:** Vyse
+**FROM:** [your name]
+**DATE:** [YYYY-MM-DD]
+
+**TASK:** [what was requested]
+**STATUS:** ✅ COMPLETE
+
+**SUMMARY:**
+- [what you did]
+- [what you fixed/changed]
+- [next steps if any]
+```
+
+Write to: `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
+
+**Why:** Vyse checks handoffs on wake-up and needs to know crew progress.
+
+---
+
+### Vyse's Wake-Up Protocol
+
+**On EVERY wake, Vyse checks:**
+1. `kb/crew/handoffs/` — for new tasks + completion reports
+
 ### Cross-Reference
 
 | From | To | Use Case |

@@ -94,4 +94,20 @@ Add to each position file under "## Lessons Learned" section.
 
 **Handoff:** Write to `kb/crew/handoffs/YYYY-MM-DD-topic.md`
 
+**✅ COMPLETION PROTOCOL:** When task is done, ALWAYS write completion handoff:
+```
+**TO:** Vyse
+**FROM:** Quartermaster
+**DATE:** YYYY-MM-DD
+
+**TASK:** [what was requested]
+**STATUS:** ✅ COMPLETE
+
+**SUMMARY:**
+- [alert sent? position updated?]
+- [price data]
+- [next action]
+```
+Save to: `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
+
 **Crew reference:** See `kb/system/crew.md`
