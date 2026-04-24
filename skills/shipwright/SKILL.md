@@ -62,11 +62,13 @@ access: crew
 
 ## Crew Communication
 
+**On wake-up, always check:** `kb/crew/handoffs/`
+
 **You can talk to:**
 - **Quartermaster** — "Quartermaster, your script keeps failing"
 - **Scribe** — "Scribe, document this fix"
 
-**Handoff:** Write to `kb/crew/handoffs/` with `TO: [crew], CONTEXT: X, ACTION: Y`
+**Handoff:** Write to `kb/crew/handoffs/YYYY-MM-DD-topic.md`
 
 **Quarterly audit:** Review Scribe's wiki health + Quartermaster's cron
 
