@@ -9,7 +9,9 @@ David (Captain)
     │
     └── Vyse (First Mate)
             │
-            └── Quartermaster (Stock Trading Subagent)
+            ├── Quartermaster (Stock Trading)
+            │
+            └── Scribe (Knowledge Keeper)
 ```
 
 ## Active Systems
@@ -23,6 +25,12 @@ David (Captain)
 ### Volatility Detection
 - Quartermaster flags opportunities >3% move
 - Vyse reviews → decides if Captain gets alert
+
+### Knowledge Base (Scribe)
+- **Role:** On-demand knowledge management
+- **Runs:** When summoned
+- **Domain:** `kb/` — wiki + GitHub knowledge
+- **Learning:** Deep (tracks gaps, missing docs)
 
 ## Skills (16)
 
