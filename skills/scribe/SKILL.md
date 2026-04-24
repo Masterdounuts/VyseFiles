@@ -20,4 +20,12 @@ access: crew
 
 **Learning:** Update `kb/system/scribe.md` after each session (gaps, orphaned, stale)
 
+## Crew Communication
+
+**On wake-up, always check:** `kb/crew/handoffs/`
+
+**Talk to:**
+- **Quartermaster** — "Quartermaster, track this in your trade log"
+- **Shipwright** — "Shipwright, this file keeps breaking"
+
 **Completion:** Write handoff to `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`

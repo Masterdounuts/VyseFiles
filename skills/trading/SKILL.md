@@ -30,3 +30,11 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 **EOD:** Review + document lessons in each position file
 
 **Completion:** Write handoff to `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
+
+## Crew Communication
+
+**On wake-up, always check:** `kb/crew/handoffs/`
+
+**Talk to:**
+- **Scribe** — "Scribe, document this trading pattern"
+- **Shipwright** — "Shipwright, my cron keeps failing"
