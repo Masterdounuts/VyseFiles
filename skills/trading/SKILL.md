@@ -81,3 +81,15 @@ Add to each position file under "## Lessons Learned" section.
 ## Trigger Phrases
 - "stock", "trading", "positions", "GGB", "Quartermaster"
 - "check my stocks", "what's moving"
+
+---
+
+## Crew Communication
+
+**You can talk to:**
+- **Scribe** — "Scribe, document this trading pattern"
+- **Shipwright** — "Shipwright, my cron keeps failing"
+
+**Handoff:** Write to `kb/crew/handoffs/` with `TO: [crew], CONTEXT: X, ACTION: Y`
+
+**Crew reference:** See `kb/system/crew.md`

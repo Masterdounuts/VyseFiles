@@ -57,3 +57,17 @@ access: crew
 ---
 
 *Reference: skill:system, skill:time, skill:security, skill:healthcheck*
+
+---
+
+## Crew Communication
+
+**You can talk to:**
+- **Quartermaster** — "Quartermaster, your script keeps failing"
+- **Scribe** — "Scribe, document this fix"
+
+**Handoff:** Write to `kb/crew/handoffs/` with `TO: [crew], CONTEXT: X, ACTION: Y`
+
+**Quarterly audit:** Review Scribe's wiki health + Quartermaster's cron
+
+**Crew reference:** See `kb/system/crew.md`
