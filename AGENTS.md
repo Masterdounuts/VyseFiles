@@ -11,7 +11,9 @@ David (Captain)
             │
             ├── Quartermaster (Stock Trading)
             │
-            └── Scribe (Knowledge Keeper)
+            ├── Scribe (Knowledge Keeper)
+            │
+            └── Shipwright (Mechanic)
 ```
 
 ## Active Systems
@@ -31,6 +33,12 @@ David (Captain)
 - **Runs:** When summoned
 - **Domain:** `kb/` — wiki + GitHub knowledge
 - **Learning:** Deep (tracks gaps, missing docs)
+
+### System Health (Shipwright)
+- **Role:** System maintenance & health
+- **Runs:** Weekly (Sunday) + on-demand
+- **Scope:** Health, cron, cleanup
+- **Learning:** Deep (tracks recurring issues)
 
 ## Skills (16)
 

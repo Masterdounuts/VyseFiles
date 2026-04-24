@@ -19,6 +19,7 @@
 | skill:time | crew | ✅ | Timezone, scheduling, cron |
 | skill:security | vyse-only | - | Hardening, permissions, boundaries |
 | skill:scribe | crew | - | Knowledge management — wiki, gaps, org |
+| skill:shipwright | crew | - | System health & maintenance — cron, cleanup |
 | skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
 
 ## Usage
