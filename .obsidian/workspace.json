@@ -203,6 +203,7 @@
   },
   "active": "001d2f639b3929db",
   "lastOpenFiles": [
+    "kb/system/crew.md",
     "skills/shipwright/SKILL.md",
     "skills/shipwright",
     "kb/system/shipwright.md",
@@ -237,7 +238,6 @@
     "kb/system/bootstrap/BOOTSTRAP.md",
     "kb/system/dev/github.md",
     "kb/system/dev/dev.md",
-    "kb/stocks/research/weekly/weekly-research.md",
-    "kb/stocks/research/daily/volatile-stocks.md"
+    "kb/stocks/research/weekly/weekly-research.md"
   ]
 }
