@@ -1,10 +1,7 @@
 ---
+pageType: entity
 id: ron
-type: entity
-name: Ron (AI Agent Case Study)
-tags: [case-study, income, inspiration]
-created: 2026-04-12
-updated: 2026-04-12
+updatedAt: 2026-04-24
 ---
 
 # Ron - AI Agent Case Study

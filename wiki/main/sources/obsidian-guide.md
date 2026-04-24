@@ -1,5 +1,9 @@
-# Obsidian Quick Reference
 ---
+pageType: source
+id: obsidian-guide
+updatedAt: 2026-04-24
+---
+
 [[INDEX.md|← Back]]
 
 ## Wikilinks

@@ -1,5 +1,9 @@
-# Vyse + Obsidian Workflow
 ---
+pageType: source
+id: vyse-obsidian-workflow
+updatedAt: 2026-04-24
+---
+
 [[INDEX.md|← Back]]
 
 ## Daily Flow
