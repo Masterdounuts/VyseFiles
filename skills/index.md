@@ -27,6 +27,9 @@
 | skill:telegram-crew | crew | - | Telegram crew group chat, topic routing |
 | skill:exec | crew | ✅ | Shell execution, sandbox, background processes |
 | skill:web | crew | ✅ | Web search, fetch, browser automation |
+| skill:container | vyse-only | - | Docker & container management |
+| skill:self-healing | vyse-only | - | Self-diagnosis, auto-recovery |
+| skill:system-admin | vyse-only | - | Server & system administration |
 
 ## Usage
 - Explicit: "load skill:name" or "focus: name"
