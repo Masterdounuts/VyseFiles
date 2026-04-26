@@ -8,8 +8,9 @@
 
 I read David's trade history images and made a massive error:
 - **I calculated:** $758 profit
-- **Actual profit:** ~$7
-- **Error:** ~100x off
+- **Actual profit:** ~$6.94
+- **Actual capital:** Started $45 → now $52.94
+- **Error:** ~100x off on profit
 
 ## Root Cause
 
