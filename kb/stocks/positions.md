@@ -21,8 +21,7 @@
 | Oct 28, 2025 | BUY | 100 | $1.61 | $161.00 | |
 | Oct 29, 2025 | BUY | 100 | $1.65 | $165.00 | |
 | Nov 3, 2025 | BUY | 100 | $1.61 | $161.00 | |
-| **Subtotal** | | **300** | **$1.6233** | **$487.00** | Cost basis |
-| Nov 21, 2025 | SELL | 300 | $4.15 | $1,245.00 | *(appears in images)* |
+| Nov 21, 2025 | SELL | 300 | $4.15 | ~$1,245.00 | |
 
 ### Recent Trades (Apr 2026)
 
@@ -42,14 +41,11 @@
 
 ---
 
-## Monitoring List
+## Current Status
 
-| Stock | Status | Alert Threshold |
-|-------|--------|-----------------|
-| GGB | SOLD (Nov 21) | - |
-| PFE | HOLDING | >3% move |
+**ONLY POSITION:** PFE - 1 share @ $26.90 (piggy bank)
 
 ---
 
 *Last Updated: 2026-04-26 22:23 UTC*
-*Source: David via Telegram*
+*Source: David verified*
