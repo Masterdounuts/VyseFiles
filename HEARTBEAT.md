@@ -8,7 +8,7 @@
 
 ### Capital
 - **Starting:** $45.00
-- **Current:** $51.94
+- **Current:** $52.94
 - **Profit:** ~$6.94
 
 ### Trade Summary
