@@ -16,7 +16,10 @@ David (Captain)
             └── Shipwright (Health)
 ```
 
-**Crew = subagents** (Quartermaster, Scribe, Shipwright)
+**Information Flow:**
+- Crew ↔ First Mate (Vyse): Free flow
+- First Mate → Captain (David): All info goes through Vyse
+- **Rule:** Anything for David must go through Vyse first
 
 ## Skills (20)
 
@@ -34,11 +37,11 @@ David (Captain)
 
 ## Subagents (True - in openclaw.json)
 
-| Agent | Role | Runs |
-|-------|------|------|
-| **quartermaster** | Stock monitoring, price alerts | Every 30 min |
-| **shipwright** | Health checks, cron audit | Weekly |
-| **scribe** | Knowledge audit, gap detection | Weekly |
+| Agent | Role | Runs | Ongoing Goals |
+|-------|------|------|----------------|
+| **quartermaster** | Stock monitoring, price alerts | Every 30 min | Monitor GGB/AMC/TSLA, alert on >3% moves, track positions |
+| **shipwright** | Health checks, cron audit | Weekly | Weekly health check, cron audit, fix failures |
+| **scribe** | Knowledge audit, gap detection | Weekly | Audit kb/, detect gaps, maintain wikilinks |
 
 ## Rules
 
