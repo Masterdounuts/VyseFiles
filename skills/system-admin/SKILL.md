@@ -11,7 +11,7 @@ description: Server and system administration - networking, processes, services.
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 2 - Beginner 🟡🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|

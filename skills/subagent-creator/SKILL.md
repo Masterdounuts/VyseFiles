@@ -14,7 +14,7 @@ description: Template and pattern for building autonomous subagents like Quarter
 
 **Goal:** Reach RON Level (7/7) in subagent creation
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|

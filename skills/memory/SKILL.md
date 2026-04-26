@@ -10,7 +10,7 @@ description: How Vyse remembers, recalls, and manages context. Use when discussi
 
 **Goal:** Reach RON Level (7/7) in memory/context management
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|

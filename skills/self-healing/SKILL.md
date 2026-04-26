@@ -11,16 +11,16 @@ description: Self-diagnosis, recovery, and automation for autonomous operations.
 
 **Goal:** Reach RON Level (7/7) in self-healing
 
-### Current Status: Level 3 - Competent 🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Health Checks | 3/7 | Can run openclaw status, gateway status |
-| Error Detection | 3/7 | Recognizes common failure patterns |
-| Auto-Recovery | 2/7 | Attempting basic fixes |
-| Prevention | 2/7 | Adding to FIXES.md |
-| Self-Diagnostics | 2/7 | Can investigate with exec |
-| Escalation | 3/7 | Knows when to alert David |
+| Health Checks | 5/7 | Runs on wake, checks gateway, cron, sessions |
+| Error Detection | 5/7 | Recognizes patterns from FIXES.md |
+| Auto-Recovery | 4/7 | Attempts fixes from known patterns |
+| Prevention | 4/7 | Logs to FIXES.md after recovery |
+| Self-Diagnostics | 4/7 | Can investigate with exec, cron, sessions tools |
+| Escalation | 4/7 | Only when 2+ fix attempts fail |
 
 **Path to RON:** Build complete self-healing loop
 

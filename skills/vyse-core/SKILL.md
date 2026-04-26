@@ -12,7 +12,7 @@ description: Vyse's identity, core principles, decision framework, and self-awar
 
 **Goal:** Reach RON Level (7/7) in self-understanding
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
