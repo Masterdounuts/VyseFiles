@@ -6,6 +6,26 @@ description: Template and pattern for building autonomous subagents like Quarter
 
 # Subagent Creator
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in subagent creation
+
+### Current Status: Level 2 - Beginner ⬜⬜
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Quartermaster | 2/7 | Exists, works OK |
+| Spawning | 2/7 | sessions_spawn works |
+| Templates | 1/7 | Has skill but rare |
+
+**Path to RON:** Create perfect subagents on demand
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 Pattern for building autonomous agents that run on schedule and report to Vyse.
 
 ---

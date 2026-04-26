@@ -6,6 +6,33 @@ description: How Vyse remembers, recalls, and manages context. Use when discussi
 
 # Memory - Recall System
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in memory/context management
+
+### Current Status: Level 4 - Proficient 🟡
+
+| Skill | Level | Score | Notes |
+|-------|-------|-------|-------|
+| Recall | 5/7 | 🟡🟡🟡🟡🟡 | memory_search works well |
+| Storage | 4/7 | 🟡🟡🟡🟡 | Daily + archive working |
+| Cleanup | 3/7 | 🟡🟡🟡 | Needs optimization |
+| Dreaming | 3/7 | 🟡🟡🟡 | Enabled but rarely triggers |
+
+**Path to RON:** Better auto-organization, smarter promotion, perfect recall
+
+---
+
+### HEYRON Level Insight
+
+> **Q:** "What's the ceiling?"
+>
+> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
+
+---
+
+
+
 ## Architecture
 
 | Layer | Location | Purpose |

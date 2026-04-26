@@ -6,6 +6,26 @@ access: crew
 
 # Scribe
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in knowledge management
+
+### Current Status: Level 1 - Novice ⬜
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Wiki | 1/7 | Has kb/ folder |
+| Docs | 1/7 | Rarely creates |
+| Organization | 1/7 | Basic structure |
+
+**Path to RON:** Perfect docs, auto-organize, complete wiki
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 *On-demand knowledge manager*
 
 **Domain:** `kb/`

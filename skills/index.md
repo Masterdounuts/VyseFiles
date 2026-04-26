@@ -13,7 +13,7 @@
 | skill:control-ui | crew | ✅ | Dashboard, metrics, OpenClaw status |
 | skill:obsidian | crew | - | Vault, wikilinks, daily notes |
 | skill:github | crew | - | Version control, git-sync, persistence |
-| skill:github-organizer | vyse-only | - | GitHub cleanup, orphan audit, hub structure |
+
 | skill:alerts | crew | - | Message templates, notification patterns |
 | skill:crew-protocols | vyse-only | - | Shared crew knowledge — decisions, reasoning, communication |
 | skill:time | crew | ✅ | Timezone, scheduling, cron |
@@ -21,6 +21,7 @@
 | skill:scribe | crew | - | Knowledge management — wiki, gaps, org |
 | skill:shipwright | crew | - | System health & maintenance — cron, cleanup |
 | skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
+| skill:skill-creator | vyse-only | - | Create, edit, audit skills — check existing first |
 | skill:telegram-crew | crew | - | Telegram routing, topic bindings, crew mentions |
 
 ## Usage

@@ -5,6 +5,26 @@ description: Obsidian vault, wikilinks, daily notes, and knowledge management. U
 
 # Obsidian - Knowledge Management
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in knowledge management
+
+### Current Status: Level 3 - Competent 🟡
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Vault | 3/7 | Has kb/ structure |
+| Wikilinks | 3/7 | Uses [[]] OK |
+| Daily Notes | 2/7 | memory/ date files |
+
+**Path to RON:** Perfect organization, auto-linking, perfect recall
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 *Vault for memory, wikis, and structured notes*
 
 ## Quick Links

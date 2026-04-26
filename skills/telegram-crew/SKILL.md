@@ -6,6 +6,26 @@ description: Telegram routing, topic bindings, crew mentions, and DM/group confi
 
 # Telegram Skill
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in Telegram management
+
+### Current Status: Level 4 - Proficient 🟡🟡
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Messaging | 4/7 | Tested, works |
+| Topics | 4/7 | Topic→agent mapping |
+| Routing | 3/7 | Can configure routes |
+
+**Path to RON:** Perfect routing, auto-responses, full config
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 **Category:** Communication / Channel
 **Updated:** 2026-04-24
 

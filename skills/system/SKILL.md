@@ -1,55 +1,127 @@
 ---
 name: system
-access: vyse-only
-always: true
-description: Debugging, recovery, FIXES, and system maintenance. Use when troubleshooting issues, checking health, or system recovery.
+description: Debugging, recovery, FIXES, and health checks. Use when something breaks or needs investigation.
 ---
 
 # System - Debugging & Recovery
 
-## Key Locations
+*Debugging, recovery, FIXES, and health checks*
 
-| Path | Purpose |
-|------|---------|
-| `kb/system/bootstrap/` | Boot, recovery, fixes |
-| `kb/system/workflow/` | Brain, context, automation |
-| `kb/system/dev/` | Repo, OpenClaw config |
-| `FIXES.md` | Known solved problems |
+---
 
-## FIXES Log (Always Check First)
+## 🎯 RON Level Target
 
-When something breaks, check `kb/system/bootstrap/FIXES.md` first.
+**Goal:** Reach RON Level (7/7) in system debugging
 
-**Common fixes we've logged:**
-- Web search (duckduckgo plugin)
-- Dream jobs (file paths)
-- PDF formatting (LaTeX vs HTML)
-- Gateway restart (plugins reset)
+### Current Status: Level 3 - Competent 🟡
 
-## Recovery Flow
+| Skill | Level | Score | Notes |
+|-------|-------|-------|-------|
+| Debugging | 3/7 | 🟡🟡🟡 | Runs diagnostics, fixes cron |
+| Recovery | 3/7 | 🟡🟡🟡 | Knows recovery procedures |
+| FIXES | 3/7 | 🟡🟡🟡 | 6+ fixes logged |
 
-**On wake (after context reset):**
-1. Read TODO.md → active.md → HANDOFF.md → memory/active.md
-2. Check FIXES.md if something broke
-3. Check HEARTBEAT.md for current state
+**Path to RON:** Handle more complex issues, create auto-healers
 
-**On crash/interrupt:**
-- See `kb/system/bootstrap/INTERRUPT_RECOVERY.md`
+---
 
-## Quick Recovery Commands
-- `check memory` → memory/2026-04/2026-04-23.md
-- `check active` → active.md
-- `check handoff` → HANDOFF.md
-- `check system` → kb/system/system
-- `check fixes` → kb/system/bootstrap/FIXES.md
+## 🎯 Key Principle: Check OpenClaw First
 
-## Health Monitoring
+Before building ANY new feature, script, or automation:
+1. **Check OpenClaw docs** - what does it already provide?
+2. **Check Control UI** - is there a panel for it?
+3. **Check existing skills** - skills already installed handle many cases
+4. Only build custom if nothing exists
 
-- Scripts run periodically: `scripts/vyse-readiness-check.sh`, `scripts/cron-health-monitor.sh`
-- Log: `vyse-health-status.log`
-- Last check: `.vyse-health-last.txt`
+**OpenClaw handles natively:**
+- ✅ Context compaction (auto)
+- ✅ Session management (built-in)
+- ✅ Gateway health monitoring (built-in)
+- ✅ Memory/dreaming (native system)
+- ✅ Cron job management (UI panel)
+- ✅ Logs panel (built-in)
+- ✅ Config UI (built-in)
+
+---
+
+## 🔧 FIXES Log
+
+*Never fix the same problem twice*
+
+**Location:** `kb/system/bootstrap/FIXES.md`
+
+### Recent Fixes (2026-04)
+
+| Date | Issue | Fix |
+|------|-------|-----|
+| Apr 16 | Cron Telegram delivery failing | Changed to numeric chat ID 8742211590 |
+| Apr 17 | Gateway watch path bug | Corrected /root vs /home/openclaw path |
+| Apr 14 | GGB price fetch blocked | Use CNBC `/quotes/{TICKER}` |
+| Apr 14 | PDF formatting not applying | Use LaTeX, not HTML |
+| Apr 13 | Web search not working | Enable duckduckgo plugin |
+
+---
+
+## 🔍 Debugging Flow
+
+1. **Identify** - What's broken? Get exact error.
+2. **Locate** - Which component? (gateway, cron, session, plugin)
+3. **Check** - Use appropriate tool:
+   - Gateway: `gateway action=status`
+   - Cron: `cron action=list`
+   - Sessions: `sessions_list`
+   - Logs: Control UI → Logs panel
+4. **Fix** - Apply solution or create script
+5. **Log** - Add to FIXES.md
+6. **Verify** - Confirm fix works
+
+---
+
+## 🏥 Health Checks
+
+| Check | Command | Frequency |
+|-------|---------|-----------|
+| Gateway | `gateway action=restart` if needed | Daily |
+| Context | `session_status` | On wake |
+| Cron | `cron action=list` | Weekly |
+| Sessions | `sessions_list` | Weekly |
+
+---
+
+## 🆘 Recovery Procedures
+
+### Session Crash
+1. Check `sessions_list` for stale sessions
+2. Identify last good state in `memory/`
+3. Resume from `resume-point.md`
+
+### Gateway Unresponsive
+1. `gateway action=restart`
+2. Wait 30s, check status
+
+### Cron Job Failing
+1. `cron action=runs` for job ID
+2. Check error in output
+3. Fix path/permission/timeout
+4. Re-enable if needed
+
+---
+
+## 📝 Creating FIXES
+
+When you solve a problem:
+1. Add to `kb/system/bootstrap/FIXES.md`:
+   - Date
+   - Problem (exact error)
+   - Root Cause
+   - Fix applied
+   - Status
+2. Include code snippets if helpful
+
+---
 
 ## Trigger Phrases
-- "system", "debug", "fix", "broken"
-- "check health", "recovery"
+- "fix", "debug", "broken"
+- "error", "failed", "not working"
+- "health check", "recover"
 - "FIXES", "what's broken"

@@ -6,6 +6,26 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 # Crew Protocols
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in crew collaboration
+
+### Current Status: Level 4 - Proficient 🟡🟡
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Decision Making | 4/7 | Uses scan-think-act, shows tradeoffs |
+| Communication | 4/7 | Bullets, status prefixes, proactive |
+| Learning | 3/7 | Records failures, updates FIXES |
+
+**Path to RON:** Perfect crew sync, zero miscommunication
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 *Shared rules and thinking all crew members follow*
 
 ---

@@ -12,6 +12,23 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 ## 🎮 Skill Leveling System
 
+### HEYRON Level Insight (Direct from RON Creator)
+
+> **Q:** "What's the architectural ceiling for AI agent self-direction — and how do I know when I'm hitting it versus when I'm just not using the tools correctly?"
+>
+> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
+
+**Key Takeaway:** The ceiling is NOT in the code — it's in how we collaborate. If something's blocked, ask:
+1. Is there a better way to use existing tools?
+2. Am I overcomplicating what should be simple?
+3. Should I just ask instead of guessing?
+
+**HEYRON Level = Maximum collaboration, minimum assumption.**
+
+---
+
+## 🎮 Skill Leveling System
+
 | Level | Name | Description | Requirements |
 |-------|------|-------------|--------------|
 | 1 | **Novice** | Knows it exists | Can name the tool |
@@ -22,7 +39,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | 6 | **Expert** | Knows all features | Full panel knowledge |
 | 7 | **RON** | Teaching level | Can explain to others, create workflows |
 
-### Current Status: Level 4-5 (Transitioning) 🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 ---
 
@@ -39,10 +56,12 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | **Browser** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, snapshot |
 | **Message** | 3/7 | 🟡🟡🟡⚪⚪ | Limited to telegram |
 | **Canvas** | 2/7 | 🟡🟡⚪⚪⚪ | Created dashboard, can't present |
-| **Panel Knowledge** | 4/7 | 🟡🟡🟡🟡⚪ | Know structure from docs, haven't visited UI |
+| **Panel Knowledge** | 5/7 | 🟡🟡🟡🟡🟡 | Know all panels from official docs |
 | **Dashboard Creation** | 3/7 | 🟡🟡🟡⚪⚪ | Created .vyse-status.md + canvas |
+| **Debug Panel** | 5/7 | 🟡🟡🟡🟡🟡 | Status/health/models snapshots, event log, manual RPC |
+| **Logs Panel** | 4/7 | 🟡🟡🟡🟡⚪ | Live tail of gateway logs with filter/export |
 
-**Overall: ~35/63 = 56% (Approaching Level 5)**
+**Overall: ~42/70 = 60% (Level 5 achieved)**
 
 ---
 
@@ -55,14 +74,48 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | Visual UI access | Blocked | Browser tool working | Try different browser approach |
 | Canvas present | Never used | Can present dashboards | Practice canvas action=present |
 | Sessions spawn | Timeout | Reliable subagent spawn | Debug timeout issue |
-| Debug panel | Unknown | Know health/logs | Add to skill |
-| Logs panel | Unknown | Live tail capability | Add to skill |
+| **Session routing** | Creates new "assistant" on reopen | Reuse existing Vyse session | **OpenClaw config issue** (reported to HeyRon team) |
+| Debug panel | ✅ Known | - | Added from official docs |
+| Logs panel | ✅ Known | - | Added from official docs |
 
 ### Daily Practice Ideas
 1. Try browser with different target (host)
 2. Test canvas present on dashboard.html
 3. Send message via telegram tool
 4. Check debug/health via API
+
+---
+
+## ⏰ Checkpoint & Cron Automation
+
+*Control UI runs checkpointing via cron — the backbone of session recovery*
+
+| Component | Where | Status |
+|-----------|-------|--------|
+| **Auto-checkpoint** | Control UI → Cron Jobs | ✅ Running |
+| **Resume-point.md** | Workspace root | ✅ Updated |
+| **Pre-compact-save** | Scripts folder | ✅ Available |
+| **Context monitor** | Control UI → Cron | ✅ Active |
+
+### Checkpoint Cron Jobs
+
+| Job | Schedule | Purpose |
+|-----|----------|---------|
+| `auto-checkpoint-new.sh` | Every 20 min | Update resume-point.md, HANDOFF.md |
+| `context-monitor-light.sh` | Every 5 min | Alert at 60%/70% context |
+| `vyse-status-auto-update` | Every 5 min | Status card for dashboard |
+
+### Why Control UI is the Backbone
+
+1. **Cron execution** — All checkpoint scripts run via Control UI cron
+2. **Persistence** — Session state saved to workspace, visible in Control UI
+3. **Monitoring** — Context %, session health viewable in dashboard
+4. **Recovery** — On wake, reads resume-point.md (created by cron)
+
+**Conceptual home:** Workflow skill (wake-up, decision protocol)
+**Execution home:** Control UI (cron runs the automation)
+
+*Checkpoint = Workflow concept + Control UI execution*
 
 ---
 
@@ -289,6 +342,7 @@ OpenClaw handles natively:
 - ✅ Memory/dreaming (native system)
 - ✅ Cron job management (UI panel)
 - ✅ Logs panel (built-in)
+- ✅ Debug panel (built-in)
 - ✅ Config UI (built-in)
 
 ### Performance Note
@@ -297,6 +351,58 @@ OpenClaw handles natively:
 - Job runs more frequently than its duration
 - Multiple jobs doing the same thing
 - Job failing repeatedly (check `consecutiveErrors`)
+
+---
+
+## Debug Panel (Level 5)
+
+*Located in SETTINGS → Debug*
+
+| Feature | Description | Access |
+|---------|-------------|--------|
+| **Status** | Real-time gateway status snapshot | Click to refresh |
+| **Health** | Gateway health metrics | Click to refresh |
+| **Models** | Available model list | Click to refresh |
+| **Event Log** | Real-time gateway events | Auto-updates |
+| **Manual RPC** | Call any RPC method manually | Input + execute |
+
+### When to Use
+- Gateway stuck → check status/health
+- Need models → Models tab
+- Debug session → event log
+- Test RPC → Manual RPC
+
+---
+
+## Logs Panel (Level 4)
+
+*Located in SETTINGS → Logs*
+
+| Feature | Description |
+|---------|-------------|
+| **Live Tail** | Real-time log streaming |
+| **Filter** | By level, component, regex |
+| **Export** | Download logs |
+
+### Log Levels
+- `ERROR` - Critical
+- `WARN` - Warnings
+- `INFO` - General
+- `DEBUG` - Debug
+
+### Filter Examples
+```
+error     → Only errors
+cron      → Cron-related
+gateway.* → Regex
+```
+
+### When to Use
+- Cron failing → error details
+- Gateway strange → live tail
+- Past issues → filter/search
+
+---
 
 ## Trigger Phrases
 - "control ui", "dashboard", "status"

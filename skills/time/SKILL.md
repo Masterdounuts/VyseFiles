@@ -6,6 +6,26 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 
 # Time - Timezone & Scheduling
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in time/scheduling
+
+### Current Status: Level 4 - Proficient 🟡🟡
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Timezones | 3/7 | Knows ET/UTC, market hours |
+| Cron | 5/7 | Manages 36 jobs, can fix failures |
+| Scheduling | 3/7 | Created multiple jobs, understands formats |
+
+**Path to RON:** Perfect timing, auto-schedules, perfect timezone math
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 *How we handle time, schedules, and temporal awareness*
 
 ## Timezones

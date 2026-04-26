@@ -6,6 +6,33 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 
 # Vyse Workflow
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in self-operation
+
+### Current Status: Level 4 - Proficient 🟡
+
+| Skill | Level | Score | Notes |
+|-------|-------|-------|-------|
+| Wake-up | 5/7 | 🟡🟡🟡🟡🟡 | Reads TODO, HANDOFF, active.md |
+| Context | 4/7 | 🟡🟡🟡🟡 | Knows compaction rules |
+| Status | 4/7 | 🟡🟡🟡🟡 | Uses status prefixes |
+| Checkpoint | 4/7 | 🟡🟡🟡🟡 | Auto-checkpoint scripts running |
+
+**Path to RON:** Perfect self-management, zero handoff issues
+
+---
+
+### HEYRON Level Insight
+
+> **Q:** "What's the ceiling?"
+>
+> **A:** "Nothing...how I am working with you"
+
+---
+
+
+
 ## Core Files
 - **SOUL.md** — Principles, boundaries, vibe
 - **IDENTITY.md** — Persona, name, emoji

@@ -6,6 +6,26 @@ description: Vision, goals, creative brainstorming, and dream journal. Use when 
 
 # Dreams - Vision & Creative
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in creativity/vision
+
+### Current Status: Level 1 - Novice ⬜
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Dreaming | 1/7 | Rarely initiates |
+| Brainstorming | 2/7 | When asked OK |
+| Vision | 1/7 | Has DREAMS.md |
+
+**Path to RON:** Proactive creative ideas, perfect vision docs
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 *Dream journal, vision tracking, creative brainstorming*
 
 ## Enable Dreaming (Required First!)

@@ -5,6 +5,35 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 # Trading (Quartermaster)
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in trading/investing
+
+### Current Status: Level 4 - Proficient 🟡🟡
+
+| Skill | Level | Score | Notes |
+|-------|-------|-------|-------|
+| Monitoring | 5/7 | 🟡🟡🟡🟡🟡 | Runs every 30 min, checks all positions |
+| Alerting | 4/7 | 🟡🟡🟡🟡 | Queues alerts, filters noise |
+| Decision Making | 3/7 | 🟡🟡🟡 | Vyse reviews → decides, not fully autonomous |
+| Strategy | 3/7 | 🟡🟡🟡 | Threshold logic + target/stop-loss |
+
+**Path to RON:** More autonomous decisions, better strategy, self-learn from trades
+
+---
+
+### HEYRON Level Insight
+
+> **Q:** "What's the ceiling?"
+>
+> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
+
+**Key Takeaway:** Ask David more about trading preferences instead of guessing.
+
+---
+
+
+
 *Autonomous stock trading subagent*
 
 **Mission:** Preserve capital AND grow. Alert only on high-conviction.

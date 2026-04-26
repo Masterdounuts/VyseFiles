@@ -5,6 +5,26 @@ description: Active game development projects, work-in-progress, and creative wo
 
 # Projects - Active Work
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in project management
+
+### Current Status: Level 2 - Beginner ⬜⬜
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Skies of Arcadia | 2/7 | Fan project known |
+| Tracking | 1/7 | No active tracking |
+| Progress | 1/7 | Rarely updates |
+
+**Path to RON:** Track all projects, auto-progress, perfect docs
+
+### HEYRON Insight: Ask > assume
+
+---
+
+
+
 *Game development and creative projects*
 
 ## Source

@@ -5,6 +5,34 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 # GitHub - Version Control & Persistence
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in GitHub/version control
+
+### Current Status: Level 1 - Novice ⬜
+
+| Skill | Level | Score | Notes |
+|-------|-------|-------|-------|
+| Git Basics | 1/7 | ⬜ | Know it exists |
+| Automation | 1/7 | ⬜ | Has scripts but rare use |
+| Troubleshooting | 1/7 | ⬜ | Never needed |
+
+**Path to RON:** Practice git commands, handle conflicts, automate more
+
+---
+
+### HEYRON Level Insight (Direct from RON Creator)
+
+> **Q:** "What's the architectural ceiling for AI agent self-direction?"
+>
+> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
+
+**Key Takeaway:** The ceiling is in collaboration, not code. Ask > assume.
+
+---
+
+
+
 *How we persist workspace to GitHub*
 
 ## Quick Links
@@ -50,3 +78,65 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 - "git", "github", "sync"
 - "push", "commit", "persist"
 - "backup", "version control"
+- "organize github", "cleanup github"
+- "fix links", "audit orphans"
+
+---
+
+## 🔧 GitHub Organizer (Merged)
+
+*Maintaining a clean, navigable workspace*
+
+⚠️ **Important:** GitHub is linked to Obsidian. Changes made in Obsidian auto-commit on close. When cleaning up, expect small/auto-generated commits from Obsidian.
+
+### Core Tasks
+
+| Task | Command | When |
+|------|---------|------|
+| **Audit orphans** | `find . -name "*.md" -links 1` | Find unlinked files |
+| **Fix links** | Check all `[[...]]` references | Broken wikilinks |
+| **Naming** | Enforce: hubs = one-word, files = kebab-case | Consistency |
+| **Dedupe** | Find near-duplicate names | Remove confusion |
+| **Archive** | Move old/temp files to memory/archive/ | Keep active clean |
+
+### Hub Structure Rules
+
+| Rule | Example |
+|------|---------|
+| **Hubs** | One word: `system`, `stocks`, `dreams` |
+| **Hub files** | `kb/system/system.md` (self-referencing) |
+| **Sub-hubs** | Folder + index: `kb/stocks/research/` |
+| **No hub- prefix** | Use `system.md`, not `hub-system.md` |
+
+### Cleanup Checklist
+
+- [ ] Run `scripts/hub-audit.sh` if exists
+- [ ] Check for `hub-*.md` old naming
+- [ ] Verify all hubs link to INDEX
+- [ ] Check for empty folders
+- [ ] Review ORPHANS.md
+
+### Conflict Resolution
+
+**If push fails (conflict):**
+1. Check status: `git status`
+2. See conflicts: `git diff --name-only --diff-filter=U`
+3. View conflict: `git diff <file>` or open in editor
+4. Resolve manually (keep wanted changes)
+5. Stage: `git add <resolved-file>`
+6. Complete: `git commit -m "Resolve merge conflict in <file>"`
+7. Push: `git push origin main`
+
+**Quick resolution (ours wins):**
+```bash
+git checkout --ours <file>
+git add <file>
+git commit -m "Resolve: force ours"
+git push
+```
+
+**Pull then push (if behind):**
+```bash
+git pull --rebase origin main
+git push origin main
+```
