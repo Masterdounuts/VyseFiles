@@ -18,6 +18,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 | Communication | 5/7 | TL;DR, bullets, status/priority prefixes |
 | Learning | 5/7 | Cross-reference protocol, skill self-audit |
 | Drills | 5/7 | Communication, status prefixes on EVERY action |
+| **Crew System** | 5/7 | Scribe (GitHub+knowledge), Shipwright (fixer), Quartermaster (trading) |
 | Self-Awareness | 4/7 | Documents failures, vyse-core identity reference |
 
 **Path to RON:** Perfect crew sync, zero miscommunication
