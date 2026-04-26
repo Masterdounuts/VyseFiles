@@ -2,13 +2,21 @@
 
 [[kb/system/system|Home]]
 
-## Crew
+## Crew Hierarchy
 
 ```
 David (Captain)
     │
     └── Vyse (First Mate)
+            │
+            ├── Quartermaster (Stock Trading)
+            │
+            ├── Scribe (Knowledge)
+            │
+            └── Shipwright (Health)
 ```
+
+**Crew = subagents** (Quartermaster, Scribe, Shipwright)
 
 ## Skills (20)
 
