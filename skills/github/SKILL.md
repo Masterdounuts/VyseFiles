@@ -7,6 +7,8 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 *How we use GitHub as our second brain*
 
+> **See also:** [[kb/system/brain|Brain System]] for full second brain architecture
+
 ---
 
 ## 🎯 RON Level Target
