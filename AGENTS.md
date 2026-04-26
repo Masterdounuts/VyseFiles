@@ -14,7 +14,7 @@ David (Captain)
 
 | Category | Skills |
 |----------|--------|
-| **Core** | [[skills/workflow|workflow]], [[skills/memory|memory]], [[skills/crew-protocols|crew-protocols]], [[skills/exec|exec]], [[skills/web|web]] |
+| **Core** | [[skills/workflow|workflow]], [[skills/memory|memory]], [[skills/crew-protocols|crew-protocols]], [[skills/exec|exec]], [[skills/web|web]], [[skills/vyse-core|vyse-core]] |
 | **Trading** | [[skills/trading|trading]], [[skills/alerts|alerts]] |
 | **System** | [[skills/system|system]], [[skills/security|security]], [[skills/time|time]], [[skills/control-ui|control-ui]], [[skills/shipwright|shipwright]] |
 | **Knowledge** | [[skills/scribe|scribe]], [[skills/github|github]], [[skills/obsidian|obsidian]] |

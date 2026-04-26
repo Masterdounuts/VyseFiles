@@ -22,6 +22,7 @@
 | skill:shipwright | crew | - | System health & maintenance — cron, cleanup |
 | skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
 | skill:skill-creator | vyse-only | - | Create, edit, audit skills — check existing first |
+| skill:vyse-core | vyse-only | - | Vyse identity, principles, decision framework |
 | skill:telegram | crew | - | Telegram bot setup, DM policies, group config |
 | skill:telegram-crew | crew | - | Telegram crew group chat, topic routing |
 | skill:exec | crew | ✅ | Shell execution, sandbox, background processes |

@@ -10,19 +10,22 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Decision Making | 4/7 | Uses scan-think-act, shows tradeoffs |
-| Communication | 4/7 | Bullets, status prefixes, proactive |
-| Learning | 4/7 | Records failures, updates FIXES.md (6+ fixes), cross-reference protocol |
+| Decision Making | 5/7 | Full Scan→Think→Act with tradeoff analysis |
+| Communication | 5/7 | TL;DR, bullets, status/priority prefixes |
+| Learning | 5/7 | Cross-reference protocol, skill self-audit |
+| Self-Awareness | 4/7 | Documents failures, vyse-core identity reference |
 
 **Path to RON:** Perfect crew sync, zero miscommunication
 
 ### HEYRON Insight: Ask > assume
 
 ---
+
+**Note:** Vyse's personal identity → See [[skills/vyse-core|vyse-core]] skill
 
 
 
