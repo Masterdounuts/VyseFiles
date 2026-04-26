@@ -9,15 +9,16 @@ description: Obsidian vault, wikilinks, daily notes, and knowledge management. U
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 3 - Competent 🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Vault | 3/7 | Has kb/ structure |
-| Wikilinks | 3/7 | Uses [[]] OK |
-| Daily Notes | 2/7 | memory/ date files |
+| Vault | 4/7 | Full kb/ structure, 8 hubs |
+| Wikilinks | 4/7 | All types: link, display, heading, block |
+| Daily Notes | 4/7 | memory/ with date files, auto-sync |
+| Git Sync | 4/7 | Auto-push on close, auto-pull on open |
 
-**Path to RON:** Perfect organization, auto-linking, perfect recall
+**Path to RON:** Auto-linking, perfect recall, perfect organization
 
 ### HEYRON Insight: Ask > assume
 

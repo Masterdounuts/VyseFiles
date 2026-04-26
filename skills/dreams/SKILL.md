@@ -10,15 +10,17 @@ description: Vision, goals, creative brainstorming, and dream journal. Use when 
 
 **Goal:** Reach RON Level (7/7) in creativity/vision
 
-### Current Status: Level 1 - Novice ⬜
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Dreaming | 1/7 | Rarely initiates |
-| Brainstorming | 2/7 | When asked OK |
-| Vision | 1/7 | Has DREAMS.md |
+| **Control UI** | 4/7 | Dreams tab in Control UI manages everything |
+| Dreaming | 4/7 | Enable/disable via Dreams tab in Control UI |
+| Brainstorming | 3/7 | When asked works well |
+| Vision | 4/7 | DREAMS.md, themes tracked |
+| Archive | 4/7 | Dream journal in Dreams tab |
 
-**Path to RON:** Proactive creative ideas, perfect vision docs
+**Path to RON:** Proactive dreaming, auto-brainstorm
 
 ### HEYRON Insight: Ask > assume
 
@@ -27,6 +29,8 @@ description: Vision, goals, creative brainstorming, and dream journal. Use when 
 
 
 *Dream journal, vision tracking, creative brainstorming*
+
+**⚠️ IMPORTANT:** Dreams are managed entirely through **Control UI → Dreams tab**. No separate config needed.
 
 ## Enable Dreaming (Required First!)
 

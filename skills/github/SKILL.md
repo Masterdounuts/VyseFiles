@@ -9,15 +9,16 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 1 - Novice ⬜
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Git Basics | 1/7 | ⬜ | Know it exists |
-| Automation | 1/7 | ⬜ | Has scripts but rare use |
-| Troubleshooting | 1/7 | ⬜ | Never needed |
+| Git Basics | 3/7 | 🟡🟡🟡 | Can add, commit, push, pull, status |
+| Automation | 3/7 | 🟡🟡🟡 | git-sync.sh, auto-push from Obsidian |
+| Troubleshooting | 2/7 | 🟡🟡 | Resolved merge conflicts |
+| Branch/Merge | 2/7 | 🟡🟡 | Knows concepts |
 
-**Path to RON:** Practice git commands, handle conflicts, automate more
+**Path to RON:** More automation, git hooks, advanced workflows
 
 ---
 

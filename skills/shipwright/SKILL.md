@@ -10,15 +10,16 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in system maintenance
 
-### Current Status: Level 3 - Competent 🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Health Check | 3/7 | 🟡🟡🟡 | Runs via cron, checks gateway |
-| Cron Audit | 3/7 | 🟡🟡🟡 | Fixed 3+ jobs this session |
-| Cleanup | 2/7 | 🟡🟡 | Session cleanup cron active |
+| Health Check | 4/7 | 🟡🟡🟡🟡 | Runs via cron, checks gateway, has auto-check |
+| Cron Audit | 4/7 | 🟡🟡🟡🟡 | Fixed 6+ jobs, cron-failure-healer.sh exists |
+| Cleanup | 3/7 | 🟡🟡🟡 | Session cleanup cron, memory management |
+| Auto-Heal | 3/7 | 🟡🟡🟡 | Has failure healer script |
 
-**Path to RON:** Run weekly health checks autonomously
+**Path to RON:** Autonomous weekly health, auto-recovery
 
 ---
 

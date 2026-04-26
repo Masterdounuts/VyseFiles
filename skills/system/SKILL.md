@@ -13,15 +13,16 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 3 - Competent 🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Debugging | 3/7 | 🟡🟡🟡 | Runs diagnostics, fixes cron |
-| Recovery | 3/7 | 🟡🟡🟡 | Knows recovery procedures |
-| FIXES | 3/7 | 🟡🟡🟡 | 6+ fixes logged |
+| Debugging | 4/7 | 🟡🟡🟡🟡 | Runs diagnostics, fixes cron, session issues |
+| Recovery | 4/7 | 🟡🟡🟡🟡 | Wake-up protocol, context recovery |
+| FIXES | 4/7 | 🟡🟡🟡🟡 | 6+ fixes logged, recursive fix detection |
+| Health | 4/7 | 🟡🟡🟡🟡 | Knows all health commands |
 
-**Path to RON:** Handle more complex issues, create auto-healers
+**Path to RON:** Auto-recovery, handle complex multi-layer issues
 
 ---
 

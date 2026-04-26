@@ -23,6 +23,8 @@
 | skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
 | skill:skill-creator | vyse-only | - | Create, edit, audit skills — check existing first |
 | skill:telegram-crew | crew | - | Telegram routing, topic bindings, crew mentions |
+| skill:exec | crew | ✅ | Shell execution, sandbox, background processes |
+| skill:web | crew | ✅ | Web search, fetch, browser automation |
 
 ## Usage
 - Explicit: "load skill:name" or "focus: name"

@@ -10,15 +10,16 @@ description: Security hardening, permissions, boundaries, and safety protocols. 
 
 **Goal:** Reach RON Level (7/7) in security
 
-### Current Status: Level 2 - Beginner ⬜⬜
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Principles | 3/7 | 🟡🟡🟡 | Know core rules |
-| Implementation | 1/7 | ⬜ | Haven't done hardening |
-| Auditing | 1/7 | ⬜ | Never done security audit |
+| **Control UI** | 4/7 | 🟡🟡🟡🟡 | Settings panel in Control UI |
+| Principles | 4/7 | 🟡🟡🟡🟡 | Core rules, boundaries |
+| Implementation | 3/7 | 🟡🟡🟡 | Settings accessible via Control UI |
+| Safety Protocols | 4/7 | 🟡🟡🟡🟡 | Checklist for external actions |
 
-**Path to RON:** Run actual security hardening, regular audits
+**Path to RON:** Full hardening via Control UI
 
 ---
 
@@ -33,6 +34,8 @@ description: Security hardening, permissions, boundaries, and safety protocols. 
 
 
 *Security practices, permissions, and safety protocols*
+
+**⚠️ IMPORTANT:** Security settings are managed through **Control UI → Settings**. The only configurable security options are in the Control UI settings panel.
 
 ## Core Principles
 

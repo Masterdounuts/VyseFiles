@@ -10,15 +10,16 @@ description: Template and pattern for building autonomous subagents like Quarter
 
 **Goal:** Reach RON Level (7/7) in subagent creation
 
-### Current Status: Level 2 - Beginner ⬜⬜
+### Current Status: Level 4 - Proficient 🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Quartermaster | 2/7 | Exists, works OK |
-| Spawning | 2/7 | sessions_spawn works |
-| Templates | 1/7 | Has skill but rare |
+| Quartermaster | 4/7 | Exists, working, has learnings |
+| Spawning | 4/7 | sessions_spawn, cron setup |
+| Templates | 4/7 | Full pattern: config, data reader, main, output |
+| Crew Philosophy | 4/7 | Deep principles for subagent-as-crew |
 
-**Path to RON:** Create perfect subagents on demand
+**Path to RON:** Create perfect subagents, auto-improve
 
 ### HEYRON Insight: Ask > assume
 

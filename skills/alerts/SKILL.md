@@ -9,15 +9,16 @@ description: Alert templates, message formats, and notification patterns. Use wh
 
 **Goal:** Reach RON Level (7/7) in alerts/messaging
 
-### Current Status: Level 2 - Beginner ⬜⬜
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Templates | 3/7 | Has basic templates |
-| Formatting | 2/7 | Uses markdown OK |
-| Triggers | 1/7 | Rarely creates new |
+| Templates | 4/7 | Stocks, system, priority, status prefixes |
+| Formatting | 3/7 | Markdown, emojis, tables OK |
+| Triggers | 2/7 | Can create on request |
+| Delivery | 3/7 | Telegram, Control UI delivery |
 
-**Path to RON:** Perfect every alert, auto-format, smart triggers
+**Path to RON:** Auto-format, smart triggers, multi-channel
 
 ### HEYRON Insight: Ask > assume
 

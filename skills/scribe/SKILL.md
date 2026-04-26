@@ -10,15 +10,16 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 1 - Novice ⬜
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Wiki | 1/7 | Has kb/ folder |
-| Docs | 1/7 | Rarely creates |
-| Organization | 1/7 | Basic structure |
+| Wiki | 3/7 | 8 hubs: system, crew, stocks, dreams, concepts, reference, personal, immigration |
+| Docs | 3/7 | Creates docs on request, maintains index |
+| Organization | 3/7 | Hub structure enforced, wikilinks working |
+| Gap Detection | 2/7 | Tracks missing docs in kb/system/scribe.md |
 
-**Path to RON:** Perfect docs, auto-organize, complete wiki
+**Path to RON:** Auto-audit, perfect linking, complete wiki
 
 ### HEYRON Insight: Ask > assume
 
