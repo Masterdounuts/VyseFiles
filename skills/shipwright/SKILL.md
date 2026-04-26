@@ -10,14 +10,16 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in system maintenance
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Health Check | 4/7 | 🟡🟡🟡🟡 | Runs via cron, checks gateway, has auto-check |
-| Cron Audit | 5/7 | 🟡🟡🟡🟡🟡 | Uses subagent-creator for health subagent setup |
-| Cleanup | 3/7 | 🟡🟡🟡 | Session cleanup cron, memory management |
+| Health Check | 4/7 | 🟡🟡🟡🟡 | Runs via cron, checks gateway |
+| Cron Audit | 4/7 | 🟡🟡🟡🟡 | Manages jobs |
+| Cleanup | 3/7 | 🟡🟡🟡 | Session cleanup |
 | Auto-Heal | 3/7 | 🟡🟡🟡 | Has failure healer script |
+| **Fix Speed** | 4/7 | Improving | Practice needed |
+| **Proactive** | 4/7 | Warns crew | Can improve |
 
 **Path to RON:** Autonomous weekly health, auto-recovery
 

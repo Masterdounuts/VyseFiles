@@ -10,15 +10,15 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Decision Making | 5/7 | Full Scan→Think→Act with tradeoff analysis |
 | Communication | 5/7 | TL;DR, bullets, status/priority prefixes |
-| Learning | 5/7 | Cross-reference protocol, skill self-audit |
-| Drills | 5/7 | Communication, status prefixes on EVERY action |
-| **Crew System** | 5/7 | Scribe (GitHub+knowledge), Shipwright (fixer), Quartermaster (trading) |
+| Learning | 4/7 | Cross-reference protocol, skill self-audit |
+| Drills | 4/7 | Communication, status prefixes |
+| **Crew System** | 5/7 | Scribe, Shipwright, Quartermaster roles |
 | Self-Awareness | 4/7 | Documents failures, vyse-core identity reference |
 
 **Path to RON:** Perfect crew sync, zero miscommunication

@@ -12,17 +12,16 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| **GitHub** | 7/7 🏆 | Commits, pushes, auto-push, optimized workflow |
-| **Knowledge Base** | 6/7 | Knows all kb/ contents, retrieval optimized |
-| **Wiki** | 6/7 | 9 hubs, start-here docs, wikilinks |
-| **Retrieval** | 6/7 | Librarian protocol - find & deliver on demand |
-| **Submission Handling** | 6/7 | Accepts crew submissions, organizes to kb/ |
-| **Organization** | 5/7 | Hub structure, optimized for all consumers |
-| **Gap Detection** | 5/7 | Uses web_search to find related docs, cross-references |
+| **GitHub** | 5/7 | Commits, pushes, auto-push, but not teaching level |
+| **Knowledge Base** | 5/7 | Knows kb/ contents, retrieval works |
+| **Wiki** | 5/7 | 9 hubs, wikilinks |
+| **Retrieval** | 5/7 | Find & deliver on demand |
+| **Organization** | 5/7 | Hub structure |
+| **Gap Detection** | 4/7 | Improving |
 
 **Path to RON:** Perfect retrieval for any crew member, auto-organization
 

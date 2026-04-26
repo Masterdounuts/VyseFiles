@@ -10,13 +10,13 @@ description: How Vyse remembers, recalls, and manages context. Use when discussi
 
 **Goal:** Reach RON Level (7/7) in memory/context management
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Recall | 5/7 | 🟡🟡🟡🟡🟡 | memory_search works well |
 | Storage | 4/7 | 🟡🟡🟡🟡 | Daily + archive working |
-| Cleanup | 4/7 | 🟡🟡🟡🟡 | Uses exec for backup scripts, auto-archive working |
+| Cleanup | 4/7 | 🟡🟡🟡🟡 | Auto-archive working |
 | Dreaming | 3/7 | 🟡🟡🟡 | Enabled but rarely triggers |
 
 **Path to RON:** Better auto-organization, smarter promotion, perfect recall

@@ -9,14 +9,16 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 **Goal:** Reach RON Level (7/7) in trading/investing
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Monitoring | 5/7 | 🟡🟡🟡🟡🟡 | Runs every 30 min, checks all positions |
+| Monitoring | 4/7 | 🟡🟡🟡🟡 | Runs every 30 min, checks positions |
 | Alerting | 4/7 | 🟡🟡🟡🟡 | Queues alerts, filters noise |
-| Decision Making | 4/7 | 🟡🟡🟡🟡 | Uses crew-protocols scan-think-act, shows tradeoffs |
-| Strategy | 3/7 | 🟡🟡🟡 | Threshold logic + target/stop-loss |
+| Decision Making | 3/7 | 🟡🟡🟡 | Uses crew-protocols scan-think-act |
+| Strategy | 3/7 | 🟡🟡🟡 | Threshold logic - still learning |
+
+**Note:** Recent data error shows need for more accuracy. Working on improvement.
 
 **Path to RON:** More autonomous decisions, better strategy, self-learn from trades
 
