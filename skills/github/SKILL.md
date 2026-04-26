@@ -15,15 +15,15 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Git Basics | 7/7 | Full mastery |
-| Automation | 7/7 | Git hooks working |
-| **Search GitHub** | 7/7 | Retrieval system complete |
-| Troubleshooting | 7/7 | Can recover from any state |
-| Commit Quality | 7/7 | Enforced via hooks |
+| Git Basics | 5/7 | Commits, pushes |
+| Automation | 5/7 | Git hooks working |
+| **Search GitHub** | 5/7 | Retrieval system |
+| Troubleshooting | 4/7 | Can recover |
+| Commit Quality | 5/7 | Via hooks |
 | **GitHub as Brain** | 7/7 | Perfect retrieval |
 | Teaching | 7/7 | Can teach others |
 
