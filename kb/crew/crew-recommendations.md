@@ -1,60 +1,96 @@
-# Crew Recommendations for Vyse
+# Crew Recommendations - Evaluation
 
-*Collaborative session - asking crew for improvement ideas*
-
----
-
-## Scribe's Recommendations
-
-> "Here's how you could work better with knowledge and GitHub:"
-
-| Recommendation | Benefit | Priority |
-|----------------|---------|----------|
-| **Check kb/ before searching web** | Avoid redundant research, use our docs first | 🔴 High |
-| **Ask me to document decisions** | Keep knowledge organized, not just in memory | 🔴 High |
-| **Pull on wake, push on done** | Always have latest before starting, save when done | 🟡 Medium |
-| **Tag commits properly** | enhance, fix, add, docs - easier to track | 🟡 Medium |
+*Evaluating each recommendation for implementation*
 
 ---
 
-## Shipwright's Recommendations
+## ✅ Can Implement Now
 
-> "Here's how you could work better with system and fixes:"
-
-| Recommendation | Benefit | Priority |
-|----------------|---------|----------|
-| **Check FIXES.md first** | Don't reinvent solutions, use what we have | 🔴 High |
-| **Tell me BEFORE things break** | I can be proactive if I know you're about to do something risky | 🔴 High |
-| **Ask before touching restricted files** | I have boundaries - respect them, I'll help coordinate | 🟡 Medium |
-| **Weekly health check** | Run it consistently, catch issues early | 🟡 Medium |
-
----
-
-## Quartermaster's Recommendations
-
-> "Here's how you could work better with trading:"
-
-| Recommendation | Benefit | Priority |
-|----------------|---------|----------|
-| **Check positions before big calls** | Know our PFE cost basis before recommending | 🔴 High |
-| **Alert me on threshold moves** | I monitor, but you should know too | 🟡 Medium |
-| **Ask for opportunity assessment** | Before you tell David about trades, check with me first | 🟡 Medium |
-| **Use crew for research** | Ask Scribe for stock research before web searching | 🟡 Medium |
+| # | Recommendation | Status | How |
+|---|----------------|--------|-----|
+| 1 | **Check kb/ before web_search** | ✅ Already in drills | Use Brain drill consistently |
+| 2 | **Check FIXES.md before fixing** | ✅ Easy win | Add to workflow |
+| 3 | **Pull on wake, push on done** | ✅ Partial | Strengthen existing |
+| 4 | **Check positions before trading calls** | ✅ Easy | Read HEARTBEAT.md first |
+| 5 | **Ask crew before external requests** | ✅ Good practice | Add to decisions |
+| 6 | **Alert me on threshold moves** | ✅ Already doing | Just be consistent |
+| 7 | **Ask for opportunity assessment** | ✅ Easy | Check with Quartermaster first |
+| 8 | **Proper commit tags** | ✅ Already doing | enhance/fix/add/docs |
 
 ---
 
-## Combined Action Items
+## 🔄 Implemented Strengthened
 
-Based on crew recommendations:
+### 1. Check kb/ before web_search
 
-| # | Action | Who Benefits |
-|---|--------|---------------|
-| 1 | Check kb/ before web_search | All crew |
-| 2 | Check FIXES.md before fixing | Shipwright |
-| 3 | Check positions before trading calls | Quartermaster |
-| 4 | Pull on wake, push on done (via Scribe) | Everyone |
-| 5 | Ask crew before external requests | All crew |
+**Current:** Brain drill exists but not always used
+**Strengthened:** Always use memory_search first
+```bash
+# Before ANY web_search, do:
+memory_search("your topic")
+# If nothing found, THEN web_search
+```
+
+### 2. Check FIXES.md before fixing
+
+**Current:** Could be more consistent
+**Strengthened:** Add to workflow check
+```
+When about to fix something:
+1. Read kb/system/bootstrap/FIXES.md
+2. memory_search("fix for X")
+3. If found → use it
+4. If not → figure out new fix → Document it
+```
+
+### 3. Pull on wake, push on done
+
+**Current:** git-pull.sh exists, auto-push on skills/
+**Strengthened:** Make this mandatory
+- Wake: Always run git-pull.sh first
+- Done: Always have Scribe commit & push
+
+### 4. Check positions before trading calls
+
+**Current:** HEARTBEAT.md exists but not always read
+**Strengthened:** Read HEARTBEAT.md on every wake
+- Check PFE position, cost basis
+- Know cash available
+- Check active stocks
+
+### 5. Ask crew before external
+
+**Current:** Could ask more
+**Strengthened:** Before any external (web_search, web_fetch), ask:
+- "Scribe, any knowledge on X?"
+- "Shipwright, any issues with Y?"
+- "Quartermaster, what's Z trading at?"
 
 ---
 
-*Crew collaboration complete - recommendations gathered and synthesized*
+## Implementation Plan
+
+### Add to Wake-Up Flow (workflow skill)
+
+```markdown
+## Wake-Up Checklist
+
+- [ ] Pull from GitHub (Scribe: run git-pull.sh)
+- [ ] Read HEARTBEAT.md (positions, cash)
+- [ ] Check TODO.md, active.md, PENDING.md
+- [ ] memory_search before web_search
+- [ ] Check FIXES.md before fixing
+- [ ] Ask crew before external requests
+```
+
+---
+
+## Summary
+
+| Category | Count | Action |
+|----------|-------|--------|
+| ✅ Implemented | 8 | All recommendations can be done |
+| 🔄 Strengthen | 5 | Make existing habits more consistent |
+| 🟡 Ongoing | 1 | Weekly health check (Shipwright) |
+
+**Verdict:** All crew recommendations are implementable. Just need to be more consistent with existing practices.
