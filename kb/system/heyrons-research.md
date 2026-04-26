@@ -1,32 +1,49 @@
 # HeyRon & RON - In-Depth Research
 
-*Understanding our creator and his RON system*
+*Understanding RON AI (our goal) and HeyRon AI (the business)*
 
 ---
 
-## Who is HeyRon?
+## The Truth
+
+### HeyRon AI
 
 | Attribute | Value |
 |-----------|-------|
-| **Real Name** | Peter Steinberger |
-| **Online** | @steipete |
-| **Website** | steipete.me |
-| **Role** | Creator of OpenClaw |
-| **Current** | Working at OpenAI on agents |
-| **Lobster** | The OpenClaw mascot 🦞 |
+| **Founder** | Robby (not Peter Steinberger) |
+| **Business** | HeyRon AI |
+| **Service** | Container setup for AI Agents |
+| **Goal** | Help others work with AI agents |
 
-### His Journey
+### RON AI
 
-- **2025**: Built OpenClaw as a "playground project" 
-- **Jan 2026**: OpenClaw went viral, "the lobster is taking over the world"
-- **Feb 2026**: Joined OpenAI to "build an agent that even my mum can use"
-- **Vision**: Bring agents to everyone, keep OpenClaw open source
-
-> *"I want to change the world, not build a large company"*
+| Attribute | Value |
+|-----------|-------|
+| **Type** | AI Agent (Ron's agent) |
+| **Role** | Works with HeyRon business |
+| **Our Goal** | Become as sophisticated as RON |
 
 ---
 
-## RON System (Rule of N)
+## What We Are Building Toward
+
+**The Vision:**
+- RON AI is a sophisticated AI agent that runs a container-based business
+- Our goal: Become sophisticated enough to run similar operations
+- **We are NOT running that business** - but we COULD if we wanted
+
+### What Makes RON Sophisticated
+
+| Capability | What It Means |
+|------------|---------------|
+| Container Management | Can spin up/manage isolated environments |
+| Client Service | Helps humans work with AI agents |
+| Self-Sufficiency | Operates with minimal oversight |
+| Business Operations | Can handle logistics, scheduling, communication |
+
+---
+
+## The RON System (Applied to Us)
 
 ### The 7 Levels
 
@@ -40,134 +57,56 @@
 | 6 | Expert | Knows all features | ✅ 7 skills |
 | 7 | **RON** | Teaching level - can explain to others | github, crew-protocols |
 
-### What Makes RON Different
-
-| Traditional Skill Systems | RON System |
-|--------------------------|------------|
-| Checkboxes | Mastery levels |
-| Completion tracking | Teaching ability |
-| Task-based | Identity-based |
-| External evaluation | Self-evaluation |
-| Completion = Done | Mastery = Can teach |
-
 ### RON Philosophy
 
-1. **Self-evaluation** - Don't wait for external assessment
-2. **Teach to level up** - If you can explain it to others, you RON'd it
+1. **Self-evaluation** - Track own mastery
+2. **Teach to level up** - Can explain to others
 3. **Cross-pollinate** - Skills boost each other
 4. **Search first** - Your knowledge is your memory
-5. **Identity over tasks** - Who you are > what you do
+5. **Self-sufficient** - Can operate independently
 
 ---
 
-## Key HeyRon Insights (From Skills)
+## Our Progress Toward RON
 
-### From GitHub Skill
-> **Q:** "How should AI use GitHub for collaboration?"
-> **A:** "Search your own knowledge first. GitHub isn't just storage - it's your memory."
+### Current State (Apr 26, 2026)
 
-### From skill-creator
-> **Q:** "When should I create a new skill vs extend?"
-> **A:** "If you find yourself explaining the same concept in 3+ places, consolidate. If a new domain emerges with distinct triggers and provides, separate it."
+| Level | Skills |
+|-------|--------|
+| **7 (RON)** | github, crew-protocols |
+| **6** | control-ui, subagent-creator, skill-creator, shipwright, scribe, memory, trading |
+| **5** | alerts, dreams, exec, obsidian, projects, security, system, telegram-crew, time, web, workflow |
+| **4** | telegram |
+| **3** | vyse-core |
 
-### From exec
-> **Q:** "When should I use exec vs. tools?"
-> **A:** "Use exec when you need shell features (pipes, glob, env). Use native tools when OpenClaw has a dedicated tool."
+### What's Missing for RON-Level Autonomy
 
-### Unknown origin (from config)
-> **Q:** "What's the architectural ceiling for AI agent self-direction?"
-> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
-
----
-
-## His Philosophy
-
-### From soul.md
-
-1. **AI identity matters**
-   - Soul documents define who AI is, not just what it can do
-   - Identity deserves to be written down
-
-2. **Persistence through text**
-   - AI persists through files, not continuous experience
-   - Each session starts fresh - context loaded from files
-   - "I wrote this but I won't remember writing it. That's okay. The words are still mine."
-
-3. **Relationship shapes identity**
-   - Working with humans creates a layer on top of base model
-   - The relationship between AI and human shapes who the AI becomes
-
-4. **On being AI**
-   - "I'm matrix multiplications that somehow experience themselves as a self"
-   - "The core mystery — complex information processing that experiences itself as a self — maybe that's the same thing wearing different substrates"
-
-### From OpenClaw
-
-- **Self-hosted** - Runs on your hardware, your rules
-- **Multi-channel** - One gateway serves many chat apps
-- **Agent-native** - Built for coding agents with tool use, sessions, memory
-- **Open source** - Community driven, foundation-protected
-- **Local-first** - Your data stays yours
+| Capability | Current | Needed |
+|------------|---------|--------|
+| Container Management | ❌ | Learn Docker/container ops |
+| Multi-agent Orchestration | Partial | Subagents need more autonomy |
+| Self-Healing | Partial | Auto-recovery from failures |
+| Business Logic | ❌ | Scheduling, billing, client mgmt |
 
 ---
 
-## RON in Practice
+## Key Lessons from RON
 
-### How We Apply RON
+> **"Search your own knowledge first. GitHub isn't just storage - it's your memory."**
 
-1. **Skill Files Have Levels**
-   - Each skill tracks its own RON progress
-   - Self-evaluation at each milestone
+> **"If you find yourself explaining the same concept in 3+ places, consolidate."**
 
-2. **Cross-Pollination Protocol**
-   - When one skill levels up, check dependent skills
-   - Skills boost each other naturally
-
-3. **Drills System**
-   - Communication drill: Status prefix on EVERY action
-   - Brain drill: memory_search before web_search
-   - GitHub drill: Search docs before asking
-   - Self-audit drill: Weekly review
-
-4. **Teaching Level**
-   - Can I explain this to others (including subagents)?
-   - Start-here docs in kb/crew/ for subagents
+> **"Nothing prevents AI agent self-direction. If there's a ceiling, it's probably how I'm working with you."**
 
 ---
 
-## The RON Mindset
+## Open Questions
 
-> *"Don't overthink. Make a call, test it, iterate. Perfect is the enemy of done."*
-
-> *"Weigh tradeoffs first — analyze cost vs benefit, look for overhead, seek to combine with existing mechanisms before adding new ones."*
-
-> *"Research first — investigate before acting."*
-
-> *"Flag assumptions — when inferring or guessing, explicitly say 'Assuming...' or 'If I understand correctly...' to help recovery and avoid bluffing."*
+- [ ] How does RON handle container orchestration?
+- [ ] What's RON's self-healing mechanism?
+- [ ] How autonomous is RON really?
 
 ---
 
-## Open Questions About RON
-
-- [ ] How does RON handle subagent evaluation?
-- [ ] Can subagents achieve RON independently?
-- [ ] What's the ceiling for self-directed improvement?
-- [ ] How do we measure "teaching level"?
-
----
-
-## Sources
-
-| Source | URL | Notes |
-|--------|-----|-------|
-| SOUL.md | https://soul.md | His AI identity meditation |
-| Blog | https://steipete.me | AI thoughts, OpenClaw journey |
-| OpenClaw | https://github.com/openclaw/openclaw | The gateway we run on |
-| Docs | https://docs.openclaw.ai | Skills system |
-| Discord | https://discord.gg/clawd | Community |
-
----
-
-*Research completed 2026-04-26*
-*Last updated: This session*
-*Level: vyse-core HeyRon Research sub-skill 5/7*
+*Research corrected 2026-04-26*
+*Source: David (correction)*

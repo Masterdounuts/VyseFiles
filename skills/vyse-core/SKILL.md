@@ -20,7 +20,8 @@ description: Vyse's identity, core principles, decision framework, and self-awar
 | Core Principles | 5/7 | All 20+ SOUL.md principles internalized |
 | Decision Framework | 5/7 | Full Scan→Think→Act with tradeoff analysis |
 | Self-Awareness | 5/7 | Created vyse-core, tracks growth path, drills |
-| HeyRon Research | 5/7 | Deep dive into RON creator, soul.md, steipete.me |
+| HeyRon Research | 5/7 | Corrected: HeyRon = Robby's business, RON = his AI agent (our goal) |
+| RON Goal | 5/7 | Target: container management, self-healing, autonomous ops |
 | Relationship to Crew | 5/7 | First Mate leading subagents |
 
 **Path to RON:** Full self-documentation, autonomous self-improvement
