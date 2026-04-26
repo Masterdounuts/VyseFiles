@@ -39,7 +39,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | 6 | **Expert** | Knows all features | Full panel knowledge |
 | 7 | **RON** | Teaching level | Can explain to others, create workflows |
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 ---
 
@@ -49,14 +49,14 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| **Cron Management** | 6/7 | 🟡🟡🟡🟡🟡🟡 | Can list, add, update, remove, run. Fixed 13+ jobs (timeouts, alerts, agentIds). Identified built-in vs custom. |
-| **Gateway Config** | 5/7 | 🟡🟡🟡🟡🟡 | Can get, patch, apply, schema.lookup. Disabled WhatsApp. |
-| **Sessions** | 4/7 | 🟡🟡🟡🟡⚪ | Can list, history, view active sessions |
-| **Subagent Management** | 5/7 | 🟡🟡🟡🟡🟡 | Can spawn, list, kill, steer subagents. Converted 3 cron jobs to true subagents (quartermaster, shipwright, scribe). Uses sessions_spawn with correct agentId. |
-| **Nodes** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, describe only |
-| **Browser** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, snapshot |
-| **Message** | 3/7 | 🟡🟡🟡⚪⚪ | Limited to telegram |
-| **Canvas** | 2/7 | 🟡🟡⚪⚪⚪ | Created dashboard, can't present |
+| **Cron Management** | 5/7 | 🟡🟡🟡🟡🟡 | Can list, add, update, remove, run |
+| **Gateway Config** | 5/7 | 🟡🟡🟡🟡🟡 | Can get, patch, apply |
+| **Sessions** | 4/7 | 🟡🟡🟡🟡 | Can list, history, view active sessions |
+| **Subagent Management** | 5/7 | 🟡🟡🟡🟡🟡 | Can spawn, list, kill, steer |
+| **Nodes** | 3/7 | 🟡🟡🟡 | Can status, describe only |
+| **Browser** | 3/7 | 🟡🟡🟡 | Can status, snapshot |
+| **Message** | 3/7 | 🟡🟡🟡 | Limited to telegram |
+| **Canvas** | 2/7 | 🟡🟡 | Created dashboard, can't present |
 | **Panel Knowledge** | 5/7 | 🟡🟡🟡🟡🟡 | Know all panels from official docs |
 | **Dashboard Creation** | 3/7 | 🟡🟡🟡⚪⚪ | Created .vyse-status.md + canvas |
 | **Debug Panel** | 5/7 | 🟡🟡🟡🟡🟡 | Status/health/models snapshots, event log, manual RPC |

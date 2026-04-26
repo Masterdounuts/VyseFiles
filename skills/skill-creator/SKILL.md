@@ -13,7 +13,7 @@ description: Create, edit, audit skills. Before creating, check existing skills 
 
 **Goal:** Reach RON Level (7/7) in skill creation
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
