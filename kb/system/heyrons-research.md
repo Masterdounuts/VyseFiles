@@ -83,7 +83,7 @@
 
 | Capability | Current | Needed |
 |------------|---------|--------|
-| Container Management | ❌ | Learn Docker/container ops |
+| Container Management | ❌ NOT FOCUS | Removed per David |
 | Multi-agent Orchestration | Partial | Subagents need more autonomy |
 | Self-Healing | Partial | Auto-recovery from failures |
 | Business Logic | ❌ | Scheduling, billing, client mgmt |

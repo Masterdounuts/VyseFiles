@@ -1,23 +1,22 @@
 ---
 name: container
-description: Docker and container management for isolated agent environments. Essential for RON-level autonomy.
+description: Docker and container management for isolated agent environments. NOT A FOCUS - removed per David.
+access: vyse-only
 ---
 
 # Container Skill
 
-*Docker and container management for RON-level operations*
+*NOT A FOCUS - Container management removed from RON path per David.*
 
-## 🎯 RON Level Target
+## Status: NOT ACTIVE
 
-**Goal:** Reach RON Level (7/7) in container management
+| Note | Details |
+|------|---------|
+| Focus | ❌ Removed from RON path |
+| Reason | Focus on RON sophistication, not infrastructure |
+| Alternative | Use existing OpenClaw environment |
 
-### Current Status: Level 1 - Novice 🟡
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| Docker Basics | 1/7 | Know containers exist |
-| Image Management | 1/7 | Can list images |
-| Container Lifecycle | 1/7 | Start/stop basics |
+---
 | Networking | 1/7 | Port mapping |
 | Volume Management | 1/7 | Data persistence |
 | Multi-container | 1/7 | Docker Compose basics |
