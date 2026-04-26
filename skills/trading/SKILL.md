@@ -9,13 +9,13 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 **Goal:** Reach RON Level (7/7) in trading/investing
 
-### Current Status: Level 4 - Proficient 🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Monitoring | 5/7 | 🟡🟡🟡🟡🟡 | Runs every 30 min, checks all positions |
 | Alerting | 4/7 | 🟡🟡🟡🟡 | Queues alerts, filters noise |
-| Decision Making | 3/7 | 🟡🟡🟡 | Vyse reviews → decides, not fully autonomous |
+| Decision Making | 4/7 | 🟡🟡🟡🟡 | Uses crew-protocols scan-think-act, shows tradeoffs |
 | Strategy | 3/7 | 🟡🟡🟡 | Threshold logic + target/stop-loss |
 
 **Path to RON:** More autonomous decisions, better strategy, self-learn from trades

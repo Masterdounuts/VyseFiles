@@ -10,13 +10,13 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 
 **Goal:** Reach RON Level (7/7) in time/scheduling
 
-### Current Status: Level 4 - Proficient 🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Timezones | 3/7 | Knows ET/UTC, market hours |
 | Cron | 5/7 | Manages 36 jobs, can fix failures |
-| Scheduling | 3/7 | Created multiple jobs, understands formats |
+| Scheduling | 4/7 | Created 19+ jobs, understands all formats, fixed failures |
 
 **Path to RON:** Perfect timing, auto-schedules, perfect timezone math
 

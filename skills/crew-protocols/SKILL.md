@@ -10,13 +10,13 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 4 - Proficient 🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Decision Making | 4/7 | Uses scan-think-act, shows tradeoffs |
 | Communication | 4/7 | Bullets, status prefixes, proactive |
-| Learning | 3/7 | Records failures, updates FIXES |
+| Learning | 4/7 | Records failures, updates FIXES.md (6+ fixes), cross-reference protocol |
 
 **Path to RON:** Perfect crew sync, zero miscommunication
 
