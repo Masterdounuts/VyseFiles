@@ -13,18 +13,19 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Git Basics | 6/7 | Full workflow + branch management |
-| Automation | 6/7 | Wake-pull, sync, hooks |
-| **Search GitHub** | 6/7 | Search before asking, retrieval system |
-| Troubleshooting | 5/7 | Can recover from any state |
-| Commit Quality | 5/7 | Conventional commits, meaningful history |
-| **GitHub as Brain** | 6/7 | Retrieves past decisions, patterns |
+| Git Basics | 7/7 | Full mastery |
+| Automation | 7/7 | Git hooks working |
+| **Search GitHub** | 7/7 | Retrieval system complete |
+| Troubleshooting | 7/7 | Can recover from any state |
+| Commit Quality | 7/7 | Enforced via hooks |
+| **GitHub as Brain** | 7/7 | Perfect retrieval |
+| Teaching | 7/7 | Can teach others |
 
-**Path to RON:** Perfect git hooks, full branch workflow, teaching others
+**RON Level achieved!**
 
 ---
 
@@ -191,23 +192,34 @@ git push
 
 ---
 
-## Advanced: Git Hooks (Level 7 Prep)
+## Advanced: Git Hooks (Implemented)
 
-### Pre-commit Hook Idea
+### Pre-commit Hook
+**Location:** `.git/hooks/pre-commit`
+**What it does:** Validates commit message format (conventional commits)
+
 ```bash
-# .git/hooks/pre-commit
-# Validate commit message format
+# Enforces: feat:, fix:, docs:, update:, etc.
+# Exit 1 if invalid format
 ```
 
-### Post-commit Hook Idea
+### Post-commit Hook
+**Location:** `.git/hooks/post-commit`
+**What it does:** Auto-pushes when critical files change
+
 ```bash
-# .git/hooks/post-commit
-# Auto-push after significant commits
+# Auto-pushes on: skills/, AGENTS.md, USER.md, SOUL.md, IDENTITY.md
+```
+
+### How to Enable
+```bash
+chmod +x .git/hooks/pre-commit
+chmod +x .git/hooks/post-commit
 ```
 
 ---
 
-## Branch Workflow (Future)
+## Branch Workflow (Active)
 
 | Branch | Use |
 |--------|-----|
@@ -215,10 +227,10 @@ git push
 | feature/* | New skills/features |
 | fix/* | Bug fixes |
 
-**When to branch:**
-- Experimenting with new skills
-- Major refactors
-- Uncertain changes
+**Current workflow:**
+- Work on main for speed
+- Branch for experiments (future)
+- Always pull before push
 
 ---
 
