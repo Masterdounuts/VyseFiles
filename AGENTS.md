@@ -19,7 +19,7 @@ David (Captain)
 | **System** | [[skills/system|system]], [[skills/security|security]], [[skills/time|time]], [[skills/control-ui|control-ui]], [[skills/shipwright|shipwright]] |
 | **Knowledge** | [[skills/scribe|scribe]], [[skills/github|github]], [[skills/obsidian|obsidian]] |
 | **Creative** | [[skills/dreams|dreams]], [[skills/projects|projects]] |
-| **Messaging** | [[skills/telegram-crew|telegram-crew]] |
+| **Messaging** | [[skills/telegram|telegram]], [[skills/telegram-crew|telegram-crew]] |
 | **Meta** | [[skills/subagent-creator|subagent-creator]], [[skills/skill-creator|skill-creator]] |
 
 → [[skills/index|Full Skills Index]]
