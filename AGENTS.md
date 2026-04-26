@@ -1,62 +1,34 @@
 # Agent Setup for David
 
-[[kb/system/system|Home]] • [[kb/stocks/protocol|Trading Protocol]]
+[[kb/system/system|Home]]
 
-## Crew Hierarchy
+## Crew
 
 ```
 David (Captain)
     │
     └── Vyse (First Mate)
-            │
-            ├── Quartermaster (Stock Trading)
-            │
-            ├── Scribe (Knowledge Keeper)
-            │
-            └── Shipwright (Mechanic)
 ```
 
-## Active Systems
-
-### Stock Trading (Quartermaster)
-- **Role:** Autonomous price monitoring + volatile opportunity detection
-- **Runs:** Every 30 min (cron)
-- **Positions:** `kb/stocks/positions/*.md`
-- **Protocol:** [[kb/stocks/protocol|Trading Rules]]
-
-### Volatility Detection
-- Quartermaster flags opportunities >3% move
-- Vyse reviews → decides if Captain gets alert
-
-### Knowledge Base (Scribe)
-- **Role:** On-demand knowledge management
-- **Runs:** When summoned
-- **Domain:** `kb/` — wiki + GitHub knowledge
-- **Learning:** Deep (tracks gaps, missing docs)
-
-### System Health (Shipwright)
-- **Role:** System maintenance & health
-- **Runs:** Weekly (Sunday) + on-demand
-- **Scope:** Health, cron, cleanup
-- **Learning:** Deep (tracks recurring issues)
-
-## Skills (16)
+## Skills (20)
 
 | Category | Skills |
 |----------|--------|
-| **Core** | [[skills/workflow|workflow]], [[skills/memory|memory]], [[skills/crew-protocols|crew-protocols]] |
+| **Core** | [[skills/workflow|workflow]], [[skills/memory|memory]], [[skills/crew-protocols|crew-protocols]], [[skills/exec|exec]], [[skills/web|web]] |
 | **Trading** | [[skills/trading|trading]], [[skills/alerts|alerts]] |
-| **System** | [[skills/system|system]], [[skills/security|security]], [[skills/time|time]], [[skills/control-ui|control-ui]] |
-| **Tools** | [[skills/github|github]], [[skills/github-organizer|github-organizer]], [[skills/obsidian|obsidian]] |
+| **System** | [[skills/system|system]], [[skills/security|security]], [[skills/time|time]], [[skills/control-ui|control-ui]], [[skills/shipwright|shipwright]] |
+| **Knowledge** | [[skills/scribe|scribe]], [[skills/github|github]], [[skills/obsidian|obsidian]] |
 | **Creative** | [[skills/dreams|dreams]], [[skills/projects|projects]] |
+| **Messaging** | [[skills/telegram-crew|telegram-crew]] |
 | **Meta** | [[skills/subagent-creator|subagent-creator]], [[skills/skill-creator|skill-creator]] |
 
-*See [[skills/index|Full Skills Index]] for details.*
+→ [[skills/index|Full Skills Index]]
 
-## Skill Creation Rule
+## Rules
 
-> **Only Vyse creates skills.** Other crew members (Quartermaster) can recommend, but David must approve before any skill is built.
+- **Skill creation:** Only Vyse creates skills. David approves first.
+- **Subagents:** See [[skills/subagent-creator|subagent-creator]] for correct pattern.
 
 ---
 
-*Agent configuration and workflow documentation.*
+*Reference: skills/*
