@@ -51,7 +51,8 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 |-------|-------|-------|-------|
 | **Cron Management** | 6/7 | 🟡🟡🟡🟡🟡🟡 | Can list, add, update, remove, run. Fixed 13+ jobs (timeouts, alerts, agentIds). Identified built-in vs custom. |
 | **Gateway Config** | 5/7 | 🟡🟡🟡🟡🟡 | Can get, patch, apply, schema.lookup. Disabled WhatsApp. |
-| **Sessions** | 4/7 | 🟡🟡🟡🟡⚪ | Can list, history, spawn (timeout issues) |
+| **Sessions** | 4/7 | 🟡🟡🟡🟡⚪ | Can list, history, view active sessions |
+| **Subagent Management** | 5/7 | 🟡🟡🟡🟡🟡 | Can spawn, list, kill, steer subagents. Converted 3 cron jobs to true subagents (quartermaster, shipwright, scribe). Uses sessions_spawn with correct agentId. |
 | **Nodes** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, describe only |
 | **Browser** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, snapshot |
 | **Message** | 3/7 | 🟡🟡🟡⚪⚪ | Limited to telegram |
@@ -61,7 +62,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | **Debug Panel** | 5/7 | 🟡🟡🟡🟡🟡 | Status/health/models snapshots, event log, manual RPC |
 | **Logs Panel** | 4/7 | 🟡🟡🟡🟡⚪ | Live tail of gateway logs with filter/export |
 
-**Overall: ~48/70 = 69% (Level 6 achieved)**
+**Overall: ~55/77 = 71% (Level 6 achieved)**
 
 ---
 
