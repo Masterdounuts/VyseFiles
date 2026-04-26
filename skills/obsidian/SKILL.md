@@ -9,14 +9,14 @@ description: Obsidian vault, wikilinks, daily notes, and knowledge management. U
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Vault | 4/7 | Full kb/ structure, 8 hubs |
 | Wikilinks | 4/7 | All types: link, display, heading, block |
 | Daily Notes | 4/7 | memory/ with date files, auto-sync |
-| Git Sync | 4/7 | Auto-push on close, auto-pull on open |
+| Git Sync | 5/7 | Auto-push on skills/AGENTS.md, pre-commit validates, post-commit auto-pushes |
 
 **Path to RON:** Auto-linking, perfect recall, perfect organization
 

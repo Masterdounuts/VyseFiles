@@ -10,12 +10,12 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 
 **Goal:** Reach RON Level (7/7) in self-operation
 
-### Current Status: Level 4 - Proficient 🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Wake-up | 5/7 | 🟡🟡🟡🟡🟡 | Reads TODO, HANDOFF, active.md |
-| Context | 4/7 | 🟡🟡🟡🟡 | Knows compaction rules |
+| Context | 5/7 | 🟡🟡🟡🟡🟡 | Knows compaction rules, 60/70% checkpoints |
 | Status | 4/7 | 🟡🟡🟡🟡 | Uses status prefixes |
 | Checkpoint | 4/7 | 🟡🟡🟡🟡 | Auto-checkpoint scripts running |
 

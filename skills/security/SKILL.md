@@ -10,13 +10,13 @@ description: Security hardening, permissions, boundaries, and safety protocols. 
 
 **Goal:** Reach RON Level (7/7) in security
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | **Control UI** | 4/7 | 🟡🟡🟡🟡 | Settings panel in Control UI |
 | Principles | 4/7 | 🟡🟡🟡🟡 | Core rules, boundaries |
-| Implementation | 3/7 | 🟡🟡🟡 | Settings accessible via Control UI |
+| Implementation | 4/7 | 🟡🟡🟡🟡 | Settings via Control UI, config.patch working |
 | Safety Protocols | 4/7 | 🟡🟡🟡🟡 | Checklist for external actions |
 
 **Path to RON:** Full hardening via Control UI
