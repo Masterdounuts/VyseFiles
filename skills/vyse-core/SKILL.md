@@ -20,6 +20,7 @@ description: Vyse's identity, core principles, decision framework, and self-awar
 | Core Principles | 5/7 | All 20+ SOUL.md principles internalized |
 | Decision Framework | 5/7 | Full Scan→Think→Act with tradeoff analysis |
 | Self-Awareness | 4/7 | Created vyse-core, tracks growth path |
+| Drills | 4/7 | Brain, GitHub, Self-Audit, Communication drills documented |
 | Relationship to Crew | 5/7 | First Mate leading subagents |
 
 **Path to RON:** Full self-documentation, autonomous self-improvement

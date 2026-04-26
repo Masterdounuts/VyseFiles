@@ -17,6 +17,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 | Decision Making | 5/7 | Full Scan→Think→Act with tradeoff analysis |
 | Communication | 5/7 | TL;DR, bullets, status/priority prefixes |
 | Learning | 5/7 | Cross-reference protocol, skill self-audit |
+| Drills | 5/7 | Communication, status prefixes on EVERY action |
 | Self-Awareness | 4/7 | Documents failures, vyse-core identity reference |
 
 **Path to RON:** Perfect crew sync, zero miscommunication
