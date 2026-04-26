@@ -1,5 +1,6 @@
 ---
 name: web
+always: true
 description: Web search, fetch, and browser automation. Use when researching or accessing web content.
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: system
+always: true
 description: Debugging, recovery, FIXES, and health checks. Use when something breaks or needs investigation.
 ---
 
