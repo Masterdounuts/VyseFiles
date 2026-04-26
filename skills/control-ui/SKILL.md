@@ -39,7 +39,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | 6 | **Expert** | Knows all features | Full panel knowledge |
 | 7 | **RON** | Teaching level | Can explain to others, create workflows |
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 ---
 
@@ -49,7 +49,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| **Cron Management** | 5/7 | 🟡🟡🟡🟡🟡 | Can list, add, update, remove, run. Fixed 3 broken jobs. |
+| **Cron Management** | 6/7 | 🟡🟡🟡🟡🟡🟡 | Can list, add, update, remove, run. Fixed 13+ jobs (timeouts, alerts, agentIds). Identified built-in vs custom. |
 | **Gateway Config** | 5/7 | 🟡🟡🟡🟡🟡 | Can get, patch, apply, schema.lookup. Disabled WhatsApp. |
 | **Sessions** | 4/7 | 🟡🟡🟡🟡⚪ | Can list, history, spawn (timeout issues) |
 | **Nodes** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, describe only |
@@ -61,7 +61,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | **Debug Panel** | 5/7 | 🟡🟡🟡🟡🟡 | Status/health/models snapshots, event log, manual RPC |
 | **Logs Panel** | 4/7 | 🟡🟡🟡🟡⚪ | Live tail of gateway logs with filter/export |
 
-**Overall: ~42/70 = 60% (Level 5 achieved)**
+**Overall: ~48/70 = 69% (Level 6 achieved)**
 
 ---
 
