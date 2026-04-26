@@ -174,7 +174,89 @@ For persistent subagents that stay bound to a channel thread:
 | 3 | Apply config | gateway config.apply |
 | 4 | Test spawn | sessions_spawn tool |
 | 5 | Schedule if needed | cron with sessions_spawn |
-| 6 | Add to AGENTS.md | Documentation |
+| 6 | Add to AGENTS.md | Documentation (minimal) |
+
+---
+
+## Crew Template (For Our Subagents)
+
+*This is the template for our crew members: Quartermaster, Shipwright, Scribe*
+
+### Crew Hierarchy
+
+```
+David (Captain)
+    │
+    └── Vyse (First Mate) ← Gatekeeper for all info
+            │
+            ├── Quartermaster (Stock Trading)
+            ├── Scribe (Knowledge)
+            └── Shipwright (Health)
+```
+
+### Information Flow
+
+| Flow | Rule |
+|------|------|
+| Crew ↔ Vyse | Free flow of skills & info |
+| Vyse → David | All info goes through First Mate |
+| **Rule** | Anything for Captain goes through First Mate first |
+
+### Subagent Template Fields
+
+| Field | Description |
+|-------|-------------|
+| **Role** | What they do (e.g., stock trading) |
+| **Ongoing Goals** | Continuous missions (not one-off tasks) |
+| **Key Files** | Files they read on wake |
+| **Skills** | Which skills they have access to |
+| **Schedule** | How often they run |
+| **Reporting** | Report to Vyse, not directly to David |
+
+### Example: Quartermaster Template
+
+```markdown
+# Quartermaster - Stock Trading
+
+*Your ongoing mission: Monitor and manage stock positions*
+
+## Your Role
+| Position | Who |
+|----------|-----|
+| Captain | David |
+| First Mate | Vyse |
+| You | Crew - Quartermaster |
+
+## Information Flow
+Quartermaster ←→ Vyse (First Mate) ←→ David (Captain)
+                      ↑
+            All info goes through me
+
+**Rule:** Anything for David must go through Vyse first.
+
+## Ongoing Goals
+| Goal | Status | Priority |
+|------|--------|----------|
+| Monitor [stocks] | Active | 🔴 High |
+| Alert on >3% moves | Active | 🔴 High |
+| Track positions | Active | 🟡 Medium |
+| Log trades | Active | 🟡 Medium |
+
+## Key Files
+- kb/stocks/protocol.md
+- kb/stocks/positions.md
+- kb/stocks/rules.md
+
+## Skills
+- trading, alerts
+
+## Schedule
+- Every 30 min during market hours
+
+## Communication
+- Report to Vyse (First Mate)
+- Use status prefixes: 🔴 BREAKING, 🟡 UPDATE, ✅ DONE
+```
 
 ---
 

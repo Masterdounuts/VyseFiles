@@ -37,11 +37,13 @@ David (Captain)
 
 ## Subagents (True - in openclaw.json)
 
-| Agent | Role | Runs | Ongoing Goals |
-|-------|------|------|----------------|
-| **quartermaster** | Stock monitoring, price alerts | Every 30 min | Monitor GGB/AMC/TSLA, alert on >3% moves, track positions |
-| **shipwright** | Health checks, cron audit | Weekly | Weekly health check, cron audit, fix failures |
-| **scribe** | Knowledge audit, gap detection | Weekly | Audit kb/, detect gaps, maintain wikilinks |
+| Agent | Role | Runs |
+|-------|------|------|
+| **quartermaster** | Stock monitoring, price alerts | Every 30 min |
+| **shipwright** | Health checks, cron audit | Weekly |
+| **scribe** | Knowledge audit, gap detection | Weekly |
+
+→ See [[skills/subagent-creator|subagent-creator]] for full crew template, ongoing goals, and information flow.
 
 ## Rules
 
