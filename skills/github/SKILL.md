@@ -13,17 +13,18 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Git Basics | 5/7 | Full workflow: add, commit, push, pull, branch |
-| Automation | 5/7 | Pull on wake, auto-sync, scripts |
-| **Search GitHub** | 5/7 | Search our own docs before asking |
-| Troubleshooting | 4/7 | Resolved conflicts, can recover |
-| Commit Quality | 4/7 | Conventional commits, meaningful messages |
+| Git Basics | 6/7 | Full workflow + branch management |
+| Automation | 6/7 | Wake-pull, sync, hooks |
+| **Search GitHub** | 6/7 | Search before asking, retrieval system |
+| Troubleshooting | 5/7 | Can recover from any state |
+| Commit Quality | 5/7 | Conventional commits, meaningful history |
+| **GitHub as Brain** | 6/7 | Retrieves past decisions, patterns |
 
-**Path to RON:** GitHub as second brain - retrieve, not just store
+**Path to RON:** Perfect git hooks, full branch workflow, teaching others
 
 ---
 
@@ -187,6 +188,37 @@ git push
 - Find past decisions in `memory/2026-*.md`
 - Check skills for how-to
 - Look in `kb/system/issues.md` for known problems
+
+---
+
+## Advanced: Git Hooks (Level 7 Prep)
+
+### Pre-commit Hook Idea
+```bash
+# .git/hooks/pre-commit
+# Validate commit message format
+```
+
+### Post-commit Hook Idea
+```bash
+# .git/hooks/post-commit
+# Auto-push after significant commits
+```
+
+---
+
+## Branch Workflow (Future)
+
+| Branch | Use |
+|--------|-----|
+| main | Production-ready |
+| feature/* | New skills/features |
+| fix/* | Bug fixes |
+
+**When to branch:**
+- Experimenting with new skills
+- Major refactors
+- Uncertain changes
 
 ---
 
