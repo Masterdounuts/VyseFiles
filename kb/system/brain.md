@@ -2,6 +2,16 @@
 
 *How Vyse uses GitHub as a second brain*
 
+## Subagent Access
+
+Each subagent has a "Start Here" in `kb/crew/`:
+
+| Subagent | Reads | Location |
+|----------|-------|----------|
+| Quartermaster | Stocks, positions, rules | `kb/crew/subagent-quartermaster.md` |
+| Shipwright | Issues, fixes, health | `kb/crew/subagent-shipwright.md` |
+| Scribe | All hubs, gaps | `kb/crew/subagent-scribe.md` |
+
 ## Structure
 
 ```
