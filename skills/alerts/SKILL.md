@@ -9,13 +9,13 @@ description: Alert templates, message formats, and notification patterns. Use wh
 
 **Goal:** Reach RON Level (7/7) in alerts/messaging
 
-### Current Status: Level 3 - Competent 🟡🟡🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Templates | 4/7 | Stocks, system, priority, status prefixes |
 | Formatting | 3/7 | Markdown, emojis, tables OK |
-| Triggers | 2/7 | Can create on request |
+| Triggers | 3/7 | Integrates with trading skill for stock alerts, system for cron alerts |
 | Delivery | 3/7 | Telegram, Control UI delivery |
 
 **Path to RON:** Auto-format, smart triggers, multi-channel
