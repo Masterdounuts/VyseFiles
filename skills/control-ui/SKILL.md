@@ -8,6 +8,175 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 *OpenClaw's web interface for monitoring and control*
 
+---
+
+## 🎮 Skill Leveling System
+
+| Level | Name | Description | Requirements |
+|-------|------|-------------|--------------|
+| 1 | **Novice** | Knows it exists | Can name the tool |
+| 2 | **Beginner** | Used once or twice | Tried one API call |
+| 3 | **Competent** | Can handle basics | Can list/cget basic info |
+| 4 | **Proficient** | Can do most tasks | Can manage cron, config, sessions |
+| 5 | **Advanced** | Can fix issues | Debug problems, fix configs |
+| 6 | **Expert** | Knows all features | Full panel knowledge |
+| 7 | **RON** | Teaching level | Can explain to others, create workflows |
+
+### Current Status: Level 4-5 (Transitioning) 🟡🟡
+
+---
+
+## 📊 Self-Evaluation
+
+### Skills Breakdown
+
+| Skill | Level | Score | Notes |
+|-------|-------|-------|-------|
+| **Cron Management** | 5/7 | 🟡🟡🟡🟡🟡 | Can list, add, update, remove, run. Fixed 3 broken jobs. |
+| **Gateway Config** | 5/7 | 🟡🟡🟡🟡🟡 | Can get, patch, apply, schema.lookup. Disabled WhatsApp. |
+| **Sessions** | 4/7 | 🟡🟡🟡🟡⚪ | Can list, history, spawn (timeout issues) |
+| **Nodes** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, describe only |
+| **Browser** | 3/7 | 🟡🟡🟡⚪⚪ | Can status, snapshot |
+| **Message** | 3/7 | 🟡🟡🟡⚪⚪ | Limited to telegram |
+| **Canvas** | 2/7 | 🟡🟡⚪⚪⚪ | Created dashboard, can't present |
+| **Panel Knowledge** | 4/7 | 🟡🟡🟡🟡⚪ | Know structure from docs, haven't visited UI |
+| **Dashboard Creation** | 3/7 | 🟡🟡🟡⚪⚪ | Created .vyse-status.md + canvas |
+
+**Overall: ~35/63 = 56% (Approaching Level 5)**
+
+---
+
+## 🎯 Path to RON (Level 7)
+
+### What I Need
+
+| Gap | Current | Needed | Action |
+|-----|---------|--------|--------|
+| Visual UI access | Blocked | Browser tool working | Try different browser approach |
+| Canvas present | Never used | Can present dashboards | Practice canvas action=present |
+| Sessions spawn | Timeout | Reliable subagent spawn | Debug timeout issue |
+| Debug panel | Unknown | Know health/logs | Add to skill |
+| Logs panel | Unknown | Live tail capability | Add to skill |
+
+### Daily Practice Ideas
+1. Try browser with different target (host)
+2. Test canvas present on dashboard.html
+3. Send message via telegram tool
+4. Check debug/health via API
+
+---
+
+## API Tools (No CLI Needed)
+
+All management can be done via API tools - no CLI required:
+
+| Tool | Actions | Purpose |
+|------|---------|---------|
+| **cron** | list, add, update, remove, run, runs, wake | Schedule tasks |
+| **gateway** | config.get, config.patch, config.apply, config.schema.lookup, restart | Gateway/config |
+| **sessions_list** | limit, kinds, activeMinutes, messageLimit | List sessions |
+| **sessions_history** | sessionKey, limit, includeTools | View history |
+| **sessions_send** | sessionKey, label, message | Send to session |
+| **sessions_spawn** | task, runtime, agentId, mode | Spawn sub-agent |
+| **nodes** | status, describe, pending, approve, notify, camera_snap, location_get | Device management |
+| **message** | send, react, poll, edit, delete | Channel messaging |
+| **browser** | status, snapshot, navigate, act | Browser control |
+| **canvas** | present, hide, navigate, eval, snapshot | Dashboard display |
+| **memory_search** | query, corpus | Search memory |
+| **memory_get** | path, from, lines | Read memory |
+
+### Canvas Actions (Verified)
+- `present` - Show dashboard
+- `hide` - Hide dashboard  
+- `navigate` - Navigate canvas
+- `eval` - Run JavaScript
+- `snapshot` - Capture screenshot
+
+## Sessions - Deep Dive
+
+### What is a Session?
+A session is a **persistent conversation** between a channel (Telegram, Control UI, etc.) and an agent. It holds message history, context, and state.
+
+### Session Key Format
+```
+agent:<agentId>:<channel>:group:<groupId>   # For groups
+agent:<agentId>:main                        # For DMs/default
+```
+
+**Examples:**
+- `agent:vyse:main` — Main session (Control UI DM)
+- `agent:vyse:telegram:group:20` — Telegram topic 20
+- `agent:quartermaster:main` — Quartermaster's trading session
+
+### Session Storage
+```
+~/.openclaw/agents/<agentId>/sessions/
+├── session-id-1.jsonl
+├── session-id-2.jsonl
+└── sessions.json (index)
+```
+- Each agent has their own session folder
+- Messages stored as JSONL (JSON Lines)
+
+### Session Types
+
+| Type | Description | Use Case |
+|------|-------------|----------|
+| **main** | Long-lived conversation | User chats, ongoing对话 |
+| **isolated** | One-shot task, auto-cleanup | Cron jobs, one-time tasks |
+| **sub-agent** | Spawned by agent for delegation | `sessions_spawn` calls |
+
+### Session Target Options (Cron Jobs)
+- `"sessionTarget": "main"` — Adds to main conversation (avoids, use isolated)
+- `"sessionTarget": "isolated"` — One-shot, ephemeral (preferred for cron)
+- `"sessionTarget": "current"` — Binds to current session at creation time
+- `"sessionTarget": "session:<key>"` — Specific persistent session
+
+### Default Agent
+- Set `"default": true` in `agents.list` in openclaw.json
+- Handles messages when no specific agent is configured
+- Control UI chats route to default agent
+
+### How Routing Works
+1. User message → Gateway
+2. Check channel config → Find agentId
+3. If no agentId → Use default agent
+4. Find or create session → Route to agent
+
+### Common Issues & Fixes
+
+| Issue | Fix |
+|-------|-----|
+| Cron jobs cluttering main session | Use `"sessionTarget": "isolated"` + `payload.kind: "agentTurn"` |
+| "Blank agent" in Control UI | Delete orphan `main` agent, set default |
+| Old agent still referenced in cron | Update `agentId` and `sessionKey` |
+| Session stuck as wrong agent | Delete agent folder, recreate |
+| CLI timeout | Use API tools instead (cron, gateway, sessions_*) |
+
+### Commands for Session Management (CLI fallback)
+```bash
+# List sessions
+openclaw sessions list
+
+# Kill stale session
+gateway sessions kill <sessionId>
+
+# Check cron jobs
+openclaw cron list
+```
+
+### Agent Directory Structure
+```
+~/.openclaw/agents/
+├── vyse/           # Default agent (you)
+├── quartermaster/  # Stock trading
+├── scribe/         # Knowledge management
+├── shipwright/     # Health/maintenance
+└── main/           # LEGACY - delete if exists (blank identity)
+```
+
+**Never keep orphan `main` agent** — it has no identity and causes confusion.
+
 ## Access
 - URL: `http://localhost:18790` (or configured port)
 - Opens in browser via OpenClaw
@@ -30,8 +199,17 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 - Updates `.vyse-status.md` for custom dashboards
 
 ## Canvas Integration
-- `.vyse-status.md` can be embedded in canvas
-- Use `canvas action=present` to show dashboards
+
+⚠️ **Important**: The `canvas` API tool is for **Mobile Node Canvas** (paired iOS/Android devices), NOT for Control UI dashboards.
+
+- Requires `node` parameter (paired mobile device)
+- No nodes currently paired → cannot use via API
+- Dashboard access requires manual browser: http://localhost:18790
+
+**Created for future use:**
+- `.vyse-status.md` - Status markdown file
+- `canvas/dashboard.html` - HTML dashboard (manual access only)
+- Use `[embed ref="..."]` in chat for inline displays
 
 ## Cron Jobs
 
@@ -48,11 +226,77 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | vyse-status-auto-update | */5 * * * * | Status card every 5 min |
 | context-monitor-light.sh | */5 * * * * | Context check every 5 min |
 
+### Cron Payload Best Practices
+```json
+{
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Task description",
+    "lightContext": true,
+    "timeoutSeconds": 120
+  }
+}
+```
+- Always use `sessionTarget: "isolated"` for cron
+- Use `lightContext: true` for routine checks
+- Set appropriate `timeoutSeconds`
+
 ## Tips
-- Check `openclaw status` for fast metrics
+- Check `openclaw status` for fast metrics (may timeout if gateway busy)
+- Use API tools when CLI timeouts: `cron`, `gateway`, `sessions_*`, `nodes`
 - Use `.vyse-status.md` for visual status card
 - Memory files in `memory/2026-04-*.md` for history
 - All scheduling via Control UI, not command line
+
+## Session Checklist (For Troubleshooting)
+
+When sessions are broken or confusing:
+
+1. **Check default agent** — Should have `"default": true` in config
+2. **List agents** — `ls ~/.openclaw/agents/`
+   - Delete any `main/` agent (legacy, no identity)
+3. **List sessions** — `sessions_list` tool or `openclaw sessions list`
+4. **Check cron** — `cron action=list`
+   - All cron jobs should use `"agentId": "vyse"` (or correct agent)
+   - All cron jobs should use `"sessionTarget": "isolated"` (not main)
+   - All cron jobs should use `payload.kind: "agentTurn"` (not systemEvent for isolated)
+5. **Verify routing** — Channel config should specify correct agentId
+6. **Test** — Send message via channel, verify it routes to correct agent
+
+## Sidebar Structure (Verified)
+
+| Section | Panels |
+|---------|--------|
+| **CHAT** | Chat |
+| **CONTROL** | Overview, Channels, Instances, Sessions, Usage, Cron Jobs |
+| **AGENT** | Agents, Skills, Nodes, Dreaming |
+| **SETTINGS** | Config, Communications, Appearance, Automation, Infrastructure, AI & Agents, Debug, Logs |
+| **Docs** | (standalone) |
+
+### Key Principle: Check OpenClaw First
+
+Before building ANY new feature, script, or automation:
+1. **Check OpenClaw docs** - what does it already provide?
+2. **Check Control UI** - is there a panel for it?
+3. **Check existing skills** - skills already installed handle many cases
+4. Only build custom if nothing exists
+
+OpenClaw handles natively:
+- ✅ Context compaction (auto)
+- ✅ Session management (built-in)
+- ✅ Gateway health monitoring (built-in)
+- ✅ Memory/dreaming (native system)
+- ✅ Cron job management (UI panel)
+- ✅ Logs panel (built-in)
+- ✅ Config UI (built-in)
+
+### Performance Note
+
+**Avoid redundant cron jobs** - they fight for resources. If OpenClaw already handles a feature (health monitoring, checkpointing, session management), disable the custom cron. Red flags:
+- Job runs more frequently than its duration
+- Multiple jobs doing the same thing
+- Job failing repeatedly (check `consecutiveErrors`)
 
 ## Trigger Phrases
 - "control ui", "dashboard", "status"

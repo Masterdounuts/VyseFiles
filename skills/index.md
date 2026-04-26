@@ -21,6 +21,7 @@
 | skill:scribe | crew | - | Knowledge management — wiki, gaps, org |
 | skill:shipwright | crew | - | System health & maintenance — cron, cleanup |
 | skill:subagent-creator | vyse-only | - | Template + pattern for building autonomous subagents |
+| skill:telegram-crew | crew | - | Telegram routing, topic bindings, crew mentions |
 
 ## Usage
 - Explicit: "load skill:name" or "focus: name"

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-25T02:45:53.359Z",
+  "updatedAt": "2026-04-25T20:07:13.961Z",
   "entries": {
     "memory:memory/2026-04-13.md:1:27": {
       "key": "memory:memory/2026-04-13.md:1:27",
@@ -78912,18 +78912,20 @@
       "endLine": 2444,
       "source": "memory",
       "snippet": "- **Sent Telegram to David** asking about TSLA reallocation now that it's unlocked The new session is running independently. You can keep chatting here while the subagent handles the stock monitoring and alerts. What's next? assistant: Nice! The subagent delivered exactly what we needed. 📊 **What's happening now:** - David will see the Telegram alert with current prices - He's got the decision prompt: reallocate TSLA → GGB or new pick? - Once he replies, the subagent will execute the trade **In the meantime**, want me to: 1. **Monitor for his reply** and execute when he responds? 2. **Research new stock candidates** in case he wants to diversify? 3. **Something else entirely**? Let me k",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9636450871825217,
+      "totalScore": 2.9439256176352497,
       "maxScore": 0.5296572223305702,
       "firstRecalledAt": "2026-04-22T05:24:04.073Z",
-      "lastRecalledAt": "2026-04-25T02:45:53.359Z",
+      "lastRecalledAt": "2026-04-25T05:08:42.884Z",
       "queryHashes": [
         "60545d212956",
         "409aeb99bcc9",
         "8cc5387e35c7",
-        "20ad588e7f5b"
+        "20ad588e7f5b",
+        "6e498d20aa9d",
+        "d6474f9dbfa2"
       ],
       "recallDays": [
         "2026-04-22",
@@ -78948,24 +78950,26 @@
       "endLine": 892,
       "source": "memory",
       "snippet": "- Subagent polls prices, alerts on targets, logs to memory - Loop every 15 min during market hours - **Status:** Pending David's approval to build ### Current Session State - Context: ~51% (healthy) - Active stocks: GGB, AMC, TSLA (hold) - No immediate trading opportunities ### Files Reference on Wake - AGENTS.md (trading rules) - IDENTITY.md (who I am) - USER.md (David's profile) - TODO.md (active tasks) - memory/active.md (recovery) --- *Checkpoint saved 2026-04-16 22:12 UTC* # 2026-04-16 - Daily Memory ## Cron Job Fixes (22:12 UTC) ### Issue - 6 cron jobs failing with errors (not 7 as system reported) - Root causes: Telegram recipients not resolving, timeouts ### Fixes Applied |",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.912784331000122,
+      "totalScore": 3.410005011117729,
       "maxScore": 0.7152507352798064,
       "firstRecalledAt": "2026-04-22T05:24:04.073Z",
-      "lastRecalledAt": "2026-04-24T17:39:02.680Z",
+      "lastRecalledAt": "2026-04-25T05:07:53.261Z",
       "queryHashes": [
         "60545d212956",
         "8b2051402685",
         "d1c4438aa59f",
         "7b42a6e1a221",
-        "8cc5387e35c7"
+        "8cc5387e35c7",
+        "6e498d20aa9d"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "agents.md",
@@ -79120,18 +79124,23 @@
       "endLine": 1994,
       "source": "memory",
       "snippet": "[Thu 2026-04-16 09:01 UTC] continue what you were doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:04 UTC] continue what you were doing user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:07 UTC] continue vyse \"i know we have protocols to keep you going after compaction but i dont know why they are not working\" user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:07 UTC] continue vyse user: Sender (untrusted metadata): ```json { \"label\":",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4865220874547958,
-      "maxScore": 0.4865220874547958,
+      "totalScore": 2.4465056777000425,
+      "maxScore": 0.5131667017936706,
       "firstRecalledAt": "2026-04-22T15:59:31.256Z",
-      "lastRecalledAt": "2026-04-22T15:59:31.256Z",
+      "lastRecalledAt": "2026-04-25T20:02:40.462Z",
       "queryHashes": [
-        "ca0d88ac1fa0"
+        "ca0d88ac1fa0",
+        "6c1321fe1031",
+        "f2c84dc63281",
+        "0e639d1cac97",
+        "21ebd331cbe4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-25"
       ],
       "conceptTags": [
         "openclaw-control-ui",
@@ -79215,18 +79224,20 @@
       "endLine": 2383,
       "source": "memory",
       "snippet": "What's next? Want me to check anything specific - stocks, the GitHub repo, or other systems? user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 11:21 UTC] Finish what you were doing assistant: Let me check the cron jobs for broken gateway-health-check entries and verify the Credit Watch job: assistant: Let me check if the Decision-Log cron job exists: assistant: Now let me update memory with what we just completed: assistant: Done! Just added the **Decision-Log cron** (runs every 3 hours) - that was the last pending item from our infrastructure list. **What's now complete:** - ✅ Auto-checkpoint script (works",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4800004094839096,
+      "totalScore": 0.9534362912178039,
       "maxScore": 0.4800004094839096,
       "firstRecalledAt": "2026-04-22T15:59:31.256Z",
-      "lastRecalledAt": "2026-04-22T15:59:31.256Z",
+      "lastRecalledAt": "2026-04-25T20:02:40.462Z",
       "queryHashes": [
-        "ca0d88ac1fa0"
+        "ca0d88ac1fa0",
+        "21ebd331cbe4"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-25"
       ],
       "conceptTags": [
         "gateway",
@@ -79605,21 +79616,24 @@
       "endLine": 939,
       "source": "memory",
       "snippet": "## Subagent Readiness Loop Design (22:16 UTC) ### Proposed Purpose Validate Vyse can reliably run a trading subagent before spawning — ensuring stability, tool access, and system health. ### Check Sequence | # | Check | What It Validates | |---|-------|-------------------| | 1 | Context Health | `session_status` — context <80% | | 2 | Gateway Health | `openclaw gateway status` — running | | 3 | Cron Stability | `cron list` — error count = 0 | | 4 | Tool Access | Can reach web_fetch/web_search | | 5 | Messaging | Can reach delivery channel | | 6 | Subagent Runtime | `sessions_spawn` responsive | | 7 | Memory Access | Can read/write memory files | ### Pass/Fail Logic - **PASS**: All checks",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4418617516756058,
-      "maxScore": 0.4953793495893478,
+      "totalScore": 2.4226206809282305,
+      "maxScore": 0.5161516666412354,
       "firstRecalledAt": "2026-04-23T17:56:11.850Z",
-      "lastRecalledAt": "2026-04-24T17:39:02.680Z",
+      "lastRecalledAt": "2026-04-25T05:08:42.884Z",
       "queryHashes": [
         "8b2051402685",
         "409aeb99bcc9",
-        "8cc5387e35c7"
+        "8cc5387e35c7",
+        "6e498d20aa9d",
+        "d6474f9dbfa2"
       ],
       "recallDays": [
         "2026-04-23",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "gateway",
@@ -120528,18 +120542,23 @@
       "endLine": 2410,
       "source": "memory",
       "snippet": "\"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 11:26 UTC] let's switch gears, Does that mean we should go to a new session? assistant: Good question. Here's the trade-off: **Stay in current session:** - Context at 51% — healthy buffer - Just added Decision-Log cron - Everything running smoothly **Start new session:** - Clean slate, no compaction risk for a while - We lose the in-progress conversation but memory files persist - Good for \"switching gears\" to a totally different focus **My take:** Since we've been stuck in loops before and you're ready to switch gears, this is a good natural break point. New session = fresh context before we do more wo",
-      "recallCount": 1,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.46764711439609524,
-      "maxScore": 0.46764711439609524,
+      "totalScore": 2.4683002874255178,
+      "maxScore": 0.5250514134764671,
       "firstRecalledAt": "2026-04-24T17:38:41.302Z",
-      "lastRecalledAt": "2026-04-24T17:38:41.302Z",
+      "lastRecalledAt": "2026-04-25T05:15:18.066Z",
       "queryHashes": [
-        "409aeb99bcc9"
+        "409aeb99bcc9",
+        "6e498d20aa9d",
+        "6c1321fe1031",
+        "f2c84dc63281",
+        "0e639d1cac97"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "openclaw-control-ui",
@@ -120559,16 +120578,17 @@
       "endLine": 2553,
       "source": "memory",
       "snippet": "- Waiting on David's go for the next 3 SOUL.md recommendations Ready when you are. 🦜 user: System: [2026-04-16 16:09:55 UTC] **Summary of the cron‑job error‑monitor script** System: System: - **Purpose:** Checks the OpenClaw cron job log (`/root/.openclaw/cron/jobs.json`) for any entries whose `\"lastRunStatus\"` field is `\"error\"`. System: - **How it works:** System: 1. Counts how many jobs have `\"lastRunStatus\": \"error\"`. System: 2. If the count is greater than 0, it: System: - Prints `Found X failed jobs` (where X is the number of errors). System: - Sends a Telegram alert to chat `8742211590` using the bot token stored in `$TELEGRAM_BOT_TOKEN`, with the message: System:",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9162910819053649,
+      "totalScore": 1.374451684951782,
       "maxScore": 0.4673776239156723,
       "firstRecalledAt": "2026-04-24T17:38:41.302Z",
-      "lastRecalledAt": "2026-04-25T02:45:08.477Z",
+      "lastRecalledAt": "2026-04-25T05:08:42.884Z",
       "queryHashes": [
         "409aeb99bcc9",
-        "a3cb2400c3be"
+        "a3cb2400c3be",
+        "d6474f9dbfa2"
       ],
       "recallDays": [
         "2026-04-24",
@@ -120623,18 +120643,20 @@
       "endLine": 1944,
       "source": "memory",
       "snippet": "[Thu 2026-04-16 08:56 UTC] can you cross reference this guide with our infrastructure we have and see what you can improve,fix, or add user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 08:56 UTC] can you cross reference this guide with our infrastructure we have and see what you can improve,fix, or add user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory/2026-04-16.m",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4716488122940063,
-      "maxScore": 0.4716488122940063,
+      "totalScore": 0.9834122151136397,
+      "maxScore": 0.5117634028196335,
       "firstRecalledAt": "2026-04-24T17:39:02.680Z",
-      "lastRecalledAt": "2026-04-24T17:39:02.680Z",
+      "lastRecalledAt": "2026-04-25T05:12:25.361Z",
       "queryHashes": [
-        "8cc5387e35c7"
+        "8cc5387e35c7",
+        "f2c84dc63281"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-25"
       ],
       "conceptTags": [
         "openclaw-control-ui",
@@ -120654,17 +120676,18 @@
       "endLine": 1915,
       "source": "memory",
       "snippet": "| **TSLA unlock reminder** | Added a one‑off job (`TSLA Unlock Reminder`) for 12:00 UTC Apr 16 to ping you on Telegram when the stock reward unlocks. | Makes sure we act the moment the lock‑up ends. | | **Infrastructure health** | Verified all existing cron jobs are healthy; added a gateway‑health check (still needs a proper Telegram `chat_id`). | Keeps the whole system running without silent failures. | | **Credit watch** | Cron (`Credit Watch`) monitors OpenRouter credits and will alert you before we run out. | Avoids the “API credit‑run‑out” surprise that broke jobs previously. | I also wrote a **checkpoint summary** for today (saved as `memory/2026-04-16.md`) that captures where we stan",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6289232425621678,
+      "totalScore": 2.098448529117458,
       "maxScore": 0.7301538191965748,
       "firstRecalledAt": "2026-04-25T02:45:08.477Z",
-      "lastRecalledAt": "2026-04-25T02:45:53.359Z",
+      "lastRecalledAt": "2026-04-25T05:08:42.884Z",
       "queryHashes": [
         "a3cb2400c3be",
         "5168734a295b",
-        "20ad588e7f5b"
+        "20ad588e7f5b",
+        "d6474f9dbfa2"
       ],
       "recallDays": [
         "2026-04-25"
@@ -120687,16 +120710,17 @@
       "endLine": 2251,
       "source": "memory",
       "snippet": "- Skills: weather, healthcheck, node-connect, taskflow The two failing jobs should work now. Want me to run them to verify? assistant: Based on the guide, here's what I found: **What's Working ✅:** - Cron (15 jobs), Chat, Sessions, Config, Debug, Logs - Telegram channel connected - Skills installed (weather, healthcheck, node-connect, etc.) **Gaps & Fixes Needed:** 1. **Credit Watch job failing** - Delivery error: `\"Delivering to Telegram requires target <chatId>\"` 2. **Daily Stock Research Worker failing** - Same delivery error 3. **Appearance** - No theme/language set Let me fix the cron jobs first: assistant: Now adding appearance settings (dark mode + language): assistant: Done! H",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8855004489421844,
-      "maxScore": 0.4461604744195938,
+      "totalScore": 1.3834253340959548,
+      "maxScore": 0.4979248851537704,
       "firstRecalledAt": "2026-04-25T02:45:08.477Z",
-      "lastRecalledAt": "2026-04-25T02:45:11.962Z",
+      "lastRecalledAt": "2026-04-25T20:02:40.462Z",
       "queryHashes": [
         "a3cb2400c3be",
-        "5168734a295b"
+        "5168734a295b",
+        "21ebd331cbe4"
       ],
       "recallDays": [
         "2026-04-25"
@@ -120710,6 +120734,391 @@
         "node",
         "connect",
         "taskflow"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2133:2183": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2133:2183",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2133,
+      "endLine": 2183,
+      "source": "memory",
+      "snippet": "- **Infrastructure:** All long-chats guide items implemented For the new chat, just copy this into the fresh session: ``` resume-point.md has our active work memory/2026-04-16.md has today's full context TODO.md has the task list ``` Anything specific you want me to remember for the new topic? 🦜 user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 10:26 UTC] nope assistant: Got it. I'm here when you need me. 🦜 === 2026-04-16-1036.md === # Session: 2026-04-16 10:36:38 UTC - **Session Key**: agent:main:main - **Session ID**: 634b5a59-5923-42ce-b4ca-376ff6387b3d - **Source**: webchat ## Conversation Summary a",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9587236911058425,
+      "maxScore": 0.499835330247879,
+      "firstRecalledAt": "2026-04-25T05:07:53.261Z",
+      "lastRecalledAt": "2026-04-25T05:08:42.884Z",
+      "queryHashes": [
+        "6e498d20aa9d",
+        "d6474f9dbfa2"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "long-chats",
+        "resume-point.md",
+        "memory/2026-04-16.md",
+        "todo.md",
+        "openclaw-control-ui",
+        "2026-04-16-1036.md",
+        "infrastructure",
+        "all"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2835:2850": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2835:2850",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2835,
+      "endLine": 2850,
+      "source": "memory",
+      "snippet": "[Thu 2026-04-16 18:52 UTC] I want to start a new chat session so we keep that ctx percentage as low as possible before I ask you to do the next task assistant: Got it. Fresh session coming up — context will start clean. When you're ready with the next task, just ping me in the new session. 🦜 === 2026-04-16-heyron-guide.md === # Session: 2026-04-16 08:12:05 UTC - **Session Key**: agent:main:main - **Session ID**: e8bfb115-3d62-46c5-982b-b0bd9f80ae21 - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if o",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49798457026481624,
+      "maxScore": 0.49798457026481624,
+      "firstRecalledAt": "2026-04-25T05:07:53.261Z",
+      "lastRecalledAt": "2026-04-25T05:07:53.261Z",
+      "queryHashes": [
+        "6e498d20aa9d"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "2026-04-16-heyron-guide.md",
+        "thu",
+        "utc",
+        "want",
+        "start",
+        "new",
+        "chat",
+        "keep"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2649:2688": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2649:2688",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2649,
+      "endLine": 2688,
+      "source": "memory",
+      "snippet": "[Thu 2026-04-16 09:53 UTC] we got interrupted continue assistant: We made good progress on infrastructure already (33 → 13 cron jobs). Want me to: 1. Review remaining cron jobs for any more redundancies? 2. Check memory management / compaction settings? 3. Look at something else? What area sounds most useful? 🦜 user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:55 UTC] do an audit of cron jobs and make sure our optimization went through. assistant: **Audit Summary** - **Total jobs:** ~20 (list shows many; exact count needs a full parse) - **Duplicates:** 2× `gateway-health-check` (both failing) - **Broken",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45638584196567533,
+      "maxScore": 0.45638584196567533,
+      "firstRecalledAt": "2026-04-25T05:08:42.884Z",
+      "lastRecalledAt": "2026-04-25T05:08:42.884Z",
+      "queryHashes": [
+        "d6474f9dbfa2"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-control-ui",
+        "gateway-health-check",
+        "thu",
+        "utc",
+        "got",
+        "interrupted",
+        "continue"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1848:1881": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1848:1881",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1848,
+      "endLine": 1881,
+      "source": "memory",
+      "snippet": "\"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 08:14 UTC] have you found it ? === 2026-04-16-0909.md === # Session: 2026-04-16 09:09:04 UTC - **Session Key**: agent:main:main - **Session ID**: a7b624e6-9b4c-461b-8b45-51a971ea3bae - **Source**: webchat ## Conversation Summary user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory/2026-04-16.md already exists, APPEND new content only and do not overwrite exi",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9697318732738496,
+      "maxScore": 0.5239442974328995,
+      "firstRecalledAt": "2026-04-25T05:12:21.790Z",
+      "lastRecalledAt": "2026-04-25T20:02:18.167Z",
+      "queryHashes": [
+        "6c1321fe1031",
+        "f2c84dc63281",
+        "0e639d1cac97",
+        "2bb6bdf14aee"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "2026-04-16-0909.md",
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2004:2027": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2004:2027",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2004,
+      "endLine": 2027,
+      "source": "memory",
+      "snippet": "A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 9:09 AM (UTC) / 2026-04-16 09:09 UTC user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/ref",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9642896145582198,
+      "maxScore": 0.48226533532142635,
+      "firstRecalledAt": "2026-04-25T05:12:21.790Z",
+      "lastRecalledAt": "2026-04-25T05:15:18.066Z",
+      "queryHashes": [
+        "6c1321fe1031",
+        "0e639d1cac97"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "1-3",
+        "default-model",
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "bootstrap/ref",
+        "new",
+        "was",
+        "started"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1795:1822": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1795:1822",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1795,
+      "endLine": 1822,
+      "source": "memory",
+      "snippet": "[Thu 2026-04-16 08:01 UTC] vyse!. Look at the session statis and realize your stuck in a compaction loop and look for a way out. user: System: [2026-04-16 08:02:27 UTC] Summary: System: - Checked cron job status by counting entries in `/root/.openclaw/cron/jobs.json` where `\"lastRunStatus\": \"error\"`. System: - No errors were found; the script would output “All jobs healthy”. System: - If any errors had been detected, it would have sent a Telegram alert to chat ID 8742211590 with the message “⚠️ X cron job(s) failed. Run /status to see details.” System: - Current time: Thursday, April 16th 2026, 08:02 UTC. Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"open",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9876819431781768,
+      "maxScore": 0.507377079129219,
+      "firstRecalledAt": "2026-04-25T05:12:21.790Z",
+      "lastRecalledAt": "2026-04-25T05:12:25.361Z",
+      "queryHashes": [
+        "6c1321fe1031",
+        "f2c84dc63281"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "openclaw/cron/jobs.json",
+        "openclaw-control-ui",
+        "thu",
+        "utc",
+        "vyse",
+        "look",
+        "the",
+        "statis"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1870:1886": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1870:1886",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1870,
+      "endLine": 1886,
+      "source": "memory",
+      "snippet": "\"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 09:01 UTC] continue what you were doing assistant: Hey David 👋 Here’s where we left off after you opened the “Long Chats and Lost Work” guide: | Area | What we’ve set up | Why it matters | |------|-------------------|----------------| | **Auto‑checkpoint** | Added `scripts/auto-checkpoint.sh` and a **2‑minute cron job** (`Frequent Checkpoint (2min)`) that updates `memory/resume-point.md` whenever the session context exceeds 70 % (or when forced). | Keeps a fresh resume point so we never lose the latest decisions even if the context window fills up. | | **Compaction handling** | Enabled the **Context‑mon",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.9212761402130125,
+      "maxScore": 0.5062270611524582,
+      "firstRecalledAt": "2026-04-25T05:12:21.790Z",
+      "lastRecalledAt": "2026-04-25T20:07:13.961Z",
+      "queryHashes": [
+        "6c1321fe1031",
+        "f2c84dc63281",
+        "0e639d1cac97",
+        "2bb6bdf14aee",
+        "21ebd331cbe4",
+        "b06093153010"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "openclaw-control-ui",
+        "scripts/auto-checkpoint.sh",
+        "memory/resume-point.md",
+        "label",
+        "openclaw",
+        "control",
+        "thu",
+        "utc"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:1824:1863": {
+      "key": "memory:memory/2026-04/2026-04-16.md:1824:1863",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 1824,
+      "endLine": 1863,
+      "source": "memory",
+      "snippet": "user: Pre-compaction memory flush. Store durable memories only in memory/2026-04-16.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or edit them. If memory/2026-04-16.md already exists, APPEND new content only and do not overwrite existing entries. Do NOT create timestamped variant files (e.g., 2026-04-16-HHMM.md); always use the canonical 2026-04-16.md filename. If nothing to store, reply with NO_REPLY. Current time: Thursday, April 16th, 2026 - 8:13 AM (UTC) / 2026-04-16 08:13 UTC assistant: NO_REPLY user: Sender (untrusted metadata): ```json {",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4774088531732559,
+      "maxScore": 0.4774088531732559,
+      "firstRecalledAt": "2026-04-25T05:15:18.066Z",
+      "lastRecalledAt": "2026-04-25T05:15:18.066Z",
+      "queryHashes": [
+        "0e639d1cac97"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "pre-compaction",
+        "memory/2026-04-16.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md",
+        "tools.md",
+        "agents.md"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2855:2925": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2855:2925",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2855,
+      "endLine": 2925,
+      "source": "memory",
+      "snippet": "```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 08:04 UTC] You running vyse? assistant: Hey David 👋 I'm Vyse, up and running (currently on the GPT‑OSS‑120b model—our default is minimax‑m2.5). What would you like to work on today? user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 08:06 UTC] Pull up the heyron guide in our repo so its fresh in your memory user: Sender (untrusted metadata): ```json { \"label\": \"openclaw-control-ui\", \"id\": \"openclaw-control-ui\" } ``` [Thu 2026-04-16 08:07 UTC] continue user: Sender (untrusted metadata): ```json { \"label\": \"ope",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9456775814294814,
+      "maxScore": 0.4754643619060516,
+      "firstRecalledAt": "2026-04-25T20:02:18.167Z",
+      "lastRecalledAt": "2026-04-25T20:07:13.961Z",
+      "queryHashes": [
+        "2bb6bdf14aee",
+        "b06093153010"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openclaw-control-ui",
+        "m2.5",
+        "label",
+        "openclaw",
+        "control",
+        "thu",
+        "utc"
+      ]
+    },
+    "memory:memory/2026-04-25.md:120:138": {
+      "key": "memory:memory/2026-04-25.md:120:138",
+      "path": "memory/2026-04-25.md",
+      "startLine": 120,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "- ✅ All 18 skills visible in AGENT → Skills - ✅ Dreams enabled in AGENT → Dreams - ✅ Gateway healthy **Issues Found:** - ❌ CONTROL → Sessions panel showing empty (should show 642 sessions) - ❌ CONTROL → Automation panel showing empty (should show 36 cron jobs) - Investigation needed - possibly gateway needs restart or data loading issue **Fixes Applied:** - Added YAML frontmatter to telegram-crew skill (was missing, causing it to not show in Skills panel) - Created core-files-guard.sh script to protect identity files from unexpected changes **Files Created/Modified:** - `kb/system/migration-to-control-ui.md` - Migration documentation - `scripts/core-files-guard.sh` - File integrity guard",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0191798374056815,
+      "maxScore": 0.5280253842473029,
+      "firstRecalledAt": "2026-04-25T20:02:40.462Z",
+      "lastRecalledAt": "2026-04-25T20:07:13.961Z",
+      "queryHashes": [
+        "21ebd331cbe4",
+        "b06093153010"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "gateway",
+        "telegram-crew",
+        "core-files-guard.sh",
+        "created/modified",
+        "scripts/core-files-guard.sh",
+        "all",
+        "skills",
+        "visible"
+      ]
+    },
+    "memory:memory/2026-04/2026-04-16.md:2173:2216": {
+      "key": "memory:memory/2026-04/2026-04-16.md:2173:2216",
+      "path": "memory/2026-04/2026-04-16.md",
+      "startLine": 2173,
+      "endLine": 2216,
+      "source": "memory",
+      "snippet": "assistant: Nice guide! Let me cross-reference with our current setup and check what's configured. assistant: Based on the guide, here's what I found: **What's Working ✅:** - Cron (15 jobs), Chat, Sessions, Config, Debug, Logs - Telegram channel connected - Skills installed (weather, healthcheck, node-connect, etc.) **Gaps & Fixes Needed:** 1. **Credit Watch job failing** - Delivery error: `\"Delivering to Telegram requires target <chatId>\"` 2. **Daily Stock Research Worker failing** - Same delivery error 3. **Appearance** - No theme/language set Let me fix the cron jobs first: assistant: Now adding appearance settings (dark mode + language): assistant: Done! Here's what I found and fix",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4740376144647598,
+      "maxScore": 0.4740376144647598,
+      "firstRecalledAt": "2026-04-25T20:02:40.462Z",
+      "lastRecalledAt": "2026-04-25T20:02:40.462Z",
+      "queryHashes": [
+        "21ebd331cbe4"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "cross-reference",
+        "node-connect",
+        "theme/language",
+        "assistant",
+        "nice",
+        "guide",
+        "let",
+        "cross"
+      ]
+    },
+    "memory:memory/2026-04-25.md:82:129": {
+      "key": "memory:memory/2026-04-25.md:82:129",
+      "path": "memory/2026-04-25.md",
+      "startLine": 82,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "| **Recursive Improvement** | Agent can modify its own prompts/context based on success/failure | **Efficiency Patterns:** - **Context Window Management** - Use compression before hitting limits - **Parallel Tool Execution** - When tools are independent, batch them - **Error Recovery Loops** - Auto-retry with exponential backoff before alerting human - **Decision Delegation** - Define clear thresholds for when to ask vs act **Areas Needing David Approval:** - New skills (per AGENTS.md rule) - External API changes - Filesystem modifications outside workspace - Sending messages to third parties --- ### Next Steps 1. Consider adding `auto-context-compress` skill for large tasks 2. Explore",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47767331600189206,
+      "maxScore": 0.47767331600189206,
+      "firstRecalledAt": "2026-04-25T20:07:13.961Z",
+      "lastRecalledAt": "2026-04-25T20:07:13.961Z",
+      "queryHashes": [
+        "b06093153010"
+      ],
+      "recallDays": [
+        "2026-04-25"
+      ],
+      "conceptTags": [
+        "prompts/context",
+        "success/failure",
+        "auto-retry",
+        "agents.md",
+        "auto-context-compress",
+        "recursive",
+        "improvement",
+        "can"
       ]
     }
   }

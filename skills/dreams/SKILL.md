@@ -8,7 +8,26 @@ description: Vision, goals, creative brainstorming, and dream journal. Use when 
 
 *Dream journal, vision tracking, creative brainstorming*
 
-## Source
+## Enable Dreaming (Required First!)
+
+Dreaming is disabled by default. To enable in Control UI:
+
+1. Add to `plugins.entries` in openclaw.json:
+```json
+"memory-core": {
+  "enabled": true,
+  "config": {
+    "dreaming": {
+      "enabled": true,
+      "frequency": "0 3 * * *"
+    }
+  }
+}
+```
+2. Restart gateway
+3. Dreams tab in Control UI will become active
+
+## Dreams Tab in Control UI
 - `kb/dreams/dream-journal-archive.md` — Full dream journal
 - `kb/dreams/dreams.md` — Dreams hub
 

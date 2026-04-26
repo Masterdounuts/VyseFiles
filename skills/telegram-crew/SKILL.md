@@ -1,3 +1,9 @@
+---
+name: telegram-crew
+access: crew
+description: Telegram routing, topic bindings, crew mentions, and DM/group configuration.
+---
+
 # Telegram Skill
 
 **Category:** Communication / Channel
