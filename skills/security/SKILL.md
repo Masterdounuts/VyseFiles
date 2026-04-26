@@ -10,7 +10,7 @@ description: Security hardening, permissions, boundaries, and safety protocols. 
 
 **Goal:** Reach RON Level (7/7) in security
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|

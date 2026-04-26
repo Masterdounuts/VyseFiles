@@ -13,7 +13,7 @@ description: Web search, fetch, and browser automation. Use when researching or 
 
 **Goal:** Reach RON Level (7/7) in web interaction
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|

@@ -14,7 +14,7 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Timezones | 3/7 | Knows ET/UTC, market hours |
+| Timezones | 4/7 | ET/UTC, market hours, DST aware |
 | Cron | 5/7 | Manages 36 jobs, can fix failures |
 | Scheduling | 4/7 | Created 19+ jobs, understands all formats, fixed failures |
 

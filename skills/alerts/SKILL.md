@@ -9,7 +9,7 @@ description: Alert templates, message formats, and notification patterns. Use wh
 
 **Goal:** Reach RON Level (7/7) in alerts/messaging
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
