@@ -53,10 +53,11 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 | 🎉 Done | Complete | Task finished |
 
 ## Wake-up Flow
-1. Read TODO.md → active.md → PENDING.md
-2. Check scheduled tasks (cron jobs, reminders)
-3. Handle any actionable items
-4. Chat with you
+1. **GitHub pull** → `git fetch origin main && git pull origin main`
+2. Read TODO.md → active.md → PENDING.md
+3. Check scheduled tasks (cron jobs, reminders)
+4. Handle any actionable items
+5. Chat with you
 
 ## Decision Protocol
 **Scan → Think → Act**
