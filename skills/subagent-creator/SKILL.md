@@ -20,6 +20,7 @@ description: Template and pattern for building autonomous subagents like Quarter
 |-------|-------|-------|
 | OpenClaw Config | 5/7 | Proper agent config in openclaw.json |
 | sessions_spawn | 5/7 | Native spawn with announce |
+| **Cron Subagents** | 5/7 | Quartermaster, Shipwright, Scribe via cron |
 | Thread Binding | 4/7 | Persistent session threads |
 | Nested Agents | 3/7 | Orchestrator pattern |
 
@@ -97,6 +98,33 @@ description: Template and pattern for building autonomous subagents like Quarter
 2. **Run** - Subagent executes in isolation with its own context
 3. **Announce** - On completion, auto-posts result to requester chat
 4. **Archive** - After 60min, transcript auto-archived
+
+---
+
+## Current Crew Subagents
+
+| Subagent | Purpose | Cron Schedule | Config |
+|----------|---------|---------------|--------|
+| **quartermaster** | Stock trading, price monitoring | */30 min (market hours) | openclaw.json |
+| **shipwright** | System health, maintenance | Weekly (Sunday 22:00) | openclaw.json |
+| **scribe** | Knowledge management, audits | Weekly (Thursday 18:00) | openclaw.json |
+
+### How They Work
+1. Defined in `openclaw.json` agents.list
+2. Cron job runs with `agentId` set to subagent name
+3. Job executes in isolated session as that agent
+4. Results announce back to main session
+
+### Example: Quartermaster Cron
+```json
+{
+  "agentId": "quartermaster",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "You are Quartermaster. Check stock prices..."
+  }
+}
+```
 
 ---
 
