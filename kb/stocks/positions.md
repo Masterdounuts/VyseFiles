@@ -22,8 +22,7 @@
 | Oct 29, 2025 | BUY | 100 | $1.65 | $165.00 | |
 | Nov 3, 2025 | BUY | 100 | $1.61 | $161.00 | |
 | **Subtotal** | | **300** | **$1.6233** | **$487.00** | Cost basis |
-| Nov 21, 2025 | SELL | 300 | $4.15 | $1,245.00 | |
-| | | | | **+$758.00** | **+155.6% profit** |
+| Nov 21, 2025 | SELL | 300 | $4.15 | $1,245.00 | *(appears in images)* |
 
 ### Recent Trades (Apr 2026)
 
@@ -33,9 +32,13 @@
 
 ---
 
-## Cash Status
+## Capital Summary
 
-**Available Cash:** ~$3.37 (after PFE purchase)
+| Metric | Amount |
+|--------|--------|
+| **Starting Capital** | $45.00 |
+| **Current Capital** | $51.94 |
+| **Total Profit** | **$6.94** |
 
 ---
 
@@ -48,13 +51,5 @@
 
 ---
 
-## Summary
-
-- **Best Trade:** GGB +$758 (155.6%)
-- **Current:** PFE 1 share (piggy bank)
-- **Watching:** PFE for moves
-
----
-
-*Last Updated: 2026-04-26 22:14 UTC*
-*Source: David via Telegram (trade history images)*
+*Last Updated: 2026-04-26 22:23 UTC*
+*Source: David via Telegram*
