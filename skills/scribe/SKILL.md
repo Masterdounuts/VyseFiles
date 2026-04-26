@@ -27,7 +27,7 @@ access: crew
 
 
 
-*On-demand knowledge manager*
+**True Subagent** - defined in openclaw.json (agentId: scribe)
 
 **Domain:** `kb/`
 

@@ -33,7 +33,7 @@ access: crew
 
 
 
-*On-demand mechanic*
+**True Subagent** - defined in openclaw.json (agentId: shipwright)
 
 **Schedule:** Weekly (Sunday) + on-demand
 

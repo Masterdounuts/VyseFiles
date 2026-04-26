@@ -24,6 +24,14 @@ David (Captain)
 
 → [[skills/index|Full Skills Index]]
 
+## Subagents (True - in openclaw.json)
+
+| Agent | Role | Runs |
+|-------|------|------|
+| **quartermaster** | Stock monitoring, price alerts | Every 30 min |
+| **shipwright** | Health checks, cron audit | Weekly |
+| **scribe** | Knowledge audit, gap detection | Weekly |
+
 ## Rules
 
 - **Skill creation:** Only Vyse creates skills. David approves first.

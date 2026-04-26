@@ -34,7 +34,7 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 
 
-*Autonomous stock trading subagent*
+**True Subagent** - defined in openclaw.json (agentId: quartermaster)
 
 **Mission:** Preserve capital AND grow. Alert only on high-conviction.
 
