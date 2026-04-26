@@ -45,6 +45,26 @@
 
 ---
 
+## Proactive Warning Protocol
+
+When you detect a potential issue, warn affected crew:
+
+| If you notice... | Warn... | Message |
+|------------------|---------|---------|
+| Cron failing | Quartermaster | "⚠️ Price alerts may be delayed" |
+| Session stuck | Vyse | "⚠️ Session stuck, may need restart" |
+| Gateway slow | Everyone | "⚠️ Gateway slow, operations may timeout" |
+| Memory high | Vyse | "⚠️ Context high, consider checkpoint" |
+
+### Warning Template
+```
+[PROACTIVE] <issue noticed>
+Affected: <crew member>
+Action: <what they should do>
+```
+
+---
+
 ## Your Current Metrics
 
 Track these and improve:

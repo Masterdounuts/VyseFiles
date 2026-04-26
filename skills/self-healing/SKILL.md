@@ -17,8 +17,8 @@ description: Self-diagnosis, recovery, and automation for autonomous operations.
 |-------|-------|-------|
 | Health Checks | 5/7 | Runs on wake, checks gateway, cron, sessions |
 | Error Detection | 5/7 | Recognizes patterns from FIXES.md |
-| Auto-Recovery | 4/7 | Attempts fixes from known patterns |
-| Prevention | 4/7 | Logs to FIXES.md after recovery |
+| **Auto-Recovery** | 5/7 | Has retry logic, attempts fixes |
+| **Prevention** | 5/7 | Logs to FIXES.md, learns from failures |
 | Self-Diagnostics | 4/7 | Can investigate with exec, cron, sessions tools |
 | Escalation | 4/7 | Only when 2+ fix attempts fail |
 
@@ -41,8 +41,7 @@ RON operates without constant human oversight. We need:
 
 ### Run on Wake
 ```bash
-openclaw status
-openclaw gateway status
+gateway status
 ```
 
 ### Check Subagents
@@ -53,7 +52,32 @@ sessions_list
 ### Check Cron
 ```bash
 cron list
-cron runs <job-id>
+```
+
+---
+
+## Retry Logic (Auto-Recovery)
+
+### Before Escalating, Try 3 Times
+```
+Attempt 1 → Wait 5s → Try again
+Attempt 2 → Wait 10s → Try again  
+Attempt 3 → Wait 30s → Last attempt
+If all fail → Log to FIXES.md → Escalate
+```
+
+### Common Retry Patterns
+
+| Failure | Retry | Wait |
+|---------|-------|------|
+| API timeout | 3x | 5s, 10s, 30s |
+| Network error | 3x | 2s, 5s, 10s |
+| Cron fail | 2x | 30s, 60s |
+| Session spawn | 2x | 5s, 15s |
+
+### Log Every Attempt
+```
+[RETRY] Attempt 2/3 for cron-job-x - previous failed: timeout
 ```
 
 ---

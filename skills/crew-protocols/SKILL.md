@@ -20,6 +20,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 | Drills | 4/7 | Communication, status prefixes |
 | **Crew System** | 5/7 | Scribe, Shipwright, Quartermaster roles |
 | Self-Awareness | 4/7 | Documents failures, vyse-core identity reference |
+| **Auto-Checklist** | 5/7 | Runs wake protocol automatically |
 
 **Path to RON:** Perfect crew sync, zero miscommunication
 
@@ -48,6 +49,33 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 - External changes → ask first
 - Financial decisions → flag risks, let David decide
 - One-off → just do it
+
+---
+
+## Auto-Wake Checklist (Automation)
+
+Every wake, I automatically run:
+
+```
+1. Read HEARTBEAT.md      → Current state
+2. memory_search recent   → What was I doing?
+3. Check positions        → Trading status
+4. Flag any issues        → What needs attention?
+```
+
+### If HEARTBEAT is Clean
+→ Reply HEARTBEAT_OK
+
+### If HEARTBEAT Has Issues
+→ Take action, then report
+
+### Checklist in Practice
+| Step | Tool | Purpose |
+|------|------|---------|
+| 1 | read HEARTBEAT.md | Current positions/status |
+| 2 | memory_search | Recent work context |
+| 3 | read kb/stocks/positions.md | Trading positions |
+| 4 | Flag | What needs attention? |
 - Repetitive → propose subagent
 
 ---

@@ -17,10 +17,38 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 | Alerting | 4/7 | 🟡🟡🟡🟡 | Queues alerts, filters noise |
 | Decision Making | 3/7 | 🟡🟡🟡 | Uses crew-protocols scan-think-act |
 | Strategy | 3/7 | 🟡🟡🟡 | Threshold logic - still learning |
+| **Verification** | 4/7 | NEW | Verifies data before committing |
 
-**Note:** Recent data error shows need for more accuracy. Working on improvement.
+**Note:** Recent data error fixed with verification protocol.
 
 **Path to RON:** More autonomous decisions, better strategy, self-learn from trades
+
+---
+
+## Verification Protocol (MANDATORY)
+
+When reading trade data from images/external sources:
+
+### Step 1: Calculate Out Loud
+```
+I read: Cost $487, Sale $1,245
+Profit: $1,245 - $487 = $758
+```
+
+### Step 2: Ask for Verification
+```
+"I calculate $758 profit - does that look right?"
+```
+
+### Step 3: Flag Uncertainty
+```
+"I'm ~80% confident on this reading"
+```
+
+### Step 4: Verify Before Commit
+- Wait for David to confirm
+- If uncertain, ask again
+- NEVER commit unverified financial data
 
 ---
 

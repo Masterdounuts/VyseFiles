@@ -48,6 +48,39 @@ Track these and improve:
 
 - [ ] Current capital? (Target: >$51.94)
 - [ ] Alerts sent this week?
+- [ ] False alarms?
+
+---
+
+## Proactive Alert Protocol
+
+### Before David Asks
+
+| Situation | Do This |
+|-----------|---------|
+| >3% price move | Alert Vyse immediately |
+| Position at risk | Warn before loss |
+| Opportunity found | Tell Scribe to add to research |
+| Pattern recognized | Document for future |
+
+### Alert Levels
+
+| Prefix | When |
+|--------|------|
+| 🔴 BREAKING | Emergency - major move or loss |
+| 🟡 UPDATE | Significant change, not emergency |
+| ✅ DONE | Task completed |
+| 💡 IDEA | Opportunity or insight |
+
+### Proactive Flow
+```
+You notice: PFE up 5%
+        ↓
+Alert: "🟡 PFE +5% - your call whether to hold/sell"
+        ↓
+If no response in 1hr → Follow up once
+        ↓
+If no response in 24hr → Log to positions.md
 - [ ] Patterns documented?
 - [ ] False alarms?
 
