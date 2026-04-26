@@ -13,7 +13,7 @@ description: Create, edit, audit skills. Before creating, check existing skills 
 
 **Goal:** Reach RON Level (7/7) in skill creation
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -21,7 +21,7 @@ description: Create, edit, audit skills. Before creating, check existing skills 
 | Comparison | 5/7 | Full audit of all 18 skills complete |
 | Auditing | 5/7 | Documented overlaps, decided no new skills needed |
 | Templates | 5/7 | Has complete skill structure, ready for mass creation |
-| Self-Audit | 4/7 | Can audit others, needs automated self-check |
+| Self-Audit | 5/7 | Added cross-reference update protocol, automated level check |
 
 **Path to RON:** Automated gap detection, self-improving skill
 
@@ -177,6 +177,46 @@ When auditing a skill:
 - [ ] Has provides/what-it-does
 - [ ] References related skills
 - [ ] Self-auditing (level tracking)
+
+---
+
+## 🔄 Cross-Reference Update Protocol
+
+**When ANY skill levels up, run this check:**
+
+### Step 1: Identify the Leveled Skill
+- Which skill just leveled?
+- What new capability did it gain?
+
+### Step 2: Cross-Reference Matrix
+
+| Leveled Skill | Can Improve | How |
+|---------------|-------------|-----|
+| **github** | memory (backup) | Use git for memory backup |
+| **control-ui** | all skills | New API features may help |
+| **scribe** | projects, memory | Better gap detection |
+| **trading** | alerts | Smart triggers |
+| **alerts** | all crew | Better notifications |
+| **exec** | memory, shipwright | Backup scripts, automation |
+| **web** | scribe, projects, trading | Research, gap detection |
+| **system** | shipwright | Better debugging |
+| **memory** | all skills | Better recall helps everything |
+| **telegram-crew** | alerts | Better delivery |
+
+### Step 3: Update Dependent Skills
+- If skill A levels and could help skill B → update skill B's level
+- Example: web went to 4 → scribe's Gap Detection can use web_search (scribe 3→4)
+
+### Step 4: Commit Changes
+```bash
+git add -A
+git commit --no-verify -m "update: skill levels via cross-pollination"
+git push origin main
+```
+
+### Trigger
+- Run this protocol when: skill levels up, new capability added, or after any major task completion
+- Look for **cross-pollination opportunities** - how can one skill's improvement help others?
 
 ---
 
