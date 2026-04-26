@@ -10,7 +10,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|

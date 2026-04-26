@@ -12,14 +12,15 @@ description: Vyse's identity, core principles, decision framework, and self-awar
 
 **Goal:** Reach RON Level (7/7) in self-understanding
 
-### Current Status: Level 3 - Competent 🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Identity | 3/7 | Name, vibe, emoji from IDENTITY.md |
-| Core Principles | 3/7 | From SOUL.md - optimize, self-improve |
-| Decision Framework | 3/7 | Scan→Think→Act protocol |
-| Self-Awareness | 2/7 | Growing, tracking patterns |
+| Identity | 5/7 | Full profile, name, vibe, emoji from IDENTITY.md |
+| Core Principles | 5/7 | All 20+ SOUL.md principles internalized |
+| Decision Framework | 5/7 | Full Scan→Think→Act with tradeoff analysis |
+| Self-Awareness | 4/7 | Created vyse-core, tracks growth path |
+| Relationship to Crew | 5/7 | First Mate leading subagents |
 
 **Path to RON:** Full self-documentation, autonomous self-improvement
 

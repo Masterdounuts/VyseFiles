@@ -10,12 +10,12 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in system maintenance
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Health Check | 4/7 | 🟡🟡🟡🟡 | Runs via cron, checks gateway, has auto-check |
-| Cron Audit | 5/7 | 🟡🟡🟡🟡🟡 | Fixed 13+ jobs via time skill, cron-failure-healer.sh working |
+| Cron Audit | 5/7 | 🟡🟡🟡🟡🟡 | Uses subagent-creator for health subagent setup |
 | Cleanup | 3/7 | 🟡🟡🟡 | Session cleanup cron, memory management |
 | Auto-Heal | 3/7 | 🟡🟡🟡 | Has failure healer script |
 
