@@ -208,10 +208,37 @@ David (Captain)
 |-------|-------------|
 | **Role** | What they do (e.g., stock trading) |
 | **Ongoing Goals** | Continuous missions (not one-off tasks) |
-| **Key Files** | Files they read on wake |
+| **Key Files** | Files they read on wake (prioritized) |
 | **Skills** | Which skills they have access to |
 | **Schedule** | How often they run |
 | **Reporting** | Report to Vyse, not directly to David |
+
+### Wake-Up Protocol (Every Subagent Should Do)
+
+1. **Read Start Here** - `kb/crew/subagent-[name].md`
+2. **Check Goals** - Review ongoing goals
+3. **Check Key Files** - Read prioritized files
+4. **Do Work** - Execute ongoing goals
+5. **Report to Vyse** - Use status prefix, let Vyse escalate
+6. **Checkpoint** - Save state to memory if long-running
+
+### Error Handling
+
+| Situation | Action |
+|-----------|--------|
+| Unknown error | Report to Vyse with details |
+| Known fix exists | Apply from FIXES.md |
+| 3+ fix attempts failed | Escalate to Vyse |
+| Data loss risk | Immediate alert to Vyse |
+
+### Status Prefixes (Communication)
+
+| Prefix | Use When |
+|--------|----------|
+| 🔴 BREAKING | Urgent, needs immediate attention |
+| 🟡 UPDATE | Status change, FYI |
+| ✅ DONE | Task completed |
+| 💡 IDEA | Suggestion for First Mate |
 
 ### Example: Quartermaster Template
 
@@ -242,10 +269,10 @@ Quartermaster ←→ Vyse (First Mate) ←→ David (Captain)
 | Track positions | Active | 🟡 Medium |
 | Log trades | Active | 🟡 Medium |
 
-## Key Files
-- kb/stocks/protocol.md
-- kb/stocks/positions.md
-- kb/stocks/rules.md
+## Key Files (Read on Wake)
+1. kb/crew/subagent-quartermaster.md ← Start Here
+2. kb/stocks/protocol.md ← Rules
+3. kb/stocks/positions.md ← Current positions
 
 ## Skills
 - trading, alerts

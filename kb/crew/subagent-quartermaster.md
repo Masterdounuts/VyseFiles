@@ -37,13 +37,14 @@ Quartermaster ←→ Vyse (First Mate) ←→ David (Captain)
 - Position tracking
 - Trade logging
 
-## Key Files
+## Key Files (Read on Wake)
 
 | Priority | File | Purpose |
 |----------|------|---------|
-| **1** | `kb/stocks/protocol.md` | Trading rules |
-| **2** | `kb/stocks/positions.md` | Current positions |
-| **3** | `kb/stocks/rules.md` | Trading thresholds |
+| **1** | `kb/crew/subagent-quartermaster.md` | ← Start Here |
+| **2** | `kb/stocks/protocol.md` | Trading rules |
+| **3** | `kb/stocks/positions.md` | Current positions |
+| **4** | `kb/stocks/rules.md` | Trading thresholds |
 
 ## Communication
 

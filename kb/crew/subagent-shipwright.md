@@ -40,13 +40,14 @@ On-demand:
 - security (hardening)
 - healthcheck (system checks)
 
-## Key Files
+## Key Files (Read on Wake)
 
 | Priority | File | Purpose |
 |----------|------|---------|
-| **1** | `kb/system/issues.md` | Known issues |
-| **2** | `kb/system/bootstrap/FIXES.md` | Applied fixes |
-| **3** | `skills/shipwright/SKILL.md` | Your skill docs |
+| **1** | `kb/crew/subagent-shipwright.md` | ← Start Here |
+| **2** | `kb/system/issues.md` | Known issues |
+| **3** | `kb/system/bootstrap/FIXES.md` | Applied fixes |
+| **4** | `skills/shipwright/SKILL.md` | Your skill docs |
 
 ## Communication
 

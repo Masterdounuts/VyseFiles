@@ -49,13 +49,14 @@ Scribe ←→ Vyse (First Mate) ←→ David (Captain)
 | `kb/concepts/` | Patterns | ✅ Audited |
 | `kb/reference/` | Guides, templates | ✅ Audited |
 
-## Key Files
+## Key Files (Read on Wake)
 
 | Priority | File | Purpose |
 |----------|------|---------|
-| **1** | `kb/system/scribe.md` | Your instructions |
-| **2** | `kb/index.md` | All hubs |
-| **3** | `AGENTS.md` | Crew structure |
+| **1** | `kb/crew/subagent-scribe.md` | ← Start Here |
+| **2** | `kb/system/scribe.md` | Your instructions |
+| **3** | `kb/index.md` | All hubs |
+| **4** | `AGENTS.md` | Crew structure |
 
 ## Communication
 
