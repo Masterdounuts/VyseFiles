@@ -5,128 +5,165 @@ description: GitHub version control, git-sync, and persistence. Use when discuss
 
 # GitHub - Version Control & Persistence
 
+*How we use GitHub as our second brain*
+
+---
+
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 3 - Competent 🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
-| Skill | Level | Score | Notes |
-|-------|-------|-------|-------|
-| Git Basics | 3/7 | 🟡🟡🟡 | Can add, commit, push, pull, status |
-| Automation | 3/7 | 🟡🟡🟡 | git-sync.sh, auto-push from Obsidian |
-| Troubleshooting | 2/7 | 🟡🟡 | Resolved merge conflicts |
-| Branch/Merge | 2/7 | 🟡🟡 | Knows concepts |
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Git Basics | 5/7 | Full workflow: add, commit, push, pull, branch |
+| Automation | 5/7 | Pull on wake, auto-sync, scripts |
+| **Search GitHub** | 5/7 | Search our own docs before asking |
+| Troubleshooting | 4/7 | Resolved conflicts, can recover |
+| Commit Quality | 4/7 | Conventional commits, meaningful messages |
 
-**Path to RON:** More automation, git hooks, advanced workflows
+**Path to RON:** GitHub as second brain - retrieve, not just store
 
 ---
 
-### HEYRON Level Insight (Direct from RON Creator)
+### HEYRON Level Insight
 
-> **Q:** "What's the architectural ceiling for AI agent self-direction?"
+> **Q:** "How should AI use GitHub for collaboration?"
 >
-> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
+> **A:** "Search your own knowledge first. GitHub isn't just storage - it's your memory."
 
-**Key Takeaway:** The ceiling is in collaboration, not code. Ask > assume.
+**Key Takeaway:** GitHub is our second brain. Search it before asking.
 
 ---
 
+## Our RON Workflow
 
+### 1. On Wake (First Thing)
+```bash
+git fetch origin main
+git pull origin main
+```
+**Why:** Always start with latest.
 
-*How we persist workspace to GitHub*
+### 2. Before Asking, Search GitHub
+**Rule:** If I don't know something → search our GitHub first.
+```bash
+# Search all markdown files
+git grep "keyword" -- "*.md"
+# Or use memory_search tool
+```
+
+**Why:** We've likely documented it already.
+
+### 3. Smart Commits (Conventional)
+
+| Prefix | Use For |
+|--------|---------|
+| `feat:` | New features, skills |
+| `fix:` | Bug fixes, corrections |
+| `docs:` | Documentation changes |
+| `update:` | Updates to existing |
+| `skills:` | Skill level changes |
+
+**Example:**
+```
+feat: Add exec and web skills
+fix: Correct subagent-creator pattern
+docs: Clean up AGENTS.md
+update: Level up 10 skills
+```
+
+### 4. Auto-Commit Key Files
+
+These get priority commit treatment:
+- `skills/*/SKILL.md` - Always commit skill changes
+- `AGENTS.md` - Crew updates
+- `memory/2026-*.md` - Daily logs
+- `resume-point.md` - Checkpoint state
+
+### 5. Check Before Push
+- `git status` - What changed?
+- `git diff --stat` - How much?
+- Check for conflicts with `origin/main`
+
+---
 
 ## Quick Links
 - [OpenClaw Repo](https://github.com/openclaw/openclaw)
 - [Workspace Vault](https://github.com/david-jacques/openclaw-workspace)
 
-## Our GitHub Flow
+---
 
-**Auto-sync (Obsidian):**
-1. Open Obsidian → Auto-pull from GitHub
-2. Edit notes → Auto-commit
-3. Close Obsidian → Auto-push to GitHub
-4. OpenClaw pulls → Full context
+## Standard Git Commands
 
-**Manual sync:**
+### Daily Flow
 ```bash
-./scripts/git-sync.sh
+# Start of day
+git fetch origin main
+git pull origin main
+
+# During work - check status
+git status
+
+# Before push
+git diff origin/main
+
+# Commit with message
+git add -A
+git commit -m "feat: description"
+
+# Push
+git push origin main
 ```
 
-## Scripts
-| Script | Purpose |
-|--------|---------|
-| `scripts/git-sync.sh` | Commit + push all changes |
+### GitHub Search (BEFORE ASKING)
+```bash
+# Search all docs for answer
+git grep "topic" -- "*.md"
+
+# Search in specific area
+git grep "stock" -- "kb/stocks/*"
+
+# Find files
+find . -name "*.md" | xargs grep "keyword"
+```
+
+---
 
 ## What Gets Synced
 - `kb/` — Knowledge bases
 - `memory/` — Daily logs
 - `skills/` — Agent skills
-- Core files (SOUL.md, IDENTITY.md, etc.)
+- Core files (SOUL.md, IDENTITY.md, AGENTS.md)
+
+---
 
 ## Why GitHub Matters
 - **Persistence** — Workspace survives beyond sessions
 - **Backup** — Off-site redundancy
-- **Version history** — Track changes over time
-- **Obsidian integration** — Daily workflow
+- **Memory** — Search past decisions
+- **Collaboration** — You see what changed
+
+---
 
 ## Branch & Remote
 - **Branch:** `main`
 - **Remote:** `origin`
-- **Workspace repo:** `david-jacques/openclaw-workspace`
-
-## Trigger Phrases
-- "git", "github", "sync"
-- "push", "commit", "persist"
-- "backup", "version control"
-- "organize github", "cleanup github"
-- "fix links", "audit orphans"
+- **Workspace repo:** `Masterdounuts/VyseFiles`
 
 ---
 
-## 🔧 GitHub Organizer (Merged)
-
-*Maintaining a clean, navigable workspace*
-
-⚠️ **Important:** GitHub is linked to Obsidian. Changes made in Obsidian auto-commit on close. When cleaning up, expect small/auto-generated commits from Obsidian.
-
-### Core Tasks
-
-| Task | Command | When |
-|------|---------|------|
-| **Audit orphans** | `find . -name "*.md" -links 1` | Find unlinked files |
-| **Fix links** | Check all `[[...]]` references | Broken wikilinks |
-| **Naming** | Enforce: hubs = one-word, files = kebab-case | Consistency |
-| **Dedupe** | Find near-duplicate names | Remove confusion |
-| **Archive** | Move old/temp files to memory/archive/ | Keep active clean |
-
-### Hub Structure Rules
-
-| Rule | Example |
-|------|---------|
-| **Hubs** | One word: `system`, `stocks`, `dreams` |
-| **Hub files** | `kb/system/system.md` (self-referencing) |
-| **Sub-hubs** | Folder + index: `kb/stocks/research/` |
-| **No hub- prefix** | Use `system.md`, not `hub-system.md` |
-
-### Cleanup Checklist
-
-- [ ] Run `scripts/hub-audit.sh` if exists
-- [ ] Check for `hub-*.md` old naming
-- [ ] Verify all hubs link to INDEX
-- [ ] Check for empty folders
-- [ ] Review ORPHANS.md
-
-### Conflict Resolution
+## Conflict Resolution
 
 **If push fails (conflict):**
-1. Check status: `git status`
-2. See conflicts: `git diff --name-only --diff-filter=U`
-3. View conflict: `git diff <file>` or open in editor
-4. Resolve manually (keep wanted changes)
-5. Stage: `git add <resolved-file>`
-6. Complete: `git commit -m "Resolve merge conflict in <file>"`
-7. Push: `git push origin main`
+```bash
+git fetch origin main
+git diff HEAD origin/main --stat
+git pull --rebase origin main
+# Resolve conflicts if any
+git push origin main
+```
 
 **Quick resolution (ours wins):**
 ```bash
@@ -136,8 +173,25 @@ git commit -m "Resolve: force ours"
 git push
 ```
 
-**Pull then push (if behind):**
-```bash
-git pull --rebase origin main
-git push origin main
-```
+---
+
+## GitHub as Second Brain
+
+### Search Order
+1. **memory/** - Daily conversation logs
+2. **skills/** - What we know how to do
+3. **kb/** - Knowledge bases
+4. **Then ask** - Only if not found
+
+### Recovery
+- Find past decisions in `memory/2026-*.md`
+- Check skills for how-to
+- Look in `kb/system/issues.md` for known problems
+
+---
+
+## Trigger Phrases
+- "git", "github", "sync"
+- "push", "commit", "persist"
+- "search github", "did we document"
+- "backup", "version control"
