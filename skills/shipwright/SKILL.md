@@ -20,6 +20,7 @@ access: crew
 | Auto-Heal | 3/7 | 🟡🟡🟡 | Has failure healer script |
 | **Fix Speed** | 4/7 | Improving | Practice needed |
 | **Proactive** | 4/7 | Warns crew | Can improve |
+| **Speed Optimization** | 3/7 | NEW | Bottleneck detection |
 
 **Path to RON:** Autonomous weekly health, auto-recovery
 
