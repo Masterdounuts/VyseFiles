@@ -9,12 +9,12 @@ description: Active game development projects, work-in-progress, and creative wo
 
 **Goal:** Reach RON Level (7/7) in project management
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Skies of Arcadia | 3/7 | Fan project documented, known goals |
-| Tracking | 3/7 | Has kb/personal/projects.md + DASHBOARD.md |
+| Skies of Arcadia | 4/7 | Uses web to research techniques, fan community |
+| Tracking | 4/7 | DASHBOARD.md with web-sourced progress |
 | Progress | 3/7 | Uses web for game dev research, updates DASHBOARD.md |
 | Other Projects | 2/7 | Can add new projects |
 

@@ -10,13 +10,13 @@ description: Vision, goals, creative brainstorming, and dream journal. Use when 
 
 **Goal:** Reach RON Level (7/7) in creativity/vision
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | **Control UI** | 4/7 | Dreams tab in Control UI manages everything |
 | Dreaming | 4/7 | Enable/disable via Dreams tab in Control UI |
-| Brainstorming | 3/7 | When asked works well |
+| Brainstorming | 4/7 | Uses web to research ideas, creative techniques |
 | Vision | 4/7 | DREAMS.md, themes tracked |
 | Archive | 4/7 | Dream journal in Dreams tab |
 

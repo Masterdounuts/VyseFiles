@@ -10,12 +10,12 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Wiki | 3/7 | 8 hubs: system, crew, stocks, dreams, concepts, reference, personal, immigration |
-| Docs | 3/7 | Creates docs on request, maintains index |
+| Wiki | 4/7 | 8 hubs with web-sourced external docs |
+| Docs | 4/7 | Creates on request, maintains index, web for reference |
 | Organization | 3/7 | Hub structure enforced, wikilinks working |
 | Gap Detection | 3/7 | Uses web_search to find related docs online, cross-references with existing wiki |
 

@@ -13,11 +13,11 @@ description: Web search, fetch, and browser automation. Use when researching or 
 
 **Goal:** Reach RON Level (7/7) in web interaction
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| web_search | 4/7 | Gemini-powered with citations |
+| web_search | 5/7 | Gemini-powered with citations, uses memory for context |
 | web_fetch | 4/7 | Extracts readable content from URLs |
 | browser | 4/7 | Snapshot, navigate, act |
 

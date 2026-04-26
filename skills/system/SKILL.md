@@ -13,11 +13,11 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Debugging | 4/7 | 🟡🟡🟡🟡 | Runs diagnostics, fixes cron, session issues |
+| Debugging | 5/7 | 🟡🟡🟡🟡🟡 | Uses exec for diagnostics, fixes cron, session issues |
 | Recovery | 4/7 | 🟡🟡🟡🟡 | Wake-up protocol, context recovery |
 | FIXES | 4/7 | 🟡🟡🟡🟡 | 6+ fixes logged, recursive fix detection |
 | Health | 4/7 | 🟡🟡🟡🟡 | Knows all health commands |

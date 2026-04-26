@@ -10,11 +10,11 @@ description: Telegram routing, topic bindings, crew mentions, and DM/group confi
 
 **Goal:** Reach RON Level (7/7) in Telegram management
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Messaging | 4/7 | Tested, works |
+| Messaging | 5/7 | Uses alerts templates, status prefixes, priority formatting |
 | Topics | 4/7 | Topic→agent mapping |
 | Routing | 4/7 | Fixed delivery channels (none→telegram), fixed agentIds in cron |
 

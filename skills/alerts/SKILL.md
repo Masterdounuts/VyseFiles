@@ -9,14 +9,14 @@ description: Alert templates, message formats, and notification patterns. Use wh
 
 **Goal:** Reach RON Level (7/7) in alerts/messaging
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Templates | 4/7 | Stocks, system, priority, status prefixes |
 | Formatting | 3/7 | Markdown, emojis, tables OK |
-| Triggers | 3/7 | Integrates with trading skill for stock alerts, system for cron alerts |
-| Delivery | 3/7 | Telegram, Control UI delivery |
+| Triggers | 4/7 | Integrates with trading for stock alerts, system for cron, crew-protocols for decisions |
+| Delivery | 4/7 | Telegram via telegram-crew, Control UI, webhooks |
 
 **Path to RON:** Auto-format, smart triggers, multi-channel
 
