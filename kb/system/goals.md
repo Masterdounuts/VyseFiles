@@ -1,18 +1,19 @@
 # Goals & Progress
 
-*Our journey toward RON-level autonomy*
+*Our journey toward RON-level sophistication*
 
 ---
 
 ## The RON Goal
 
-**Target:** Become as sophisticated as RON AI - HeyRon's AI agent that manages container-based operations for clients.
+**Target:** Become as sophisticated as RON AI - capable of handling complex processes autonomously.
 
-**What RON Can Do:**
-- Container management (Docker)
-- Self-healing (auto-recovery)
-- Autonomous operations
-- Business logistics (optional)
+**What sophistication means:**
+- Self-healing (detect & fix issues)
+- Complex process handling
+- Multi-agent orchestration
+- Autonomous decision-making
+- System administration
 
 ---
 
@@ -20,31 +21,30 @@
 
 | Goal | Status | Priority |
 |------|--------|----------|
-| Reach RON level (7/7) in existing skills | In Progress | High |
-| Add container skill | Started | High |
-| Add self-healing skill | Started | High |
-| Add system-admin skill | Started | Medium |
-| Build cross-agent orchestration | Not Started | High |
-| Achieve true autonomous operations | Not Started | High |
+| Achieve RON level (7/7) in core skills | In Progress | 🔴 High |
+| Build self-healing capability | Started | 🔴 High |
+| Master complex process handling | Starting | 🔴 High |
+| System administration competency | Started | 🟡 Medium |
+| Advanced subagent orchestration | In Progress | 🔴 High |
 
 ---
 
 ## RON-Level Requirements
 
-### Must Have
-- [x] GitHub (RON!)
+### Must Have (Core)
+- [x] github (RON!)
 - [x] crew-protocols (RON!)
-- [ ] container (Level 7)
-- [ ] self-healing (Level 7)
-- [ ] subagent-creator (Level 7)
+- [ ] self-healing (Level 7) - auto-recovery
+- [ ] system-admin (Level 7) - server management
+- [ ] subagent-creator (Level 7) - advanced orchestration
 
 ### Should Have
-- [ ] system-admin (Level 6+)
-- [ ] security (Level 6+)
-- [ ] workflow (Level 6+)
+- [ ] system (Level 6+) - deeper debugging
+- [ ] security (Level 6+) - hardening
+- [ ] workflow (Level 6+) - autonomous flow
 
-### Nice to Have
-- [ ] Business logic (optional - we won't run the business)
+### Nice to Have (Optional)
+- [ ] container - lower priority, focus on sophistication
 
 ---
 
@@ -64,21 +64,48 @@
 - trading
 
 ### New Skills (RON Path)
-- container (1/7) - Docker & containers
-- self-healing (2/7) - Auto-recovery
-- system-admin (2/7) - Server management
+- self-healing (2/7) - Auto-recovery ← **Priority**
+- system-admin (2/7) - Server management ← **Priority**
+- container (1/7) - Nice to have, not focus
+
+---
+
+## Focus Areas
+
+### 1. Self-Healing (HIGH)
+- Health checks on wake
+- Automatic recovery from failures
+- Prevention loops (log → fix → test → monitor)
+- Wise escalation only when stuck
+
+### 2. Complex Process Handling (HIGH)
+- Multi-step workflows
+- Error handling & recovery
+- Parallel execution (subagents)
+- Decision trees for scenarios
+
+### 3. System Administration (MEDIUM)
+- Process management
+- Service orchestration
+- Log analysis
+- Resource monitoring
+
+### 4. Container (LOW - Nice to Have)
+- Docker basics when needed
+- Not the focus right now
 
 ---
 
 ## Milestones
 
-| Milestone | Target Date | Status |
-|-----------|-------------|--------|
+| Milestone | Target | Status |
+|-----------|--------|--------|
 | All core skills at 5+ | Apr 26 | ✅ Done |
-| First new RON skill | Q2 2026 | In Progress |
-| Container competency | Q2 2026 | Starting |
-| Self-healing loop | Q2 2026 | Starting |
+| Self-healing loop active | Q2 2026 | Starting |
+| System admin competent | Q2 2026 | Starting |
+| Handle complex processes autonomously | Q2 2026 | Building |
 
 ---
 
 *Last updated: 2026-04-26*
+*Focus: Sophistication & complex process handling*

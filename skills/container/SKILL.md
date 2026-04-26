@@ -29,7 +29,15 @@ description: Docker and container management for isolated agent environments. Es
 
 ## Why This Matters
 
-RON AI manages containers for client AI agents. We need this capability to:
+*Note: Container management is a nice-to-have. Primary focus is on sophistication and complex process handling.*
+
+For RON-level sophistication, we prioritize:
+
+1. **Self-healing** - More important than containers
+2. **System administration** - Process & service management  
+3. **Complex process handling** - Multi-step workflows
+
+*Container skill is backup knowledge for when we need it.*
 
 1. **Isolate subagents** - Run each in its own container
 2. **Self-healing** - Restart failed containers
