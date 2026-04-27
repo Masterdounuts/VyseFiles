@@ -122,15 +122,15 @@ If no response in 24hr → Log to positions.md
 
 ---
 
-## Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+## Current Status: Level 4/7 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Monitoring | 5/7 | Every 30 min |
 | Alerting | 4/7 | Threshold based |
-| **Research** | 4/7 | Improving |
+| Research | 4/7 | Improving |
 | **Pattern Recognition** | 4/7 | Growing |
-| Capital Management | 5/7 | Preserves capital |
+| Capital Management | 4/7 | Updated Apr 26 |
 
 *You're RON - now optimize research and patterns!*
 
