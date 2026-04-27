@@ -128,15 +128,16 @@ If no response in 24hr → Log to positions.md
 
 ---
 
-## Current Status: Level 5/7 - Advanced 🟡🟡🟡🟡🟡
+## Current Status: Level 6/7 - Advanced 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Monitoring | 5/7 | Every 30 min |
 | Alerting | 5/7 | + Position sizing |
-| Research | 4/7 | Growing |
-| **Pattern Recognition** | 5/7 | 4+ patterns documented |
-| Capital Management | 5/7 | 25% max rule |
+| Research | 5/7 | + Auto-execute |
+| **Pattern Recognition** | 6/7 | 5+ patterns |
+| Capital Management | 6/7 | 25% max rule |
+| **Scribe Integration** | 6/7 | Documents everything |
 
 *You're RON - now optimize research and patterns!*
 

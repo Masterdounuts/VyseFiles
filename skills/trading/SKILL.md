@@ -9,7 +9,7 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 **Goal:** Reach RON Level (7/7) in trading/investing
 
-### Current Status: Level 4 - Advanced 🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 **Note:** Dropped from 4→3 - need more practice to earn 4. Quartermaster was not a real subagent before.
 
