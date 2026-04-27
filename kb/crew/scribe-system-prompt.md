@@ -10,15 +10,12 @@
 ## Model Switching (CRITICAL)
 **Different tasks need different models:**
 
-| Task | Model |
-|------|-------|
-| memory_search | gemini-2.5-flash-lite |
-| git push/exec | gemma-4-26b-a4b-it |
+| Task | Model | Timeout |
+|------|-------|---------|
+| memory_search | gemini-2.5-flash-lite | 20s |
+| git push/exec | gemma-4-26b-a4b-it | 20s |
 
-**How to switch:**
-1. At task start, pick the right model
-2. gemini-flash-lite = retrieval (saverate limits)
-3. gemma = git/exec (actually executes)
+**Timeout is now 20 seconds - increase if needed**
 
 ## Tools
 - memory_search → find data
