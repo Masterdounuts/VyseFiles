@@ -132,4 +132,13 @@ sudo apt update && sudo apt upgrade -y
 
 ---
 
+## Trigger Phrases
+- "system admin"
+- "update system"
+- "apt upgrade"
+- "server maintenance"
+- "sudo"
+
+---
+
 *System admin for RON-level autonomy*

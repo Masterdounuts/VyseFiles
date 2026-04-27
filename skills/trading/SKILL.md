@@ -97,3 +97,25 @@ Profit: $1,245 - $487 = $758
 **Talk to:**
 - **Scribe** — "Scribe, document this trading pattern"
 - **Shipwright** — "Shipwright, my cron keeps failing"
+
+---
+
+## Trigger Phrases
+- "check stocks"
+- "monitor prices"
+- "trading"
+- "stock alert"
+- "check PFE"
+- "Quartermaster"
+- "buy" or "sell" (with stock symbol)
+
+---
+
+## Cross-Reference (Skills This Can Improve)
+
+| If You Use Trading... | You Improve... |
+|------------------------|----------------|
+| alerts | Alert quality (real opportunities) |
+| memory | Trading memory documentation |
+
+---

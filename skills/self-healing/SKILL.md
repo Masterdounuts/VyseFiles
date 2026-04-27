@@ -126,4 +126,13 @@ If all fail → Log to FIXES.md → Escalate
 
 ---
 
+## Trigger Phrases
+- "self-heal"
+- "retry"
+- "error recovery"
+- "auto-recover"
+- "fix itself"
+
+---
+
 *Self-healing for RON-level autonomy*

@@ -147,4 +147,12 @@ description: Vyse's identity, core principles, decision framework, and self-awar
 
 ---
 
+## Trigger Phrases
+- "vyse-core"
+- "about yourself"
+- "who are you"
+- "your identity"
+
+---
+
 *Self-maintained by Vyse — evolves as I grow*
