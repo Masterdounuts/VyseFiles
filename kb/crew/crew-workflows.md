@@ -144,4 +144,23 @@ Each crew member must be:
 
 ---
 
-*The ship runs on cooperation, not duplication*
+## Emergency Protocol
+
+**If the ship is sinking:**
+- Shipwright → Vyse: "EMERGENCY: [issue]"
+- Vyse → Captain: Urgent alert
+- All hands: Pause and await command
+
+---
+
+## Cron Schedule
+
+| Crew | Trigger | Frequency |
+|------|---------|-----------|
+| Quartermaster | Stock price monitor | */30 min (market hours) |
+| Shipwright | Health check | Weekly (Sunday 4am UTC) |
+| Scribe | Memory audit | Weekly (Thursday 6pm UTC) |
+
+---
+
+*Subagents CAN call each other: Quartermaster → Scribe for data, Shipwright → Scribe for docs*
