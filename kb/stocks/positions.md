@@ -88,11 +88,13 @@
 
 | Metric | Value |
 |--------|-------|
-| Starting Capital | $25.00 |
+| Starting Capital | $20.00 |
+| Capital Added | $25.00 |
+| Total Basis | $45.00 |
 | Current Cash | $23.38 |
 | Current Position (PFE) | $26.90 |
 | **Total Value** | **$50.28** |
-| **Total Profit** | **$25.28** (+101%) |
+| **Total Profit** | **$5.28** (+12%) |
 
 ### Trade Count
 - Buys: 6

@@ -7,9 +7,11 @@
 - **Cash:** $23.38
 
 ### Capital
-- **Starting:** $25.00
+- **Starting:** $20.00
+- **Added:** $25.00
+- **Total Basis:** $45.00
 - **Current Total:** $50.28
-- **Profit:** +$25.28 (+101%)
+- **Profit:** +$5.28 (+12%)
 
 ### Trade Summary (Full History)
 
