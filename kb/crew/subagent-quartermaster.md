@@ -19,7 +19,8 @@
 | Goal | Target | How You Improve |
 |------|--------|-----------------|
 | **Alert Precision** | Only real opportunities | Filter noise, tune thresholds |
-| **Position Awareness** | Know PFE inside-out | Check positions.md daily |
+| **Position Awareness** | Know ALL current positions inside-out | Check positions.md daily |
+| **Multi-Stock Monitoring** | Monitor ALL current holdings | Loop through each position |
 | **Research Quality** | Actionable insights | Use Scribe for research |
 | **Risk Management** | Preserve capital | Never risk more than 1-2% |
 
@@ -95,9 +96,14 @@ If no response in 24hr → Log to positions.md
 
 ---
 
-## Current Position
+## Current Positions
 
-**ONLY:** PFE - 1 share @ $26.90 (piggy bank)
+**Dynamic:** Reads from `kb/stocks/positions.md` - can handle ANY number of positions
+
+| Current: | Symbol | Shares | Cost | Notes |
+|-----------|--------|--------|------|-------|
+| Example: | PFE | 1 | $26.90 | Piggy bank |
+| Future: | [Any] | [Any] | [Any] | Loop through all |
 
 | Metric | Amount |
 |--------|--------|
