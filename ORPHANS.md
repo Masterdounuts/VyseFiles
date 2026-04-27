@@ -1,54 +1,18 @@
-[[projects|Home]]
+# ORPHANS.md - Quick Index
 
-# File Index
+*Lean version - Updated 2026-04-27*
 
-*All files linked to graph. Last audit: 2026-04-23 01:46 UTC*
+## Key Hubs
+| Hub | Purpose |
+|-----|---------|
+| [[kb/system/system|System]] | Main entry, fixes |
+| [[kb/crew/crew|Crew]] | Subagents (Quartermaster, Scribe, Shipwright) |
+| [[kb/quartermaster/|Quartermaster]] | Trading protocols |
+| [[kb/stocks/stocks|Stocks]] | Live prices, research |
 
-## ⚙️ System → [[INDEX.md|Main Index]]
+## Core Files (in root)
+- HEARTBEAT.md (trading positions)
+- active.md (session state)
+- resume-point.md (checkpoint)
 
-| File | Purpose |
-|------|---------|
-| [[kb/system/system|System Hub]] | Main entry point |
-| [[kb/system/bootstrap/FIXES.md|Fixes]] | Known issues |
-| [[kb/system/workflow/summary.md|Summary]] | Lessons learned |
-| [[kb/system/workflow/brain|Brain]] | Quick access |
-| [[kb/system/workflow/quick-recall|Quick Recall]] | Fast recovery |
-| [[kb/reference/|Reference]] | Templates & guides |
-
-## 🦜 Personality → [[INDEX.md|Main Index]]
-
-| File | Purpose |
-|------|---------|
-| [[SOUL.md|Vyse Soul]] | Core principles |
-| [[IDENTITY.md|Identity]] | Name, vibe |
-| [[USER.md|User]] | Your prefs |
-| [[AGENTS.md|Agents]] | Trading protocol |
-
-## 📅 Memory → [[memory/2026-04-23|Apr 23]]
-
-| File | Purpose |
-|------|---------|
-| [[memory/2026-04-23|Today]] | Current session |
-| [[memory/2026-04-22|Apr 22]] | Yesterday |
-| [[memory/2026-04-21|Apr 21]] | Day before |
-| [[memory/active|Active]] | Current task |
-
-## 📈 Trading → [[kb/stocks/stocks|Portfolio]]
-
-| File | Purpose |
-|------|---------|
-| [[kb/stocks/stocks|Portfolio Hub]] | Main trading hub |
-| [[kb/stocks/positions/|Positions]] | Stock positions |
-| [[kb/stocks/agent/|Subagent]] | Auto-trading |
-
-## 📁 Workspace Structure
-- **Root (23 files):** Bootstrap + workflow files only
-- **kb/system/:** System docs, fixes, brain
-- **kb/stocks/:** Trading data + subagent
-- **kb/personal/:** David's projects
-- **kb/reference/:** Templates
-- **memory/:** Daily logs
-- **scripts/:** Automation
-
----
-*[[INDEX.md|← Back to Index]]
+*Full index in GitHub*
