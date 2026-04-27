@@ -10,7 +10,7 @@ description: Telegram bot setup, configuration, DM policies, group management, a
 
 **Goal:** Reach RON Level (7/7) in Telegram management
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -18,6 +18,8 @@ description: Telegram bot setup, configuration, DM policies, group management, a
 | DM Policies | 3/7 | Knows pairing, open, allowlist, disabled |
 | Group Config | 3/7 | Can add groups, set requireMention |
 | Features | 2/7 | Has docs, needs more hands-on |
+
+**Note:** Dropped from 4→3 - sub-skills show 3 max, hadn't earned 4.
 
 **Path to RON:** Full feature coverage, troubleshooting, multi-account setups
 

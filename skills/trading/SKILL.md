@@ -9,17 +9,17 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 **Goal:** Reach RON Level (7/7) in trading/investing
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Monitoring | 4/7 | 🟡🟡🟡🟡 | Runs every 30 min, checks positions |
-| Alerting | 4/7 | 🟡🟡🟡🟡 | Queues alerts, filters noise |
+| Monitoring | 3/7 | 🟡🟡🟡 | Basic monitoring works |
+| Alerting | 3/7 | 🟡🟡🟡 | Basic alerting works |
 | Decision Making | 3/7 | 🟡🟡🟡 | Uses crew-protocols scan-think-act |
 | Strategy | 3/7 | 🟡🟡🟡 | Threshold logic - still learning |
-| **Verification** | 4/7 | NEW | Verifies data before committing |
+| **Verification** | 4/7 | 🟡🟡🟡🟡 | Verifies data before committing |
 
-**Note:** Recent data error fixed with verification protocol.
+**Note:** Dropped from 4→3 - need more practice to earn 4. Quartermaster was not a real subagent before.
 
 **Path to RON:** More autonomous decisions, better strategy, self-learn from trades
 

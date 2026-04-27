@@ -11,13 +11,15 @@ description: Server and system administration - networking, processes, services.
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 2 - Beginner 🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Process Management | 2/7 | Can check processes, restart services |
 | Networking | 1/7 | Basic port checks |
 | Service Management | 2/7 | systemd basics |
+
+**Note:** Dropped from 4→2 - sub-skills max is 2, had no evidence for 4.
 | Logs | 2/7 | Can read system logs |
 | Security | 1/7 | Basic firewall awareness |
 | Backups | 1/7 | Hasn't implemented |

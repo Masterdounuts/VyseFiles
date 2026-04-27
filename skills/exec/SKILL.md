@@ -14,7 +14,7 @@ description: Shell command execution, sandbox, PTY, and background processes.
 
 **Goal:** Reach RON Level (7/7) in shell execution
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -25,6 +25,8 @@ description: Shell command execution, sandbox, PTY, and background processes.
 | Troubleshooting | 4/7 | Uses memory_search for FIXES, gateway/system for diagnostics |
 
 **Path to RON:** Expert-level exec, all security modes
+
+**Note:** Dropped from 6→5 - haven't proven teaching ability yet.
 
 ---
 
