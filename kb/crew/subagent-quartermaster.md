@@ -24,12 +24,9 @@
 | **Research Quality** | Actionable insights | Use Scribe for research |
 | **Risk Management** | Preserve capital | Never risk more than 1-2% |
 
-### Capital Growth
-
-| Goal | Target | How You Improve |
-|------|--------|-----------------|
-| **Starting** | $45.00 | - |
-| **Current** | $51.94 | - |
+### Tomorrow's Buying Power (After Market Opens)
+- **Unsettled funds resolve:** $24.94
+- **Ready to trade**
 | **Target** | Grow steadily | Small gains compound |
 | **Drawdown** | <10% max | Stop-loss discipline |
 

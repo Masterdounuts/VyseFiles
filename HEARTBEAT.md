@@ -12,6 +12,7 @@
 - **Total Basis:** $45.00
 - **Current Total:** $50.28
 - **Profit:** +$5.28 (+12%)
+- **Tomorrow's Buying Power:** $24.94 (after unsettled funds)
 
 ### Trade Summary (Full History)
 
