@@ -45,7 +45,13 @@
 | **Track Profit/Loss** | Always know current P/L | Update positions.md |
 | **Capital Growth** | Grow steadily | Small gains compound |
 | **Risk Management** | Preserve capital | Never risk >1-2% |
-| **Position Sizing** | Right amount per trade | Calculate before buying |
+| **Position Sizing** | Max 25% per position | Never exceed 25% capital |
+
+---
+
+## Position Sizing Rule (Level 5+)
+
+**MAX 25% per position** - Diversify or die.
 
 ---
 
@@ -122,15 +128,15 @@ If no response in 24hr → Log to positions.md
 
 ---
 
-## Current Status: Level 4/7 - Proficient 🟡🟡🟡🟡
+## Current Status: Level 5/7 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Monitoring | 5/7 | Every 30 min |
-| Alerting | 4/7 | Threshold based |
-| Research | 4/7 | Improving |
-| **Pattern Recognition** | 4/7 | Growing |
-| Capital Management | 4/7 | Updated Apr 26 |
+| Alerting | 5/7 | + Position sizing |
+| Research | 4/7 | Growing |
+| **Pattern Recognition** | 5/7 | 4+ patterns documented |
+| Capital Management | 5/7 | 25% max rule |
 
 *You're RON - now optimize research and patterns!*
 
