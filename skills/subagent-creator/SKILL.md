@@ -14,17 +14,17 @@ description: Template and pattern for building autonomous subagents like Quarter
 
 **Goal:** Reach RON Level (7/7) in subagent creation
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | OpenClaw Config | 5/7 | Proper agent config in openclaw.json |
 | sessions_spawn | 5/7 | Native spawn with announce |
-| **Cron Subagents** | 5/7 | Quartermaster, Shipwright, Scribe via cron |
+| **Subagent Template** | 6/7 | Complete template with core skills | ← UPDATED
 | Thread Binding | 4/7 | Persistent session threads |
-| Nested Agents | 3/7 | Orchestrator pattern |
+| Nested Agents | 4/7 | Orchestrator pattern |
 
-**Path to RON:** Expert-level subagent patterns
+**Path to RON:** Complete template covers all aspects
 
 ---
 
@@ -380,3 +380,205 @@ This spawns an isolated subagent every 30 min.
 - "new worker"
 - "sessions_spawn"
 - "thread binding"
+
+---
+
+# COMPLETE SUBAGENT TEMPLATE
+
+*Everything needed to create a fully functional subagent (2026-04-27)*
+
+---
+
+## Step 1: Define in openclaw.json
+
+```json
+{
+  "agents": {
+    "list": [
+      {
+        "id": "[name-lower]",
+        "name": "[Name]",
+        "description": "[What they do]",
+        "embeddedHarness": {
+          "runtime": "pi"
+        }
+      }
+    ]
+  }
+}
+```
+
+---
+
+## Step 2: Create subagent file (kb/crew/subagent-[name].md)
+
+```markdown
+# [Name] - [Role]
+
+*Your mission: [What they do]*
+
+## Your Role
+
+| Position | Who |
+|----------|-----|
+| Captain | David |
+| First Mate | Vyse |
+| You | Crew - [Name] |
+
+---
+
+## 🎯 Your Core Skill (MOST IMPORTANT)
+
+| Core Skill | Description | Tools |
+|------------|-------------|-------|
+| **[Core Skill Name]** | [What it is] | [tools to use] |
+
+### How to Improve Your Core Skill
+- [Drill 1]
+- [Drill 2]
+- [Drill 3]
+
+---
+
+## 🎯 Your Learning Goals (Perpetual)
+
+| Goal | Target | How You Improve |
+|------|--------|-----------------|
+| [Goal 1] | [Target] | [How] |
+| [Goal 2] | [Target] | [How] |
+
+---
+
+## Your Current Status: Level X - [Level Name]
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| [Core Skill] | X/7 | [Notes] |
+| [Supporting] | X/7 | [Notes] |
+
+---
+
+## Your Systems & Tools
+
+### Always Loaded
+| System | Use It For |
+|--------|------------|
+| [tool] | [purpose] |
+
+### Available on Demand
+| System | Use It For |
+|--------|------------|
+| [tool] | [purpose] |
+
+---
+
+## Problem Resolution Protocol
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+---
+
+## Key Files (Read on Wake)
+
+| Priority | File | Purpose |
+|----------|------|---------|
+| 1 | `kb/crew/subagent-[name].md` | ← Start Here |
+| 2 | `HEARTBEAT.md` | Current state |
+
+---
+
+*Your goal: Master your core skill and level up to RON.*
+```
+
+---
+
+## Step 3: Add to Subagent Levels (kb/crew/subagent-levels.md)
+
+```markdown
+### [Name] ([Role])
+
+| Skill | Level | Score |
+|-------|-------|-------|
+| [Core Skill] | X/7 | 🟡X |
+| [Supporting] | X/7 | 🟡X |
+
+**Current Level: X - [Level Name]**
+
+### [Name] Core Skills
+
+| Skill | Description | Tools |
+|-------|-------------|-------|
+| [Core] | [What] | [tools] |
+
+### [Name]'s Path to RON
+
+| Level | Goal |
+|-------|------|
+| X → X+1 | [What it takes] |
+| 6 → 7 | Fully autonomous |
+```
+
+---
+
+## Step 4: Add Drills (kb/crew/subagent-drills.md)
+
+```markdown
+## [Name] - [Core Skill] Drills
+
+### Drill 1: [Name]
+- **What:** [Description]
+- **Trigger:** [Frequency]
+- **Goal:** [Target outcome]
+
+### Drill 2: [Name]
+- **What:** [Description]
+- **Trigger:** [Frequency]
+- **Goal:** [Target outcome]
+```
+
+---
+
+## Step 5: Set Up Cron (Optional)
+
+If the subagent needs to run on schedule:
+
+```json
+{
+  "schedule": { "kind": "cron", "expr": "[cron expr]" },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "[Task description]"
+  },
+  "sessionTarget": "isolated",
+  "delivery": { "mode": "none" }
+}
+```
+
+---
+
+## Subagent Checklist
+
+| Step | Done | What |
+|------|------|------|
+| 1 | ☐ | Define in openclaw.json |
+| 2 | ☐ | Create kb/crew/subagent-[name].md |
+| 3 | ☐ | Add to subagent-levels.md |
+| 4 | ☐ | Add drills to subagent-drills.md |
+| 5 | ☐ | Set up cron (if needed) |
+| 6 | ☐ | Test spawn |
+| 7 | ☐ | Verify announcement works |
+
+---
+
+## Lessons Learned (2026-04-27)
+
+1. **Use OpenClaw commands** - Not system commands (ps, top, cron)
+2. **Core skill is essential** - Each subagent needs ONE core skill to master
+3. **Drills level up** - Practice routines are key to improvement
+4. **Self-healing first** - Retry 3 times before escalating
+5. **Proactive > Reactive** - Warn before issues happen
+6. **Document everything** - Scribe keeps records
+
+---
