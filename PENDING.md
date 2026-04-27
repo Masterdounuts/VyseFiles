@@ -1,32 +1,15 @@
-[[memory/archive|Home]]
+# PENDING. md - Action Queue
 
-# PENDING.md - Action Queue
+*Simplified 2026-04-27*
 
-*Persistent queue for in-flight tasks. Survives compactions.*
+## Current Queue
+- (none - all clear)
 
----
+## Active Session
+- Monitoring NRXP/LIDR positions
 
-## Queue (2026-04-23)
+## Done ✅
+- Workspace reorganized (Apr 23)
+- Trading system operational (Apr 27)
 
-*(none - all clear)*
-
-## Just Finished 🔥
-
-- Workspace reorganization (Apr 23 01:45-01:48 UTC)
-  - Moved: CONTROL-UI.md, SUBAGENTS.md, DASHBOARD.md → kb/
-  - Fixed: knowledge.md, projects.md links
-  - Updated: ORPHANS.md with new structure
-  - Result: 34 → 19 root files
-
----
-
-## Completed ✅
-
-- [x] Verify subagent position tracking
-- [x] Clean stock data from HANDOFF.md, TODO.md
-- [x] Reorganize workspace - move docs to kb/
-- [x] Separate trading data from core identity files
-- [x] Delete state.json, migrate to positions/*.md
-
----
-*[[INDEX.md|← Back]]
+*Full history in GitHub*
