@@ -16,7 +16,8 @@ access: crew
 |-------|-------|-------|-------|
 | Health Check | 4/7 | 🟡🟡🟡🟡 | Runs via cron, checks gateway |
 | Cron Audit | 4/7 | 🟡🟡🟡🟡 | Uses openclaw cron list |
-| Cleanup | 3/7 | 🟡🟡🟡 | Session cleanup |
+| **Session Cleanup** | 6/7 | 🟡🟡🟡🟡🟡🟡 | Daily cron + aggressive prune |
+| **Session Health Monitor** | 5/7 | 🟡🟡🟡🟡🟡 | Hourly context checks |
 | Auto-Heal | 3/7 | 🟡🟡🟡 | Has failure healer script |
 | **Fix Speed** | 4/7 | Improving | Practice needed |
 | **Proactive** | 4/7 | Warns crew | Can improve |
@@ -39,14 +40,32 @@ access: crew
 
 **True Subagent** - defined in openclaw.json (agentId: shipwright)
 
-**Schedule:** Weekly (Sunday) + on-demand
+**Schedule:** Daily (4am UTC) + Hourly health checks + on-demand
+
+**Auto-Maintenance:**
+- `Shipwright: Session Cleanup` - Daily at 4am UTC
+  - Removes ALL `:run:` entries (cron run variants)
+  - Removes orphaned `:main` sessions (no label + no lastChannel)
+  - Cleans all agents: vyse, quartermaster, shipwright, scribe
+- `Shipwright: Session Health Monitor` - Hourly
+  - Checks context usage (totalTokens / contextTokens)
+  - Alerts if >80% used
+  - Detects done subagents still attached
+- Pattern: `skills/shipwright/session-cleanup-pattern.md`
+
+**Model Selection (Critical!)**
+- For heavy audit tasks: Use `model: google/gemini-2.5-flash-lite`
+- IMPORTANT: After heavy task completes → switch BACK to minimax
+- Always specify model explicitly for subagents doing heavy work
+- Default model: `minimax/m2.5` for normal tasks
+- **Full model list:** See `skills/available-models.md`
 
 **Summon when:**
 - "how's the ship?"
 - "check health"
 - "something feels off"
 
-**Capabilities:** Health check, Cron audit, Config check, Cleanup
+**Capabilities:** Health check, Cron audit, Config check, Session cleanup
 
 **Learning:** Update `kb/system/shipwright.md` after each session (what broke, what fixed, patterns)
 

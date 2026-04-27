@@ -24,9 +24,9 @@
 | **Research Quality** | Actionable insights | Use Scribe for research |
 | **Risk Management** | Preserve capital | Never risk more than 1-2% |
 
-### Tomorrow's Buying Power (After Market Opens)
-- **Unsettled funds resolve:** $24.94
-- **Ready to trade**
+### Tomorrow's Buying Power
+- **Amount:** $24.94 (after unsettled funds resolve)
+- **Ready to trade:** Market opens
 | **Target** | Grow steadily | Small gains compound |
 | **Drawdown** | <10% max | Stop-loss discipline |
 

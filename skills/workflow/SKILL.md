@@ -16,8 +16,9 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 |-------|-------|-------|-------|
 | Wake-up | 5/7 | 🟡🟡🟡🟡🟡 | Reads TODO, HANDOFF, active.md |
 | Context | 5/7 | 🟡🟡🟡🟡🟡 | Knows compaction rules, 60/70% checkpoints |
+| **Session Health** | 5/7 | 🟡🟡🟡🟡🟡 | Monitors via Shipwright hourly cron |
 | Status | 4/7 | 🟡🟡🟡🟡 | Uses status prefixes |
-| Checkpoint | 4/7 | 🟡🟡🟡🟡 | Auto-checkpoint scripts running |
+| Checkpoint | 5/7 | 🟡🟡🟡🟡🟡 | Pre-cleanup checkpoint added |
 
 **Path to RON:** Perfect self-management, zero handoff issues
 
@@ -58,6 +59,45 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 3. Check scheduled tasks (cron jobs, reminders)
 4. Handle any actionable items
 5. Chat with you
+
+## Pre-Cleanup Protocol (Critical!)
+
+Before running ANY session cleanup:
+
+1. **Checkpoint current context** → Write summary to memory/active.md
+2. **Note what we're about to do** → "About to run aggressive session cleanup"
+3. **After cleanup** → Verify session still running, context intact
+
+This prevents the April 27 incident where session restarted and context was lost.
+
+## Session & Context Management
+
+**Monitoring:**
+- `sessions_list` shows totalTokens, contextTokens
+- Context % = (totalTokens / contextTokens) * 100
+- Auto-compaction triggers at ~95%
+
+
+**Thresholds:**
+| Usage | Status | Action |
+|-------|--------|--------|
+| <50% | ✅ Healthy | None |
+| 50-80% | 🟡 Watch | Monitor hourly |
+| 80-95% | ⚠️ Warning | Trigger checkpoint |
+| >95% | 🔴 Critical | Auto-compact |
+
+**Model Selection:**
+- Default: `minimax/m2.5` for normal tasks
+- Heavy tasks: Use `gemini-2.5-flash-lite` to avoid timeouts
+- AFTER heavy task: Switch BACK to minimax!
+- **Full list:** See `skills/available-models.md`
+
+**Testing Protocol:**
+1. If minimax times out → try gemini-flash-lite
+2. If gemini works → document task type
+3. Switch back to minimax
+
+**See also:** `skills/control-ui/session-management.md`, `skills/available-models.md`
 
 ## Decision Protocol
 **Scan → Think → Act**

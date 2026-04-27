@@ -32,12 +32,11 @@
 
 | Metric | Status |
 |--------|--------|
-| **Gateway** | Restarted for cleanup |
-| **Sessions** | Auto-cleaned (vyse: 62, quartermaster: 26, shipwright: 2) |
+| **Gateway** | Restarted |
+| **Sessions** | 🛠️ Shipwright fixing 16 stale child sessions |
 | **Cron Jobs** | Running |
-| **Tomorrow's Buying Power** | $24.94 |
 
-**Last Updated:** 2026-04-27 03:40 UTC
+**Last Updated:** 2026-04-27 03:51 UTC
 
 ---
 

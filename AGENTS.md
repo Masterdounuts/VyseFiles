@@ -40,7 +40,7 @@ David (Captain)
 | Agent | Role | Runs |
 |-------|------|------|
 | **quartermaster** | Stock monitoring, price alerts | Every 30 min |
-| **shipwright** | Health checks, cron audit | Weekly |
+| **shipwright** | Health checks, session cleanup | Daily 4am + Hourly health |
 | **scribe** | Knowledge audit, gap detection | Weekly |
 
 → See [[skills/subagent-creator|subagent-creator]] for full crew template, ongoing goals, and information flow.

@@ -580,5 +580,6 @@ If the subagent needs to run on schedule:
 4. **Self-healing first** - Retry 3 times before escalating
 5. **Proactive > Reactive** - Warn before issues happen
 6. **Document everything** - Scribe keeps records
+7. **Model switching** - Use gemini for heavy tasks, ALWAYS switch back to minimax after
 
 ---

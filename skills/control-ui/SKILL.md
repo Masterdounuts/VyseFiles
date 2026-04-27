@@ -197,15 +197,29 @@ agent:<agentId>:main                        # For DMs/default
 3. If no agentId → Use default agent
 4. Find or create session → Route to agent
 
+### Session Display Rules (CHAT Panel)
+
+See: `skills/control-ui/session-management.md`
+
+**Quick Reference:**
+- ✅ Shows: Main sessions with `lastChannel`, active subagents
+- ❌ Hidden: Cron jobs, `:run:` variants, orphaned sessions
+
+### Session Optimization
+
+- **Cleanup:** Daily at 4am UTC (Shipwright cron)
+- **Target:** <10 sessions per agent
+- **Pattern:** `skills/shipwright/session-cleanup-pattern.md`
+- **Docs:** `skills/control-ui/session-management.md`
+
 ### Common Issues & Fixes
 
 | Issue | Fix |
 |-------|-----|
-| Cron jobs cluttering main session | Use `"sessionTarget": "isolated"` + `payload.kind: "agentTurn"` |
+| Session selector overflow | Prune old sessions, remove `:run:` cron variants |
 | "Blank agent" in Control UI | Delete orphan `main` agent, set default |
-| Old agent still referenced in cron | Update `agentId` and `sessionKey` |
-| Session stuck as wrong agent | Delete agent folder, recreate |
 | CLI timeout | Use API tools instead (cron, gateway, sessions_*) |
+| Old cron sessions accumulating | Use `sessionTarget: "isolated"`, prune weekly |
 
 ### Commands for Session Management (CLI fallback)
 ```bash
