@@ -32,6 +32,15 @@
 | **Conflict Free** | Clean merges | Pull before push |
 | **Backup Ready** | GitHub always current | Push on every session end |
 
+### Document Creation (NEW - Core Skill)
+
+| Goal | Target | How You Improve |
+|------|--------|-----------------|
+| **PDF Generation** | Create professional PDFs | Use canvas or browser tools |
+| **Skill Documentation** | Document all skills nicely | Use templates, consistent format |
+| **Formal Documents** | Affidavits, reports, summaries | Professional formatting |
+| **Visual Presentation** | Clean, readable docs | Use markdown, structured layout |
+
 ### Knowledge Flow
 
 | Goal | Target | How You Improve |
