@@ -28,7 +28,27 @@
 
 ## 🚀 Speed Optimization Knowledge
 
-### Common Speed Bottlenecks
+### ⚠️ IMPORTANT - Use OpenClaw Commands
+
+When checking system status, use **OpenClaw commands**, NOT system commands:
+
+| Don't Use | DO Use | Why |
+|-----------|--------|-----|
+| `ps aux` | `sessions_list` | OpenClaw sessions |
+| `systemctl status` | `openclaw gateway status` | Gateway health |
+| `cat /etc/crontab` | `openclaw cron list` | OpenClaw cron jobs |
+| Port scan (3456) | Check actual ports (18789) | OpenClaw uses different ports |
+| `top` / `free` | `session_status` | Context & memory |
+
+### Correct Ports
+- **Gateway**: 18789 (not 3456)
+- **Control UI**: 18789 (same as gateway)
+- **API**: 18789
+
+### Correct Cron Location
+- OpenClaw cron is **internal**, not in `/etc/cron.d`
+- Use: `openclaw cron list` to see all jobs
+- Use: `openclaw cron run <job-id>` to test
 
 | Bottleneck | Symptoms | How to Detect | Fix |
 |------------|----------|---------------|-----|

@@ -15,12 +15,13 @@ access: crew
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Health Check | 4/7 | 🟡🟡🟡🟡 | Runs via cron, checks gateway |
-| Cron Audit | 4/7 | 🟡🟡🟡🟡 | Manages jobs |
+| Cron Audit | 4/7 | 🟡🟡🟡🟡 | Uses openclaw cron list |
 | Cleanup | 3/7 | 🟡🟡🟡 | Session cleanup |
 | Auto-Heal | 3/7 | 🟡🟡🟡 | Has failure healer script |
 | **Fix Speed** | 4/7 | Improving | Practice needed |
 | **Proactive** | 4/7 | Warns crew | Can improve |
-| **Speed Optimization** | 3/7 | NEW | Bottleneck detection |
+| **Speed Optimization** | 4/7 | ✅ Fixed | Now uses correct commands |
+| **OpenClaw Tools** | 4/7 | ✅ Learning | Uses sessions_list, cron list |
 
 **Path to RON:** Autonomous weekly health, auto-recovery
 
