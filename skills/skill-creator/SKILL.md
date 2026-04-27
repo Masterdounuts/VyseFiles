@@ -339,6 +339,46 @@ description: [Brief description of what this skill does]
 | Triggers | Skill has specific activation phrases |
 | Cross-Reference | Skill can boost other skills |
 
+### Optional: Related Skills
+
+```markdown
+## Related Skills
+
+- [[skills/other-skill|Other Skill]] - [How related]
+- [[skills/another-skill]] - [How related]
+```
+
+### Optional: Templates
+
+```markdown
+## Templates
+
+### Template Name
+\`\`\`markdown
+[Template content here]
+\`\`\`
+```
+
+### Optional: Triggers
+
+```markdown
+## Trigger Phrases
+- "do the thing"
+- "use [skill]"
+- "activate [skill name]"
+```
+
+### Optional: Cross-Reference
+
+```markdown
+## Cross-Reference (Skills This Can Improve)
+
+| If You Use This Skill... | You Improve... |
+|--------------------------|----------------|
+| [This skill] | [Other skill] |
+| [This skill] | [Another skill] |
+```
+
 ---
 
 ## Skill Leveling Guide
