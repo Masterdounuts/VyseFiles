@@ -3,32 +3,25 @@
 ## Current (Apr 27, 2026)
 
 ### Positions
-- **PFE:** 1 share @ $26.90 (piggy bank - BUY Apr 24, 2026)
-- **Cash:** $23.38
+- **NRXP:** 4 shares @ $3.04 | Stop: $2.58 | Target: $3.65
+- **LIDR:** 5 shares @ $2.14 | Stop: $1.82 | Target: $2.57
 
 ### Capital
-- **Starting:** $20.00
-- **Added:** $25.00
-- **Total Basis:** $45.00
-- **Current Total:** $50.28
-- **Profit:** +$5.28 (+12%)
-- **Tomorrow's Buying Power:** $24.94 (after unsettled funds)
+- **Invested:** $22.86
+- **Available:** $2.08 + $27.02 (unsettled tomorrow)
 
-### Trade Summary (Full History)
+### Active Rules
+- Stop loss: -15%
+- Take profit: +20%
+- Account: Cash (unlimited day trades)
 
-| Date | Action | Symbol | Shares | Price | P/L |
-|------|--------|--------|--------|-------|-----|
-| 04/12 | BUY | GGB | 5.988 | $4.18 | - |
-| 04/14 | SELL | GGB | 1 | $4.28 | +$0.10 |
-| 04/16 | BUY | AMC | 8 | $1.64 | - |
-| 04/17 | SELL | AMC | 8 | $1.69 | +$0.40 |
-| 04/21 | BUY | LCID | 1.394 | $7.18 | - |
-| 04/22 | BUY | BBAI | 2.5 | $3.88 | - |
-| 04/23 | SELL | LCID | 1.394 | $6.60 | -$0.81 |
-| 04/23 | SELL | BBAI | 2.5 | $3.78 | -$0.25 |
-| 04/24 | SELL | GGB | 4.988 | $4.32 | +$3.44 |
-| 04/24 | BUY | PFE | 1 | $26.90 | - |
+### Alerts
+- NRXP: Watch for $2.58 (stop) or $3.65 (target)
+- LIDR: Watch for $1.82 (stop) or $2.57 (target)
 
-**Stats:** 6 buys, 7 sells, 5 wins, 2 losses, 71% win rate
+### Quick Ref
+- Yahoo + "User-Agent: Mozilla/5.0" = real-time prices
+- Quartermaster: gemma model, short prompts only
+- Scribe: kb/crew/ for protocols
 
-**Last Updated:** 2026-04-27 02:12 UTC
+**Updated:** 2026-04-27 16:46 UTC

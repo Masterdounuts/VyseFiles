@@ -1,0 +1,15 @@
+{
+  "status": "active",
+  "scan_type": "morning-watchlist",
+  "volatile_watchlist": [
+    {"symbol": "BBAI", "price": 3.66, "notes": "AI stock, volatile"},
+    {"symbol": "LCID", "price": 5.99, "notes": "EV maker"},
+    {"symbol": "QS", "price": 7.22, "notes": "Solid-state battery"},
+    {"symbol": "MARA", "price": 11.19, "notes": "Bitcoin miner"},
+    {"symbol": "SOFI", "price": 18.68, "notes": "Fintech"}
+  ],
+  "trending_now": ["BB", "COEP", "CPRX", "DPZ", "GLND", "GOOGL", "HTCO", "NTLA", "NVDA", "POET"],
+  "new_opportunities": ["NVDA", "NTLA"],
+  "last_scan": "2026-04-27T17:00:00Z",
+  "data_quality": "partial - Yahoo chart API prices only, sentiment from StockTwits"
+}

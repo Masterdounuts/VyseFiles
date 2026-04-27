@@ -9,9 +9,17 @@
 ### PFE (Current: 1 share @ $26.90)
 | Trigger | Action | Priority |
 |---------|--------|----------|
+| **Today: If profit** | SELL 100% - Captain approved diversification | 🔴 High |
 | Price < $25.00 | Sell 100% | 🔴 High |
 | Price > $30.00 | Sell 50% | 🟡 Medium |
 | Price > $32.00 | Sell 100% | 🟡 Medium |
+
+### 📌 TODAY (Captain's Orders)
+- **SELL PFE** at market open if in profit
+- **Current buying power:** $24.94
+- **No Robinhood Gold** - must wait 1 trading day for unsettled funds
+- **After sell:** Wait 1 day before buying new position
+- **Diversify** - Split capital across 2+ stocks (max 25% each)
 
 ### New Positions
 | Trigger | Action | Priority |
