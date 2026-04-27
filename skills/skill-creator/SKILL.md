@@ -13,15 +13,15 @@ description: Create, edit, audit skills. Before creating, check existing skills 
 
 **Goal:** Reach RON Level (7/7) in skill creation
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Creation | 5/7 | Created system, skill-creator, 18 skills audited |
 | Comparison | 5/7 | Full audit of all 18 skills complete |
 | Auditing | 5/7 | Documented overlaps, decided no new skills needed |
-| Templates | 5/7 | Has complete skill structure, ready for mass creation |
-| Self-Audit | 5/7 | Added cross-reference update protocol, automated level check |
+| **Templates** | 6/7 | Complete template with core skills | ← UPDATED
+| Self-Audit | 5/7 | Added cross-reference update protocol |
 
 **Path to RON:** Automated gap detection, self-improving skill
 
@@ -255,3 +255,113 @@ This skill is optimized for **mass skill creation**:
 - "skill audit"
 - "evaluate skills"
 - "level up skill"
+
+---
+
+# COMPLETE SKILL TEMPLATE
+
+*Everything needed to create a fully functional skill (2026-04-27)*
+
+---
+
+## Skill Structure
+
+```markdown
+---
+name: [name-lower]
+access: vyse-only|all
+description: [Brief description of what this skill does]
+---
+
+# [Name] - [One-line description]
+
+[Detailed description of the skill's purpose and when to use it]
+
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in [skill name]
+
+### Current Status: Level X - [Level Name] 🟡X
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| [Core] | X/7 | [Notes] |
+| [Supporting] | X/7 | [Notes] |
+
+**Path to RON:** [What it takes to reach level 7]
+
+---
+
+## Key Capabilities
+
+| Capability | When to Use |
+|------------|-------------|
+| [Capability 1] | [Situation] |
+| [Capability 2] | [Situation] |
+
+---
+
+## How to Use
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+---
+
+## Related Skills
+
+- [Related skill 1]
+- [Related skill 2]
+```
+
+---
+
+## Minimum Required Sections
+
+| Section | Required | Description |
+|---------|----------|-------------|
+| name | ✅ | Skill identifier (lowercase, hyphenated) |
+| description | ✅ | When to use this skill |
+| Current Status | ✅ | Level (1-7) with sub-skills |
+| RON Target | ✅ | What level 7 looks like |
+| Key Capabilities | ✅ | What the skill can do |
+| How to Use | ✅ | Basic usage instructions |
+
+---
+
+## Optional Sections
+
+| Section | Use When |
+|---------|----------|
+| Related Skills | Skill connects to others |
+| Templates | Skill has reusable formats |
+| Triggers | Skill has specific activation phrases |
+| Cross-Reference | Skill can boost other skills |
+
+---
+
+## Skill Leveling Guide
+
+| Level | Name | What It Means |
+|-------|------|---------------|
+| 1 | Novice | Knows it exists |
+| 2 | Beginner | Used once or twice |
+| 3 | Competent | Can handle basics |
+| 4 | Proficient | Can do most tasks |
+| 5 | Advanced | Can fix issues |
+| 6 | Expert | Knows all features |
+| 7 | RON | Teaching level - can explain to others |
+
+---
+
+## Lessons Learned (2026-04-27)
+
+1. **Check existing first** - Before creating, audit current skills
+2. **Core skill focus** - Each skill needs ONE core capability to master
+3. **Drills help** - Practice routines speed up leveling
+4. **Cross-pollinate** - Skills boost each other
+5. **Honest assessment** - Don't claim RON until truly there
+6. **Document everything** - Future you will thank present you
+
+---
