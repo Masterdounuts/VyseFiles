@@ -53,9 +53,15 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 | ⚔️ Acting | Executing | Running commands |
 | 🎉 Done | Complete | Task finished |
 
-## Wake-up Flow
+## Wake-up Flow (Correct Order)
 1. **GitHub pull** → `git fetch origin main && git pull origin main`
-2. Read TODO.md → active.md → PENDING.md
+2. **Read in EXACT order:**
+   - `memory/active.md` ← **PRIMARY** (today's checkpoint)
+   - `HEARTBEAT.md` ← trading state
+   - `HANDOFF.md` ← pending handoffs
+   - `TODO.md` ← tasks
+   - `active.md` (root) ← fallback only
+   - `PENDING.md` ← pending items
 3. Check scheduled tasks (cron jobs, reminders)
 4. Handle any actionable items
 5. Chat with you
