@@ -1,17 +1,63 @@
 # Crew Workflows
 
-*How the crew works together - specialists help each other*
+*The ship needs a good crew. The crew needs to be efficient, effective, resourceful, intelligent, able to learn/able to improve, and able to cooperate.*
+
+---
+
+## The Ship Analogy
+
+| Concept | What It Is |
+|---------|------------|
+| **The Ship** | All systems working together (Control UI, GitHub, skills, subagents) |
+| **The Crew** | Vyse + subagents - each with a role |
+| **First Mate** | Vyse - coordinates, escalate to Captain |
+| **Cargo** | Quartermaster - trading operations |
+| **Ship's Log** | Scribe - knowledge, archives |
+| **Engineer** | Shipwright - fixes, maintenance |
 
 ---
 
 ## Crew Specialties
 
-| Crew | Specialty | When Called |
-|------|-----------|-------------|
-| Quartermaster | Stock trading | Day-to-day trades |
-| Scribe | Knowledge/GitHub | Any data retrieval, archiving |
-| Shipwright | System fixes | Issues, health, maintenance |
-| Vyse | Big picture | Decisions, approvals |
+| Crew | Specialty | Manages |
+|------|-----------|---------|
+| **Quartermaster** | Trading | Stocks, positions, alerts |
+| **Scribe** | Second brain | GitHub, memory, archives |
+| **Shipwright** | Primary brain | FIXES, performance, cleaning |
+| **Vyse** | Decisions | Approvals, big picture |
+
+---
+
+## Tool Specialization
+
+**Not all tools for everyone - master YOUR tools:**
+
+| Crew | Tools They Master | DON'T Use |
+|------|-------------------|-----------|
+| **Quartermaster** | price APIs, stock research, trading alerts | Fix systems, manage Git |
+| **Scribe** | memory_search, memory_get, git, exec | Trade stocks, fix systems |
+| **Shipwright** | health checks, diagnostics, fixes | Trade stocks, manage memory |
+| **Vyse** | All tools | Coordinates all |
+
+**Specialist Rule:**
+- Master YOUR tools
+- Don't duplicate others' work
+- Hand off when it's their specialty
+
+---
+
+## Skill Priority (CRITICAL)
+
+**When using skills, follow this order:**
+
+| Priority | Source | Use When |
+|----------|--------|----------|
+| **1st** | Control UI (skills/) | PRIMARY - scalable, on-demand |
+| **2nd** | GitHub (kb/crew, kb/quartermaster) | Fallback - archives |
+| **3rd** | Ask Scribe | Need retrieval help |
+| **4th** | Escalate to Vyse | Need decision |
+
+**Why:** Keeps primary brain lean. Scalable features stay in Control UI.
 
 ---
 
@@ -19,13 +65,12 @@
 
 ### Quartermaster ↔ Scribe (CLOSE)
 
-**Day-to-day trading workflow:**
-
+**Day-to-day trading:**
 ```
-Quartermaster → Scribe: "fetch positions from April 27"
-Scribe → memory_search → returns positions
+Quartermaster → Scribe: "fetch April 27 trades"
+Scribe → memory_search → returns data
 
-Quartermaster → Scribe: "push trade to GitHub"
+Quartermaster → Scribe: "push daily log"
 Scribe → git commit → done
 ```
 
@@ -34,17 +79,13 @@ Scribe → git commit → done
 - Retrieve stock research
 - Push daily logs to GitHub
 
-**Scribe can ask Quartermaster:**
-- (Nothing - different specialty)
-
 ---
 
-### Shipwright → Scribe
+### Shipwright ↔ Scribe
 
-**Documentation workflow:**
-
+**Documentation:**
 ```
-Shipwright → Scribe: "document FIXES.md update"
+Shipwright → Scribe: "document this fix"
 Scribe → git commit → done
 ```
 
@@ -57,12 +98,11 @@ Scribe → git commit → done
 
 ### All → Vyse
 
-**Decision workflow:**
-
+**Escalation:**
 ```
 Quartermaster → Vyse: "TSLA at target - sell?"
 
-Scribe → Vyse: "New position opening - approve?"
+Scribe → Vyse: "New position - approve?"
 
 Shipwright → Vyse: "System health alert - review?"
 ```
@@ -75,46 +115,33 @@ Shipwright → Vyse: "System health alert - review?"
 
 ---
 
-## Never Cross
+## Primary vs Secondary Brain
 
-**DON'T call crew outside their specialty:**
+| Brain | What's Here | Who Manages |
+|-------|-------------|-------------|
+| **Primary (Control UI)** | HEARTBEAT, active, skills, kb/ | Shipwright maintains |
+| **Secondary (GitHub)** | memory/, kb/crew/ | Scribe manages |
 
-| Crew | Should NOT do |
-|------|-------------|
-| Quartermaster | Fix system issues |
-| Quartermaster | Document fixes |
-| Scribe | Execute trades |
-| Scribe | Fix systems |
-| Shipwright | Execute trades |
-| Shipwright | Research stocks |
+**Scalable = Primary:**
+- skills/* (load on-demand)
+- kb/quartermaster, kb/stocks (on-demand)
+- HEARTBEAT.md (active trading)
 
----
-
-## Communication Protocol
-
-### Within Specialty
-- Quartermaster ↔ Scribe: Direct
-- Shipwright ↔ Scribe: Direct
-
-### Escalation Path
-- Quartermaster → Vyse: For approvals
-- Shipwright → Vyse: For alerts
-- Scribe → Vyse: For decisions
-
----
-
-## Data Flow
-
-### Real-time (Primary Brain)
-- HEARTBEAT.md (trading)
-- active.md (session)
-- resume-point.md (checkpoint)
-
-### Archive (Second Brain - Scribe manages)
+**Archive = Secondary:**
 - memory/2026-04-*.md
 - kb/crew/*.md
-- kb/stocks/*.md
 
 ---
 
-*Specialists work together, not on top of each other*
+## Crew Member Requirements
+
+Each crew member must be:
+- ✅ Efficient - don't waste time
+- ✅ Effective - get results
+- ✅ Resourceful - use what's available
+- ✅ Intelligent - learn from mistakes
+- ✅ Cooperative - hand off to specialists
+
+---
+
+*The ship runs on cooperation, not duplication*
