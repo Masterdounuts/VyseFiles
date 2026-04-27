@@ -40,6 +40,15 @@
 | **Success Rate** | >50% winners | Track what works |
 | **Quick Recall** | Find research fast | Use Scribe properly |
 
+### Capital Management (NEW - Core Skill)
+
+| Goal | Target | How You Improve |
+|------|--------|-----------------|
+| **Track Profit/Loss** | Always know current P/L | Update positions.md |
+| **Capital Growth** | Grow steadily | Small gains compound |
+| **Risk Management** | Preserve capital | Never risk >1-2% |
+| **Position Sizing** | Right amount per trade | Calculate before buying |
+
 ---
 
 ## Your Current Metrics

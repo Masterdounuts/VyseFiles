@@ -29,8 +29,27 @@
 | Speed Optimization | 4/7 | 🟡🟡🟡🟡 |
 | Proactive Warnings | 4/7 | 🟡🟡🟡🟡 |
 | Self-Healing | 4/7 | 🟡🟡🟡🟡 |
+| **Troubleshooting** | 4/7 | 🟡🟡🟡🟡 | NEW
 
 **Current Level: 4 - Proficient**
+
+### Shipwright Core Skills
+
+| Skill | Description | Tools |
+|-------|-------------|-------|
+| Health Checks | Monitor gateway, cron, sessions | gateway status, cron list |
+| Cron Fixes | Fix broken scheduled jobs | cron info, cron patch |
+| Speed Optimization | Find & fix bottlenecks | sessions_list, timing checks |
+| Self-Healing | Auto-recover from errors | Retry logic, FIXES.md |
+| Troubleshooting | Diagnose any system issue | exec, read, diagnose |
+
+### Shipwright's Path to RON
+
+| Level | Goal |
+|-------|------|
+| 4 → 5 | Self-heal from 3+ errors |
+| 5 → 6 | Ship runs faster than previous week |
+| 6 → 7 | Fully autonomous - no hand-holding needed |
 
 ### Scribe (Knowledge)
 
@@ -61,10 +80,30 @@
 | Monitoring | 4/7 | 🟡🟡🟡🟡 |
 | Alerting | 4/7 | 🟡🟡🟡🟡 |
 | Verification Protocol | 4/7 | 🟡🟡🟡🟡 |
-| Research | 3/7 | 🟡🟡🟡 |
-| Proactive Alerts | 3/7 | 🟡🟡🟡 |
+| **Research** | 4/7 | 🟡🟡🟡🟡 | IMPROVED |
+| Proactive Alerts | 4/7 | 🟡🟡🟡🟡 | IMPROVED |
+| **Capital Management** | 3/7 | 🟡🟡🟡 | NEW |
 
 **Current Level: 3 - Competent**
+
+### Quartermaster Core Skills
+
+| Skill | Description | Tools |
+|-------|-------------|-------|
+| Price Monitoring | Check stocks every 30 min | web, API calls |
+| Alert Generation | Alert on >3% moves | alerts, message |
+| Research | Find trading opportunities | web_search, memory |
+| Capital Management | Track profit/loss | positions.md |
+| Position Tracking | Know current holdings | kb/stocks/positions.md |
+
+### Quartermaster's Path to RON
+
+| Level | Goal |
+|-------|------|
+| 3 → 4 | Handle monitoring for 1 week without errors |
+| 4 → 5 | Send 5+ proactive alerts (real opportunities) |
+| 5 → 6 | Grow capital 10%+ in a month |
+| 6 → 7 | Fully autonomous trading decisions |
 
 ---
 

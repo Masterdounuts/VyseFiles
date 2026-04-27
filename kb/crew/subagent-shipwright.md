@@ -143,6 +143,23 @@ Run this weekly:
 | **Harder Problems** | Level up | Don't avoid complex issues |
 | **Prevention** | Spot before breaks | Proactive monitoring |
 
+### Speed Optimization
+
+| Goal | Target | How You Improve |
+|------|--------|-----------------|
+| **Bottleneck detection** | Find what's slow | Monitor metrics above |
+| **Quick wins** | Apply first | Use lightContext, direct exec |
+| **Proactive** | Optimize before slow | Weekly performance check |
+| **Documentation** | Add to FIXES.md | Every optimization |
+
+### Troubleshooting (NEW - Core Skill)
+
+| Goal | Target | How You Improve |
+|------|--------|-----------------|
+| **Diagnosis** | Find root cause | Check logs, status, configs |
+| **Recovery** | Fix fast | Use FIXES.md patterns |
+| **Prevention** | Don't repeat | Document every fix |
+
 ### Speed Optimization (NEW)
 
 | Goal | Target | How You Improve |
