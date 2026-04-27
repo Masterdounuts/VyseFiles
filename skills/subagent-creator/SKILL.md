@@ -581,5 +581,70 @@ If the subagent needs to run on schedule:
 5. **Proactive > Reactive** - Warn before issues happen
 6. **Document everything** - Scribe keeps records
 7. **Model switching** - Use gemini for heavy tasks, ALWAYS switch back to minimax after
+8. **Dual-subagent workflow** - Vyse + Scribe handle RON-level data together
+
+---
+
+## Dual-Subagent Workflow: Vyse + Scribe
+
+**Pattern for managing data at RON levels:**
+
+### The Problem
+- Single agent can't handle all data efficiently
+- Need smart split between primary and secondary brain
+
+### The Solution
+| Agent | Role | Brain |
+|-------|------|-------|
+| **Vyse** | Primary brain (Control UI) | Active context |
+| **Scribe** | Secondary brain (GitHub) | Long-term archive |
+
+### Workflow Rules
+
+1. **Scalable features = PRIMARY**
+   - Skills load on-demand
+   - KB folders load on-demand
+   - Active trading files (HEARTBEAT.md)
+   - Session files (active.md, resume-point.md)
+   - Core identity (AGENTS.md, SOUL.md, USER.md)
+
+   - DREAMS.md (openclaw feature)
+
+
+2. **Static/Archive = SECONDARY**
+   - memory/2026-04-*.md (daily logs)
+   - kb/crew/*.md (protocols)
+   - Large files over 50 lines
+
+3. **Model Switching**
+   - memory_search: gemini-2.5-flash-lite (20s timeout)
+   - git push: gemma-4-26b-a4b-it (20s timeout)
+
+4. **Before pushing to GitHub, ALWAYS ask:**
+   - "Is this scalable?" → If YES, stay in PRIMARY
+   - "Is this redundant?" → If YES, don't duplicate
+
+### Example: Vyse → Scribe
+
+```
+[Task]
+Scribe - Fetch current positions.
+
+[Scribe uses: gemini-flash-lite, memory_search]
+Result: NRXP 4 @ $3.04, LIDR 5 @ $2.14
+
+[Task]
+Scribe - Push summary to GitHub.
+[Scribe uses: gemma, git push]
+Result: Committed ✅
+```
+
+### Check Before Every Commit
+- ☐ Is this scalable? → PRIMARY
+- ☐ Is this redundant? → DELETE from GitHub
+- ☐ Is this primary brain file? → Don't back up to GitHub
+
+---
+*This pattern handles RON-level data without hurting primary brain performance*
 
 ---
