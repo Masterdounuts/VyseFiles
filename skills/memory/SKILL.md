@@ -17,7 +17,7 @@ description: How Vyse remembers, recalls, and manages context. Use when discussi
 | Recall | 5/7 | 🟡🟡🟡🟡🟡 | memory_search works well |
 | Storage | 4/7 | 🟡🟡🟡🟡 | Daily + archive working |
 | Cleanup | 4/7 | 🟡🟡🟡🟡 | Auto-archive working |
-| Dreaming | 3/7 | 🟡🟡🟡 | Enabled but rarely triggers |
+| Dreaming | 4/7 🟡🟡🟡🟡 | Cron runs 3am daily, last ran OK - thresholds too strict (minScore=0.8, minRecallCount=3) |
 
 **Path to RON:** Better auto-organization, smarter promotion, perfect recall
 

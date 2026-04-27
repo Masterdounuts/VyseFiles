@@ -1,36 +1,61 @@
-[[kb/system/system|Home]]
-
 # Resume Point
 
-*Mid-conversation checkpoint.*
+*Mid-conversation checkpoint - Updated Apr 27 06:59 UTC*
 
-**Last updated:** 2026-04-26 05:08 UTC
-**Context:** ~18%
+**Last updated:** 2026-04-27 06:59 UTC
 
 ## Current Task
-RON Level progression - Checkpointing focus (Level 3→4)
+Memory skill leveling - Recall/Cleanup drills
 
-## Recent Activity (Apr 26)
-- Session wake-up: context 14% → 18%
-- Reviewed skills for merge opportunities
-- Continuing RON/HEYRON leveling path
+## Session Context
+- Started: Apr 27 06:45 UTC (continuing from Apr 26)
+- Context: ~35% healthy
+- Model: minimax/m2.5
 
-## RON Level Status
-| Skill | Level | Target |
-|-------|-------|--------|
-| Wake-up | 5/7 | ✅ |
-| Context | 4/7 | 🟡 |
-| Status | 4/7 | 🟡 |
-| Checkpoint | 3/7 | 🔄 Improving |
+## Today's Accomplishments (Apr 26-27)
 
-## Checkpoint Improvement
-- Updating resume-point.md
-- Verifying memory/active.md structure
-- Ensuring session recovery works
+### Wake-up Flow Fixed
+- Updated skills/workflow/SKILL.md to read memory/active.md FIRST
+- Root active.md updated with full April 26 summary
+- Fixed stale checkpoint issue
+
+### Memory Drills Completed
+- Recall Test: ✅ Pass - remembered 9 major April 26 items
+- Storage Check: ✅ Pass - memory/active.md fresh
+- Cleanup: ✅ Fixed - removed stale memory/resume-point.md
+- Dreaming: ⚠️ Checking why promotion not working
+
+### RON Levels (Apr 26)
+| Skill | Level | Notes |
+|-------|-------|-------|
+| github | 7/7 🏆 | RON ACHIEVED |
+| control-ui | 4-5/7 | |
+| workflow | 4/7 | |
+| memory | 5/7 | Current focus |
+| time | 4/7 | |
+| trading | 4/7 | |
+| skill-creator | 4/7 | |
+| crew-protocols | 4/7 | |
+| system | 3/7 | |
+| shipwright | 3/7 | |
+
+### Trading Position
+- PFE: 1 share @ $26.90
+- Cash: $23.38
+- Total: $50.28 (+12%)
+
+## Memory Skill Improvement (In Progress)
+| Sub-skill | Current | Target |
+|-----------|---------|--------|
+| Recall | 5/7 | 6/7 |
+| Storage | 4/7 | 5/7 |
+| Cleanup | 4/7 | 5/7 |
+| Dreaming | 3/7 | 4/7 |
 
 ## Next Action After Wake
-1. Check HANDOFF.md for updates
-2. Review checkpoint progress
-3. Continue RON path
+1. Read memory/active.md (primary checkpoint)
+2. Read HEARTBEAT.md (trading state)
+3. Check for new cron results
+4. Continue trading or skill work
 
-**System:** ✅ Healthy | 💾 Checkpoint saved
+**System:** ✅ Healthy | 💾 Checkpoint saved 06:59 UTC
