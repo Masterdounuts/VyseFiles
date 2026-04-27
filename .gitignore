@@ -79,3 +79,16 @@ memory/resume-point.md
 kb/stocks/agent/*.json
 kb/stocks/agent/*.log
 kb/stocks/agent/*.txt
+-e 
+# Primary brain files (Control UI only - don't commit)
+HEARTBEAT.md
+active.md
+resume-point.md
+AGENTS.md
+SOUL.md
+USER.md
+IDENTITY.md
+DREAMS.md
+PENDING.md
+HANDOFF.md
+
