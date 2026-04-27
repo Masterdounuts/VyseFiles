@@ -12,7 +12,13 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+
+| Sub-Skill | Level | Notes |
+|-----------|-------|-------|
+| Dual-workflow | 6/7 | Vyse+Scribe pattern |
+| Model switching | 6/7 | gemini/gemma split |
+| GitHub push | 6/7 | Works with gemma |
 
 | Skill | Level | Notes |
 |-------|-------|-------|
