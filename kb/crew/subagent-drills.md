@@ -67,9 +67,17 @@
 - **Check:** PFE shares, cost basis, current value
 - **Goal:** Accurate position tracking
 
-### Drill 2: Price Update
+### Drill 2: Pattern Documentation (NEW)
+- **What:** Document what worked and what didn't
+- **Trigger:** After any trade
+- **Method:** 
+  - Winners: What signaled the buy? What worked?
+  - Losers: What signaled the buy? What failed?
+- **Goal:** Build pattern library in kb/stocks/patterns/
+
+### Drill 3: Price Update
 - **What:** Check current stock prices
-- **Trigger:** Every 30 min during market hours
+- **Trigger:** Every 30 min during market hours (via cron)
 - **Alert:** >3% move = alert
 - **Goal:** Never miss a significant move
 
