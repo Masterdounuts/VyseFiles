@@ -10,6 +10,7 @@
   ],
   "trending_now": ["BB", "COEP", "CPRX", "DPZ", "GLND", "GOOGL", "HTCO", "NTLA", "NVDA", "POET"],
   "new_opportunities": ["NVDA", "NTLA"],
-  "last_scan": "2026-04-27T17:00:00Z",
-  "data_quality": "partial - Yahoo chart API prices only, sentiment from StockTwits"
+  "last_scan": "2026-04-28T17:00:00Z",
+  "data_quality": "partial - API rate limited, using prior prices",
+  "notes": "Market close - prices from prior day. Consider NVDA, NTLA for momentum."
 }
