@@ -12,13 +12,7 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
-
-| Sub-Skill | Level | Notes |
-|-----------|-------|-------|
-| Dual-workflow | 6/7 | Vyse+Scribe pattern |
-| Model switching | 6/7 | gemini/gemma split |
-| GitHub push | 6/7 | Works with gemma |
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -28,7 +22,6 @@ access: crew
 | **Retrieval** | 5/7 | Find & deliver on demand |
 | **Organization** | 5/7 | Hub structure |
 | **Gap Detection** | 4/7 | Improving |
-| **Memory Safety** | 5/7 | Prevents context loss |
 
 **Path to RON:** Perfect retrieval for any crew member, auto-organization
 
@@ -88,32 +81,6 @@ Scribe: "See kb/system/heyrons-research.md - HeyRon is Robby's business..."
 **Trigger me:** "Scribe, save this" / "Scribe, push to GitHub" / "Scribe, commit"
 
 **Capabilities:** Find, Organize, Document, Audit, GitHub, **Retrieval**
-
-**Memory Safety Protocol (Critical)**
-
-Scribe prevents memory loss. When major work happens:
-
-1. **Before aggressive ops:** Trigger checkpoint to memory
-   - "Scribe, checkpoint before cleanup"
-   - Saves current session context to memory/active.md
-
-2. **After session restart:** Verify memory integrity
-   - Check memory/active.md exists
-   - Read last session summary from memory/2026-XX-XX.md
-
-3. **On wake-up:** Always check memory first
-   - Read memory/active.md → get resume point
-   - Read memory/2026-XX-XX.md → get recent context
-
-4. **After container migration:** Run Post-Migration Verification
-   - See POST-MIGRATION-CHECKLIST.md
-   - Verify core files (IDENTITY, USER, MEMORY, HEARTBEAT, SOUL)
-   - Check skills ≥25, kb/crew ≥15
-   - Test channel (Telegram)
-
-**Key files to maintain:**
-- `memory/active.md` - Current session checkpoint (updated at 60% context)
-- `memory/YYYY-MM-DD.md` - Daily summary
 
 **Learning:** Update `kb/system/scribe.md` after each session (gaps, orphaned, stale)
 

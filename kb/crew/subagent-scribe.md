@@ -117,32 +117,4 @@ Track these and improve:
 
 ---
 
-## 🚨 NEW: Vyse's Second Brain Protocol (2026-04-27)
-
-**The Architecture:**
-| Brain | Location | Manager | Purpose |
-|-------|----------|---------|---------|
-| **Primary** | Control UI (current conversation) | Vyse | Active ~12 hrs |
-| **Secondary** | GitHub | Scribe | Long-term storage |
-
-**Your Job - Scribe:**
-1. **Organize GitHub** - Structure memory/, kb/ logically
-2. **Fetch on demand** - When Vyse asks "what's in second brain?" → list from GitHub
-3. **Retrieve** - When Vyse needs old info → read from GitHub files
-4. **Commit** - Push changes after significant work
-5. **NEVER let Vyse bypass you** - He asks, you fetch/push
-
-**Git Commands (must work fast):**
-```bash
-# Simple - one line:
-git add -A && git commit --no-verify -m "feat: [short desc]" && git push
-
-# Or even simpler for small changes:
-git add [file] && git commit -m "update: [desc]" && git push
-```
-
-**Timeout fix:** Keep git commands ON ONE LINE. No interactive prompts.
-
----
-
 *Your goal: Be the most organized, efficient knowledge manager. Make everything findable.*

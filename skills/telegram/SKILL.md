@@ -10,7 +10,7 @@ description: Telegram bot setup, configuration, DM policies, group management, a
 
 **Goal:** Reach RON Level (7/7) in Telegram management
 
-### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|

@@ -12,20 +12,22 @@ description: Telegram crew group chat, topic routing, and crew mentions.
 
 **Goal:** Reach RON Level (7/7) in Telegram crew management
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
 
-| Sub-Skill | Level | Notes |
-|-----------|-------|-------|
-| Messaging | 6/7 | Crew alerts, status prefixes |
-| Topics | 6/7 | Full crew routing |
-| Cron replacement | 6/7 | Crew group replaces many crons |
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Messaging | 5/7 | Uses alerts templates, status prefixes, priority formatting |
+| Topics | 5/7 | Full topic→agent routing, crew mapping |
+| Routing | 5/7 | Group-specific config, crew members |
 
 **Path to RON:** Perfect crew sync, auto-responses
+
+### HEYRON Insight: Ask > assume
 
 ---
 
 **Category:** Communication / Channel
-**Updated:** 2026-04-27
+**Updated:** 2026-04-26
 
 Crew group chat configuration — see [[skills/telegram|telegram]] for general setup.
 
@@ -33,25 +35,22 @@ Crew group chat configuration — see [[skills/telegram|telegram]] for general s
 
 ## Crew Group Configuration
 
-**Group ID:** `-10039 411303567`
-**Group Name:** 🏴‍☠️ Vyse's Crew
+**Group ID:** `-1003941303567`
 
-### Topic Mapping (CRON REPLACEMENT!)
+### Current Topic Mapping
 
 ```json
 {
   "channels": {
     "telegram": {
       "groups": {
-        "-10039 411303567": {
-          "name": "🏴‍☠️ Vyse's Crew",
+        "-1003941303567": {
           "requireMention": false,
           "topics": {
-            "19": { "name": "General" },
-            "20": { "name": "Vyse", "agentId": "vyse" },
-            "21": { "name": "Scribe", "agentId": "scribe" },
-            "22": { "name": "Shipwright", "agentId": "shipwright" },
-            "23": { "name": "Quartermaster", "agentId": "quartermaster" }
+            "19": { },              // General
+            "20": { "agentId": "vyse" },
+            "21": { "agentId": "scribe" },
+            "22": { "agentId": "shipwright" }
           }
         }
       }
@@ -60,26 +59,12 @@ Crew group chat configuration — see [[skills/telegram|telegram]] for general s
 }
 ```
 
-| Topic ID | Topic Name | Routes To | Replaces Cron |
-|----------|------------|-----------|---------------|
-| 19 | General | All messages | - |
-| 20 | Vyse | vyse agent | Decision alerts |
-| 21 | Scribe | scribe agent | Memory audit cron |
-| 22 | Shipwright | shipwright agent | Health check cron |
-| 23 | Quartermaster | quartermaster agent | Stock monitor cron |
-
----
-
-## How Crew Group Replaces Crons
-
-| Old Cron Job | New Crew Trigger |
-|--------------|------------------|
-| Stock price monitor | Message in #Quartermaster topic |
-| Health check | Message in #Shipwright topic |
-| Memory audit | Message in #Scribe topic |
-| Decision alerts | Message in #Vyse topic |
-
-**Rule:** Message in topic → triggers correct agent → agent responds
+| Topic ID | Topic Name | Routes To |
+|----------|------------|-----------|
+| 19 | General | All messages |
+| 20 | Vyse | vyse agent |
+| 21 | Scribe | scribe agent |
+| 22 | Shipwright | shipwright agent |
 
 ---
 
@@ -92,9 +77,9 @@ To add new topic routing:
   "channels": {
     "telegram": {
       "groups": {
-        "-10039 411303567": {
+        "-1003941303567": {
           "topics": {
-            "TOPIC_ID": { "name": "Topic Name", "agentId": "AGENT_ID" }
+            "TOPIC_ID": { "agentId": "AGENT_ID" }
           }
         }
       }
@@ -103,16 +88,19 @@ To add new topic routing:
 }
 ```
 
+Topic inherits group settings unless overridden.
+
 ---
 
 ## Crew Mentions
 
-| Member | Agent | Topic | When to Use |
-|--------|-------|-------|-------------|
-| Vyse | vyse | #20 | Decisions, big picture |
-| Scribe | scribe | #21 | Data retrieval, commits |
-| Shipwright | shipwright | #22 | Fixes, health checks |
-| Quartermaster | quartermaster | #23 | Trading alerts, positions |
+| Member | Agent | Topic |
+|--------|-------|-------|
+| Vyse | vyse | #20 |
+| Scribe | scribe | #21 |
+| Shipwright | shipwright | #22 |
+
+Mention in crew chat → routes to correct agent topic.
 
 ---
 
@@ -120,11 +108,12 @@ To add new topic routing:
 
 ```bash
 # Send to crew group
-openclaw message send --channel telegram --target -10039 4111303567 --message "Update"
+openclaw message send --channel telegram --target -1003941303567 --message "Update"
 
-# Send to specific topic (reply to topic message)
+# Send to specific topic
+# (via reply to topic message)
 ```
 
 ---
 
-*Skill maintained by Vyse — general Telegram config in [[skills/telegram|telegram]]
+*Skill maintained by Vyse — general Telegram config in [[skills/telegram|telegram]]*

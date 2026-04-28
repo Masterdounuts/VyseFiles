@@ -10,7 +10,7 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in system maintenance
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 4 - Proficient 🟡🟡🟡🟡
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
