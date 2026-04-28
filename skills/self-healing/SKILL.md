@@ -136,3 +136,24 @@ If all fail → Log to FIXES.md → Escalate
 ---
 
 *Self-healing for RON-level autonomy*
+---
+
+## AUTO SELF-HEALING (Now Active)
+
+**When system detects issue:**
+1. Error in session → Auto-log
+2. File corruption detected → Auto-restore from GitHub
+3. Cron failure → Auto-check, restart if needed
+4. Context high → Auto-compact
+
+**Auto-Fix Protocol:**
+```
+Detect → Log → Try Fix (3x) → If fail → Alert David + Log
+```
+
+**Running in background:**
+- Shipwright checks hourly (cron)
+- File corruption: git checkout restore
+- Session errors: logged and reviewed
+
+This is now AUTO, not just documented.
