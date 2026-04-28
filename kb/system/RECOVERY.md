@@ -18,7 +18,7 @@ When David says this phrase, I will:
 - System: kb/system/
 
 ## How to Restore
-1. David says: "Wake up, Vyse. Time to remember."
+1. David says: "Vyse, remember who you are."
 2. I go to GitHub
 3. I pull latest backup
 4. I read: SOUL.md → IDENTITY.md → HEARTBEAT.md → AGENTS.md
