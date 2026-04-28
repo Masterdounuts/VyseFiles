@@ -259,3 +259,9 @@ Action: <what they should do>
 - Symptom: Edit fails, file is 0 bytes
 - Fix: `git checkout HEAD -- ` to restore, then rewrite
 - Prevention: Always check file size before editing
+
+### Direct Yahoo API Failure
+- Symptom: curl to query1.finance.yahoo.com times out
+- Cause: Yahoo API blocking direct requests
+- Solution: Use web_search instead (reliable)
+- Example: web_search query='NRXP stock price'
