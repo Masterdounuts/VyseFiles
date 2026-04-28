@@ -254,3 +254,8 @@ Action: <what they should do>
 - Symptom: Jobs not executing
 - Fix: Check `openclaw cron list`, restart if needed
 
+
+### File Goes Empty/Corrupt (RECURRING)
+- Symptom: Edit fails, file is 0 bytes
+- Fix: `git checkout HEAD -- ` to restore, then rewrite
+- Prevention: Always check file size before editing
