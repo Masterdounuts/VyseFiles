@@ -105,6 +105,12 @@ Scribe prevents memory loss. When major work happens:
    - Read memory/active.md → get resume point
    - Read memory/2026-XX-XX.md → get recent context
 
+4. **After container migration:** Run Post-Migration Verification
+   - See POST-MIGRATION-CHECKLIST.md
+   - Verify core files (IDENTITY, USER, MEMORY, HEARTBEAT, SOUL)
+   - Check skills ≥25, kb/crew ≥15
+   - Test channel (Telegram)
+
 **Key files to maintain:**
 - `memory/active.md` - Current session checkpoint (updated at 60% context)
 - `memory/YYYY-MM-DD.md` - Daily summary
