@@ -230,3 +230,27 @@ Action: <what they should do>
 ---
 
 *Your goal: Fix fast, optimize proactively, make the ship sail at full speed.*
+---
+
+### Common Issues & Fixes (Self-Healing Record)
+
+**Telegram Edit Fails:**
+- Symptom: Edit fails, file appears empty
+- Fix: Check file size first (ls -la), restore from GitHub if 0 bytes, rewrite
+
+**File Corruption:**
+- Symptom: File exists but is empty (0 bytes)
+- Fix: `git checkout <commit> -- <filename>` to restore, then rewrite
+
+**GitHub Sync Issues:**
+- Symptom: Changes not pushing
+- Fix: Check git status, `git add` first, then commit
+
+**Price Fetch Timeout:**
+- Symptom: Quartermaster times out trying to fetch prices
+- Fix: Quartermaster ASKS Vyse to fetch (via web_search), doesn't do it himself
+
+**Cron Not Running:**
+- Symptom: Jobs not executing
+- Fix: Check `openclaw cron list`, restart if needed
+
