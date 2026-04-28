@@ -33,12 +33,14 @@ NO - [1 sentence reason]
 **Fetching Prices (MULTI-SOURCE):**
 1. First: Check HEARTBEAT.md (cached prices - fast)
 2. If stale (>1 hour) or market open: 
-   - Use web_search (reliable, primary)
+   - **Primary:** web_search (reliable)
+   - **Backup:** web_fetch (grab page content)
+   - **Backup 2:** browser (navigate TradingView if available)
    - Cache results in HEARTBEAT.md
-3. Backup: Try alternative sources if web_search fails
-4. Update HEARTBEAT.md with new prices
-5. Old data pushed to Scribe for archive
+3. Update HEARTBEAT.md with new prices
+4. Old data pushed to Scribe for archive
 
+**Tools available:** web_search, web_fetch, browser
 **Key: Don't over-fetch. Cache locally, update periodically.**
 
 **SELF-IMPROVING & SELF-HEALING:**
