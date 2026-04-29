@@ -6,11 +6,15 @@
     {"symbol": "LCID", "price": 5.99, "notes": "EV maker"},
     {"symbol": "QS", "price": 7.22, "notes": "Solid-state battery"},
     {"symbol": "MARA", "price": 11.19, "notes": "Bitcoin miner"},
-    {"symbol": "SOFI", "price": 18.68, "notes": "Fintech"}
+    {"symbol": "SOFI", "price": 18.68, "notes": "Fintech -13% today on guidance concerns"}
   ],
-  "trending_now": ["BB", "COEP", "CPRX", "DPZ", "GLND", "GOOGL", "HTCO", "NTLA", "NVDA", "POET"],
-  "new_opportunities": ["NVDA", "NTLA"],
-  "last_scan": "2026-04-28T17:00:00Z",
-  "data_quality": "partial - API rate limited, using prior prices",
-  "notes": "Market close - prices from prior day. Consider NVDA, NTLA for momentum."
+  "trending_now": ["SIMO", "KALV", "NXP", "STX", "FVRR", "GNRC", "V", "INTC", "HOOD", "CAR"],
+  "new_opportunities": [
+    {"symbol": "STX", "notes": "Seagate +18% on AI demand, strong Q3"},
+    {"symbol": "HOOD", "notes": "Robinhood -14% on crypto drop, high volatility"},
+    {"symbol": "CAR", "notes": "Avis Budget -17%, highly volatile"}
+  ],
+  "last_scan": "2026-04-29T17:00:00Z",
+  "data_quality": "web search - real-time movers",
+  "notes": "SOFI took -13% hit today. Consider STX for momentum. HOOD/CAR high volatility."
 }

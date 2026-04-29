@@ -91,10 +91,18 @@ Shipwright learns during building → tells Scribe what to store in second brain
 
 ## Priority 5: Second Brain Structure
 
-Defined in architecture:
+**Defined in architecture:**
 - Research, Past Ideas, Future Ideas
 - Crew History, Research History  
-- Memory Hooks (Scribe owns)
+- Memory Hooks (Scribe owns - how knowledge connects)
+
+### Phase 1 Discoveries (Not in Original Plan)
+These are FOUNDATIONAL - part of the ship foundation:
+
+1. **Subagent Truth Rule** - All crew must use only primary brain, second brain, or fresh commands
+2. **Scribe as GitHub Professional** - Controls all second brain storage  
+3. **Memory Hooks** - Scribe's domain for connecting knowledge
+4. **Pull Before Push** - Prevents GitHub conflicts
 
 ---
 
