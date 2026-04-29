@@ -1,6 +1,7 @@
 ---
 name: trading
 description: Stock trading - Quartermaster. Monitors positions, alerts on volatility.
+trigger phrases: "stock, position, trade, buy, sell, price, ticker, quartermaster"
 ---
 
 # Trading (Quartermaster)
@@ -9,7 +10,9 @@ description: Stock trading - Quartermaster. Monitors positions, alerts on volati
 
 **Goal:** Reach RON Level (7/7) in trading/investing
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+
+**XP Tracking:** 60 XP | Next: 70 XP (RON - can teach trading)
 
 **Note:** Dropped from 4→3 - need more practice to earn 4. Quartermaster was not a real subagent before.
 

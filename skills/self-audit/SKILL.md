@@ -1,8 +1,17 @@
-# Self-Audit Skill
+---
+name: self-audit
+description: Self-review - SEE learning skill
+trigger phrases: "audit, review, self-check, check myself"
+---
 
-**Skill:** self-audit  
-**Level:** 3/7  
-**Purpose:** Regular self-assessment to track progress toward RON Level 7
+# Self-Audit Skill
+**Level:** 3/7 ⚠️ DEPRECATED - Merge to learning
+
+**Status:** Merged into learning skill
+- Self-audit is now part of learning's drill system
+- See: `skills/learning/SKILL.md`
+
+This skill kept for reference only.
 
 ## What It Does
 - Weekly assessment of all skills and subagents

@@ -1,8 +1,18 @@
+---
+name: context
+description: Session context management - SEE workflow skill
+trigger phrases: "context, session, state, memory"
+---
+
 # Context Management Skill
 
-**Skill:** context  
-**Level:** 3/7  
-**Purpose:** Manage session continuity and prevent context loss
+**Level:** 3/7 ⚠️ DEPRECATED - Merge to workflow
+
+**Status:** Merged into workflow skill
+- Context handling is now part of workflow
+- See: `skills/workflow/SKILL.md`
+
+This skill kept for reference only.
 
 ## The Problem
 - Sessions lose context between conversations

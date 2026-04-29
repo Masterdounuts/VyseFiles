@@ -1,6 +1,7 @@
 ---
 name: obsidian
-description: Obsidian vault, wikilinks, daily notes, and knowledge management. Use when discussing Obsidian, note-taking, or the wiki system.
+description: ⚠️ DEPRECATED - SEE knowledge skill
+trigger phrases: "obsidian, vault, notes"
 ---
 
 # Obsidian - Knowledge Management

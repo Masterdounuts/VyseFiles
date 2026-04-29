@@ -2,6 +2,7 @@
 name: dreams
 access: vyse-only
 description: Vision, goals, creative brainstorming, and dream journal. Use when discussing dreams, creative ideas, future visions, or brainstorming.
+trigger phrases: "dream, vision, goal, brainstorm"
 ---
 
 # Dreams - Vision & Creative

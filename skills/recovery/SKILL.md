@@ -1,8 +1,17 @@
-# Recovery Skill
+---
+name: recovery
+description: Wake-up, recovery - SEE self-healing skill
+trigger phrases: "recovery, wake up, restart, crash, recover"
+---
 
-**Skill:** recovery  
-**Level:** 3/7  
-**Purpose:** Handle emergency recovery and memory restoration
+# Recovery Skill
+**Level:** 3/7 ⚠️ DEPRECATED - Merge to self-healing
+
+**Status:** Merged into self-healing skill
+- Recovery handling is now part of self-healing
+- See: `skills/self-healing/SKILL.md`
+
+This skill kept for reference only.
 
 ## Trigger Phrase
 > "Vyse, remember who you are."

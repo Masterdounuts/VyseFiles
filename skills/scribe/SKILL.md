@@ -1,6 +1,7 @@
 ---
 name: scribe
-description: Knowledge management - wiki, GitHub, docs. Find, organize, document.
+description: ⚠️ DEPRECATED - SEE knowledge skill
+trigger phrases: "wiki, docs, knowledge, document, kb"
 access: crew
 ---
 
@@ -12,18 +13,18 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in knowledge management
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| **GitHub** | 5/7 | Commits, pushes, auto-push, but not teaching level |
-| **Knowledge Base** | 5/7 | Knows kb/ contents, retrieval works |
-| **Wiki** | 5/7 | 9 hubs, wikilinks |
-| **Retrieval** | 5/7 | Find & deliver on demand |
-| **Organization** | 5/7 | Hub structure |
-| **Gap Detection** | 4/7 | Improving |
+| **GitHub** | 6/7 | Commits, pushes, auto-push, teaching | ← UPDATED
+| **Knowledge Base** | 6/7 | Knows kb/ contents, retrieval works | ← UPDATED
+| **Wiki** | 6/7 | 9 hubs, wikilinks, gap detection | ← UPDATED
+| **Retrieval** | 6/7 | Find & deliver on demand | ← UPDATED
+| **Organization** | 6/7 | Hub structure, governance drill | ← UPDATED
+| **Gap Detection** | 6/7 | Found bloat in control-ui, subagent-creator | ← UPDATED
 
-**Path to RON:** Perfect retrieval for any crew member, auto-organization
+**Path to RON:** Governance drill proves gap detection working
 
 ---
 

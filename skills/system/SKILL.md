@@ -46,6 +46,35 @@ Before building ANY new feature, script, or automation:
 
 ---
 
+## 🔧 Debugging Skill Loading
+
+If skills aren't loading correctly:
+
+```bash
+# List all skills
+ls ~/.openclaw/workspace/skills/
+
+# Check which have SKILL.md
+find ~/.openclaw/workspace/skills -name "SKILL.md" | wc -l
+
+# Find always:true skills
+grep -l "always: true" ~/.openclaw/workspace/skills/*/SKILL.md
+
+# Check trigger phrases
+grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
+```
+
+### Common Issues
+
+| Issue | Fix |
+|-------|-----|
+| Skill not loading | Add trigger phrase to SKILL.md |
+| Too many always:true | Move to trigger-based |
+| Conflicting triggers | Make more specific |
+| No skill index | Use skills/index.md |
+
+---
+
 ## 🔧 FIXES Log
 
 *Never fix the same problem twice*

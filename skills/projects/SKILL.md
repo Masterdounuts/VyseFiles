@@ -1,6 +1,7 @@
 ---
 name: projects
 description: Active game development projects, work-in-progress, and creative work. Use when discussing game dev, the Skies of Arcadia project, or ongoing work.
+trigger phrases: "project, game, skies of arcadia"
 ---
 
 # Projects - Active Work

@@ -39,7 +39,52 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | 6 | **Expert** | Knows all features | Full panel knowledge |
 | 7 | **RON** | Teaching level | Can explain to others, create workflows |
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐
+**Max Level:** 15 (expanded from discoveries) 🟡🟡🟡🟡🟡🟡
+
+### Sub-Agent Management (Sub-Skill) - RON ⭐
+
+*Managing crew members: Quartermaster, Scribe, Shipwright*
+
+| Subagent | Role | Status | Home/Config |
+|----------|------|--------|-------------|
+| **Quartermaster** | Stock trading | 6/7 | `workspace-quartermaster/` |
+| **Scribe** | Knowledge management | 6/7 | `workspace-scribe/` |
+| **Shipwright** | System health | RON ⭐ | `workspace-shipwright/` |
+
+**XP/Leveling System:**
+- Each action = XP (auto-tracked in kb/xp-tracking.md)
+- Thresholds: L1→L2 (10 XP), L2→L3 (20 XP), etc.
+- RON = Level 7+
+- Add XP: `scripts/add-xp.sh <skill> <amount> <reason>`
+
+**Recent XP gains:**
+- 2026-04-29: +5 control-ui (updated subagent), +5 control-ui (filled homes)
+
+> Note: Subagent config is in `agents/{name}/agent/` - that's their soul. Don't duplicate.
+
+**How to manage subagents:**
+
+```bash
+# List subagents
+subagents action=list
+
+# Spawn new subagent
+sessions_spawn agentId=quartermaster task="..." runtime=subagent
+
+# Send to subagent
+sessions_send sessionKey="agent:quartermaster:..." message="..."
+
+# Kill subagent
+subagents action=kill target=sessionKey
+```
+
+```
+
+**Sub-Skill Level:** 7/7 - RON ⭐ Can spawn, communicate, manage crew autonomously
+
+> Note: Individual skills for crew (shipwright, quartermaster, scribe) are deprecated.
+> They're crew members managed through Control UI, not skills.
 
 ---
 
@@ -57,12 +102,12 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | **Browser** | 3/7 | 🟡🟡🟡 | Can status, snapshot |
 | **Message** | 3/7 | 🟡🟡🟡 | Limited to telegram |
 | **Canvas** | 2/7 | 🟡🟡 | Created dashboard, can't present |
-| **Panel Knowledge** | 5/7 | 🟡🟡🟡🟡🟡 | Know all panels from official docs |
+| **Panel Knowledge** | 6/7 | 🟡🟡🟡🟡🟡🟡 | Know all panels + skill loading system |
 | **Dashboard Creation** | 3/7 | 🟡🟡🟡⚪⚪ | Created .vyse-status.md + canvas |
 | **Debug Panel** | 5/7 | 🟡🟡🟡🟡🟡 | Status/health/models snapshots, event log, manual RPC |
 | **Logs Panel** | 4/7 | 🟡🟡🟡🟡⚪ | Live tail of gateway logs with filter/export |
 
-**Overall: ~55/77 = 71% (Level 6 achieved)**
+**Overall: ~60/77 = 78% (Level 6 achieved - RON in sight!)**
 
 ---
 
@@ -339,8 +384,25 @@ When sessions are broken or confusing:
 | **CHAT** | Chat |
 | **CONTROL** | Overview, Channels, Instances, Sessions, Usage, Cron Jobs |
 | **AGENT** | Agents, Skills, Nodes, Dreaming |
-| **SETTINGS** | Config, Communications, Appearance, Automation, Infrastructure, AI & Agents, Debug, Logs |
+| **SETTINGS** | Config, Communications, Appearance, Automation, **Infrastructure**, AI & Agents, Debug, Logs |
 | **Docs** | (standalone) |
+
+### Infrastructure Panel (Skill Levels!)
+
+The **Infrastructure** tab in Settings can display:
+
+| What | Source |
+|------|--------|
+| Cron jobs | `openclaw cron list` |
+| Sessions | `sessions_list` |
+| Skill health | `kb/skills-master-levels.md` |
+| Drill results | `memory/audits/drill-*.md` |
+
+**Use Infrastructure for:**
+- Viewing all cron jobs (including drill cron)
+- Checking system services
+- Monitoring skill levels (via master list)
+- Viewing drill history
 
 ### Key Principle: Check OpenClaw First
 
@@ -419,6 +481,192 @@ gateway.* → Regex
 
 ---
 
+## 🎯 Skill Loading System (Backbone)
+
+*How skills load and why it matters for scalability*
+
+### The Two Types
+
+| Type | Count | Load Behavior |
+|------|-------|---------------|
+| **Always (Core)** | 6 | Load on every session - essential ops |
+| **Trigger** | 22+ | Load only when keywords detected |
+
+### Core Skills (always: true)
+
+These are your **operating system** — they MUST load to function:
+
+| Skill | Purpose |
+|-------|---------|
+| system | Debugging, recovery, fixes |
+| control-ui | Dashboard, status monitoring |
+| exec | Shell command execution |
+| web | Search, fetch, browser |
+| time | Timezone, scheduling, cron |
+| crew-protocols | Decision framework, communication |
+
+### Trigger-Based Skills
+
+These load **only when keywords appear** in conversation:
+
+```
+skill: trading      → triggers: "stock", "position", "trade"
+skill: memory       → triggers: "remember", "recall", "memory"  
+skill: scribe       → triggers: "wiki", "docs", "knowledge"
+skill: shipwright  → triggers: "health", "cleanup", "maintenance"
+... (22 total)
+```
+
+### Why This Matters
+
+**Before (Bloat):**
+- 29 skills loading every session
+- Slow startup, high memory
+- Context pollution
+
+**After (Scalable):**
+- 6 core + triggered on-demand
+- Fast startup, lean memory
+- Only relevant skills in context
+
+### Adding New Triggers
+
+When creating a new skill, always define triggers:
+
+```yaml
+---
+name: my-skill
+description: What it does
+trigger phrases: "keyword1, keyword2, keyword3"
+---
+
+# My Skill
+...
+```
+
+### Skill Index
+
+Quick reference at: `skills/index.md`
+
+### Self-Audit
+
+Skills should be audited periodically:
+1. Are triggers specific enough? (avoid false positives)
+2. Are core skills still justified?
+3. Any orphan skills not being triggered?
+
+---
+
+## Drill System Integration
+
+Control UI can access drill results from central storage:
+
+```bash
+# Quick check
+~/.openclaw/workspace/scripts/skill-drill.sh
+
+# Full verification
+~/.openclaw/workspace/scripts/true-drill.sh
+
+# Governance
+~/.openclaw/workspace/scripts/governance-drill.sh
+```
+
+### Drill Results Location
+- `memory/audits/drill-YYYY-MM-DD.md`
+
+### Skill Levels Master List
+- `kb/skills-master-levels.md` - Second brain backup
+
+---
+
+## Underutilized Features (Opportunities)
+
+These panels exist but we don't use them enough:
+
+### Nodes Panel (Level 3)
+
+**What it does:** Manages paired devices (phones, workstations)
+
+**Use cases:**
+- Check if phone is connected
+- Get location
+- Take camera photos
+- Read notifications
+- Screen recording
+
+**Commands:**
+```
+nodes action=status
+nodes action=location_get
+nodes action=camera_snap
+```
+
+### Canvas Panel (Level 2)
+
+**What it does:** Present HTML dashboards, visualizations
+
+**Use cases:**
+- Present trading dashboard
+- Show graphs/charts
+- Display status cards
+
+**Dashboards available:**
+- `vyse-dashboard.html` - Shows skill levels, system status, crew status
+
+**Commands:**
+```
+# Present dashboard
+canvas action=present url=file:///root/.openclaw/workspace/vyse-dashboard.html
+
+# Or via Control UI direct path
+canvas action=present url=~/.openclaw/workspace/vyse-dashboard.html
+```
+
+**Best practice:** Use for visual presentations to David - trading stats, skill levels, etc.
+
+### Dreaming Panel
+
+**What it does:** Memory auto-promotion (already running via cron)
+
+**Current status:** ✅ Active - runs 3am UTC daily
+
+### Debug Panel (Level 5) ✅
+
+**What it does:** Status snapshots, event log, manual RPC
+
+**Use cases:**
+- Gateway health check
+- Event history
+- Manual API calls
+
+**Commands:**
+```
+Debug panel in UI or gateway tool
+```
+
+### Logs Panel (Level 4) ✅
+
+**What it does:** Live gateway log tailing with filters
+
+**Use cases:**
+- See what's happening in real-time
+- Filter by error/warn/info
+- Export logs
+
+**Commands:**
+```
+Logs panel in UI
+```
+
+---
+
+## Dynamic Max Level
+
+The max level is NOT fixed. See `kb/dynamic-max.md` for the complete system.
+**Current Max: 15** (was 7 at session start)
+
+All skills inherit from this central reference.
 ## Trigger Phrases
 - "control ui", "dashboard", "status"
 - "cron", "schedule", "reminder"

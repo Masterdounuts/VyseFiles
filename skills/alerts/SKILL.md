@@ -1,6 +1,7 @@
 ---
 name: alerts
-description: Alert templates, message formats, and notification patterns. Use when composing alerts, reports, or status messages.
+description: ⚠️ DEPRECATED - SEE messaging skill
+trigger phrases: "alert, notify, notification, message format"
 ---
 
 # Alerts - Message Templates

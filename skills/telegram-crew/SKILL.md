@@ -2,6 +2,7 @@
 name: telegram-crew
 access: crew
 description: Telegram crew group chat, topic routing, and crew mentions.
+trigger phrases: "crew chat, group chat, team"
 ---
 
 # Telegram Crew Skill

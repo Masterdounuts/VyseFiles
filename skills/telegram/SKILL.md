@@ -1,7 +1,8 @@
 ---
 name: telegram
 access: public
-description: Telegram bot setup, configuration, DM policies, group management, and features.
+description: ⚠️ DEPRECATED - SEE messaging skill
+trigger phrases: "telegram bot, dm, telegram setup"
 ---
 
 # Telegram Skill

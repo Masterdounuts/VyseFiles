@@ -2,6 +2,7 @@
 name: memory
 access: vyse-only
 description: How Vyse remembers, recalls, and manages context. Use when discussing memory, recall, or context management.
+trigger phrases: "remember, recall, memory, past, what were we, context"
 ---
 
 # Memory - Recall System

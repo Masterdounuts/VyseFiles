@@ -1,6 +1,7 @@
 ---
 name: self-healing
 description: Self-diagnosis, recovery, and automation for autonomous operations. Essential for RON-level independence.
+trigger phrases: "self-healing, auto-recovery, diagnostics"
 ---
 
 # Self-Healing Skill
@@ -11,7 +12,7 @@ description: Self-diagnosis, recovery, and automation for autonomous operations.
 
 **Goal:** Reach RON Level (7/7) in self-healing
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -19,7 +20,7 @@ description: Self-diagnosis, recovery, and automation for autonomous operations.
 | Error Detection | 5/7 | Recognizes patterns from FIXES.md |
 | **Auto-Recovery** | 5/7 | Has retry logic, attempts fixes |
 | **Prevention** | 5/7 | Logs to FIXES.md, learns from failures |
-| Self-Diagnostics | 4/7 | Can investigate with exec, cron, sessions tools |
+| Self-Diagnostics | 5/7 | Uses skill-drill.sh for automated verification |
 | Escalation | 4/7 | Only when 2+ fix attempts fail |
 
 **Path to RON:** Build complete self-healing loop

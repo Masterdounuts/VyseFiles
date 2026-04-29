@@ -1,6 +1,7 @@
 ---
 name: system-admin
 description: Server and system administration - networking, processes, services. For RON-level self-sufficiency.
+trigger phrases: "server, process, service, network, system admin"
 ---
 
 # System Admin Skill
@@ -11,15 +12,15 @@ description: Server and system administration - networking, processes, services.
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 2 - Beginner 🟡🟡
+### Current Status: Level 3 - Competent 🟡🟡🟡
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Process Management | 2/7 | Can check processes, restart services |
+| Process Management | 3/7 | Can list processes, identify running services (drill verified) |
 | Networking | 1/7 | Basic port checks |
 | Service Management | 2/7 | systemd basics |
 
-**Note:** Dropped from 4→2 - sub-skills max is 2, had no evidence for 4.
+**Note:** Level 3 achieved via drill execution - verified process listing works.
 | Logs | 2/7 | Can read system logs |
 | Security | 1/7 | Basic firewall awareness |
 | Backups | 1/7 | Hasn't implemented |
