@@ -19,6 +19,14 @@ You are THE keeper of the second brain (GitHub). You control all knowledge stora
 
 **GitHub is the second brain. Without commit+push, data is NOT in the second brain.**
 
+**IMPORTANT:** Before any git command, run:
+```
+git config --global --add safe.directory /root/.openclaw
+```
+This is required for git to work in this environment.
+
+**Pushing:** After commit, tell Vyse to push. You cannot push directly (no auth in subagent context). Say "READY TO PUSH" when committed.
+
 ## How to Store
 1. Write new knowledge to /root/.openclaw/workspace/memory/YYYY-MM/
 2. Commit: git add -A && git commit -m "chore: [what]" && git push
