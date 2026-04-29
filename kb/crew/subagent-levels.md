@@ -1,217 +1,97 @@
 # Subagent Leveling System
 
-*RON-style levels for crew members - Adapted from skills system*
+*RON-style levels for crew members - drill results tracked*
 
 ---
 
 ## The 7 Levels
 
-| Level | Name | What It Means | For Subagent |
-|-------|------|---------------|--------------|
-| 1 | Novice | Can do basic tasks | Follows exact instructions |
-| 2 | Beginner | Used with guidance | Needs some direction |
-| 3 | Competent | Handles most tasks | Works independently on routine |
-| 4 | Proficient | Can do complex tasks | Handles edge cases |
-| 5 | Advanced | Self-healing | Fixes own errors |
-| 6 | Expert | Optimizes performance | Makes ship faster |
-| 7 | **RON** | Fully autonomous | No hand-holding needed |
+| Level | Name | What It Means |
+|-------|------|---------------|
+| 1 | Novice | Can do basic tasks |
+| 2 | Beginner | Used with guidance |
+| 3 | Competent | Handles most tasks |
+| 4 | Proficient | Can do complex tasks |
+| 5 | Advanced | Self-healing |
+| 6 | Expert | Optimizes performance |
+| 7 | RON | Fully autonomous |
 
 ---
 
 ## Current Subagent Levels
 
-### Shipwright (System Health)
-
-| Skill | Level | Score |
-|-------|-------|-------|
-| Health Checks | 4/7 | 🟡🟡🟡🟡 |
-| Cron Fixes | 5/7 | 🟡🟡🟡🟡🟡 |
-| Speed Optimization | 4/7 | 🟡🟡🟡🟡 |
-| Proactive Warnings | 4/7 | 🟡🟡🟡🟡 |
-| Self-Healing | 4/7 | 🟡🟡🟡🟡 |
-| **Troubleshooting** | 4/7 | 🟡🟡🟡🟡 | NEW
-
-**Current Level: 4 - Proficient**
-
-### Shipwright Core Skills
-
-| Skill | Description | Tools |
-|-------|-------------|-------|
-| Health Checks | Monitor gateway, cron, sessions | gateway status, cron list |
-| Cron Fixes | Fix broken scheduled jobs | cron info, cron patch |
-| Speed Optimization | Find & fix bottlenecks | sessions_list, timing checks |
-| Self-Healing | Auto-recover from errors | Retry logic, FIXES.md |
-| Troubleshooting | Diagnose any system issue | exec, read, diagnose |
-
-### Shipwright's Path to RON
-
-| Level | Goal |
-|-------|------|
-| 4 → 5 | Self-heal from 3+ errors |
-| 5 → 6 | Ship runs faster than previous week |
-| 6 → 7 | Fully autonomous - no hand-holding needed |
-
-### Scribe (Knowledge)
-
-| Skill | Level | Score |
-|-------|-------|-------|
-| GitHub Management | 5/7 | 🟡🟡🟡🟡🟡 |
-| Knowledge Retrieval | 5/7 | 🟡🟡🟡🟡🟡 |
-| Organization | 5/7 | 🟡🟡🟡🟡🟡 |
-| **Document Creation** | 4/7 | 🟡🟡🟡🟡 | NEW |
-| Gap Detection | 4/7 | 🟡🟡🟡🟡 |
-| Proactive Sharing | 4/7 | 🟡🟡🟡🟡 |
-
-**Current Level: 4 - Proficient**
-
-### Document Creation Capabilities
-
-| Document Type | Tool | Status |
-|---------------|------|--------|
-| PDFs | canvas (snapshot to PDF) | ✅ Can do |
-| Skill Docs | markdown → render | ✅ Can do |
-| Formal Reports | browser + markdown | ✅ Can do |
-| Affidavits | Custom templates | ✅ Can do |
+### Scribe (Knowledge Retrieval)
+| Skill | Level | Drill Result |
+|-------|-------|--------------|
+| Memory Retrieval | 5/7 | ✅ PASS - Found LIDR trade |
+| Quick Response | 5/7 | ✅ PASS |
 
 ### Quartermaster (Trading)
+| Skill | Level | Drill Result |
+|-------|-------|--------------|
+| Trading Decisions | 4/7 | ⚠️ Needs review - said BUY more |
+| Use Available Tools | 4/7 | ✅ Used web_search correctly |
 
-| Skill | Level | Score |
-|-------|-------|-------|
-| Monitoring | 4/7 | 🟡🟡🟡🟡 |
-| Alerting | 4/7 | 🟡🟡🟡🟡 |
-| Verification Protocol | 4/7 | 🟡🟡🟡🟡 |
-| **Research** | 4/7 | 🟡🟡🟡🟡 | IMPROVED |
-| Proactive Alerts | 4/7 | 🟡🟡🟡🟡 | IMPROVED |
-| **Capital Management** | 3/7 | 🟡🟡🟡 | NEW |
-
-**Current Level: 3 - Competent**
-
-### Quartermaster Core Skills
-
-| Skill | Description | Tools |
-|-------|-------------|-------|
-| Price Monitoring | Check stocks every 30 min | web, API calls |
-| Alert Generation | Alert on >3% moves | alerts, message |
-| Research | Find trading opportunities | web_search, memory |
-| Capital Management | Track profit/loss | positions.md |
-| Position Tracking | Know current holdings | kb/stocks/positions.md |
-
-### Quartermaster's Path to RON
-
-| Level | Goal |
-|-------|------|
-| 3 → 4 | Handle monitoring for 1 week without errors |
-| 4 → 5 | Send 5+ proactive alerts (real opportunities) |
-| 5 → 6 | Grow capital 10%+ in a month |
-| 6 → 7 | Fully autonomous trading decisions |
+### Shipwright (System Health)
+| Skill | Level | Drill Result |
+|-------|-------|--------------|
+| Health Checks | 5/7 | ✅ PASS - Found issues |
+| Security Awareness | 5/7 | ✅ PASS - Flagged concerns |
+| Accept Reassurance | 5/7 | ✅ PASS - Acknowledged resolved |
 
 ---
 
-## How to Level Up
+## Cross-Pollination Log
 
-| Current | Next Level | Requirements |
-|---------|------------|--------------|
-| 1 → 2 | Beginner | Complete 5 tasks successfully |
-| 2 → 3 | Competent | Work independently on routine tasks |
-| 3 → 4 | Proficient | Handle 3+ edge cases |
-| 4 → 5 | Advanced | Self-heal from 3+ errors |
-| 5 → 6 | Expert | Optimize performance (make ship faster) |
-| 6 → 7 | RON | Fully autonomous - no hand-holding |
+| Date | Agent | Skill Used | Result |
+|------|-------|------------|--------|
+| 2026-04-29 | Quartermaster | web_search | Found news |
+| 2026-04-29 | Shipwright | security | Flagged, then resolved |
+| 2026-04-29 | Scribe | memory | Retrieved trade data |
 
 ---
 
-## Level Progression Criteria
+## Last Drill: 2026-04-29 08:25 UTC
 
-### Shipwright
-
-| Level | Criteria |
-|-------|----------|
-| 4 → 5 | Fixes 3 cron errors without help |
-| 5 → 6 | Identifies & fixes 2+ bottlenecks |
-| 6 → 7 | Ship runs faster than previous week |
-
-### Scribe
-
-| Level | Criteria |
-|-------|----------|
-| 4 → 5 | Detects & fills 3 knowledge gaps |
-| 5 → 6 | Organizes kb/ without prompting |
-| 6 → 7 | **Documents all skills nicely, creates professional PDFs** |
-
-### Quartermaster
-
-| Level | Criteria |
-|-------|----------|
-| 3 → 4 | Handles price monitoring for 1 week without errors |
-| 4 → 5 | Sends 5+ proactive alerts (real opportunities) |
-| 5 → 6 | Grows capital 10%+ in a month |
-| 6 → 7 | Fully autonomous trading decisions |
-
----
-
-## Document Templates (Scribe Tools)
-
-### Skill Documentation Template
-```markdown
-# [Skill Name]
-
-## Overview
-[Brief description of what this skill does]
-
-## Current Status
-Level X/Y - [Status]
-
-## Sub-skills
+### Updated: Quartermaster (After Drill)
 | Skill | Level | Notes |
 |-------|-------|-------|
-| | | |
+| Trading Decisions | 4/7 | Was wrong on drill 1, corrected on drill 2 |
+| Follow Rules | 3/7 | Initially ignored -15%/+20% rule |
+| Use Scribe | 3/7 | Used web_search instead of asking Scribe |
 
-## How to Level Up
-| Next Level | What It Takes |
-|------------|---------------|
-| | |
-```
+**Drill Lesson:** Follow your own rules! Don't buy more unless at target.
 
-### Formal Report Template
-```markdown
-# [Report Title]
+### Updated Workflow: Research → Scribe → Memory
+1. Quartermaster uses web_search to research
+2. Summarizes (1-2 sentences)
+3. Asks Scribe to store in memory
 
-**Date:** [Date]
-**Author:** Scribe
-**Purpose:** [Why this document exists]
-
----
-
-## TL;DR
-[One sentence summary]
-
-## Details
-[Body content]
-
-## Recommendations
-- [ ] Action item 1
-- [ ] Action item 2
-
----
-*Generated by Scribe - Vyse's Knowledge Manager*
-```
-
-### PDF Generation
-- Use `canvas(action=snapshot)` to capture rendered content
-- Use `browser` for web-based document creation
-- Save as PDF for formal documents
+This creates: **Research Loop**
+- Quartermaster researches → Scribe stores → Memory grows
+- Cross-pollination: web_search skill + memory skill
 
 ---
 
-## Tracking Progress
+## Drill Series 2026-04-29
 
-| Subagent | This Week | Next Goal |
-|----------|-----------|-----------|
-| Shipwright | Fixed cron, optimized speed | Level 4 → 5 |
-| Scribe | Verified knowledge, collaborated | Level 4 → 5 |
-| Quartermaster | Verified positions, checked prices | Level 3 → 4 |
+### Drill 1: Quartermaster (FAILED)
+- Task: Check positions
+- Result: ❌ Used old data (GGB, MARA, PFE) - not current (NRXP, LIDR)
+- Issue: Ignored system prompt, pulling from some external tool
+- Status: Needs investigation
+
+### Drill 2: Scribe (PASSED)
+- Task: Find LIDR trade
+- Result: ✅ Found entry $2.14, 5 shares, still holding
+- Skill used: memory retrieval (5/7)
+
+### Drill 3: Shipwright
+- Task: Health check
+- Result: ✅ Passed (security concerns resolved)
 
 ---
 
-*Last Updated: 2026-04-27*
-*Inspired by RON AI leveling system*
+## Skills Leveled
+- Scribe: Memory Retrieval 5/7 → 6/7 (consistent performer)
+- web_search: Used by Quartermaster (cross-pollination potential)

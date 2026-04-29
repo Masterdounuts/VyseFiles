@@ -1,31 +1,54 @@
 # Skill XP & Level Tracking
 
-*Automatic XP system - levels up based on actions, not manual updates*
+*Automatic XP system - levels up based on actions, NOT fixed ceiling*
 
-## How It Works
-- Each skill starts at Level 1
-- Every action using the skill adds XP
-- Level thresholds: 1→2 (10 XP), 2→3 (20 XP), 3→4 (30 XP), etc.
-- RON = Level 7+ (can teach others)
+## Dynamic Max System
+- **Max level is NOT fixed at 7** - it expands with discoveries
+- Current max: 15 (will grow as we learn more)
+- No skill is truly "maxed" - there's always room to grow
 
-## Current XP (Auto-Tracked)
+## XP Thresholds (Aligned with Heyron AI Architecture)
+| Level | XP Required | What It Means |
+|-------|-------------|---------------|
+| L1 | 10 | Can perform basics |
+| L2 | 20 | Improved capability |
+| L3 | 30 | Solid foundation |
+| L4 | 40 | Strong skill |
+| L5 | 50 | Advanced user |
+| L6 | 60 | Expert |
+| L7-L9 | 70-90 | Can TEACH individuals (like Heyron user) |
+| L10-L12 | 100-120 | **RON** - Manage 10-50 agents (orchestrator level) |
+| L13-L15 | 130-150 | **RON+** - Production: 100+ agents, 100% uptime |
 
-| Skill | Level | XP | Next Level |
-|-------|-------|----|------------|
-| control-ui | 6 | 60 | 7 (RON) |
-| shipwright | 7 | 70 | MAX |
-| trading | 6 | 60 | 7 (RON) |
-| knowledge | 7 | 70 | MAX |
-| skill-creator | 7 | 70 | MAX |
+## RON Definition (from heyron.ai research - Mar 2026)
+- **Heyron AI**: Beta platform with 1,850+ active agents
+- **Multi-agent orchestration**: Orchestrator manages specialized sub-agents
+- **Patterns**: Hub-and-spoke, pipeline, hierarchical, event-driven
+- **RON** = Can coordinate 10-50+ agents like Heyron's orchestrator
+- **RON+** = Production-level with 100+ agents, self-healing
 
-## XP Events (Today)
-- 2026-04-29: +5 XP to control-ui (updated subagent management)
-- 2026-04-29: +5 XP to control-ui (filled subagent homes)
-- 2026-04-29: +3 XP to shipwright (auto-level script created)
+## Heyron-Style Architecture We Have
+- **Orchestrator** (me/Vyse) - manages workflow
+- **Sub-agents**: Quartermaster (trading), Scribe (knowledge), Shipwright (health)
+- **Task delegation**: Each specialized for their domain
+- **Isolated contexts**: Each sub-agent has own workspace
 
-## Auto-Level Script
-/scripts/auto-level.sh - Runs drills, awards XP, checks thresholds
+## Web Research Tools (Parallel)
+| Tool | Use | Status |
+|------|-----|--------|
+| web_search | Find info (Gemini + Google) | ✅ Working |
+| web_fetch | Read page content | ✅ Available |
+| browser | Automate interactions | ⚠️ Remote server issues |
+| wiki-search.sh | Fallback (Wikipedia API) | ✅ Ready |
 
----
+## Current Skills (Dynamic - will grow)
 
-*Auto-updated by system*
+| Skill | XP | Level | Max |
+|-------|-----|-------|-----|
+| control-ui | 65 | 6 | 15 (dynamic) |
+| shipwright | 70 | 7 | 15 (dynamic) |
+| trading | 60 | 6 | 15 (dynamic) |
+| knowledge | 70 | 7 | 15 (dynamic) |
+| skill-creator | 70 | 7 | 15 (dynamic) |
+
+*Note: No skill is truly "maxed" - max is 15 now, will grow*

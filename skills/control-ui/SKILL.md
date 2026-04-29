@@ -63,9 +63,81 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 > Note: Subagent config is in `agents/{name}/agent/` - that's their soul. Don't duplicate.
 
-**How to manage subagents:**
+### Subagent Core Files (from Control UI Infrastructure)
 
-```bash
+**Control UI already manages this - DON'T duplicate:**
+
+| File | Use Instead |
+|------|-------------|
+| Manual HEARTBEAT files | `openclaw status` - shows all agent sessions |
+| Fixed heartbeat intervals | On-demand spawning or cron for critical agents only |
+| Custom tracking | Native session context management |
+
+**Efficient Subagent Management:**
+
+| Agent | Trigger | Method |
+|-------|---------|--------|
+| **Quartermaster** | Trading decision needed | `sessions_spawn` on-demand |
+| **Shipwright** | System error | Auto-spawn on gateway error |
+| **Scribe** | Knowledge needed | Spawn when requested |
+
+**Key insight:** Control UI's `openclaw status` shows all sessions + heartbeats natively. Don't build custom overlays - use what's there.
+
+---
+
+## 🔧 Control UI Built-in Features (Master Reference)
+
+*Don't build custom - use native*
+
+### Core Status
+| Command | Purpose |
+|---------|---------|
+| `openclaw status` | All-in-one |
+| `openclaw status --deep` | Live probes |
+| `openclaw health` | Gateway running? |
+| `openclaw health --verbose` | Per-account |
+
+### Agent Management
+| Command | Purpose |
+|---------|---------|
+| `openclaw agents list` | List agents |
+| `openclaw agents bind --agent X --bind channel` | Route traffic |
+
+### Session Management
+| Command | Purpose |
+|---------|---------|
+| `openclaw sessions` | List |
+| `openclaw sessions --all-agents` | All |
+| `openclaw sessions cleanup --dry-run` | Preview |
+
+### Heartbeat
+| Command | Purpose |
+|---------|---------|
+| `openclaw system heartbeat enable` | Turn on |
+| `openclaw system event --mode now` | Trigger now |
+
+### Cron
+| Command | Purpose |
+|---------|---------|
+| `openclaw cron list` | List jobs |
+| `openclaw cron add --every "30m"` | Create |
+
+### Diagnostics
+| Command | Purpose |
+|---------|---------|
+| `openclaw doctor` | Health |
+| `openclaw doctor --repair` | Auto-fix |
+
+### Dashboard
+| Command | Purpose |
+|---------|---------|
+| `openclaw dashboard` | Open UI |
+
+**Principles:**
+1. Don't duplicate native tracking
+2. Use `openclaw status` > custom scripts
+3. Efficient: `target: "none"` for internal heartbeat
+4. On-demand spawning > 24/7
 # List subagents
 subagents action=list
 

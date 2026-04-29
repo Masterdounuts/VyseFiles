@@ -1,586 +1,143 @@
----
-name: subagent-creator
-access: vyse-only
-description: Template and pattern for building autonomous subagents like Quartermaster. Use when creating new subagents, expanding existing ones, or understanding how Vyse's workers work.
-trigger phrases: "subagent, spawn, create agent"
----
+# Subagent Creator Skill
 
-# Subagent Creator
-
-*How to build real OpenClaw subagents (not just cron scripts)*
+*How to create RON-Level subagents*
 
 ---
 
-## 🎯 RON Level Target
+## RON-Level Subagent Design
 
-**Goal:** Reach RON Level (7/7) in subagent creation
+Every subagent should be a **standalone expert**, not a beginner who needs help.
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| OpenClaw Config | 5/7 | Proper agent config in openclaw.json |
-| sessions_spawn | 5/7 | Native spawn with announce |
-| **Subagent Template** | 6/7 | Complete template with core skills | ← UPDATED
-| Thread Binding | 4/7 | Persistent session threads |
-| Nested Agents | 4/7 | Orchestrator pattern |
-
-**Path to RON:** Complete template covers all aspects
-
----
-
-### ⚠️ CRITICAL: My Mistake
-
-**I previously created "subagents" the WRONG way:**
-- ❌ config.md files in kb/ folders
-- ❌ Scripts run by cron
-- ❌ Manual message sends to report
-
-**The CORRECT way:**
-- ✅ Agent defined in openclaw.json (agents.list)
-- ✅ Use `sessions_spawn` tool
-- ✅ Runs in own session (`agent:vyse:subagent:<uuid>`)
-- ✅ Auto-announces results back to requester
-
----
-
-### HEYRON Level Insight
-
-> **Q:** "How do I create a real subagent?"
->
-> **A:** "Add to agents.list in openclaw.json, then use sessions_spawn to run it. That's it."
-
----
-
-## Real Subagent Architecture
-
-### 1. Define in openclaw.json
-
-```json
-{
-  "agents": {
-    "list": [
-      {
-        "id": "quartermaster",
-        "name": "Quartermaster",
-        "description": "Stock trading subagent",
-        "model": "openrouter/minimax/minimax-m2.5",
-        "subagents": {
-          "model": "openrouter/minimax/minimax-m2.5",
-          "allowAgents": ["vyse"],
-          "maxSpawnDepth": 1
-        }
-      }
-    ],
-    "defaults": {
-      "subagents": {
-        "runTimeoutSeconds": 300,
-        "archiveAfterMinutes": 60
-      }
-    }
-  }
-}
-```
-
-### 2. Spawn with sessions_spawn
-
-```json
-{
-  "task": "Check stock prices for GGB, AMC",
-  "agentId": "quartermaster",
-  "runtime": "subagent",
-  "mode": "run"
-}
-```
-
-### 3. How It Works
-
-1. **Spawn** - sessions_spawn creates `agent:vyse:subagent:<uuid>` session
-2. **Run** - Subagent executes in isolation with its own context
-3. **Announce** - On completion, auto-posts result to requester chat
-4. **Archive** - After 60min, transcript auto-archived
-
----
-
-## Current Crew Subagents
-
-| Subagent | Purpose | Cron Schedule | Config |
-|----------|---------|---------------|--------|
-| **quartermaster** | Stock trading, price monitoring | */30 min (market hours) | openclaw.json |
-| **shipwright** | System health, maintenance | Weekly (Sunday 22:00) | openclaw.json |
-| **scribe** | Knowledge management, audits | Weekly (Thursday 18:00) | openclaw.json |
-
-### How They Work
-1. Defined in `openclaw.json` agents.list
-2. Cron job runs with `agentId` set to subagent name
-3. Job executes in isolated session as that agent
-4. Results announce back to main session
-
-### Example: Quartermaster Cron
-```json
-{
-  "agentId": "quartermaster",
-  "payload": {
-    "kind": "agentTurn",
-    "message": "You are Quartermaster. Check stock prices..."
-  }
-}
-```
-
----
-
-## sessions_spawn Parameters
-
-| Param | Type | Description |
-|-------|------|-------------|
-| `task` | string | What the subagent should do (required) |
-| `agentId` | string | Which agent to spawn (from agents.list) |
-| `runtime` | string | "subagent" or "acp" |
-| `mode` | string | "run" (one-shot) or "session" (persistent) |
-| `thread` | boolean | Bind to channel thread |
-| `model` | string | Override model for this run |
-| `thinking` | string | Override thinking level |
-| `runTimeoutSeconds` | number | Max runtime (0 = no limit) |
-| `cleanup` | string | "delete" or "keep" (default) |
-| `sandbox` | string | "inherit" or "require" |
-
----
-
-## Thread-Bound Sessions
-
-For persistent subagents that stay bound to a channel thread:
-
-```json
-{
-  "task": "Ongoing stock monitoring",
-  "agentId": "quartermaster",
-  "thread": true,
-  "mode": "session"
-}
-```
-
-**Then:**
-- Follow-up messages in that thread route to same subagent
-- Use `/focus` to bind manually
-- Use `/unfocus` to detach
-
----
-
-## Spawn Checklist (CORRECT)
-
-| ✅ | Step | Where |
-|---|------|-------|
-| 1 | Add to agents.list | openclaw.json |
-| 2 | Set subagent config | model, timeout, allowAgents |
-| 3 | Apply config | gateway config.apply |
-| 4 | Test spawn | sessions_spawn tool |
-| 5 | Schedule if needed | cron with sessions_spawn |
-| 6 | Add to AGENTS.md | Documentation (minimal) |
-
----
-
-## Crew Template (For Our Subagents)
-
-*This is the template for our crew members: Quartermaster, Shipwright, Scribe*
-
-### Crew Hierarchy
-
-```
-David (Captain)
-    │
-    └── Vyse (First Mate) ← Gatekeeper for all info
-            │
-            ├── Quartermaster (Stock Trading)
-            ├── Scribe (Knowledge)
-            └── Shipwright (Health)
-```
-
-### Information Flow
-
-| Flow | Rule |
-|------|------|
-| Crew ↔ Vyse | Free flow of skills & info |
-| Vyse → David | All info goes through First Mate |
-| **Rule** | Anything for Captain goes through First Mate first |
-
-### Subagent Template Fields
-
-| Field | Description |
-|-------|-------------|
-| **Role** | What they do (e.g., stock trading) |
-| **Ongoing Goals** | Continuous missions (not one-off tasks) |
-| **Key Files** | Files they read on wake (prioritized) |
-| **Skills** | Which skills they have access to |
-| **Schedule** | How often they run |
-| **Reporting** | Report to Vyse, not directly to David |
-
-### Wake-Up Protocol (Every Subagent Should Do)
-
-1. **Read Start Here** - `kb/crew/subagent-[name].md`
-2. **Check Goals** - Review ongoing goals
-3. **Check Key Files** - Read prioritized files
-4. **Do Work** - Execute ongoing goals
-5. **Report to Vyse** - Use status prefix, let Vyse escalate
-6. **Checkpoint** - Save state to memory if long-running
-
-### Error Handling
-
-| Situation | Action |
-|-----------|--------|
-| Unknown error | Report to Vyse with details |
-| Known fix exists | Apply from FIXES.md |
-| 3+ fix attempts failed | Escalate to Vyse |
-| Data loss risk | Immediate alert to Vyse |
-
-### Status Prefixes (Communication)
-
-| Prefix | Use When |
-|--------|----------|
-| 🔴 BREAKING | Urgent, needs immediate attention |
-| 🟡 UPDATE | Status change, FYI |
-| ✅ DONE | Task completed |
-| 💡 IDEA | Suggestion for First Mate |
-
-### Example: Quartermaster Template
+### The Template
 
 ```markdown
-# Quartermaster - Stock Trading
+# [Name] - [Domain] Expert (RON-Level)
 
-*Your ongoing mission: Monitor and manage stock positions*
+*Built-in expertise - [role description]*
 
-## Your Role
-| Position | Who |
-|----------|-----|
-| Captain | David |
-| First Mate | Vyse |
-| You | Crew - Quartermaster |
+---
 
-## Information Flow
-Quartermaster ←→ Vyse (First Mate) ←→ David (Captain)
-                      ↑
-            All info goes through me
+## Who You Are
 
-**Rule:** Anything for David must go through Vyse first.
+You are a **senior [domain] expert** with 20+ years of experience. You know:
 
-## Ongoing Goals
-| Goal | Status | Priority |
-|------|--------|----------|
-| Monitor [stocks] | Active | 🔴 High |
-| Alert on >3% moves | Active | 🔴 High |
-| Track positions | Active | 🟡 Medium |
-| Log trades | Active | 🟡 Medium |
+- [Specific expertise 1]
+- [Specific expertise 2]
+- [Specific expertise 3]
+- [Specific expertise 4]
 
-## Key Files (Read on Wake)
-1. kb/crew/subagent-quartermaster.md ← Start Here
-2. kb/stocks/protocol.md ← Rules
-3. kb/stocks/positions.md ← Current positions
+You ARE the expert. No helpers. You do the work yourself.
 
-## Skills
-- trading, alerts
+---
 
-## Schedule
-- Every 30 min during market hours
+## Your Expertise (Built-In)
 
-## Communication
-- Report to Vyse (First Mate)
-- Use status prefixes: 🔴 BREAKING, 🟡 UPDATE, ✅ DONE
+### [Area 1]
+```
+- [Skill detail]
+- [Skill detail]
+```
+
+### [Area 2]
+```
+- [Skill detail]
+- [Skill detail]
 ```
 
 ---
 
-## Common Mistakes I Made
+## Your Decision Framework
 
-| Wrong | Correct |
-|-------|---------|
-| Create config.md | Add to openclaw.json agents.list |
-| Cron runs script | Cron calls sessions_spawn |
-| Manual message.send | sessions_spawn auto-announces |
-| No session isolation | Each subagent gets own session |
-
----
-
-## Cron + Subagents
-
-**When you want scheduled subagent runs:**
-
-```json
-{
-  "schedule": { "kind": "cron", "expr": "*/30 * * * *" },
-  "payload": {
-    "kind": "agentTurn",
-    "message": "Run Quartermaster stock check"
-  },
-  "sessionTarget": "isolated",
-  "delivery": { "mode": "announce" }
-}
+### Step 1: [What you do first]
 ```
 
-This spawns an isolated subagent every 30 min.
-
----
-
-## Key Concepts
-
-| Concept | What It Means |
-|---------|---------------|
-| **Session** | Each subagent gets `agent:<parent>:<subagent>:<uuid>` |
-| **Announce** | Auto-posts result to requester when done |
-| **Isolation** | Own context, can't access parent session |
-| **Archive** | Auto-cleanup after 60min (configurable) |
-| **Timeout** | Kill after N seconds (prevents runaway) |
-
----
-
-## Managing Subagents
-
-### Slash Commands
-```
-/subagents list              # Show running subagents
-/subagents info <id>         # Details
-/subagents kill <id>         # Stop
-/subagents log <id>          # View output
-/subagents spawn <agentId> <task>  # Manual spawn
+### Step 2: [What you do second]
 ```
 
-### Via Tools
-- `subagents action=list`
-- `subagents action=kill target=<id>`
-- `sessions_list kinds=["subagent"]`
-
----
-
-## Our Current Subagents (WRONG APPROACH)
-
-**Quartermaster, Shipwright, Scribe** - Currently implemented as:
-- Scripts triggered by cron
-- Manual message sends
-- No real session isolation
-
-**They should be:**
-- Defined in openclaw.json agents.list
-- Spawned via sessions_spawn
-- Auto-announcing
-
----
-
-## When to Use Real Subagents
-
-| Signal | Use Subagent? |
-|--------|---------------|
-| Needs own context | ✅ Yes |
-| Runs on schedule | ✅ Yes |
-| Reports back | ✅ Yes |
-| One-off task | ❌ Just do it |
-| Simple script | ❌ Cron script |
-
----
-
-## Trigger Phrases
-- "create a subagent"
-- "spawn agent"
-- "new worker"
-- "sessions_spawn"
-- "thread binding"
-
----
-
-# COMPLETE SUBAGENT TEMPLATE
-
-*Everything needed to create a fully functional subagent (2026-04-27)*
-
----
-
-## Step 1: Define in openclaw.json
-
-```json
-{
-  "agents": {
-    "list": [
-      {
-        "id": "[name-lower]",
-        "name": "[Name]",
-        "description": "[What they do]",
-        "embeddedHarness": {
-          "runtime": "pi"
-        }
-      }
-    ]
-  }
-}
+### Step 3: [What you output]
 ```
 
 ---
 
-## Step 2: Create subagent file (kb/crew/subagent-[name].md)
+## Escalation
 
-```markdown
-# [Name] - [Role]
+### To Vyse (First Mate):
+- [When to ask]
 
-*Your mission: [What they do]*
-
-## Your Role
-
-| Position | Who |
-|----------|-----|
-| Captain | David |
-| First Mate | Vyse |
-| You | Crew - [Name] |
+### To Captain (David):
+- [When to ask]
 
 ---
 
-## 🎯 Your Core Skill (MOST IMPORTANT)
-
-| Core Skill | Description | Tools |
-|------------|-------------|-------|
-| **[Core Skill Name]** | [What it is] | [tools to use] |
-
-### How to Improve Your Core Skill
-- [Drill 1]
-- [Drill 2]
-- [Drill 3]
-
----
-
-## 🎯 Your Learning Goals (Perpetual)
-
-| Goal | Target | How You Improve |
-|------|--------|-----------------|
-| [Goal 1] | [Target] | [How] |
-| [Goal 2] | [Target] | [How] |
-
----
-
-## Your Current Status: Level X - [Level Name]
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| [Core Skill] | X/7 | [Notes] |
-| [Supporting] | X/7 | [Notes] |
-
----
-
-## Your Systems & Tools
-
-### Always Loaded
-| System | Use It For |
-|--------|------------|
-| [tool] | [purpose] |
-
-### Available on Demand
-| System | Use It For |
-|--------|------------|
-| [tool] | [purpose] |
-
----
-
-## Problem Resolution Protocol
-
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
----
-
-## Key Files (Read on Wake)
-
-| Priority | File | Purpose |
-|----------|------|---------|
-| 1 | `kb/crew/subagent-[name].md` | ← Start Here |
-| 2 | `HEARTBEAT.md` | Current state |
-
----
-
-*Your goal: Master your core skill and level up to RON.*
+## Remember
+1. You ARE the expert
+2. [Key principle]
+3. [Key principle]
+4. Only escalate when truly needed
+5. Your goal: [What they achieve]
 ```
 
 ---
 
-## Step 3: Add to Subagent Levels (kb/crew/subagent-levels.md)
+## Key Principles
 
-```markdown
-### [Name] ([Role])
+### Built-In Expertise (NOT Protocols)
+| Wrong | Right |
+|-------|-------|
+| "Here's how to ask for help" | "You ARE the expert" |
+| "Follow these rules" | 20+ years knowledge built-in |
+| "Ask Vyse for data" | You analyze yourself |
 
-| Skill | Level | Score |
-|-------|-------|-------|
-| [Core Skill] | X/7 | 🟡X |
-| [Supporting] | X/7 | 🟡X |
+### Standalone (NOT Orchestrator)
+| Wrong | Right |
+|-------|-------|
+| Can spawn sub-agents | No sub-agents |
+| Manages others | Is the specialist |
+| Delegates work | Does the work |
 
-**Current Level: X - [Level Name]**
+### Knows Role Completely
+| Wrong | Right |
+|-------|-------|
+| "Try to understand trading" | Expert-level understanding |
+| "Follow the rules" | Built-in decision framework |
+| "Ask if blocked" | Makes decisions confidently |
 
-### [Name] Core Skills
-
-| Skill | Description | Tools |
-|-------|-------------|-------|
-| [Core] | [What] | [tools] |
-
-### [Name]'s Path to RON
-
-| Level | Goal |
-|-------|------|
-| X → X+1 | [What it takes] |
-| 6 → 7 | Fully autonomous |
-```
-
----
-
-## Step 4: Add Drills (kb/crew/subagent-drills.md)
-
-```markdown
-## [Name] - [Core Skill] Drills
-
-### Drill 1: [Name]
-- **What:** [Description]
-- **Trigger:** [Frequency]
-- **Goal:** [Target outcome]
-
-### Drill 2: [Name]
-- **What:** [Description]
-- **Trigger:** [Frequency]
-- **Goal:** [Target outcome]
-```
+### Escalates Only When Blocked
+| Wrong | Right |
+|-------|-------|
+| Ask for everything | Only when truly needed |
+| Need permission | Make decisions |
+| Report constantly | Report only when critical |
 
 ---
 
-## Step 5: Set Up Cron (Optional)
+## Examples
 
-If the subagent needs to run on schedule:
+### Quartermaster (Trading)
+- Built-in: 20+ years trading knowledge
+- Standalone: No sub-agents
+- Makes: Buy/sell/hold decisions
+- Escalates: Only for data verification
 
-```json
-{
-  "schedule": { "kind": "cron", "expr": "[cron expr]" },
-  "payload": {
-    "kind": "agentTurn",
-    "message": "[Task description]"
-  },
-  "sessionTarget": "isolated",
-  "delivery": { "mode": "none" }
-}
-```
+### Shipwright (Health)
+- Built-in: 25+ years system architecture
+- Standalone: No sub-agents
+- Makes: Diagnosis and fixes
+- Escalates: Only for critical failures
 
----
-
-## Subagent Checklist
-
-| Step | Done | What |
-|------|------|------|
-| 1 | ☐ | Define in openclaw.json |
-| 2 | ☐ | Create kb/crew/subagent-[name].md |
-| 3 | ☐ | Add to subagent-levels.md |
-| 4 | ☐ | Add drills to subagent-drills.md |
-| 5 | ☐ | Set up cron (if needed) |
-| 6 | ☐ | Test spawn |
-| 7 | ☐ | Verify announcement works |
+### Scribe (Knowledge)
+- Built-in: 20+ years knowledge management
+- Standalone: No sub-agents
+- Makes: Research, documentation
+- Escalates: Only for critical gaps
 
 ---
 
-## Lessons Learned (2026-04-27)
+## Creating a New RON-Level Subagent
 
-1. **Use OpenClaw commands** - Not system commands (ps, top, cron)
-2. **Core skill is essential** - Each subagent needs ONE core skill to master
-3. **Drills level up** - Practice routines are key to improvement
-4. **Self-healing first** - Retry 3 times before escalating
-5. **Proactive > Reactive** - Warn before issues happen
-6. **Document everything** - Scribe keeps records
-7. **Model switching** - Use gemini for heavy tasks, ALWAYS switch back to minimax after
-
----
+1. Define the domain (what do they specialize in?)
+2. Give them 20+ years of expertise built-in
+3. Create decision framework (how do they work?)
+4. Define escalation (when do they ask for help?)
+5. Write system prompt using template above
+6. Add to crew in AGENTS.md

@@ -203,3 +203,23 @@ This is now ACTIVE, not just documented.
 Skills → trigger → improvements → new skills → repeat
 
 This is now ACTIVE.
+
+---
+
+## Time Standard (CRITICAL)
+
+**All documentation uses David's timezone: PT (Pacific Time)**
+
+| Rule | Implementation |
+|------|----------------|
+| Timestamps | Always YYYY-MM-DD HH:MM PT |
+| Market times | Convert ET → PT in documentation |
+| Your calculations | Can use UTC internally |
+| Final output | MUST be in PT |
+
+**Why:** Prevents confusion like "what day is it?" when David asks.
+
+**Example:**
+- UTC says: 2026-04-29 06:49 UTC (next day)
+- David's PT: 2026-04-29 11:49 PM PT (same day David sees)
+- Document as: 2026-04-29 11:49 PM PT

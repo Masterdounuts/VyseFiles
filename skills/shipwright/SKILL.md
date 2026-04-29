@@ -11,7 +11,7 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in system maintenance
 
-### Current Status: Level 7 - RON ⭐ (Can Teach!)
+### Current Status: Level 7 (RON) ⭐ (Can Teach!)
 
 **XP:** 70+ | Runs auto-level.sh for autonomous improvement
 

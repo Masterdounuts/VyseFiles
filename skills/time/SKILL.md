@@ -82,3 +82,15 @@ hour_utc=$(date -u +'%H')
 - "schedule", "cron", "time"
 - "timezone", "ET", "UTC"
 - "when", "market hours"
+---
+
+## Crew Time Standard
+
+**All crew documentation uses David's timezone: PT (Pacific Time)**
+
+| Standard | Value |
+|----------|-------|
+| Timezone | ET |
+| Format | YYYY-MM-DD HH:MM ET |
+
+This ensures consistency when rebuilding from backup.

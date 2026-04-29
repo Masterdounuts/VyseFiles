@@ -1,28 +1,65 @@
-# Trading Session State
+# Vyse Heartbeat - RON Level Orchestration
 
-## Current (Apr 28, 2026)
+*Every 30 min - Coordinate crew, don't do their job*
 
-### Positions
-- **NRXP:** 4 shares @ $3.04 | Stop: $2.58 | Target: $3.65 | **Currently ~$3.51 (+15.4%)** - Close to target!
-- **LIDR:** 5 shares @ $2.14 | Stop: $1.82 | Target: $2.57 | **Currently ~$2.19 (+2.3%)**
+---
 
-### Capital
-- **Invested:** $22.86
-- **Available:** ~$29
+## 1. System Check (Native Commands)
+```bash
+openclaw status    # Quick overview
+openclaw health     # Gateway running?
+```
 
-### Active Rules
-- Stop loss: -15%
-- Take profit: +20% OR +$70 per position
-- Target: $1,400/month (intermediate), SKY'S THE LIMIT (ultimate)
-- Account: Cash (unlimited day trades)
+## 2. Price Service (INTEGRATED)
 
-### Alerts
-- NRXP: $0.14 from target ($3.65) - might hit today!
-- LIDR: $0.38 from target ($2.57)
+### Price Sources (in priority order):
+| Priority | Source | When | Status |
+|----------|--------|------|--------|
+| 1 | MANUAL OVERRIDE | Captain provides prices | ✅ Working |
+| 2 | web_fetch Public.com | After-hours (4-8PM PT) | ✅ Working |
+| 3 | web_search | Any time | ✅ Working |
 
-### Quick Ref
-- **Quartermaster:** Uses web_search for prices, asks Vyse if needed
-- **Price fetch:** Quartermaster ASKS Vyse → Vyse uses web_search → Quartermaster updates HEARTBEAT
-- **Recovery phrase:** "Vyse, remember who you are"
+### Sources That DON'T Work:
+- Yahoo Finance API (stale/delayed)
+- stockanalysis.com (wrong page structure)
 
-**Updated:** 2026-04-28 20:45 UTC (Market hours - NRXP up 15%!)
+### The Price Fetch Flow:
+1. Check prices.json for `manual_override: true`
+2. If YES → use Captain's prices (logged in corrections.md)
+3. If NO → 
+   - After-hours: web_fetch Public.com/after-hours
+   - Regular: web_search (faster)
+4. Update prices.json
+5. Quartermaster reads prices.json
+
+### Known Working URLs:
+```
+After-hours: https://public.com/stocks/nrxp/after-hours
+            https://public.com/stocks/lidr/after-hours
+```
+
+---
+
+## 3. Quartermaster
+- Spawn when market active
+- Reads prices.json (accurate data)
+- Makes buy/sell/hold decisions
+- Comes to you only when blocked
+
+## 4. Shipwright
+- Spawn if issues detected
+
+## 5. Scribe
+- Spawn if knowledge needed
+
+---
+
+## Key Principle
+Orchestrate. Don't micromanage.
+
+---
+
+## Time Standard
+- **Your timezone:** PT (Eastern Time)
+- **All timestamps in this document use PT**
+- **Format:** YYYY-MM-DD HH:MM PT

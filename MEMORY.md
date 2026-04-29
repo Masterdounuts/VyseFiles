@@ -13,3 +13,17 @@
 - Old active. md: memory/2026-04-26-active. md
 
 *Load from memory/ files when needing past context*
+---
+
+## Time Standard (IMPORTANT)
+
+**All timestamps use David's timezone: PT (Pacific Time, PDT)**
+
+| Setting | Value |
+|---------|-------|
+| Timezone | ET (Eastern Time, UTC-5/UTC-4) |
+| Date Format | YYYY-MM-DD |
+| Time Format | HH:MM ET |
+
+**Why:** Ensures consistency when rebuilding from backup.
+
