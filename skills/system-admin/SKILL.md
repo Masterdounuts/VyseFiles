@@ -12,7 +12,9 @@ trigger phrases: "server, process, service, network, system admin"
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 3 - Competent 🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡
+
+**XP:** 35/30 (over max) (next level at 30)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -27,6 +29,25 @@ trigger phrases: "server, process, service, network, system admin"
 | Performance | 1/7 | Needs monitoring |
 
 **Path to RON:** Full server administration capability
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **exec** - Running system commands
+- **cron** - Managing scheduled tasks
+- **read/write** - Configuration management
+- Decision tree: exec for diagnostics → cron for scheduling → read/write for config
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to system-admin |
 
 ---
 

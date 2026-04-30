@@ -10,15 +10,36 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 
 **Goal:** Reach RON Level (7/7) in time/scheduling
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
-| Timezones | 4/7 | ET/UTC, market hours, DST aware |
+| Timezones | 5/7 | Fixed PT/ET confusion in HEARTBEAT |
 | Cron | 5/7 | Manages 36 jobs, can fix failures |
-| Scheduling | 4/7 | Created 19+ jobs, understands all formats, fixed failures |
+| Scheduling | 6/7 | Created reminders skill needs cron | ← LEVEL UP |
 
 **Path to RON:** Perfect timing, auto-schedules, perfect timezone math
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **cron** - Scheduling (primary)
+- **read/write** - Time tracking
+- **exec** - Date/time commands
+- Decision tree: cron for scheduling → read/write for logs → exec for time check
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to time |
 
 ### HEYRON Insight: Ask > assume
 

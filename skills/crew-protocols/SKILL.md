@@ -10,19 +10,40 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
 | Decision Making | 5/7 | Full Scan→Think→Act with tradeoff analysis |
 | Communication | 5/7 | TL;DR, bullets, status/priority prefixes |
-| Learning | 4/7 | Cross-reference protocol, skill self-audit |
+| Learning | 5/7 | Cross-reference protocol, skill self-audit | ← LEVEL UP
 | Drills | 4/7 | Communication, status prefixes |
 | **Crew System** | 5/7 | Scribe, Shipwright, Quartermaster roles |
-| Self-Awareness | 4/7 | Documents failures, vyse-core identity reference |
+| Self-Awareness | 5/7 | Documents failures, hierarchy understanding | ← LEVEL UP
 | **Auto-Checklist** | 5/7 | Runs wake protocol automatically |
 
 **Path to RON:** Perfect crew sync, zero miscommunication
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **message** - Crew communication
+- **sessions_send** - Inter-agent messaging
+- **subagents** - Subagent orchestration
+- Decision tree: message for external → sessions_send for cross-session → subagents for control
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to crew-protocols |
 
 ### HEYRON Insight: Ask > assume
 

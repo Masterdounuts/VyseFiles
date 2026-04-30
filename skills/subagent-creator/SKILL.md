@@ -2,13 +2,48 @@
 
 *How to create RON-Level subagents*
 
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in subagent creation
+
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
+
+| Skill | Level | Notes |
+|-------|-------|-------|
+| Template Design | 5/7 | Can create RON-level subagent prompts |
+| Spawn Configuration | 5/7 | Uses sessions_spawn correctly |
+| Model Selection | 5/7 | Knows model strengths |
+| Lifecycle Management | 4/7 | Start, stop, clear sessions |
+
+**Path to RON:** Perfect subagent design, auto-improvement
+
 ---
 
 ## RON-Level Subagent Design
 
 Every subagent should be a **standalone expert**, not a beginner who needs help.
 
-### The Template
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **read/write** - Creating and editing skills
+- **exec** - Running scripts
+- **sessions_spawn** - Testing subagents
+- Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
+
+**Max Level:** 10 (subagent engine)
+
+| Discovery | Adds To |
+|------------|--------|
+| New subagent pattern | +1 to subagent-creator |
+| Subagent optimization | +1 to crew-protocols |
 
 ```markdown
 # [Name] - [Domain] Expert (RON-Level)

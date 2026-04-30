@@ -13,7 +13,9 @@ trigger phrases: "crew chat, group chat, team"
 
 **Goal:** Reach RON Level (7/7) in Telegram crew management
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -22,6 +24,25 @@ trigger phrases: "crew chat, group chat, team"
 | Routing | 5/7 | Group-specific config, crew members |
 
 **Path to RON:** Perfect crew sync, auto-responses
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **exec** - Running system commands
+- **cron** - Managing scheduled tasks
+- **read/write** - Configuration management
+- Decision tree: exec for diagnostics → cron for scheduling → read/write for config
+
+**Max Level:** 8
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to telegram-crew |
 
 ### HEYRON Insight: Ask > assume
 

@@ -11,7 +11,9 @@ trigger phrases: "security, hardening, access, permissions"
 
 **Goal:** Reach RON Level (7/7) in security
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
@@ -23,6 +25,25 @@ trigger phrases: "security, hardening, access, permissions"
 **Note:** Dropped from 6→5 - haven't proven teaching security to others.
 
 **Path to RON:** Full hardening via Control UI
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **exec** - Running system commands
+- **cron** - Managing scheduled tasks
+- **read/write** - Configuration management
+- Decision tree: exec for diagnostics → cron for scheduling → read/write for config
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to security |
 
 ---
 

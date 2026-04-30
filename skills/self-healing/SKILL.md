@@ -12,7 +12,9 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 
 **Goal:** Reach RON Level (7/7) in self-healing
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+
+**XP:** 60/60 (next level at 60)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -24,6 +26,25 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 | Escalation | 4/7 | Only when 2+ fix attempts fail |
 
 **Path to RON:** Build complete self-healing loop
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **exec** - Running system commands
+- **cron** - Managing scheduled tasks
+- **read/write** - Configuration management
+- Decision tree: exec for diagnostics → cron for scheduling → read/write for config
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to self-healing |
 
 ---
 

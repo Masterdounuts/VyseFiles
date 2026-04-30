@@ -14,16 +14,39 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+
+**XP:** 60/60 (next level at 60)
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
-| Debugging | 5/7 | 🟡🟡🟡🟡🟡 | Uses exec for diagnostics, fixes cron, session issues |
-| Recovery | 4/7 | 🟡🟡🟡🟡 | Wake-up protocol, context recovery |
-| FIXES | 4/7 | 🟡🟡🟡🟡 | 6+ fixes logged, recursive fix detection |
-| Health | 4/7 | 🟡🟡🟡🟡 | Knows all health commands |
+| Debugging | 6/7 | 🟡🟡🟡🟡🟡🟡 | Skill system + hierarchy debugged | ← LEVEL UP
+| Recovery | 5/7 | 🟡🟡🟡🟡🟡 | Skill recovery patterns added | ← LEVEL UP
+| FIXES | 5/7 | 🟡🟡🟡🟡🟡 | 10+ fixes logged | ← LEVEL UP
+| Health | 5/7 | 🟡🟡🟡🟡🟡 | Full system audit complete | ← LEVEL UP |
 
 **Path to RON:** Auto-recovery, handle complex multi-layer issues
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **exec** - Running openclaw commands (status, health, cron)
+- **gateway** - Gateway control (restart, config)
+- **cron** - Job management
+- Decision tree: exec for status → gateway for restart → cron for jobs
+
+**Max Level:** 10 (health engine)
+
+| Discovery | Adds To |
+|------------|--------|
+| Cron fix patterns | +1 to system |
+| Gateway patterns | +1 to all skills |
+| Recovery automation | +1 to self-healing |
 
 ---
 

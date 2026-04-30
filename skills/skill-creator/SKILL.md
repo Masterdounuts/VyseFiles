@@ -16,20 +16,43 @@ trigger phrases: "create skill, new skill, skill template"
 
 ### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
-| Skill | Level | Notes |
-|-------|-------|-------|
-| **Creation** | 6/7 | Created 29 skills + 3 drill scripts tonight | ← UPDATED |
-| **Comparison** | 6/7 | Full audit complete, drill system validates | ← UPDATED |
-| **Auditing** | 6/7 | Ran 3-tier drill, all 29 pass execution | ← UPDATED |
-| **Templates** | 6/7 | Complete template with core skills |
-| **Self-Audit** | 6/7 | Added drill system, lessons from 2026-04-28 |
-| **Drill System** | 6/7 | Created skill-drill.sh, master-drill.sh, true-drill.sh |
-| **Drill-Runner** | 5/7 | Created as-needed skill (2026-04-29) | ← NEW |
+**XP:** 85/70 (RON - extra goes to Dynamic Max)
+
+| Skill | Level | XP | Notes |
+|-------|-------|-----|-------|
+| **Creation** | 7/7 | 15 | Created 30 skills tonight | ← RON
+| **Comparison** | 6/7 | 10 | Full audit complete |
+| **Auditing** | 6/7 | 10 | Ran 3-tier drill |
+| **Templates** | 7/7 | 15 | Complete template with XP | ← RON
+| **Self-Audit** | 6/7 | 10 | Drill system, lessons |
+| **Drill System** | 6/7 | 10 | Created drill scripts |
+| **Drill-Runner** | 5/7 | 5 | Created as-needed skill |
+| **Teaching** | 7/7 | 15 | Can explain to others | ← RON
 | **Teaching** | 7/7 | Can explain to others how to build skills | ← NEW
 
 **Path to RON:** ✅ ACHIEVED 2026-04-28 - Can teach skill creation, automated drill system, self-improving
 
+### Dynamic Max Expansion
+
+### Tools Used
+- **read/write** - Creating and editing skills
+- **exec** - Running scripts
+- **sessions_spawn** - Testing subagents
+- Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
+
+**Max Level:** 10
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to skill-creator |
+
 ### Dynamic Max Concept (2026-04-29)
+
+### Tools Used
+- **read/write** - Creating and editing skills
+- **exec** - Running scripts
+- **sessions_spawn** - Testing subagents
+- Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
 Skill creation is NOT fixed at 7. When we create new drills, merge skills, or discover new capabilities, the max level expands:
 
@@ -170,16 +193,57 @@ access: crew|vyse-only
 
 # Skill Name
 
-## Trigger Phrases
-- "do the thing"
-- "skill thing"
+## 🎯 RON Level Target
+
+**Goal:** Reach RON Level (7/7) in [domain]
+
+### Current Status: Level 1 - Novice 🟡
+
+**XP:** 0/10 (next level at 10)
+
+| Sub-Skill | Level | XP | Notes |
+|-----------|-------|-----|-------|
+| **Core** | 1/7 | 0 | Initial state |
+
+**Path to RON:** [How to reach RON]
+
+### Dynamic Max Expansion
+
+### Tools Used
+- **read/write** - Creating and editing skills
+- **exec** - Running scripts
+- **sessions_spawn** - Testing subagents
+- Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
+
+**Max Level:** 7+ (grows with discoveries)
+
+| Discovery | Adds To Max |
+|------------|-------------|
+| First discovery | +1 to skill |
+
+---
 
 ## Provides
 - What this skill handles
 
+## Tools Used
+- List OpenClaw tools this skill uses (exec, read, write, message, cron, etc.)
+- When to use each tool vs alternatives
+- Tool selection decision tree
+
 ## Leveling (RON System)
 - Level 1-7 progression
 - Self-audit checklist
+
+---
+
+### Cross-Pollination Chain
+
+When using this skill, also update:
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
 ```
 
 ---
@@ -195,6 +259,11 @@ When auditing a skill:
 - [ ] Has provides/what-it-does
 - [ ] References related skills
 - [ ] Self-auditing (level tracking)
+- [ ] **Has XP tracking** (Level X, XP: Y/Z)
+- [ ] **Has Dynamic Max** (Max Level: 7+)
+- [ ] **Has Tools Used** section (which OpenClaw tools this skill uses)
+- [ ] **Has Sub-Skills with XP** (table format)
+- [ ] **Has Cross-Pollination** (chain documented)
 
 ---
 

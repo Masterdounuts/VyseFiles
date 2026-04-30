@@ -7,7 +7,7 @@ trigger phrases: "learn, training, improve, practice, drill"
 # Learning & Evolution Skill
 
 **Level:** 7/7
-**Max Level:** 10 (grows with discoveries) 🆙
+**Max Level:** 7+ (grows with discoveries) 🆙
 
 **Purpose:** Self-improvement through every interaction
 
@@ -17,18 +17,26 @@ trigger phrases: "learn, training, improve, practice, drill"
 
 ### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
-| Skill | Level | Notes |
-|-------|-------|-------|
-| **Drill Execution** | 7/7 | Created 3-tier drill system, runs without being asked | ← RON |
-| **Documentation** | 7/7 | Documented lessons from every session | ← RON |
-| **Self-Improvement** | 7/7 | Demonstrated (skill-creator RON, multiple level ups) | ← RON |
-| **Cross-Pollination** | 7/7 | Updates related skills when leveling | ← RON |
-| **Teaching** | 7/7 | Can explain learning to subagents (this doc!) | ← RON |
-| **Gap Detection** | 7/7 | Drill finds issues automatically | ← RON |
+**XP:** 100/100 (next: RON+ at 100)
+
+| Skill | Level | XP | Notes |
+|-------|-------|-----|-------|
+| **Drill Execution** | 7/7 | 15 | Created 3-tier drill system | ← RON |
+| **Documentation** | 7/7 | 15 | Documented every session | ← RON |
+| **Self-Improvement** | 7/7 | 15 | Demonstrated (skill-creator RON) | ← RON |
+| **Cross-Pollination** | 7/7 | 15 | Updates related skills | ← RON |
+| **Teaching** | 7/7 | 10 | Can explain to subagents | ← RON |
+| **Gap Detection** | 7/7 | 15 | Created reminders, context-mgmt | ← RON |
 
 **Path to RON:** ✅ ACHIEVED 2026-04-28 - Can teach subagents, automated drill, self-improving
 
 ### Dynamic Max (2026-04-29 Expansion)
+
+### Tools Used
+- **read/write** - Documentation
+- **memory_search** - Finding patterns
+- **exec** - Running drills
+- Decision tree: read for docs → memory_search for recall → exec for drills
 
 When new knowledge is discovered, the max level EXPANDS:
 
@@ -38,9 +46,20 @@ When new knowledge is discovered, the max level EXPANDS:
 | master-drill.sh | +1 to capability testing |
 | true-drill.sh | +1 to execution verification |
 | governance-drill.sh | +1 to skill governance |
+| pattern-recognition skill | +1 to global pattern detection | ← NEW |
 | Canvas dashboard | +1 to visualization |
 | Skill merge | +1 to combined expertise |
-| Pre-save validation | +1 to corruption prevention | ← NEW
+| Pre-save validation | +1 to corruption prevention |
+| 6-layer work hierarchy | +1 to workflow |
+| reminders skill | +1 to skill-creator |
+| context-mgmt in control-ui | +1 to control-ui |
+| XP system | +1 to self-improvement |
+| Cross-pollination | +1 to all skills |
+| presentation skill | +1 to skill-creator |
+| Global Dynamic Max (24 skills) | +1 to all skills | ← NEW
+| Skill system full map | +1 to pattern-recognition | ← NEW
+| Cross-pollination chain | +1 to learning self | ← NEW
+| Skill gap detection protocol | +1 to pattern-recognition | ← NEW
 
 **Current Max: 11** (was 10 before pre-save validation)
 **Current Level: 7** (climbing the expanded scale)

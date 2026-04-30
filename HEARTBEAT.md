@@ -60,6 +60,6 @@ Orchestrate. Don't micromanage.
 ---
 
 ## Time Standard
-- **Your timezone:** PT (Eastern Time)
+- **Your timezone:** PT (Pacific Time)
 - **All timestamps in this document use PT**
 - **Format:** YYYY-MM-DD HH:MM PT

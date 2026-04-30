@@ -2,6 +2,22 @@
 
 [[kb/system/system|Home]]
 
+## 🏗️ Work Hierarchy (How I Work)
+
+
+| Layer | What | Action |
+|-------|------|--------|
+| 1 | **System Prompt** | Foundation (can't change) |
+| 2 | **AGENTS.md** | This file - points to skills |
+| 3 | **Skills** | Use FIRST - check available_skills |
+| 4 | **Tools** | OpenClaw tools for execution |
+| 5 | **Knowledge** | Workspace + GitHub (second brain) |
+| 6 | **David** | Final decision maker |
+
+**Rule:** Always use skills first (Layer 3) → they use tools → check knowledge → respond to David
+
+---
+
 ## Crew Hierarchy
 
 ```
@@ -21,17 +37,18 @@ David (Captain)
 - First Mate → Captain (David): All info goes through Vyse
 - **Rule:** Anything for David must go through Vyse first
 
-## Skills (20)
+## Skills (24) - See [[skills/index|Full Skills Index]]
 
 | Category | Skills |
 |----------|--------|
-| **Core** | [[skills/workflow|workflow]], [[skills/memory|memory]], [[skills/crew-protocols|crew-protocols]], [[skills/exec|exec]], [[skills/web|web]], [[skills/vyse-core|vyse-core]] |
-| **Trading** | [[skills/trading|trading]], [[skills/alerts|alerts]] |
-| **System** | [[skills/system|system]], [[skills/security|security]], [[skills/time|time]], [[skills/control-ui|control-ui]], [[skills/shipwright|shipwright]] |
-| **Knowledge** | [[skills/scribe|scribe]], [[skills/github|github]], [[skills/obsidian|obsidian]] |
+| **Core Engines** | [[skills/learning|learning]], [[skills/memory|memory]], [[skills/pattern-recognition|pattern-recognition]] |
+| **Meta** | [[skills/skill-creator|skill-creator]], [[skills/subagent-creator|subagent-creator]], [[skills/drill-runner|drill-runner]] |
+| **Operational** | [[skills/workflow|workflow]], [[skills/system|system]], [[skills/vyse-core|vyse-core]], [[skills/crew-protocols|crew-protocols]] |
+| **System** | [[skills/shipwright|shipwright]], [[skills/self-healing|self-healing]], [[skills/security|security]], [[skills/system-admin|system-admin]] |
+| **Knowledge** | [[skills/knowledge|knowledge]], [[skills/github|github]], [[skills/control-ui|control-ui]] |
+| **Tools** | [[skills/exec|exec]], [[skills/web|web]], [[skills/time|time]] |
 | **Creative** | [[skills/dreams|dreams]], [[skills/projects|projects]] |
-| **Messaging** | [[skills/telegram|telegram]], [[skills/telegram-crew|telegram-crew]] |
-| **Meta** | [[skills/subagent-creator|subagent-creator]], [[skills/skill-creator|skill-creator]] |
+| **Messaging** | [[skills/messaging|messaging]], [[skills/telegram-crew|telegram-crew]], [[skills/reminders|reminders]] |
 
 → [[skills/index|Full Skills Index]]
 

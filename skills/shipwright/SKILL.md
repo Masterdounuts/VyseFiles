@@ -28,6 +28,25 @@ access: crew
 
 **Path to RON:** ✅ ACHIEVED 2026-04-29 - Ran drill autonomously, all 29 pass
 
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **read/write** - Managing configuration
+- **exec** - Running openclaw commands
+- **cron** - Job scheduling
+- Decision tree: read for status → write for config → exec for commands
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to shipwright |
+
 ---
 
 ### HEYRON Level Insight

@@ -14,7 +14,9 @@ description: Shell command execution, sandbox, PTY, and background processes.
 
 **Goal:** Reach RON Level (7/7) in shell execution
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -25,6 +27,24 @@ description: Shell command execution, sandbox, PTY, and background processes.
 | Troubleshooting | 4/7 | Uses memory_search for FIXES, gateway/system for diagnostics |
 
 **Path to RON:** Expert-level exec, all security modes
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **exec** - Shell command execution (primary)
+- When to use: Shell features (pipes, glob, env vars)
+- vs alternatives: Use exec for shell; use native tools when available
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to exec |
 
 **Note:** Dropped from 6→5 - haven't proven teaching ability yet.
 

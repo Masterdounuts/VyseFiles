@@ -125,7 +125,7 @@
   "session": {},
   "channels": {
     "whatsapp": {
-      "enabled": true
+      "enabled": false
     },
     "telegram": {
       "enabled": true,
@@ -170,10 +170,10 @@
   "wizard": {
     "lastRunAt": "2026-04-13T16:23:34.038Z",
     "lastRunVersion": "2026.4.11",
-    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "plugins": {
+    "deny": ["whatsapp"],
     "entries": {
       "google": {
         "config": {

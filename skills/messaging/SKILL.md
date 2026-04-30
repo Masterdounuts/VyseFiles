@@ -13,7 +13,9 @@ access: public
 
 **Goal:** Reach RON Level (7/7) in unified messaging
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+
+**XP:** 50/60 (next level at 60)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -24,6 +26,24 @@ access: public
 | **Multi-channel** | 5/7 | Can extend to other channels |
 
 **Path to RON:** Auto-format, smart triggers, multi-channel delivery
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **message** - Send messages via channels (primary)
+- **tts** - Text-to-speech voice output
+- Decision tree: message for text → tts for voice
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to messaging |
 
 ### Merged from:
 - alerts (message templates)

@@ -11,7 +11,9 @@ trigger phrases: "dream, vision, goal, brainstorm"
 
 **Goal:** Reach RON Level (7/7) in creativity/vision
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -22,6 +24,25 @@ trigger phrases: "dream, vision, goal, brainstorm"
 | Archive | 4/7 | Dream journal in Dreams tab |
 
 **Path to RON:** Proactive dreaming, auto-brainstorm
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **memory_search** - Finding patterns in memory
+- **read** - Analyzing files
+- **write** - Documenting patterns
+- Decision tree: memory_search for recall → read for analysis → write for documentation
+
+**Max Level:** 8
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to dreams |
 
 ### HEYRON Insight: Ask > assume
 

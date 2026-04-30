@@ -11,16 +11,40 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 **Goal:** Reach RON Level (7/7) in memory/context management
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-| Skill | Level | Score | Notes |
-|-------|-------|-------|-------|
-| Recall | 5/7 | 🟡🟡🟡🟡🟡 | memory_search works well |
-| Storage | 4/7 | 🟡🟡🟡🟡 | Daily + archive working |
-| Cleanup | 4/7 | 🟡🟡🟡🟡 | Auto-archive working |
-| Dreaming | 4/7 🟡🟡🟡🟡 | Cron runs 3am daily, thresholds lowered (minScore=0.6, minRecallCount=2) |
+**XP:** 60/60 (next level at 60)
+
+| Skill | Level | XP | Notes |
+|-------|-------|-----|-------|
+| Recall | 5/7 | 10 | memory_search works well |
+| Storage | 6/7 | 15 | 4 pattern logs created today | ← LEVEL UP
+| Cleanup | 4/7 | 5 | Auto-archive working |
+| Dreaming | 4/7 | 5 | Cron runs 3am daily |
 
 **Path to RON:** Better auto-organization, smarter promotion, perfect recall
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **memory_search** - Semantic recall from memory/*.md
+- **memory_get** - Specific snippet read
+- **read** - Direct file reads for full context
+- Decision tree: memory_search for recall → memory_get for snippets → read for full
+
+**Max Level:** 7+ (grows with discoveries)
+
+| Discovery | Adds To |
+|------------|--------|
+| Pattern logging | +1 to memory |
+| Short-term recall | +1 to dreaming |
+| Recall optimization | +1 to all skills |
+| Skill system docs | +1 to memory ← NEW |
 
 ---
 

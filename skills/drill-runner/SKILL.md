@@ -15,7 +15,9 @@ Runs all drill tiers to verify skill health:
 - true-drill.sh - execution verification  
 - governance-drill.sh - conflicts, bloat, gaps
 
-## Current Status: Level 5/7
+## Current Status: Level 7 - RON ⭐/7
+
+**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -25,7 +27,20 @@ Runs all drill tiers to verify skill health:
 | Parse results | 4/7 | Can interpret output |
 | Systematize | 5/7 | Created as-needed, integrated with system |
 
-**Max Level:** 11 (inherits from dynamic max system)
+### Dynamic Max Expansion
+
+### Tools Used
+- **read/write** - Creating and editing skills
+- **exec** - Running scripts
+- **sessions_spawn** - Testing subagents
+- Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
+
+**Max Level:** 8 (drill engine)
+
+| Discovery | Adds To |
+|------------|--------|
+| New drill type | +1 to drill-runner |
+| Drill automation | +1 to all skills |
 
 ## Usage
 

@@ -63,6 +63,33 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 > Note: Subagent config is in `agents/{name}/agent/` - that's their soul. Don't duplicate.
 
+---
+
+### Context Management (Sub-Skill)
+
+*Managing session context, compaction, and checkpoints*
+
+| Aspect | Level | Notes |
+|--------|-------|-------|
+| **Context Awareness** | 5/7 | Knows current context % via session_status |
+| **Compaction** | 5/7 | reserveTokensFloor = 20000, auto-compact at 80% |
+| **Checkpointing** | 5/7 | 60% resume-point, 70% force-save |
+| **Session Recovery** | 5/7 | Wake-up protocol reads HANDOFF, active.md |
+
+**How context works:**
+- 0-60%: Normal operation
+- 60-70%: Checkpoint to resume-point.md
+- 70-80%: Force-save to memory/*.md
+- 80%+: Auto-compaction kicks in
+
+**Commands for context:**
+```bash
+openclaw session-status  # Get context %
+```
+
+**Recent improvements:**
+- 2026-04-30: Added 6-layer work hierarchy (skills first)
+
 ### Subagent Core Files (from Control UI Infrastructure)
 
 **Control UI already manages this - DON'T duplicate:**
@@ -184,6 +211,25 @@ subagents action=kill target=sessionKey
 ---
 
 ## 🎯 Path to RON (Level 7)
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **read/write** - Managing configuration
+- **exec** - Running openclaw commands
+- **cron** - Job scheduling
+- Decision tree: read for status → write for config → exec for commands
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to control-ui |
 
 ### What I Need
 

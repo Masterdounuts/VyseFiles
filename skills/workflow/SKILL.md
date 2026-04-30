@@ -11,19 +11,54 @@ trigger phrases: "workflow, automation, pipeline"
 
 **Goal:** Reach RON Level (7/7) in self-operation
 
-### Current Status: Level 5 - Advanced 🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+
+**XP:** 60/60 (next level at 60)
+
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Wake-up | 5/7 | 🟡🟡🟡🟡🟡 | Reads TODO, HANDOFF, active.md |
 | Context | 5/7 | 🟡🟡🟡🟡🟡 | Knows compaction rules, 60/70% checkpoints |
-| **Session Health** | 5/7 | 🟡🟡🟡🟡🟡 | Monitors via Shipwright hourly cron |
-| Status | 4/7 | 🟡🟡🟡🟡 | Uses status prefixes |
+| **Session Health** | 6/7 | 🟡🟡🟡🟡🟡🟡 | 6-layer hierarchy integrated | ← LEVEL UP
+| Status | 5/7 | 🟡🟡🟡🟡🟡 | Status prefixes + priority | ← LEVEL UP
 | Checkpoint | 5/7 | 🟡🟡🟡🟡🟡 | Pre-cleanup checkpoint added |
 
 **Path to RON:** Perfect self-management, zero handoff issues
 
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **read/write** - Managing active.md, HANDOFF.md, PENDING.md
+- **cron** - Scheduling recurring tasks
+- **sessions_spawn** - Creating subagent sessions
+- Decision tree: read/write for state → cron for scheduling → sessions_spawn for subagents
+
+**Max Level:** 10 (operational engine)
+
+| Discovery | Adds To |
+|------------|--------|
+| Wake protocol | +1 to workflow |
+| Checkpoint system | +1 to memory |
+| Skill integration | +1 to all skills |
+| 6-layer hierarchy | +1 to workflow ← NEW |
+
 ---
+
+## Skill Creation Workflow
+
+**When creating ANY new skill:**
+1. Load skill-creator/SKILL.md first
+2. Follow its "Check Existing First" workflow
+3. Use its templates and creation workflow
+4. Run cross-pollination after
+
+**Never skip skill-creator** - it's the meta-skill for creating skills.
 
 ### HEYRON Level Insight
 

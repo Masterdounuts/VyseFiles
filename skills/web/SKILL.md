@@ -14,7 +14,9 @@ description: Web search, fetch, and browser automation. Use when researching or 
 
 **Goal:** Reach RON Level (7/7) in web interaction
 
-### Current Status: Level 6 - Expert 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+
+**XP:** 60/60 (next level at 60)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -23,6 +25,25 @@ description: Web search, fetch, and browser automation. Use when researching or 
 | browser | 4/7 | Snapshot, navigate, act |
 
 **Path to RON:** Full browser automation, scraping
+
+### Dynamic Max Expansion
+
+### Cross-Pollination
+- **pattern-recognition** → +3 XP (detecting patterns)
+- **learning** → +3 XP (documenting discovery)
+- **crew-protocols** → +3 XP (communication)
+
+### Tools Used
+- **web_search** - Quick web search (primary)
+- **web_fetch** - Read page content (after-hours prices)
+- **browser** - Full browser automation (complex interactions)
+- Decision tree: web_search first → web_fetch for content → browser for complex
+
+**Max Level:** 9
+
+| Discovery | Adds To |
+|------------|--------|
+| New discovery | +1 to web |
 
 ---
 
