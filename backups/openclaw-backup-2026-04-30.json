@@ -1,0 +1,179 @@
+{
+  "session": {
+    "dmScope": "main"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.14",
+    "lastTouchedAt": "2026-04-30T14:50:07.461Z"
+  },
+  "update": {
+    "checkOnStart": false
+  },
+  "browser": {
+    "enabled": true,
+    "defaultProfile": "browserless",
+    "profiles": {
+      "browserless": {
+        "cdpUrl": "http://144.126.154.152:3100?token=heyron-browser-2026",
+        "color": "#00AA00"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "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",
+        "models": [
+          {
+            "id": "minimax/minimax-m2.5",
+            "name": "MiniMax M2.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "contextWindow": 128000
+          },
+          {
+            "id": "google/gemini-2.5-flash-lite",
+            "name": "Gemini Flash Lite",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "contextWindow": 128000
+          },
+          {
+            "id": "openai/gpt-oss-120b",
+            "name": "GPT-OSS 120B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "contextWindow": 131072
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/minimax/minimax-m2.5",
+        "fallbacks": []
+      },
+      "imageModel": {
+        "primary": "openrouter/google/gemini-2.5-flash-lite"
+      },
+      "models": {
+        "openrouter/minimax/minimax-m2.5": {},
+        "openrouter/google/gemini-2.5-flash-lite": {},
+        "openrouter/openai/gpt-oss-120b": {}
+      },
+      "heartbeat": {
+        "model": "openrouter/minimax/minimax-m2.5"
+      },
+      "subagents": {
+        "model": "openrouter/minimax/minimax-m2.5"
+      }
+    },
+    "list": [
+      {
+        "id": "vyse",
+        "name": "vyse",
+        "workspace": "/home/openclaw/.openclaw/workspace-vyse",
+        "agentDir": "/home/openclaw/.openclaw/agents/vyse/agent",
+        "model": "openrouter/minimax/minimax-m2.5"
+      },
+      {
+        "id": "shipwright",
+        "name": "shipwright",
+        "workspace": "/home/openclaw/.openclaw/workspace-vyse",
+        "agentDir": "/home/openclaw/.openclaw/agents/shipwright/agent"
+      },
+      {
+        "id": "scribe",
+        "name": "scribe",
+        "workspace": "/home/openclaw/.openclaw/workspace-vyse",
+        "agentDir": "/home/openclaw/.openclaw/agents/scribe/agent"
+      },
+      {
+        "id": "quartermaster",
+        "name": "quartermaster",
+        "workspace": "/home/openclaw/.openclaw/workspace-vyse",
+        "agentDir": "/home/openclaw/.openclaw/agents/quartermaster/agent",
+        "model": "openrouter/google/gemini-2.5-flash-lite"
+      }
+    ]
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "https://c8-0093.c8.heyron.ai"
+      ],
+      "dangerouslyAllowHostHeaderOriginFallback": true,
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "auth": {
+      "token": "token-e0045f65fe2a5ba1d761b37907cdc042"
+    },
+    "trustedProxies": [
+      "172.16.0.0/12",
+      "10.0.0.0/8",
+      "192.168.0.0/16",
+      "127.0.0.1",
+      "172.17.0.1"
+    ]
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true
+    },
+    "telegram": {
+      "enabled": true,
+      "botToken": "8325336361:AAEvDZq9sSki2qanno7g2L7wCRUkVSnKmss",
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ]
+    }
+  },
+  "discovery": {
+    "mdns": {
+      "mode": "off"
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true
+      }
+    }
+  },
+  "plugins": {
+    "deny": ["whatsapp"],
+    "entries": {
+      "telegram": {
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
+      },
+      "browser": {
+        "enabled": true
+      },
+      "duckduckgo": {
+        "enabled": true
+      },
+      "memory-core": {
+        "config": {
+          "dreaming": {
+            "enabled": true
+          }
+        }
+      }
+    }
+  }
+}
