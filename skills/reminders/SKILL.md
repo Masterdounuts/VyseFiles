@@ -131,7 +131,7 @@ Action:
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 8
+**Max Level:**  18
 
 | Discovery | Adds To |
 |------------|--------|

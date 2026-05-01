@@ -40,7 +40,7 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:** 9
+**Max Level:**  23
 
 | Discovery | Adds To |
 |------------|--------|

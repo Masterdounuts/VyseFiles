@@ -535,3 +535,9 @@
 | system | +5 | Testing content-based max |
 | workflow | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| learning | +5 | Auto-tracked from commit: FIX: Dynamic max based on REAL skill content (sections, subsections, lines) |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

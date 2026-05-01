@@ -39,7 +39,7 @@ access: public
 - **tts** - Text-to-speech voice output
 - Decision tree: message for text → tts for voice
 
-**Max Level:** 9
+**Max Level:**  19
 
 | Discovery | Adds To |
 |------------|--------|

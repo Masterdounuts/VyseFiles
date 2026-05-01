@@ -42,7 +42,7 @@ trigger phrases: "identity, about yourself, who are you, vyse"
 - **memory_search** - Recalling past interactions
 - Decision tree: read for identity → write for updates → memory_search for recall
 
-**Max Level:** 10 (identity engine)
+**Max Level:**  26 (identity engine)
 
 | Discovery | Adds To |
 |------------|--------|

@@ -28,7 +28,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 ### Dynamic Max Expansion
 
-**Max Level:** 7+ (grows with discoveries)
+**Max Level:**  17+ (grows with discoveries)
 
 | Discovery | Adds To Max |
 |-----------|-------------|

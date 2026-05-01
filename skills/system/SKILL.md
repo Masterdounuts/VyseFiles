@@ -40,7 +40,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 - **cron** - Job management
 - Decision tree: exec for status → gateway for restart → cron for jobs
 
-**Max Level:** 20 (health engine)
+**Max Level:** 21 (health engine)
 
 | Discovery | Adds To |
 |------------|--------|

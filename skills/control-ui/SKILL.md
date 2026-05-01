@@ -41,7 +41,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 
 ### Current Status: Level 7 - RON ⭐
 **XP:** 70/70 (RON)
-**Max Level:** 15 (expanded from discoveries) 🟡🟡🟡🟡🟡🟡
+**Max Level:** 59 (expanded from discoveries) 🟡🟡🟡🟡🟡🟡
 
 ### Sub-Agent Management (Sub-Skill) - RON ⭐
 
@@ -226,7 +226,7 @@ subagents action=kill target=sessionKey
 - **cron** - Job scheduling
 - Decision tree: read for status → write for config → exec for commands
 
-**Max Level:** 9
+**Max Level:** 59
 
 | Discovery | Adds To |
 |------------|--------|

@@ -23,7 +23,7 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 **Path to RON:** Explain complex concepts simply → Create learning curricula → Teach subagents
 
 ### Dynamic Max Expansion
-**Max Level:** 9
+**Max Level:**  12
 
 ### Tools Used
 - **read** - Accessing source material

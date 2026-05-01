@@ -35,7 +35,7 @@ Runs all drill tiers to verify skill health:
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:** 8 (drill engine)
+**Max Level:**  12 (drill engine)
 
 | Discovery | Adds To |
 |------------|--------|

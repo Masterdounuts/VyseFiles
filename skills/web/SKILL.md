@@ -39,7 +39,7 @@ description: Web search, fetch, and browser automation. Use when researching or 
 - **browser** - Full browser automation (complex interactions)
 - Decision tree: web_search first → web_fetch for content → browser for complex
 
-**Max Level:** 9
+**Max Level:**  25
 
 | Discovery | Adds To |
 |------------|--------|

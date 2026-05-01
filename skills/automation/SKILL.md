@@ -8,7 +8,7 @@ trigger phrases: "every time, repeatedly, always, auto, automate, script, run au
 
 **Level:** 1/7
 **XP:** 10/10 (Level 2)
-**Max Level:** 7 (RON - fully automated)
+**Max Level:**  16 (RON - fully automated)
 
 ## Purpose
 ## XP Protocol
@@ -43,7 +43,7 @@ Recognize when actions repeat and should be automated.
 *Currently learning when to automate*
 
 ## Dynamic Max Expansion
-**Max Level:** 7
+**Max Level:**  16
 
 ## Cross-Pollination
 - **system** → +3 XP (knowing when to create scripts)

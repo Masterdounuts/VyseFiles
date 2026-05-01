@@ -39,7 +39,7 @@ trigger phrases: "workflow, automation, pipeline"
 - **sessions_spawn** - Creating subagent sessions
 - Decision tree: read/write for state → cron for scheduling → sessions_spawn for subagents
 
-**Max Level:** 48 (operational engine)
+**Max Level:**  43 (operational engine)
 
 | Discovery | Adds To |
 |------------|--------|

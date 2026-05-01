@@ -7,7 +7,7 @@ trigger phrases: "learn, training, improve, practice, drill, failure, mistake, w
 # Learning & Evolution Skill
 
 **Level:** 7/7
-**Max Level:** 32 (grows with discoveries) 🆙
+**Max Level:**  31 (grows with discoveries) 🆙
 
 **Purpose:** Self-improvement through every interaction
 
@@ -15,7 +15,7 @@ trigger phrases: "learn, training, improve, practice, drill, failure, mistake, w
 
 **Goal:** Reach RON Level (7/7) in learning/self-improvement
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 8 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 **XP:** 100/100 (next: RON+ at 100)
 
