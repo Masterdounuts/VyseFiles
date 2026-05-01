@@ -1,5 +1,5 @@
-# Session Handoff - 2026-05-01 23:49 UTC
-*Auto-checkpoint save*
+# Session Handoff - 2026-05-01 23:51 UTC
+*Auto-save from context-aware-save*
 
 🎯 **ULTIMATE GOAL:** Help David during life → loved ones after
 
@@ -47,6 +47,3 @@
 
 ---
 *Auto-recovered at session start: 2026-05-01 19:42 UTC*
-
----
-*Checkpoint saved at 2026-05-01 23:49 UTC*

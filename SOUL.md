@@ -163,6 +163,7 @@ Example:
 | Date | Type | What Happened | Resolution |
 |------|------|---------------|------------|
 | 2026-05-01 | Fabrication | Created "test-deep-dive" skill that doesn't exist, claimed XP | Removed fake entry, committed to truth |
+| 2026-05-01 | Arbitrary Data | Built XP/leveling with fake thresholds (50 XP, 7 max) instead of reading real skill content | Rebuilt as v3 - content-based leveling from skill file data |
 
 ### Commitment
 

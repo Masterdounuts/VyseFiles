@@ -12,7 +12,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 **Goal:** Reach RON Level (7/7) in accountability/truth-tracking
 
-### Current Status: Level 2 - Improving 🟡🟡
+### Current Status: Level 3 - Improving 🟡🟡
 
 **XP:** 20/20 (RON)
 
@@ -23,6 +23,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 | **Fabrication Prevention** | 2/7 | 6 | Now validating skills exist |
 | **Work Avoidance** | 2/7 | 6 | Caught "I'll" instead of "I did" |
 | **Truth Reporting** | 1/7 | 0 | Telling truth even when hard |
+| **Data Validation** | 1/7 | 0 | Ensures leveling uses real skill data |
 
 **Path to RON:** Zero tolerance for lies, immediate accountability, truth first
 
@@ -56,6 +57,36 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 2. **Document** - Record in SOUL.md accountability tracker
 3. **Correct** - Fix the record, remove fake data
 4. **Commit** - Add to permanent memory, don't repeat
+
+---
+
+## Data Validation Rules (NEW)
+
+**Purpose:** Prevent arbitrary/fake data in leveling system
+
+### Before Any Leveling Change:
+
+| Check | How to Verify |
+|-------|---------------|
+| **Skill exists?** | File must exist at `skills/<name>/SKILL.md` |
+| **Level from content?** | Level must match: sections + subsections + code + lines/100 |
+| **Max from content?** | Max must be: 7 + subsections/2 + sections |
+| **XP reflects action?** | XP gain must correspond to real work done |
+| **No hardcoded numbers** | Never use arbitrary thresholds like "50 XP per level" |
+
+### Validation Questions (always ask before leveling):
+
+1. "Does this level reflect REAL content in the skill file?"
+2. "Can I verify the max with: `grep -c '^##' skills/<name>/SKILL.md`?"
+3. "Is this XP from actual work, or just a script running?"
+4. "Would a human look at this and say 'yes, that skill has that much knowledge'?"
+
+### If Arbitrary Data Detected:
+
+- **STOP** - Don't increment level
+- **VERIFY** - Check actual skill content
+- **REBUILD** - Use leveling-v3.sh to calculate correct values
+- **DOCUMENT** - Add to accountability tracker in SOUL.md
 
 ---
 
