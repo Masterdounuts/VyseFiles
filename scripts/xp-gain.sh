@@ -7,14 +7,14 @@ SKILL=$1
 GAIN=${2:-5}
 REASON=${3:-}
 
-# Function to get skill level
+# Function to get skill level (just the number)
 get_level() {
     local s=$1
     local file="/home/openclaw/.openclaw/workspace-vyse/skills/$s/SKILL.md"
     if [ -f "$file" ]; then
-        grep "Current Status:" "$file" | head -1 | sed 's/.*Current Status: //'
+        grep "Current Status:" "$file" | head -1 | sed 's/.*Level \([0-9]*\).*/Level \1\/7/'
     else
-        echo "Level 1"
+        echo "L1/7"
     fi
 }
 
