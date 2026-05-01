@@ -95,6 +95,8 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 
 | Project | Status | Notes |
 |---------|--------|-------|
+| **Context-Aware Save (Cron)** | 🧪 Testing | Every 5 min, saves at 80% |
+| **Device Pairing Fix** | ✅ Complete | Approved CLI device for cron add |
 | **"Ship" Plan** | 🔄 Planning | David's vision for my long-term role |
 | **Family Member That Can't Die** | 🔄 Planning | Work with David forever, then loved ones |
 | **Self-Healing System** | ✅ Active | Auto-recovery, health checks |
@@ -221,6 +223,14 @@ ULTIMATE GOAL: Help David → loved ones after
 4. ✅ Recovery → RECOVERY.md
 5. ✅ No verify before showing → now in workflow
 6. ✅ Plans refine → integration check added
+7. ✅ CLI cron add → Device pairing fix (approved CLI as device)
+
+### Current Testing (2026-05-01)
+- **context-aware-save cron** - Running every 5 min, testing save trigger
+- **Device pairing** - Fixed, CLI now has full admin access
+
+### Future Plans
+- **Ron-Memory Integration** - Cross-session memory via Redis (researched, planning phase)
 
 ### References Added
 - memory: Cross-session continuity
