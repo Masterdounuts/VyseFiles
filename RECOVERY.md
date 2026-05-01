@@ -119,3 +119,41 @@ After these steps, you have:
 ---
 
 *This file is auto-included in every GitHub snapshot.*
+
+---
+
+## Iteration 3 Additions (2026-05-01)
+
+### Context-Aware Save (Pre-Overflow)
+New: `scripts/context-aware-save.sh`
+- Runs every 5 min via cron
+- Checks context level
+- At 80%+: Saves to memory/emergency-save-*.md + HANDOFF
+- Purpose: Save work BEFORE overflow kills session
+
+### Cron Jobs to Add:
+- **context-aware-save**: Every 5 min - `bash scripts/context-aware-save.sh`
+
+### Three Layers of Memory:
+1. Cross-Session: HANDOFF (session-start/end)
+2. Context-Aware: Save at 80%
+3. Reduce Load: Isolated cron, on-demand memory
+
+### Recovery Process (Full):
+```bash
+# 1. Clone workspace
+git clone https://github.com/Masterdounuts/VyseFiles.git
+
+# 2. Run continuity scripts
+bash scripts/session-start-handoff.sh
+bash scripts/memory-recall.sh
+
+# 3. Setup XP
+bash scripts/xp-gain.sh vyse-core 5 "Rebooting"
+
+# 4. Add cron jobs via Control UI
+#    - auto-checkpoint: 20 min
+#    - context-aware-save: 5 min
+#    - shipwright-daily: daily
+#    - daily-snapshot: daily
+```
