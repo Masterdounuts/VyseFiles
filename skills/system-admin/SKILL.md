@@ -12,7 +12,7 @@ trigger phrases: "server, process, service, network, system admin"
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 6 - Expert 🟡🟡🟡
+### Current Status: Level 7 - Expert 🟡🟡🟡
 
 **XP:** 35/30 (over max) (next level at 30)
 

@@ -37,6 +37,41 @@ get_level_info() {
     fi
 }
 
+# Function to auto-level up when threshold reached
+auto_level_up() {
+    local s=$1
+    local file="$WORKSPACE/skills/$s/SKILL.md"
+    if [ ! -f "$file" ]; then
+        return
+    fi
+    
+    local info=$(get_level_info "$s")
+    local current_level=$(echo "$info" | cut -d'|' -f1)
+    local max_level=$(echo "$info" | cut -d'|' -f2)
+    local xp_current=$(echo "$info" | cut -d'|' -f3)
+    local xp_next=$(echo "$info" | cut -d'|' -f4)
+    
+    # Check if at max level
+    if [ "$current_level" -ge "$max_level" ]; then
+        return
+    fi
+    
+    # Check if XP >= threshold (level up!)
+    if [ "$xp_current" -ge "$xp_next" ] && [ "$xp_next" -gt 0 ]; then
+        local new_level=$((current_level + 1))
+        local next_threshold=$((xp_next + 50))
+        
+        # Update level in file (only first occurrence - the main one)
+        sed -i "0,/Current Status: Level $current_level/{s/Current Status: Level $current_level/Current Status: Level $new_level/}" "$file"
+        
+        # Update XP (reset to 0, keep overflow)
+        local overflow=$((xp_current - xp_next))
+        sed -i "0,/XP: $xp_current\/$xp_next/{s/XP: $xp_current\/$xp_next/XP: $overflow\/$next_threshold/}" "$file"
+        
+        echo "🎉 LEVEL UP! $s: $current_level → $new_level"
+    fi
+}
+
 # Function to find skills near level-up
 find_near_levelup() {
     local near=""
@@ -85,6 +120,9 @@ esac
 
 echo "| pattern-recognition | +3 | Core skill |" >> "$TRACKING"
 
+# AUTO LEVEL-UP CHECK
+LEVEL_UP_MSG=$(auto_level_up "$SKILL")
+
 # Get level info
 SELF_INFO=$(get_level_info "vyse-core")
 PATTERN_INFO=$(get_level_info "pattern-recognition")
@@ -118,6 +156,9 @@ NEAR_LEVELUP=$(find_near_levelup)
 
 # Full output with ALL improvements
 echo "🛠️ **LEVEL UP REPORT:** [$TIMESTAMP]"
+if [ -n "$LEVEL_UP_MSG" ]; then
+    echo "   $LEVEL_UP_MSG"
+fi
 echo "   $SKILL: $SKILL_LEVEL | XP: $SKILL_XP | $SKILL_PROGRESS"
 echo "   pattern-recognition: $PATTERN_LEVEL | $PATTERN_PROGRESS"
 echo "   vyse-core: $SELF_LEVEL"

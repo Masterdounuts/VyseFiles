@@ -14,7 +14,7 @@ trigger phrases: "create skill, new skill, skill template"
 
 **Goal:** Reach RON Level (7/7) in skill creation
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 8 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 **XP:** 85/70 (RON - extra goes to Dynamic Max)
 
@@ -197,7 +197,6 @@ access: crew|vyse-only
 
 **Goal:** Reach RON Level (7/7) in [domain]
 
-### Current Status: Level 1 - Novice 🟡
 
 **XP:** 0/10 (next level at 10)
 
