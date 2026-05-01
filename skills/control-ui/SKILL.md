@@ -278,15 +278,20 @@ subagents action=kill target=sessionKey
 4. **Recovery** — On wake, reads resume-point.md (created by cron)
 
 **Conceptual home:** Workflow skill (wake-up, decision protocol)
-**Execution home:** Control UI (cron runs the automation)
+**Execution home:** Control UI OR CLI (both work after device pairing)
 
 *Checkpoint = Workflow concept + Control UI execution*
 
 ---
 
-## API Tools (No CLI Needed)
+## API Tools (CLI Works Too!)
 
-All management can be done via API tools - no CLI required:
+**CORRECTION (2026-05-01):** CLI DOES work for cron after device pairing:
+- `openclaw devices list` → find pending device
+- `openclaw devices approve <id>` → approve it
+- Then `openclaw cron add` works!
+
+Both CLI and Control UI work:
 
 | Tool | Actions | Purpose |
 |------|---------|---------|

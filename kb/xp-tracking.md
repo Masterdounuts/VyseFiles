@@ -363,3 +363,9 @@
 | pattern-recognition | +3 | Core skill: analyzing patterns in message |
 | projects | +10 | Emphasized GitHub as ultimate backup - 2 weeks history, immutable |
 | pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| system | +15 | Created .core-backup-archive/ - GitHub backup of local backup for total loss |
+| workflow | +3 | Cross-pollination: system health boosts workflow |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| accountability | +10 | Added corrections to memory - documented what David got wrong |
+| vyse-core | +3 | Cross-pollination: accountability enhances identity |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
