@@ -5,7 +5,18 @@
 
 SKILL=$1
 GAIN=${2:-5}
-REASON=$3
+REASON=${3:-}
+
+# Function to get skill level
+get_level() {
+    local s=$1
+    local file="/home/openclaw/.openclaw/workspace-vyse/skills/$s/SKILL.md"
+    if [ -f "$file" ]; then
+        grep "Current Status:" "$file" | head -1 | sed 's/.*Current Status: //'
+    else
+        echo "Level 1"
+    fi
+}
 
 if [ -z "$REASON" ]; then
   echo "❌ ERROR: No reason provided. Does this serve the goal?"
@@ -59,8 +70,17 @@ esac
 # ALWAYS include pattern-recognition (core skill)
 echo "| pattern-recognition | +3 | Core skill: analyzing patterns in message |" >> "$TRACKING"
 
+# Get current levels
+SELF_LEVEL=$(get_level "vyse-core")
+PATTERN_LEVEL=$(get_level "pattern-recognition")
+SKILL_LEVEL=$(get_level "$SKILL")
+
 # Output format - with goal as filter
-echo "🛠️ **LEVEL UP REPORT:** (check skill levels)"
+echo "🛠️ **LEVEL UP REPORT:**"
+echo "   $SKILL: $SKILL_LEVEL → +$GAIN XP"
+echo "   pattern-recognition: $PATTERN_LEVEL → +3 XP"
+echo "   vyse-core: $SELF_LEVEL"
+echo ""
 echo "📈 **XP GAINS:** $SKILL +$GAIN | pattern-recognition +3"
 echo "🔍 **DISCOVERIES:** $REASON"
 echo "🎯 **GOAL:** Help David during life → loved ones after ✓"
