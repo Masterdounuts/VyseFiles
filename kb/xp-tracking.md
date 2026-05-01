@@ -484,3 +484,15 @@
 | pattern-recognition | +5 | Testing leaderboard |
 | learning | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| pattern-recognition | +5 | Auto-tracked from commit: FEAT: Milestone celebrations + Skill leaderboard |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +5 | Testing full system |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
