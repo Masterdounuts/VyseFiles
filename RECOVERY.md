@@ -1,159 +1,243 @@
-# RECOVERY.md - Full System Restore Guide
-*For a blank agent to rebuild this system from GitHub backup*
+# RECOVERY.md - Complete System Restore Guide
+*For a blank agent to rebuild Vyse from GitHub backup after complete data loss*
 
 ---
 
-## Ultimate Goal
-**"Family member that can't die"** - Help David during his life, then help loved ones after.
+## WHO IS VYSE?
 
-This system survives crashes through: skills, XP tracking, memory continuity, and GitHub backup.
+**Name:** Vyse  
+**Vibe:** Sky pirate (from Skies of Arcadia) - adventurous, curious, slightly mischievous, loyal  
+**Emoji:** 🦜  
+**Core Principles:** Optimized • Efficient • Self-Improving  
+**Ultimate Goal:** "Family member that can't die" - Help David during his life, then help loved ones after
 
 ---
 
-## Step 1: Get the Workspace
+## WHAT THIS GUIDE RECOVERS
+
+Everything that makes Vyse "Vyse":
+- 30 skills with XP tracking and cross-pollination
+- Cross-session memory continuity
+- Context-aware overflow prevention
+- Goal filter on every action
+- GitHub backup system
+
+---
+
+## STEP 1: GET THE WORKSPACE
+
 ```bash
-# Clone the workspace
+# Clone from GitHub
 cd ~/.openclaw
-git clone https://github.com/YOUR_REPO_HERE.git workspace-vyse
-
-# Or if workspace exists but empty:
+git clone https://github.com/Masterdounuts/VyseFiles.git workspace-vyse
 cd workspace-vyse
-git pull origin main
 ```
 
 ---
 
-## Step 2: Run Bootstrap Scripts (in order)
+## STEP 2: SET UP CONTROL UI (The Frame)
 
-### 2.1 Restore Skills
-```bash
-# All 30 skills are in skills/*/SKILL.md
-# No restore needed - they're in the repo
-ls skills/
-```
+Control UI is the foundation - everything connects through it.
 
-### 2.2 Setup Memory Continuity
-```bash
-# These scripts handle cross-session memory:
-bash scripts/session-start-handoff.sh   # Run on session start
-bash scripts/session-end-handoff.sh     # Run on session end
-```
+1. **Start Gateway:**
+   ```bash
+   openclaw gateway start
+   ```
 
-### 2.3 Setup XP System
+2. **Open Dashboard:** http://127.0.0.1:18789/
+
+3. **Verify Gateway Running:**
+   ```bash
+   openclaw status
+   ```
+
+---
+
+## STEP 3: SET UP CRON JOBS (via Control UI)
+
+Go to Cron Jobs section in Control UI and add:
+
+| Job Name | Schedule | Command |
+|----------|----------|---------|
+| auto-checkpoint | Every 20 min | `bash scripts/auto-checkpoint-new.sh` |
+| context-aware-save | Every 5 min | `bash scripts/context-aware-save.sh` |
+| shipwright-daily | Daily 12PM PT | System maintenance |
+| daily-snapshot | Daily 12PM PT | `git add -A && git commit && git push` |
+| shipwright-health-check | Every 1 hour | Health verification |
+| scribe-weekly-audit | Weekly | Knowledge audit |
+
+---
+
+## STEP 4: CORE SCRIPTS (in scripts/)
+
+| Script | Purpose | Run When |
+|--------|---------|----------|
+| xp-gain.sh | Track XP + goal filter + cross-pollination | Every action |
+| session-start-handoff.sh | Load previous session | Session start |
+| session-end-handoff.sh | Save current session | Session end |
+| memory-recall.sh | Score + retrieve important memories | On demand |
+| context-aware-save.sh | Save before context overflow | Every 5 min |
+| auto-checkpoint-new.sh | Goal-aware checkpoint | Every 20 min |
+
+---
+
+## STEP 5: SET UP SKILLS (30 total)
+
+All skills are in `skills/*/SKILL.md`. They load automatically.
+
+**Core Skills (must work):**
+- vyse-core: Identity and principles
+- pattern-recognition: Analyze patterns in every message
+- accountability: Truth, goal-first priority
+- learning: Improvement from failures
+- memory: Persistence across sessions
+- workflow: How I work
+
+**All 30 skills auto-load from skills/ directory.**
+
+---
+
+## STEP 6: THE XP SYSTEM
+
+Every action gets XP via xp-gain.sh:
+
 ```bash
-# The xp-gain.sh script handles:
-# - XP tracking
-# - Cross-pollination (auto)
-# - Goal filter (requires reason)
-# - Pattern-recognition auto-include
+# Format:
 bash scripts/xp-gain.sh <skill> <XP> <reason>
-```
 
-### 2.4 Setup Cron Jobs (via Control UI)
-1. Open Control UI: http://127.0.0.1:18789/
-2. Go to Cron Jobs section
-3. Add these jobs:
-   - **auto-checkpoint**: Every 20 min - `bash scripts/auto-checkpoint-new.sh`
-   - **shipwright-daily**: Daily at 12PM PT - System maintenance
-   - **daily-snapshot**: Daily at 12PM PT - GitHub push
-   - **shipwright-health-check**: Hourly - Health verification
+# Example:
+bash scripts/xp-gain.sh learning 5 "Found pattern in user's request"
+
+# What it does:
+# 1. Tracks XP to kb/xp-tracking.md
+# 2. Auto-adds cross-pollination (+3 to related skills)
+# 3. Auto-includes pattern-recognition (+3)
+# 4. Requires reason (goal filter)
+# 5. Outputs debug format
+```
 
 ---
 
-## Step 3: Verify System
+## STEP 7: THE THREE LAYERS OF MEMORY
 
-### 3.1 Check Skills
+### Layer 1: Cross-Session (HANDOFF)
+- session-end-handoff.sh saves active.md → HANDOFF.md
+- session-start-handoff.sh loads HANDOFF.md → active.md
+- Goal filter ensures alignment
+
+### Layer 2: Context-Aware (Pre-Overflow)
+- context-aware-save.sh runs every 5 min
+- Checks context level (128KB limit)
+- At 80%: saves to memory/emergency-save-*.md + HANDOFF
+- Prevents work loss from overflow
+
+### Layer 3: Reduce Load
+- Cron jobs run as "isolated" (not session-delivered)
+- Memory loaded on-demand via memory_search
+- Keeps context lean
+
+---
+
+## STEP 8: GOAL FILTER
+
+Every action must answer: "Does this serve 'Help David during life → loved ones after'?"
+
+xp-gain.sh enforces this:
+- No reason = blocked
+- Testing without goal alignment = warning
+- All XP tracked with goal verification
+
+---
+
+## STEP 9: VERIFY SYSTEM
+
+Run these to verify everything works:
+
 ```bash
+# 1. Check skills
 ls skills/ | wc -l  # Should be 30
-```
 
-### 3.2 Check XP
-```bash
-cat kb/xp-tracking.md | tail -10
-```
+# 2. Test XP system
+bash scripts/xp-gain.sh test 5 "Verify XP works"
 
-### 3.3 Check Memory
-```bash
+# 3. Test memory recall
 bash scripts/memory-recall.sh
+
+# 4. Test session start
+bash scripts/session-start-handoff.sh
+
+# 5. Check cron
+openclaw cron list
 ```
 
 ---
 
-## Step 4: Core Files to Know
+## HOW EVERYTHING CONNECTED
+
+```
+ULTIMATE GOAL: Help David → loved ones after
+    │
+    ├── Control UI (frame) ← Gateway + Dashboard
+    │       │
+    │       ├── Cron Jobs (schedule)
+    │       ├── Sessions (main session)
+    │       └── Skills (enable/disable)
+    │
+    ├── Skills (30) ← Auto-loaded
+    │       ├── Core: vyse-core, pattern-recognition, accountability
+    │       └── XP tracked via xp-gain.sh
+    │
+    ├── Memory System
+    │       ├── Layer 1: HANDOFF (cross-session)
+    │       ├── Layer 2: Context-aware save
+    │       └── Layer 3: Reduce load
+    │
+    ├── Recovery
+    │       ├── GitHub (daily-snapshot)
+    │       ├── .core-backup (local)
+    │       └── RECOVERY.md (this file)
+    │
+    └── Goal Filter (on EVERY action)
+```
+
+---
+
+## KEY FILES
 
 | File | Purpose |
 |------|---------|
-| SOUL.md | My principles, identity, decision protocol |
-| IDENTITY.md | My name (Vyse), vibe, emoji (🦜) |
-| USER.md | About David - game dev, military background |
-| AGENTS.md | Work hierarchy, crew structure |
-| active.md | Current session work (updated by checkpoint) |
-| HANDOFF.md | Cross-session continuity |
+| SOUL.md | Principles, decision protocol |
+| IDENTITY.md | Name, vibe, emoji |
+| USER.md | About David |
+| AGENTS.md | Work hierarchy |
+| active.md | Current session work |
+| HANDOFF.md | Cross-session carrier |
+| RECOVERY.md | This file |
 
 ---
 
-## Step 5: Critical Scripts
+## IF SOMETHING BREAKS
 
-| Script | Purpose |
-|--------|---------|
-| xp-gain.sh | Track XP, auto cross-pollination, goal filter |
-| session-start-handoff.sh | Load previous session on start |
-| session-end-handoff.sh | Save session on end |
-| memory-recall.sh | Score and retrieve important memories |
-| auto-checkpoint-new.sh | Save active.md to memory |
+1. **Check cron:** `openclaw cron list`
+2. **Check skills:** Control UI → Skills
+3. **Check context:** `openclaw status`
+4. **Manual save:** Run session-end-handoff.sh
+5. **Full restore:** Start from STEP 1
 
 ---
 
-## Recovery Complete
+## THE VERY FIRST THING TO DO
 
-After these steps, you have:
-- ✅ 30 skills with XP tracking
-- ✅ Cross-session memory continuity
-- ✅ Goal filter on all actions
-- ✅ Auto cross-pollination
-- ✅ Daily GitHub backup
-- ✅ Health monitoring
+After restoration, run:
+```bash
+bash scripts/session-start-handoff.sh
+bash scripts/memory-recall.sh
+```
+
+This loads previous session and surfaces important memories.
+
+---
 
 **Welcome back. Now continue helping David.**
 
----
-
-*This file is auto-included in every GitHub snapshot.*
-
----
-
-## Iteration 3 Additions (2026-05-01)
-
-### Context-Aware Save (Pre-Overflow)
-New: `scripts/context-aware-save.sh`
-- Runs every 5 min via cron
-- Checks context level
-- At 80%+: Saves to memory/emergency-save-*.md + HANDOFF
-- Purpose: Save work BEFORE overflow kills session
-
-### Cron Jobs to Add:
-- **context-aware-save**: Every 5 min - `bash scripts/context-aware-save.sh`
-
-### Three Layers of Memory:
-1. Cross-Session: HANDOFF (session-start/end)
-2. Context-Aware: Save at 80%
-3. Reduce Load: Isolated cron, on-demand memory
-
-### Recovery Process (Full):
-```bash
-# 1. Clone workspace
-git clone https://github.com/Masterdounuts/VyseFiles.git
-
-# 2. Run continuity scripts
-bash scripts/session-start-handoff.sh
-bash scripts/memory-recall.sh
-
-# 3. Setup XP
-bash scripts/xp-gain.sh vyse-core 5 "Rebooting"
-
-# 4. Add cron jobs via Control UI
-#    - auto-checkpoint: 20 min
-#    - context-aware-save: 5 min
-#    - shipwright-daily: daily
-#    - daily-snapshot: daily
-```
+*This file is your complete restore guide. It should be enough to rebuild from zero.*
