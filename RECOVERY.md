@@ -33,6 +33,25 @@ git clone https://github.com/Masterdounuts/VyseFiles.git workspace-vyse
 cd workspace-vyse
 ```
 
+### THE BACKUP SYSTEM (Three Layers)
+
+| Layer | Location | Purpose |
+|-------|----------|---------|
+| 1. GitHub | GitHub repo | Ultimate - 2+ weeks history, immutable |
+| 2. .core-backup/ | Local | Quick restore if workspace dies |
+| 3. .core-backup-archive/ | GitHub | Backup of local backup |
+
+**Why three layers?**
+- .core-backup/ has been lost before
+- .core-backup-archive/ is a snapshot IN GitHub of what .core-backup SHOULD have
+- If local dies, clone fresh → copy from .core-backup-archive/ → continue
+
+**In a total loss scenario:**
+1. Clone GitHub repo fresh
+2. Check .core-backup-archive/ for the best backup snapshot
+3. Copy .core-backup-archive/ → .core-backup/
+4. Continue from there
+
 ---
 
 ## STEP 2: SET UP CONTROL UI (The Frame)

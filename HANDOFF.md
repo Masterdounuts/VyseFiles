@@ -1,3 +1,13 @@
+# Session Handoff - 2026-05-01 20:39 UTC
+*Auto-save from context-aware-save*
+
+🎯 **ULTIMATE GOAL:** Help David during life → loved ones after
+
+---
+# Active Session - 2026-05-01 19:42 UTC (RECOVERED)
+
+## Loaded from Previous Session:
+
 # Session Handoff - 2026-05-01 19:28 UTC
 *Auto-generated from active.md - GOAL-AWARE*
 
@@ -34,3 +44,6 @@
 - Loads HANDOFF.md if exists
 - Runs memory-recall automatically
 - Integrated into BOOTSTRAP.md
+
+---
+*Auto-recovered at session start: 2026-05-01 19:42 UTC*

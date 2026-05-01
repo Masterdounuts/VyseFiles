@@ -1,83 +1,13 @@
-# Active Session - 2026-05-01 18:43 UTC
+# Active Session - 2026-05-01 19:42 UTC (RECOVERED)
 
-## Loaded from Previous Session (HANDOFF):
+## Loaded from Previous Session:
 
-# Session Handoff
-*Auto-generated. Loaded on session start.*
+# Session Handoff - 2026-05-01 19:28 UTC
+*Auto-generated from active.md - GOAL-AWARE*
 
----
-
-**Last Updated:** 2026-04-25 21:29 UTC
-
-**Status:** Workspace reorganization complete
-
-**Just Done:**
-- Reorganized workspace: 34 → 19 root files
-- Moved docs to kb/: CONTROL-UI, SUBAGENTS, DASHBOARD
-- Fixed links: knowledge.md, projects.md
-- Updated ORPHANS.md with new structure
-- PENDING.md has "Just Finished" section for recall
-
-**Stock:**
-- Positions in kb/stocks/positions/ (subagent owns)
-- HANDOFF no longer carries stock data
+🎯 **ULTIMATE GOAL:** Help David during life → loved ones after
 
 ---
-
-*Lean: Read PENDING.md for recent work.*
----
-*Loaded at session start: 2026-05-01 18:43 UTC*
-
----
-
-## Memory Continuity (2026-05-01 18:43 UTC)
-
-### Problem Identified
-- active.md was stale (14 hours old)
-- HANDOFF.md was stale (from April 25)
-- No cross-session continuity
-
-### Solution Implemented
-1. **session-start-handoff.sh** - Loads HANDOFF.md → active.md on session start
-2. **session-end-handoff.sh** - Saves active.md → HANDOFF.md on session end
-3. **auto-checkpoint** - Already updates memory files
-
-### Testing
-- Ran session-start-handoff.sh - SUCCESS
-- active.md now shows loaded handoff data
-
-### Next
-- Run session-end-handoff.sh before session ends
-- Add to cron for auto-run
-
----
-
-## Memory Filter & Recall (2026-05-01 18:48 UTC)
-
-### Goal Filter
-- Added to session-end-handoff.sh
-- Checks if content aligns with "Help David during life → loved ones after"
-- Flags non-aligned content
-
-### Recall System
-- Created memory-recall.sh
-- Scores memories by:
-  - Goal alignment (+10)
-  - Learning/discoveries (+5)
-  - Recent timestamp (+3)
-  - Decisions made (+5)
-  - System status (+3)
-
-### Top Scored Memories
-1. TIMELINE-05-01-DETAILED.md (26)
-2. 2026-05-01.md (26)
-3. 2026-04-30.md (23)
-
----
-
-## RECOVERY.md - Backup System (2026-05-01 18:54 UTC)
-
-### What Was Created
 - RECOVERY.md - Complete restore guide for blank agent
 - Contains: Step-by-step recovery instructions
 - Includes: All scripts, skills, cron jobs setup
@@ -108,3 +38,6 @@
 - Loads HANDOFF.md if exists
 - Runs memory-recall automatically
 - Integrated into BOOTSTRAP.md
+
+---
+*Auto-recovered at session start: 2026-05-01 19:42 UTC*
