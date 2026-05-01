@@ -16,7 +16,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 ### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 60/60 (next level at 60)
+**XP:** 70/70 (RON)
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
@@ -179,3 +179,12 @@ When you solve a problem:
 - "error", "failed", "not working"
 - "health check", "recover"
 - "FIXES", "what's broken"
+
+---
+**CORE SKILL** - Always used to achieve the ultimate goal
+Full: Help David during his life, then help loved ones after
+
+### References
+- workflow - Process
+- shipwright - Health maintenance
+- memory - Persist fixes

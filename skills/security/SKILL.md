@@ -116,3 +116,7 @@ trigger phrases: "security, hardening, access, permissions"
 - "security", "harden", "permissions"
 - "boundary", "safety", "risk"
 - "can you", "allowed to"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

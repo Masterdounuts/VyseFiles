@@ -232,3 +232,7 @@ AI-synthesized answer with citations from Google Search.
 - "fetch", "get page", "scrape"
 - "browser", "navigate", "click"
 - "login", "form", "screenshot"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

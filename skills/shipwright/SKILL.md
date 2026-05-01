@@ -244,3 +244,7 @@ This is RON-level: self-improvement happens automatically, not manually.
 - "fix", "debug", "recovery"
 - "what's broken", "check health"
 - "FIXES.md"
+### References
+- system - Health
+- memory - Persist fixes
+- workflow - Process

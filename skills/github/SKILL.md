@@ -268,3 +268,7 @@ chmod +x .git/hooks/post-commit
 - "push", "commit", "persist"
 - "search github", "did we document"
 - "backup", "version control"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

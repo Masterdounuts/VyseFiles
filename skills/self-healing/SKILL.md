@@ -179,3 +179,8 @@ Detect → Log → Try Fix (3x) → If fail → Alert David + Log
 - Session errors: logged and reviewed
 
 This is now AUTO, not just documented.
+
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

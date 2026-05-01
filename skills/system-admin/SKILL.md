@@ -165,4 +165,11 @@ sudo apt update && sudo apt upgrade -y
 
 ---
 
-*System admin for RON-level autonomy*
+*System admin for RON-level autonomy*### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment
+### References
+- system - Health
+- learning - Improvement
+- accountability - Goal alignment

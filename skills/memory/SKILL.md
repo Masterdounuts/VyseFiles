@@ -37,7 +37,7 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 - **read** - Direct file reads for full context
 - Decision tree: memory_search for recall → memory_get for snippets → read for full
 
-**Max Level:** 7+ (grows with discoveries)
+**Max Level:** 9 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -69,11 +69,12 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 ## Wake-up Sequence (On Every Start)
 
-1. Read TODO.md → tasks for Vyse
-2. Read active.md → current work
-3. Read PENDING.md → queued items
-4. Read HANDOFF.md → manual handoff from last session
-5. Read memory/active.md → context from today
+0. Read SOUL.md → protocol (accountability, XP format, rules)
+
+1. Read active.md → current work
+2. Read PENDING.md → queued items
+3. Read HANDOFF.md → manual handoff from last session
+4. Read memory/active.md → context from today
 
 ## On Context Reset
 
@@ -103,3 +104,11 @@ Key decisions go to `memory/decisions.md`:
 - "remember", "what were we working on"
 - "memory", "recall", "context"
 - "check active", "check handoff", "check memory"
+---
+**CORE SKILL** - Always used to achieve the ultimate goal
+Full: Help David during his life, then help loved ones after
+
+### References
+- vyse-core - Identity
+- learning - Improvement
+- system - Health recovery

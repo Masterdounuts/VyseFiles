@@ -115,3 +115,8 @@ hour_utc=$(date -u +'%H')
 | Format | YYYY-MM-DD HH:MM ET |
 
 This ensures consistency when rebuilding from backup.
+
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

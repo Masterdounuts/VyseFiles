@@ -115,3 +115,7 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 - "project", "game dev", "Skies of Arcadia"
 - "what are you working on"
 - "your projects"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

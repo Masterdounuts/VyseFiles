@@ -246,3 +246,12 @@ This is now ACTIVE.
 - UTC says: 2026-04-29 06:49 UTC (next day)
 - David's PT: 2026-04-29 11:49 PM PT (same day David sees)
 - Document as: 2026-04-29 11:49 PM PT
+
+---
+**CORE SKILL** - Always used to achieve the ultimate goal
+Full: Help David during his life, then help loved ones after
+
+### References
+- accountability - Truth and goal-first priority
+- memory - Persistence
+- learning - Improvement

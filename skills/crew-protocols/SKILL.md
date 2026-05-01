@@ -218,3 +218,7 @@ Add to skill frontmatter to control behavior.
 - "protocol", "crew", "how we decide"
 - "thinking", "reasoning", "learning"
 - "communication", "style"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

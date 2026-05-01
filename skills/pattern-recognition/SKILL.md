@@ -15,7 +15,7 @@ access: vyse-only
 
 ### Current Status: Level 7 - RON ⭐
 
-**XP:** 68/60 (next level at 60)
+**XP:** 85/85 (RON)
 
 | Skill | Level | XP | Notes |
 |-------|-------|-----|-------|
@@ -40,7 +40,7 @@ access: vyse-only
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 7+ (grows with discoveries)
+**Max Level:** 9 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -223,3 +223,7 @@ Store patterns in: `memory/patterns/`
 
 *Skill created: 2026-04-30*
 *Purpose: Global improvement engine for all skills*
+### References
+- learning - Learn from patterns
+- system - System patterns
+- workflow - Process patterns

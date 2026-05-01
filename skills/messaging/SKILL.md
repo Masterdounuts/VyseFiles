@@ -15,7 +15,7 @@ access: public
 
 ### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 50/60 (next level at 60)
+**XP:** 60/60 (RON)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -137,3 +137,7 @@ Action: {ACTION}
 
 *Merged 2026-04-29 from alerts + telegram*
 *Previously: alerts (6/7), telegram (3/7)*
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

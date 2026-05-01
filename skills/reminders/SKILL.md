@@ -14,7 +14,7 @@ trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "al
 
 ### Current Status: Level 6 - Expert 🟡🟡🟡
 
-**XP:** 35/30 (over max) (next level at 30)
+**XP:** 40/40 (RON)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
@@ -140,3 +140,7 @@ Action:
 | Reminder patterns | +1 to pattern-recognition |
 
 **Path to RON:** Perfect reminder delivery, conditional intelligence, self-managed schedules
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

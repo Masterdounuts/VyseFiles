@@ -139,3 +139,7 @@ openclaw message send --channel telegram --target -1003941303567 --message "Upda
 ---
 
 *Skill maintained by Vyse — general Telegram config in [[skills/telegram|telegram]]*
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

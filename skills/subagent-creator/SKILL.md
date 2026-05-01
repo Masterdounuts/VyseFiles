@@ -176,3 +176,8 @@ You ARE the expert. No helpers. You do the work yourself.
 4. Define escalation (when do they ask for help?)
 5. Write system prompt using template above
 6. Add to crew in AGENTS.md
+
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

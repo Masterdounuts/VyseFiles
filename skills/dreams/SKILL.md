@@ -102,3 +102,7 @@ Creative reflections, vision-casting, and insights that emerge from processing. 
 - "dreams", "vision", "brainstorm"
 - "creative", "big picture"
 - "what do you dream about"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

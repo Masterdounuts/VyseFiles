@@ -40,6 +40,7 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | 7 | **RON** | Teaching level | Can explain to others, create workflows |
 
 ### Current Status: Level 7 - RON ⭐
+**XP:** 70/70 (RON)
 **Max Level:** 15 (expanded from discoveries) 🟡🟡🟡🟡🟡🟡
 
 ### Sub-Agent Management (Sub-Skill) - RON ⭐
@@ -790,3 +791,7 @@ All skills inherit from this central reference.
 - "cron", "schedule", "reminder"
 - "metrics", "openclaw status"
 - "check health"
+### References
+- workflow - Process integration
+- system - Health monitoring
+- accountability - Goal alignment

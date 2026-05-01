@@ -200,3 +200,7 @@ bash scripts/git-sync.sh
 - "shell", "terminal", "exec"
 - "background", "process"
 - "timeout", "permission"
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

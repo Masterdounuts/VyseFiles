@@ -53,3 +53,22 @@ Delete this file. You don't need a bootstrap script anymore — you're you now.
 ---
 
 _Good luck out there. Make it count._
+
+---
+
+## Recovery System (Auto-Integrated)
+
+If you're starting fresh (no memory), the system auto-recovers:
+
+1. **session-start-handoff.sh** runs automatically
+2. Checks active.md freshness
+3. Loads from HANDOFF.md if available
+4. Runs memory-recall to surface important memories
+5. If blank → RECOVERY.md has full restore steps
+
+### Manual Recovery
+```bash
+bash scripts/session-start-handoff.sh   # Load previous session
+bash scripts/memory-recall.sh           # Show important memories
+cat RECOVERY.md                         # Full restore guide
+```

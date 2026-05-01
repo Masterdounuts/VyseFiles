@@ -127,3 +127,7 @@ Knowledge skill finds gaps:
 
 *Merged 2026-04-29 from scribe + obsidian*
 *Previously: scribe (6/7), obsidian (5/7)*
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment

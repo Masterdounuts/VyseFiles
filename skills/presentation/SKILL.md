@@ -14,7 +14,7 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 
 ### Current Status: Level 6 - Expert 🟡🟡🟡
 
-**XP:** 35/30 (over max) (next level at 30)
+**XP:** 40/40 (RON)
 
 | Sub-Skill | Level | XP | Notes |
 |-----------|-------|-----|-------|
@@ -33,7 +33,7 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 7+ (grows with discoveries)
+**Max Level:** 9 (grows with discoveries)
 
 | Discovery | Adds To Max |
 |------------|-------------|
@@ -90,3 +90,7 @@ When using presentation skill:
 | Step progress | 🔄 In Progress | Today |
 
 *Created: 2026-04-30 - Based on fresh session analysis*
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment
