@@ -318,3 +318,12 @@
 | workflow | +5 | Plan vs verify: small work = verify first, large work = use projects skill |
 | control-ui | +3 | Cross-pollination: workflow connects to frame |
 | pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| projects | +10 | Plan iterations: refine not replace, integrate not override |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| projects | +10 | Iteration 2: Goal-aware checkpoint - integrates with control UI cron + goal filter |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| memory | +10 | Iteration 3: Context-aware save - triggers before overflow at 80% |
+| learning | +3 | Cross-pollination: memory improvement boosts learning |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| projects | +10 | Iteration 3 documented - cross-session + context management complete |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |

@@ -119,3 +119,111 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Plan Iterations & Integration (2026-05-01)
+
+### The Rule
+**Plans refine, not replace existing systems.**
+
+### Before Adding Any Plan
+1. Check what already exists
+2. See if integration is possible
+3. Refine plan to fit, not replace
+4. Show how it integrates
+
+### Iteration Process
+- First plan → Show it
+- User feedback → Refine
+- More iterations → Refine more
+- Not: Build big plan → ignore existing → break things
+
+### Examples
+❌ Wrong: New XP system replacing old (breaks tracking)
+✅ Right: New XP system integrates with old (enhances, not replaces)
+
+### Integration Check
+Before presenting any project plan:
+- What exists? → Reference it
+- Does it fit? → Show integration
+- Does it enhance? → Add to it
+
+---
+
+## Iteration 3: Cross-Session Continuity & Context Management
+
+### Planning Process (2026-05-01)
+We planned cross-session continuity and context overflow prevention using the projects skill.
+
+### Key Learnings
+
+#### 1. Plans Refine, Don't Replace Existing Systems
+- Before adding: Check what EXISTS
+- Integration FIRST, not override
+- Example: session-end-handoff integrates into auto-checkpoint
+
+#### 2. Three Layers of Memory System
+| Layer | Purpose | Works? |
+|-------|---------|--------|
+| Cross-Session | HANDOFF carry work | ✅ |
+| Context-Aware | Save before overflow | ✅ (needs cron) |
+| Reduce Load | Keep context lean | ✅ (isolated cron) |
+
+#### 3. Context Fill Sources (REAL causes)
+- Message history (NOT files)
+- Cron job deliveries to session
+- Debug output
+- NOT: MEMORY.md or workspace files
+
+#### 4. Issues Have Fixes That Align With Goal
+Every issue we found had a fix. The goal filter ensures alignment:
+- Does this serve "Help David during life → loved ones after?"
+- If YES → implement
+- If NO → don't
+
+#### 5. Integration Into Control UI
+- Control UI handles cron scheduling
+- Our goal system adds the "why" (filter, purpose)
+- Base: Control UI
+- Goal-aware: Our enhancement
+
+#### 6. Verify-First Protocol
+- Small work: Build → Verify → Show
+- Large work (projects): Plan → Refine → Implement
+- Iterate until no issues remain
+
+### The Final Integrated System
+```
+ULTIMATE GOAL: Help David → loved ones after
+    │
+    ├── Layer 1: Cross-Session (HANDOFF)
+    │       └── session-start/end-handoff.sh
+    ├── Layer 2: Context-Aware
+    │       └── context-aware-save.sh (80% trigger)
+    ├── Layer 3: Reduce Load
+    │       ├── Isolated cron jobs
+    │       └── On-demand memory
+    └── Recovery: RECOVERY.md + .core-backup + GitHub
+```
+
+### What We Built
+- session-start-handoff.sh: Load previous session
+- session-end-handoff.sh: Save with goal filter
+- context-aware-save.sh: Pre-overflow save
+- memory-recall.sh: Score by importance
+- xp-gain.sh: XP + goal filter + cross-pollination
+
+### Issues Addressed
+1. ✅ HANDOFF stale → now goal-aware, updates each checkpoint
+2. ✅ Context overflow → save at 80%
+3. ✅ Context load → isolated cron, on-demand memory
+4. ✅ Recovery → RECOVERY.md
+5. ✅ No verify before showing → now in workflow
+6. ✅ Plans refine → integration check added
+
+### References Added
+- memory: Cross-session continuity
+- system: Context management
+- workflow: Verify-first protocol
+- control-ui: Cron integration on top of this iteration - see kb/projects/iteration-3.md for full details.
