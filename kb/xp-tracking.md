@@ -369,3 +369,17 @@
 | accountability | +10 | Added corrections to memory - documented what David got wrong |
 | vyse-core | +3 | Cross-pollination: accountability enhances identity |
 | pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| accountability | +15 | Fixed memory + skills - corrected CLI/cron mistake from wrong info |
+| vyse-core | +3 | Cross-pollination: accountability enhances identity |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| pattern-recognition | +10 | Analyzed CLI vs custom scripts - found Rube Goldbergs |
+| learning | +3 | Cross-pollination: pattern recognition boosts learning |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| system-admin | +3 | Context-aware save executed via cron |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| system | +15 | Simplified Rube Goldbergs - context-monitor uses CLI, core-files uses git |
+| workflow | +3 | Cross-pollination: system health boosts workflow |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
+| pattern-recognition | +15 | Audited all 14 scripts - found 7 that can be deleted/archived |
+| learning | +3 | Cross-pollination: pattern recognition boosts learning |
+| pattern-recognition | +3 | Core skill: analyzing patterns in message |
