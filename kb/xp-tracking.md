@@ -523,3 +523,15 @@
 | system | +5 | Verify dynamic max shows |
 | workflow | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| system | +5 | Auto-tracked from commit: FIX: Dynamic max now expands when hitting limit |
+| workflow | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +5 | Testing content-based max |
+| workflow | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

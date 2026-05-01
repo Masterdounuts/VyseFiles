@@ -7,7 +7,7 @@ trigger phrases: "learn, training, improve, practice, drill, failure, mistake, w
 # Learning & Evolution Skill
 
 **Level:** 7/7
-**Max Level:** 11 (grows with discoveries) 🆙
+**Max Level:** 32 (grows with discoveries) 🆙
 
 **Purpose:** Self-improvement through every interaction
 
