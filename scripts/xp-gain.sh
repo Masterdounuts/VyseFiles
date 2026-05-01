@@ -7,12 +7,18 @@ SKILL=$1
 GAIN=${2:-5}
 REASON=${3:-}
 
-# Function to get skill level (just the number)
+# Function to get skill level (reads dynamic max)
 get_level() {
     local s=$1
     local file="/home/openclaw/.openclaw/workspace-vyse/skills/$s/SKILL.md"
     if [ -f "$file" ]; then
-        grep "Current Status:" "$file" | head -1 | sed 's/.*Level \([0-9]*\).*/Level \1\/7/'
+        # Get current level number
+        local level=$(grep "Current Status:" "$file" | head -1 | sed 's/.*Level \([0-9]*\).*/\1/')
+        # Get max level (dynamic - may be higher than 7)
+        local max=$(grep "Max Level:" "$file" | head -1 | grep -oE '[0-9]+' | head -1)
+        # Default to 7 if not found
+        max=${max:-7}
+        echo "Level $level/$max"
     else
         echo "L1/7"
     fi
