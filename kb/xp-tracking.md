@@ -496,3 +496,15 @@
 | pattern-recognition | +5 | Testing full system |
 | learning | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| system | +5 | Auto-tracked from commit: FEAT: Full auto leveling v2 - health, streaks, history, daily bonus, debug log |
+| workflow | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +3 | Full output test |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
