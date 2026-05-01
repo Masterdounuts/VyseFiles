@@ -61,6 +61,17 @@ auto_level_up() {
         local new_level=$((current_level + 1))
         local next_threshold=$((xp_next + 50))
         
+        # Check for milestone
+        local milestone=""
+        case $new_level in
+            5) milestone=" ⭐⭐⭐⭐⭐";;
+            6) milestone=" 🌟🌟🌟🌟";;
+            7) milestone=" 🌟🌟🌟";;
+            8) milestone=" 🌟🌟";;
+            9) milestone=" 🌟";;
+            10) milestone=" 👑👑👑👑👑";;
+        esac
+        
         # Update level in file (only first occurrence - the main one)
         sed -i "0,/Current Status: Level $current_level/{s/Current Status: Level $current_level/Current Status: Level $new_level/}" "$file"
         
@@ -68,8 +79,23 @@ auto_level_up() {
         local overflow=$((xp_current - xp_next))
         sed -i "0,/XP: $xp_current\/$xp_next/{s/XP: $xp_current\/$xp_next/XP: $overflow\/$next_threshold/}" "$file"
         
-        echo "🎉 LEVEL UP! $s: $current_level → $new_level"
+        echo "🎉 LEVEL UP! $s: $current_level → $new_level$milestone"
     fi
+}
+
+# Function to get skill leaderboard
+get_leaderboard() {
+    echo "🏆 **SKILL LEADERBOARD:**"
+    for skill_dir in $WORKSPACE/skills/*/; do
+        local skill=$(basename "$skill_dir")
+        local info=$(get_level_info "$skill")
+        local level=$(echo "$info" | cut -d'|' -f1)
+        local max=$(echo "$info" | cut -d'|' -f2)
+        local xp=$(echo "$info" | cut -d'|' -f3)
+        echo "$level|$max|$xp|$skill"
+    done | sort -t'|' -k1,1nr -k3,3nr | head -5 | while IFS='|' read -r level max xp name; do
+        echo "   $name: L$level/$max ($xp XP)"
+    done
 }
 
 # Function to find skills near level-up
@@ -165,6 +191,8 @@ echo "   vyse-core: $SELF_LEVEL"
 if [ -n "$NEAR_LEVELUP" ]; then
     echo "   ⚡ Near level-up: $NEAR_LEVELUP"
 fi
+echo ""
+get_leaderboard
 echo ""
 echo "📈 **XP GAINS:** $SKILL +$GAIN | pattern-recognition +3"
 echo "🔍 **DISCOVERIES:** $REASON"

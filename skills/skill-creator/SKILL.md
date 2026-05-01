@@ -14,7 +14,7 @@ trigger phrases: "create skill, new skill, skill template"
 
 **Goal:** Reach RON Level (7/7) in skill creation
 
-### Current Status: Level 8 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 9 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 **XP:** 85/70 (RON - extra goes to Dynamic Max)
 
