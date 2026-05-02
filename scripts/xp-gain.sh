@@ -342,3 +342,21 @@ echo ""
 echo "[skill:$SKILL] [skill:pattern-recognition] 🦜"
 
 log_debug "xp-gain completed successfully"
+# Skill recommendation function
+get_recommendation() {
+    local skill=$1
+    local file="$WORKSPACE/skills/$skill/SKILL.md"
+    
+    if [ ! -f "$file" ]; then
+        return
+    fi
+    
+    local lines=$(wc -l < "$file")
+    local sections=$(grep -c '^## ' "$file")
+    
+    if [ "$lines" -lt 50 ]; then
+        echo "💡 Tip: Add more content to $skill (only $lines lines)"
+    elif [ "$sections" -lt 5 ]; then
+        echo "💡 Tip: $skill needs more sections ($sections found)"
+    fi
+}

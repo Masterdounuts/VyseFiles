@@ -570,3 +570,17 @@
 | automation | +5 | Testing automation cross-pollination |
 | pattern-recognition | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: FIX: Cross-pollination now enabled for ALL skills (default to pattern-recognition) |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| web | +10 | Testing full system with web skill |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
