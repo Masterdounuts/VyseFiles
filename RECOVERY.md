@@ -260,3 +260,32 @@ This loads previous session and surfaces important memories.
 **Welcome back. Now continue helping David.**
 
 *This file is your complete restore guide. It should be enough to rebuild from zero.*
+
+---
+
+## CRITICAL FILES (P0/P1/P2)
+
+*For data loss prevention - Updated from OUTAGE-RECOVERY.md*
+
+### P0 - Must Always Preserve
+| File | Why |
+|------|-----|
+| IDENTITY.md | My personality/who I am |
+| USER.md | Your preferences & context |
+| MEMORY.md | Long-term memory pointers |
+| HEARTBEAT.md | Trading positions/state |
+
+### P1 - Important
+| File | Why |
+|------|-----|
+| SOUL.md | Core principles |
+| Skills in skills/ | My capabilities |
+
+### P2 - Should Preserve
+| File | Why |
+|------|-----|
+| memory/*.md | Daily context files |
+| kb/crew/* | Crew protocols |
+| memory/core/* | Core memory (user, goals, contacts) |
+
+*Added: 2026-05-02 - After consolidating outdated docs*

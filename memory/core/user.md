@@ -26,3 +26,4 @@
 - Show status on actions
 
 *Core memory - loaded on every session start*
+- 2026-05-02 17:00: Memory integration is working

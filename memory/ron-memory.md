@@ -50,3 +50,4 @@
 | vyse:memory:daily_start | 2026-04-22 | 2026-05-02 17:21 |
 | vyse:memory:daily_format | YYYY-MM-DD.md | 2026-05-02 17:21 |
 | vyse:memory:daily_count | 13 | 2026-05-02 17:21 |
+| vyse:session:2026-05-02 | Memory integration: Rebuilt from Ron-Memory research, added 49 entries of OUR work (identity, boot, file, skill, memory, script, decision, project), guard system, daily logs going back 13 days | 17:25 |

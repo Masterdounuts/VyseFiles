@@ -1,33 +1,52 @@
 #!/bin/bash
-# Context-Aware Save - Simple pre-overflow save
+# Context-Aware Save - Brain-style save
 # Runs every 5 min via cron
 # Purpose: Save session before context overflow
+# FIXED: Pull from core memory sources, not accumulated active.md
 
 WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
-ACTIVE_FILE="$WORKSPACE/active.md"
 HANDOFF_FILE="$WORKSPACE/HANDOFF.md"
+CORE_DIR="$WORKSPACE/memory/core"
+RON_MEMORY="$WORKSPACE/memory/ron-memory.md"
 LOG_DIR="$WORKSPACE/logs"
 
-# Create logs dir if missing
 mkdir -p "$LOG_DIR"
 
 TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
 
-# Quick check - is context likely high?
-# We can't easily check from here without blocking
-# So we'll just do a quick save to HANDOFF
-
-# Update HANDOFF with current active state
+# Build handoff from CORE sources (like brain retrieving from long-term memory)
 {
     echo "# Session Handoff - $TIMESTAMP"
-    echo "*Auto-save from context-aware-save*"
+    echo "*Brain-style save: core memory only*"
     echo ""
     echo "🎯 **ULTIMATE GOAL:** Help David during life → loved ones after"
     echo ""
+    echo "## Core Memory (loads on recovery):"
+    echo ""
+    
+    # Pull from core memory files - the real persistent data
+    if [ -f "$CORE_DIR/user.md" ]; then
+        echo "### From user.md:"
+        head -10 "$CORE_DIR/user.md"
+        echo ""
+    fi
+    
+    if [ -f "$CORE_DIR/goals.md" ]; then
+        echo "### From goals.md:"
+        head -10 "$CORE_DIR/goals.md"
+        echo ""
+    fi
+    
+    # Key-value from ron-memory (most recent entries)
+    if [ -f "$RON_MEMORY" ]; then
+        echo "### Key Memory Entries:"
+        tail -20 "$RON_MEMORY"
+        echo ""
+    fi
+    
     echo "---"
-    # Only first 50 lines to keep it fast
-    head -50 "$ACTIVE_FILE" 2>/dev/null || echo "(active.md not found)"
+    echo "*Saved at $TIMESTAMP - Clean handoff, no accumulation*"
 } > "$HANDOFF_FILE"
 
-echo "✅ Context-aware save: $TIMESTAMP"
+echo "✅ Brain-style save: $TIMESTAMP"
 exit 0
