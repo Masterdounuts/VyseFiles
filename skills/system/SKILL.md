@@ -14,7 +14,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 10 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 15 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 70/70 (RON)
 
@@ -188,3 +188,27 @@ Full: Help David during his life, then help loved ones after
 - workflow - Process
 - shipwright - Health maintenance
 - memory - Persist fixes
+
+---
+
+## Chain Drill Insights (2026-05-02)
+
+### What We Learned
+- Level is representation, not capability
+- Content = real knowledge
+- Drill without new content = empty numbers
+
+### The Chain Reaction Formula
+```
+Skill A + XP → Cross-pollination → Skill B + XP
+           → pattern-recognition always +3
+           → Level-up cascades naturally
+```
+
+### Key Discovery
+**Growth = Real content added, not XP gained.**
+XP tracks work, but only content in skills = actual capability.
+
+---
+
+*Added after Chain Drill: documented real insights*

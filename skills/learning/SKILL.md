@@ -15,7 +15,7 @@ trigger phrases: "learn, training, improve, practice, drill, failure, mistake, w
 
 **Goal:** Reach RON Level (7/7) in learning/self-improvement
 
-### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 8 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 **XP:** 100/100 (next: RON+ at 100)
 
@@ -294,3 +294,29 @@ Full: Help David during his life, then help loved ones after
 - memory - Remember improvements
 - pattern-recognition - See patterns
 - system - Learn from errors
+
+---
+
+## Drill-Action-Content Loop (2026-05-02)
+
+### The Growth Formula
+```
+Drill (action) → Discovery (insight) → Content (skill file)
+                 ↑____________________|
+                    (feedback loop)
+```
+
+### What Made Teaching Grow
+- Before: 47 lines, basic structure
+- Drill → discovered "curriculum templates" needed
+- Added: 90 lines of real teaching content
+- Result: Level reflected actual depth
+
+### The Rule
+**Every drill action should add content, not just gain XP**
+Empty drill = vanity metrics
+Drill + content = real growth
+
+---
+
+*Added after Chain Drill: formalized the loop*

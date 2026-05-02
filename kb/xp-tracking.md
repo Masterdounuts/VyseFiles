@@ -595,3 +595,68 @@
 | learning | +3 | Cross-pollination |
 | system | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: EXPAND: Low-content skills - teaching, automation, drill-runner grown with real content |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: FIX: Validator now precise - fixed corrupted Max Levels |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +5 | Drill: diagnosing system health |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +5 | Drill: analyzing patterns |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| workflow | +5 | Drill: improving workflow |
+| control-ui | +3 | Cross-pollination |
+| time | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| learning | +5 | Drill: learning from drill |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | drill status check |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Drill: diagnosing |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +3 | Drill: analyzing |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| workflow | +3 | Drill: improving |
+| control-ui | +3 | Cross-pollination |
+| time | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

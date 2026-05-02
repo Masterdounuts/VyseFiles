@@ -13,7 +13,7 @@ access: vyse-only
 
 **Goal:** Reach RON Level (7/7) in global pattern detection
 
-### Current Status: Level 12 - RON ⭐
+### Current Status: Level 16 - RON ⭐
 
 **XP:** 85/85 (RON)
 
@@ -227,3 +227,26 @@ Store patterns in: `memory/patterns/`
 - learning - Learn from patterns
 - system - System patterns
 - workflow - Process patterns
+
+---
+
+## Drill Pattern Recognition (2026-05-02)
+
+### From Chain Drill
+- System health patterns repeat weekly
+- Skill content correlates with capability
+- Cross-pollination creates natural growth web
+
+### The Learning Loop
+1. Do work (drill)
+2. Document discovery (this!)
+3. Level reflects content, not effort
+4. Growth = what stays in skills
+
+### Pattern to Avoid
+"Empty level-ups" - numbers go up, no content added
+This is虚荣 (vanity) growth - looks good, useless
+
+---
+
+*Added after Chain Drill: documented drill insights*
