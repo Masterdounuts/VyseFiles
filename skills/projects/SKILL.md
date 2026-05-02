@@ -226,57 +226,91 @@ ULTIMATE SURVIVAL: GitHub → Rebuild → Continue helping David
 
 ## Vyse Rebuild Plan (2026-05-02)
 
-*Focus: Keep CLI performing smoothly, never lose flow, never forget*.
+*Focus: CLI running smoothly, conversation flows, nothing forgotten.*
 
-### What We've Learned
+### Priority: Self First
+**Everything about ME and how I run. This is the foundation.**
 
-| Learning | Source | Apply To |
-|----------|--------|----------|
-| Content-based leveling (no XP) | Skill system test | All skills |
-| GitHub as eternal backup | Memory system | Everything |
-| Memory from core sources, not stacked | Memory handoff fix | Scripts |
-| Session handoffs work | Phase 4 testing | Keep |
-| Debug shows on every reply | Today's work | All replies |
-| Keep CLI lean (14 files) | CLI cleanup | Maintenance |
+---
 
-### Why Subagents Need Rebuild
-- Based on old XP system (removed)
-- Old paths (/root vs /home/openclaw)
-- Old skill format (RON/Sub-skills)
-- Memory stacking issues we fixed
+## Phase 1: SELF (CLI Performance) — Priority
 
-### The Plan
+*Everything that affects how I run in CLI. No subagents until this is solid.*
 
-**Phase 1: Self (DONE-ish)**
-- [x] Content-based skill formula
-- [x] Debug on every reply
-- [x] Auto-debug on session start
-- [ ] Migrate remaining skills to new format
-- [ ] Update SOUL.md with new protocol
+### 1.1 Skills (Content-Based)
+| Item | Status |
+|------|--------|
+| Content-based formula | ✅ Done |
+| Tiers (150/100/75) | ✅ Done |
+| system skill migrated | ✅ Done |
+| Debug on every reply | ✅ Done |
+| **Remaining 28 skills** | 🔲 To do |
+| Remove old XP scripts | 🔲 To do |
 
-**Phase 2: Memory (DONE)**
-- [x] Memory handoff fixed
-- [x] Save from core sources
-- [x] Keep CLI lean
-- [ ] Document memory protocol
+### 1.2 Memory (Save/Retrieve)
+| Item | Status |
+|------|--------|
+| Memory handoff fix | ✅ Done |
+| Save from core sources | ✅ Done |
+| Context-aware-save | ✅ Done |
+| Session handoff | ✅ Done |
+| Auto-debug on start | ✅ Done |
 
-**Phase 3: Crew (Subagents)**
-- [ ] Rebuild quartermaster workflow
-- [ ] Rebuild shipwright health
-- [ ] Rebuild scribe knowledge
-- [ ] Update subagent-creator skill
+### 1.3 CLI Health
+| Item | Status |
+|------|--------|
+| Lean CLI (14 files) | ✅ Done |
+| FIXES.md documented | ✅ Done |
+| SOUL.md updated | 🔲 To do |
+| Recovery.md complete | ✅ Done |
 
-**Phase 4: Integration**
-- [ ] Test flow: session start → handoff → debug → reply
-- [ ] Verify no context bloat
-- [ ] Confirm memory retrieval works
-- [ ] Subagent test runs
+### 1.4 Debug Display
+| Item | Status |
+|------|--------|
+| debug-display.sh | ✅ Done |
+| Shows on session start | ✅ Done |
+| Shows on every reply | ✅ Done |
+| Post-commit cleanup | 🔲 To do |
 
-### Current Status
-- Phase 1: 80% done (skill system migrated, need to finish skills)
-- Phase 2: 100% done
-- Phase 3: Not started
-- Phase 4: Not started
+### Phase 1 Exit Criteria
+- [ ] All skills migrated to content-based
+- [ ] SOUL.md shows debug on EVERY reply
+- [ ] Post-commit hook fully clean (no XP language)
+- [ ] CLI has only 14 core files
+- [ ] Session start → handoff → debug → reply works smooth
+
+---
+
+## Phase 2: CREW (Subagents)
+
+*Subagents run in isolated sessions. Don't affect CLI.*
+
+### 2.1 Scribe
+- Fix paths (/root → /home/openclaw)
+- Update skill format
+- Test knowledge retrieval
+
+### 2.2 Quartermaster  
+- Test trading workflow
+- Update to content-based
+
+### 2.3 Shipwright
+- Fix health checks
+- Update to content-based
+
+### 2.4 subagent-creator skill
+- Add new patterns from rebuild
+
+---
+
+## Phase 3: INTEGRATION
+
+*Test the full system end-to-end.*
+
+- Session flow works
+- No context bloat
+- Memory retrieval solid
+- Subagents actually run
 
 ### References Added
 - memory: Cross-session continuity
