@@ -1323,3 +1323,10 @@
 | learning | +3 | Cross-pollination |
 | system | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: AUDIT: All 29 skill levels now match content weight |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

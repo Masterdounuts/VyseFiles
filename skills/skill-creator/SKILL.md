@@ -35,7 +35,7 @@ trigger phrases: "create skill, new skill, skill template"
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:** 49 (grows with discoveries)
+**Max Level:** 60 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -187,7 +187,7 @@ access: crew|vyse-only
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:** 49 (grows with discoveries)
+**Max Level:** 60 (grows with discoveries)
 
 | Discovery | Adds To Max |
 |------------|-------------|

@@ -37,7 +37,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 - **subagents** - Subagent orchestration
 - Decision tree: message for external → sessions_send for cross-session → subagents for control
 
-**Max Level:** 24 (grows with discoveries)
+**Max Level:** 26 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

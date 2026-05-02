@@ -38,7 +38,7 @@ Every subagent should be a **standalone expert**, not a beginner who needs help.
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:** 26 (grows with discoveries)
+**Max Level:** 30 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
