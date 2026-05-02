@@ -9,7 +9,7 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in system maintenance
 
-### Current Status: Level 11 (RON) ⭐ (Can Teach!)
+### Current Status: Level 27 (RON) ⭐ (Can Teach!)
 
 **XP:** 70+ | Runs auto-level.sh for autonomous improvement
 
@@ -39,7 +39,7 @@ access: crew
 - **cron** - Job scheduling
 - Decision tree: read for status → write for config → exec for commands
 
-**Max Level:**  26
+**Max Level:** 26 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

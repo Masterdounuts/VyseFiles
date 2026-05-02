@@ -6,7 +6,7 @@
 
 **Goal:** Reach RON Level (7/7) in subagent creation
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 30 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -38,7 +38,7 @@ Every subagent should be a **standalone expert**, not a beginner who needs help.
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:**  26 (subagent engine)
+**Max Level:** 26 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

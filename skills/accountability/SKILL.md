@@ -10,7 +10,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 **Goal:** Reach RON Level (7/7) in accountability/truth-tracking
 
-### Current Status: Level 19 - Improving 🟡🟡
+### Current Status: Level 21 - Improving 🟡🟡
 
 **XP:** 20/20 (RON)
 
@@ -27,7 +27,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 ### Dynamic Max Expansion
 
-**Max Level:** 20+ (grows with discoveries)
+**Max Level:** 20 (grows with discoveries)
 
 | Discovery | Adds To Max |
 |-----------|-------------|

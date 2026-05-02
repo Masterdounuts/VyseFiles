@@ -11,7 +11,7 @@ access: public
 
 **Goal:** Reach RON Level (7/7) in unified messaging
 
-### Current Status: Level 10 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 20 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 60/60 (RON)
 
@@ -37,7 +37,7 @@ access: public
 - **tts** - Text-to-speech voice output
 - Decision tree: message for text → tts for voice
 
-**Max Level:** 199
+**Max Level:** 19 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

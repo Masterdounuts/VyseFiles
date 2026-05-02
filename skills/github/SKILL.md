@@ -11,7 +11,7 @@ trigger phrases: "git, push, commit, repo, version control"
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 11 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 32 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -33,7 +33,7 @@ trigger phrases: "git, push, commit, repo, version control"
 - **read/write** - File operations
 - Decision tree: read for status → write for changes → exec for git operations
 
-**Max Level:**  28 (persistence engine)
+**Max Level:** 28 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

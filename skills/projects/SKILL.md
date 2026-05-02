@@ -8,7 +8,7 @@ trigger phrases: "project, game, skies of arcadia"
 
 **Goal:** Reach RON Level (7/7) in project management
 
-### Current Status: Level 11 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 34 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -36,7 +36,7 @@ trigger phrases: "project, game, skies of arcadia"
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:**  27
+**Max Level:** 27 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

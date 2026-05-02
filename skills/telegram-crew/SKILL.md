@@ -11,7 +11,7 @@ trigger phrases: "crew chat, group chat, team"
 
 **Goal:** Reach RON Level (7/7) in Telegram crew management
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 14 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -36,7 +36,7 @@ trigger phrases: "crew chat, group chat, team"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:** 155
+**Max Level:** 16 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -123,3 +123,16 @@ openclaw message send --channel telegram --target -1003941303567 --message "Upda
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Discovery (2026-05-02)
+**telegram-crew insight**
+
+- This skill has unique knowledge not in other skills
+- Drill actions should add skill-specific insights
+- Cross-pollination connects to pattern-recognition
+
+---
+
+*Chain drill: unique insight*

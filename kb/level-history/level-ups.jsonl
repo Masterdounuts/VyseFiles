@@ -183,3 +183,12 @@
 {"skill":"pattern-recognition","from":25,"to":26,"xp":85,"time":"2026-05-02T02:15:28+00:00"}
 {"skill":"pattern-recognition","from":26,"to":27,"xp":85,"time":"2026-05-02T02:44:51+00:00"}
 {"skill":"system","from":45,"to":46,"xp":70,"time":"2026-05-02T02:54:38+00:00"}
+{"skill":"accountability","from":19,"to":20,"xp":20,"time":"2026-05-02T02:55:05+00:00"}
+{"skill":"memory","from":8,"to":9,"xp":60,"time":"2026-05-02T02:55:15+00:00"}
+{"skill":"pattern-recognition","from":27,"to":28,"xp":85,"time":"2026-05-02T02:55:21+00:00"}
+{"skill":"system","from":46,"to":47,"xp":70,"time":"2026-05-02T02:58:43+00:00"}
+{"skill":"system","from":47,"to":48,"xp":70,"time":"2026-05-02T02:59:23+00:00"}
+{"skill":"crew-protocols","from":10,"to":11,"xp":50,"time":"2026-05-02T03:07:44+00:00"}
+{"skill":"telegram-crew","from":7,"to":8,"xp":50,"time":"2026-05-02T03:07:51+00:00"}
+{"skill":"vyse-core","from":10,"to":11,"xp":60,"time":"2026-05-02T03:07:57+00:00"}
+{"skill":"system-admin","from":9,"to":10,"xp":35,"time":"2026-05-02T03:08:04+00:00"}

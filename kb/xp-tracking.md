@@ -1252,3 +1252,49 @@
 | workflow | +3 | Cross-pollination |
 | security | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: FIX: Chain drill now adds unique discoveries per skill |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| memory | +2 | Auto-tracked: memory updated |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | check |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | status |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | check |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | check |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| crew-protocols | +5 | Chain drill: unique discovery about crew-protocols |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| telegram-crew | +5 | Chain drill: unique discovery about telegram-crew |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| vyse-core | +5 | Chain drill: unique discovery about vyse-core |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system-admin | +5 | Chain drill: unique discovery about system-admin |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | status |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

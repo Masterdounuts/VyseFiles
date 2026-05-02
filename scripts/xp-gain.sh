@@ -48,6 +48,7 @@ get_level_info() {
 }
 
 # Function to auto-level up when threshold reached
+# CONTENT-BASED: level is recalculated from actual content weight
 auto_level_up() {
     local s=$1
     local file="$WORKSPACE/skills/$s/SKILL.md"
@@ -55,9 +56,34 @@ auto_level_up() {
         return
     fi
     
+    # FIRST: Recalculate level from content weight
+    local lines=$(wc -l < "$file")
+    local sections=$(grep -c "^## " "$file" 2>/dev/null || echo 0)
+    local subsections=$(grep -c "^### " "$file" 2>/dev/null || echo 0)
+    
+    local content_level=$((sections + subsections + lines / 100))
+    content_level=$((content_level > 1 ? content_level : 1))
+    
+    local content_max=$((7 + subsections / 2 + sections))
+    content_max=$((content_max > 7 ? content_max : 7))
+    
+    # Get current recorded level
     local info=$(get_level_info "$s")
     local current_level=$(echo "$info" | cut -d'|' -f1)
     local max_level=$(echo "$info" | cut -d'|' -f2)
+    
+    # If content-based level differs from recorded, update it
+    if [ "$content_level" != "$current_level" ]; then
+        sed -i "s/Current Status: Level $current_level/Current Status: Level $content_level/" "$file"
+        echo "📐 CONTENT-BASED: $s adjusted to L$content_level (was L$current_level)"
+    fi
+    
+    if [ "$content_max" != "$max_level" ]; then
+        sed -i "s/Max Level: $max_level/Max Level: $content_max/" "$file"
+        echo "📐 CONTENT-MAX: $s max adjusted to $content_max (was $max_level)"
+    fi
+    
+    # Now check XP-based threshold (for legacy compatibility)
     local xp_current=$(echo "$info" | cut -d'|' -f3)
     local xp_next=$(echo "$info" | cut -d'|' -f4)
     

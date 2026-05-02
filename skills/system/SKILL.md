@@ -9,7 +9,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 46 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 24 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 70/70 (RON)
 
@@ -35,7 +35,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 - **cron** - Job management
 - Decision tree: exec for status → gateway for restart → cron for jobs
 
-**Max Level:** 46 (health engine)
+**Max Level:** 23 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

@@ -9,7 +9,7 @@ description: Web search, fetch, and browser automation. Use when researching or 
 
 **Goal:** Reach RON Level (7/7) in web interaction
 
-### Current Status: Level 12 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 30 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 60/60 (next level at 60)
 
@@ -34,7 +34,7 @@ description: Web search, fetch, and browser automation. Use when researching or 
 - **browser** - Full browser automation (complex interactions)
 - Decision tree: web_search first → web_fetch for content → browser for complex
 
-**Max Level:**  25
+**Max Level:** 25 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

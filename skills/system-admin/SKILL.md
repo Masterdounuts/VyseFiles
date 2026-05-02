@@ -10,7 +10,7 @@ trigger phrases: "server, process, service, network, system admin"
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 9 - Expert 🟡🟡🟡
+### Current Status: Level 23 - Expert 🟡🟡🟡
 
 **XP:** 35/30 (over max) (next level at 30)
 
@@ -41,7 +41,7 @@ trigger phrases: "server, process, service, network, system admin"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:** 211
+**Max Level:** 22 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -150,3 +150,16 @@ sudo apt update && sudo apt upgrade -y
 - system - Health
 - learning - Improvement
 - accountability - Goal alignment
+
+---
+
+## Discovery (2026-05-02)
+**system-admin insight**
+
+- This skill has unique knowledge not in other skills
+- Drill actions should add skill-specific insights
+- Cross-pollination connects to pattern-recognition
+
+---
+
+*Chain drill: unique insight*

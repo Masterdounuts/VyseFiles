@@ -10,7 +10,7 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 
 **Goal:** Reach RON Level (7/7) in self-healing
 
-### Current Status: Level 11 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 25 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 60/60 (next level at 60)
 
@@ -38,7 +38,7 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:**  23
+**Max Level:** 23 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

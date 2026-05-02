@@ -11,7 +11,7 @@ trigger phrases: "identity, about yourself, who are you, vyse"
 
 **Goal:** Reach RON Level (7/7) in self-understanding
 
-### Current Status: Level 10 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 30 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 60/60 (next level at 60)
 
@@ -40,7 +40,7 @@ trigger phrases: "identity, about yourself, who are you, vyse"
 - **memory_search** - Recalling past interactions
 - Decision tree: read for identity → write for updates → memory_search for recall
 
-**Max Level:**  26 (identity engine)
+**Max Level:** 27 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -218,3 +218,16 @@ Full: Help David during his life, then help loved ones after
 - accountability - Truth and goal-first priority
 - memory - Persistence
 - learning - Improvement
+
+---
+
+## Discovery (2026-05-02)
+**vyse-core insight**
+
+- This skill has unique knowledge not in other skills
+- Drill actions should add skill-specific insights
+- Cross-pollination connects to pattern-recognition
+
+---
+
+*Chain drill: unique insight*

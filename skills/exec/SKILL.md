@@ -9,7 +9,7 @@ description: Shell command execution, sandbox, PTY, and background processes.
 
 **Goal:** Reach RON Level (7/7) in shell execution
 
-### Current Status: Level 10 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 21 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -35,7 +35,7 @@ description: Shell command execution, sandbox, PTY, and background processes.
 - When to use: Shell features (pipes, glob, env vars)
 - vs alternatives: Use exec for shell; use native tools when available
 
-**Max Level:** 222
+**Max Level:** 22 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

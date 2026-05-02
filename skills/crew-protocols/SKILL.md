@@ -8,7 +8,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 10 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 26 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -37,7 +37,7 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 - **subagents** - Subagent orchestration
 - Decision tree: message for external → sessions_send for cross-session → subagents for control
 
-**Max Level:**  23
+**Max Level:** 24 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
@@ -194,3 +194,16 @@ Add to skill frontmatter to control behavior.
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Discovery (2026-05-02)
+**crew-protocols insight**
+
+- This skill has unique knowledge not in other skills
+- Drill actions should add skill-specific insights
+- Cross-pollination connects to pattern-recognition
+
+---
+
+*Chain drill: unique insight*
