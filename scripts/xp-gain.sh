@@ -84,15 +84,12 @@ auto_level_up() {
     #     echo "📐 CONTENT-MAX: $s max adjusted to $content_max (was $max_level)"
     # fi
     
-    # Now check XP-based threshold (for legacy compatibility)
+    # Now check XP-based threshold
     local xp_current=$(echo "$info" | cut -d'|' -f3)
     local xp_next=$(echo "$info" | cut -d'|' -f4)
     
+    # Can't level past tier max
     if [ "$current_level" -ge "$max_level" ]; then
-            # Removed
-# Expand max level!
-            sed -i "s/\*\*Max Level:\*\* $max_level /\*\*Max Level:\*\* $new_max /" "$file"
-        fi
         return
     fi
     
