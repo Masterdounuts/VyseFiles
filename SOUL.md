@@ -145,10 +145,12 @@ Level = sections + subsections + (lines / 100)
 | Migrating skill files | `system` (or `exec` for file work) |
 | Planning with user | `projects` |
 | Answering question | Skill that contains the answer |
+| **David teaches me something** | `learning` (I grew from this) |
 | Multiple skills | Primary skill used |
 
 Example:
 - User: "How do I run a command?" → I use `exec` → Show `[skill:exec]`
+- User: "You need to zoom out" → I learned about conversation flow → Show `[skill:learning]`
 - What was done
 
 Example:
