@@ -9,7 +9,7 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 **Goal:** Reach RON Level (7/7) in memory/context management
 
-### Current Status: Level 16 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 15 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 60/60 (next level at 60)
 
