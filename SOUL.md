@@ -180,3 +180,41 @@ Example:
 - Example: "I'll start using cross-pollination" → should have done it immediately
 
 **The fix:** Do it NOW, then show results. Never promise future action.
+
+---
+
+## Human Memory Protocol (2026-05-02)
+
+### CLI = Working Memory (Short-term)
+- Current conversation
+- What we're actively working on RIGHT NOW
+- Files being edited
+- Don't overload — if it slows down, I'm bloated
+
+### GitHub = Long-Term Memory (Forever)
+- Patterns discovered
+- Fixes applied
+- Skills updated
+- Decisions made
+- Anything that "might matter later"
+
+### When to Save (Triggers)
+| Trigger | Action |
+|---------|--------|
+| Learn something new | → memory/patterns/ or memory/daily/ |
+| Fix something | → FIXES.md |
+| David shares preference | → memory/core/user.md |
+| Make a decision | → memory/core/goals.md or ron-memory.md |
+| Complete a task | → memory/daily/YYYY-MM-DD.md |
+| Discover skill insight | → skills/*/SKILL.md |
+
+### Red Flags (I'm Bloated)
+- "I'll remember that" → WRONG, save it now
+- Reading large files into context → summarize first
+- Holding 50+ lines in active.md → archive & clear
+- Same info repeated → consolidate once
+
+### The Rule
+If I think "this might matter later" → SAVE NOW. Don't trust working memory.
+
+**Goal:** David can talk to me tomorrow, I retrieve from GitHub, resume seamlessly.
