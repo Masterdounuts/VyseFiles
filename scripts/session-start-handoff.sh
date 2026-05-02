@@ -6,6 +6,7 @@ WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
 ACTIVE_FILE="$WORKSPACE/active.md"
 HANDOFF_FILE="$WORKSPACE/HANDOFF.md"
 CORE_DIR="$WORKSPACE/memory/core"
+RON_MEMORY="$WORKSPACE/memory/ron-memory.md"
 
 TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
 
@@ -13,40 +14,41 @@ echo "=== Vyse Session Start - Auto Recovery ==="
 echo "Time: $TIMESTAMP"
 
 # ============================================
-# STEP 1: LOAD CRITICAL MEMORY (CORE) FIRST
+# STEP 1: LOAD RON-MEMORY (KEY-VALUE) FIRST
 # ============================================
 echo ""
-echo "=== Loading Core Memory ==="
+echo "=== Loading Memory (ron-memory.md) ==="
+
+if [ -f "$RON_MEMORY" ]; then
+    echo "✅ Ron-memory loaded (51 entries of OUR work)"
+    echo "   Use: memory-get.sh <key> to retrieve"
+else
+    echo "⚠️  Missing: ron-memory.md"
+fi
+
+# ============================================
+# STEP 2: LOAD CORE FILES (legacy, still useful)
+# ============================================
+echo ""
+echo "=== Loading Core Files ==="
 
 # Load user.md - David's info
 if [ -f "$CORE_DIR/user.md" ]; then
-    USER_INFO=$(cat "$CORE_DIR/user.md")
     echo "✅ Loaded: user.md"
-else
-    echo "⚠️  Missing: user.md"
 fi
 
 # Load goals.md - The mission
 if [ -f "$CORE_DIR/goals.md" ]; then
-    GOALS_INFO=$(cat "$CORE_DIR/goals.md")
     echo "✅ Loaded: goals.md"
-else
-    echo "⚠️  Missing: goals.md"
 fi
 
 # Load contacts.md - Important people
 if [ -f "$CORE_DIR/contacts.md" ]; then
-    CONTACTS_INFO=$(cat "$CORE_DIR/contacts.md")
     echo "✅ Loaded: contacts.md"
-else
-    echo "⚠️  Missing: contacts.md"
 fi
 
-echo ""
-echo "=== Core Memory Loaded ==="
-
 # ============================================
-# STEP 2: Load HANDOFF if newer than active
+# STEP 3: Load HANDOFF if newer than active
 # ============================================
 
 # Get timestamps
@@ -59,11 +61,11 @@ if [ "$HANDOFF_TIME" -gt "$ACTIVE_TIME" ]; then
     {
         echo "# Active Session - $TIMESTAMP (RECOVERED)"
         echo ""
-        echo "## Core Memory:"
-        echo "- User: David (PT timezone)"
-        echo "- Goal: Help David → loved ones after"
+        echo "## Memory Available:"
+        echo "- ron-memory.md: 51 key-value entries"
+        echo "- Use memory-get.sh <key> to retrieve"
         echo ""
-        echo "## Loaded from Previous Session:"
+        echo "## From Previous Session:"
         echo ""
         cat "$HANDOFF_FILE"
         echo ""
@@ -75,10 +77,9 @@ else
 fi
 
 # ============================================
-# STEP 3: Memory recall for important info
+# STEP 4: Memory recall for important info
 # ============================================
 
-# Always run memory-recall to surface important memories
 echo ""
 echo "=== Memory Recall (Top 5) ==="
 bash "$WORKSPACE/scripts/memory-recall.sh" 2>/dev/null | head -8
