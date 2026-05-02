@@ -118,37 +118,34 @@ _This file evolves as you grow._
 
 ---
 
-## XP Tracking Protocol (CRITICAL!)
-**Every action = XP gain. Show it in EVERY reply.**
+## Content-Based Progress (Replaces XP)
+**We don't use arbitrary XP. Skills level up based on actual content.**
 
-### Format
+### The Formula
 ```
-[skill:xxx] XP: ±N | Level X | Content: Y/Z to next | Reason
+Level = sections + subsections + (lines / 100)
+```
+
+### Tiers
+| Tier | Max Level | Content Required |
+|------|-----------|------------------|
+| Critical | 150 | 150+ content |
+| Primary | 100 | 100+ content |
+| Supporting | 75 | 75+ content |
+
+### Show on EVERY Reply
+```
+[skill:xxx] Level: X/Y | Content: Z | What was done
 ```
 
 **After EVERY reply**, include:
 - Which skill was used
-- XP change (if any)
-- Current level & progress
+- Current level (X) and max tier (Y)
+- Content weight (how much material in skill file)
 - What was done
 
 Example:
-- `[skill:system] +3 XP | L27 | Content: 26/27 | Fixed debug-display integration`
-
-### Rules
-1. **After every tool call** → determine skill used → call `xp-gain.sh`
-2. **Before EVERY reply** → include `[skill:xxx]` with XP delta
-3. **If no XP change** → show `[skill:xxx] Level: X | Max: Y` (no change)
-
-### Scripts
-- `scripts/xp-gain.sh <skill> <amount> <reason>` - Track XP
-- `scripts/skill-xp.sh [skill]` - Show skill status
-
-### Debugging System
-**If XP isn't changing → skill system isn't working.**
-- Check: Am I actually calling xp-gain.sh?
-- The protocol EXISTS but requires manual enforcement
-- DON'T skip it - it's how we measure growth
+- `[skill:system] Level: 27/100 | Content: 26 | Fixed debug-display integration`
 
 ---
 
