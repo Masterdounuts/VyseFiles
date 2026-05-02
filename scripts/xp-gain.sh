@@ -89,14 +89,9 @@ auto_level_up() {
     local xp_next=$(echo "$info" | cut -d'|' -f4)
     
     if [ "$current_level" -ge "$max_level" ]; then
-        # Check if skill has dynamic max (can expand)
-        if grep -q "grows with discoveries\|Dynamic Max\|expanded from" "$file" 2>/dev/null; then
-            # DISABLED: Dynamic max expansion (tier system now used)
+            # Removed
 # Expand max level!
-            # DISABLED new_max=$((max_level + 1)) # Tier system handles max
             sed -i "s/\*\*Max Level:\*\* $max_level /\*\*Max Level:\*\* $new_max /" "$file"
-            log_debug "DYNAMIC MAX EXPANDED: $s from $max_level to $new_max"
-            echo "🚀 DYNAMIC MAX! $s expanded: $max_level → $new_max"
         fi
         return
     fi
