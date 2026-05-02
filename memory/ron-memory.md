@@ -47,3 +47,6 @@
 | vyse:framework:scan_think_act | Show status on each phase | 2026-05-02 17:17 |
 | vyse:primary_brain | workspace (heartbeat, memory) | 2026-05-02 17:17 |
 | vyse:second_brain | GitHub (eternal storage) | 2026-05-02 17:17 |
+| vyse:memory:daily_start | 2026-04-22 | 2026-05-02 17:21 |
+| vyse:memory:daily_format | YYYY-MM-DD.md | 2026-05-02 17:21 |
+| vyse:memory:daily_count | 13 | 2026-05-02 17:21 |
