@@ -29,13 +29,26 @@ trigger phrases: "project, game, skies of arcadia"
 
 ### 🦜 Vyse's Projects (My Improvements)
 
-| Project | Status |
-|---------|--------|
-| XP System | ✅ Complete |
-| Skill Gap Detection | ✅ Complete |
-| Context Management | ✅ Complete |
-| Self-Improvement Protocol | 🔄 Active |
-| Content-Based Leveling | 🔄 Active |
+| Project | Status | Notes |
+|---------|--------|-------|
+| Content-Based Leveling | ✅ DONE | All 29 skills migrated |
+| Debug Shows Skill Used | ✅ DONE | Fixed in SOUL.md |
+
+## 🚢 Vyse Rebuild Plan
+
+### Phase 1: CLI (Self) — IN PROGRESS
+- [x] Content-based leveling
+- [x] Debug shows skill USED not discussed
+- [ ] Verify session refresh works ← YOU'RE TESTING THIS
+- [ ] Test: session start → handoff → debug → reply
+
+### Phase 2: Crew (Subagents)
+- [ ] Rebuild quartermaster, shipwright, scribe
+- [ ] Verify crew coordination
+
+### Phase 3: Integration
+- [ ] Full flow testing
+- [ ] End-to-end verification
 
 ### 🚀 Our Projects (Shared Vision)
 
