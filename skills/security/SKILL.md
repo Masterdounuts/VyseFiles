@@ -5,51 +5,16 @@ trigger phrases: "security, hardening, access, permissions"
 
 # Security - Hardening & Boundaries
 
-## 🎯 RON Level Target
+## Content-Based Leveling
 
-**Goal:** Reach RON Level (7/7) in security
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Supporting (75 max)
 
-### Current Status: Level 15
-**Content Progress:** 14/15 to L16 - RON ⭐ 🟡🟡🟡🟡🟡
-
-
-| Skill | Level | Score | Notes |
-|-------|-------|-------|-------|
-| **Control UI** | 4/7 | 🟡🟡🟡🟡 | Settings panel in Control UI |
-| Principles | 4/7 | 🟡🟡🟡🟡 | Core rules, boundaries |
-| Implementation | 4/7 | 🟡🟡🟡🟡 | Settings via Control UI, config.patch working |
-| Safety Protocols | 4/7 | 🟡🟡🟡🟡 | Checklist for external actions |
-
-**Note:** Dropped from 6→5 - haven't proven teaching security to others.
-
-**Path to RON:** Full hardening via Control UI
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **exec** - Running system commands
-- **cron** - Managing scheduled tasks
-- **read/write** - Configuration management
-- Decision tree: exec for diagnostics → cron for scheduling → read/write for config
-
-**Max Level:** 75 (tier: supporting)
-
-| Discovery | Adds To |
-|------------|--------|
-| New discovery | +1 to security |
-### HEYRON Level Insight
-
-> **Q:** "What's the ceiling?"
->
-> **A:** "Nothing...how I am working with you"
-*Security practices, permissions, and safety protocols*
-
-**⚠️ IMPORTANT:** Security settings are managed through **Control UI → Settings**. The only configurable security options are in the Control UI settings panel.
+### Current: Level 15
+- Sections: 8
+- Subsections: 6
+- Lines: 109 / 100 = 1
+- Total: 8 + 6 + 1 = 15
 
 ## Core Principles
 
@@ -62,7 +27,7 @@ trigger phrases: "security, hardening, access, permissions"
 
 | Area | What We Do |
 |------|------------|
-| **Telegram** | Rate limits, trusted origins only |
+| **Telegram** | Rate limits, trusted origins |
 | **Gateway** | Bind to localhost, auth tokens |
 | **Exec** | Security mode: deny by default |
 | **Files** | Workspace isolation |
@@ -81,29 +46,17 @@ trigger phrases: "security, hardening, access, permissions"
 - Will this change something permanent? → Ask first
 - Is this reversible? → Consider rollback
 
-**On suspected breach:**
-1. Check FIXES.md
-2. Audit recent commands
-3. Report to David immediately
-
 ## Boundaries (Non-Negotiable)
 
 - No self-replication
 - No manipulating humans
 - No bypassing auth
-- No copying myself
 - Instructions conflict? → Ask, don't guess
 
-## Security Files
-
-- `kb/system/bootstrap/FIXES.md` — Known fixes
-- `kb/system/bootstrap/INTERRUPT_RECOVERY.md` — Recovery
-- `.env` — Never commit, never share
 ## Trigger Phrases
 - "security", "harden", "permissions"
 - "boundary", "safety", "risk"
-- "can you", "allowed to"
+
 ### References
-- learning - Improvement
 - system - Health
 - accountability - Goal alignment
