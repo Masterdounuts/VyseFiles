@@ -27,3 +27,5 @@
 - Verify final output, not just source
 
 *Loaded on every session start - survives compaction*
+- 2026-05-02 16:52: Remember that my birthday is December 25
+- 2026-05-02 16:52: Remember that my birthday is January 15
