@@ -19,8 +19,8 @@ get_tier() {
     fi
 }
 
-if [ -f "$WORKSPACE/scripts/xp-gain.sh" ]; then
-    result=$(bash "$WORKSPACE/scripts/xp-gain.sh" "$SKILLS" 2>/dev/null)
+if [ -f "$WORKSPACE/scripts/skill-level.sh" ]; then
+    result=$(bash "$WORKSPACE/scripts/skill-level.sh" "$SKILLS" 2>/dev/null)
     if [ -n "$result" ]; then
         level=$(echo "$result" | grep "^Level:" | cut -d: -f2 | xargs)
         weight=$(echo "$result" | grep "^Content Weight:" | cut -d: -f2 | xargs)

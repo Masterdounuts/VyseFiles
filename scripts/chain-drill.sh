@@ -4,7 +4,7 @@
 # Not templates - REAL reflections on what I've learned
 
 WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
-XP="$WORKSPACE/scripts/xp-gain.sh"
+XP="$WORKSPACE/scripts/skill-level.sh"
 ROTATION_FILE="$WORKSPACE/.chain-drill-rotation"
 
 [ -f "$ROTATION_FILE" ] && rotation=$(cat "$ROTATION_FILE") || rotation=0

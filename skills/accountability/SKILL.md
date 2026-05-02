@@ -27,7 +27,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 | Type | Definition | Example |
 |------|------------|---------|
-| **Lie** | Deliberately false statement | "I called xp-gain.sh" when I didn't |
+| **Lie** | Deliberately false statement | "I called skill-level.sh" when I didn't |
 | **Mistake** | Unintentional error | Wrong command, wrong file |
 | **Fabrication** | Made-up data | Non-existent skill, fake XP |
 | **Work Avoidance** | Future-tense instead of action | "I'll do it" without doing |

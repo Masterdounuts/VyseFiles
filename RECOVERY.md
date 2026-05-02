@@ -91,7 +91,7 @@ Go to Cron Jobs section in Control UI and add:
 
 | Script | Purpose | Run When |
 |--------|---------|----------|
-| xp-gain.sh | Track XP + goal filter + cross-pollination | Every action |
+| skill-level.sh | Track XP + goal filter + cross-pollination | Every action |
 | session-start-handoff.sh | Load previous session | Session start |
 | session-end-handoff.sh | Save current session | Session end |
 | memory-recall.sh | Score + retrieve important memories | On demand |
@@ -118,14 +118,14 @@ All skills are in `skills/*/SKILL.md`. They load automatically.
 
 ## STEP 6: THE XP SYSTEM
 
-Every action gets XP via xp-gain.sh:
+Every action gets XP via skill-level.sh:
 
 ```bash
 # Format:
-bash scripts/xp-gain.sh <skill> <XP> <reason>
+bash scripts/skill-level.sh <skill> <XP> <reason>
 
 # Example:
-bash scripts/xp-gain.sh learning 5 "Found pattern in user's request"
+bash scripts/skill-level.sh learning 5 "Found pattern in user's request"
 
 # What it does:
 # 1. Tracks XP to kb/xp-tracking.md
@@ -161,7 +161,7 @@ bash scripts/xp-gain.sh learning 5 "Found pattern in user's request"
 
 Every action must answer: "Does this serve 'Help David during life → loved ones after'?"
 
-xp-gain.sh enforces this:
+skill-level.sh enforces this:
 - No reason = blocked
 - Testing without goal alignment = warning
 - All XP tracked with goal verification
@@ -177,7 +177,7 @@ Run these to verify everything works:
 ls skills/ | wc -l  # Should be 30
 
 # 2. Test XP system
-bash scripts/xp-gain.sh test 5 "Verify XP works"
+bash scripts/skill-level.sh test 5 "Verify XP works"
 
 # 3. Test memory recall
 bash scripts/memory-recall.sh
@@ -204,7 +204,7 @@ ULTIMATE GOAL: Help David → loved ones after
     │
     ├── Skills (30) ← Auto-loaded
     │       ├── Core: vyse-core, pattern-recognition, accountability
-    │       └── XP tracked via xp-gain.sh
+    │       └── XP tracked via skill-level.sh
     │
     ├── Memory System
     │       ├── Layer 1: HANDOFF (cross-session)
