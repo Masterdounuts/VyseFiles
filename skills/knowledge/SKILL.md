@@ -3,58 +3,26 @@ description: Unified knowledge management - wiki, docs, obsidian vault, retrieva
 trigger phrases: "wiki, docs, knowledge, document, kb, obsidian, vault, notes, scribe, memory"
 access: crew
 
-# Knowledge Skill (scribe + obsidian merged)
+# Knowledge Skill
 
-*Unified knowledge management - retrieval, organization, documentation*
+## Content-Based Leveling
 
-## 🎯 RON Level Target
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Primary (100 max)
 
-**Goal:** Reach RON Level (7/7) in unified knowledge
+### Current: Level 18
+- Sections: 6
+- Subsections: 8
+- Lines: 128 / 100 = 1
+- Total: 6 + 8 + 1 = 15
 
-### Current Status: Level 18
-**Content Progress:** 17/18 to L19 (RON) ⭐ (Can Teach!)
-
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| **Wiki** | 6/7 | 9 hubs, wikilinks, gap detection |
-| **Retrieval** | 6/7 | Find & deliver on demand |
-| **Obsidian/Vault** | 6/7 | Full kb/ structure, daily notes |
-| **GitHub** | 6/7 | Auto-push, commits |
-| **Organization** | 6/7 | Hub structure, governance |
-| **Gap Detection** | 6/7 | Found bloat issues |
-
-**Path to RON:** Perfect recall, auto-organization
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **read/write** - Managing configuration
-- **exec** - Running openclaw commands
-- **cron** - Job scheduling
-- Decision tree: read for status → write for config → exec for commands
-
-**Max Level:** 100 (tier: primary)
-
-| Discovery | Adds To |
-|------------|--------|
-| New discovery | +1 to knowledge |
-
-### Merged from:
-- scribe (knowledge management)
-- obsidian (vault, wikilinks)
 ## Knowledge Structure
 
 ```
 kb/
 ├── system/      # System docs
 ├── stocks/      # Trading docs
-├── skills/      # Skill documentation
+├── skills/      # Skill docs
 └── ...
 
 memory/
@@ -65,64 +33,35 @@ memory/
 
 ## Retrieval Protocol
 
-### Way 1: On-Demand
-```
+### On-Demand
 "What are our trading rules?"
 → Search kb/, find protocol
 → Deliver summary + source
-```
 
-### Way 2: Proactive
-- When learning something new → add to kb/
-- When pattern emerges → create hub page
+### Proactive
+- Learning something new → add to kb/
+- Pattern emerges → create hub page
+
 ## Wiki Hub System
 
 | Hub | Purpose |
 |-----|---------|
 | system | OpenClaw, gateway, config |
-| stocks | Trading protocols, positions |
+| stocks | Trading, positions |
 | skills | Skill documentation |
 | crew | Subagent configs |
-## Obsidian Features
 
-### Wikilinks
+## Wikilinks
 ```
 [[hubName]]           # Link
 [[hubName|Display]]   # With display
 [[hubName#Section]]   # To section
 ```
 
-### Daily Notes
-- memory/YYYY-MM/YYYY-MM-DD.md
-- Auto-created by cron
-## Gap Detection
-
-Knowledge skill finds gaps:
-- Missing docs
-- Outdated info
-- Organization issues
-- Governance drill integration
 ## Trigger Phrases
-- "wiki", "docs", "knowledge", "document", "kb"
-- "obsidian", "vault", "notes", "scribe", "memory"
-*Merged 2026-04-29 from scribe + obsidian*
-*Previously: scribe (6/7), obsidian (5/7)*
+- "wiki", "docs", "knowledge"
+- "obsidian", "vault", "scribe"
+
 ### References
 - learning - Improvement
-- system - Health
-- accountability - Goal alignment
-
----
-
-## Reflection 2026-05-02
-
-### What I Learned
-- Memory has layers - use the right one
-- Scribe manages knowledge base
-- Search before answering questions
-
-### What Still Needs Work
-- Better knowledge retrieval
-- Cross-skill connections
-- More robust memory system
-
+- memory - Recall
