@@ -1,9 +1,7 @@
----
 name: pattern-recognition
 description: Global pattern detection - discovers patterns in workflows, behaviors, and systems to improve everything I do. Ties into skill system for continuous improvement.
 trigger phrases: "pattern, trend, recurring, detect pattern, what's the pattern, any patterns"
 access: vyse-only
----
 
 # Pattern Recognition - Global Improvement Skill
 
@@ -13,7 +11,7 @@ access: vyse-only
 
 **Goal:** Reach RON Level (7/7) in global pattern detection
 
-### Current Status: Level 25 - RON ⭐
+### Current Status: Level 27 - RON ⭐
 
 **XP:** 85/85 (RON)
 
@@ -55,9 +53,6 @@ access: vyse-only
 - Should grow faster than regular skills
 
 **Path to RON:** Auto-improvement loop, predictive alerts
-
----
-
 ## Why This Skill Exists
 
 Currently:
@@ -67,9 +62,6 @@ Currently:
 - No global improvement mechanism
 
 This skill bridges ALL skills to create a self-improving system.
-
----
-
 ## Core Capabilities
 
 ### 1. Workflow Pattern Detection
@@ -105,9 +97,6 @@ This skill bridges ALL skills to create a self-improving system.
 - Gateway health patterns
 - Session creation patterns
 - Memory usage patterns
-
----
-
 ## How to Use
 
 ### Activate Pattern Detection
@@ -129,9 +118,6 @@ When pattern detected:
 2. Apply cross-pollination
 3. Update relevant skill level
 4. Test improvement
-
----
-
 ## Pattern Categories
 
 ### 🔄 Recurring Issues
@@ -153,9 +139,6 @@ Skill A → Skill B → Pattern → Combined Use
 ```
 Behavior → Pattern → Learning → Adaptation
 ```
-
----
-
 ## Integration Points
 
 ### With skill-creator
@@ -177,9 +160,6 @@ Behavior → Pattern → Learning → Adaptation
 ### With system
 - Error patterns
 - Health patterns
-
----
-
 ## Pattern Logging
 
 Store patterns in: `memory/patterns/`
@@ -196,17 +176,11 @@ Store patterns in: `memory/patterns/`
 **Action:** [What to do about it]
 **Related Skills:** [Which skills to update]
 ```
-
----
-
 ## Trigger Phrases
 - "pattern", "trend", "recurring"
 - "detect pattern", "what's the pattern"
 - "any patterns", "pattern detection"
 - "improve workflow", "optimize"
-
----
-
 ## Cross-Reference (Skills This Improves)
 
 | If You Detect Patterns In... | You Improve... |
@@ -218,18 +192,12 @@ Store patterns in: `memory/patterns/`
 | Errors | system, self-healing |
 | Preferences | crew-protocols |
 | Trading | quartermaster |
-
----
-
 *Skill created: 2026-04-30*
 *Purpose: Global improvement engine for all skills*
 ### References
 - learning - Learn from patterns
 - system - System patterns
 - workflow - Process patterns
-
----
-
 ## Drill Pattern Recognition (2026-05-02)
 
 ### From Chain Drill
@@ -246,111 +214,4 @@ Store patterns in: `memory/patterns/`
 ### Pattern to Avoid
 "Empty level-ups" - numbers go up, no content added
 This is虚荣 (vanity) growth - looks good, useless
-
----
-
 *Added after Chain Drill: documented drill insights*
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 1/7
-
-### The Drill Connection
-This skill was exercised in rotation 1/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 1/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 8/7
-
-### The Drill Connection
-This skill was exercised in rotation 8/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 8/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 15/7
-
-### The Drill Connection
-This skill was exercised in rotation 15/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 15/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 22/7
-
-### The Drill Connection
-This skill was exercised in rotation 22/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 22/7*
-

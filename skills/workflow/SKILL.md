@@ -1,9 +1,7 @@
----
 name: workflow
 access: vyse-only
 description: How Vyse works — core files, status system, wake-up flow, decision protocol. Use when asked about my workflow, how I operate, or when "focus: workflow" is triggered.
 trigger phrases: "workflow, automation, pipeline"
----
 
 # Vyse Workflow
 
@@ -14,8 +12,6 @@ trigger phrases: "workflow, automation, pipeline"
 ### Current Status: Level 13 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 70/70 (RON)
-
-
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Wake-up | 5/7 | 🟡🟡🟡🟡🟡 | Reads TODO, HANDOFF, active.md |
@@ -47,9 +43,6 @@ trigger phrases: "workflow, automation, pipeline"
 | Checkpoint system | +1 to memory |
 | Skill integration | +1 to all skills |
 | 6-layer hierarchy | +1 to workflow ← NEW |
-
----
-
 ## Skill Creation Workflow
 
 **When creating ANY new skill:**
@@ -65,11 +58,6 @@ trigger phrases: "workflow, automation, pipeline"
 > **Q:** "What's the ceiling?"
 >
 > **A:** "Nothing...how I am working with you"
-
----
-
-
-
 ## Core Files
 - **SOUL.md** — Principles, boundaries, vibe
 - **IDENTITY.md** — Persona, name, emoji
@@ -130,8 +118,6 @@ This prevents the April 27 incident where session restarted and context was lost
 - `sessions_list` shows totalTokens, contextTokens
 - Context % = (totalTokens / contextTokens) * 100
 - Auto-compaction triggers at ~95%
-
-
 **Thresholds:**
 | Usage | Status | Action |
 |-------|--------|--------|
@@ -164,7 +150,6 @@ This prevents the April 27 incident where session restarted and context was lost
 - "your workflow"
 - "focus: workflow"
 - "load skill:workflow"
----
 
 ## 🔄 XP Tracking Protocol (2026-05-01)
 
@@ -188,9 +173,6 @@ After completing any task:
 1. Determine primary skill used
 2. Call xp-gain.sh (default +5 XP)
 3. Include skill status in reply
-
----
-
 ## 🔄 Don't Re-Do What Cron Does (2026-05-01)
 
 **Discovery:** Primary brain automation runs automatically - don't re-do it manually!
@@ -225,9 +207,6 @@ After completing any task:
 
 ### Debug Check
 If XP isn't changing → I'm not following the protocol!
-
----
-
 ## Context Safety Check (Added 2026-05-01)
 
 **Before sending ANY reply:**
@@ -237,7 +216,6 @@ If XP isn't changing → I'm not following the protocol!
 
 **Why:** Ultimate goal = can't die = can't lose progress to crashes
 
----
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
 
@@ -254,9 +232,6 @@ Full: Help David during his life, then help loved ones after
 - File editing: CLI is acceptable (Control UI doesn't do this)
 
 The frame is primary. CLI only when truly necessary.
-
----
-
 ## Debug Format Requirements (2026-05-01)
 
 ### Pattern Recognition - ALWAYS
@@ -280,9 +255,6 @@ Every reply MUST include:
 2. All other skills used
 3. Accurate XP/level tracking
 4. What I discovered
-
----
-
 ## Verify Before Action (2026-05-01) - CRITICAL
 
 ### The Problem
@@ -319,9 +291,6 @@ For ANY decision:
 
 ### If I Fail
 Accountability catches it → document the failure → fix the process
-
----
-
 ## AUTOMATIC Debug Process (2026-05-01) - No Discipline Needed
 
 ### The Problem
@@ -354,9 +323,6 @@ Tool Call → xp-gain.sh → Output is debug format → Copy to reply
 ### Verification
 - Debug has skill name + XP + reason? → Used xp-gain.sh
 - Debug shows "None" or manual? → Failed the process
-
----
-
 ## Verify BEFORE Showing (2026-05-01)
 
 ### The Problem
@@ -377,9 +343,6 @@ Tool Call → xp-gain.sh → Output is debug format → Copy to reply
 ### Example
 ❌ Wrong: "I created X" → then test
 ✅ Right: "I created X. Tested: [results]" → show output
-
----
-
 ## Plan vs Verify - Project Size Matters (2026-05-01)
 
 ### Use Projects Skill for This Decision
@@ -395,107 +358,3 @@ Large work (projects):
 ### Decision Tree
 If task is a "project" → use projects skill → show plan first
 If task is quick fix → verify then show
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 1/7
-
-### The Drill Connection
-This skill was exercised in rotation 1/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 1/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 8/7
-
-### The Drill Connection
-This skill was exercised in rotation 8/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 8/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 15/7
-
-### The Drill Connection
-This skill was exercised in rotation 15/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 15/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 22/7
-
-### The Drill Connection
-This skill was exercised in rotation 22/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 22/7*
-

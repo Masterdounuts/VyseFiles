@@ -1,15 +1,10 @@
----
 name: exec
 always: true
 description: Shell command execution, sandbox, PTY, and background processes.
----
 
 # Exec - Shell Execution
 
 *How we run shell commands in the workspace*
-
----
-
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in shell execution
@@ -47,9 +42,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 | New discovery | +1 to exec |
 
 **Note:** Dropped from 6→5 - haven't proven teaching ability yet.
-
----
-
 ### HEYRON Level Insight
 
 > **Q:** "When should I use exec vs. tools?"
@@ -57,9 +49,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 > **A:** "Use exec when you need shell features (pipes, glob, env). Use tools when OpenClaw has a dedicated tool."
 
 **Key Takeaway:** Shell is for shell features; use native tools when available.
-
----
-
 ## Core Parameters
 
 | Parameter | Use | Example |
@@ -74,9 +63,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 | `host` | Where to run | `host: "sandbox\|gateway\|node\|auto"` |
 | `security` | Security mode | `security: "deny\|allowlist\|full"` |
 | `elevated` | Escape sandbox | `elevated: true` |
-
----
-
 ## Host Options
 
 | Host | When to Use |
@@ -85,9 +71,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 | `sandbox` | Isolated execution (safe default) |
 | `gateway` | On the gateway host |
 | `node` | On a paired node device |
-
----
-
 ## Security Modes
 
 | Mode | What It Does |
@@ -95,9 +78,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 | `deny` | Block gateway/node exec (default) |
 | `allowlist` | Only approved commands |
 | `full` | Allow everything |
-
----
-
 ## Background Execution
 
 **Start in background:**
@@ -120,9 +100,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 - `process action=list` - List running sessions
 - `process action=poll sessionId=xxx` - Check output
 - `process action=kill sessionId=xxx` - Stop
-
----
-
 ## PTY (Pseudo-Terminal)
 
 Use `pty: true` when:
@@ -135,9 +112,6 @@ Use `pty: true` when:
 - Simple one-liners
 - Non-interactive scripts
 - Automated pipelines
-
----
-
 ## Common Commands We Use
 
 ### File Operations
@@ -169,9 +143,6 @@ openclaw cron list
 bash scripts/auto-checkpoint-new.sh
 bash scripts/git-sync.sh
 ```
-
----
-
 ## Troubleshooting
 
 | Issue | Solution |
@@ -181,9 +152,6 @@ bash scripts/git-sync.sh
 | Command not found | Use full path or check $PATH |
 | "exec tool not allowed" | Security mode blocks it |
 | No TTY output | Add `pty: true` |
-
----
-
 ## Best Practices
 
 1. **Use native tools first** - cron, gateway, sessions_list, etc.
@@ -192,9 +160,6 @@ bash scripts/git-sync.sh
 4. **Prefer sandbox** - Safer than gateway
 5. **Check $?** - Exit codes matter
 6. **Quote properly** - Avoid shell injection
-
----
-
 ## Trigger Phrases
 - "run command", "execute", "bash"
 - "shell", "terminal", "exec"
@@ -204,107 +169,3 @@ bash scripts/git-sync.sh
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 3/7
-
-### The Drill Connection
-This skill was exercised in rotation 3/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 3/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 10/7
-
-### The Drill Connection
-This skill was exercised in rotation 10/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 10/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 17/7
-
-### The Drill Connection
-This skill was exercised in rotation 17/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 17/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 24/7
-
-### The Drill Connection
-This skill was exercised in rotation 24/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 24/7*
-

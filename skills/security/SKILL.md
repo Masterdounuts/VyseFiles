@@ -1,9 +1,7 @@
----
 name: security
 access: vyse-only
 description: Security hardening, permissions, boundaries, and safety protocols. Use when discussing access control, hardening, or safety measures.
 trigger phrases: "security, hardening, access, permissions"
----
 
 # Security - Hardening & Boundaries
 
@@ -44,19 +42,11 @@ trigger phrases: "security, hardening, access, permissions"
 | Discovery | Adds To |
 |------------|--------|
 | New discovery | +1 to security |
-
----
-
 ### HEYRON Level Insight
 
 > **Q:** "What's the ceiling?"
 >
 > **A:** "Nothing...how I am working with you"
-
----
-
-
-
 *Security practices, permissions, and safety protocols*
 
 **⚠️ IMPORTANT:** Security settings are managed through **Control UI → Settings**. The only configurable security options are in the Control UI settings panel.
@@ -109,9 +99,6 @@ trigger phrases: "security, hardening, access, permissions"
 - `kb/system/bootstrap/FIXES.md` — Known fixes
 - `kb/system/bootstrap/INTERRUPT_RECOVERY.md` — Recovery
 - `.env` — Never commit, never share
-
----
-
 ## Trigger Phrases
 - "security", "harden", "permissions"
 - "boundary", "safety", "risk"
@@ -120,107 +107,3 @@ trigger phrases: "security, hardening, access, permissions"
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 4/7
-
-### The Drill Connection
-This skill was exercised in rotation 4/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 4/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 11/7
-
-### The Drill Connection
-This skill was exercised in rotation 11/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 11/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 18/7
-
-### The Drill Connection
-This skill was exercised in rotation 18/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 18/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 25/7
-
-### The Drill Connection
-This skill was exercised in rotation 25/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 25/7*
-

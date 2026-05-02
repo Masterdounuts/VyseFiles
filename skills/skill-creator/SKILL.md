@@ -1,15 +1,10 @@
----
 name: skill-creator
 description: Create, edit, audit skills. Before creating, check existing skills for overlap.
 trigger phrases: "create skill, new skill, skill template"
----
 
 # Skill Creator
 
 *When to create skills, how to build them, and how to avoid duplication*
-
----
-
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in skill creation
@@ -64,9 +59,6 @@ Skill creation is NOT fixed at 7. When we create new drills, merge skills, or di
 | Each new drill | +1 to max |
 
 **Skill-creator Max: 10** (starts at current level but ceiling is higher)
-
----
-
 ### HEYRON Level Insight (Direct from RON Creator)
 
 > **Q:** "When should I create a new skill vs. extend an existing one?"
@@ -74,9 +66,6 @@ Skill creation is NOT fixed at 7. When we create new drills, merge skills, or di
 > **A:** "If you find yourself explaining the same concept in 3+ places, consolidate. If a new domain emerges with distinct triggers and provides, separate it."
 
 **Key Takeaway:** Skills should be **distinct domains**, not re-organization. Merge when overlapping; create when new.
-
----
-
 ## 🎯 Key Principle: Check Existing First
 
 Before creating ANY new skill:
@@ -97,9 +86,6 @@ Before creating ANY new skill:
 | **Creative** | dreams, projects |
 | **Meta** | subagent-creator, skill-creator |
 | **Messaging** | telegram-crew |
-
----
-
 ## 🔍 Full Skills Audit (Reference)
 
 | # | Skill | Status | Notes |
@@ -129,9 +115,6 @@ Before creating ANY new skill:
 - **cron-keeper merged** - Shipwright handles cron
 - **browser-ops nice-to-have** - Can learn patterns as we go
 - **"Nice to have" = Skip** unless Captain requests
-
----
-
 ## 🔍 Comparison Checklist
 
 When considering a new skill, ask:
@@ -154,9 +137,6 @@ When considering a new skill, ask:
 | Checkpoint | workflow + control-ui | Keep in both |
 | channel-master | (not needed) | ❌ Skip - only 2 channels |
 | browser-ops | (nice to have) | ❌ Skip - learn as we go |
-
----
-
 ## 📝 Creation Workflow
 
 1. **Identify need:** Pattern emerges from work
@@ -166,9 +146,6 @@ When considering a new skill, ask:
 5. **Create:** `skills/name/SKILL.md`
 6. **Register:** Add to `skills/index.md`
 7. **Test:** Use trigger phrases
-
----
-
 ## 📁 Skill Structure
 
 ```
@@ -184,20 +161,16 @@ skill-name/
 ### Required SKILL.md Template
 
 ```markdown
----
 name: skill-name
 description: One-line description
 trigger phrases: "create skill, new skill, skill template"
 access: crew|vyse-only
----
 
 # Skill Name
 
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in [domain]
-
-
 **XP:** 0/10 (next level at 10)
 
 | Sub-Skill | Level | XP | Notes |
@@ -219,9 +192,6 @@ access: crew|vyse-only
 | Discovery | Adds To Max |
 |------------|-------------|
 | First discovery | +1 to skill |
-
----
-
 ## Provides
 - What this skill handles
 
@@ -233,9 +203,6 @@ access: crew|vyse-only
 ## Leveling (RON System)
 - Level 1-7 progression
 - Self-audit checklist
-
----
-
 ### Cross-Pollination Chain
 
 When using this skill, also update:
@@ -244,9 +211,6 @@ When using this skill, also update:
 - **crew-protocols** → +3 XP (communication)
 
 ```
-
----
-
 ## 📋 Quick Audit Checklist
 
 When auditing a skill:
@@ -263,9 +227,6 @@ When auditing a skill:
 - [ ] **Has Tools Used** section (which OpenClaw tools this skill uses)
 - [ ] **Has Sub-Skills with XP** (table format)
 - [ ] **Has Cross-Pollination** (chain documented)
-
----
-
 ## 🔄 Cross-Reference Update Protocol
 
 **When ANY skill levels up, run this check:**
@@ -303,9 +264,6 @@ git push origin main
 ### Trigger
 - Run this protocol when: skill levels up, new capability added, or after any major task completion
 - Look for **cross-pollination opportunities** - how can one skill's improvement help others?
-
----
-
 ## ✏️ When to Edit vs Create
 
 | Situation | Action |
@@ -315,9 +273,6 @@ git push origin main
 | Fix errors | Edit existing |
 | Merge needed | Combine into one |
 | "Nice to have" | Skip unless requested |
-
----
-
 ## 🚀 Ready for Heavy Use
 
 This skill is optimized for **mass skill creation**:
@@ -329,9 +284,6 @@ This skill is optimized for **mass skill creation**:
 - ✅ Overlap detection checklist
 
 **Ready for:** New domains, meta-skills, agent patterns
-
----
-
 ## Trigger Phrases
 - "create a skill"
 - "make a new skill"
@@ -341,24 +293,16 @@ This skill is optimized for **mass skill creation**:
 - "skill audit"
 - "evaluate skills"
 - "level up skill"
-
----
-
 # COMPLETE SKILL TEMPLATE
 
 *Everything needed to create a fully functional skill (2026-04-27)*
-
----
-
 ## Skill Structure
 
 ```markdown
----
 name: [name-lower]
 access: vyse-only|all
 description: [Brief description of what this skill does]
 trigger phrases: "create skill, new skill, skill template"
----
 
 # [Name] - [One-line description]
 
@@ -376,37 +320,23 @@ trigger phrases: "create skill, new skill, skill template"
 | [Supporting] | X/7 | [Notes] |
 
 **Path to RON:** [What it takes to reach level 7]
-
-
 **Skill-creator Max: 10** (starts at current level but ceiling is higher)
-
----
-
 ## Key Capabilities
 
 | Capability | When to Use |
 |------------|-------------|
 | [Capability 1] | [Situation] |
 | [Capability 2] | [Situation] |
-
----
-
 ## How to Use
 
 1. [Step 1]
 2. [Step 2]
 3. [Step 3]
-
----
-
 ## Related Skills
 
 - [Related skill 1]
 - [Related skill 2]
 ```
-
----
-
 ## Minimum Required Sections
 
 | Section | Required | Description |
@@ -417,9 +347,6 @@ trigger phrases: "create skill, new skill, skill template"
 | RON Target | ✅ | What level 7 looks like |
 | Key Capabilities | ✅ | What the skill can do |
 | How to Use | ✅ | Basic usage instructions |
-
----
-
 ## Optional Sections
 
 | Section | Use When |
@@ -468,9 +395,6 @@ trigger phrases: "create skill, new skill, skill template"
 | [This skill] | [Other skill] |
 | [This skill] | [Another skill] |
 ```
-
----
-
 ## Skill Leveling Guide
 
 | Level | Name | What It Means |
@@ -482,9 +406,6 @@ trigger phrases: "create skill, new skill, skill template"
 | 5 | Advanced | Can fix issues |
 | 6 | Expert | Knows all features |
 | 7 | RON | Teaching level - can explain to others |
-
----
-
 ## Lessons Learned (2026-04-27)
 
 1. **Check existing first** - Before creating, audit current skills
@@ -520,108 +441,3 @@ trigger phrases: "create skill, new skill, skill template"
 - After editing skill frontmatter
 - Weekly (add to Shipwright cron)
 - When skill system behaves unexpectedly
-
----
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 2/7
-
-### The Drill Connection
-This skill was exercised in rotation 2/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 2/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 9/7
-
-### The Drill Connection
-This skill was exercised in rotation 9/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 9/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 16/7
-
-### The Drill Connection
-This skill was exercised in rotation 16/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 16/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 23/7
-
-### The Drill Connection
-This skill was exercised in rotation 23/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 23/7*
-

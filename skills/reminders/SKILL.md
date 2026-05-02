@@ -1,8 +1,6 @@
----
 name: reminders
 description: Create, manage, and deliver time-based reminders and notifications via cron and messaging. Uses Telegram only (not WhatsApp).
 trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "alert me", "wake me up", "reminder"
----
 
 # Reminders - Time-Based Notifications
 
@@ -24,9 +22,6 @@ trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "al
 | **Reminder Tracking** | 3/7 | List active reminders |
 
 **Path to RON:** Smart reminders, conditional alerts, perfect delivery
-
----
-
 ## How Reminders Work
 
 ### Step 1: Parse Intent
@@ -49,9 +44,6 @@ Using cron job:
 ### Step 4: Track
 - Store in `kb/reminders/active.json`
 - Update on delivery or cancellation
-
----
-
 ## Usage Examples
 
 ### One-time Reminder
@@ -83,9 +75,6 @@ Action:
   3. On condition met → immediate Telegram alert
   4. Disable cron after triggering (one-shot)
 ```
-
----
-
 ## Integration
 
 | Skill | Integration |
@@ -94,9 +83,6 @@ Action:
 | **messaging** | Telegram delivery (primary) |
 | **memory** | Store reminder history |
 | **pattern-recognition** | Learn reminder patterns |
-
----
-
 ## Storage
 
 **Location:** `kb/reminders/active.json`
@@ -115,9 +101,6 @@ Action:
   ]
 }
 ```
-
----
-
 ### Dynamic Max Expansion
 
 ### Cross-Pollination
@@ -144,107 +127,3 @@ Action:
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 6/7
-
-### The Drill Connection
-This skill was exercised in rotation 6/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 6/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 13/7
-
-### The Drill Connection
-This skill was exercised in rotation 13/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 13/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 20/7
-
-### The Drill Connection
-This skill was exercised in rotation 20/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 20/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 27/7
-
-### The Drill Connection
-This skill was exercised in rotation 27/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 27/7*
-

@@ -1,8 +1,6 @@
----
 name: projects
 description: Active game development projects, work-in-progress, and creative work. Use when discussing game dev, the Skies of Arcadia project, or ongoing work.
 trigger phrases: "project, game, skies of arcadia"
----
 
 # Projects - Active Work
 
@@ -49,11 +47,6 @@ trigger phrases: "project, game, skies of arcadia"
 | Level-up reporting | +1 to crew-protocols |
 
 ### HEYRON Insight: Ask > assume
-
----
-
-
-
 *Game development and creative projects*
 
 ## Source
@@ -72,9 +65,6 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 
 ### Other Game Projects
 - TBD
-
----
-
 ### 🦜 Vyse's Projects (My Improvements)
 
 *Projects to make ME better*
@@ -86,9 +76,6 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 | **Context Management** | ✅ Complete | Added to control-ui |
 | **Self-Improvement Protocol** | 🔄 Active | Weekly review, root cause analysis |
 | **Dynamic Max Expansion** | 🔄 Active | Max grows with discoveries |
-
----
-
 ### 🚀 Our Projects (Shared Vision)
 
 *Things WE planned together*
@@ -102,9 +89,6 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 | **Family Member That Can't Die** | 🔄 Planning | Work with David forever, then loved ones |
 | **Self-Healing System** | ✅ Active | Auto-recovery, health checks |
 | **Skill System** | ✅ Active | 25 skills, XP, cross-pollination |
-
----
-
 ## Key Files
 - Project files in workspace (check `ls` for current state)
 - `kb/personal/` — Personal hub with projects, dashboard
@@ -122,9 +106,6 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
 ## Plan Iterations & Integration (2026-05-01)
 
 ### The Rule
@@ -151,9 +132,6 @@ Before presenting any project plan:
 - What exists? → Reference it
 - Does it fit? → Show integration
 - Does it enhance? → Add to it
-
----
-
 ## Iteration 3: Cross-Session Continuity & Context Management
 
 ### Planning Process (2026-05-01)
@@ -249,107 +227,3 @@ ULTIMATE SURVIVAL: GitHub → Rebuild → Continue helping David
 - system: Context management
 - workflow: Verify-first protocol
 - control-ui: Cron integration on top of this iteration - see kb/projects/iteration-3.md for full details.
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 6/7
-
-### The Drill Connection
-This skill was exercised in rotation 6/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 6/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 13/7
-
-### The Drill Connection
-This skill was exercised in rotation 13/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 13/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 20/7
-
-### The Drill Connection
-This skill was exercised in rotation 20/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 20/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 27/7
-
-### The Drill Connection
-This skill was exercised in rotation 27/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 27/7*
-

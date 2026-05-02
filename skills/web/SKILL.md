@@ -1,15 +1,10 @@
----
 name: web
 always: true
 description: Web search, fetch, and browser automation. Use when researching or accessing web content.
----
 
 # Web - Search, Fetch, Browser
 
 *How we interact with the web*
-
----
-
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in web interaction
@@ -44,9 +39,6 @@ description: Web search, fetch, and browser automation. Use when researching or 
 | Discovery | Adds To |
 |------------|--------|
 | New discovery | +1 to web |
-
----
-
 ### HEYRON Level Insight
 
 > **Q:** "When should I use web_search vs web_fetch vs browser?"
@@ -54,9 +46,6 @@ description: Web search, fetch, and browser automation. Use when researching or 
 > **A:** "Search for finding, fetch for reading, browser for doing."
 
 **Key Takeaway:** Choose the right tool for the task.
-
----
-
 ## Tools Overview
 
 | Tool | Use | Best For |
@@ -64,9 +53,6 @@ description: Web search, fetch, and browser automation. Use when researching or 
 | **web_search** | Find info | Research, fact-checking |
 | **web_fetch** | Read pages | Get content without browser |
 | **browser** | Automate | Login, forms, interactions |
-
----
-
 ## web_search
 
 **Search the web using Gemini with Google Search grounding.**
@@ -93,9 +79,6 @@ AI-synthesized answer with citations from Google Search.
 - Find current information
 - Fact-check claims
 - Get overview of unknown area
-
----
-
 ## web_fetch
 
 **Fetch and extract readable content from URLs.**
@@ -126,9 +109,6 @@ AI-synthesized answer with citations from Google Search.
 - No JavaScript/rendering
 - No login/auth
 - May miss dynamic content
-
----
-
 ## browser
 
 **Control a headless browser for automation.**
@@ -192,9 +172,6 @@ AI-synthesized answer with citations from Google Search.
 - Fill forms
 - Interact with UI
 - Screenshots
-
----
-
 ## Decision Guide
 
 | Task | Tool |
@@ -206,9 +183,6 @@ AI-synthesized answer with citations from Google Search.
 | Screenshot | browser |
 | Quick fact check | web_search |
 | Get docs | web_fetch |
-
----
-
 ## Best Practices
 
 1. **web_search first** - Faster for research
@@ -216,17 +190,11 @@ AI-synthesized answer with citations from Google Search.
 3. **browser only when needed** - Heavier, slower
 4. **Check target** - Use host for logged-in
 5. **Respect rate limits** - Don't spam requests
-
----
-
 ## Our Configuration
 
 - **Search:** Brave API (via web_search)
 - **Fetch:** Direct HTTP
 - **Browser:** Host-based (openclaw profile)
-
----
-
 ## Trigger Phrases
 - "search", "find", "research"
 - "fetch", "get page", "scrape"
@@ -236,107 +204,3 @@ AI-synthesized answer with citations from Google Search.
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 3/7
-
-### The Drill Connection
-This skill was exercised in rotation 3/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 3/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 10/7
-
-### The Drill Connection
-This skill was exercised in rotation 10/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 10/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 17/7
-
-### The Drill Connection
-This skill was exercised in rotation 17/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 17/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 24/7
-
-### The Drill Connection
-This skill was exercised in rotation 24/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 24/7*
-

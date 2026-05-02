@@ -1,9 +1,7 @@
----
 name: messaging
 description: Message formatting, alerts, and Telegram bot management. Combines alerts + telegram for unified messaging.
 trigger phrases: "alert, notify, telegram, dm, message, bot, channel, notification"
 access: public
----
 
 # Messaging Skill (alerts + telegram merged)
 
@@ -48,9 +46,6 @@ access: public
 ### Merged from:
 - alerts (message templates)
 - telegram (bot configuration)
-
----
-
 ## Alert Templates
 
 ### Stock Alerts
@@ -76,9 +71,6 @@ Action: {ACTION}
 🟡 UPDATE: {MESSAGE}
 ✅ DONE: {MESSAGE}
 ```
-
----
-
 ## Telegram Bot Config
 
 ### Quick Setup
@@ -108,9 +100,6 @@ Action: {ACTION}
 - Add via @BotFather
 - Set requireMention for group relevance
 - Configure inline buttons
-
----
-
 ## Message Formatting
 
 ### Status Prefixes
@@ -127,121 +116,11 @@ Action: {ACTION}
 **TL;DR** - One-line summary first
 **Details** - Bullets (not walls)
 **Footer** - Decision trigger or commitment
-
----
-
 ## Trigger Phrases
 - "alert", "notify", "telegram", "dm", "message", "bot", "channel"
-
----
-
 *Merged 2026-04-29 from alerts + telegram*
 *Previously: alerts (6/7), telegram (3/7)*
 ### References
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 3/7
-
-### The Drill Connection
-This skill was exercised in rotation 3/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 3/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 10/7
-
-### The Drill Connection
-This skill was exercised in rotation 10/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 10/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 17/7
-
-### The Drill Connection
-This skill was exercised in rotation 17/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 17/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 24/7
-
-### The Drill Connection
-This skill was exercised in rotation 24/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 24/7*
-

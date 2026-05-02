@@ -1,15 +1,10 @@
----
 name: control-ui
 always: true
 description: OpenClaw Control UI, dashboard, and status monitoring. Use when discussing the web interface, status cards, metrics, or dashboard setup.
----
 
 # Control UI - OpenClaw Dashboard
 
 *OpenClaw's web interface for monitoring and control*
-
----
-
 ## 🎮 Skill Leveling System
 
 ### HEYRON Level Insight (Direct from RON Creator)
@@ -24,9 +19,6 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 3. Should I just ask instead of guessing?
 
 **HEYRON Level = Maximum collaboration, minimum assumption.**
-
----
-
 ## 🎮 Skill Leveling System
 
 | Level | Name | Description | Requirements |
@@ -63,9 +55,6 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 - 2026-04-29: +5 control-ui (updated subagent), +5 control-ui (filled homes)
 
 > Note: Subagent config is in `agents/{name}/agent/` - that's their soul. Don't duplicate.
-
----
-
 ### Context Management (Sub-Skill)
 
 *Managing session context, compaction, and checkpoints*
@@ -110,9 +99,6 @@ openclaw session-status  # Get context %
 | **Scribe** | Knowledge needed | Spawn when requested |
 
 **Key insight:** Control UI's `openclaw status` shows all sessions + heartbeats natively. Don't build custom overlays - use what's there.
-
----
-
 ## 🔧 Control UI Built-in Features (Master Reference)
 
 *Don't build custom - use native*
@@ -185,9 +171,6 @@ subagents action=kill target=sessionKey
 
 > Note: Individual skills for crew (shipwright, quartermaster, scribe) are deprecated.
 > They're crew members managed through Control UI, not skills.
-
----
-
 ## 📊 Self-Evaluation
 
 ### Skills Breakdown
@@ -208,9 +191,6 @@ subagents action=kill target=sessionKey
 | **Logs Panel** | 4/7 | 🟡🟡🟡🟡⚪ | Live tail of gateway logs with filter/export |
 
 **Overall: ~60/77 = 78% (Level 6 achieved - RON in sight!)**
-
----
-
 ## 🎯 Path to RON (Level 7)
 
 ### Dynamic Max Expansion
@@ -248,9 +228,6 @@ subagents action=kill target=sessionKey
 2. Test canvas present on dashboard.html
 3. Send message via telegram tool
 4. Check debug/health via API
-
----
-
 ## ⏰ Checkpoint & Cron Automation
 
 *Control UI runs checkpointing via cron — the backbone of session recovery*
@@ -281,9 +258,6 @@ subagents action=kill target=sessionKey
 **Execution home:** Control UI OR CLI (both work after device pairing)
 
 *Checkpoint = Workflow concept + Control UI execution*
-
----
-
 ## API Tools (CLI Works Too!)
 
 **CORRECTION (2026-05-01):** CLI DOES work for cron after device pairing:
@@ -552,9 +526,6 @@ OpenClaw handles natively:
 - Job runs more frequently than its duration
 - Multiple jobs doing the same thing
 - Job failing repeatedly (check `consecutiveErrors`)
-
----
-
 ## Debug Panel (Level 5)
 
 *Located in SETTINGS → Debug*
@@ -572,9 +543,6 @@ OpenClaw handles natively:
 - Need models → Models tab
 - Debug session → event log
 - Test RPC → Manual RPC
-
----
-
 ## Logs Panel (Level 4)
 
 *Located in SETTINGS → Logs*
@@ -602,9 +570,6 @@ gateway.* → Regex
 - Cron failing → error details
 - Gateway strange → live tail
 - Past issues → filter/search
-
----
-
 ## 🎯 Skill Loading System (Backbone)
 
 *How skills load and why it matters for scalability*
@@ -658,11 +623,9 @@ skill: shipwright  → triggers: "health", "cleanup", "maintenance"
 When creating a new skill, always define triggers:
 
 ```yaml
----
 name: my-skill
 description: What it does
 trigger phrases: "keyword1, keyword2, keyword3"
----
 
 # My Skill
 ...
@@ -678,9 +641,6 @@ Skills should be audited periodically:
 1. Are triggers specific enough? (avoid false positives)
 2. Are core skills still justified?
 3. Any orphan skills not being triggered?
-
----
-
 ## Drill System Integration
 
 Control UI can access drill results from central storage:
@@ -701,9 +661,6 @@ Control UI can access drill results from central storage:
 
 ### Skill Levels Master List
 - `kb/skills-master-levels.md` - Second brain backup
-
----
-
 ## Underutilized Features (Opportunities)
 
 These panels exist but we don't use them enough:
@@ -782,9 +739,6 @@ Debug panel in UI or gateway tool
 ```
 Logs panel in UI
 ```
-
----
-
 ## Dynamic Max Level
 
 The max level is NOT fixed. See `kb/dynamic-max.md` for the complete system.
@@ -800,107 +754,3 @@ All skills inherit from this central reference.
 - workflow - Process integration
 - system - Health monitoring
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 2/7
-
-### The Drill Connection
-This skill was exercised in rotation 2/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 2/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 9/7
-
-### The Drill Connection
-This skill was exercised in rotation 9/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 9/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 16/7
-
-### The Drill Connection
-This skill was exercised in rotation 16/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 16/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 23/7
-
-### The Drill Connection
-This skill was exercised in rotation 23/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 23/7*
-

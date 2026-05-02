@@ -1,8 +1,6 @@
----
 name: self-healing
 description: Self-diagnosis, recovery, and automation for autonomous operations. Essential for RON-level independence.
 trigger phrases: "self-healing, auto-recovery, diagnostics"
----
 
 # Self-Healing Skill
 
@@ -45,9 +43,6 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 | Discovery | Adds To |
 |------------|--------|
 | New discovery | +1 to self-healing |
-
----
-
 ## Why This Matters
 
 RON operates without constant human oversight. We need:
@@ -56,9 +51,6 @@ RON operates without constant human oversight. We need:
 2. **Attempt recovery** - Fix common issues automatically
 3. **Prevent recurrence** - Add to FIXES.md
 4. **Escalate wisely** - Only when truly stuck
-
----
-
 ## Health Check Protocol
 
 ### Run on Wake
@@ -75,9 +67,6 @@ sessions_list
 ```bash
 cron list
 ```
-
----
-
 ## Retry Logic (Auto-Recovery)
 
 ### Before Escalating, Try 3 Times
@@ -101,9 +90,6 @@ If all fail → Log to FIXES.md → Escalate
 ```
 [RETRY] Attempt 2/3 for cron-job-x - previous failed: timeout
 ```
-
----
-
 ## Recovery Patterns
 
 ### Pattern 1: Gateway Stuck
@@ -121,9 +107,6 @@ If all fail → Log to FIXES.md → Escalate
 ### Pattern 4: Plugin Error
 **Symptom:** Plugin won't load
 **Fix:** Check config, restart gateway
-
----
-
 ## Escalation Rules
 
 **When to alert David:**
@@ -136,29 +119,19 @@ If all fail → Log to FIXES.md → Escalate
 - Known issue with known fix
 - Non-critical cron failure
 - First-time error worth investigating
-
----
-
 ## Prevention Loop
 
 1. **Log failure** → memory/2026-*.md
 2. **Apply fix** → kb/system/FIXES.md
 3. **Test fix** → Verify recovery works
 4. **Monitor** → Add to health checks
-
----
-
 ## Trigger Phrases
 - "self-heal"
 - "retry"
 - "error recovery"
 - "auto-recover"
 - "fix itself"
-
----
-
 *Self-healing for RON-level autonomy*
----
 
 ## AUTO SELF-HEALING (Now Active)
 
@@ -184,107 +157,3 @@ This is now AUTO, not just documented.
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 4/7
-
-### The Drill Connection
-This skill was exercised in rotation 4/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 4/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 11/7
-
-### The Drill Connection
-This skill was exercised in rotation 11/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 11/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 18/7
-
-### The Drill Connection
-This skill was exercised in rotation 18/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 18/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 25/7
-
-### The Drill Connection
-This skill was exercised in rotation 25/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 25/7*
-

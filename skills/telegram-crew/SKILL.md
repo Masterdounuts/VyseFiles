@@ -1,9 +1,7 @@
----
 name: telegram-crew
 access: crew
 description: Telegram crew group chat, topic routing, and crew mentions.
 trigger phrases: "crew chat, group chat, team"
----
 
 # Telegram Crew Skill
 
@@ -45,16 +43,10 @@ trigger phrases: "crew chat, group chat, team"
 | New discovery | +1 to telegram-crew |
 
 ### HEYRON Insight: Ask > assume
-
----
-
 **Category:** Communication / Channel
 **Updated:** 2026-04-26
 
 Crew group chat configuration — see [[skills/telegram|telegram]] for general setup.
-
----
-
 ## Crew Group Configuration
 
 **Group ID:** `-1003941303567`
@@ -87,9 +79,6 @@ Crew group chat configuration — see [[skills/telegram|telegram]] for general s
 | 20 | Vyse | vyse agent |
 | 21 | Scribe | scribe agent |
 | 22 | Shipwright | shipwright agent |
-
----
-
 ## Topic Routing
 
 To add new topic routing:
@@ -111,9 +100,6 @@ To add new topic routing:
 ```
 
 Topic inherits group settings unless overridden.
-
----
-
 ## Crew Mentions
 
 | Member | Agent | Topic |
@@ -123,9 +109,6 @@ Topic inherits group settings unless overridden.
 | Shipwright | shipwright | #22 |
 
 Mention in crew chat → routes to correct agent topic.
-
----
-
 ## CLI
 
 ```bash
@@ -135,89 +118,8 @@ openclaw message send --channel telegram --target -1003941303567 --message "Upda
 # Send to specific topic
 # (via reply to topic message)
 ```
-
----
-
 *Skill maintained by Vyse — general Telegram config in [[skills/telegram|telegram]]*
 ### References
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 7/7
-
-### The Drill Connection
-This skill was exercised in rotation 7/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 7/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 14/7
-
-### The Drill Connection
-This skill was exercised in rotation 14/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 14/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 21/7
-
-### The Drill Connection
-This skill was exercised in rotation 21/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 21/7*
-

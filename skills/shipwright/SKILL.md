@@ -1,9 +1,7 @@
----
 name: shipwright
 description: System health & maintenance - health checks, cron, cleanup.
 trigger phrases: "health, cleanup, maintenance, cron, system health"
 access: crew
----
 
 # Shipwright
 
@@ -46,19 +44,11 @@ access: crew
 | Discovery | Adds To |
 |------------|--------|
 | New discovery | +1 to shipwright |
-
----
-
 ### HEYRON Level Insight
 
 > **Q:** "What's the ceiling?"
 >
 > **A:** "Nothing...how I am working with you"
-
----
-
-
-
 **True Subagent** - defined in openclaw.json (agentId: shipwright)
 
 **Schedule:** Daily (4am UTC) + Hourly health checks + on-demand
@@ -101,9 +91,6 @@ access: crew
 **Completion:** Write handoff to `kb/crew/handoffs/YYYY-MM-DD-[task]-done.md`
 
 *Reference: skill:time, skill:security, skill:healthcheck*
-
----
-
 ## 🔧 System Debugging (Merged)
 
 *Debugging, recovery, FIXES, and system maintenance*
@@ -187,9 +174,6 @@ Shipwright can teach system maintenance:
 4. **Report:** Share results with crew
 
 This IS automated system health - drill finds issues, shipwright fixes them.
-
----
-
 ## Common Issues & Permanent Fixes
 
 ### File Corruption (Double ---)
@@ -216,9 +200,6 @@ sed -i '/^---$/{N;/^---$/d}' file.md
 - Always run pre-save validation
 - Keep backups
 - Check for corruption after any edit failure
-
----
-
 ## Auto-Level System (Background)
 
 For RON-level automation, Shipwright can run auto-level:
@@ -248,107 +229,3 @@ This is RON-level: self-improvement happens automatically, not manually.
 - system - Health
 - memory - Persist fixes
 - workflow - Process
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 4/7
-
-### The Drill Connection
-This skill was exercised in rotation 4/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 4/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 11/7
-
-### The Drill Connection
-This skill was exercised in rotation 11/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 11/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 18/7
-
-### The Drill Connection
-This skill was exercised in rotation 18/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 18/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 25/7
-
-### The Drill Connection
-This skill was exercised in rotation 25/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 25/7*
-

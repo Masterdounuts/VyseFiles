@@ -1,17 +1,12 @@
----
 name: github
 description: GitHub version control, git-sync, and persistence. Use when discussing version control, pushing to GitHub, or the persistence layer.
 trigger phrases: "git, push, commit, repo, version control"
----
 
 # GitHub - Version Control & Persistence
 
 *How we use GitHub as our second brain*
 
 > **See also:** [[kb/system/brain|Brain System]] for full second brain architecture
-
----
-
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
@@ -55,9 +50,6 @@ trigger phrases: "git, push, commit, repo, version control"
 | Teaching | 7/7 | Can teach others |
 
 **RON Level achieved!**
-
----
-
 ### HEYRON Level Insight
 
 > **Q:** "How should AI use GitHub for collaboration?"
@@ -65,9 +57,6 @@ trigger phrases: "git, push, commit, repo, version control"
 > **A:** "Search your own knowledge first. GitHub isn't just storage - it's your memory."
 
 **Key Takeaway:** GitHub is our second brain. Search it before asking.
-
----
-
 ## Our RON Workflow
 
 ### 1. On Wake (First Thing)
@@ -117,15 +106,9 @@ These get priority commit treatment:
 - `git status` - What changed?
 - `git diff --stat` - How much?
 - Check for conflicts with `origin/main`
-
----
-
 ## Quick Links
 - [OpenClaw Repo](https://github.com/openclaw/openclaw)
 - [Workspace Vault](https://github.com/david-jacques/openclaw-workspace)
-
----
-
 ## Standard Git Commands
 
 ### Daily Flow
@@ -159,32 +142,20 @@ git grep "stock" -- "kb/stocks/*"
 # Find files
 find . -name "*.md" | xargs grep "keyword"
 ```
-
----
-
 ## What Gets Synced
 - `kb/` — Knowledge bases
 - `memory/` — Daily logs
 - `skills/` — Agent skills
 - Core files (SOUL.md, IDENTITY.md, AGENTS.md)
-
----
-
 ## Why GitHub Matters
 - **Persistence** — Workspace survives beyond sessions
 - **Backup** — Off-site redundancy
 - **Memory** — Search past decisions
 - **Collaboration** — You see what changed
-
----
-
 ## Branch & Remote
 - **Branch:** `main`
 - **Remote:** `origin`
 - **Workspace repo:** `Masterdounuts/VyseFiles`
-
----
-
 ## Conflict Resolution
 
 **If push fails (conflict):**
@@ -203,9 +174,6 @@ git add <file>
 git commit -m "Resolve: force ours"
 git push
 ```
-
----
-
 ## GitHub as Second Brain
 
 ### Search Order
@@ -218,9 +186,6 @@ git push
 - Find past decisions in `memory/2026-*.md`
 - Check skills for how-to
 - Look in `kb/system/issues.md` for known problems
-
----
-
 ## Advanced: Git Hooks (Implemented)
 
 ### Pre-commit Hook
@@ -245,9 +210,6 @@ git push
 chmod +x .git/hooks/pre-commit
 chmod +x .git/hooks/post-commit
 ```
-
----
-
 ## Branch Workflow (Active)
 
 | Branch | Use |
@@ -260,9 +222,6 @@ chmod +x .git/hooks/post-commit
 - Work on main for speed
 - Branch for experiments (future)
 - Always pull before push
-
----
-
 ## Trigger Phrases
 - "git", "github", "sync"
 - "push", "commit", "persist"
@@ -272,107 +231,3 @@ chmod +x .git/hooks/post-commit
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 3/7
-
-### The Drill Connection
-This skill was exercised in rotation 3/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 3/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 10/7
-
-### The Drill Connection
-This skill was exercised in rotation 10/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 10/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 17/7
-
-### The Drill Connection
-This skill was exercised in rotation 17/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 17/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 24/7
-
-### The Drill Connection
-This skill was exercised in rotation 24/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 24/7*
-

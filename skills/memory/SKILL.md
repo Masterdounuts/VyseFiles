@@ -1,9 +1,7 @@
----
 name: memory
 access: vyse-only
 description: How Vyse remembers, recalls, and manages context. Use when discussing memory, recall, or context management.
 trigger phrases: "remember, recall, memory, past, what were we, context"
----
 
 # Memory - Recall System
 
@@ -45,19 +43,11 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 | Short-term recall | +1 to dreaming |
 | Recall optimization | +1 to all skills |
 | Skill system docs | +1 to memory ← NEW |
-
----
-
 ### HEYRON Level Insight
 
 > **Q:** "What's the ceiling?"
 >
 > **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
-
----
-
-
-
 ## Architecture
 
 | Layer | Location | Purpose |
@@ -104,7 +94,6 @@ Key decisions go to `memory/decisions.md`:
 - "remember", "what were we working on"
 - "memory", "recall", "context"
 - "check active", "check handoff", "check memory"
----
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
 
@@ -112,107 +101,3 @@ Full: Help David during his life, then help loved ones after
 - vyse-core - Identity
 - learning - Improvement
 - system - Health recovery
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 2/7
-
-### The Drill Connection
-This skill was exercised in rotation 2/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 2/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 9/7
-
-### The Drill Connection
-This skill was exercised in rotation 9/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 9/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 16/7
-
-### The Drill Connection
-This skill was exercised in rotation 16/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 16/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 23/7
-
-### The Drill Connection
-This skill was exercised in rotation 23/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 23/7*
-

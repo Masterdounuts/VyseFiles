@@ -1,20 +1,15 @@
----
 name: system
 always: true
 description: Debugging, recovery, FIXES, and health checks. Use when something breaks or needs investigation.
----
 
 # System - Debugging & Recovery
 
 *Debugging, recovery, FIXES, and health checks*
-
----
-
 ## 🎯 RON Level Target
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 45 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 46 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 70/70 (RON)
 
@@ -40,16 +35,13 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 - **cron** - Job management
 - Decision tree: exec for status → gateway for restart → cron for jobs
 
-**Max Level:** 45 (health engine)
+**Max Level:** 46 (health engine)
 
 | Discovery | Adds To |
 |------------|--------|
 | Cron fix patterns | +1 to system |
 | Gateway patterns | +1 to all skills |
 | Recovery automation | +1 to self-healing |
-
----
-
 ## 🎯 Key Principle: Check OpenClaw First
 
 Before building ANY new feature, script, or automation:
@@ -66,9 +58,6 @@ Before building ANY new feature, script, or automation:
 - ✅ Cron job management (UI panel)
 - ✅ Logs panel (built-in)
 - ✅ Config UI (built-in)
-
----
-
 ## 🔧 Debugging Skill Loading
 
 If skills aren't loading correctly:
@@ -95,9 +84,6 @@ grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 | Too many always:true | Move to trigger-based |
 | Conflicting triggers | Make more specific |
 | No skill index | Use skills/index.md |
-
----
-
 ## 🔧 FIXES Log
 
 *Never fix the same problem twice*
@@ -113,9 +99,6 @@ grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 | Apr 14 | GGB price fetch blocked | Use CNBC `/quotes/{TICKER}` |
 | Apr 14 | PDF formatting not applying | Use LaTeX, not HTML |
 | Apr 13 | Web search not working | Enable duckduckgo plugin |
-
----
-
 ## 🔍 Debugging Flow
 
 1. **Identify** - What's broken? Get exact error.
@@ -128,9 +111,6 @@ grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 4. **Fix** - Apply solution or create script
 5. **Log** - Add to FIXES.md
 6. **Verify** - Confirm fix works
-
----
-
 ## 🏥 Health Checks
 
 | Check | Command | Frequency |
@@ -139,9 +119,6 @@ grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 | Context | `session_status` | On wake |
 | Cron | `cron action=list` | Weekly |
 | Sessions | `sessions_list` | Weekly |
-
----
-
 ## 🆘 Recovery Procedures
 
 ### Session Crash
@@ -158,9 +135,6 @@ grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 2. Check error in output
 3. Fix path/permission/timeout
 4. Re-enable if needed
-
----
-
 ## 📝 Creating FIXES
 
 When you solve a problem:
@@ -171,16 +145,12 @@ When you solve a problem:
    - Fix applied
    - Status
 2. Include code snippets if helpful
-
----
-
 ## Trigger Phrases
 - "fix", "debug", "broken"
 - "error", "failed", "not working"
 - "health check", "recover"
 - "FIXES", "what's broken"
 
----
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
 
@@ -188,9 +158,6 @@ Full: Help David during his life, then help loved ones after
 - workflow - Process
 - shipwright - Health maintenance
 - memory - Persist fixes
-
----
-
 ## Chain Drill Insights (2026-05-02)
 
 ### What We Learned
@@ -208,111 +175,4 @@ Skill A + XP → Cross-pollination → Skill B + XP
 ### Key Discovery
 **Growth = Real content added, not XP gained.**
 XP tracks work, but only content in skills = actual capability.
-
----
-
 *Added after Chain Drill: documented real insights*
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 1/7
-
-### The Drill Connection
-This skill was exercised in rotation 1/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 1/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 8/7
-
-### The Drill Connection
-This skill was exercised in rotation 8/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 8/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 15/7
-
-### The Drill Connection
-This skill was exercised in rotation 15/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 15/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 22/7
-
-### The Drill Connection
-This skill was exercised in rotation 22/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 22/7*
-

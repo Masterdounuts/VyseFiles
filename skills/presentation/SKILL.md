@@ -1,8 +1,6 @@
----
 name: presentation
 description: Chat presentation, UX optimization, and communication formatting in Control UI. Use when improving how we present in the chat interface.
 trigger phrases: "presentation, format, ux, UI, chat interface, status line, skill tags"
----
 
 # Presentation Skill
 
@@ -40,9 +38,6 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 | New presentation feature | +1 to presentation |
 | UX research | +1 to web |
 | Format innovation | +1 to crew-protocols |
-
----
-
 ## The 4 Recommendations
 
 ### 1. Skill Transparency
@@ -67,9 +62,6 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 ### 4. Multi-step Progress
 **Format:** `Step 1/3 → Step 2/3 → ✅ Done`
 **Why:** Shows progress for complex tasks
-
----
-
 ## Cross-Pollination Chain
 
 When using presentation skill:
@@ -77,9 +69,6 @@ When using presentation skill:
 - **crew-protocols** → +3 XP (communication rules)
 - **control-ui** → +3 XP (UI optimization)
 - **web** → +3 XP (UX research)
-
----
-
 ## Implementation Check
 
 | Feature | Status | Added |
@@ -94,107 +83,3 @@ When using presentation skill:
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 6/7
-
-### The Drill Connection
-This skill was exercised in rotation 6/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 6/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 13/7
-
-### The Drill Connection
-This skill was exercised in rotation 13/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 13/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 20/7
-
-### The Drill Connection
-This skill was exercised in rotation 20/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 20/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 27/7
-
-### The Drill Connection
-This skill was exercised in rotation 27/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 27/7*
-

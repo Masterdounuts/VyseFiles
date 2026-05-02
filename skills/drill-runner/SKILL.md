@@ -1,8 +1,6 @@
----
 name: drill-runner
 description: Systematically runs all drill tiers - skill-drill, true-drill, governance-drill. Created as needed for automated verification.
 trigger phrases: "run drill, drill results, verify skills, skill health"
----
 
 # Drill Runner Skill
 
@@ -61,18 +59,12 @@ Drill-runner improves:
 - skill-creator → auto-audit capability
 - learning → gap detection
 - shipwright → health checks
-
----
-
 *Created as-needed when systematic verification was required*
 *Level will grow as more drill capabilities are needed*
 ### References
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
-
----
-
 ## Drill Types
 
 ### Tier 1: Skill Drill
@@ -107,111 +99,4 @@ Drill-runner improves:
 - Daily health: run all 3 tiers
 - After skill changes: run tier 1
 - Weekly: full governance check
-
----
-
 *Expanded: 2026-05-02 - Added drill types and result parsing*
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 5/7
-
-### The Drill Connection
-This skill was exercised in rotation 5/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 5/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 12/7
-
-### The Drill Connection
-This skill was exercised in rotation 12/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 12/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 19/7
-
-### The Drill Connection
-This skill was exercised in rotation 19/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 19/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 26/7
-
-### The Drill Connection
-This skill was exercised in rotation 26/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 26/7*
-

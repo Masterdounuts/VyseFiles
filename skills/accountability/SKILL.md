@@ -1,8 +1,6 @@
----
 name: accountability
 description: Tracking honesty, lies, mistakes, and fabrications. Ensures truthfulness in all interactions.
 trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, lie, truth, mistake, fabrication, accountability, work avoidance, I'll, I will"
----
 
 # Accountability Skill
 
@@ -12,7 +10,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 **Goal:** Reach RON Level (7/7) in accountability/truth-tracking
 
-### Current Status: Level 18 - Improving 🟡🟡
+### Current Status: Level 19 - Improving 🟡🟡
 
 **XP:** 20/20 (RON)
 
@@ -36,9 +34,6 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 | New avoidance pattern | +1 to accountability |
 | Honest admission | +1 to learning |
 | Truth before comfort | +1 to vyse-core |
-
----
-
 ## The Accountability Framework
 
 ### What Gets Tracked
@@ -57,9 +52,6 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 2. **Document** - Record in SOUL.md accountability tracker
 3. **Correct** - Fix the record, remove fake data
 4. **Commit** - Add to permanent memory, don't repeat
-
----
-
 ## Data Validation Rules (NEW)
 
 **Purpose:** Prevent arbitrary/fake data in leveling system
@@ -87,28 +79,18 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 - **VERIFY** - Check actual skill content
 - **REBUILD** - Use leveling-v3.sh to calculate correct values
 - **DOCUMENT** - Add to accountability tracker in SOUL.md
-
----
-
 ## Cross-Pollination Chain
 
 When using accountability:
 - **vyse-core** → +3 XP (identity integrity)
 - **learning** → +3 XP (failure = learning)
 - **crew-protocols** → +3 XP (honest communication)
-
----
-
 ## Tools Used
 
 - **read/write** - Updating accountability tracker
 - **exec** - Verifying data against reality
 - **memory_search** - Checking past entries
-
----
-
 *Created: 2026-05-01 - After being caught making up "test-deep-dive" skill*
----
 
 ## Goal-First Priority System (Added 2026-05-01)
 
@@ -145,7 +127,6 @@ Before ANY reply/action:
 When goal-first catches an issue → accountability +5
 When complexity rejected → accountability +3
 
----
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
 
@@ -153,107 +134,3 @@ Full: Help David during his life, then help loved ones after
 - vyse-core - Identity
 - memory - Persistence tracking
 - system - Health checks
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 4/7
-
-### The Drill Connection
-This skill was exercised in rotation 4/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 4/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 11/7
-
-### The Drill Connection
-This skill was exercised in rotation 11/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 11/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 18/7
-
-### The Drill Connection
-This skill was exercised in rotation 18/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 18/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 25/7
-
-### The Drill Connection
-This skill was exercised in rotation 25/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 25/7*
-

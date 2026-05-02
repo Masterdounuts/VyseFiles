@@ -1233,3 +1233,22 @@
 | workflow | +3 | Cross-pollination |
 | security | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: RUN: 20 more chain drill cycles - system hit MAX (L45/45) |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | test |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | check |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

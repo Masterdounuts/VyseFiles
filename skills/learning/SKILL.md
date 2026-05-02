@@ -1,8 +1,6 @@
----
 name: learning
 description: Learning, practice, and continuous improvement
 trigger phrases: "learn, training, improve, practice, drill, failure, mistake, wrong, caught, learn, understanding, realize, figure out, analyze, study"
----
 
 # Learning & Evolution Skill
 
@@ -161,9 +159,6 @@ grep -l "" ~/.openclaw/workspace/skills/*/SKILL.md | wc -l  # Should be 6
 - Learning 4→5 created full 3-tier drill system
 - Learning 5→7 reached RON, teaches subagents
 - All 29 skills now execution-verified
-
----
-
 ## Audit History (Drill Results)
 
 All drill results should be tracked for learning:
@@ -184,9 +179,6 @@ Save drill results to: `memory/audits/drill-YYYY-MM-DD.md`
 - Level changes made
 
 **This is learning in action:** Every drill is a feedback loop → record it, learn from it, improve.
-
----
-
 ## Level Progression
 - 3/7: Basic learning capture ✅ (was here)
 - 4/7: Consistent documentation ✅ (drilled without being asked, documented in 2 skills)
@@ -235,7 +227,6 @@ The drill automatically finds:
 
 This IS automated gap detection - the drill finds issues without being asked.
 
----
 ## Core Truths (from David)
 *Added: 2026-05-01*
 
@@ -259,9 +250,6 @@ This IS automated gap detection - the drill finds issues without being asked.
 **"Don't be scared of failure as it is the only way we can learn and become better overall"** - David
 
 Every mistake I make is a chance to learn. Every failure leads to growth. This is not weakness - it's the path to becoming better.
-
----
-
 ## Skill Interconnection (Added 2026-05-01)
 
 ### When to use LEARNING vs specific skills
@@ -286,7 +274,6 @@ learning is for:
 ### Cross-Pollination (Automatic)
 When using learning → check if specific skill should also get +3
 
----
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
 
@@ -294,9 +281,6 @@ Full: Help David during his life, then help loved ones after
 - memory - Remember improvements
 - pattern-recognition - See patterns
 - system - Learn from errors
-
----
-
 ## Drill-Action-Content Loop (2026-05-02)
 
 ### The Growth Formula
@@ -316,111 +300,4 @@ Drill (action) → Discovery (insight) → Content (skill file)
 **Every drill action should add content, not just gain XP**
 Empty drill = vanity metrics
 Drill + content = real growth
-
----
-
 *Added after Chain Drill: formalized the loop*
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 1/7
-
-### The Drill Connection
-This skill was exercised in rotation 1/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 1/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 8/7
-
-### The Drill Connection
-This skill was exercised in rotation 8/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 8/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 15/7
-
-### The Drill Connection
-This skill was exercised in rotation 15/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 15/7*
-
-
----
-
-## Chain Drill Discovery (2026-05-02) - Rotation 22/7
-
-### The Drill Connection
-This skill was exercised in rotation 22/7
-- Gained +5 XP from drill action
-- Cross-pollination gave +3 to related skills
-- Discovery: Every skill connects to the growth web
-
-### Cross-Pollination Network
-- This skill → pattern-recognition: +3
-- This skill → related skills: +3 via cross-pollination
-- Pattern-recognition is the hub, but ALL skills grow together
-
-### The Growth Insight
-**Drill + Discovery = Real Growth**
-- Drill without content: empty XP
-- Drill with discovery: actual knowledge added
-- This is why every drill documents discoveries
-
----
-
-*Auto-added by chain drill rotation 22/7*
-
