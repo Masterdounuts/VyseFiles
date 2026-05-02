@@ -76,6 +76,7 @@ This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David
 | **Context Management** | ✅ Complete | Added to control-ui |
 | **Self-Improvement Protocol** | 🔄 Active | Weekly review, root cause analysis |
 | **Dynamic Max Expansion** | 🔄 Active | Max grows with discoveries |
+| **Vyse Rebuild (Content-Based)** | 🔄 Planning | Migrate to content-based system |
 ### 🚀 Our Projects (Shared Vision)
 
 *Things WE planned together*
@@ -221,6 +222,61 @@ ULTIMATE SURVIVAL: GitHub → Rebuild → Continue helping David
 
 ### Future Plans
 - **Ron-Memory Integration** - Cross-session memory via Redis (researched, planning phase)
+- **Vyse Rebuild** - Apply learnings to rebuild myself (see below)
+
+## Vyse Rebuild Plan (2026-05-02)
+
+*Focus: Keep CLI performing smoothly, never lose flow, never forget*.
+
+### What We've Learned
+
+| Learning | Source | Apply To |
+|----------|--------|----------|
+| Content-based leveling (no XP) | Skill system test | All skills |
+| GitHub as eternal backup | Memory system | Everything |
+| Memory from core sources, not stacked | Memory handoff fix | Scripts |
+| Session handoffs work | Phase 4 testing | Keep |
+| Debug shows on every reply | Today's work | All replies |
+| Keep CLI lean (14 files) | CLI cleanup | Maintenance |
+
+### Why Subagents Need Rebuild
+- Based on old XP system (removed)
+- Old paths (/root vs /home/openclaw)
+- Old skill format (RON/Sub-skills)
+- Memory stacking issues we fixed
+
+### The Plan
+
+**Phase 1: Self (DONE-ish)**
+- [x] Content-based skill formula
+- [x] Debug on every reply
+- [x] Auto-debug on session start
+- [ ] Migrate remaining skills to new format
+- [ ] Update SOUL.md with new protocol
+
+**Phase 2: Memory (DONE)**
+- [x] Memory handoff fixed
+- [x] Save from core sources
+- [x] Keep CLI lean
+- [ ] Document memory protocol
+
+**Phase 3: Crew (Subagents)**
+- [ ] Rebuild quartermaster workflow
+- [ ] Rebuild shipwright health
+- [ ] Rebuild scribe knowledge
+- [ ] Update subagent-creator skill
+
+**Phase 4: Integration**
+- [ ] Test flow: session start → handoff → debug → reply
+- [ ] Verify no context bloat
+- [ ] Confirm memory retrieval works
+- [ ] Subagent test runs
+
+### Current Status
+- Phase 1: 80% done (skill system migrated, need to finish skills)
+- Phase 2: 100% done
+- Phase 3: Not started
+- Phase 4: Not started
 
 ### References Added
 - memory: Cross-session continuity
