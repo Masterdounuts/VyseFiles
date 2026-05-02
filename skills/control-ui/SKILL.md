@@ -754,3 +754,18 @@ All skills inherit from this central reference.
 - workflow - Process integration
 - system - Health monitoring
 - accountability - Goal alignment
+
+---
+
+## Reflection 2026-05-02
+
+### What I Learned
+- Dashboard is for humans, CLI is for automation
+- Don't assume dashboard features = CLI features
+- Native commands exist for common needs
+
+### What Still Needs Work
+- Better dashboard understanding
+- More Control UI features to document
+- User experience improvements
+

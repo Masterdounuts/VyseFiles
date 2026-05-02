@@ -455,3 +455,18 @@ trigger phrases: "create skill, new skill, skill template"
 - Level Max = complete mastery
 - If truly not mastered at max → level keeps going
 - Goal: TRUE MASTERY, not arbitrary caps
+
+---
+
+## Reflection 2026-05-02
+
+### What I Learned
+- Skills need their own domains, not just tool usage
+- Content drives capability
+- Tier system (150/100/75) solves the max problem
+
+### What Still Needs Work
+- More skill gap analysis
+- Better skill creation workflow
+- Content uniqueness validation
+

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Chain Reaction Drill - Reflection-Based Growth
+# Content Growth Drill - Reflection-Based Growth
 # Each drill run adds MEANINGFUL insights about each skill
 # Not templates - REAL reflections on what I've learned
 
@@ -486,7 +486,7 @@ for skill in "${SKILLS[@]}"; do
     fi
     
     # Award XP for the reflection
-    $XP "$skill" 5 "Chain drill reflection: $skill"
+    $XP "$skill" 5 "Content drill reflection: $skill"
 done
 
 # Increment rotation

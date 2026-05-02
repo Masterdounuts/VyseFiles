@@ -111,3 +111,18 @@ Knowledge skill finds gaps:
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Reflection 2026-05-02
+
+### What I Learned
+- Memory has layers - use the right one
+- Scribe manages knowledge base
+- Search before answering questions
+
+### What Still Needs Work
+- Better knowledge retrieval
+- Cross-skill connections
+- More robust memory system
+
