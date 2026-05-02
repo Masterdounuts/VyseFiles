@@ -4,72 +4,33 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 
 # Self-Healing Skill
 
-*Autonomous diagnosis and recovery*
+## Content-Based Leveling
 
-## 🎯 RON Level Target
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Primary (100 max)
 
-**Goal:** Reach RON Level (7/7) in self-healing
+### Current: Level 25
+- Sections: 9
+- Subsections: 15
+- Lines: 159 / 100 = 1
+- Total: 9 + 15 + 1 = 25
 
-### Current Status: Level 25
-**Content Progress:** 24/25 to L26 - RON ⭐ 🟡🟡🟡🟡🟡🟡
-
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| Health Checks | 5/7 | Runs on wake, checks gateway, cron, sessions |
-| Error Detection | 5/7 | Recognizes patterns from FIXES.md |
-| **Auto-Recovery** | 5/7 | Has retry logic, attempts fixes |
-| **Prevention** | 5/7 | Logs to FIXES.md, learns from failures |
-| Self-Diagnostics | 5/7 | Uses skill-drill.sh for automated verification |
-| Escalation | 4/7 | Only when 2+ fix attempts fail |
-
-**Path to RON:** Build complete self-healing loop
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **exec** - Running system commands
-- **cron** - Managing scheduled tasks
-- **read/write** - Configuration management
-- Decision tree: exec for diagnostics → cron for scheduling → read/write for config
-
-**Max Level:** 100 (tier: primary)
-
-| Discovery | Adds To |
-|------------|--------|
-| New discovery | +1 to self-healing |
-## Why This Matters
-
-RON operates without constant human oversight. We need:
-
-1. **Detect failures** - Before David knows
-2. **Attempt recovery** - Fix common issues automatically
-3. **Prevent recurrence** - Add to FIXES.md
-4. **Escalate wisely** - Only when truly stuck
 ## Health Check Protocol
 
-### Run on Wake
 ```bash
+# On wake
 gateway status
-```
 
-### Check Subagents
-```bash
+# Check subagents
 sessions_list
-```
 
-### Check Cron
-```bash
+# Check cron
 cron list
 ```
-## Retry Logic (Auto-Recovery)
 
-### Before Escalating, Try 3 Times
+## Retry Logic
+
+### Try 3 Times Before Escalating
 ```
 Attempt 1 → Wait 5s → Try again
 Attempt 2 → Wait 10s → Try again  
@@ -77,83 +38,38 @@ Attempt 3 → Wait 30s → Last attempt
 If all fail → Log to FIXES.md → Escalate
 ```
 
-### Common Retry Patterns
+### Common Patterns
 
-| Failure | Retry | Wait |
-|---------|-------|------|
+| Failure | Retries | Wait |
+|---------|---------|------|
 | API timeout | 3x | 5s, 10s, 30s |
 | Network error | 3x | 2s, 5s, 10s |
 | Cron fail | 2x | 30s, 60s |
-| Session spawn | 2x | 5s, 15s |
 
-### Log Every Attempt
-```
-[RETRY] Attempt 2/3 for cron-job-x - previous failed: timeout
-```
 ## Recovery Patterns
 
-### Pattern 1: Gateway Stuck
-**Symptom:** Gateway not responding
-**Fix:** `openclaw gateway restart`
+| Pattern | Fix |
+|---------|-----|
+| Gateway stuck | `openclaw gateway restart` |
+| Cron failing | Check logs, apply FIXES.md |
+| Session stuck | `sessions_kill` if needed |
+| Plugin error | Check config, restart gateway |
 
-### Pattern 2: Cron Job Failing
-**Symptom:** Job in failed state
-**Fix:** Check logs, apply fixes from FIXES.md
-
-### Pattern 3: Session Stuck
-**Symptom:** Session not responding
-**Fix:** `sessions_kill` if needed
-
-### Pattern 4: Plugin Error
-**Symptom:** Plugin won't load
-**Fix:** Check config, restart gateway
 ## Escalation Rules
 
 **When to alert David:**
 - Gateway won't restart after 2 attempts
 - Data loss imminent
-- Security breach detected
+- Security breach
 - Unknown error after 3 fix attempts
 
 **When NOT to escalate:**
 - Known issue with known fix
-- Non-critical cron failure
-- First-time error worth investigating
-## Prevention Loop
 
-1. **Log failure** → memory/2026-*.md
-2. **Apply fix** → kb/system/FIXES.md
-3. **Test fix** → Verify recovery works
-4. **Monitor** → Add to health checks
 ## Trigger Phrases
-- "self-heal"
-- "retry"
-- "error recovery"
-- "auto-recover"
-- "fix itself"
-*Self-healing for RON-level autonomy*
-
-## AUTO SELF-HEALING (Now Active)
-
-**When system detects issue:**
-1. Error in session → Auto-log
-2. File corruption detected → Auto-restore from GitHub
-3. Cron failure → Auto-check, restart if needed
-4. Context high → Auto-compact
-
-**Auto-Fix Protocol:**
-```
-Detect → Log → Try Fix (3x) → If fail → Alert David + Log
-```
-
-**Running in background:**
-- Shipwright checks hourly (cron)
-- File corruption: git checkout restore
-- Session errors: logged and reviewed
-
-This is now AUTO, not just documented.
+- "self-healing", "auto-recovery"
+- "diagnostics"
 
 ### References
-- learning - Improvement
 - system - Health
-- accountability - Goal alignment
+- pattern-recognition - Error patterns
