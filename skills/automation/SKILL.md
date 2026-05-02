@@ -4,14 +4,16 @@ trigger phrases: "every time, repeatedly, always, auto, automate, script, run au
 
 # Automation Skill
 
-**Level:** 15
-**Max Level:** 75 (tier: supporting)
+## Content-Based Leveling
 
-## Purpose
-## XP Protocol
-Every action must track XP via /scripts/xp-gain.sh
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Supporting (75 max)
 
-Recognize when actions repeat and should be automated.
+### Current: Level 15
+- Sections: 10
+- Subsections: 5
+- Lines: 87 / 100 = 0
+- Total: 10 + 5 + 0 = 15
 
 ## When to Automate
 
@@ -29,33 +31,6 @@ Recognize when actions repeat and should be automated.
 2. Does it have a script?
 3. Can it be auto-tracked?
 
-## XP Triggers
-
-- Create new automation script: +10 XP
-- Identify manual task that should be automated: +5 XP
-- Use existing automation: +2 XP
-
-## Current Status: Level 15
-**Content Progress:** 15/16 to L16 - Novice
-
-*Currently learning when to automate*
-
-## Dynamic Max Expansion
-**Max Level:** 75 (tier: supporting)
-
-## Cross-Pollination
-- **system** → +3 XP (knowing when to create scripts)
-- **learning** → +3 XP (continuous improvement through automation)
-- **control-ui** → +3 XP (automating dashboard tasks)
-
-## Tools Used
-- exec: Run scripts
-- write: Create automation scripts
-
-### References
-- learning - Improvement
-- system - Health
-- accountability - Goal alignment
 ## Automation Patterns
 
 ### The 3-Try Rule
@@ -83,5 +58,8 @@ Does it happen >3 times?
 1. `auto-checkpoint.sh` - saves context at 60%
 2. `context-monitor-light.sh` - warns at 80%
 3. `skill-gap-analysis.sh` - finds low-content skills
-4. Post-commit hook - auto XP tracking
-*Expanded: 2026-05-02 - Added automation patterns and decision tree*
+
+### References
+- learning - Improvement
+- system - Health
+- accountability - Goal alignment
