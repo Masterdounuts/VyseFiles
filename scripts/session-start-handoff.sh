@@ -86,3 +86,10 @@ bash "$WORKSPACE/scripts/memory-recall.sh" 2>/dev/null | head -8
 
 echo ""
 echo "=== Session Ready ==="
+
+# ============================================
+# STEP 5: Auto-debug - Show skill status
+# ============================================
+echo ""
+echo "=== Debug Status (Auto) ==="
+bash "$WORKSPACE/scripts/debug-display.sh" system 2>/dev/null
