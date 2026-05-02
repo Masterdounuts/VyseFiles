@@ -133,28 +133,36 @@ Level = sections + subsections + (lines / 100)
 | Primary | 100 | 100+ content |
 | Supporting | 75 | 75+ content |
 
-### Show on EVERY Reply
+### Show on EVERY Reply - MANDATORY
 ```
 [skill:xxx] Level: X/Y | Content: Z | What was done
 ```
 
-**Rule:** Show the skill you actually USED/DID, not what the user asked about.
+**EVERY reply must end with this line.** No exceptions.
+
+**How to determine which skill:**
+1. What did I actually DO in this reply?
+2. Pass that skill to debug-display.sh
+3. Include output in reply
 
 | Scenario | What to Show |
 |----------|-------------|
-| Migrating skill files | `system` (or `exec` for file work) |
+| Used a tool (read/write/exec) | `system` |
+| Learned something new | `learning` |
+| Fixed something | `system` |
 | Planning with user | `projects` |
-| Answering question | Skill that contains the answer |
-| **David teaches me something** | `learning` (I grew from this) |
-| Multiple skills | Primary skill used |
+| **You taught me something** | `learning` |
 
 Example:
 - User: "How do I run a command?" → I use `exec` → Show `[skill:exec]`
-- User: "You need to zoom out" → I learned about conversation flow → Show `[skill:learning]`
-- What was done
+- User: "You need to zoom out" → I learned → Show `[skill:learning]`
 
-Example:
-- `[skill:system] Level: 27/100 | Content: 26 | Fixed debug-display integration`
+**Reply format:**
+```
+[Here is my reply content...]
+
+[skill:xxx] Level: X/Y | Content: Z | What was done
+```
 
 ---
 
