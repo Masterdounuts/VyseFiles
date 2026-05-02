@@ -35,7 +35,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 - **cron** - Job management
 - Decision tree: exec for status → gateway for restart → cron for jobs
 
-**Max Level:** 24 (grows with discoveries)
+**Max Level:** 150 (tier: critical)
 
 | Discovery | Adds To |
 |------------|--------|

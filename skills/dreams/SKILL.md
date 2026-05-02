@@ -36,7 +36,7 @@ trigger phrases: "dream, vision, goal, brainstorm"
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 18 (grows with discoveries)
+**Max Level:** 75 (tier: supporting)
 
 | Discovery | Adds To |
 |------------|--------|

@@ -36,7 +36,7 @@ trigger phrases: "project, game, skies of arcadia"
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 34 (grows with discoveries)
+**Max Level:** 100 (tier: primary)
 
 | Discovery | Adds To |
 |------------|--------|

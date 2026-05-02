@@ -193,3 +193,5 @@
 {"skill":"vyse-core","from":10,"to":11,"xp":60,"time":"2026-05-02T03:07:57+00:00"}
 {"skill":"system-admin","from":9,"to":10,"xp":35,"time":"2026-05-02T03:08:04+00:00"}
 {"skill":"memory","from":15,"to":16,"xp":60,"time":"2026-05-02T03:09:13+00:00"}
+{"skill":"accountability","from":21,"to":22,"xp":20,"time":"2026-05-02T03:52:22+00:00"}
+{"skill":"pattern-recognition","from":39,"to":40,"xp":85,"time":"2026-05-02T03:52:33+00:00"}

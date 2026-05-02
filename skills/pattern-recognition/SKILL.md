@@ -11,7 +11,7 @@ access: vyse-only
 
 **Goal:** Reach RON Level (7/7) in global pattern detection
 
-### Current Status: Level 39 - RON ⭐
+### Current Status: Level 40 - RON ⭐
 
 **XP:** 85/85 (RON)
 
@@ -38,7 +38,7 @@ access: vyse-only
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 40 (grows with discoveries)
+**Max Level:** 150 (tier: critical)
 
 | Discovery | Adds To |
 |------------|--------|

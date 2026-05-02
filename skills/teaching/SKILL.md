@@ -21,7 +21,7 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 **Path to RON:** Explain complex concepts simply → Create learning curricula → Teach subagents
 
 ### Dynamic Max Expansion
-**Max Level:** 16 (grows with discoveries)
+**Max Level:** 75 (tier: supporting)
 
 ### Tools Used
 - **read** - Accessing source material

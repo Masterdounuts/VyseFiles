@@ -39,7 +39,7 @@ access: crew
 - **cron** - Job scheduling
 - Decision tree: read for status → write for config → exec for commands
 
-**Max Level:** 27 (grows with discoveries)
+**Max Level:** 100 (tier: primary)
 
 | Discovery | Adds To |
 |------------|--------|

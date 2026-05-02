@@ -37,7 +37,7 @@ trigger phrases: "security, hardening, access, permissions"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:** 18 (grows with discoveries)
+**Max Level:** 75 (tier: supporting)
 
 | Discovery | Adds To |
 |------------|--------|

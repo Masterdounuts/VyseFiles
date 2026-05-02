@@ -33,7 +33,7 @@ trigger phrases: "git, push, commit, repo, version control"
 - **read/write** - File operations
 - Decision tree: read for status → write for changes → exec for git operations
 
-**Max Level:** 32 (grows with discoveries)
+**Max Level:** 100 (tier: primary)
 
 | Discovery | Adds To |
 |------------|--------|

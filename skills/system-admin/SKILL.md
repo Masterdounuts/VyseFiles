@@ -41,7 +41,7 @@ trigger phrases: "server, process, service, network, system admin"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:** 23 (grows with discoveries)
+**Max Level:** 100 (tier: primary)
 
 | Discovery | Adds To |
 |------------|--------|
