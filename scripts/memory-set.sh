@@ -14,11 +14,11 @@ KEY="$1"
 VALUE="$2"
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
 
-# Validate it's about OUR work (guard)
-OUR_KEYWORDS="vyse|skill|memory|script|project|decision|system|github|level|drill|chain|guard|tier|content"
+# Expanded guard - includes ALL vital categories for me working
+OUR_KEYWORDS="vyse|skill|memory|script|project|decision|system|github|level|drill|chain|guard|tier|content|identity|soul|agents|user|heartbeat|boot|recovery|principle|framework|file|accountability|workspace|primary_brain|second_brain"
 
 if ! echo "$KEY" | grep -qE "$OUR_KEYWORDS"; then
-    echo "⏭️  GUARD: Only saves OUR work (vyse, skill, project, script, decision, system)"
+    echo "⏭️  GUARD: Only saves OUR work"
     exit 0
 fi
 
