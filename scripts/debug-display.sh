@@ -1,20 +1,21 @@
 #!/bin/bash
 # Debug Display - Shows skill status for every reply
 # Usage: ./debug-display.sh [skill1,skill2,...]
-# Outputs formatted line for inclusion in replies
 
 SKILLS=${1:-"system"}
-TRACKING="/home/openclaw/.openclaw/workspace-vyse/kb/xp-tracking.md"
-TODAY=$(date +%Y-%m-%d)
+WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
 
-echo "---"
-echo "**Skills used:** $SKILLS"
-echo "**XP:** (call xp-gain.sh to track)"
-echo "**Level ups:** none"
-echo "**Max level:** none"
-echo "---"
-echo "Format:"
-echo "Skills used: $SKILLS"
-echo "XP: +N or no change"
-echo "Level ups: skill → NEW LEVEL"
-echo "Max level: skill → NEW MAX"
+# Get content progress
+if [ -f "$WORKSPACE/scripts/xp-gain.sh" ]; then
+    result=$(bash "$WORKSPACE/scripts/xp-gain.sh" "$SKILLS" 2>/dev/null)
+    if [ -n "$result" ]; then
+        level=$(echo "$result" | grep "^Level:" | cut -d: -f2 | xargs)
+        weight=$(echo "$result" | grep "^Content Weight:" | cut -d: -f2 | xargs)
+        need=$(echo "$result" | grep "^Need for next:" | cut -d: -f2 | xargs)
+        
+        echo "[skill:$SKILLS]"
+        echo "L$level | Content: $weight/$need to next"
+    fi
+else
+    echo "[skill:$SKILLS]"
+fi
