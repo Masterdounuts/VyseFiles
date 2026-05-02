@@ -1298,3 +1298,17 @@
 | workflow | +3 | Cross-pollination |
 | security | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| accountability | +5 | Auto-tracked from commit: RESET: Levels now content-based |
+| vyse-core | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| memory | +2 | Auto-tracked: memory updated |
+| learning | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
