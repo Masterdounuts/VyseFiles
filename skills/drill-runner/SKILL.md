@@ -4,67 +4,24 @@ trigger phrases: "run drill, drill results, verify skills, skill health"
 
 # Drill Runner Skill
 
-*Created 2026-04-29 - When systematic drill execution was needed*
+## Content-Based Leveling
 
-## 🎯 Purpose
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Supporting (75 max)
 
-Runs all drill tiers to verify skill health:
+### Current: Level 14
+- Sections: 7
+- Subsections: 6
+- Lines: 102 / 100 = 1
+- Total: 7 + 6 + 1 = 14
+
+## Purpose
+
+Runs drill tiers to verify skill health:
 - skill-drill.sh - triggers, orphans, core count
-- true-drill.sh - execution verification  
+- true-drill.sh - execution verification
 - governance-drill.sh - conflicts, bloat, gaps
 
-## Current Status: Level 14
-**Content Progress:** 13/14 to L15 - RON ⭐/7
-
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| Run skill-drill | 5/7 | Can run basic health check |
-| Run true-drill | 5/7 | Can verify execution |
-| Run governance | 5/7 | Can detect conflicts |
-| Parse results | 4/7 | Can interpret output |
-| Systematize | 5/7 | Created as-needed, integrated with system |
-
-### Dynamic Max Expansion
-
-### Tools Used
-- **read/write** - Creating and editing skills
-- **exec** - Running scripts
-- **sessions_spawn** - Testing subagents
-- Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
-
-**Max Level:** 75 (tier: supporting)
-
-| Discovery | Adds To |
-|------------|--------|
-| New drill type | +1 to drill-runner |
-| Drill automation | +1 to all skills |
-
-## Usage
-
-```bash
-# Run all drills
-~/.openclaw/workspace/scripts/true-drill.sh
-
-# Quick check
-~/.openclaw/workspace/scripts/skill-drill.sh
-
-# Governance
-~/.openclaw/workspace/scripts/governance-drill.sh
-```
-
-## Cross-Pollination
-
-Drill-runner improves:
-- skill-creator → auto-audit capability
-- learning → gap detection
-- shipwright → health checks
-*Created as-needed when systematic verification was required*
-*Level will grow as more drill capabilities are needed*
-### References
-- learning - Improvement
-- system - Health
-- accountability - Goal alignment
 ## Drill Types
 
 ### Tier 1: Skill Drill
@@ -77,26 +34,38 @@ Drill-runner improves:
 - Execution verification
 - Script functionality
 - Output validation
-- Run: `bash scripts/true-drill.sh`
 
 ### Tier 3: Governance Drill
 - Conflict detection
 - Bloat check
 - Gap analysis
-- Run: `bash scripts/governance-drill.sh`
+
+## Usage
+
+```bash
+# Run all drills
+bash scripts/true-drill.sh
+
+# Quick check
+bash scripts/skill-drill.sh
+
+# Governance
+bash scripts/governance-drill.sh
+```
 
 ## Result Parsing
 
-| Output | Meaning | Action |
-|--------|---------|--------|
-| All triggers valid | Skills healthy | ✅ |
-| Orphan found | Remove or reassign | Fix skill |
-| Missing core | Add to AGENTS.md | Update |
-| Conflict detected | Resolve | Priority |
+| Output | Meaning |
+|--------|---------|
+| All triggers valid | Skills healthy ✅ |
+| Orphan found | Fix or remove |
+| Missing core | Add to AGENTS.md |
+| Conflict | Priority fix |
 
-## Automation with Drill Runner
+## Trigger Phrases
+- "run drill", "verify skills"
+- "drill results", "skill health"
 
-- Daily health: run all 3 tiers
-- After skill changes: run tier 1
-- Weekly: full governance check
-*Expanded: 2026-05-02 - Added drill types and result parsing*
+### References
+- learning - Gap detection
+- system - Health checks
