@@ -11,7 +11,7 @@ trigger phrases: "security, hardening, access, permissions"
 
 **Goal:** Reach RON Level (7/7) in security
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 4 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -39,7 +39,7 @@ trigger phrases: "security, hardening, access, permissions"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:**  18
+**Max Level:** 18 18
 
 | Discovery | Adds To |
 |------------|--------|

@@ -12,7 +12,7 @@ trigger phrases: "server, process, service, network, system admin"
 
 **Goal:** Reach RON Level (7/7) in system administration
 
-### Current Status: Level 7 - Expert 🟡🟡🟡
+### Current Status: Level 6 - Expert 🟡🟡🟡
 
 **XP:** 35/30 (over max) (next level at 30)
 
@@ -43,7 +43,7 @@ trigger phrases: "server, process, service, network, system admin"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:**  21
+**Max Level:** 21 21
 
 | Discovery | Adds To |
 |------------|--------|

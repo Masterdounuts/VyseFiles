@@ -15,7 +15,7 @@ Runs all drill tiers to verify skill health:
 - true-drill.sh - execution verification  
 - governance-drill.sh - conflicts, bloat, gaps
 
-## Current Status: Level 7 - RON ⭐/7
+## Current Status: Level 2 - RON ⭐/7
 
 **XP:** 50/50 (next level at 50)
 
@@ -35,7 +35,7 @@ Runs all drill tiers to verify skill health:
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:**  12 (drill engine)
+**Max Level:** 12 12 (drill engine)
 
 | Discovery | Adds To |
 |------------|--------|

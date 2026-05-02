@@ -11,7 +11,7 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 **Goal:** Reach RON Level (7/7) in memory/context management
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 4 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 60/60 (next level at 60)
 
@@ -37,7 +37,7 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 - **read** - Direct file reads for full context
 - Decision tree: memory_search for recall → memory_get for snippets → read for full
 
-**Max Level:**  18 (grows with discoveries)
+**Max Level:** 18 18 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

@@ -12,7 +12,7 @@ trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "al
 
 **Goal:** Reach RON Level (7/7) in reminder management
 
-### Current Status: Level 6 - Expert 🟡🟡🟡
+### Current Status: Level 5 - Expert 🟡🟡🟡
 
 **XP:** 40/40 (RON)
 
@@ -131,7 +131,7 @@ Action:
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:**  18
+**Max Level:** 18 18
 
 | Discovery | Adds To |
 |------------|--------|

@@ -13,7 +13,7 @@ trigger phrases: "crew chat, group chat, team"
 
 **Goal:** Reach RON Level (7/7) in Telegram crew management
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 4 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -38,7 +38,7 @@ trigger phrases: "crew chat, group chat, team"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:**  15
+**Max Level:** 15 15
 
 | Discovery | Adds To |
 |------------|--------|

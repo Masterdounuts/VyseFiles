@@ -246,16 +246,24 @@ DATE=$(date +"%Y-%m-%d")
 # Track the XP
 echo "| $SKILL | +$GAIN | $REASON |" >> "$TRACKING"
 
-# Cross-pollination
+# Cross-pollination (data-driven connections)
 case $SKILL in
   learning) echo "| pattern-recognition | +3 | Cross-pollination |" >> "$TRACKING";;
   memory) echo "| learning | +3 | Cross-pollination |" >> "$TRACKING";;
   accountability) echo "| vyse-core | +3 | Cross-pollination |" >> "$TRACKING";;
-  system) echo "| workflow | +3 | Cross-pollination |" >> "$TRACKING";;
-  workflow) echo "| control-ui | +3 | Cross-pollination |" >> "$TRACKING";;
-  pattern-recognition) echo "| learning | +3 | Cross-pollination |" >> "$TRACKING";;
-  control-ui) echo "| system | +3 | Cross-pollination |" >> "$TRACKING";;
-  skill-creator) echo "| pattern-recognition | +3 | Cross-pollination |" >> "$TRACKING";;
+  system) echo "| workflow | +3 | Cross-pollination |" >> "$TRACKING"
+         echo "| security | +3 | Cross-pollination |" >> "$TRACKING";;
+  workflow) echo "| control-ui | +3 | Cross-pollination |" >> "$TRACKING"
+           echo "| time | +3 | Cross-pollination |" >> "$TRACKING";;
+  pattern-recognition) echo "| learning | +3 | Cross-pollination |" >> "$TRACKING"
+                     echo "| system | +3 | Cross-pollination |" >> "$TRACKING";;
+  control-ui) echo "| system | +3 | Cross-pollination |" >> "$TRACKING"
+             echo "| skill-creator | +3 | Cross-pollination |" >> "$TRACKING";;
+  skill-creator) echo "| pattern-recognition | +3 | Cross-pollination |" >> "$TRACKING"
+                echo "| learning | +3 | Cross-pollination |" >> "$TRACKING";;
+  knowledge) echo "| memory | +3 | Cross-pollination |" >> "$TRACKING";;
+  security) echo "| system | +3 | Cross-pollination |" >> "$TRACKING";;
+  time) echo "| workflow | +3 | Cross-pollination |" >> "$TRACKING";;
 esac
 echo "| pattern-recognition | +3 | Core skill |" >> "$TRACKING"
 

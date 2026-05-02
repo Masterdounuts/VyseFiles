@@ -14,7 +14,7 @@ trigger phrases: "create skill, new skill, skill template"
 
 **Goal:** Reach RON Level (7/7) in skill creation
 
-### Current Status: Level 9 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 7 - RON 🟡🟡🟡🟡🟡🟡🟡
 
 **XP:** 85/70 (RON - extra goes to Dynamic Max)
 
@@ -40,7 +40,7 @@ trigger phrases: "create skill, new skill, skill template"
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:**  49
+**Max Level:** 49 49
 
 | Discovery | Adds To |
 |------------|--------|
@@ -214,7 +214,7 @@ access: crew|vyse-only
 - **sessions_spawn** - Testing subagents
 - Decision tree: read/write for creation → exec for testing → sessions_spawn for validation
 
-**Max Level:**  49+ (grows with discoveries)
+**Max Level:** 49 49+ (grows with discoveries)
 
 | Discovery | Adds To Max |
 |------------|-------------|

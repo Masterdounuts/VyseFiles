@@ -10,7 +10,7 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 
 **Goal:** Reach RON Level (7/7) in time/scheduling
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 5 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -35,7 +35,7 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 - **exec** - Date/time commands
 - Decision tree: cron for scheduling → read/write for logs → exec for time check
 
-**Max Level:**  19
+**Max Level:** 19 19
 
 | Discovery | Adds To |
 |------------|--------|

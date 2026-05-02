@@ -10,7 +10,7 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 
 **Goal:** Reach RON Level (7/7) in teaching/knowledge transfer
 
-### Current Status: Level 1 - Novice 🟡
+### Current Status: Level 2 - Novice 🟡
 
 **XP:** 10/10 (Level 2)
 
@@ -23,7 +23,7 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 **Path to RON:** Explain complex concepts simply → Create learning curricula → Teach subagents
 
 ### Dynamic Max Expansion
-**Max Level:**  12
+**Max Level:** 12 12
 
 ### Tools Used
 - **read** - Accessing source material

@@ -11,7 +11,7 @@ trigger phrases: "dream, vision, goal, brainstorm"
 
 **Goal:** Reach RON Level (7/7) in creativity/vision
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 4 - RON ⭐ 🟡🟡🟡🟡🟡
 
 **XP:** 50/50 (next level at 50)
 
@@ -38,7 +38,7 @@ trigger phrases: "dream, vision, goal, brainstorm"
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:**  18
+**Max Level:** 18 18
 
 | Discovery | Adds To |
 |------------|--------|

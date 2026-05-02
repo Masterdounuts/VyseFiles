@@ -14,7 +14,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 14 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 6 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 70/70 (RON)
 

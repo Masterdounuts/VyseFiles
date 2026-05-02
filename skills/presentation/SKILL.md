@@ -12,7 +12,7 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 
 **Goal:** Reach RON Level (7/7) in presentation/UX optimization
 
-### Current Status: Level 6 - Expert 🟡🟡🟡
+### Current Status: Level 4 - Expert 🟡🟡🟡
 
 **XP:** 40/40 (RON)
 
@@ -33,7 +33,7 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:**  15 (grows with discoveries)
+**Max Level:** 15 15 (grows with discoveries)
 
 | Discovery | Adds To Max |
 |------------|-------------|

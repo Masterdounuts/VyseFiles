@@ -13,7 +13,7 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in unified knowledge
 
-### Current Status: Level 7 (RON) ⭐ (Can Teach!)
+### Current Status: Level 5 (RON) ⭐ (Can Teach!)
 
 **XP:** 70+ (Max level achieved)
 
@@ -41,7 +41,7 @@ access: crew
 - **cron** - Job scheduling
 - Decision tree: read for status → write for config → exec for commands
 
-**Max Level:**  19
+**Max Level:** 19 19
 
 | Discovery | Adds To |
 |------------|--------|
