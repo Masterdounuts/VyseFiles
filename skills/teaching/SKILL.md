@@ -23,7 +23,7 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 **Path to RON:** Explain complex concepts simply → Create learning curricula → Teach subagents
 
 ### Dynamic Max Expansion
-**Max Level:** 12 12
+**Max Level:** 12
 
 ### Tools Used
 - **read** - Accessing source material
@@ -45,3 +45,46 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Curriculum Templates
+
+### Basic Curriculum Structure
+```
+1. Concept Introduction (what/why)
+2. Demonstration (show, don't just tell)
+3. Practice (hands-on example)
+4. Assessment (verify understanding)
+5. Extension (next steps)
+```
+
+### For Subagents
+- Start with "Here's what X means..."
+- Give 1 concrete example
+- Let them try
+- Check understanding
+- Point to next concept
+
+## Assessment Methods
+
+| Method | When Used | Example |
+|--------|-----------|---------|
+| Ask questions | After explanation | "What does X do?" |
+| Request demo | After teaching | "Show me how to..." |
+| Edge case | Advanced understanding | "What if Y?" |
+| Cross-connect | Deep understanding | "How does X relate to Z?" |
+
+## Teaching Triggers
+
+When you hear:
+- "How does X work?"
+- "Explain what..."
+- "Show me..."
+- "Teach me about..."
+
+That's teaching skill activation.
+
+---
+
+*Expanded: 2026-05-02 - Added curriculum templates and assessment methods*

@@ -8,7 +8,7 @@ trigger phrases: "every time, repeatedly, always, auto, automate, script, run au
 
 **Level:** 1/7
 **XP:** 10/10 (Level 2)
-**Max Level:** 16 16 (RON - fully automated)
+**Max Level:** 16 (RON - fully automated)
 
 ## Purpose
 ## XP Protocol
@@ -43,7 +43,7 @@ Recognize when actions repeat and should be automated.
 *Currently learning when to automate*
 
 ## Dynamic Max Expansion
-**Max Level:** 16 16
+**Max Level:** 16
 
 ## Cross-Pollination
 - **system** → +3 XP (knowing when to create scripts)
@@ -58,3 +58,38 @@ Recognize when actions repeat and should be automated.
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Automation Patterns
+
+### The 3-Try Rule
+Run same command 3 times manually → create script
+
+### Common Automation Triggers
+| Pattern | Example | Automation |
+|---------|---------|------------|
+| Same output check | `openclaw status` daily | cron job |
+| File copy | backup files | script |
+| Status report | health check | cron + message |
+| Context save | on 60% context | auto-checkpoint |
+
+### Decision Tree: Automate or Not?
+
+```
+Does it happen >3 times?
+  ├── YES → Create script
+  └── NO → Is it error-prone?
+            ├── YES → Create script anyway
+            └── NO → Do manually
+```
+
+### Examples Created
+1. `auto-checkpoint.sh` - saves context at 60%
+2. `context-monitor-light.sh` - warns at 80%
+3. `skill-gap-analysis.sh` - finds low-content skills
+4. Post-commit hook - auto XP tracking
+
+---
+
+*Expanded: 2026-05-02 - Added automation patterns and decision tree*

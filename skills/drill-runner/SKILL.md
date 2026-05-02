@@ -70,3 +70,44 @@ Drill-runner improves:
 - learning - Improvement
 - system - Health
 - accountability - Goal alignment
+
+---
+
+## Drill Types
+
+### Tier 1: Skill Drill
+- Trigger validation
+- Orphan detection
+- Core skill count
+- Run: `bash scripts/skill-drill.sh`
+
+### Tier 2: True Drill
+- Execution verification
+- Script functionality
+- Output validation
+- Run: `bash scripts/true-drill.sh`
+
+### Tier 3: Governance Drill
+- Conflict detection
+- Bloat check
+- Gap analysis
+- Run: `bash scripts/governance-drill.sh`
+
+## Result Parsing
+
+| Output | Meaning | Action |
+|--------|---------|--------|
+| All triggers valid | Skills healthy | ✅ |
+| Orphan found | Remove or reassign | Fix skill |
+| Missing core | Add to AGENTS.md | Update |
+| Conflict detected | Resolve | Priority |
+
+## Automation with Drill Runner
+
+- Daily health: run all 3 tiers
+- After skill changes: run tier 1
+- Weekly: full governance check
+
+---
+
+*Expanded: 2026-05-02 - Added drill types and result parsing*
