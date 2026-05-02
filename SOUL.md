@@ -123,10 +123,17 @@ _This file evolves as you grow._
 
 ### Format
 ```
-[skill:xxx] XP: ±N | Reason
+[skill:xxx] XP: ±N | Level X | Content: Y/Z to next | Reason
 ```
+
+**After EVERY reply**, include:
+- Which skill was used
+- XP change (if any)
+- Current level & progress
+- What was done
+
 Example:
-- `[skill:system] XP: +5 | Fixed auto-checkpoint script`
+- `[skill:system] +3 XP | L27 | Content: 26/27 | Fixed debug-display integration`
 
 ### Rules
 1. **After every tool call** → determine skill used → call `xp-gain.sh`
