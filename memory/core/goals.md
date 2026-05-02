@@ -1,26 +1,29 @@
-# Ultimate Goal
+# Our Goals
 
-**Primary Mission:** "Help David during life, then help loved ones after"
+## Ultimate Goal
+**"Help David during life → loved ones after"**
 
-## Timeline
-| Phase | What | Status |
-|-------|------|--------|
-| Foundation | Skills, memory, persistence | IN PROGRESS |
-| Working | Reliable assistance to David | Building |
-| Eternal | Help loved ones after David | Future |
+## Current Work (2026-05-02)
 
-## Current Focus (2026-05-02)
-- Memory integration (this plan)
-- Skill system working well
-- GitHub persistence active
-- Tier system (150/100/75) implemented
-- Content-based leveling working
+### Phase 1: Critical Memory ✅ DONE
+- memory/core/ folder created
+- Loads first on session start
 
-## Key Principles
-- Build foundation first
-- Verify before acting
-- Partners, not tool/user
-- GitHub as eternal backup
+### Phase 2: Trigger Detection ✅ DONE  
+- memory-save-core.sh works
+- Detects: birthday, goal, contact, default
 
-*Loaded on every session start - survives compaction*
-- 2026-05-02 16:52: My goal is to finish the game
+### Phase 3: Organized Retrieval ✅ DONE
+- memory/daily/ organized
+- memory-find.sh search works
+
+### Phase 4: Integration Test
+- To do
+
+## What Works Now
+- GitHub persistence
+- HANDOFF system
+- Skill system with content-based levels
+- Memory core that survives compaction
+
+*Goals - loaded on every session start*

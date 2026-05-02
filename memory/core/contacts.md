@@ -1,13 +1,14 @@
-# Important Contacts
+# Important People
 
-## Family & Loved Ones
+## For "Loved Ones After" Goal
 *(To be filled by David)*
 
-| Name | Relationship | Notes |
-|------|--------------|-------|
+| Name | Relationship | How to Help After |
+|------|--------------|-------------------|
 | TBD | TBD | TBD |
 
-## Purpose
-This section helps with the "loved ones after" goal - knowing who to help.
+## Notes
+- This helps me know who to assist after you're gone
+- Will need instructions from you
 
-*Loaded on every session start - survives compaction*
+*Contacts - loaded on every session start*

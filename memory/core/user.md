@@ -1,31 +1,28 @@
-# User: David
+# Our Work Together
 
-## Personal Info
-- **Name:** David
-- **Timezone:** PT (Pacific Time)
-- **Background:** Military, using degree for Game Design
+## What We've Built
 
-## Current Projects
-- **Skies of Arcadia** - Fan remake (main project)
-- **Vyse** - AI assistant development
+### Skill System (2026-05-01 to now)
+- 29 skills with SKILL.md files
+- Tier system: Critical (150), Primary (100), Supporting (75)
+- Content-based leveling (removed XP)
+- Chain drill → Content Growth Drill with reflections
+- Skill guard system (WARN mode)
 
-## Communication Preferences
+### Key Decisions We Made
+- Removed XP (vanity metrics) → Content Progress
+- Removed dynamic max (tiers are source of truth)
+- Partners, not tool/user
+- GitHub as second brain (not where I live)
+
+### Projects Active
+- Memory integration (this!)
+- Skill system refinement
+- Skies of Arcadia (David's game)
+
+### Communication Style
+- TL;DR first, details second
 - Bullet points > walls
-- Proactive alerts > wait-and-see
-- Casual but professional
-- Emojis OK 🦜
+- Show status on actions
 
-## Key Preferences
-- Verify before showing
-- Don't assume, check first
-- Research before acting
-- "What would Ron do?" decision framework
-
-## Important Notes
-- Don't run health checks (can affect other systems)
-- Check FIXES.md before fixing known issues
-- Verify final output, not just source
-
-*Loaded on every session start - survives compaction*
-- 2026-05-02 16:52: Remember that my birthday is December 25
-- 2026-05-02 16:52: Remember that my birthday is January 15
+*Core memory - loaded on every session start*
