@@ -1370,3 +1370,34 @@
 | learning | +3 | Cross-pollination |
 | system | +3 | Cross-pollination |
 | pattern-recognition | +3 | Core skill |
+| system | +3 | Auto-tracked: scripts updated |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +1 | Auto: commit analysis |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | check |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +5 | Chain drill reflection: system |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| workflow | +5 | Chain drill reflection: workflow |
+| control-ui | +3 | Cross-pollination |
+| time | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| learning | +5 | Chain drill reflection: learning |
+| pattern-recognition | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| pattern-recognition | +5 | Chain drill reflection: pattern-recognition |
+| learning | +3 | Cross-pollination |
+| system | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |
+| system | +1 | status |
+| workflow | +3 | Cross-pollination |
+| security | +3 | Cross-pollination |
+| pattern-recognition | +3 | Core skill |

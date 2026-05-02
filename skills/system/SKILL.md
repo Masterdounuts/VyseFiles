@@ -9,7 +9,7 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 24 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 28 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
 **XP:** 70/70 (RON)
 
@@ -176,3 +176,18 @@ Skill A + XP → Cross-pollination → Skill B + XP
 **Growth = Real content added, not XP gained.**
 XP tracks work, but only content in skills = actual capability.
 *Added after Chain Drill: documented real insights*
+
+---
+
+## Reflection 2026-05-02
+
+### What I Learned
+- The post-commit hook auto-tracks XP on every push
+- Dynamic max was overriding tiers - had to disable it
+- System debugging requires understanding what SHOULD happen
+
+### What Still Needs Work
+- Finding root causes faster
+- Better error prediction
+- More automated health checks
+
