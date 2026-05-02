@@ -78,10 +78,11 @@ auto_level_up() {
         echo "📐 CONTENT-BASED: $s adjusted to L$content_level (was L$current_level)"
     fi
     
-    if [ "$content_max" != "$max_level" ]; then
-        sed -i "s/Max Level: $max_level/Max Level: $content_max/" "$file"
-        echo "📐 CONTENT-MAX: $s max adjusted to $content_max (was $max_level)"
-    fi
+    # DISABLED: Tier system now handles max - don't override
+    # if [ "$content_max" != "$max_level" ]; then
+    #     sed -i "s/Max Level: $max_level/Max Level: $content_max/" "$file"
+    #     echo "📐 CONTENT-MAX: $s max adjusted to $content_max (was $max_level)"
+    # fi
     
     # Now check XP-based threshold (for legacy compatibility)
     local xp_current=$(echo "$info" | cut -d'|' -f3)
