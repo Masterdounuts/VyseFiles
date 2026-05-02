@@ -6,9 +6,9 @@
 
 **Goal:** Reach RON Level (7/7) in subagent creation
 
-### Current Status: Level 30 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 30
+**Content Progress:** 29/30 to L31 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

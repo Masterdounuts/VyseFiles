@@ -13,9 +13,9 @@ Runs all drill tiers to verify skill health:
 - true-drill.sh - execution verification  
 - governance-drill.sh - conflicts, bloat, gaps
 
-## Current Status: Level 14 - RON ⭐/7
+## Current Status: Level 14
+**Content Progress:** 13/14 to L15 - RON ⭐/7
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

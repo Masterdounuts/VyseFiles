@@ -11,9 +11,9 @@ trigger phrases: "git, push, commit, repo, version control"
 
 **Goal:** Reach RON Level (7/7) in GitHub/version control
 
-### Current Status: Level 32 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 32
+**Content Progress:** 30/31 to L33 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

@@ -9,9 +9,9 @@ trigger phrases: "dream, vision, goal, brainstorm"
 
 **Goal:** Reach RON Level (7/7) in creativity/vision
 
-### Current Status: Level 15 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 15
+**Content Progress:** 14/15 to L16 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

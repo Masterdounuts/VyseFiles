@@ -31,8 +31,8 @@ description: OpenClaw Control UI, dashboard, and status monitoring. Use when dis
 | 6 | **Expert** | Knows all features | Full panel knowledge |
 | 7 | **RON** | Teaching level | Can explain to others, create workflows |
 
-### Current Status: Level 87 - RON ⭐
-**XP:** 70/70 (RON)
+### Current Status: Level 87
+**Content Progress:** 80/81 to L88 - RON ⭐
 **Max Level:** 150 (tier: critical)
 
 ### Sub-Agent Management (Sub-Skill) - RON ⭐

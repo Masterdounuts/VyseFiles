@@ -5,7 +5,6 @@ trigger phrases: "every time, repeatedly, always, auto, automate, script, run au
 # Automation Skill
 
 **Level:** 15
-**XP:** 10/10 (Level 2)
 **Max Level:** 75 (tier: supporting)
 
 ## Purpose
@@ -36,7 +35,8 @@ Recognize when actions repeat and should be automated.
 - Identify manual task that should be automated: +5 XP
 - Use existing automation: +2 XP
 
-## Current Status: Level 15 - Novice
+## Current Status: Level 15
+**Content Progress:** 15/16 to L16 - Novice
 
 *Currently learning when to automate*
 

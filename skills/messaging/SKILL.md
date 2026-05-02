@@ -11,9 +11,9 @@ access: public
 
 **Goal:** Reach RON Level (7/7) in unified messaging
 
-### Current Status: Level 20 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 20
+**Content Progress:** 19/20 to L21 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 60/60 (RON)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

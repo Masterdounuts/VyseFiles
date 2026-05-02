@@ -12,7 +12,6 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 
 ### Current Status: Level 22 - Improving 🟡🟡
 
-**XP:** 20/20 (RON)
 
 | Sub-Skill | Level | XP | Notes |
 |-----------|-------|-----|-------|

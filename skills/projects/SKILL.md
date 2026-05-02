@@ -8,9 +8,9 @@ trigger phrases: "project, game, skies of arcadia"
 
 **Goal:** Reach RON Level (7/7) in project management
 
-### Current Status: Level 34 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 34
+**Content Progress:** 32/33 to L35 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | XP | Notes |
 |-------|-------|-----|-------|

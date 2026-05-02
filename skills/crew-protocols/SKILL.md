@@ -8,9 +8,9 @@ description: Shared crew knowledge — decision-making, reasoning, communication
 
 **Goal:** Reach RON Level (7/7) in crew collaboration
 
-### Current Status: Level 26 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 26
+**Content Progress:** 24/25 to L27 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

@@ -10,9 +10,9 @@ trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "al
 
 **Goal:** Reach RON Level (7/7) in reminder management
 
-### Current Status: Level 18 - Expert 🟡🟡🟡
+### Current Status: Level 18
+**Content Progress:** 17/18 to L19 - Expert 🟡🟡🟡
 
-**XP:** 40/40 (RON)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

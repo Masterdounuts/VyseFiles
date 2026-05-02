@@ -8,9 +8,9 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 
 **Goal:** Reach RON Level (7/7) in teaching/knowledge transfer
 
-### Current Status: Level 12 - Novice 🟡
+### Current Status: Level 12
+**Content Progress:** 12/13 to L13 - Novice 🟡
 
-**XP:** 10/10 (Level 2)
 
 | Sub-Skill | Level | XP | Notes |
 |-----------|-------|-----|-------|

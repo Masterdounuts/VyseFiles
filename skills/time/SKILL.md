@@ -8,9 +8,9 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 
 **Goal:** Reach RON Level (7/7) in time/scheduling
 
-### Current Status: Level 17 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 17
+**Content Progress:** 16/17 to L18 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

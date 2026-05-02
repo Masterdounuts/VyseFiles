@@ -13,9 +13,8 @@ trigger phrases: "learn, training, improve, practice, drill, failure, mistake, w
 
 **Goal:** Reach RON Level (7/7) in learning/self-improvement
 
-### Current Status: Level 44 - RON 🟡🟡🟡🟡🟡🟡🟡
+### Current Status: Level 45 - RON 🟡🟡🟡🟡🟡🟡🟡
 
-**XP:** 100/100 (next: RON+ at 100)
 
 | Skill | Level | XP | Notes |
 |-------|-------|-----|-------|

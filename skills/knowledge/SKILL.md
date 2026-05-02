@@ -11,9 +11,9 @@ access: crew
 
 **Goal:** Reach RON Level (7/7) in unified knowledge
 
-### Current Status: Level 18 (RON) ⭐ (Can Teach!)
+### Current Status: Level 18
+**Content Progress:** 17/18 to L19 (RON) ⭐ (Can Teach!)
 
-**XP:** 70+ (Max level achieved)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

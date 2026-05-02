@@ -9,9 +9,9 @@ trigger phrases: "workflow, automation, pipeline"
 
 **Goal:** Reach RON Level (7/7) in self-operation
 
-### Current Status: Level 59 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 59
+**Content Progress:** 56/57 to L60 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 70/70 (RON)
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|
 | Wake-up | 5/7 | 🟡🟡🟡🟡🟡 | Reads TODO, HANDOFF, active.md |

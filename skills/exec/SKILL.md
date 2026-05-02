@@ -9,9 +9,9 @@ description: Shell command execution, sandbox, PTY, and background processes.
 
 **Goal:** Reach RON Level (7/7) in shell execution
 
-### Current Status: Level 21 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 21
+**Content Progress:** 20/21 to L22 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

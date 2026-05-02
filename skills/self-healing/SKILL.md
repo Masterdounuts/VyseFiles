@@ -10,9 +10,9 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 
 **Goal:** Reach RON Level (7/7) in self-healing
 
-### Current Status: Level 25 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 25
+**Content Progress:** 24/25 to L26 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 60/60 (next level at 60)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

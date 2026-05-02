@@ -11,9 +11,9 @@ trigger phrases: "identity, about yourself, who are you, vyse"
 
 **Goal:** Reach RON Level (7/7) in self-understanding
 
-### Current Status: Level 30 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 30
+**Content Progress:** 28/29 to L31 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 60/60 (next level at 60)
 
 | Skill | Level | Notes |
 |-------|-------|-------|

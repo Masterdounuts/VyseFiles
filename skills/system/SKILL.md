@@ -9,9 +9,9 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 
 **Goal:** Reach RON Level (7/7) in system debugging
 
-### Current Status: Level 28 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current Status: Level 27
+**Content Progress:** 26/27 to L28 - RON ⭐ 🟡🟡🟡🟡🟡🟡
 
-**XP:** 70/70 (RON)
 
 | Skill | Level | Score | Notes |
 |-------|-------|-------|-------|

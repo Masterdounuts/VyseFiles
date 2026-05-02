@@ -10,9 +10,9 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 
 **Goal:** Reach RON Level (7/7) in presentation/UX optimization
 
-### Current Status: Level 12 - Expert 🟡🟡🟡
+### Current Status: Level 12
+**Content Progress:** 12/13 to L13 - Expert 🟡🟡🟡
 
-**XP:** 40/40 (RON)
 
 | Sub-Skill | Level | XP | Notes |
 |-----------|-------|-----|-------|

@@ -11,9 +11,8 @@ access: vyse-only
 
 **Goal:** Reach RON Level (7/7) in global pattern detection
 
-### Current Status: Level 42 - RON ⭐
+### Current Status: Level 43 - RON ⭐
 
-**XP:** 85/85 (RON)
 
 | Skill | Level | XP | Notes |
 |-------|-------|-----|-------|

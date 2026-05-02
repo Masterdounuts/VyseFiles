@@ -11,9 +11,9 @@ trigger phrases: "crew chat, group chat, team"
 
 **Goal:** Reach RON Level (7/7) in Telegram crew management
 
-### Current Status: Level 14 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current Status: Level 14
+**Content Progress:** 13/14 to L15 - RON ⭐ 🟡🟡🟡🟡🟡
 
-**XP:** 50/50 (next level at 50)
 
 | Skill | Level | Notes |
 |-------|-------|-------|
