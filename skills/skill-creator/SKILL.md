@@ -223,7 +223,7 @@ When auditing a skill:
 - [ ] References related skills
 - [ ] Self-auditing (level tracking)
 - [ ] **Has XP tracking** (Level X, XP: Y/Z)
-- [ ] **Has Dynamic Max** (Max Level: 7+)
+- [ ] **Has Dynamic Max** (Max Level: 150+)
 - [ ] **Has Tools Used** section (which OpenClaw tools this skill uses)
 - [ ] **Has Sub-Skills with XP** (table format)
 - [ ] **Has Cross-Pollination** (chain documented)
@@ -441,3 +441,19 @@ trigger phrases: "create skill, new skill, skill template"
 - After editing skill frontmatter
 - Weekly (add to Shipwright cron)
 - When skill system behaves unexpectedly
+
+---
+
+## Skill Tier System (RuneScape-style)
+
+| Tier | Max | Skills |
+|------|-----|--------|
+| **Critical** | 150 | control-ui, skill-creator, workflow, learning, pattern-recognition, system |
+| **Primary** | 100 | github, exec, web, messaging, projects, self-healing, shipwright, system-admin, knowledge, memory |
+| **Supporting** | 75 | everything else |
+
+**Philosophy:**
+- Level 1 = starting
+- Level Max = complete mastery
+- If truly not mastered at max → level keeps going
+- Goal: TRUE MASTERY, not arbitrary caps

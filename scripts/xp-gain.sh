@@ -386,3 +386,19 @@ get_recommendation() {
         echo "💡 Tip: $skill needs more sections ($sections found)"
     fi
 }
+
+# ============ TIER SYSTEM (RuneScape-style) ============
+# Level 1 = starting, Max = mastery
+# Tiers: Critical(150), Primary(100), Supporting(75)
+
+get_tier_max() {
+    local skill=$1
+    case $skill in
+        control-ui|skill-creator|workflow|learning|pattern-recognition|system)
+            echo 150 ;;
+        github|exec|web|messaging|projects|self-healing|shipwright|system-admin|knowledge|memory)
+            echo 100 ;;
+        *)
+            echo 75 ;;
+    esac
+}

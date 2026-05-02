@@ -38,7 +38,7 @@ access: vyse-only
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 39 (grows with discoveries)
+**Max Level:** 40 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|
