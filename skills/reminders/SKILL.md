@@ -69,7 +69,7 @@ Action:
 User: "Every Monday at 9am, remind me to review positions"
 Action:
   1. Parse: what="review positions", when="9am Monday"
-  2. Create cron: "0 9 * * 1" America/Los_Angeles
+  2. Create cron: "0 * * 1" America/Los_Angeles
   3. Store as recurring
   4. Each Monday at 9am → Telegram alert
 ```
@@ -107,7 +107,7 @@ Action:
     {
       "id": "uuid",
       "what": "Check GGB price",
-      "when": "2026-04-30 14:00 PT",
+      "when": "2026-04-304:00 PT",
       "channel": "telegram",
       "status": "active",
       "type": "one-time"
@@ -131,7 +131,7 @@ Action:
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 18 18
+**Max Level:** 188
 
 | Discovery | Adds To |
 |------------|--------|

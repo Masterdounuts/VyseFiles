@@ -38,7 +38,7 @@ trigger phrases: "crew chat, group chat, team"
 - **read/write** - Configuration management
 - Decision tree: exec for diagnostics → cron for scheduling → read/write for config
 
-**Max Level:** 15 15
+**Max Level:** 155
 
 | Discovery | Adds To |
 |------------|--------|

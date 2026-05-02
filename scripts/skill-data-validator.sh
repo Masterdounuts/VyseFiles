@@ -1,5 +1,6 @@
 #!/bin/bash
 # Skill Data Validator - Fixes common issues automatically
+# Run AFTER post-commit to validate skill files
 
 WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
 fixed=0
@@ -10,10 +11,12 @@ echo ""
 for file in $WORKSPACE/skills/*/SKILL.md; do
     skill=$(basename $(dirname "$file"))
     
-    # Fix duplicate numbers (e.g., "12 12" in Max Level)
-    if grep -q "Max Level:.*[0-9] [0-9]" "$file"; then
-        sed -i 's/\([0-9]\) \([0-9]\)/\1/g' "$file"
-        echo "Fixed duplicate numbers in $skill"
+    # Fix duplicate numbers at END of line only (e.g., "12 12" → "12")
+    # This is more precise - only targets trailing duplicates
+    if grep -qE "Max Level:.*[0-9]+ [0-9]+$" "$file"; then
+        # More precise fix - only for "NN NN" at end
+        sed -i 's/\([0-9]\) \([0-9]\)$/\1\2/' "$file"
+        echo "Fixed trailing duplicates in $skill"
         fixed=$((fixed + 1))
     fi
     

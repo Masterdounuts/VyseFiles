@@ -33,7 +33,7 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 15 15 (grows with discoveries)
+**Max Level:** 155 (grows with discoveries)
 
 | Discovery | Adds To Max |
 |------------|-------------|

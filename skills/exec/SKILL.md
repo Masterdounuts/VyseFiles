@@ -40,7 +40,7 @@ description: Shell command execution, sandbox, PTY, and background processes.
 - When to use: Shell features (pipes, glob, env vars)
 - vs alternatives: Use exec for shell; use native tools when available
 
-**Max Level:** 22 22
+**Max Level:** 222
 
 | Discovery | Adds To |
 |------------|--------|

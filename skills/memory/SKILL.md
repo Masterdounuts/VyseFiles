@@ -37,7 +37,7 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 - **read** - Direct file reads for full context
 - Decision tree: memory_search for recall → memory_get for snippets → read for full
 
-**Max Level:** 18 18 (grows with discoveries)
+**Max Level:** 188 (grows with discoveries)
 
 | Discovery | Adds To |
 |------------|--------|

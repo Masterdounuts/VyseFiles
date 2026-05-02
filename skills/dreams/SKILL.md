@@ -38,7 +38,7 @@ trigger phrases: "dream, vision, goal, brainstorm"
 - **write** - Documenting patterns
 - Decision tree: memory_search for recall → read for analysis → write for documentation
 
-**Max Level:** 18 18
+**Max Level:** 188
 
 | Discovery | Adds To |
 |------------|--------|
@@ -65,7 +65,7 @@ Dreaming is disabled by default. To enable in Control UI:
   "config": {
     "dreaming": {
       "enabled": true,
-      "frequency": "0 3 * * *"
+      "frequency": "0 * * *"
     }
   }
 }

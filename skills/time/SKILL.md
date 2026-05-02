@@ -35,7 +35,7 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 - **exec** - Date/time commands
 - Decision tree: cron for scheduling → read/write for logs → exec for time check
 
-**Max Level:** 19 19
+**Max Level:** 199
 
 | Discovery | Adds To |
 |------------|--------|
