@@ -38,7 +38,7 @@ Recognize when actions repeat and should be automated.
 - Identify manual task that should be automated: +5 XP
 - Use existing automation: +2 XP
 
-## Current Status: Level 3 - Novice
+## Current Status: Level 4 - Novice
 
 *Currently learning when to automate*
 

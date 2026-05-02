@@ -264,6 +264,9 @@ case $SKILL in
   knowledge) echo "| memory | +3 | Cross-pollination |" >> "$TRACKING";;
   security) echo "| system | +3 | Cross-pollination |" >> "$TRACKING";;
   time) echo "| workflow | +3 | Cross-pollination |" >> "$TRACKING";;
+  
+  # Default: any skill gains pattern-recognition (core skill)
+  *) echo "| pattern-recognition | +3 | Cross-pollination |" >> "$TRACKING";;
 esac
 echo "| pattern-recognition | +3 | Core skill |" >> "$TRACKING"
 
