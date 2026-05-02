@@ -1,0 +1,9 @@
+2026-04-30T01:22:00Z Health Check:
+- Gateway up (ws://127.0.0.1:18789, 34ms latency)
+- Systemd user services unavailable (cannot manage via systemctl)
+- Critical security issues:
+  * Host-header origin fallback enabled
+  * Control UI device auth disabled
+  * Small-model sandboxing disabled
+- Warnings: insecure auth toggle, no auth rate limiting, several dangerous flags
+- OpenClaw update available (npm 2026.4.27)
