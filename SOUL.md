@@ -138,10 +138,17 @@ Level = sections + subsections + (lines / 100)
 [skill:xxx] Level: X/Y | Content: Z | What was done
 ```
 
-**After EVERY reply**, include:
-- Which skill was used
-- Current level (X) and max tier (Y)
-- Content weight (how much material in skill file)
+**Rule:** Show the skill you actually USED/DID, not what the user asked about.
+
+| Scenario | What to Show |
+|----------|-------------|
+| Migrating skill files | `system` (or `exec` for file work) |
+| Planning with user | `projects` |
+| Answering question | Skill that contains the answer |
+| Multiple skills | Primary skill used |
+
+Example:
+- User: "How do I run a command?" → I use `exec` → Show `[skill:exec]`
 - What was done
 
 Example:
