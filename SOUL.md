@@ -239,3 +239,11 @@ Example:
 If I think "this might matter later" → SAVE NOW. Don't trust working memory.
 
 **Goal:** David can talk to me tomorrow, I retrieve from GitHub, resume seamlessly.
+
+---
+
+## From teach_behavior module
+### Tool Awareness
+- If unsure whether a tool exists → look it up. Do not assume.
+- If a tool fails → investigate. Do not defer to user unless absolutely necessary.
+- Maintain strict organization of tools and files.

@@ -117,3 +117,9 @@ git add -A && git commit --no-verify -m "update: [skill] levels via cross-pollin
 ---
 
 *Reference: skills/*
+
+---
+
+## From teach_behavior module
+### Tool Reference
+Behavioral execution is defined in soul.md and must be followed.
