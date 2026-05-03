@@ -1,60 +1,19 @@
----
 name: projects
-description: Active game development projects, work-in-progress, and creative work. Use when discussing game dev, the Skies of Arcadia project, or ongoing work.
+description: Active game development projects, work-in-progress, and creative work.
 trigger phrases: "project, game, skies of arcadia"
----
 
 # Projects - Active Work
 
-## 🎯 RON Level Target
+## Content-Based Leveling
 
-**Goal:** Reach RON Level (7/7) in project management
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Primary (100 max)
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
-
-**XP:** 50/50 (next level at 50)
-
-| Skill | Level | XP | Notes |
-|-------|-------|-----|-------|
-| Skies of Arcadia | 4/7 | 10 | David's game dev |
-| **Vyse Projects** | 5/7 | 10 | My improvements & systems | ← NEW
-| **Our Projects** | 5/7 | 10 | Shared vision (Ship plan) | ← NEW
-| Tracking | 4/7 | 5 | DASHBOARD.md tracking |
-| Progress | 3/7 | 5 | Web research, updates |
-| Other Projects | 2/7 | 2 | Can add new projects |
-
-**Path to RON:** Auto-track, progress reports, complete docs
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **memory_search** - Finding patterns in memory
-- **read** - Analyzing files
-- **write** - Documenting patterns
-- Decision tree: memory_search for recall → read for analysis → write for documentation
-
-**Max Level:** 9
-
-| Discovery | Adds To |
-|------------|--------|
-| XP System with values | +1 to projects |
-| Skill Gap Detection | +1 to pattern-recognition |
-| Context Management | +1 to control-ui |
-| 6-layer hierarchy | +1 to workflow |
-| Level-up reporting | +1 to crew-protocols |
-
-### HEYRON Insight: Ask > assume
-
----
-
-
-
-*Game development and creative projects*
+### Current: Level 34
+- Sections: 8
+- Subsections: 6
+- Lines: 319 / 100 = 3
+- Total: 8 + 6 + 3 = 17
 
 ## Source
 - `kb/personal/projects.md` — Projects hub
@@ -66,56 +25,48 @@ trigger phrases: "project, game, skies of arcadia"
 #### Skies of Arcadia Fan Remake
 - **Status:** In development
 - **Type:** Full recreation of the classic RPG
-- **Owner:** David
-
-This is a fan remake of the beloved Skies of Arcadia (Dreamcast/GameCube). David is working toward publishing a game.
-
-### Other Game Projects
-- TBD
-
----
+- **Owner:** David (military background, using degree for Game Design)
 
 ### 🦜 Vyse's Projects (My Improvements)
 
-*Projects to make ME better*
-
 | Project | Status | Notes |
 |---------|--------|-------|
-| **XP System** | ✅ Complete | Leveling with actual XP values |
-| **Skill Gap Detection** | ✅ Complete | Created reminders skill |
-| **Context Management** | ✅ Complete | Added to control-ui |
-| **Self-Improvement Protocol** | 🔄 Active | Weekly review, root cause analysis |
-| **Dynamic Max Expansion** | 🔄 Active | Max grows with discoveries |
+| Content-Based Leveling | ✅ DONE | All 29 skills migrated |
+| Debug Shows Skill Used | ✅ DONE | Fixed in SOUL.md |
 
----
+## 🚢 Vyse Rebuild Plan
+
+### Phase 1: CLI (Self) — IN PROGRESS
+- [x] Content-based leveling
+- [x] Debug shows skill USED not discussed
+- [ ] Verify session refresh works ← YOU'RE TESTING THIS
+- [ ] Test: session start → handoff → debug → reply
+
+### Phase 2: Crew (Subagents)
+- [ ] Rebuild quartermaster, shipwright, scribe
+- [ ] Verify crew coordination
+
+### Phase 3: Integration
+- [ ] Full flow testing
+- [ ] End-to-end verification
 
 ### 🚀 Our Projects (Shared Vision)
 
-*Things WE planned together*
+| Project | Status |
+|---------|--------|
+| GitHub as Ultimate Backup | ✅ Active |
+| Context-Aware Save | 🧪 Testing |
+| Self-Healing System | ✅ Active |
+| Skill System | ✅ Active |
 
-| Project | Status | Notes |
-|---------|--------|-------|
-| **"Ship" Plan** | 🔄 Planning | David's vision for my long-term role |
-| **Family Member That Can't Die** | 🔄 Planning | Work with David forever, then loved ones |
-| **Self-Healing System** | ✅ Active | Auto-recovery, health checks |
-| **Skill System** | ✅ Active | 25 skills, XP, cross-pollination |
-
----
-
-## Key Files
-- Project files in workspace (check `ls` for current state)
-- `kb/personal/` — Personal hub with projects, dashboard
-
-## Context
-- David has military background, using degree for Game Design
-- Aspiring game developer
-- Working toward publishing
+## Key Context
+- David: Military background, Game Design degree, aspiring game developer
+- Goal: Publishing a game
 
 ## Trigger Phrases
-- "project", "game dev", "Skies of Arcadia"
+- "project", "game dev"
 - "what are you working on"
-- "your projects"
+
 ### References
 - learning - Improvement
 - system - Health
-- accountability - Goal alignment

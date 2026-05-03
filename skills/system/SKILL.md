@@ -1,55 +1,25 @@
----
 name: system
 always: true
 description: Debugging, recovery, FIXES, and health checks. Use when something breaks or needs investigation.
----
 
 # System - Debugging & Recovery
 
 *Debugging, recovery, FIXES, and health checks*
 
----
+## Content-Based Leveling
 
-## 🎯 RON Level Target
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Critical (150 max)
 
-**Goal:** Reach RON Level (7/7) in system debugging
+### Current: Level 27
+- Sections: 10
+- Subsections: 5  
+- Lines: 1220 / 100 = 12
+- Total: 10 + 5 + 12 = 27
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
-
-**XP:** 70/70 (RON)
-
-| Skill | Level | Score | Notes |
-|-------|-------|-------|-------|
-| Debugging | 6/7 | 🟡🟡🟡🟡🟡🟡 | Skill system + hierarchy debugged | ← LEVEL UP
-| Recovery | 5/7 | 🟡🟡🟡🟡🟡 | Skill recovery patterns added | ← LEVEL UP
-| FIXES | 5/7 | 🟡🟡🟡🟡🟡 | 10+ fixes logged | ← LEVEL UP
-| Health | 5/7 | 🟡🟡🟡🟡🟡 | Full system audit complete | ← LEVEL UP |
-
-**Path to RON:** Auto-recovery, handle complex multi-layer issues
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **exec** - Running openclaw commands (status, health, cron)
-- **gateway** - Gateway control (restart, config)
-- **cron** - Job management
-- Decision tree: exec for status → gateway for restart → cron for jobs
-
-**Max Level:** 10 (health engine)
-
-| Discovery | Adds To |
-|------------|--------|
-| Cron fix patterns | +1 to system |
-| Gateway patterns | +1 to all skills |
-| Recovery automation | +1 to self-healing |
-
----
-
+### To Next Level
+- Add more subsections or sections
+- Content in skill = real capability
 ## 🎯 Key Principle: Check OpenClaw First
 
 Before building ANY new feature, script, or automation:
@@ -66,9 +36,6 @@ Before building ANY new feature, script, or automation:
 - ✅ Cron job management (UI panel)
 - ✅ Logs panel (built-in)
 - ✅ Config UI (built-in)
-
----
-
 ## 🔧 Debugging Skill Loading
 
 If skills aren't loading correctly:
@@ -82,9 +49,6 @@ find ~/.openclaw/workspace/skills -name "SKILL.md" | wc -l
 
 # Find always:true skills
 grep -l "always: true" ~/.openclaw/workspace/skills/*/SKILL.md
-
-# Check trigger phrases
-grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 ```
 
 ### Common Issues
@@ -94,97 +58,48 @@ grep -h "trigger phrases" ~/.openclaw/workspace/skills/*/SKILL.md | head -10
 | Skill not loading | Add trigger phrase to SKILL.md |
 | Too many always:true | Move to trigger-based |
 | Conflicting triggers | Make more specific |
-| No skill index | Use skills/index.md |
-
----
-
 ## 🔧 FIXES Log
 
 *Never fix the same problem twice*
 
-**Location:** `kb/system/bootstrap/FIXES.md`
+**Location:** `FIXES.md`
 
-### Recent Fixes (2026-04)
+### Recent Fixes (2026-05)
 
 | Date | Issue | Fix |
 |------|-------|-----|
-| Apr 16 | Cron Telegram delivery failing | Changed to numeric chat ID 8742211590 |
-| Apr 17 | Gateway watch path bug | Corrected /root vs /home/openclaw path |
-| Apr 14 | GGB price fetch blocked | Use CNBC `/quotes/{TICKER}` |
-| Apr 14 | PDF formatting not applying | Use LaTeX, not HTML |
-| Apr 13 | Web search not working | Enable duckduckgo plugin |
-
----
-
+| May 2 | Memory handoff stacking | Rewrote save scripts to pull from memory/core |
+| May 2 | Debug not showing in session | Added auto-debug to session-start-handoff |
+| May 2 | CLI bloat | Deleted 10 old docs, 14 remain |
 ## 🔍 Debugging Flow
 
 1. **Identify** - What's broken? Get exact error.
 2. **Locate** - Which component? (gateway, cron, session, plugin)
-3. **Check** - Use appropriate tool:
-   - Gateway: `gateway action=status`
-   - Cron: `cron action=list`
-   - Sessions: `sessions_list`
-   - Logs: Control UI → Logs panel
-4. **Fix** - Apply solution or create script
+3. **Check** - Use appropriate tool
+4. **Fix** - Apply solution
 5. **Log** - Add to FIXES.md
 6. **Verify** - Confirm fix works
-
----
-
 ## 🏥 Health Checks
 
-| Check | Command | Frequency |
-|-------|---------|-----------|
-| Gateway | `gateway action=restart` if needed | Daily |
-| Context | `session_status` | On wake |
-| Cron | `cron action=list` | Weekly |
-| Sessions | `sessions_list` | Weekly |
-
----
-
+| Check | Command |
+|-------|---------|
+| Gateway | `openclaw status` |
+| Context | `session_status` |
+| Cron | `cron action=list` |
 ## 🆘 Recovery Procedures
 
 ### Session Crash
-1. Check `sessions_list` for stale sessions
+1. Check `sessions_list`
 2. Identify last good state in `memory/`
-3. Resume from `resume-point.md`
+3. Resume from `HANDOFF.md`
 
 ### Gateway Unresponsive
 1. `gateway action=restart`
 2. Wait 30s, check status
-
-### Cron Job Failing
-1. `cron action=runs` for job ID
-2. Check error in output
-3. Fix path/permission/timeout
-4. Re-enable if needed
-
----
-
-## 📝 Creating FIXES
-
-When you solve a problem:
-1. Add to `kb/system/bootstrap/FIXES.md`:
-   - Date
-   - Problem (exact error)
-   - Root Cause
-   - Fix applied
-   - Status
-2. Include code snippets if helpful
-
----
-
 ## Trigger Phrases
 - "fix", "debug", "broken"
 - "error", "failed", "not working"
 - "health check", "recover"
-- "FIXES", "what's broken"
 
----
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
-
-### References
-- workflow - Process
-- shipwright - Health maintenance
-- memory - Persist fixes

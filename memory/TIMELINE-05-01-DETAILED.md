@@ -168,7 +168,7 @@
 ### Key Commands:
 - `grep -i "checkpoint" /home/openclaw/cron/jobs.json`
 - `echo "=== Primary Brain automation audit ==="`
-- `/home/openclaw/.openclaw/workspace-vyse/scripts/xp-gain.sh`
+- `/home/openclaw/.openclaw/workspace-vyse/scripts/skill-level.sh`
 
 ---
 

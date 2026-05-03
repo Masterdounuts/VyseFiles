@@ -22,7 +22,7 @@
 - [x] All skills reference each other (30/30)
 - [x] Debug format mandatory
 - [x] Backup/lifeboat system (recover from blank)
-- [x] Cross-pollination AUTOMATIC (in xp-gain.sh)
+- [x] Cross-pollination AUTOMATIC (in skill-level.sh)
 
 ### Phase 3: CREW (After Interconnect works)
 - Vyse (Captain) - add skills WITH interconnection

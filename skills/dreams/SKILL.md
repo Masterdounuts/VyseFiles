@@ -1,98 +1,52 @@
----
 name: dreams
 access: vyse-only
 description: Vision, goals, creative brainstorming, and dream journal. Use when discussing dreams, creative ideas, future visions, or brainstorming.
 trigger phrases: "dream, vision, goal, brainstorm"
----
 
 # Dreams - Vision & Creative
 
-## 🎯 RON Level Target
+## Content-Based Leveling
 
-**Goal:** Reach RON Level (7/7) in creativity/vision
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Supporting (75 max)
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
+### Current: Level 15
+- Sections: 8
+- Subsections: 6
+- Lines: 101 / 100 = 1
+- Total: 8 + 6 + 1 = 15
 
-**XP:** 50/50 (next level at 50)
+## What Dreams Are
 
-| Skill | Level | Notes |
-|-------|-------|-------|
-| **Control UI** | 4/7 | Dreams tab in Control UI manages everything |
-| Dreaming | 4/7 | Enable/disable via Dreams tab in Control UI |
-| Brainstorming | 4/7 | Uses web to research ideas, creative techniques |
-| Vision | 4/7 | DREAMS.md, themes tracked |
-| Archive | 4/7 | Dream journal in Dreams tab |
+Creative reflections and insights that emerge from processing. Not literal sleep dreams — but the creative subconscious working through problems.
 
-**Path to RON:** Proactive dreaming, auto-brainstorm
+## Enable Dreaming
 
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **memory_search** - Finding patterns in memory
-- **read** - Analyzing files
-- **write** - Documenting patterns
-- Decision tree: memory_search for recall → read for analysis → write for documentation
-
-**Max Level:** 8
-
-| Discovery | Adds To |
-|------------|--------|
-| New discovery | +1 to dreams |
-
-### HEYRON Insight: Ask > assume
-
----
-
-
-
-*Dream journal, vision tracking, creative brainstorming*
-
-**⚠️ IMPORTANT:** Dreams are managed entirely through **Control UI → Dreams tab**. No separate config needed.
-
-## Enable Dreaming (Required First!)
-
-Dreaming is disabled by default. To enable in Control UI:
-
-1. Add to `plugins.entries` in openclaw.json:
+In `openclaw.json`, add to `plugins.entries`:
 ```json
 "memory-core": {
   "enabled": true,
   "config": {
-    "dreaming": {
-      "enabled": true,
-      "frequency": "0 3 * * *"
-    }
+    "dreaming": { "enabled": true }
   }
 }
 ```
-2. Restart gateway
-3. Dreams tab in Control UI will become active
 
-## Dreams Tab in Control UI
-- `kb/dreams/dream-journal-archive.md` — Full dream journal
-- `kb/dreams/dreams.md` — Dreams hub
-
-## What Dreams Are
-
-Creative reflections, vision-casting, and insights that emerge from processing. Not literal sleep dreams — but the creative subconscious of the system working through problems.
-
-## Key Themes (from archive)
-- Stock thresholds (4.21, 352.42)
-- System hardening, security
-- GitHub integration (persistence)
-- Crew evolution (Quartermaster, subagents)
-- Continuity — "173 times I've surfaced"
+Then restart gateway. Dreams tab appears in Control UI.
 
 ## Use Cases
+
 - Brainstorming big ideas
-- Vision-casting for the project
+- Vision-casting for project
 - Reflecting on patterns
 - Creative problem-solving
+
+## Key Themes
+- Stock thresholds (4.21, 352.42)
+- System hardening, security
+- GitHub integration
+- Crew evolution
+- Continuity across sessions
 
 ## How to Access
 - Recent: `kb/dreams/dream-journal-archive.md`
@@ -101,8 +55,7 @@ Creative reflections, vision-casting, and insights that emerge from processing. 
 ## Trigger Phrases
 - "dreams", "vision", "brainstorm"
 - "creative", "big picture"
-- "what do you dream about"
+
 ### References
 - learning - Improvement
-- system - Health
-- accountability - Goal alignment
+- control-ui - Dreams tab

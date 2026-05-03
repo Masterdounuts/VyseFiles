@@ -2,6 +2,33 @@
 
 *Track fixes and known issues here*
 
+## 2026-05-02
+
+### Memory Handoff Stacking (CRITICAL FIX)
+- **Problem:** HANDOFF.md accumulated 50+ stacked sessions (circular bug)
+- **Root Cause:** Save scripts read from active.md (which had old handoffs) instead of memory/core/
+- **Fix:** Rewrote context-aware-save.sh + auto-checkpoint-new.sh to pull from memory/core/ + ron-memory.md (core sources)
+- **Test:** Verified clean handoff (55 lines vs 500+), no stacking
+- **Status:** ✅ Fixed & Tested 2026-05-02
+
+### Phase 4 Integration Complete
+- **Problem:** Memory phases 1-3 built but never tested end-to-end
+- **Fix:** Ran full save→recover cycle, confirmed working
+- **Status:** ✅ Complete 2026-05-02
+
+### CLI Cleanup
+- **Problem:** 20 root files (bloated)
+- **Fix:** Deleted 10 old docs (BOOTSTRAP, REBUILD-3, PENDING, ORPHANS, POST-MIGRATION, OUTAGE-RECOVERY, README, TODO, brain-audit, skill-status)
+- **Result:** 14 core files remain
+- **Status:** ✅ Done 2026-05-02
+
+### RECOVERY.md Updated
+- **Problem:** Critical files list was in OUTAGE-RECOVERY.md (deleted)
+- **Fix:** Added P0/P1/P2 critical files section to RECOVERY.md
+- **Status:** ✅ Done 2026-05-02
+
+---
+
 ## 2026-05-01
 
 ### Session Refresh Issue

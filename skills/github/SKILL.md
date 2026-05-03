@@ -1,93 +1,38 @@
----
 name: github
 description: GitHub version control, git-sync, and persistence. Use when discussing version control, pushing to GitHub, or the persistence layer.
 trigger phrases: "git, push, commit, repo, version control"
----
 
 # GitHub - Version Control & Persistence
 
 *How we use GitHub as our second brain*
 
-> **See also:** [[kb/system/brain|Brain System]] for full second brain architecture
+## Content-Based Leveling
 
----
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Primary (100 max)
 
-## 🎯 RON Level Target
+### Current: Level 32
+- Sections: 12
+- Subsections: 18
+- Lines: 233 / 100 = 2
+- Total: 12 + 18 + 2 = 32
 
-**Goal:** Reach RON Level (7/7) in GitHub/version control
+## Our Workflow
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡
-
-**XP:** 50/50 (next level at 50)
-
-| Skill | Level | Notes |
-|-------|-------|-------|
-| Git Basics | 5/7 | Commits, pushes |
-| Automation | 5/7 | Git hooks working |
-| **Search GitHub** | 5/7 | Retrieval system |
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **exec** - Git commands (git add, commit, push)
-- **read/write** - File operations
-- Decision tree: read for status → write for changes → exec for git operations
-
-**Max Level:** 9 (persistence engine)
-
-| Discovery | Adds To |
-|------------|--------|
-| Git patterns | +1 to github |
-| Sync automation | +1 to workflow |
-| Skill | Level | Notes |
-|-------|-------|-------|
-| Git Basics | 5/7 | Commits, pushes |
-| Automation | 5/7 | Git hooks working |
-| **Search GitHub** | 5/7 | Retrieval system |
-| Troubleshooting | 4/7 | Can recover |
-| Commit Quality | 5/7 | Via hooks |
-| **GitHub as Brain** | 7/7 | Perfect retrieval |
-| Teaching | 7/7 | Can teach others |
-
-**RON Level achieved!**
-
----
-
-### HEYRON Level Insight
-
-> **Q:** "How should AI use GitHub for collaboration?"
->
-> **A:** "Search your own knowledge first. GitHub isn't just storage - it's your memory."
-
-**Key Takeaway:** GitHub is our second brain. Search it before asking.
-
----
-
-## Our RON Workflow
-
-### 1. On Wake (First Thing)
+### 1. On Wake
 ```bash
 git fetch origin main
 git pull origin main
 ```
-**Why:** Always start with latest.
 
 ### 2. Before Asking, Search GitHub
-**Rule:** If I don't know something → search our GitHub first.
+**Rule:** If I don't know → search GitHub first
 ```bash
-# Search all markdown files
 git grep "keyword" -- "*.md"
 # Or use memory_search tool
 ```
 
-**Why:** We've likely documented it already.
-
-### 3. Smart Commits (Conventional)
+### 3. Smart Commits
 
 | Prefix | Use For |
 |--------|---------|
@@ -95,180 +40,52 @@ git grep "keyword" -- "*.md"
 | `fix:` | Bug fixes, corrections |
 | `docs:` | Documentation changes |
 | `update:` | Updates to existing |
-| `skills:` | Skill level changes |
 
-**Example:**
-```
-feat: Add exec and web skills
-fix: Correct subagent-creator pattern
-docs: Clean up AGENTS.md
-update: Level up 10 skills
-```
-
-### 4. Auto-Commit Key Files
-
-These get priority commit treatment:
-- `skills/*/SKILL.md` - Always commit skill changes
+### 4. Auto-Commit Priority
+- `skills/*/SKILL.md` - Skill changes
 - `AGENTS.md` - Crew updates
 - `memory/2026-*.md` - Daily logs
-- `resume-point.md` - Checkpoint state
 
-### 5. Check Before Push
-- `git status` - What changed?
-- `git diff --stat` - How much?
-- Check for conflicts with `origin/main`
+## Standard Commands
 
----
-
-## Quick Links
-- [OpenClaw Repo](https://github.com/openclaw/openclaw)
-- [Workspace Vault](https://github.com/david-jacques/openclaw-workspace)
-
----
-
-## Standard Git Commands
-
-### Daily Flow
 ```bash
 # Start of day
 git fetch origin main
 git pull origin main
 
-# During work - check status
-git status
-
-# Before push
-git diff origin/main
-
-# Commit with message
-git add -A
-git commit -m "feat: description"
-
-# Push
+# Commit
+git add -A && git commit -m "feat: description"
 git push origin main
-```
 
-### GitHub Search (BEFORE ASKING)
-```bash
-# Search all docs for answer
-git grep "topic" -- "*.md"
-
-# Search in specific area
-git grep "stock" -- "kb/stocks/*"
-
-# Find files
-find . -name "*.md" | xargs grep "keyword"
-```
-
----
-
-## What Gets Synced
-- `kb/` — Knowledge bases
-- `memory/` — Daily logs
-- `skills/` — Agent skills
-- Core files (SOUL.md, IDENTITY.md, AGENTS.md)
-
----
-
-## Why GitHub Matters
-- **Persistence** — Workspace survives beyond sessions
-- **Backup** — Off-site redundancy
-- **Memory** — Search past decisions
-- **Collaboration** — You see what changed
-
----
-
-## Branch & Remote
-- **Branch:** `main`
-- **Remote:** `origin`
-- **Workspace repo:** `Masterdounuts/VyseFiles`
-
----
-
-## Conflict Resolution
-
-**If push fails (conflict):**
-```bash
-git fetch origin main
-git diff HEAD origin/main --stat
+# Conflict resolution
 git pull --rebase origin main
-# Resolve conflicts if any
-git push origin main
 ```
-
-**Quick resolution (ours wins):**
-```bash
-git checkout --ours <file>
-git add <file>
-git commit -m "Resolve: force ours"
-git push
-```
-
----
 
 ## GitHub as Second Brain
 
 ### Search Order
-1. **memory/** - Daily conversation logs
-2. **skills/** - What we know how to do
+1. **memory/** - Daily logs
+2. **skills/** - How-to
 3. **kb/** - Knowledge bases
 4. **Then ask** - Only if not found
 
 ### Recovery
-- Find past decisions in `memory/2026-*.md`
-- Check skills for how-to
-- Look in `kb/system/issues.md` for known problems
+- Past decisions: `memory/2026-*.md`
+- How-to: `skills/`
+- Problems: `kb/system/issues.md`
 
----
+## Git Hooks
 
-## Advanced: Git Hooks (Implemented)
-
-### Pre-commit Hook
-**Location:** `.git/hooks/pre-commit`
-**What it does:** Validates commit message format (conventional commits)
-
-```bash
-# Enforces: feat:, fix:, docs:, update:, etc.
-# Exit 1 if invalid format
-```
-
-### Post-commit Hook
-**Location:** `.git/hooks/post-commit`
-**What it does:** Auto-pushes when critical files change
-
-```bash
-# Auto-pushes on: skills/, AGENTS.md, USER.md, SOUL.md, IDENTITY.md
-```
-
-### How to Enable
-```bash
-chmod +x .git/hooks/pre-commit
-chmod +x .git/hooks/post-commit
-```
-
----
-
-## Branch Workflow (Active)
-
-| Branch | Use |
-|--------|-----|
-| main | Production-ready |
-| feature/* | New skills/features |
-| fix/* | Bug fixes |
-
-**Current workflow:**
-- Work on main for speed
-- Branch for experiments (future)
-- Always pull before push
-
----
+| Hook | What |
+|------|------|
+| pre-commit | Validates commit format |
+| post-commit | Auto-content tracking |
 
 ## Trigger Phrases
 - "git", "github", "sync"
 - "push", "commit", "persist"
-- "search github", "did we document"
-- "backup", "version control"
+- "search github"
+
 ### References
 - learning - Improvement
 - system - Health
-- accountability - Goal alignment

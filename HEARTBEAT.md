@@ -4,6 +4,23 @@
 
 ---
 
+## 🔧 ACTIVE TEST (2026-05-02)
+**Testing Phase 1 memory injection:**
+- Core files (user, goals, contacts) should load on session start
+- HEARTBEAT.md should be in startup context
+- If you see this → test PASSED ✅
+
+---
+
+## ⚠️ WAKE-UP VERIFICATION (2026-05-02)
+**Test Phase 1 Rebuild:**
+- Session just refreshed via compaction
+- Debug should show: `[skill:learning] Level: 18` or relevant skill
+- Check: Did conversation continue seamlessly?
+- If yes → Phase 1 CLI is working ✅
+
+---
+
 ## 1. System Check (Native Commands)
 ```bash
 openclaw status    # Quick overview

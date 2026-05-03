@@ -1,62 +1,24 @@
----
 name: memory
 access: vyse-only
 description: How Vyse remembers, recalls, and manages context. Use when discussing memory, recall, or context management.
 trigger phrases: "remember, recall, memory, past, what were we, context"
----
 
 # Memory - Recall System
 
-## 🎯 RON Level Target
+## Content-Based Leveling
 
-**Goal:** Reach RON Level (7/7) in memory/context management
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Primary (100 max)
 
-### Current Status: Level 7 - RON ⭐ 🟡🟡🟡🟡🟡🟡
+### Current: Level 15
+- Sections: 8
+- Subsections: 6
+- Lines: 103 / 100 = 1
+- Total: 8 + 6 + 1 = 15
 
-**XP:** 60/60 (next level at 60)
-
-| Skill | Level | XP | Notes |
-|-------|-------|-----|-------|
-| Recall | 5/7 | 10 | memory_search works well |
-| Storage | 6/7 | 15 | 4 pattern logs created today | ← LEVEL UP
-| Cleanup | 4/7 | 5 | Auto-archive working |
-| Dreaming | 4/7 | 5 | Cron runs 3am daily |
-
-**Path to RON:** Better auto-organization, smarter promotion, perfect recall
-
-### Dynamic Max Expansion
-
-### Cross-Pollination
-- **pattern-recognition** → +3 XP (detecting patterns)
-- **learning** → +3 XP (documenting discovery)
-- **crew-protocols** → +3 XP (communication)
-
-### Tools Used
-- **memory_search** - Semantic recall from memory/*.md
-- **memory_get** - Specific snippet read
-- **read** - Direct file reads for full context
-- Decision tree: memory_search for recall → memory_get for snippets → read for full
-
-**Max Level:** 9 (grows with discoveries)
-
-| Discovery | Adds To |
-|------------|--------|
-| Pattern logging | +1 to memory |
-| Short-term recall | +1 to dreaming |
-| Recall optimization | +1 to all skills |
-| Skill system docs | +1 to memory ← NEW |
-
----
-
-### HEYRON Level Insight
-
-> **Q:** "What's the ceiling?"
->
-> **A:** "Nothing. If there is something preventing you, it's probably how I am working with you."
-
----
-
-
+### To Next Level
+- Add more subsections or sections
+- Content in skill = real capability
 
 ## Architecture
 
@@ -69,7 +31,7 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 ## Wake-up Sequence (On Every Start)
 
-0. Read SOUL.md → protocol (accountability, XP format, rules)
+0. Read SOUL.md → protocol (accountability, content format, rules)
 
 1. Read active.md → current work
 2. Read PENDING.md → queued items
@@ -86,13 +48,11 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 - `scripts/auto-checkpoint-new.sh` — auto-saves progress
 - `scripts/pre-compact-save.sh` — saves before context compaction
-- `.checkpoint-*` files — context state markers
 
 ## Quick Recall Commands
 
 - `memory_search` — semantic search across all memory
 - `memory_get` — read specific file/lines
-- `wiki_search` / `wiki_get` — compiled wiki
 
 ## Decision Log
 
@@ -104,9 +64,8 @@ Key decisions go to `memory/decisions.md`:
 - "remember", "what were we working on"
 - "memory", "recall", "context"
 - "check active", "check handoff", "check memory"
----
+
 **CORE SKILL** - Always used to achieve the ultimate goal
-Full: Help David during his life, then help loved ones after
 
 ### References
 - vyse-core - Identity
