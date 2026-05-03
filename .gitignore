@@ -80,16 +80,18 @@ kb/stocks/agent/*.json
 kb/stocks/agent/*.log
 kb/stocks/agent/*.txt
 -e 
-# Primary brain files (Control UI only - don't commit)
-HEARTBEAT.md
+# Primary brain files - COMMIT TO GITHUB (backup)
+# HEARTBEAT.md
+# AGENTS.md
+# SOUL.md
+# USER.md
+# IDENTITY.md
+# DREAMS.md
+# PENDING.md
+# HANDOFF.md
+
+# Session-only files (don't commit)
 active.md
 resume-point.md
-AGENTS.md
-SOUL.md
-USER.md
-IDENTITY.md
-DREAMS.md
-PENDING.md
-HANDOFF.md
 
 VyseFiles/
