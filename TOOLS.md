@@ -15,5 +15,11 @@ All tools must:
 
 Tools index lives here.
 
+## Tools Index
+
+| Tool | Documentation |
+|------|---------------|
+| GitHub | skills/github/SKILL.md |
+
 ---
 [[INDEX.md|← Back to Index]]

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.15",
+    "lastTouchedAt": "2026-04-17T16:10:15.703Z"
+  },
+  "update": {
+    "checkOnStart": false
+  },
+  "browser": {
+    "enabled": true,
+    "defaultProfile": "browserless",
+    "profiles": {
+      "browserless": {
+        "cdpUrl": "http://144.126.154.152:3100?token=heyron-browser-2026",
+        "color": "#00AA00"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "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",
+        "models": [
+          {
+            "id": "minimax/minimax-m2.5",
+            "name": "GPT-5 mini",
+            "api": "openai-completions",
+            "reasoning": false,
+            "contextWindow": 128000
+          },
+          {
+            "id": "google/gemini-2.5-flash-lite",
+            "name": "Gemini Flash Lite",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "contextWindow": 128000
+          },
+          {
+            "id": "openai/gpt-oss-120b",
+            "name": "GPT-OSS 120B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "contextWindow": 131072
+          }
+        ]
+      },
+      "google": {
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+        "apiKey": "AIzaSyAz_fu8F6LOwApJiT9Y25yizR0bDWCoFos",
+        "models": [
+          {
+            "id": "google/gemini-2.5-flash",
+            "name": "Gemini 2.5 Flash",
+            "api": "google-generative-ai",
+            "contextWindow": 1000000
+          },
+          {
+            "id": "gemma-4-26b-a4b-it",
+            "name": "Gemma 4 26B MoE",
+            "api": "google-generative-ai",
+            "contextWindow": 200000
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/minimax/minimax-m2.5",
+        "fallbacks": []
+      },
+      "imageModel": {
+        "primary": "openrouter/google/gemini-2.5-flash-lite"
+      },
+      "models": {
+        "openrouter/minimax/minimax-m2.5": {},
+        "openrouter/google/gemini-2.5-flash-lite": {},
+        "openrouter/openai/gpt-oss-120b": {}
+      },
+      "heartbeat": {
+        "model": "openrouter/minimax/minimax-m2.5"
+      },
+      "subagents": {
+        "model": "openrouter/minimax/minimax-m2.5"
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "reserveTokensFloor": 20000,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 15000
+        },
+        "reserveTokens": 25000
+      },
+      "sandbox": {
+        "mode": "off"
+      },
+      "contextTokens": 40000
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "provider": "gemini",
+        "gemini": {
+          "apiKey": "AIzaSyAz_fu8F6LOwApJiT9Y25yizR0bDWCoFos"
+        }
+      }
+    }
+  },
+  "messages": {},
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "bash": true,
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {},
+  "channels": {
+    "whatsapp": {
+      "enabled": false
+    },
+    "telegram": {
+      "enabled": true,
+      "botToken": "8325336361:AAEvDZq9sSki2qanno7g2L7wCRUkVSnKmss",
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ]
+    }
+  },
+  "gateway": {
+    "port": 18790,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "*"
+      ],
+      "dangerouslyAllowHostHeaderOriginFallback": true,
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "auth": {
+      "token": "token-e0045f65fe2a5ba1d761b37907cdc042",
+      "rateLimit": {
+        "maxAttempts": 10,
+        "windowMs": 60000,
+        "lockoutMs": 300000
+      }
+    },
+    "trustedProxies": [
+      "172.16.0.0/12",
+      "10.0.0.0/8",
+      "192.168.0.0/16",
+      "127.0.0.1",
+      "172.17.0.1"
+    ],
+    "remote": {
+      "url": "ws://144.126.154.152:18789"
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-13T16:23:34.038Z",
+    "lastRunVersion": "2026.4.11",
+    "lastRunMode": "local"
+  },
+  "plugins": {
+    "deny": ["whatsapp"],
+    "entries": {
+      "active-memory": {
+        "enabled": true,
+        "config": {
+          "enabled": true,
+          "agents": ["vyse"],
+          "queryMode": "recent",
+          "promptStyle": "balanced",
+          "timeoutMs": 15000,
+          "maxSummaryChars": 500,
+          "logging": true
+        }
+      },
+      "google": {
+        "config": {
+          "webSearch": {
+            "apiKey": "AIzaSyAz_fu8F6LOwApJiT9Y25yizR0bDWCoFos",
+            "model": "gemini-2.5-flash"
+          }
+        },
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
+      },
+      "browser": {
+        "enabled": true
+      }
+    }
+  }
+}

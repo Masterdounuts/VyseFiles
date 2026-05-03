@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "13b08b25-98b8-46df-894b-5800385523d1",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "quartermaster-stock-check",
+      "enabled": false,
+      "createdAtMs": 1777508515718,
+      "updatedAtMs": 1777513727180,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1800000,
+        "anchorMs": 1777508515718
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run quartermaster stock check. Read kb/stocks/positions/*.md and kb/stocks/prices.json first. Check current prices, evaluate positions against stop-loss and targets. Output: DECISION + REASON for each holding."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "lastRunAtMs": 1777512116694,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 21422,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastError": "Channel is required (no configured channels detected). Set delivery.channel explicitly or use a main session with a previous channel."
+      }
+    },
+    {
+      "id": "0854cdb7-9fbb-4a32-87b8-b8235297b05d",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "shipwright-health-check",
+      "enabled": true,
+      "createdAtMs": 1777508525327,
+      "updatedAtMs": 1777615863061,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 3600000,
+        "anchorMs": 1777508525327
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run shipwright health check. Check openclaw status, verify gateway is running, check for issues. Output: HEALTH STATUS + any issues found."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777619325278,
+        "lastRunAtMs": 1777615725278,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 137783,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "7f4c717c-eeb6-4338-9ab3-5667a785178f",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "shipwright-daily",
+      "enabled": true,
+      "createdAtMs": 1777508538722,
+      "updatedAtMs": 1777601932081,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run shipwright daily maintenance. Check all systems, verify gateway, clean up old sessions if any, check disk space."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777662000000,
+        "lastRunAtMs": 1777601432566,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 499515,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "27367011-d7ef-4c9b-ae0c-9c8ce0c153ba",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "scribe-weekly-audit",
+      "enabled": true,
+      "createdAtMs": 1777508546781,
+      "updatedAtMs": 1777512954667,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 0",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run scribe knowledge audit. Check kb/ files for completeness, identify gaps, verify memory files are complete."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777827600000
+      }
+    },
+    {
+      "id": "7e8c8e59-50b2-426f-97de-f0fb739f7f0b",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "auto-checkpoint",
+      "enabled": true,
+      "createdAtMs": 1777512881559,
+      "updatedAtMs": 1777617767179,
+      "schedule": {
+        "everyMs": 1200000,
+        "kind": "every",
+        "anchorMs": 1777512881559
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run auto-checkpoint. Execute: bash /home/openclaw/.openclaw/workspace-vyse/scripts/auto-checkpoint-new.sh",
+        "timeoutSeconds": 60
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777618923475,
+        "lastRunAtMs": 1777617723475,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 43704,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "93ab0060-3657-451e-8511-0fc8dcef120c",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "context-monitor",
+      "enabled": true,
+      "createdAtMs": 1777512884268,
+      "updatedAtMs": 1777616519262,
+      "schedule": {
+        "everyMs": 300000,
+        "kind": "every",
+        "anchorMs": 1777512884268
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run context monitor. Execute: bash /home/openclaw/.openclaw/workspace-vyse/scripts/context-monitor-light.sh",
+        "timeoutSeconds": 30
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777620119262,
+        "lastRunAtMs": 1777616489212,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 30050,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 12,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
+      }
+    },
+    {
+      "id": "9bbb8751-a0d9-413b-852c-53a609e79121",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main?session=agent:main:main",
+      "name": "vyse-status-auto-update",
+      "enabled": true,
+      "createdAtMs": 1777512886903,
+      "updatedAtMs": 1777615101681,
+      "schedule": {
+        "everyMs": 300000,
+        "kind": "every",
+        "anchorMs": 1777512886903
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Update .vyse-status.md. Run: openclaw status --json > /home/openclaw/.openclaw/workspace-vyse/.vyse-status.tmp && mv /home/openclaw/.openclaw/workspace-vyse/.vyse-status.tmp /home/openclaw/.openclaw/workspace-vyse/.vyse-status.md",
+        "timeoutSeconds": 30
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777618701681,
+        "lastRunAtMs": 1777615071670,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 30011,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 5,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
+      }
+    },
+    {
+      "id": "daily-snapshot-1777601549959",
+      "agentId": "vyse",
+      "sessionKey": "agent:vyse:main",
+      "name": "daily-workspace-snapshot",
+      "description": "Push incremental workspace to GitHub daily at 12PM PT",
+      "enabled": true,
+      "createdAtMs": 1777601549959,
+      "updatedAtMs": 1777601549959,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Push workspace snapshot to GitHub. Run: cd /home/openclaw/.openclaw/workspace-vyse && git add -A && git commit -m \"Snapshot $(date +%Y-%m-%d)\" && git push origin main"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777662000000
+      }
+    },
+    {
+      "id": "memory-dreaming-1777601691857",
+      "name": "Memory Dreaming Promotion",
+      "description": "[managed-by=memory-core.short-term-promotion] Promote weighted short-term recalls into MEMORY.md (limit=10, minScore=0.800, minRecallCount=3, minUniqueQueries=3, recencyHalfLifeDays=14, maxAgeDays=30).",
+      "enabled": true,
+      "createdAtMs": 1777523430280,
+      "updatedAtMs": 1777606837066,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "__openclaw_memory_core_short_term_promotion_dream__"
+      },
+      "state": {
+        "nextRunAtMs": 1777690800000,
+        "lastRunAtMs": 1777604400006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 4,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

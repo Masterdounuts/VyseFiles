@@ -1,4 +1,0 @@
-{
-  "routine": "openrouter/minimax/minimax-m2.5",
-  "strategic": "openrouter/openai/gpt-oss-120b"
-}

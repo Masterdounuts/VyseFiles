@@ -1,0 +1,17 @@
+{
+  "last_update": "2026-04-21",
+  "GGB": {
+    "price": 4.28,
+    "target": 4.81,
+    "RSI": 70.16,
+    "recommendation": "Buy (1.46)",
+    "note": "RSI approaching overbought; price near 52‑wk high. Monitor for pullback before adding."
+  },
+  "AMC": {
+    "price": 1.83,
+    "target": 1.81,
+    "RSI": 79.86,
+    "recommendation": "Neutral (3.00)",
+    "note": "High RSI, recent meme‑stock bounce from Super Mario release. Watch earnings and debt refinancing news."
+  }
+}

@@ -1,7 +1,0 @@
-2026-04-13 | GGB | JPMorgan raises price target to $5.50, upgrades to overweight (bull)
-2026-04-02 | GGB | UBS raises price target to $4.60, maintains Buy rating (bull)
-2026-04-07 | TSLA | Shares down 4% after Q1 2026 deliveries miss consensus (bear)
-2026-04-15 | TSLA | Stock up ~8% after Elon Musk touts progress on AI5 chip (bull)
-2026-04-16 | TSLA | Border to Coast Pensions raises holdings by 83% (bull/neutral)
----
-[[INDEX.md|← Back]]

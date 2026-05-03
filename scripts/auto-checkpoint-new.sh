@@ -6,6 +6,7 @@
 
 WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
 HANDOFF_FILE="$WORKSPACE/HANDOFF.md"
+MEMORY_FILE="$WORKSPACE/MEMORY.md"
 CORE_DIR="$WORKSPACE/memory/core"
 RON_MEMORY="$WORKSPACE/memory/ron-memory.md"
 LOG_DIR="$WORKSPACE/logs"
@@ -13,6 +14,7 @@ LOG_DIR="$WORKSPACE/logs"
 mkdir -p "$LOG_DIR"
 
 TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+TODAY=$(date +%Y-%m-%d)
 
 # Build handoff from CORE sources (like brain retrieving from long-term memory)
 {
@@ -47,6 +49,19 @@ TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
     echo "---"
     echo "*Checkpoint saved at $TIMESTAMP - Clean handoff, no accumulation*"
 } > "$HANDOFF_FILE"
+
+# ALSO append to MEMORY.md so it loads on session start
+if ! grep -q "## Session Handoff - $TODAY" "$MEMORY_FILE" 2>/dev/null; then
+    echo "" >> "$MEMORY_FILE"
+    echo "" >> "$MEMORY_FILE"
+    echo "## Session Handoff - $TODAY" >> "$MEMORY_FILE"
+    echo "*Auto-inserted by auto-checkpoint*" >> "$MEMORY_FILE"
+    echo "" >> "$MEMORY_FILE"
+    cat "$HANDOFF_FILE" >> "$MEMORY_FILE"
+    echo "✅ Appended handoff to MEMORY.md"
+else
+    echo "✅ Today's handoff already in MEMORY.md"
+fi
 
 echo "✅ Brain-style checkpoint: $TIMESTAMP"
 exit 0
