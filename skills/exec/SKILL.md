@@ -9,11 +9,11 @@ description: Shell command execution, sandbox, PTY, and background processes.
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 8
+### Current: Level 20
 - Sections: 10
 - Subsections: 10
-- Lines: 171 / 100 = 1
-- Total: 10 + 10 + 1 = 21
+- Lines: 81 / 100 = 0
+- Total: 10 + 10 + 0 = 20
 
 ## Core Parameters
 

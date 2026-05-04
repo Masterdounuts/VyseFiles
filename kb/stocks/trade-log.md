@@ -126,17 +126,19 @@
 
 ---
 
-## Performance Summary (April 2026)
+## Performance Summary (April-May 2026)
 
 | Metric | Value |
 |--------|-------|
-| Total Trades | 13 |
+| David's Investment | $45.00 |
+| Current Total | $51.32 |
+| Profit | +$6.32 (+14%) |
+| Total Trades | 14 |
 | Wins | 5 |
 | Losses | 2 |
-| Still Holding | 2 (NRXP, LIDR) |
-| Pending/Partial | 4 (remaining GGB) |
+| Still Holding | LIDR (5 shares) |
 | Win Rate | 71% (wins/closed) |
-| Total P/L | +$3.00 (closed trades) |
+| Total P/L (closed) | +$3.12 |
 | Best Trade | GGB +$3.44 (18%) |
 | Worst Trade | LCID -$0.81 (-8%) |
 

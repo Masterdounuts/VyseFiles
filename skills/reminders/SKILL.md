@@ -9,10 +9,10 @@ trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "al
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 14
+### Current: Level 9
 - Sections: 5
 - Subsections: 4
-- Lines: 70 / 100 = 0
+- Lines: 72 / 100 = 0
 - Total: 5 + 4 + 0 = 9
 
 ## How Reminders Work

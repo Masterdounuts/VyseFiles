@@ -10,11 +10,11 @@ trigger phrases: "identity, about yourself, who are you, vyse"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 10
+### Current: Level 28
 - Sections: 13
 - Subsections: 15
-- Lines: 233 / 100 = 2
-- Total: 13 + 15 + 2 = 30
+- Lines: 71 / 100 = 0
+- Total: 13 + 15 + 0 = 28
 
 ## Identity
 

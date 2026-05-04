@@ -2,7 +2,19 @@
 
 *Track fixes and known issues here*
 
-## 2026-05-02
+## 2026-05-04
+
+### Subagent Model Preference (CRITICAL FIX)
+- **Problem:** Scribe kept timing out - didn't know which models work or to try different ones
+- **Root Cause:** Subagent system prompts missing model preference section
+- **Fix:** Added "Model Preference" section to all 3 subagent prompts:
+  - Scribe: minimax-m2.5 preferred, claude-3-haiku fallback
+  - Quartermaster: minimax-m2.5 preferred, gemini-2.0-flash fallback
+  - Shipwright: minimax-m2.5 preferred, gemini-2.0-flash fallback
+- **Added:** "If timeout/fail: Try different model, report what works"
+- **Status:** ✅ Fixed
+
+---
 
 ### Memory Handoff Stacking (CRITICAL FIX)
 - **Problem:** HANDOFF.md accumulated 50+ stacked sessions (circular bug)

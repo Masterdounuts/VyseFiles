@@ -9,10 +9,10 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 10
+### Current: Level 8
 - Sections: 5
 - Subsections: 3
-- Lines: 85 / 100 = 0
+- Lines: 51 / 100 = 0
 - Total: 5 + 3 + 0 = 8
 
 ## The 4 Recommendations

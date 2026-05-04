@@ -10,11 +10,11 @@ access: public
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 13
+### Current: Level 19
 - Sections: 5
 - Subsections: 14
-- Lines: 126 / 100 = 1
-- Total: 5 + 14 + 1 = 20
+- Lines: 75 / 100 = 0
+- Total: 5 + 14 + 0 = 19
 
 ## Alert Templates
 

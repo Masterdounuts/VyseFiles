@@ -1,9 +1,10 @@
 {
-  "updated": "2026-04-29T06:32Z",
-  "source": "Manual (Captain David - verified)",
+  "updated": "2026-05-04T14:18Z",
+  "source": "David (manual_override: true)",
   "manual_override": true,
   "prices": {
-    "NRXP": 2.98,
-    "LIDR": 2.34
-  }
+    "LIDR": 1.98,
+    "NRXP": 3.07
+  },
+  "notes": "David reports LIDR at $1.98, NRXP sold at $3.07"
 }

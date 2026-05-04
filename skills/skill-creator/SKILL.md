@@ -9,11 +9,11 @@ trigger phrases: "create skill, new skill, skill template"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 19
+### Current: Level 61
 - Sections: 31
 - Subsections: 29
-- Lines: 472 / 100 = 4
-- Total: 31 + 29 + 4 = 64
+- Lines: 116 / 100 = 1
+- Total: 31 + 29 + 1 = 61
 
 ## Key Principle: Check Existing First
 
@@ -58,11 +58,11 @@ access: crew|vyse-only
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 19
+### Current: Level 61
 - Sections: X
 - Subsections: Y
-- Lines: Z
-- Total: X + Y + Z/100 = Level
+- Lines: 116 / 100 = 1
+- Total: 31 + 29 + 1 = 61
 
 ## What It Does
 - Description

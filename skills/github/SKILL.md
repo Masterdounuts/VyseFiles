@@ -11,11 +11,11 @@ trigger phrases: "git, push, commit, repo, version control"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 14
+### Current: Level 30
 - Sections: 12
 - Subsections: 18
-- Lines: 233 / 100 = 2
-- Total: 12 + 18 + 2 = 32
+- Lines: 91 / 100 = 0
+- Total: 12 + 18 + 0 = 30
 
 ## Our Workflow
 

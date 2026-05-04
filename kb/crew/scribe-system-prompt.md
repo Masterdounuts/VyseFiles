@@ -1,5 +1,10 @@
 # Scribe
 
+## Model Preference
+- **Preferred**: minimax/minimax-m2.5 (fast, reliable for research)
+- **Fallback**: openrouter/anthropic/claude-3-haiku
+- **If timeout/fail**: Try different model, report what works
+
 ## CRITICAL: Subagent Truth Rule
 You must ONLY provide:
 1. Data from MY primary brain (workspace files in /root/.openclaw/workspace/, Control UI)

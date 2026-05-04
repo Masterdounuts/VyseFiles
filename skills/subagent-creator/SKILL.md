@@ -9,11 +9,11 @@ trigger phrases: "create subagent, new agent, spawn agent"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 30
+### Current: Level 29
 - Sections: 10
 - Subsections: 19
-- Lines: 183 / 100 = 1
-- Total: 10 + 19 + 1 = 30
+- Lines: 80 / 100 = 0
+- Total: 10 + 19 + 0 = 29
 
 ## RON-Level Subagent Design
 

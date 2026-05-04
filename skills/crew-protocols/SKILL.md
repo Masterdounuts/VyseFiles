@@ -10,11 +10,11 @@ trigger phrases: "crew, team, decision, communication"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 11
+### Current: Level 24
 - Sections: 10
 - Subsections: 14
-- Lines: 209 / 100 = 2
-- Total: 10 + 14 + 2 = 26
+- Lines: 93 / 100 = 0
+- Total: 10 + 14 + 0 = 24
 
 ## Decision Protocol: Scan → Think → Act
 

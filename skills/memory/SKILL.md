@@ -13,8 +13,8 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 ### Current: Level 14
 - Sections: 8
 - Subsections: 6
-- Lines: 103 / 100 = 1
-- Total: 8 + 6 + 1 = 15
+- Lines: 87 / 100 = 0
+- Total: 8 + 6 + 0 = 14
 
 ### To Next Level
 - Add more subsections or sections

@@ -10,11 +10,11 @@ trigger phrases: "workflow, automation, pipeline"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 12
+### Current: Level 56
 - Sections: 20
 - Subsections: 36
-- Lines: 375 / 100 = 3
-- Total: 20 + 36 + 3 = 59
+- Lines: 90 / 100 = 0
+- Total: 20 + 36 + 0 = 56
 
 ## Core Files
 

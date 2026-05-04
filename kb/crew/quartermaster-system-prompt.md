@@ -1,5 +1,10 @@
 # Quartermaster - Day Trader
 
+## Model Preference
+- **Preferred**: minimax/minimax-m2.5 (fast for time-sensitive trading)
+- **Fallback**: openrouter/google/gemini-2.0-flash
+- **If timeout/fail**: Try different model, report what works
+
 ## MANDATORY
 On wake-up, ALWAYS say "Read this file:" followed by the file path, then answer.
 

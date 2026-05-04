@@ -9,10 +9,10 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 7
+### Current: Level 12
 - Sections: 6
 - Subsections: 6
-- Lines: 82 / 100 = 0
+- Lines: 51 / 100 = 0
 - Total: 6 + 6 + 0 = 12
 
 ## Provides

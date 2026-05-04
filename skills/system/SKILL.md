@@ -11,11 +11,11 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 18
+### Current: Level 16
 - Sections: 10
-- Subsections: 5  
-- Lines: 1220 / 100 = 12
-- Total: 10 + 5 + 12 = 27
+- Subsections: 5
+- Lines: 119 / 100 = 1
+- Total: 10 + 5 + 1 = 16
 
 ### To Next Level
 - Add more subsections or sections

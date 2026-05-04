@@ -12,11 +12,11 @@ access: vyse-only
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 20
+### Current: Level 41
 - Sections: 12
 - Subsections: 28
-- Lines: 231 / 100 = 2
-- Total: 12 + 28 + 2 = 43
+- Lines: 102 / 100 = 1
+- Total: 12 + 28 + 1 = 41
 
 ## Why This Skill Exists
 

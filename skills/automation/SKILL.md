@@ -9,10 +9,10 @@ trigger phrases: "every time, repeatedly, always, auto, automate, script, run au
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 10
+### Current: Level 15
 - Sections: 10
 - Subsections: 5
-- Lines: 87 / 100 = 0
+- Lines: 65 / 100 = 0
 - Total: 10 + 5 + 0 = 15
 
 ## When to Automate

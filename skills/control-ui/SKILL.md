@@ -10,11 +10,11 @@ trigger phrases: "control ui, dashboard, status, session"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 14
+### Current: Level 83
 - Sections: 25
 - Subsections: 58
-- Lines: 771 / 100 = 7
-- Total: 25 + 58 + 7 = 90
+- Lines: 89 / 100 = 0
+- Total: 25 + 58 + 0 = 83
 
 ## Core Commands
 

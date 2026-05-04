@@ -10,11 +10,11 @@ trigger phrases: "dream, vision, goal, brainstorm"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 9
+### Current: Level 14
 - Sections: 8
 - Subsections: 6
-- Lines: 101 / 100 = 1
-- Total: 8 + 6 + 1 = 15
+- Lines: 61 / 100 = 0
+- Total: 8 + 6 + 0 = 14
 
 ## What Dreams Are
 

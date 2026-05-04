@@ -12,8 +12,8 @@ trigger phrases: "project, game, skies of arcadia"
 ### Current: Level 14
 - Sections: 8
 - Subsections: 6
-- Lines: 319 / 100 = 3
-- Total: 8 + 6 + 3 = 17
+- Lines: 72 / 100 = 0
+- Total: 8 + 6 + 0 = 14
 
 ## Source
 - `kb/personal/projects.md` — Projects hub

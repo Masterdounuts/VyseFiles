@@ -10,11 +10,11 @@ access: crew
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 14
+### Current: Level 25
 - Sections: 13
 - Subsections: 12
-- Lines: 231 / 100 = 2
-- Total: 13 + 12 + 2 = 27
+- Lines: 80 / 100 = 0
+- Total: 13 + 12 + 0 = 25
 
 ## Schedule
 - Daily: 4am UTC (session cleanup)

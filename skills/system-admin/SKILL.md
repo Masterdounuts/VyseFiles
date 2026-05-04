@@ -9,11 +9,11 @@ trigger phrases: "server, process, service, network, system admin"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 10
+### Current: Level 22
 - Sections: 8
 - Subsections: 14
-- Lines: 165 / 100 = 1
-- Total: 8 + 14 + 1 = 23
+- Lines: 75 / 100 = 0
+- Total: 8 + 14 + 0 = 22
 
 ## Quick Diagnostics
 
