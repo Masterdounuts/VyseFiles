@@ -92,13 +92,16 @@ David (Captain)
 ### Cross-Reference Matrix
 | Leveled Skill | Can Improve |
 |---------------|-------------|
-| github | memory |
-| control-ui | all (subagent mgmt) |
-| time | shipwright (cron) |
-| exec | system (debugging) |
-| web | scribe, projects, dreams |
-| alerts | telegram-crew |
-| trading | alerts |
+| github | memory, knowledge |
+| control-ui | workflow, subagent-creator |
+| time | shipwright, reminders |
+| exec | system, self-healing |
+| web | learning, knowledge, projects |
+| learning | pattern-recognition, teaching |
+| skill-creator | subagent-creator, crew-protocols |
+| memory | knowledge, dreams |
+| workflow | automation, drill-runner |
+| shipwright | security, system-admin |
 
 ### Storage
 - GitHub as source of truth
