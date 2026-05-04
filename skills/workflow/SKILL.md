@@ -8,9 +8,9 @@ trigger phrases: "workflow, automation, pipeline"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Critical (150 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 59
+### Current: Level 12
 - Sections: 20
 - Subsections: 36
 - Lines: 375 / 100 = 3
@@ -74,3 +74,17 @@ When creating ANY new skill:
 - "workflow", "how do you work"
 - "what's your process"
 - "focus: workflow"
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- Checkpoint at 60% context prevents memory loss
+- active.md is critical for session handoffs
+- Status prefixes show my reasoning to David
+
+### What Still Needs Work
+- Better handoff scripts
+- Faster context recovery
+- More reliable state management
+

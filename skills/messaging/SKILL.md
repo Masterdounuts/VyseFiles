@@ -8,9 +8,9 @@ access: public
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 20
+### Current: Level 13
 - Sections: 5
 - Subsections: 14
 - Lines: 126 / 100 = 1

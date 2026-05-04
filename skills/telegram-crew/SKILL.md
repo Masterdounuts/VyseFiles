@@ -10,7 +10,7 @@ trigger phrases: "crew chat, group chat, team"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 14
+### Current: Level 9
 - Sections: 6
 - Subsections: 7
 - Lines: 138 / 100 = 1

@@ -9,7 +9,7 @@ description: Timezone handling, scheduling, cron jobs, and temporal awareness. U
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 17
+### Current: Level 10
 - Sections: 8
 - Subsections: 8
 - Lines: 111 / 100 = 1

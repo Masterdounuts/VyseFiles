@@ -8,9 +8,9 @@ access: crew
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 18
+### Current: Level 13
 - Sections: 6
 - Subsections: 8
 - Lines: 128 / 100 = 1
@@ -65,3 +65,17 @@ memory/
 ### References
 - learning - Improvement
 - memory - Recall
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- Memory has layers - use the right one
+- Scribe manages knowledge base
+- Search before answering questions
+
+### What Still Needs Work
+- Better knowledge retrieval
+- Cross-skill connections
+- More robust memory system
+

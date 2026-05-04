@@ -7,9 +7,9 @@ description: Shell command execution, sandbox, PTY, and background processes.
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 21
+### Current: Level 8
 - Sections: 10
 - Subsections: 10
 - Lines: 171 / 100 = 1

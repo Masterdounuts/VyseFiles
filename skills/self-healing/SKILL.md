@@ -7,9 +7,9 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 25
+### Current: Level 10
 - Sections: 9
 - Subsections: 15
 - Lines: 159 / 100 = 1

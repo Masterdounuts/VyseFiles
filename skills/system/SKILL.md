@@ -9,9 +9,9 @@ description: Debugging, recovery, FIXES, and health checks. Use when something b
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Critical (150 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 27
+### Current: Level 18
 - Sections: 10
 - Subsections: 5  
 - Lines: 1220 / 100 = 12
@@ -103,3 +103,17 @@ grep -l "always: true" ~/.openclaw/workspace/skills/*/SKILL.md
 
 **CORE SKILL** - Always used to achieve the ultimate goal
 Full: Help David during his life, then help loved ones after
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- The post-commit hook auto-tracks XP on every push
+- Dynamic max was overriding tiers - had to disable it
+- System debugging requires understanding what SHOULD happen
+
+### What Still Needs Work
+- Finding root causes faster
+- Better error prediction
+- More automated health checks
+

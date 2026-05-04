@@ -10,9 +10,9 @@ access: vyse-only
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Critical (150 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 43
+### Current: Level 20
 - Sections: 12
 - Subsections: 28
 - Lines: 231 / 100 = 2
@@ -86,3 +86,17 @@ When pattern detected:
 - learning - Documenting
 - memory - Recall
 - skill-creator - Skill updates
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- Error patterns: recurring failures have known fixes
+- System patterns: how components interact
+- I use pattern-recognition as hub for cross-pollination
+
+### What Still Needs Work
+- More diverse pattern sources
+- Better pattern-to-action mapping
+- Learning from mistakes faster
+

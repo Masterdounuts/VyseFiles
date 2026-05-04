@@ -1,1 +1,0 @@
-Today, I learned about the Subagent Truth Rule, which requires providing data only from the primary brain, second brain, or fresh commands. I also addressed a language error where I incorrectly responded in Japanese instead of English. My system prompt has been updated to strictly enforce these rules.

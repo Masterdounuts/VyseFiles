@@ -8,9 +8,9 @@ trigger phrases: "control ui, dashboard, status, session"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Critical (150 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 87
+### Current: Level 14
 - Sections: 25
 - Subsections: 58
 - Lines: 771 / 100 = 7
@@ -73,3 +73,17 @@ subagents action=kill target=sessionKey
 ### References
 - system - Debugging
 - shipwright - Health checks
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- Dashboard is for humans, CLI is for automation
+- Don't assume dashboard features = CLI features
+- Native commands exist for common needs
+
+### What Still Needs Work
+- Better dashboard understanding
+- More Control UI features to document
+- User experience improvements
+

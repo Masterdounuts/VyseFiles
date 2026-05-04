@@ -7,9 +7,9 @@ trigger phrases: "server, process, service, network, system admin"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 23
+### Current: Level 10
 - Sections: 8
 - Subsections: 14
 - Lines: 165 / 100 = 1

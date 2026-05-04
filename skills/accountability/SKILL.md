@@ -11,7 +11,7 @@ trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, 
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 21
+### Current: Level 15
 - Sections: 6
 - Subsections: 14
 - Lines: 135 / 100 = 1

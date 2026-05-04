@@ -7,9 +7,9 @@ description: Web search, fetch, and browser automation. Use when researching or 
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 30
+### Current: Level 12
 - Sections: 9
 - Subsections: 19
 - Lines: 206 / 100 = 2

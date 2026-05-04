@@ -9,7 +9,7 @@ trigger phrases: "remind me", "set a reminder", "don't forget", "notify me", "al
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 18
+### Current: Level 14
 - Sections: 5
 - Subsections: 4
 - Lines: 70 / 100 = 0

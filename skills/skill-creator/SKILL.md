@@ -7,9 +7,9 @@ trigger phrases: "create skill, new skill, skill template"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Critical (150 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 60
+### Current: Level 19
 - Sections: 31
 - Subsections: 29
 - Lines: 472 / 100 = 4
@@ -56,9 +56,9 @@ access: crew|vyse-only
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting/Primary/Critical
+**Tier:** Supporting (75 max)
 
-### Current: Level 1
+### Current: Level 19
 - Sections: X
 - Subsections: Y
 - Lines: Z
@@ -100,3 +100,17 @@ When skill levels, update dependent skills:
 ### References
 - subagent-creator - Related creation
 - workflow - Integration
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- Skills need their own domains, not just tool usage
+- Content drives capability
+- Tier system (150/100/75) solves the max problem
+
+### What Still Needs Work
+- More skill gap analysis
+- Better skill creation workflow
+- Content uniqueness validation
+

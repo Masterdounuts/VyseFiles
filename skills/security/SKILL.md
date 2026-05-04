@@ -10,7 +10,7 @@ trigger phrases: "security, hardening, access, permissions"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 15
+### Current: Level 9
 - Sections: 8
 - Subsections: 6
 - Lines: 109 / 100 = 1

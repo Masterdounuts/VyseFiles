@@ -52,6 +52,9 @@ David (Captain)
 
 → [[skills/index|Full Skills Index]]
 
+## Tools
+→ [[TOOLS.md|Tools Quick Reference]]
+
 ## Subagents (True - in openclaw.json)
 
 | Agent | Role | Runs |

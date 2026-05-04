@@ -9,7 +9,7 @@ trigger phrases: "run drill, drill results, verify skills, skill health"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 14
+### Current: Level 11
 - Sections: 7
 - Subsections: 6
 - Lines: 102 / 100 = 1

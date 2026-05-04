@@ -21,7 +21,7 @@
 
 | Setting | Value |
 |---------|-------|
-| Timezone | ET (Eastern Time, UTC-5/UTC-4) |
+| Timezone | PT (Pacific Time, UTC-7/UTC-8) |
 | Date Format | YYYY-MM-DD |
 | Time Format | HH:MM ET |
 

@@ -7,9 +7,9 @@ trigger phrases: "learn, training, improve, practice, drill, failure, mistake, w
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Critical (150 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 45
+### Current: Level 22
 - Sections: 16
 - Subsections: 25
 - Lines: 317 / 100 = 3
@@ -91,3 +91,17 @@ When one skill improves:
 - memory - Recall
 - pattern-recognition - Finding patterns
 - system - Health checks
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- XP without content = vanity metrics (the big realization!)
+- Content-based leveling is the truth
+- Guards catch gaming before it happens
+
+### What Still Needs Work
+- More unique discoveries per skill
+- Better gap detection
+- True mastery vs level metrics
+

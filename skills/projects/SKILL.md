@@ -7,9 +7,9 @@ trigger phrases: "project, game, skies of arcadia"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 34
+### Current: Level 14
 - Sections: 8
 - Subsections: 6
 - Lines: 319 / 100 = 3

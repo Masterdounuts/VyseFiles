@@ -8,9 +8,9 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 15
+### Current: Level 14
 - Sections: 8
 - Subsections: 6
 - Lines: 103 / 100 = 1
@@ -71,3 +71,17 @@ Key decisions go to `memory/decisions.md`:
 - vyse-core - Identity
 - learning - Improvement
 - system - Health recovery
+---
+
+## Reflection 2026-05-04
+
+### What I Learned
+- HEARTBEAT.md = active system state
+- Memory files = long-term storage
+- Recovery needs active.md + memory files
+
+### What Still Needs Work
+- More frequent checkpoints
+- Better context recovery
+- Memory organization
+

@@ -9,9 +9,9 @@ trigger phrases: "git, push, commit, repo, version control"
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 32
+### Current: Level 14
 - Sections: 12
 - Subsections: 18
 - Lines: 233 / 100 = 2

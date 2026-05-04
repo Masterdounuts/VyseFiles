@@ -11,6 +11,14 @@ _Learn about the person you're helping. Update this as you go._
 - **Timezone:** PT (Pacific Time)
 - **Notes:** Game developer (aspiring), military background, using degree for Game Design, working toward publishing a game. Currently working on a Skies of Arcadia fan remake.
 
+## How David Works
+
+- **Tempo:** Prefers to move fast and iterate
+- **Style:** Bullet points, big picture first, then details on request
+- **What matters:** Accuracy important, but speed + progress > perfection
+- **Technical level:** Knows CLI basics, learning game dev
+- **Building now:** Skies of Arcadia fan remake (game dev project)
+
 ## Context
 
 _(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_

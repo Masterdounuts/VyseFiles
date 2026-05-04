@@ -8,9 +8,9 @@ access: crew
 ## Content-Based Leveling
 
 **Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
+**Tier:** Supporting (75 max)
 
-### Current: Level 27
+### Current: Level 14
 - Sections: 13
 - Subsections: 12
 - Lines: 231 / 100 = 2
