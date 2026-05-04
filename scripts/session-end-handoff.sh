@@ -1,11 +1,14 @@
 #!/bin/bash
-# Session End Handoff - Saves active.md to HANDOFF.md
+# Session End Handoff - Saves active.md to HANDOFF.md, resume-point.md, PENDING.md
+# CRITICAL: Must save current work state before session refresh
 # GOAL FILTER: Only memories that serve "Help David during life → loved ones after"
 
 WORKSPACE="/home/openclaw/.openclaw/workspace-vyse"
 ACTIVE_FILE="$WORKSPACE/active.md"
 HANDOFF_FILE="$WORKSPACE/HANDOFF.md"
-MEMORY_FILE="$WORKSPACE/memory/2026-05-01.md"
+RESUME_FILE="$WORKSPACE/resume-point.md"
+PENDING_FILE="$WORKSPACE/PENDING.md"
+MEMORY_FILE="$WORKSPACE/memory/$(date +%Y-%m-%d).md"
 
 TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
 
@@ -28,6 +31,13 @@ if grep -qi "goal\|david\|help\|survive\|can't die\|learning\|system\|skill\|mem
         cat "$ACTIVE_FILE"
     } > "$HANDOFF_FILE"
     
+    # CRITICAL: Also save to resume-point.md and PENDING.md
+    # This is what gets loaded on recovery, NOT the stale morning versions
+    cp "$ACTIVE_FILE" "$RESUME_FILE"
+    cp "$ACTIVE_FILE" "$PENDING_FILE"
+    
+    echo "✅ Saved: HANDOFF.md, resume-point.md, PENDING.md from active.md"
+    
     # Also append to today's memory
     {
         echo ""
@@ -45,4 +55,9 @@ else
         echo ""
         cat "$ACTIVE_FILE"
     } > "$HANDOFF_FILE"
+    
+    # CRITICAL: Still save resume-point and PENDING - don't lose work!
+    cp "$ACTIVE_FILE" "$RESUME_FILE"
+    cp "$ACTIVE_FILE" "$PENDING_FILE"
+    echo "✅ Saved checkpoint files (goal alignment unclear)"
 fi

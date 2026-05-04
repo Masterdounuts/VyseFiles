@@ -4,6 +4,13 @@
 
 ## 2026-05-04
 
+### Checkpoint Before Refresh (CRITICAL FIX)
+- **Problem:** Session refreshed but checkpoint had stale data (from 03:37 morning)
+- **Root Cause:** session-end-handoff.sh only saved to HANDOFF.md, NOT resume-point.md or PENDING.md
+- **Fix:** Updated session-end-handoff.sh to save active.md → HANDOFF.md, resume-point.md, AND PENDING.md
+- **Why:** resume-point.md is what loads on recovery - must have current state
+- **Status:** ✅ Fixed
+
 ### Subagent Model Preference (CRITICAL FIX)
 - **Problem:** Scribe kept timing out - didn't know which models work or to try different ones
 - **Root Cause:** Subagent system prompts missing model preference section

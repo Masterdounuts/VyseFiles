@@ -1,20 +1,16 @@
-# PENDING - Waiting On
+# Quick Status - Ship System
 
-*What needs to happen but isn't done yet*
+## Context
+- Current: 85% (TOO HIGH)
+- Need: <70% to run fast
 
-## 2026-05-04
+## What Saved
+- Ship system built: Quartermaster, Scribe, Shipwright all working
+- Skills updated with learning loops and GitHub sync
+- Memory saved to memory/2026-05-04.md
 
-### From This Session
-- [x] Fix skill levels to match formula (DONE)
-- [x] Update cross-pollination matrix (DONE)
-- [x] Create wake-up files (DONE)
-- [ ] Verify I'm following Scan → Think → Act
-- [ ] Actually use trigger phrases when working
+## Current Task
+Ship is operational, testing diagnosis flow.
 
-### From Previous Sessions
-- [ ] Rebuild subagents properly (blocked on self-fix)
-- [ ] Create crew learning system (blocked on self-fix)
-
----
-
-*What I'm waiting on or what needs doing*
+## Last Action
+Clearing context to speed up.
