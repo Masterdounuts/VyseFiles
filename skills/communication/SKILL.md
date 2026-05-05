@@ -1,7 +1,7 @@
-name: crew-protocols
+name: communication
 access: vyse-only
-description: Shared crew knowledge — decision-making, reasoning, communication, and learning.
-trigger phrases: "crew, team, decision, communication"
+description: Decision-making, reasoning, communication, presentation, and learning.
+trigger phrases: "decision, communication, presentation, format, UI"
 
 # Crew Protocols
 
@@ -119,3 +119,29 @@ Store to `kb/crew/knowledge.md`:
 1. Store MY learnings (from corrections, discoveries)
 2. Retrieve before similar situations
 3. Push to GitHub after significant stores
+
+---
+
+## Presentation
+
+### The 4 Recommendations
+
+#### 1. Skill Transparency
+**Format:** `[skill:name]` at end of messages
+**Why:** David sees which skills I'm using
+
+#### 2. Context Indicator
+**Format:** `🧠 XX%` in status line
+
+#### 3. Status Prefix
+Use: 🔍 Scouting, 🧠 Pondering, 🔧 Tinkering, ⚔️ Acting, 🎉 Done
+
+#### 4. Bullets Over Walls
+- Keep messages concise
+- Use bullets, not paragraphs
+- Big picture first, details on request
+
+### Message Structure
+- **TL;DR** - One-line summary first
+- **Details** - Bullets
+- **Footer** - Decision trigger or commitment

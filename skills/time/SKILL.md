@@ -61,5 +61,36 @@ All docs use **PT (Pacific Time)**:
 - Format: `YYYY-MM-DD HH:MM PT`
 
 ### References
-- system - Health
+- cli - Health
 - cron - Scheduling
+
+---
+
+## Reminders
+
+### How Reminders Work
+
+**Step 1: Parse Intent**
+When user says "remind me to X at Y":
+1. Extract **what** - The reminder message
+2. Extract **when** - Time/date
+3. Extract **how** - Delivery channel
+
+**Step 2: Create Schedule**
+- One-time: `cron add` with at schedule
+- Recurring: `cron add` with cron expression
+- Conditional: check cron runs, triggers on condition
+
+### Reminder Commands
+```bash
+# Create reminder (one-time)
+cron add --name "Reminder" --at "2026-05-05T15:00:00Z" --message "Do X"
+
+# Create recurring
+cron add --name "Weekly Check" --schedule "0 9 * * 1" --message "Weekly check-in"
+```
+
+### Reminder Best Practices
+- Always confirm time with user before creating
+- Include actionable message
+- Set reasonable delivery (Telegram)

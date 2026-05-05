@@ -66,10 +66,30 @@ Action: {ACTION}
 - **Details** - Bullets (not walls)
 - **Footer** - Decision trigger
 
+## Telegram
+
+**Group ID:** `-1003941303567`
+
+### Sending Messages
+```bash
+# Send to group
+openclaw message send --channel telegram --target -1003941303567 --message "Update"
+
+# Send to specific user
+openclaw message send --channel telegram --target <user_id> --message "Hello"
+```
+
+### Use Cases
+| Situation | Action |
+|-----------|--------|
+| Stock alert | Send price + decision to David |
+| Status update | Brief check-in |
+| Urgent issue | Flag with 🔴 prefix |
+
 ## Trigger Phrases
 - "alert", "notify", "telegram"
 - "dm", "message", "bot"
 
 ### References
-- system - Health alerts
-- vyse-core - Decision framework
+- cli - Health alerts
+- workflow - Decision framework
