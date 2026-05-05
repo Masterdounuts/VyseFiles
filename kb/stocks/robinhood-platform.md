@@ -107,4 +107,37 @@
 
 ---
 
+## Crypto Trading on Robinhood
+
+| Feature | Details |
+|---------|----------|
+| **Available Coins** | 45+ (BTC, ETH, DOGE, SOL, etc.) |
+| **Trading Hours** | 24/7 (365 days) |
+| **Commissions** | $0 (zero-commission) |
+| **Staking** | ETH, SOL available |
+| **Market** | $51B+ in customer assets |
+
+### Advantages for Our Trading
+
+- **24/7 trading** → Can trade even when market closed
+- **High volatility** → More profit potential per trade
+- **No PDT rules** → Already have with cash, but crypto has no settlement
+- **DOGE already owned** → Free position to start with
+
+### Crypto Trading Rules
+
+1. **Instant settlement** → Can immediately re-trade proceeds (unlike stocks T+1)
+2. **Volatility is higher** → Larger gains AND larger losses
+3. **Stop losses work** → Can set to protect position
+4. **No limit orders sometimes** → Market orders more common
+
+### Crypto Strategy Notes
+
+- **Target larger moves:** +10-30% is common
+- **Stop tighter:** -5% instead of -7% due to higher volatility
+- **Monitor 24/7:** Can check any time
+- **News drives movement:** Major announcements = big moves
+
+---
+
 *To be updated as we learn more about the platform*

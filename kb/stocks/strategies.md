@@ -153,4 +153,31 @@ Stock at $50 (52W high at $55) → Breakout above $51 → Target $60
 
 ---
 
+## Strategy 5: Crypto Momentum (24/7 Trading)
+
+**When to use:** Crypto moving with volume, 24/7 opportunity
+
+### How to Identify
+- [ ] Price moved >10% in 24h
+- [ ] Volume spike on news
+- [ ] Breaking recent high
+- [ ] BTC/ETH moving (altcoins follow)
+
+### Entry Rules
+- Enter on pullback after momentum确认
+- Use smaller position (more volatile)
+
+### Exit Rules
+- **Take profit:** +15% (standard), +30% (strong momentum)
+- **Stop loss:** -5% (tighter - more volatile)
+- **Trail:** After +20%, move stop to breakeven
+
+### Why Crypto Helps Us
+- Trade 24/7 → Even when stock market closed
+- High volatility → Bigger gains per trade
+- DOGE already free → Pure profit potential
+- Instant settlement → Faster re-investment
+
+---
+
 *To be updated as we learn which strategies work best*
