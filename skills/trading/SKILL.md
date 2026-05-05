@@ -13,7 +13,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 ## The Workflow (4 Steps)
 
 ### Step 1: Research
-- Fetch real-time data via web
+- **Fetch live prices:** `node scripts/get-stock-price.js SYMBOL` (uses Yahoo Finance)
 - Check 5-year history (52W high/low, market cap)
 - **Flag if:** down >80%, tiny cap, negative earnings
 
@@ -50,13 +50,14 @@ shares = min(capital * 0.25, capital - other_positions) / price
 
 ---
 
-## Current Positions
+## Current Positions (as of May 5, 2026)
 
-| Symbol | Shares | Entry | Stop | Target |
-|--------|--------|-------|------|--------|
-| NVDA | 0.05 | $198.31 | $184.43 | $222.11 |
+| Symbol | Shares | Entry | Stop | Target | Current | P/L |
+|--------|--------|-------|------|--------|----------|-----|
+| NVDA | 0.0504 | $198.31 | $184.43 | $222.11 | $196.53 | -0.9% |
+| WGS | 1 | $35.94 | $33.42 | $40.25 | $33.58 | -6.6% |
 
-**Capital:** $51.32 | **Profit:** +$6.32 (+14%)
+**Capital:** $51.32 | **Cash:** $6.28 | **Profit:** +$6.32 (+14%)
 
 ---
 
