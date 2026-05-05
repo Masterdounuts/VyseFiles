@@ -73,9 +73,42 @@ When skill levels, update dependent skills:
 
 ---
 
-## Deprecated
+## CRITICAL: YAML Frontmatter Format
 
-*Subagent creation is currently disabled.*
+*If this format is wrong, skills WON'T show on dashboard*
+
+### Correct Template
+```yaml
+---
+name: skill-name
+access: public
+description: One-line description of what this skill does.
+trigger phrases: "trigger1, trigger2, trigger3"
+---
+
+# Skill Name
+
+## Content-Based Leveling
+```
+
+### Common Mistakes That Break Skills
+| Mistake | Symptom | Fix |
+|---------|---------|-----|
+| Missing closing `---` | Skill shows "not found" | Add `---` after description line |
+| Blank line after opening `---` | YAML fails to parse | No blank lines in frontmatter |
+| Fields out of order | May work or may not | name → access → description → trigger phrases |
+| Wrong `name:` in YAML | Skill not found | Must match folder name exactly |
+
+### Debugging Skills Not Showing
+1. Run `openclaw skills list | grep workspace` - check if "✓ ready"
+2. Check first 6 lines of SKILL.md - ensure proper format
+3. Verify closing `---` exists after description
+
+### Quick Validation
+```bash
+# Should show name on line 2
+head -6 skills/*/SKILL.md | grep "^name:"
+```
 ---
 
 ## Reflection 2026-05-04
@@ -89,4 +122,19 @@ When skill levels, update dependent skills:
 - More skill gap analysis
 - Better skill creation workflow
 - Content uniqueness validation
+
+---
+
+## Reflection 2026-05-05
+
+### What I Learned
+- YAML frontmatter MUST have closing `---` or skills won't load
+- Blank lines after opening `---` break parsing
+- Dashboard shows different count than `openclaw skills list` (cache issue)
+- All 18 skills now working after fixing frontmatter
+
+### Lesson for Future
+- ALWAYS use the frontmatter template when creating skills
+- Test with `openclaw skills list | grep skill-name` before pushing
+- If skills don't show: check closing `---` first
 
