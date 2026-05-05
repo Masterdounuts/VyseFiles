@@ -105,3 +105,80 @@ When one skill improves:
 - Better gap detection
 - True mastery vs level metrics
 
+
+---
+
+## Self-Improvement Logging
+
+*How to track learnings, errors, and improvements*
+
+### What Gets Tracked
+
+| Type | When | Action |
+|------|------|--------|
+| Command fails | Error occurs | Log to `.learnings/ERRORS.md` |
+| User corrects | "No, that's wrong..." | Log to `.learnings/LEARNINGS.md` |
+| Feature request | "Can you also..." | Log to `.learnings/FEATURE_REQUESTS.md` |
+| Better approach found | Discovery | Log to `.learnings/LEARNINGS.md` |
+
+### Learning Entry Format
+
+```markdown
+## [LRN-YYYYMMDD-001] category
+
+**Logged**: 2026-03-05
+**Priority**: low | medium | high | critical
+**Status**: pending
+
+### Summary
+One-line description
+
+### Details
+What happened, what was wrong, what's correct
+
+### Suggested Action
+Specific fix or improvement
+```
+
+### Error Entry Format
+
+```markdown
+## [ERR-YYYYMMDD-001] what_failed
+
+**Logged**: 2026-03-05
+**Priority**: high
+**Status**: pending
+
+### Summary
+What failed
+
+### Error
+```
+Actual error message
+```
+
+### Context
+What you were trying to do
+
+### Suggested Fix
+How to prevent this next time
+```
+
+### Detection Triggers
+- **Corrections**: "No, that's wrong...", "Actually...", "You're wrong about..."
+- **Feature requests**: "Can you also...", "I wish you could..."
+- **Errors**: Non-zero exit codes, exceptions, unexpected output
+
+### When to Promote
+
+| Learning Type | Promote To |
+|---------------|------------|
+| Behavioral patterns | `SOUL.md` |
+| Workflow improvements | `AGENTS.md` |
+| Tool gotchas | `TOOLS.md` |
+
+### Best Practices
+1. **Log immediately** — context is freshest right after the issue
+2. **Be specific** — future us needs to understand quickly
+3. **Suggest concrete fixes** — not just "investigate"
+4. **Promote aggressively** — if useful, put it in permanent files

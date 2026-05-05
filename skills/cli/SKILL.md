@@ -151,3 +151,168 @@ session_status
 - Better error prediction
 - More automated health checks
 
+---
+
+## Dreaming (Memory Core)
+
+*Built-in OpenClaw plugin feature*
+
+### Enable Dreaming
+In `openclaw.json`, add to `plugins.entries`:
+```json
+"memory-core": {
+  "enabled": true,
+  "config": {
+    "dreaming": { "enabled": true }
+  }
+}
+```
+Then restart gateway. Dreams tab appears in Control UI.
+
+### What Dreams Are
+- Creative reflections from processing
+- Brainstorming big ideas
+- Vision-casting for projects
+- Pattern reflection
+
+### Accessing Dreams
+- Recent: `kb/dreams/dream-journal-archive.md`
+- Archive: `memory/2026-04/` (dated entries)
+
+### Trigger Phrases
+- "dreams", "vision", "brainstorm"
+- "creative", "big picture"
+
+
+---
+
+## Self-Healing & Recovery
+
+### Try 3 Times Before Escalating
+```
+Attempt 1 → Wait 5s → Try again
+Attempt 2 → Wait 10s → Try again  
+Attempt 3 → Wait 30s → Last attempt
+If all fail → Log to FIXES.md → Escalate
+```
+
+### Retry Delays
+| Error Type | Retries | Delays |
+|------------|---------|--------|
+| Network error | 3x | 2s, 5s, 10s |
+| Cron fail | 2x | 30s, 60s |
+
+### Recovery Patterns
+| Pattern | Fix |
+|---------|-----|
+| Gateway stuck | `openclaw gateway restart` |
+| Cron failing | Check logs, apply FIXES.md |
+| Session stuck | `sessions_kill` if needed |
+| Plugin error | Check config, restart gateway |
+
+### Escalation Rules
+**When to alert David:**
+- Gateway won't restart after 2 attempts
+- Data loss imminent
+- Security breach
+- Unknown error after 3 fix attempts
+
+**When NOT to escalate:**
+- Known issue with known fix
+
+---
+
+## System Administration
+
+### System Resources
+```bash
+# CPU, memory, load
+top -n 1
+free -h
+df -h
+uptime
+```
+
+### Process Management
+```bash
+# Find process
+ps aux | grep openclaw
+
+# Kill process
+kill <pid>
+```
+
+### Networking
+```bash
+# Check ports
+ss -tulpn | grep 18789
+
+# Test connectivity
+curl -s http://127.0.0.1:18789
+```
+
+### Logs
+```bash
+# System logs
+journalctl -u openclaw --since "1 hour ago"
+
+# OpenClaw logs
+tail -f ~/.openclaw/logs/gateway.log
+```
+
+### Service Management
+```bash
+# Status
+openclaw gateway status
+
+# Restart
+openclaw gateway restart
+```
+
+---
+
+## Pattern Recognition
+
+*Detects patterns across ALL systems to continuously improve*
+
+### Why
+- Skills work in silos
+- Patterns go undetected until they cause issues
+- This bridges skills for self-improvement
+
+### Core Patterns
+
+#### 1. Workflow Patterns
+- Session length vs context usage
+- Which skills trigger together
+- Task completion patterns
+
+#### 2. Skill Interaction
+- When skill A is used, does skill B follow?
+- Cross-pollination opportunities
+
+#### 3. Error Patterns
+- Recurring failures → known fixes
+- Context loss patterns
+
+#### 4. Preference Learning
+- David's preferences (bullet points, proactive alerts)
+- Communication style
+
+### Pattern Categories
+| Category | Pattern |
+|----------|---------|
+| 🔄 Recurring Issues | Error → Pattern → Root Cause → Fix |
+| 📈 Workflow | Task → Time → Optimization |
+| 🎯 Skill Synergy | Skill A → Skill B → Combined Use |
+
+### How to Use
+When noticing something recurring:
+1. Note what worked/failed
+2. Look for recurring themes
+3. Document pattern
+4. Apply cross-pollination to relevant skill
+
+### Trigger Phrases
+- "pattern", "trend", "recurring"
+- "any patterns", "what's the pattern"
