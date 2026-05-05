@@ -2,6 +2,7 @@
 
 name: exec
 always: true
+trigger phrases: "command, shell, exec, run, terminal, bash"
 description: Shell command execution, sandbox, PTY, and background processes.
 
 # Exec - Shell Execution
