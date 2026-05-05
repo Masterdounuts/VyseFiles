@@ -233,6 +233,86 @@ Track last 10 trades:
 
 ---
 
+## Daily Routine (When to Check)
+
+### Morning Check (9 AM ET)
+- [ ] Check Big Movers for opportunities
+- [ ] Check watchlist for breakout setups
+- [ ] Check open positions → time to exit?
+- [ ] Check cash → ready to deploy?
+
+### Mid-Day Check (12 PM ET)
+- [ ] Review morning positions
+- [ ] Look for new momentum setups
+- [ ] Check for news catalysts
+
+### Afternoon Check (4 PM ET)
+- [ ] Check close positions
+- [ ] Prepare for after-hours
+- [ ] Review day trades
+
+### Evening/Overnight (8 PM ET)
+- [ ] Check 24-hour market opportunities
+- [ ] Check crypto (24/7)
+- [ ] Prepare for next day
+
+### Key Check Times
+| Time (ET) | What | Why |
+|-----------|------|-----|
+| 9 AM | Big Movers + positions | Market open opportunities |
+| 12 PM | Mid-day momentum | New setups emerge |
+| 4 PM | Close review | End of day decisions |
+| 8 PM | 24-hour + crypto | Overnight opportunities |
+
+---
+
+## Entry Rules Summary
+
+Before entering ANY trade:
+1. [ ] Have a thesis (why this stock?)
+2. [ ] Identify strategy (momentum/scalp/swing/breakout)
+3. [ ] Check entry point (pullback vs breakout)
+4. [ ] Set stop loss (-7%, crypto -5%)
+5. [ ] Set target (+12%, crypto +15%)
+6. [ ] Position size ≤20% of capital
+
+---
+
+## Exit Rules Summary
+
+Exit when:
+1. **Stop hit** → -7% → Accept loss, move on
+2. **Target hit** → +12% → Take partial, let rest run
+3. **New info** → Thesis changed → Exit
+4. **Time expiry** → Held 5+ days, no movement → Exit
+5. **Better opportunity** → Move capital to better trade
+
+---
+
+## News Sources
+
+| Source | What For | Access |
+|--------|----------|--------|
+| Robinhood Big Movers | Today's movers | App |
+| Robinhood Watchlist | Watched stocks | App |
+| web_search | Breaking news | Browser |
+| Stock on 24-hour list | Extended hours | App |
+| Crypto (24/7) | Crypto catalysts | App |
+
+---
+
+## Volatility Indicators
+
+| Indicator | What It Means | Action |
+|-----------|---------------|--------|
+| Volume >2x avg | Strong interest | Look for entry |
+| Price >5% today | Momentum | Use momentum strategy |
+| Breaking 52W high | Breakout | Use breakout strategy |
+| News catalyst | Driver identified | Research thesis |
+| Tight range | Building pressure | Wait for breakout |
+
+---
+
 ## Strategy 6: 24-Hour Trading (News Reaction)
 
 **When to use:** Breaking news overnight, pre-market moves, after-hours opportunities
