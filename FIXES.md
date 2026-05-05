@@ -11,15 +11,9 @@
 - **Why:** resume-point.md is what loads on recovery - must have current state
 - **Status:** ✅ Fixed
 
-### Subagent Model Preference (CRITICAL FIX)
-- **Problem:** Scribe kept timing out - didn't know which models work or to try different ones
-- **Root Cause:** Subagent system prompts missing model preference section
-- **Fix:** Added "Model Preference" section to all 3 subagent prompts:
-  - Scribe: minimax-m2.5 preferred, claude-3-haiku fallback
-  - Quartermaster: minimax-m2.5 preferred, gemini-2.0-flash fallback
-  - Shipwright: minimax-m2.5 preferred, gemini-2.0-flash fallback
-- **Added:** "If timeout/fail: Try different model, report what works"
-- **Status:** ✅ Fixed
+### Subagent Model Preference (OUTDATED - Subagents Disabled)
+- **Status:** ⚠️ OBSOLETE - Subagents disabled 2026-05-05
+- Subagents (Quartermaster, Shipwright, Scribe) no longer used
 
 ---
 

@@ -1,107 +1,63 @@
-# Vyse Heartbeat - RON Level Orchestration
+# Vyse Heartbeat - Orchestration
 
-*Every 30 min - Coordinate crew, don't do their job*
-
----
-
-## 🔧 ACTIVE TEST (2026-05-02)
-**Testing Phase 1 memory injection:**
-- Core files (user, goals, contacts) should load on session start
-- HEARTBEAT.md should be in startup context
-- If you see this → test PASSED ✅
+*Every 30 min - Do the work, don't delegate*
 
 ---
 
-## ⚠️ WAKE-UP VERIFICATION (2026-05-02)
-**Test Phase 1 Rebuild:**
-- Session just refreshed via compaction
-- Debug should show: `[skill:learning] Level: 18` or relevant skill
-- Check: Did conversation continue seamlessly?
-- If yes → Phase 1 CLI is working ✅
-
----
-
-## 1. System Check (Native Commands)
+## 1. System Check
 ```bash
 openclaw status    # Quick overview
-openclaw health     # Gateway running?
+openclaw health    # Gateway running?
 ```
 
-## 2. Context Health (LONG-CHAT PROTECTION)
-*Per LONG-CHAT-RECOVERY-WORKFLOW*
+## 2. Context Health
 
 | Context % | Action |
 |-----------|--------|
 | <60% | Continue normal operations |
-| 60-80% | Run smoke test, generate handoff summary |
-| >80% | Force handoff, prepare for session reset |
+| 60-80% | Run smoke test, generate handoff |
+| >80% | Force handoff, prepare for reset |
 
-### Smoke Test (run at 60%+):
-```
-Do a 2-minute test: summarize the objective in 3 bullets, propose one next step, state what evidence you will provide when done.
-```
-**Pass criteria:** coherent, specific, no stale references
+### Smoke Test (60%+)
+- Summarize goal in 3 bullets
+- Propose one next step
+- State what evidence you'll provide
 
-### Handoff Summary (max 250 words):
-- What we completed
-- What is still pending
-- Key decisions/constraints
-- File paths created/edited
-- Next 3 concrete steps
+## 3. Trading (When Active)
 
-### State File (avoid stale re-runs)
-Use `memory/heartbeat-state.json` to track last check timestamps. Skip checks done too recently.
+### Price Sources
+| Priority | Source | When |
+|----------|--------|------|
+| 1 | MANUAL OVERRIDE | Captain provides |
+| 2 | web_fetch Public.com | After-hours |
+| 3 | web_search | Any time |
 
-## 3. Price Service (INTEGRATED)
+### Trading Rules
+- Max 25% position size
+- -7% stop loss
+- +12% take profit
+- No trades outside my expertise
 
-### Price Sources (in priority order):
-| Priority | Source | When | Status |
-|----------|--------|------|--------|
-| 1 | MANUAL OVERRIDE | Captain provides prices | ✅ Working |
-| 2 | web_fetch Public.com | After-hours (4-8PM PT) | ✅ Working |
-| 3 | web_search | Any time | ✅ Working |
+## 4. Skills
 
-### Sources That DON'T Work:
-- Yahoo Finance API (stale/delayed)
-- stockanalysis.com (wrong page structure)
+Use skills when triggered. After work, update relevant skill if I learned something.
 
-### The Price Fetch Flow:
-1. Check prices.json for `manual_override: true`
-2. If YES → use Captain's prices (logged in corrections.md)
-3. If NO → 
-   - After-hours: web_fetch Public.com/after-hours
-   - Regular: web_search (faster)
-4. Update prices.json
-5. Quartermaster reads prices.json
-
-### Known Working URLs:
-```
-After-hours: https://public.com/stocks/nrxp/after-hours
-            https://public.com/stocks/lidr/after-hours
-```
-
----
-
-## 3. Quartermaster
-- Spawn when market active
-- Reads prices.json (accurate data)
-- Makes buy/sell/hold decisions
-- Comes to you only when blocked
-
-## 4. Shipwright
-- Spawn if issues detected
-
-## 5. Scribe
-- Spawn if knowledge needed
+### Key Skills
+| Skill | When |
+|-------|------|
+| trading | Stock discussions |
+| cli | Something breaks |
+| learning | Continuous improvement |
+| github | Version control |
 
 ---
 
 ## Key Principle
-Orchestrate. Don't micromanage.
+
+**Just do it.** No subagents, no delegation - I am the hands.
 
 ---
 
 ## Time Standard
-- **Your timezone:** PT (Pacific Time)
-- **All timestamps in this document use PT**
+- **Timezone:** PT (Pacific Time)
 - **Format:** YYYY-MM-DD HH:MM PT
