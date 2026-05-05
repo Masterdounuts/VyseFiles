@@ -45,37 +45,6 @@ skill-name/
     └── Markdown content
 ```
 
-## Template
-
-```markdown
-name: skill-name
-description: One-line description
-trigger phrases: "trigger1, trigger2"
-access: vyse-only
-
-# Skill Name
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 61
-- Sections: X
-- Subsections: Y
-- Lines: 116 / 100 = 1
-- Total: 31 + 29 + 1 = 61
-
-## What It Does
-- Description
-
-## Trigger Phrases
-- "trigger1", "trigger2"
-
-### References
-- related-skill - Connection
-```
-
 ## Comparison Checklist
 
 | Question | Action |
