@@ -1,38 +1,59 @@
-# Day Trading Watchlist
+# Stock Watchlist
 
-*Updated April 29, 2026 - HIGH GAIN CANDIDATES*
-
----
-
-## Current Holdings
-| Symbol | Shares | Entry | Target |
-|--------|--------|-------|--------|
-| NRXP | 4 | $3.04 | $3.65 |
-| LIDR | 5 | $2.14 | $2.57 |
+*Stocks we monitor for opportunities*
 
 ---
 
-## HIGH GAIN Candidates for April 30, 2026
+## Our Positions (Active Trading)
 
-| Symbol | Entry Est. | Target | Stop | Catalyst |
-|--------|-----------|--------|------|----------|
-| LLY | $980-$1010 | $1100-$1150 (+15%) | $930 | Earnings + oral weight loss drug |
-| AAPL | $230-$240 | $255-$275 (+10%) | $218 | Earnings + new leadership |
-| ENPH | $95-$105 | $115-$120 (+15%) | $90 | Post-earnings volatility |
-| DVN | $43-$46 | $50-$53 (+15%) | $41 | Energy momentum + Strong Buy |
-
----
-
-## Position Sizing
-- Max 25% buying power (~$7)
-- Cut losses at -3%
-- Take profits at +5% to +15%
-- Reinvest ALL profits
+| Symbol | Type | Entry | Status |
+|--------|------|-------|--------|
+| NVDA | Swing | $198.31 | Open |
+| WGS | Momentum | $35.94 | Open |
+| DOGE | Crypto | Free | Open |
 
 ---
 
-## Research Notes
-- LLY: Obesity drug momentum + Foundayo launch
-- AAPL: First earnings under new leadership
-- ENPH: Post-earnings swing play
-- DVN: Energy sector strength
+## Sector Watchlist
+
+### AI/Semiconductors (Hot - Nasdaq record)
+- NVDA (we own)
+- AMD
+- INTC
+- MU
+- AVGO
+
+### Crypto (24/7)
+- DOGE (we own)
+- BTC
+- ETH
+- SOL
+
+### Watchlist Criteria
+Add stocks when:
+- [ ] Strong news catalyst
+- [ ] Breaking 52W high
+- [ ] Volume spike >2x
+- [ ] Analyst rating: Buy
+- [ ] Price far from 52W high (upside potential)
+
+---
+
+## How to Add to Watchlist
+
+1. Found via news → Check quote
+2. Check profile → Market cap >$1B
+3. Check 52W → Not dying
+4. Add to this file
+
+---
+
+## Current Watchlist (Empty - to be populated)
+
+| Symbol | Added | Thesis | Status |
+|--------|-------|--------|---------|
+| | | | |
+
+---
+
+*Update this list as we find opportunities*
