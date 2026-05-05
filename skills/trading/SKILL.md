@@ -1,0 +1,155 @@
+---
+name: trading
+description: "Professional day/swing trading with risk management. Use when: (1) discussing stocks, (2) analyzing opportunities, (3) checking positions, (4) setting alerts, (5) reviewing trades."
+trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, target"
+---
+
+# Trading Skill
+
+*Professional trading with continuous learning*
+
+## Content-Based Leveling
+
+**Formula:** Level = sections + subsections + lines/100
+**Tier:** Primary (100 max)
+
+### Current: Level 1
+- Sections: 4
+- Subsections: 6
+- Lines: 15 / 100 = 0
+- Total: 4 + 6 + 0 = 10
+
+---
+
+## The Workflow (4 Steps)
+
+### Step 1: Research
+- Fetch real-time data via web
+- Check 5-year history (52W high/low, market cap)
+- **Flag if:** down >80%, tiny cap, negative earnings
+
+### Step 2: Rationalize
+- Process the data
+- Make decision: "buy [X] because [reasons]"
+- Document the thesis
+
+### Step 3: Verify
+- Review logic
+- Check: Within budget? Good risk/reward? Rules followed?
+- Raise concerns if any
+
+### Step 4: Summarize
+- Summarize: decision, price, shares, reasoning
+- **Vyse NEVER executes trades** — Captain executes on Robinhood
+- If Captain approves → Execute → Log
+
+---
+
+## Risk Management
+
+| Rule | Value |
+|------|-------|
+| Stop Loss | -7% from entry |
+| Take Profit | +12% from entry |
+| Max Position | 25% of capital |
+| Max Positions | 5 stocks |
+
+### Position Sizing
+```
+shares = min(capital * 0.25, capital - other_positions) / price
+```
+
+---
+
+## Current Positions
+
+| Symbol | Shares | Entry | Stop | Target |
+|--------|--------|-------|------|--------|
+| NVDA | 0.05 | $198.31 | $184.43 | $222.11 |
+
+**Capital:** $51.32 | **Profit:** +$6.32 (+14%)
+
+---
+
+## Trade Execution Protocol
+
+1. **I recommend** → Stock + position + entry/sell/stop targets
+2. **Captain executes** → Places order, sends confirmation
+3. **I log** → trades.json, positions.md, trade-log.md
+
+---
+
+## Learning Loop
+
+After each trade (win or loss), log to `.learnings/`:
+
+### Win Entry
+```markdown
+## [WIN-YYYYMMDD-001] SYMBOL
+
+**Date**: 2026-05-05
+**What worked**: Entry timing, thesis validation
+**Could improve**: Exit timing
+```
+
+### Loss Entry
+```markdown
+## [LOSS-YYYYMMDD-001] SYMBOL
+
+**Date**: 2026-05-05
+**What went wrong**: 
+**Root cause**:
+**Prevent next time**:
+```
+
+### Review Frequency
+- Daily: Check open positions
+- Weekly: Review all trades
+- Monthly: Analyze win rate, avg return
+
+---
+
+## Self-Evaluation Questions
+
+Answer before every trade:
+
+1. **Why this stock?** — Clear thesis
+2. **What's the risk?** — Stop loss defined
+3. **What's the reward?** — Target set
+4. **Is it within rules?** — Position size, max positions
+5. **Am I patient?** — Not chasing
+
+---
+
+## Known Weaknesses (From Lessons)
+
+| Weakness | Impact | Mitigation |
+|----------|--------|------------|
+| Impatience | Miss targets, overtrade | Set hard exits, don't adjust mid-trade |
+| Alert lag | Miss intraday moves | Check prices proactively |
+
+---
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `kb/stocks/positions.md` | Current positions |
+| `kb/stocks/trade-log.md` | Trade history |
+| `kb/stocks/lessons_learned/` | Learnings |
+| `kb/stocks/prices.json` | Price data |
+
+---
+
+## Trigger Phrases
+
+- "stock", "trade", "buy", "sell"
+- "position", "price", "alert"
+- "stop loss", "target"
+
+---
+
+## References
+
+- github - Persistence
+- learning - Self-improvement pattern

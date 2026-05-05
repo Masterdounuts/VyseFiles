@@ -11,11 +11,11 @@ trigger phrases: "git, push, commit, repo, version control"
 **Formula:** Level = sections + subsections + lines/100
 **Tier:** Supporting (75 max)
 
-### Current: Level 30
-- Sections: 12
-- Subsections: 18
-- Lines: 91 / 100 = 0
-- Total: 12 + 18 + 0 = 30
+### Current: Level 38
+- Sections: 15
+- Subsections: 22
+- Lines: 150 / 100 = 1
+- Total: 15 + 22 + 1 = 38
 
 ## Our Workflow
 
@@ -80,6 +80,84 @@ git pull --rebase origin main
 |------|------|
 | pre-commit | Validates commit format |
 | post-commit | Auto-content tracking |
+
+---
+
+## Professional Organization
+
+### Branch Strategy
+```
+main     → Production-ready
+develop  → Integration branch  
+feature/ → New features (e.g., feature/trading-skill)
+fix/     → Bug fixes (e.g., fix/positions-log)
+hotfix/  → Urgent production fixes
+```
+
+### Commit Message Standards
+```
+<type>: <subject>
+
+<body (optional)>
+
+<footer (optional)>
+```
+
+Types: feat, fix, docs, style, refactor, test, chore
+
+### Pull Request Workflow
+1. Branch from `main`
+2. Make changes, commit frequently
+3. Push and open PR (even if internal)
+4. Review own PR first
+5. Merge when ready
+
+### Release Management
+```bash
+# Tag a release
+git tag -a v1.0.0 -m "Release: trading skill v1"
+git push origin v1.0.0
+
+# List tags
+git tag -l
+```
+
+### Keeping Clean
+```bash
+# Remove merged branches
+git branch -d feature/trading
+git push origin --delete feature/trading
+
+# Squashing commits
+git rebase -i HEAD~3
+```
+
+---
+
+## Workflow Details
+
+### Daily Sync (Morning)
+```bash
+git fetch origin main
+git pull origin main
+```
+
+### Before Big Changes (New Feature)
+```bash
+git checkout -b feature/new-skill
+# Work... commit... push
+# Open PR, review, merge
+```
+
+### Conflict Resolution
+```bash
+git fetch origin main
+git merge origin/main
+# Resolve conflicts
+git add -A
+git commit -m "merge: resolve conflicts with main"
+git push origin main
+```
 
 ## Trigger Phrases
 - "git", "github", "sync"
