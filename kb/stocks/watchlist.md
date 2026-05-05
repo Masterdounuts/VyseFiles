@@ -71,11 +71,11 @@ Add stocks when:
 
 ---
 
-## Current Watchlist (Empty - to be populated)
+## Current Watchlist
 
-| Symbol | Added | Thesis | Status |
-|--------|-------|--------|---------|
-| | | | |
+| Symbol | Added | Thesis | Price | Status |
+|--------|-------|--------|--------|--------|
+| RIVN | 2026-05-05 | EV sector, 24-hour eligible (needs full share = $14.60) | $14.60 | Waiting for capital |
 
 ---
 
