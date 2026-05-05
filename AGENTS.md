@@ -55,15 +55,15 @@ David (Captain)
 ## Tools
 → [[TOOLS.md|Tools Quick Reference]]
 
-## Subagents (True - in openclaw.json)
+## Subagents (On-Demand)
 
-| Agent | Role | Runs |
-|-------|------|------|
-| **quartermaster** | Stock monitoring, price alerts | Every 30 min |
-| **shipwright** | Health checks, session cleanup | Daily 4am + Hourly health |
-| **scribe** | Knowledge audit, gap detection | Weekly |
+| Agent | Role | Trigger |
+|-------|------|---------|
+| **quartermaster** | Stock monitoring, price alerts | Manual spawn (via me) |
+| **shipwright** | Health checks, system maintenance | Manual spawn (via me) |
+| **scribe** | Knowledge audit, gap detection | Manual spawn (via me) |
 
-→ See [[skills/subagent-creator|subagent-creator]] for full crew template, ongoing goals, and information flow.
+**Session Management:** Each subagent has its own session directory (`agents/<name>/sessions/`). Sessions auto-prune after 1hr idle via `session.maintenance` config.
 
 ## Rules
 
