@@ -1,6 +1,6 @@
 # Stock Positions & Trade History
 
-*Quartermaster's complete trading record*
+*Vyse's trading record - rebuilt from scratch May 5, 2026*
 
 ---
 
@@ -8,9 +8,8 @@
 
 | Symbol | Shares | Entry Price | Stop Loss | Target | Current Price | P/L | P/L % |
 |--------|--------|-------------|-----------|--------|---------------|-----|-------|
-| NVDA | 0.050426 | $198.31 | $184.43 | $222.11 | $198.31 | $0.00 | 0% |
-
-*Note: David manual trade - bought NVDA*
+| NVDA | 0.050426 | $198.31 | $184.43 | $222.11 | TBD | - | - |
+| WGS | 1 | $35.94 | $33.42 | $40.25 | TBD | - | - |
 
 ---
 
@@ -18,9 +17,9 @@
 
 | Metric | Amount |
 |--------|--------|
-| David's Investment | $45.00 |
-| **Current Total** | **$51.32** |
-| **Profit** | **+$6.32** |
+| Starting Capital | $51.32 |
+| **Buying Power** | **$6.28** |
+| **Invested** | **$45.04** |
 
 ---
 
@@ -28,11 +27,8 @@
 
 | Date | Action | Symbol | Shares | Price | P/L | Notes |
 |------|--------|--------|--------|-------|-----|-------|
-| 2026-05-05 | BUY | NVDA | 0.050426 | $198.31 | - | Fractional buy - David manual |
-| 2026-05-05 | SELL | LIDR | 5 | $1.96 | -$0.90 | Exited - David manual |
-| 2026-05-04 | SELL | NRXP | 4 | $3.07 | +$0.12 | Exited - David manual sale |
-| 2026-04-27 | BUY | NRXP | 4 | $3.04 | - | Initial position |
-| 2026-04-27 | BUY | LIDR | 5 | $2.14 | - | Initial position |
+| 2026-05-05 | BUY | NVDA | 0.050426 | $198.31 | - | David's pick - AI/GPU play |
+| 2026-05-05 | BUY | WGS | 1 | $35.94 | - | David's independent research - bull case |
 
 ---
 
@@ -45,5 +41,5 @@
 
 ---
 
-*Last Updated: 2026-05-05 12:33 AM PT*
-*Data source: David (manual trades)*
+*Position data from David - May 5, 2026*
+*Need to fetch current prices for P/L*
