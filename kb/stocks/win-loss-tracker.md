@@ -23,13 +23,27 @@
 
 ---
 
-## Trade Log
+## Historical Trades (From Quartermaster - April 2026)
+
+| # | Date | Symbol | Entry | Exit | P/L | P/L % | Win? |
+|---|------|--------|-------|------|-----|-------|------|
+| 1 | Apr 12 | GGB | $4.18 | $4.32 | +$3.44 | +18% | ✅ WIN |
+| 2 | Apr 16 | AMC | $1.64 | $1.69 | +$0.40 | +3% | ✅ WIN |
+| 3 | Apr 21 | LCID | $7.18 | $6.60 | -$0.81 | -8% | ❌ LOSS |
+| 4 | Apr 22 | BBAI | $3.88 | $3.78 | -$0.25 | -2.5% | ❌ LOSS |
+| 5 | Apr 24 | PFE | $26.90 | $27.02 | +$0.12 | +0.4% | ✅ WIN |
+| 6 | Apr 27 | NRXP | $3.04 | $3.07 | +$0.12 | +4% | ✅ WIN |
+| 7 | May 5 | LIDR | $2.14 | $1.96 | -$0.90 | -8.4% | ❌ LOSS |
+
+---
+
+## Trade Log (Current)
 
 | # | Date | Symbol | Strategy | Entry | Exit | P/L | P/L % | Win? |
 |---|------|--------|----------|-------|------|-----|-------|------|
-| 1 | 2026-05-05 | NVDA | Swing | $198.31 | - | - | - | Open |
-| 2 | 2026-05-05 | WGS | Momentum | $35.94 | - | - | - | Open |
-| 3 | 2026-05-05 | DOGE | Crypto | $0 | - | - | - | Open |
+| 8 | 2026-05-05 | NVDA | Swing | $198.31 | - | - | - | Open |
+| 9 | 2026-05-05 | WGS | Momentum | $35.94 | - | - | - | Open |
+| 10 | 2026-05-05 | DOGE | Crypto | $0 | - | - | - | Open |
 
 ---
 
@@ -37,17 +51,24 @@
 
 | Metric | Value |
 |--------|-------|
-| Total Trades | 3 |
-| Wins | 0 |
-| Losses | 0 |
+| Total Trades (all time) | 10 |
+| Wins | 5 |
+| Losses | 2 |
 | Open | 3 |
-| **Win Ratio** | **N/A** |
+| **Win Ratio (closed)** | **71%** |
 
 ---
 
-## Current Confidence: N/A
+## Current Confidence: HIGH (71% win rate)
 
-*Need more closed trades to calculate*
+**Deploy 90-100% of capital**
+
+| Win Ratio | Confidence | Position Size |
+|-----------|------------|---------------|
+| >70% | Very High | 90-100% |
+| 60-70% | High | 80-90% |
+| 50-60% | Medium | 60-70% |
+| <50% | Low | 40-50% |
 
 ---
 
