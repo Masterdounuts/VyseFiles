@@ -1,5 +1,4 @@
 ---
-
 name: knowledge
 description: Unified knowledge management - wiki, docs, obsidian vault, retrieval.
 access: public

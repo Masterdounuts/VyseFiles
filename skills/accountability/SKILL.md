@@ -1,5 +1,4 @@
 ---
-
 name: accountability
 access: public
 description: Tracking honesty, lies, mistakes, and fabrications. Ensures truthfulness in all interactions.

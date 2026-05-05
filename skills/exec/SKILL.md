@@ -1,5 +1,4 @@
 ---
-
 name: exec
 always: true
 trigger phrases: "command, shell, exec, run, terminal, bash"

@@ -1,5 +1,4 @@
 ---
-
 name: projects
 access: public
 description: Active game development projects, work-in-progress, and creative work.

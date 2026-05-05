@@ -1,5 +1,4 @@
 ---
-
 name: communication
 access: public
 description: Decision-making, reasoning, communication, presentation, and learning.

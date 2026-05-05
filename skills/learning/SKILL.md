@@ -1,5 +1,4 @@
 ---
-
 name: learning
 access: public
 description: Learning, practice, and continuous improvement

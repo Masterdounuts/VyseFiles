@@ -1,5 +1,4 @@
 ---
-
 name: web
 always: true
 trigger phrases: "search, web, fetch, browser, internet"

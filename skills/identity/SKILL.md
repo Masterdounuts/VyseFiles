@@ -1,5 +1,4 @@
 ---
-
 name: identity
 access: public
 description: Vyse's identity, core principles, decision framework, and self-awareness.
