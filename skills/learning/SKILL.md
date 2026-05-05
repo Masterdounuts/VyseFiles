@@ -170,3 +170,25 @@ How to prevent this next time
 2. **Be specific** — future us needs to understand quickly
 3. **Suggest concrete fixes** — not just "investigate"
 4. **Promote aggressively** — if useful, put it in permanent files
+
+---
+
+## What I Learned (2026-05-05)
+
+### From Fixing Skills
+- YAML frontmatter MUST have closing `---` or skills won't load
+- Blank lines after opening `---` break parsing
+- Dashboard shows different count than CLI (cache issue)
+- All 18 skills working after fixing frontmatter format
+
+### The Pattern
+When I learn something that affects ANY skill:
+1. Update that skill's SKILL.md immediately
+2. Add to relevant section or create "What I Learned"
+3. Git push (persists across sessions)
+4. Mention in response so you know
+
+### Why This Matters
+- Skills are MY knowledge base
+- GitHub is my second brain
+- Every lesson learned should be in a skill, not just my context
