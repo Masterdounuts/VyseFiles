@@ -55,9 +55,9 @@ hour_utc=$(date -u +'%H')
 - "schedule", "cron", "time"
 - "timezone", "ET", "UTC"
 
-## Crew Time Standard
+## Time Standard
 
-All crew docs use **PT (Pacific Time)**:
+All docs use **PT (Pacific Time)**:
 - Format: `YYYY-MM-DD HH:MM PT`
 
 ### References

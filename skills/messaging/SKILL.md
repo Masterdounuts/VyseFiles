@@ -72,4 +72,4 @@ Action: {ACTION}
 
 ### References
 - system - Health alerts
-- crew-protocols - Communication
+- vyse-core - Decision framework

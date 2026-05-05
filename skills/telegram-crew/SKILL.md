@@ -1,9 +1,11 @@
-name: telegram-crew
-access: crew
-description: Telegram crew group chat, topic routing, and crew mentions.
-trigger phrases: "crew chat, group chat, team"
+---
+name: telegram
+access: vyse-only
+description: Telegram messaging, group chats, and notifications.
+trigger phrases: "telegram, message, send to telegram, group chat"
+---
 
-# Telegram Crew Skill
+# Telegram Messaging
 
 ## Content-Based Leveling
 
@@ -16,55 +18,37 @@ trigger phrases: "crew chat, group chat, team"
 - Lines: 70 / 100 = 0
 - Total: 6 + 7 + 0 = 13
 
-## Group Configuration
+## Configuration
 
 **Group ID:** `-1003941303567`
 
-## Topic Mapping
-
-| Topic ID | Topic Name | Routes To |
-|----------|------------|-----------|
-| 19 | General | All messages |
-| 20 | Vyse | vyse agent |
-| 21 | Scribe | scribe agent |
-| 22 | Shipwright | shipwright agent |
-
-## Add Topic Routing
-
-```json
-{
-  "channels": {
-    "telegram": {
-      "groups": {
-        "-1003941303567": {
-          "topics": {
-            "TOPIC_ID": { "agentId": "AGENT_ID" }
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-## Crew Mentions
-
-| Member | Agent | Topic |
-|--------|-------|-------|
-| Vyse | vyse | #20 |
-| Scribe | scribe | #21 |
-| Shipwright | shipwright | #22 |
-
-## CLI
+## Sending Messages
 
 ```bash
-# Send to crew group
+# Send to group
 openclaw message send --channel telegram --target -1003941303567 --message "Update"
+
+# Send to specific user
+openclaw message send --channel telegram --target <user_id> --message "Hello"
 ```
 
+## Use Cases
+
+| Situation | Action |
+|-----------|--------|
+| Stock alert | Send price + decision to David |
+| Status update | Brief check-in |
+| Urgent issue | Flag with 🔴 prefix |
+
+## Best Practices
+
+- Keep messages concise
+- Use prefixes: 🔴 BREAKING, 🟡 UPDATE, ✅ DONE
+- Include actionable info
+
 ## Trigger Phrases
-- "crew chat", "group chat", "team"
+- "telegram", "message", "send to telegram"
 
 ### References
-- messaging - Templates
-- crew-protocols - Communication
+- messaging - General messaging
+- trading - Stock alerts

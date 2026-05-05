@@ -23,7 +23,7 @@ trigger phrases: "workflow, automation, pipeline"
 | SOUL.md | My principles, identity, rules |
 | IDENTITY.md | My name, creature, vibe |
 | USER.md | Your preferences, context |
-| AGENTS.md | My skills and crew |
+| AGENTS.md | My skills and capabilities |
 | HEARTBEAT.md | 30-min orchestration |
 | active.md | Current conversation |
 | HANDOFF.md | Session handoff |

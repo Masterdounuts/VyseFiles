@@ -94,49 +94,7 @@ Recommendation with rationale
 
 ---
 
-## Subagent Orchestration (from agent-library)
-
-*Per SUB-AGENT-ORCHESTRATION-CHECKLIST.md*
-
-### Manager Rule
-- **Exactly one manager** (me) publishes final output
-- Workers NEVER message end users directly
-- Each worker has non-overlapping role
-
-### Worker Output Format
-Each subagent must return:
-```
-1) Scope completed
-2) Key findings (max 7 bullets)
-3) Evidence/sources
-4) Open risks/questions
-```
-
-### Delivery Confirmation
-Before done, confirm:
-```
-Final output destination confirmed: [surface], [timezone], [timestamp]
-```
-
-### Fast Failure triage
-| Symptom | Fix |
-|---------|-----|
-| Duplicate answers | Enforce one-manager, stop duplicates |
-| Worker timeout | Split into smaller chunks |
-| Lost details | Require gap-check before merge |
-| Wrong place | Restate destination before publish |
-
-### Done Criteria
-- [ ] Exactly one manager final response
-- [ ] Workers used non-overlapping scopes
-- [ ] All factual claims include evidence
-- [ ] Destination/timezone confirmed
-
----
-
-## Learning Loop
-
-*Per kb/crew/learning-loop.md*
+## My Learning Loop
 
 After ANY significant action, ask: "Did I learn anything?"
 
@@ -150,15 +108,14 @@ After ANY significant action, ask: "Did I learn anything?"
 ### Storage
 Store to `kb/crew/knowledge.md`:
 ```markdown
-### From [vyse/quartermaster/shipwright]
+### From [vyse]
 - **Type:** [success/fix/correction]
 - **Learned:** [What happened]
 - **Apply:** [When to use this]
 - **Evidence:** [Details]
 ```
 
-### My Job as First Mate
+### My Responsibilities
 1. Store MY learnings (from corrections, discoveries)
-2. Enforce crew stores theirs
-3. Retrieve before similar situations
-4. Push to GitHub after significant stores
+2. Retrieve before similar situations
+3. Push to GitHub after significant stores

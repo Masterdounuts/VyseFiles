@@ -1,7 +1,7 @@
 name: shipwright
-description: System health & maintenance - health checks, cron, cleanup.
+description: System health & maintenance - health checks, cron, cleanup. Handles technical fixes directly.
 trigger phrases: "health, cleanup, maintenance, cron, system health"
-access: crew
+access: vyse-only
 
 # Shipwright
 
@@ -26,12 +26,12 @@ access: crew
 ### Session Cleanup (Daily 4am UTC)
 - Removes ALL `:run:` entries
 - Removes orphaned sessions
-- Cleans all agents: vyse, quartermaster, shipwright, scribe
+- Cleans all agent sessions
 
 ### Session Health Monitor (Hourly)
 - Checks context usage
 - Alerts if >80% used
-- Detects done subagents still attached
+- Detects stale sessions
 
 ## Summon When
 - "how's the ship?"

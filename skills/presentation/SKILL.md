@@ -47,5 +47,5 @@ trigger phrases: "presentation, format, ux, UI, chat interface, status line, ski
 - "chat interface", "status line"
 
 ### References
-- crew-protocols - Communication
+- vyse-core - Communication
 - control-ui - UI optimization

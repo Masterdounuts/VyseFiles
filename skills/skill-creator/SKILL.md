@@ -49,7 +49,7 @@ skill-name/
 name: skill-name
 description: One-line description
 trigger phrases: "trigger1, trigger2"
-access: crew|vyse-only
+access: vyse-only
 
 # Skill Name
 
@@ -90,7 +90,7 @@ When skill levels, update dependent skills:
 | Leveled Skill | Can Improve |
 |---------------|-------------|
 | github | memory |
-| web | scribe, projects, trading |
+| web | projects, trading |
 | memory | all skills |
 
 ## Trigger Phrases
@@ -98,8 +98,13 @@ When skill levels, update dependent skills:
 - "skill template"
 
 ### References
-- subagent-creator - Related creation
 - workflow - Integration
+
+---
+
+## Deprecated
+
+*Subagent creation is currently disabled.*
 ---
 
 ## Reflection 2026-05-04

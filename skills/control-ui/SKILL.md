@@ -38,18 +38,6 @@ trigger phrases: "control ui, dashboard, status, session"
 | `openclaw cron list` | List jobs |
 | `openclaw cron add --every "30m"` | Create job |
 
-### Subagent Management
-```bash
-# List subagents
-subagents action=list
-
-# Spawn new subagent
-sessions_spawn agentId=quartermaster task="..." runtime=subagent
-
-# Kill subagent
-subagents action=kill target=sessionKey
-```
-
 ## Context Management
 
 | Context % | Action |

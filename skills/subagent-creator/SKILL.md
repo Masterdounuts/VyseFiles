@@ -72,9 +72,21 @@ You are a **senior [domain] expert** with 20+ years of experience.
 - **To Vyse:** When data needed or policy question
 - **To David:** When decision exceeds authority
 
-## Trigger Phrases
-- "create subagent", "new agent"
+---
 
-### References
-- skill-creator - Template design
-- crew-protocols - Communication
+# ⚠️ DEPRECATED
+
+*Subagents are currently disabled. This skill is for reference only.*
+
+## Why Disabled
+
+Subagents added complexity without clear benefit for a two-person crew (David + Vyse). The context-sharing problem means subagents often have less context than me.
+
+## When They Might Return
+
+- True 24/7 autonomous monitoring needed
+- Parallel tasks requiring isolation
+- Clear benefit over direct execution
+
+## Trigger Phrases
+- (none - deprecated)

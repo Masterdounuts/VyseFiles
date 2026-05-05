@@ -21,7 +21,7 @@ trigger phrases: "self-healing, auto-recovery, diagnostics"
 # On wake
 gateway status
 
-# Check subagents
+# Check sessions
 sessions_list
 
 # Check cron

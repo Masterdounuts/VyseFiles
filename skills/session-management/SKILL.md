@@ -103,9 +103,7 @@ openclaw sessions cleanup --enforce
 
 **Multiple agents = multiple stores:**
 - `agents/vyse/sessions/` — main agent
-- `agents/quartermaster/sessions/` — stock subagent
-- `agents/shipwright/sessions/` — health subagent
-- `agents/scribe/sessions/` — knowledge subagent
+- Subagent sessions disabled for now
 
 ---
 
@@ -164,7 +162,7 @@ openclaw health
 | 2 | Can manually cleanup sessions |
 | 3 | Debug compaction issues |
 | 4 | Configure advanced maintenance (disk budget, rotate) |
-| 5 | Understand session routing + subagent isolation |
+| 5 | Understand session routing + subagent isolation (deprecated) |
 | 6 | Optimize for multi-agent deployments |
 | 7 | Teach others / write documentation |
 

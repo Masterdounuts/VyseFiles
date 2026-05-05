@@ -1,6 +1,8 @@
+---
 name: teaching
-description: Systematically teach concepts, explain to subagents, and create learning paths
+description: Systematically teach concepts, explain skills, and create learning paths.
 trigger phrases: "teach, explain, train, how does, show me, learn about"
+---
 
 # Teaching Skill
 
@@ -17,8 +19,8 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 
 ## Provides
 - Explaining Vyse's skills to David
-- Teaching subagents new capabilities
-- Creating learning paths for crew
+- Teaching concepts and skills
+- Creating learning paths
 
 ## Curriculum Template
 
@@ -47,5 +49,4 @@ trigger phrases: "teach, explain, train, how does, show me, learn about"
 
 ### References
 - learning - Improvement
-- skill-creator - Teaching skill creation
-- subagent-creator - Teaching subagents
+- skill-creator - Skill creation

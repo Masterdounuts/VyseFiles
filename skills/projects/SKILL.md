@@ -42,14 +42,6 @@ trigger phrases: "project, game, skies of arcadia"
 - [ ] Verify session refresh works ← YOU'RE TESTING THIS
 - [ ] Test: session start → handoff → debug → reply
 
-### Phase 2: Crew (Subagents)
-- [ ] Rebuild quartermaster, shipwright, scribe
-- [ ] Verify crew coordination
-
-### Phase 3: Integration
-- [ ] Full flow testing
-- [ ] End-to-end verification
-
 ### 🚀 Our Projects (Shared Vision)
 
 | Project | Status |
@@ -58,6 +50,8 @@ trigger phrases: "project, game, skies of arcadia"
 | Context-Aware Save | 🧪 Testing |
 | Self-Healing System | ✅ Active |
 | Skill System | ✅ Active |
+| Trading Skill | ✅ Created |
+| Professional GitHub Org | ✅ Updated |
 
 ## Key Context
 - David: Military background, Game Design degree, aspiring game developer

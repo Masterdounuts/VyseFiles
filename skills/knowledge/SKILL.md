@@ -1,7 +1,7 @@
 name: knowledge
-description: Unified knowledge management - wiki, docs, obsidian vault, retrieval. Combines scribe + obsidian.
-trigger phrases: "wiki, docs, knowledge, document, kb, obsidian, vault, notes, scribe, memory"
-access: crew
+description: Unified knowledge management - wiki, docs, obsidian vault, retrieval.
+trigger phrases: "wiki, docs, knowledge, document, kb, obsidian, vault, notes, memory"
+access: vyse-only
 
 # Knowledge Skill
 
@@ -49,7 +49,7 @@ memory/
 | system | OpenClaw, gateway, config |
 | stocks | Trading, positions |
 | skills | Skill documentation |
-| crew | Subagent configs |
+| crew | Subagent configs (legacy) |
 
 ## Wikilinks
 ```
@@ -60,22 +60,9 @@ memory/
 
 ## Trigger Phrases
 - "wiki", "docs", "knowledge"
-- "obsidian", "vault", "scribe"
+- "obsidian", "vault"
 
 ### References
 - learning - Improvement
 - memory - Recall
----
-
-## Reflection 2026-05-04
-
-### What I Learned
-- Memory has layers - use the right one
-- Scribe manages knowledge base
-- Search before answering questions
-
-### What Still Needs Work
-- Better knowledge retrieval
-- Cross-skill connections
-- More robust memory system
 
