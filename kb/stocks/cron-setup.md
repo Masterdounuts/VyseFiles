@@ -46,16 +46,21 @@
 
 ## Current Cron Status
 
-**Found 7 existing jobs - ALL DISABLED:**
-- quartermaster-stock-check (old, has errors)
-- shipwright-health-check
-- scribe-weekly-audit
-- context-monitor
-- vyse-status-auto-update
-- daily-workspace-snapshot
-- context-aware-save
+**Issue:** Cron tool has pairing issues with gateway (add/list/remove fail with "pairing required")
 
-**Issue:** Cron tool has connection issues for write operations
+**Workaround:** Jobs written directly to `/home/openclaw/.openclaw/cron/jobs.json`
+
+**Jobs configured:**
+- vyse-morning-check (6:30 AM PT, weekdays)
+- vyse-midday-check (12 PM PT, weekdays)
+- vyse-evening-check (8 PM PT, weekdays)
+
+**✅ FIXED:** Gateway restart resolved cron issues
+
+**Finnhub Integration:**
+- Primary price source: Finnhub (most accurate available)
+- Alert trigger: Significant moves → ping David for Robinhood check
+- Scripts: `scripts/expand-finnhub.js quote SYMBOL`
 
 ## New Trading Jobs to Add
 
