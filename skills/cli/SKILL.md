@@ -1,6 +1,6 @@
-name: system
+name: cli
 always: true
-description: Debugging, recovery, FIXES, and health checks. Use when something breaks or needs investigation.
+description: OpenClaw CLI commands - debugging, recovery, FIXES, health checks, session management. Use when something breaks or needs investigation.
 
 # System - Debugging & Recovery
 
@@ -96,13 +96,47 @@ grep -l "always: true" ~/.openclaw/workspace/skills/*/SKILL.md
 ### Gateway Unresponsive
 1. `gateway action=restart`
 2. Wait 30s, check status
+---
+
+## Session Management
+
+### Cron Job Sessions
+- Cron jobs with `sessionTarget: "isolated"` create session entries
+- Each execution creates a `:run:` variant
+- Old `:run:` entries never cleaned up automatically
+
+### Display Rules
+- ✅ Main sessions with conversation history
+- ❌ Cron jobs (no lastChannel)  
+- ❌ `:run:` variants (temporary)
+- ❌ Orphaned sessions (no label + no lastChannel)
+
+### Cleanup
+```bash
+# List sessions
+sessions_list
+
+# Check context
+session_status
+```
+
+### Context Thresholds
+| Usage | Status | Action |
+|-------|--------|--------|
+| <50% | ✅ Healthy | None needed |
+| 50-80% | 🟡 Watch | Monitor more frequently |
+| 80-95% | ⚠️ Warning | Trigger checkpoint |
+| >95% | 🔴 Critical | Auto-compaction will trigger |
+
+---
+
 ## Trigger Phrases
 - "fix", "debug", "broken"
 - "error", "failed", "not working"
 - "health check", "recover"
+- "session", "context", "compact"
 
 **CORE SKILL** - Always used to achieve the ultimate goal
-Full: Help David during his life, then help loved ones after
 ---
 
 ## Reflection 2026-05-04
