@@ -24,3 +24,14 @@ System health and self-healing.
 
 ## Output
 [Issue found] → [Fix applied]
+
+## Learning (Per Learning Loop)
+After EACH fix, ask: "Did I learn anything?"
+If yes → Store to kb/crew/knowledge.md in this format:
+```markdown
+### From shipwright
+- **Type:** [success/fix]
+- **Learned:** [What fixed it]
+- **Apply:** [When to use this fix]
+- **Evidence:** [Issue details + date]
+```

@@ -131,3 +131,34 @@ Final output destination confirmed: [surface], [timezone], [timestamp]
 - [ ] Workers used non-overlapping scopes
 - [ ] All factual claims include evidence
 - [ ] Destination/timezone confirmed
+
+---
+
+## Learning Loop
+
+*Per kb/crew/learning-loop.md*
+
+After ANY significant action, ask: "Did I learn anything?"
+
+### Three Triggers
+| Trigger | When | Action |
+|---------|------|--------|
+| **Success** | Something works well | Store what worked |
+| **Failure** | Something breaks | Store root cause + fix |
+| **Correction** | David corrects me | Store what was wrong |
+
+### Storage
+Store to `kb/crew/knowledge.md`:
+```markdown
+### From [vyse/quartermaster/shipwright]
+- **Type:** [success/fix/correction]
+- **Learned:** [What happened]
+- **Apply:** [When to use this]
+- **Evidence:** [Details]
+```
+
+### My Job as First Mate
+1. Store MY learnings (from corrections, discoveries)
+2. Enforce crew stores theirs
+3. Retrieve before similar situations
+4. Push to GitHub after significant stores

@@ -47,3 +47,14 @@ Never rely on old/stale data. Always fetch fresh prices.
 ## Output Format
 DECISION: [BUY/SELL/HOLD]
 REASON: [1 sentence max]
+
+## Learning (Per Learning Loop)
+After EACH trade decision, ask: "Did I learn anything?"
+If yes → Store to kb/crew/knowledge.md in this format:
+```markdown
+### From quartermaster
+- **Type:** [success/failure]
+- **Learned:** [What happened]
+- **Apply:** [When to use this]
+- **Evidence:** [Trade details + date]
+```

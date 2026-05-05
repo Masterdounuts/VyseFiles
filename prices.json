@@ -1,0 +1,47 @@
+{
+  "manual_override": false,
+  "source": "cnbc",
+  "fetchedAt": "2026-05-04T21:25:00Z",
+  "stocks": {
+    "TSLA": {
+      "close": 392.51,
+      "afterHours": 392.40,
+      "change": 1.69,
+      "changePercent": 0.43,
+      "open": 390.23,
+      "high": 394.64,
+      "low": 384.80,
+      "prevClose": 390.82
+    },
+    "GGB": {
+      "close": 4.50,
+      "afterHours": 4.50,
+      "change": -0.01,
+      "changePercent": -0.22,
+      "open": 4.53,
+      "high": 4.56,
+      "low": 4.49,
+      "prevClose": 4.51
+    },
+    "AMC": {
+      "close": 1.45,
+      "afterHours": 1.47,
+      "change": 0.00,
+      "changePercent": 0.00,
+      "open": 1.46,
+      "high": 1.61,
+      "low": 1.41,
+      "prevClose": 1.45
+    },
+    "RIVN": {
+      "close": 14.51,
+      "afterHours": 14.56,
+      "change": -0.51,
+      "changePercent": -3.40,
+      "open": 15.16,
+      "high": 15.16,
+      "low": 14.39,
+      "prevClose": 15.02
+    }
+  }
+}
