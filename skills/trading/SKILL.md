@@ -13,7 +13,9 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 ## The Workflow (4 Steps)
 
 ### Step 1: Research
-- **Fetch live prices:** `node scripts/get-stock-price.js SYMBOL` (uses Yahoo Finance)
+- **Fetch live prices:** 
+  - Stocks: `node scripts/get-stock-price.js SYMBOL` (Yahoo Finance)
+  - Crypto: `web_search` for "DOGE price today"
 - Check 5-year history (52W high/low, market cap)
 - **Flag if:** down >80%, tiny cap, negative earnings
 
