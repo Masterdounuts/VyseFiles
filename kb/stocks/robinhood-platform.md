@@ -144,6 +144,37 @@
 
 ---
 
+## Data APIs Available
+
+### Already Working
+
+| Source | What For | Status |
+|--------|----------|--------|
+| **Yahoo Finance** | Stock prices, 52W data | ✅ Working (no key needed) |
+| **web_search** | News, market movers | ✅ Working |
+| **web_fetch** | Pull articles | ✅ Working |
+
+### How to Use Yahoo Finance Script
+```bash
+node scripts/get-stock-price.js NVDA WGS DOGE
+```
+
+Returns: price, change %, volume, 52W high/low
+
+### Could Add (Needs API Key)
+
+| Source | What For | Limit |
+|--------|----------|-------|
+| **Finnhub** | News, real-time quotes | Free key, generous limits |
+| **Alpha Vantage** | Stocks, forex, crypto | 25 requests/day |
+
+### Recommendation
+- Use Yahoo Finance for prices (already works)
+- Use web_search for news
+- No API keys needed for current setup
+
+---
+
 ## Crypto Trading on Robinhood
 
 | Feature | Details |
