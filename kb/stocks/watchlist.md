@@ -71,12 +71,14 @@ Add stocks when:
 
 ---
 
-## Current Watchlist
+## Current Watchlist (Safest → Riskiest)
 
-| Symbol | Added | Thesis | Price | Status |
-|--------|-------|--------|--------|--------|
-| RIVN | 2026-05-05 | EV sector, 24-hour eligible (needs full share = $14.60) | $14.60 | Waiting for capital |
+| # | Symbol | Added | Thesis | Price | Risk |
+|---|--------|-------|--------|-------|------|
+| 1 | AAPL | 2026-05-05 | Blue chip, Q2 beat, PT $330, AI momentum | $284.18 | 🟢 Low |
+| 2 | AMD | 2026-05-05 | AI chip leader, Q1 beat $10.3B revenue | $355.26 | 🟡 Med |
+| 3 | MARA | 2026-05-05 | Crypto miner, BTC correlation, 24-hour | $12.16 | 🔴 High |
 
 ---
 
-*Update this list as we find opportunities*
+*Order: Safest (AAPL) → Riskiest (MARA) for daily profit potential*
