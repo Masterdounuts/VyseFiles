@@ -265,12 +265,32 @@ Track last 10 trades:
 | 4 PM | Close review | End of day decisions |
 | 8 PM | **Finnhub news** + 24-hour | Overnight opportunities |
 
-### News-First Workflow (IMPORTANT)
-1. Check Finnhub news → Find catalyst
-2. Research stock → Verify thesis
-3. Check price/52W → Entry point
-4. Execute trade → Set stops
-5. Log trade → Track performance
+### News-First Workflow (EXPANDED - Finnhub Powered)
+1. **Check Market Status** → Is market open? → `node scripts/expand-finnhub.js status`
+2. **Check News** → Breaking catalysts → `node scripts/get-stock-news.js`
+3. **Research Stock** → Verify thesis
+   - **Real-time price:** `node scripts/expand-finnhub.js quote NVDA`
+   - **Company profile:** `node scripts/expand-finnhub.js profile NVDA`
+   - **52W data:** `node scripts/get-stock-price.js NVDA`
+4. **Check Entry** → Entry point, stop, target
+5. **Execute Trade** → Set stops
+6. **Log Trade** → Track performance
+
+### Finnhub API Full Commands
+| Command | What It Does | Usage |
+|---------|--------------|-------|
+| `quote` | Real-time price, change, high/low | `node scripts/expand-finnhub.js quote NVDA` |
+| `profile` | Company info, market cap, industry | `node scripts/expand-finnhub.js profile NVDA` |
+| `get-stock-price.js` | 52W data, volume | `node scripts/get-stock-price.js NVDA` |
+| `get-stock-news.js` | Breaking news | `node scripts/get-stock-news.js` |
+
+### Profit Maximization Loop
+Every check cycle:
+1. **Market open?** → Check status
+2. **What's moving?** → News → Find catalyst
+3. **Which ones hot?** → Quote check → Price + change
+4. **Is it worth?** → Profile check → Market cap, industry
+5. **Ready to trade?** → All data gathered → Execute
 
 ---
 
