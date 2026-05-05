@@ -134,10 +134,22 @@ Answer before every trade:
 
 ## Known Weaknesses (From Lessons)
 
+
 | Weakness | Impact | Mitigation |
 |----------|--------|------------|
 | Impatience | Miss targets, overtrade | Set hard exits, don't adjust mid-trade |
 | Alert lag | Miss intraday moves | Check prices proactively |
+
+## New Learnings (May 5, 2026)
+
+
+| Lesson | What Happened | Update |
+|--------|---------------|--------|
+| Position sizing on gambles | WGS was 70% of portfolio | Even educated gambles ≤20% |
+| "It's low" isn't a thesis | Bought WGS without specific catalyst | Need "why" not just "low" |
+| 52W low warning | WGS near $32.84 (52W low) | Low = could be dying, not bottom |
+| Be honest about uncertainty | David called it "educated gamble" | Label gambles as gambles |
+| PT timezone | Defaulted to UTC | Always use PT (David's timezone) |
 
 ---
 
