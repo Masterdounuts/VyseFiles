@@ -153,4 +153,22 @@
 
 ---
 
-*Last Updated: 2026-04-29 11:56 PM PT*
+### Trade #14 - LIDR SELL (May 5, 2026)
+- **Action:** SELL
+- **Shares:** 5
+- **Price:** $1.96
+- **P/L:** -$0.90 (-8.4%)
+- **Holding:** 8 days
+- **Note:** David manual exit
+
+### Trade #15 - NVDA BUY (May 5, 2026)
+- **Action:** BUY
+- **Symbol:** NVDA
+- **Shares:** 0.050426 (fractional)
+- **Price:** $198.31
+- **Total:** $10.00
+- **Note:** David manual buy
+
+---
+
+*Last Updated: 2026-05-05 12:33 AM PT*
