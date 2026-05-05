@@ -101,13 +101,24 @@ After each trade (win or loss), log to `.learnings/`:
 
 ---
 
+## Research Process - The David Method
+
+1. **Scan** → Robinhood "Big Movers" → find volatility
+2. **Filter** → Check analytics (buy/hold/sell) → only research if high buy rating
+3. **Verify** → 52-week data → is it dying or alive?
+4. **Bull Case** → Price far from 52W high = upside potential
+5. **Afford** → Can I afford it?
+6. **Decide** → Buy if bull case + affordable
+
+---
+
 ## Self-Evaluation Questions
 
 Answer before every trade:
 
 1. **Why this stock?** — Clear thesis
 2. **What's the risk?** — Stop loss defined
-3. **What's the reward?** — Target set
+3. **What's the reward?** — Target set (12% or 52W high nearby)
 4. **Is it within rules?** — Position size, max positions
 5. **Am I patient?** — Not chasing
 
