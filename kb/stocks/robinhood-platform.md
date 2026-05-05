@@ -113,9 +113,20 @@
 |---------|----------|
 | **Hours** | Sun 8 PM ET - Fri 8 PM ET (24/5) |
 | **Trading Window** | 12 AM - 8 PM ET on full days |
-| **Available** | Select stocks/ETFs only |
+| **Available** | 922 stocks/ETFs (select list) |
 | **Order Type** | Limit orders only |
 | **Execution** | Via Alternative Trading Systems (ATS) |
+
+### How to Find 24-Hour Stocks
+- In Robinhood app: **Lists → 24 Hour Market**
+- Or: Search stock → If 24-hour available, shows indicator
+- Includes popular stocks: AAPL, TSLA, AMZN, NVDA, etc.
+
+### Limitations
+- Not all stocks available (select list only)
+- Price bands prevent extreme moves
+- Lower liquidity = wider spreads
+- Must use limit orders
 
 ### How It Works
 - **24 Hour Market** → Trade outside regular hours
