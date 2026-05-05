@@ -176,11 +176,23 @@ max_position_size = min(total_capital × 0.20, cash_available) × 0.25 (if using
 ```
 For cash account: `position_size = total_capital × 0.20` (strict 20%)
 
+### When CONFIDENT (90-100% deployed)
+- Win ratio >60% on last 10 trades
+- Strong thesis with research backing
+- Clear catalyst (news, breakout, momentum)
+- Risk/reward ratio >2:1
 
-### When to Add Positions
-- Have at least 20% cash reserved
-- Found new opportunity with thesis
-- Existing position has room to add (not at max)
+### When NOT CONFIDENT (50% deployed)
+- Win ratio <50%
+- Unclear thesis
+- Market uncertain
+- New strategy being tested
+
+### Win/Loss Confidence Tracker
+Track last 10 trades:
+- Win ratio = wins / total trades
+- If >60% wins → confident → deploy more
+- If <50% wins → cautious → deploy less
 
 ---
 
