@@ -6,18 +6,6 @@ description: Shell command execution, sandbox, PTY, and background processes.
 ---
 
 # Exec - Shell Execution
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 20
-- Sections: 10
-- Subsections: 10
-- Lines: 81 / 100 = 0
-- Total: 10 + 10 + 0 = 20
-
 ## Core Parameters
 
 | Parameter | Use | Example |

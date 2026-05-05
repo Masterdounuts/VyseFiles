@@ -5,18 +5,6 @@ description: Create, edit, audit skills. Before creating, check existing skills 
 trigger phrases: "create skill, new skill, skill template"
 
 # Skill Creator
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 61
-- Sections: 31
-- Subsections: 29
-- Lines: 116 / 100 = 1
-- Total: 31 + 29 + 1 = 61
-
 ## Key Principle: Check Existing First
 
 Before creating ANY new skill:
@@ -88,10 +76,6 @@ trigger phrases: "trigger1, trigger2, trigger3"
 
 # Skill Name
 
-## Content-Based Leveling
-```
-
-### Common Mistakes That Break Skills
 | Mistake | Symptom | Fix |
 |---------|---------|-----|
 | Missing closing `---` | Skill shows "not found" | Add `---` after description line |

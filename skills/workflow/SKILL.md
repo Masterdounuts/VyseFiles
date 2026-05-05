@@ -5,18 +5,6 @@ description: How Vyse works — core files, status system, wake-up flow, decisio
 trigger phrases: "workflow, automation, pipeline"
 
 # Vyse Workflow
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 56
-- Sections: 20
-- Subsections: 36
-- Lines: 90 / 100 = 0
-- Total: 20 + 36 + 0 = 56
-
 ## Core Files
 
 | File | Purpose |

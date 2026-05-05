@@ -5,18 +5,6 @@ description: Decision-making, reasoning, communication, presentation, and learni
 trigger phrases: "decision, communication, presentation, format, UI"
 
 # Crew Protocols
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 24
-- Sections: 10
-- Subsections: 14
-- Lines: 93 / 100 = 0
-- Total: 10 + 14 + 0 = 24
-
 ## Decision Protocol: Scan → Think → Act
 
 | Phase | Action | Output |

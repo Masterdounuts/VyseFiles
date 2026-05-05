@@ -6,18 +6,6 @@ access: public
 ---
 
 # Messaging Skill
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 19
-- Sections: 5
-- Subsections: 14
-- Lines: 75 / 100 = 0
-- Total: 5 + 14 + 0 = 19
-
 ## Alert Templates
 
 ### Stock Alerts

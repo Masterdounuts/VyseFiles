@@ -7,18 +7,6 @@ description: OpenClaw CLI commands - debugging, recovery, FIXES, health checks, 
 # System - Debugging & Recovery
 
 *Debugging, recovery, FIXES, and health checks*
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 16
-- Sections: 10
-- Subsections: 5
-- Lines: 119 / 100 = 1
-- Total: 10 + 5 + 1 = 16
-
 ### To Next Level
 - Add more subsections or sections
 - Content in skill = real capability
@@ -184,8 +172,6 @@ Then restart gateway. Dreams tab appears in Control UI.
 ### Trigger Phrases
 - "dreams", "vision", "brainstorm"
 - "creative", "big picture"
-
-
 ---
 
 ## Self-Healing & Recovery

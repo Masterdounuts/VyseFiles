@@ -6,18 +6,6 @@ description: Web search, fetch, and browser automation. Use when researching or 
 ---
 
 # Web - Search, Fetch, Browser
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 28
-- Sections: 9
-- Subsections: 19
-- Lines: 70 / 100 = 0
-- Total: 9 + 19 + 0 = 28
-
 ## Tools Overview
 
 | Tool | Use | Best For |

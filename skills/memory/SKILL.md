@@ -5,18 +5,6 @@ description: How Vyse remembers, recalls, and manages context. Use when discussi
 trigger phrases: "remember, recall, memory, past, what were we, context"
 
 # Memory - Recall System
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 14
-- Sections: 8
-- Subsections: 6
-- Lines: 87 / 100 = 0
-- Total: 8 + 6 + 0 = 14
-
 ### To Next Level
 - Add more subsections or sections
 - Content in skill = real capability

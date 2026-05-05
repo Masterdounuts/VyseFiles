@@ -6,18 +6,6 @@ trigger phrases: "project, game, skies of arcadia"
 ---
 
 # Projects - Active Work
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 14
-- Sections: 8
-- Subsections: 6
-- Lines: 72 / 100 = 0
-- Total: 8 + 6 + 0 = 14
-
 ## Source
 - `kb/personal/projects.md` — Projects hub
 

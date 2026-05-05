@@ -7,18 +7,6 @@ trigger phrases: "git, push, commit, repo, version control"
 # GitHub - Version Control & Persistence
 
 *How we use GitHub as our second brain*
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 38
-- Sections: 15
-- Subsections: 22
-- Lines: 150 / 100 = 1
-- Total: 15 + 22 + 1 = 38
-
 ## Our Workflow
 
 ### 1. On Wake

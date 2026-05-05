@@ -5,18 +5,6 @@ description: Learning, practice, and continuous improvement
 trigger phrases: "learn, training, improve, practice, drill, failure, mistake, wrong, caught, learn, understanding, realize, figure out, analyze, study"
 
 # Learning & Evolution Skill
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 42
-- Sections: 16
-- Subsections: 25
-- Lines: 107 / 100 = 1
-- Total: 16 + 25 + 1 = 42
-
 ## Core Principle
 Every session should make us better. We learn from:
 - Successes
@@ -106,8 +94,6 @@ When one skill improves:
 - More unique discoveries per skill
 - Better gap detection
 - True mastery vs level metrics
-
-
 ---
 
 ## Self-Improvement Logging

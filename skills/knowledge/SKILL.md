@@ -6,18 +6,6 @@ trigger phrases: "wiki, docs, knowledge, document, kb, obsidian, vault, notes, m
 ---
 
 # Knowledge Skill
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 14
-- Sections: 6
-- Subsections: 8
-- Lines: 81 / 100 = 0
-- Total: 6 + 8 + 0 = 14
-
 ## Knowledge Structure
 
 ```

@@ -4,18 +4,6 @@ always: true
 description: Timezone handling, scheduling, cron jobs, and temporal awareness. Use when discussing times, schedules, or timing-based tasks.
 
 # Time - Timezone & Scheduling
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 16
-- Sections: 8
-- Subsections: 8
-- Lines: 65 / 100 = 0
-- Total: 8 + 8 + 0 = 16
-
 ## Timezones
 
 | Zone | Offset | Context |

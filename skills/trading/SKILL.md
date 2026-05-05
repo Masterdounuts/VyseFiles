@@ -8,18 +8,6 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 # Trading Skill
 
 *Professional trading with continuous learning*
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Primary (100 max)
-
-### Current: Level 1
-- Sections: 4
-- Subsections: 6
-- Lines: 15 / 100 = 0
-- Total: 4 + 6 + 0 = 10
-
 ---
 
 ## The Workflow (4 Steps)

@@ -6,18 +6,6 @@ trigger phrases: "security, hardening, access, permissions"
 ---
 
 # Security - Hardening & Boundaries
-
-## Content-Based Leveling
-
-**Formula:** Level = sections + subsections + lines/100
-**Tier:** Supporting (75 max)
-
-### Current: Level 14
-- Sections: 8
-- Subsections: 6
-- Lines: 62 / 100 = 0
-- Total: 8 + 6 + 0 = 14
-
 ## Core Principles
 
 1. **Never bypass safeguards** — Even for "good" reasons
