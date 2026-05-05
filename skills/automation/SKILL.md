@@ -3,6 +3,7 @@ name: automation
 access: public
 description: Knowing when to automate actions vs doing manually. Triggers when you recognize patterns that could be automated.
 trigger phrases: "every time, repeatedly, always, auto, automate, script, run automatically"
+---
 
 # Automation Skill
 

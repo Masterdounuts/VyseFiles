@@ -3,6 +3,7 @@ name: projects
 access: public
 description: Active game development projects, work-in-progress, and creative work.
 trigger phrases: "project, game, skies of arcadia"
+---
 
 # Projects - Active Work
 

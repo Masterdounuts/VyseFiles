@@ -3,6 +3,7 @@ name: knowledge
 description: Unified knowledge management - wiki, docs, obsidian vault, retrieval.
 access: public
 trigger phrases: "wiki, docs, knowledge, document, kb, obsidian, vault, notes, memory"
+---
 
 # Knowledge Skill
 

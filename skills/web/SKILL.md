@@ -3,6 +3,7 @@ name: web
 always: true
 trigger phrases: "search, web, fetch, browser, internet"
 description: Web search, fetch, and browser automation. Use when researching or accessing web content.
+---
 
 # Web - Search, Fetch, Browser
 
