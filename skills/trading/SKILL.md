@@ -42,8 +42,9 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 |------|-------|
 | Stop Loss | -7% from entry |
 | Take Profit | +12% from entry |
-| Max Position | 25% of capital |
+| Max Position | **20% of capital** (diversification) |
 | Max Positions | 5 stocks |
+| Cash Reserve | **20%** always available |
 
 ### Position Sizing
 ```

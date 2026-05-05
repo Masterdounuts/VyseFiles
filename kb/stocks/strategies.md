@@ -143,6 +143,47 @@ Stock at $50 (52W high at $55) → Breakout above $51 → Target $60
 
 ---
 
+
+## Position Sizing Rules (CRITICAL)
+
+### Capital Allocation
+| Total Capital | Max Per Position | Max Positions |
+|--------------|------------------|---------------|
+| $0-100 | 20% ($20 max) | 5 |
+| $100-500 | 20% ($100 max) | 5 |
+| $500+ | 25% | 5 |
+
+### Diversification Requirements
+1. **No single position >20%** of total capital (we broke this with WGS)
+2. **Spread across sectors** - Don't put all in one sector
+3. **Mix strategies** - Not all momentum or all swing
+4. **Keep cash buffer** - Always have 10-20% in cash for opportunities
+
+### Current Violation (WGS)
+- WGS: $35.94 on $51 total = **70% of portfolio** ❌
+- Should have been max: ~$10 (20%)
+
+### Correct Sizing Example (with $51)
+| Position | Amount | % of Capital |
+|----------|--------|--------------|
+| NVDA | $10.00 | 20% |
+| WGS | $10.00 | 20% |
+| Cash | $31.28 | 60% |
+
+### Position Size Formula
+```
+max_position_size = min(total_capital × 0.20, cash_available) × 0.25 (if using margin)
+```
+For cash account: `position_size = total_capital × 0.20` (strict 20%)
+
+
+### When to Add Positions
+- Have at least 20% cash reserved
+- Found new opportunity with thesis
+- Existing position has room to add (not at max)
+
+---
+
 ## Key Rules
 
 1. **Research first** → Only trade researched stocks
