@@ -236,15 +236,15 @@ Track last 10 trades:
 ## Daily Routine (When to Check)
 
 ### Morning Check (9 AM ET)
-- [ ] Check Big Movers for opportunities
-- [ ] Check watchlist for breakout setups
-- [ ] Check open positions → time to exit?
+- [ ] **Run news script** → `node scripts/get-stock-news.js`
+- [ ] Check for breaking catalysts
+- [ ] Check positions → time to exit?
 - [ ] Check cash → ready to deploy?
 
 ### Mid-Day Check (12 PM ET)
+- [ ] Run news again for updates
 - [ ] Review morning positions
 - [ ] Look for new momentum setups
-- [ ] Check for news catalysts
 
 ### Afternoon Check (4 PM ET)
 - [ ] Check close positions
@@ -252,17 +252,25 @@ Track last 10 trades:
 - [ ] Review day trades
 
 ### Evening/Overnight (8 PM ET)
-- [ ] Check 24-hour market opportunities
+- [ ] **Run news script** → overnight opportunities
+- [ ] Check 24-hour market
 - [ ] Check crypto (24/7)
 - [ ] Prepare for next day
 
 ### Key Check Times
 | Time (ET) | What | Why |
 |-----------|------|-----|
-| 9 AM | Big Movers + positions | Market open opportunities |
-| 12 PM | Mid-day momentum | New setups emerge |
+| 9 AM | **Finnhub news** + positions | Market open opportunities |
+| 12 PM | News + momentum | New setups emerge |
 | 4 PM | Close review | End of day decisions |
-| 8 PM | 24-hour + crypto | Overnight opportunities |
+| 8 PM | **Finnhub news** + 24-hour | Overnight opportunities |
+
+### News-First Workflow (IMPORTANT)
+1. Check Finnhub news → Find catalyst
+2. Research stock → Verify thesis
+3. Check price/52W → Entry point
+4. Execute trade → Set stops
+5. Log trade → Track performance
 
 ---
 

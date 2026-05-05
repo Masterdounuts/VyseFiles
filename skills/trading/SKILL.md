@@ -10,13 +10,19 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 *Professional trading with continuous learning*
 ---
 
-## The Workflow (4 Steps)
+## The Workflow (5 Steps) - WITH FINNHUB NEWS
 
-### Step 1: Research
+### Step 1: Check News (NEW - PRIMARY)
+- **Run Finnhub news:** `node scripts/get-stock-news.js`
+- Find breaking catalysts (earnings, FDA, contracts, M&A)
+- Flag stocks with strong news drivers
+- **If no news → skip to prices**
+
+### Step 2: Research
 - **Fetch live prices:** 
   - Stocks: `node scripts/get-stock-price.js SYMBOL` (Yahoo Finance)
   - Crypto: `web_search` for "DOGE price today"
-- Check 5-year history (52W high/low, market cap)
+- Check 52-week high/low, volume
 - **Flag if:** down >80%, tiny cap, negative earnings
 
 ### Step 2: Rationalize
@@ -102,14 +108,15 @@ After each trade (win or loss), log to `.learnings/`:
 
 ---
 
-## Research Process - The David Method
+## Research Process - The David Method (Updated)
 
-1. **Scan** → Robinhood "Big Movers" → find volatility
-2. **Filter** → Check analytics (buy/hold/sell) → only research if high buy rating
-3. **Verify** → 52-week data → is it dying or alive?
-4. **Bull Case** → Price far from 52W high = upside potential
-5. **Afford** → Can I afford it?
-6. **Decide** → Buy if bull case + affordable
+1. **Check News** → Finnhub news (`node scripts/get-stock-news.js`) → Find catalyst
+2. **Scan** → Robinhood "Big Movers" → find volatility (backup if no news)
+3. **Filter** → Check analytics (buy/hold/sell) → only research if high buy rating
+4. **Verify** → 52-week data → is it dying or alive?
+5. **Bull Case** → Price far from 52W high = upside potential
+6. **Afford** → Can I afford it? (≤20% of capital)
+7. **Decide** → Buy if bull case + affordable
 
 ---
 
@@ -159,3 +166,6 @@ Answer before every trade:
 - learning - Self-improvement pattern
 - kb/stocks/robinhood-platform.md - Robinhood app knowledge
 - kb/stocks/strategies.md - Trading strategy library
+- scripts/get-stock-price.js - Price fetcher (Yahoo Finance)
+- scripts/get-stock-news.js - News fetcher (Finnhub API)
+- kb/stocks/win-loss-tracker.md - Trade logging
