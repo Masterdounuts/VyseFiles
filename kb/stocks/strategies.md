@@ -180,4 +180,37 @@ Stock at $50 (52W high at $55) → Breakout above $51 → Target $60
 
 ---
 
+## Strategy 6: 24-Hour Trading (News Reaction)
+
+**When to use:** Breaking news overnight, pre-market moves, after-hours opportunities
+
+### How to Identify
+- [ ] Major news after market close (earnings, FDA, deals)
+- [ ] Pre-market gap analysis
+- [ ] Overnight sentiment from crypto/Asia markets
+- [ ] Stock on 24 Hour Market list
+
+### Entry Rules
+- Check 24 Hour Market list for availability
+- Use limit orders (market not available)
+- Set limit within price bands
+- Aim for entry before market open
+
+### Exit Rules
+- **Take profit:** +8-12% (similar to regular)
+- **Stop loss:** -7% (same as regular trading)
+- **Monitor overnight** → Adjust before market opens
+
+### Why It Helps Us
+- **React to news same day** → Don't wait for market open
+- **More trading windows** → 24/5 opportunity
+- **Pre-market advantage** → Get position before open
+
+### Best Times for 24-Hour
+- Sunday 8 PM ET → Week starts
+- Early morning (12-6 AM ET) → Quiet, less competition
+- After big news events → Reaction trades
+
+---
+
 *To be updated as we learn which strategies work best*

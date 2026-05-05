@@ -107,6 +107,43 @@
 
 ---
 
+## 24-Hour Stock Trading
+
+| Feature | Details |
+|---------|----------|
+| **Hours** | Sun 8 PM ET - Fri 8 PM ET (24/5) |
+| **Trading Window** | 12 AM - 8 PM ET on full days |
+| **Available** | Select stocks/ETFs only |
+| **Order Type** | Limit orders only |
+| **Execution** | Via Alternative Trading Systems (ATS) |
+
+### How It Works
+- **24 Hour Market** → Trade outside regular hours
+- **Price bands** → Limits how far price can move (prevents extreme moves)
+- **Access:** Lists → 24 Hour Market in app
+
+### Benefits for Us
+- **More opportunities** → Trade react to news overnight
+- **Jump on gaps** → Get in before market opens
+- **Flexibility** → 8 PM to 8 PM coverage
+
+### Risks
+- **Lower liquidity** → Wider spreads
+- **Price bands** → Orders may be rejected if outside bands
+- **Limited stocks** → Not all stocks available
+
+### Extended Hours Summary
+
+| Session | Hours (ET) | When |
+|---------|------------|------|
+| **Pre-market** | 7 AM - 9:30 AM | Before open |
+| **Market** | 9:30 AM - 4 PM | Regular hours |
+| **After-hours** | 4 PM - 8 PM | After close |
+| **Overnight** | 8 PM - 12 AM | 24-hour window |
+| **24 Hour Market** | 12 AM - 8 PM | Full extended |
+
+---
+
 ## Crypto Trading on Robinhood
 
 | Feature | Details |
