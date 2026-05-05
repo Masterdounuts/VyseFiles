@@ -156,3 +156,4 @@ Answer before every trade:
 
 - github - Persistence
 - learning - Self-improvement pattern
+- kb/stocks/robinhood-platform.md - Robinhood app knowledge
