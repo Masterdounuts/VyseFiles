@@ -84,4 +84,27 @@
 
 ---
 
+## Cash Account Rules (IMPORTANT)
+
+| Feature | Cash Account | Margin Account |
+|---------|--------------|----------------|
+| **PDT Restrictions** | ❌ None | ✅ Apply if <$25K |
+| **Day Trades** | Unlimited | 3 per 5 days if <$25K |
+| **Unsettled Funds** | Can't use proceeds until T+1 | Can use with margin |
+
+### What This Means for Us
+
+- **We have a CASH account** → No Pattern Day Trader (PDT) restrictions!
+- Can day trade as much as we want
+- **Downside:** Can't trade on unsettled funds (must wait T+1 for funds to clear)
+- This is why there's $6.28 buying power - some funds may be settling
+
+### Key Rules
+
+1. **T+1 settlement:** Stock sales take 1 day to settle before proceeds usable
+2. **No margin calls:** Cash account = can't go negative
+3. **Unlimited day trades:** Biggest advantage of cash account
+
+---
+
 *To be updated as we learn more about the platform*
