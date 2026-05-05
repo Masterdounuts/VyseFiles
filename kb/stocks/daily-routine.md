@@ -2,6 +2,8 @@
 
 *Day-to-day workflow for Vyse + David - Built May 2026*
 
+**Timezone:** PT (Pacific Time) - ALWAYS
+
 ---
 
 ## Overview

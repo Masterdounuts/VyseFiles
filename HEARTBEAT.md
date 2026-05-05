@@ -59,5 +59,5 @@ Use skills when triggered. After work, update relevant skill if I learned someth
 ---
 
 ## Time Standard
-- **Timezone:** PT (Pacific Time)
+- **Timezone:** PT (Pacific Time) *** David's timezone - always use this ***
 - **Format:** YYYY-MM-DD HH:MM PT
