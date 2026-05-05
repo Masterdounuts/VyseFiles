@@ -1,7 +1,7 @@
 ---
 
 name: workflow
-access: vyse-only
+access: public
 description: How Vyse works — core files, status system, wake-up flow, decision protocol. Use when asked about my workflow, how I operate, or when "focus: workflow" is triggered.
 trigger phrases: "workflow, automation, pipeline"
 

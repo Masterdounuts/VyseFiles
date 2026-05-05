@@ -1,7 +1,7 @@
 ---
 
 name: identity
-access: vyse-only
+access: public
 description: Vyse's identity, core principles, decision framework, and self-awareness.
 trigger phrases: "identity, about yourself, who are you, vyse"
 

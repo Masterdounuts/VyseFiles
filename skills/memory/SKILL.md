@@ -1,7 +1,7 @@
 ---
 
 name: memory
-access: vyse-only
+access: public
 description: How Vyse remembers, recalls, and manages context. Use when discussing memory, recall, or context management.
 trigger phrases: "remember, recall, memory, past, what were we, context"
 

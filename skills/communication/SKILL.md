@@ -1,7 +1,7 @@
 ---
 
 name: communication
-access: vyse-only
+access: public
 description: Decision-making, reasoning, communication, presentation, and learning.
 trigger phrases: "decision, communication, presentation, format, UI"
 
