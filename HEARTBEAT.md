@@ -27,7 +27,32 @@ openclaw status    # Quick overview
 openclaw health     # Gateway running?
 ```
 
-## 2. Price Service (INTEGRATED)
+## 2. Context Health (LONG-CHAT PROTECTION)
+*Per LONG-CHAT-RECOVERY-WORKFLOW*
+
+| Context % | Action |
+|-----------|--------|
+| <60% | Continue normal operations |
+| 60-80% | Run smoke test, generate handoff summary |
+| >80% | Force handoff, prepare for session reset |
+
+### Smoke Test (run at 60%+):
+```
+Do a 2-minute test: summarize the objective in 3 bullets, propose one next step, state what evidence you will provide when done.
+```
+**Pass criteria:** coherent, specific, no stale references
+
+### Handoff Summary (max 250 words):
+- What we completed
+- What is still pending
+- Key decisions/constraints
+- File paths created/edited
+- Next 3 concrete steps
+
+### State File (avoid stale re-runs)
+Use `memory/heartbeat-state.json` to track last check timestamps. Skip checks done too recently.
+
+## 3. Price Service (INTEGRATED)
 
 ### Price Sources (in priority order):
 | Priority | Source | When | Status |

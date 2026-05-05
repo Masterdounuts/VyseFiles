@@ -91,3 +91,43 @@ Recommendation with rationale
 ### References
 - learning - Self-improvement
 - pattern-recognition - Decision patterns
+
+---
+
+## Subagent Orchestration (from agent-library)
+
+*Per SUB-AGENT-ORCHESTRATION-CHECKLIST.md*
+
+### Manager Rule
+- **Exactly one manager** (me) publishes final output
+- Workers NEVER message end users directly
+- Each worker has non-overlapping role
+
+### Worker Output Format
+Each subagent must return:
+```
+1) Scope completed
+2) Key findings (max 7 bullets)
+3) Evidence/sources
+4) Open risks/questions
+```
+
+### Delivery Confirmation
+Before done, confirm:
+```
+Final output destination confirmed: [surface], [timezone], [timestamp]
+```
+
+### Fast Failure triage
+| Symptom | Fix |
+|---------|-----|
+| Duplicate answers | Enforce one-manager, stop duplicates |
+| Worker timeout | Split into smaller chunks |
+| Lost details | Require gap-check before merge |
+| Wrong place | Restate destination before publish |
+
+### Done Criteria
+- [ ] Exactly one manager final response
+- [ ] Workers used non-overlapping scopes
+- [ ] All factual claims include evidence
+- [ ] Destination/timezone confirmed
