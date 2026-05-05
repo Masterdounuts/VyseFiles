@@ -82,4 +82,5 @@ openclaw gateway restart
 ---
 
 *Last updated: 2026-05-05*
-*Token: (waiting for David to create)*
+*Token: 8676...RqKI (updated)*
+*DM Policy: pairing (secure)*
