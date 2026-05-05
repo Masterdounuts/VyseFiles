@@ -24,10 +24,33 @@
 - AVGO
 
 ### Crypto (24/7)
-- DOGE (we own)
+- DOGE (we own) - $0.11, free position
 - BTC
 - ETH
 - SOL
+
+---
+
+## Crypto Rules (From Strategy 5)
+
+
+| Rule | Value |
+|------|-------|
+| Stop Loss | -5% (tighter than stocks) |
+| Take Profit | +15% (standard) |
+| Trade Hours | 24/7 |
+
+---
+
+## DOGE Setup (Free Position)
+
+Since we got in free, any profit is pure profit:
+- **Stop:** -5% from current = $0.105
+- **Target:** +15% = $0.127
+
+In Robinhood:
+- Set stop loss at $0.105
+- Set take profit at $0.127
 
 ### Watchlist Criteria
 Add stocks when:
