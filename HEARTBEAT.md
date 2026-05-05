@@ -7,8 +7,8 @@
 ## 1. System Check
 ```bash
 openclaw status    # Quick overview
-openclaw health    # Gateway running?
 ```
+*Note: See VYSE.md for full wake-up protocol*
 
 ## 2. Context Health
 
