@@ -150,18 +150,31 @@
 
 | Source | What For | Status |
 |--------|----------|--------|
-| **Yahoo Finance** | Stock prices, 52W data | ✅ Working (no key needed) |
+| **Yahoo Finance** | Stock prices, 52W data | ✅ Script works |
+| **Finnhub** | Breaking news | ✅ API key added |
 | **web_search** | News, market movers | ✅ Working |
-| **web_fetch** | Pull articles | ✅ Working |
 
-### How to Use Yahoo Finance Script
+### How to Use Scripts
+
+**Stock Prices:**
 ```bash
 node scripts/get-stock-price.js NVDA WGS DOGE
 ```
-
 Returns: price, change %, volume, 52W high/low
 
-### Could Add (Needs API Key)
+**Breaking News:**
+```bash
+node scripts/get-stock-news.js
+```
+Returns: Latest market news (headlines, source, URL)
+
+**Company News:**
+```bash
+node scripts/get-stock-news.js NVDA
+```
+Returns: News specific to a symbol
+
+### Could Add More (Needs API Key)
 
 | Source | What For | Limit |
 |--------|----------|-------|
