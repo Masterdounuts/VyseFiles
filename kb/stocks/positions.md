@@ -4,12 +4,12 @@
 
 ---
 
-## Current Positions (as of May 5, 2026 PT)
+## Current Positions (as of May 5, 2026 PT) - ROBINHOOD PRICES
 
 | Symbol | Shares | Entry Price | Stop Loss | Target | Current Price | P/L | P/L % |
 |--------|--------|-------------|-----------|--------|---------------|-----|-------|
-| NVDA | 0.050426 | $198.31 | $184.43 | $222.11 | $196.50 | -$0.89 | -0.45% |
-| WGS | 1 | $35.94 | $33.42 | $40.25 | $34.51 | -$1.43 | -4.0% |
+| NVDA | 0.050426 | $198.31 | $184.43 | $222.11 | $196.97 | -$1.34 | -0.68% |
+| WGS | 1 | $35.94 | $33.42 | $40.25 | $34.03 | -$1.91 | -5.3% |
 | DOGE | ~Free | $0.00 | -5% | +15% | $0.11 | +$0.11 | ∞ |
 
 ---
@@ -30,6 +30,7 @@
 |------|--------|--------|--------|-------|-----|-------|
 | 2026-05-05 | BUY | NVDA | 0.050426 | $198.31 | - | David's pick - AI/GPU play |
 | 2026-05-05 | BUY | WGS | 1 | $35.94 | - | David's independent research - bull case |
+| 2026-05-05 | HOLD | WGS | - | - | - | Decision: David thinks it bounces at 52W low |
 
 ---
 
