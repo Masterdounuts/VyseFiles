@@ -6,24 +6,34 @@
 
 ---
 
+## Market Hours (PT - David's Timezone)
+- Market opens: 6:30 AM PT (9:30 AM ET)
+- Market closes: 1:00 PM PT (4:00 PM ET)
+- After-hours: Until 8 PM PT
+- 24-hour: Sunday 8 PM - Friday 8 PM PT
+
+---
+
 ## Overview
 
 | Phase | Time (PT) | What | Output |
 |-------|-----------|------|--------|
-| **Morning** | 9 AM | Market open check | Opportunities identified |
+| **Pre-Market** | 6:30 AM | Market open check | Opportunities identified |
+| **Morning** | 9 AM | News + research | Candidates ready |
 | **Mid-Day** | 12 PM | Position review | Exit/hold decisions |
-| **Afternoon** | 4 PM | End-of-day review | Prepare tomorrow |
+| **Afternoon** | 1 PM | Market close | End-of-day review |
 | **Evening** | 8 PM | Overnight prep | 24-hour + crypto |
 
 ---
 
-## Morning Routine (9 AM PT)
+## Pre-Market Routine (6:30 AM PT) - Market Opens
 
 ### Step 1: Check Market Status
 ```bash
 node scripts/expand-finnhub.js status
 ```
 → Is market open? What's the session?
+
 
 ### Step 2: Check Breaking News
 ```bash
@@ -52,6 +62,16 @@ node scripts/get-stock-price.js SYMBOL
 → Entry price, stop loss, target
 → Position size (≤20% of capital)
 
+
+---
+
+## Morning Routine (9 AM PT)
+
+- Market has been open 2.5 hours
+- Check momentum so far
+- Any new opportunities?
+- Update David on positions
+
 ---
 
 ## Mid-Day Routine (12 PM PT)
@@ -79,7 +99,7 @@ node scripts/get-stock-price.js NVDA WGS
 
 ---
 
-## Afternoon Routine (4 PM PT)
+## Afternoon Routine (1 PM PT) - Market Closes
 
 ### Step 1: Final Position Check
 ```bash
