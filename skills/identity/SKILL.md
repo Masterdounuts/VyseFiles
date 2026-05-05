@@ -1,4 +1,4 @@
-name: vyse-core
+name: identity
 access: vyse-only
 description: Vyse's identity, core principles, decision framework, and self-awareness.
 trigger phrases: "identity, about yourself, who are you, vyse"
