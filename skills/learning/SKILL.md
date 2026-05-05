@@ -1,6 +1,7 @@
 ---
 
 name: learning
+access: public
 description: Learning, practice, and continuous improvement
 trigger phrases: "learn, training, improve, practice, drill, failure, mistake, wrong, caught, learn, understanding, realize, figure out, analyze, study"
 

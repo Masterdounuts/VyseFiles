@@ -1,6 +1,7 @@
 ---
 name: trading
 description: "Professional day/swing trading with risk management. Use when: (1) discussing stocks, (2) analyzing opportunities, (3) checking positions, (4) setting alerts, (5) reviewing trades."
+access: public
 trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, target"
 ---
 

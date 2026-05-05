@@ -1,6 +1,7 @@
 ---
 
 name: skill-creator
+access: public
 description: Create, edit, audit skills. Before creating, check existing skills for overlap.
 trigger phrases: "create skill, new skill, skill template"
 

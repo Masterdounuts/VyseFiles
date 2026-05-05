@@ -1,6 +1,7 @@
 ---
 
 name: github
+access: public
 description: GitHub version control, git-sync, and persistence. Use when discussing version control, pushing to GitHub, or the persistence layer.
 trigger phrases: "git, push, commit, repo, version control"
 
