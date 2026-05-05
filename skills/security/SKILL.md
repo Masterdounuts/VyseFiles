@@ -1,3 +1,5 @@
+---
+
 name: security
 access: vyse-only
 description: Security hardening, permissions, boundaries, and safety protocols. Use when discussing access control, hardening, or safety measures.

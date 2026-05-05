@@ -1,6 +1,8 @@
+---
 name: cli
 always: true
 description: OpenClaw CLI commands - debugging, recovery, FIXES, health checks, session management. Use when something breaks or needs investigation.
+---
 
 # System - Debugging & Recovery
 

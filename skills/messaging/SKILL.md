@@ -1,3 +1,5 @@
+---
+
 name: messaging
 description: Message formatting, alerts, and Telegram bot management. Combines alerts + telegram for unified messaging.
 trigger phrases: "alert, notify, telegram, dm, message, bot, channel, notification"

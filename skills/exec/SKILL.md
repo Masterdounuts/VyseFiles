@@ -1,3 +1,5 @@
+---
+
 name: exec
 always: true
 description: Shell command execution, sandbox, PTY, and background processes.

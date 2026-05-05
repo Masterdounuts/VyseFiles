@@ -1,3 +1,5 @@
+---
+
 name: communication
 access: vyse-only
 description: Decision-making, reasoning, communication, presentation, and learning.

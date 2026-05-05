@@ -1,3 +1,5 @@
+---
+
 name: time
 always: true
 description: Timezone handling, scheduling, cron jobs, and temporal awareness. Use when discussing times, schedules, or timing-based tasks.

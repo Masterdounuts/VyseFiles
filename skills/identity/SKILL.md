@@ -1,3 +1,5 @@
+---
+
 name: identity
 access: vyse-only
 description: Vyse's identity, core principles, decision framework, and self-awareness.

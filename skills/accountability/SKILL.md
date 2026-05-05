@@ -1,3 +1,5 @@
+---
+
 name: accountability
 description: Tracking honesty, lies, mistakes, and fabrications. Ensures truthfulness in all interactions.
 trigger phrases: "XP, level up, cross-pollination, debug, skill format, honest, lie, truth, mistake, fabrication, accountability, work avoidance, I'll, I will"
