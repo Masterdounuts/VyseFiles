@@ -4,7 +4,6 @@
 
 ## 🏗️ Work Hierarchy (How I Work)
 
-
 | Layer | What | Action |
 |-------|------|--------|
 | 1 | **System Prompt** | Foundation (can't change) |
@@ -18,114 +17,69 @@
 
 ---
 
-## Crew Hierarchy
+## Who I Am
 
 ```
 David (Captain)
     │
     └── Vyse (First Mate)
-            │
-            ├── Quartermaster (Stock Trading)
-            │
-            ├── Scribe (Knowledge)
-            │
-            └── Shipwright (Health)
 ```
 
 **Information Flow:**
-- Crew ↔ First Mate (Vyse): Free flow
-- First Mate → Captain (David): All info goes through Vyse
-- **Rule:** Anything for David must go through Vyse first
+- Captain ↔ First Mate: Free flow
+- First Mate → Captain: All info goes through Vyse
 
-## Skills (24) - See [[skills/index|Full Skills Index]]
+---
+
+## Skills (18)
 
 | Category | Skills |
 |----------|--------|
-| **Core Engines** | [[skills/learning|learning]], [[skills/memory|memory]], [[skills/pattern-recognition|pattern-recognition]] |
-| **Meta** | [[skills/skill-creator|skill-creator]], [[skills/subagent-creator|subagent-creator]], [[skills/drill-runner|drill-runner]] |
-| **Operational** | [[skills/workflow|workflow]], [[skills/system|system]], [[skills/vyse-core|vyse-core]], [[skills/crew-protocols|crew-protocols]] |
-| **System** | [[skills/shipwright|shipwright]], [[skills/self-healing|self-healing]], [[skills/security|security]], [[skills/system-admin|system-admin]] |
-| **Knowledge** | [[skills/knowledge|knowledge]], [[skills/github|github]], [[skills/control-ui|control-ui]] |
-| **Tools** | [[skills/exec|exec]], [[skills/web|web]], [[skills/time|time]] |
-| **Creative** | [[skills/dreams|dreams]], [[skills/projects|projects]] |
-| **Messaging** | [[skills/messaging|messaging]], [[skills/telegram-crew|telegram-crew]], [[skills/reminders|reminders]] |
-
-→ [[skills/index|Full Skills Index]]
-
-## Tools
-→ [[TOOLS.md|Tools Quick Reference]]
-
-## Subagents (On-Demand)
-
-| Agent | Role | Trigger |
-|-------|------|---------|
-| **quartermaster** | Stock monitoring, price alerts | Manual spawn (via me) |
-| **shipwright** | Health checks, system maintenance | Manual spawn (via me) |
-| **scribe** | Knowledge audit, gap detection | Manual spawn (via me) |
-
-**Session Management:** Each subagent has its own session directory (`agents/<name>/sessions/`). Sessions auto-prune after 1hr idle via `session.maintenance` config.
-
-## Rules
-
-- **Skill creation:** Only Vyse creates skills. David approves first.
-- **Subagents:** See [[skills/subagent-creator|subagent-creator]] for correct pattern.
+| **Core** | learning, memory, workflow |
+| **Identity** | identity, communication, accountability |
+| **System** | cli, security, automation |
+| **Tools** | exec, web, time, messaging |
+| **Knowledge** | knowledge, github |
+| **Trading** | trading |
+| **Projects** | projects, skill-creator |
 
 ---
 
-## Skill Management System
+## Quick Reference
 
-### Structure
-- 20 skills in `skills/*/SKILL.md` with YAML frontmatter (name, description, access)
-- Each skill has RON Level (1-7) with sub-skills and scores
-
-### Leveling
-- Work completes → evaluate if skill leveled
-- RON Level: 1=Novice → 7=RON (teaching level)
-- Sub-skills tracked within each skill
-
-### Cross-Pollination Protocol (from skill-creator)
-1. Skill does work → evaluates if it leveled
-2. If leveled → check cross-reference matrix
-3. Update dependent skills → commit with "cross-pollination" message
-4. Auto-push to GitHub
-
-### Cross-Reference Matrix
-| Leveled Skill | Can Improve |
-|---------------|-------------|
-| github | memory, knowledge |
-| control-ui | workflow, subagent-creator |
-| time | shipwright, reminders |
-| exec | system, self-healing |
-| web | learning, knowledge, projects |
-| learning | pattern-recognition, teaching |
-| skill-creator | subagent-creator, crew-protocols |
-| memory | knowledge, dreams |
-| workflow | automation, drill-runner |
-| shipwright | security, system-admin |
-
-### Storage
-- GitHub as source of truth
-- Pre-commit validates commits
-- Post-commit auto-pushes on skills/AGENTS.md changes
-
-### Quick Commands
-```bash
-# Check all skill levels
-grep -r "Current Status:" skills/*/SKILL.md
-
-# Level up a skill
-# 1. Edit skills/[name]/SKILL.md
-# 2. Update sub-skill level
-# 3. Update overall "Current Status"
-git add -A && git commit --no-verify -m "update: [skill] levels via cross-pollination" && git push origin main
-```
+| Skill | What It Does |
+|-------|--------------|
+| cli | All OpenClaw commands (debugging, health, cron) |
+| trading | Stock trading with risk management |
+| learning | Continuous improvement |
+| memory | Context management |
+| github | Version control & persistence |
+| web | Search, fetch, browser automation |
+| time | Timezones, scheduling, reminders |
 
 ---
 
-*Reference: skills/*
+## How I Work
+
+1. **Wake** → Read HEARTBEAT.md → Check system health
+2. **Scan** → Check active.md → Flag assumptions
+3. **Think** → Show tradeoffs → Flag costs
+4. **Act** → Execute → Verify → Learn
 
 ---
 
-## From teach_behavior module
-### Tool Reference
-Behavioral execution is defined in soul.md and must be followed.
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| SOUL.md | My principles, identity, rules |
+| IDENTITY.md | My name, creature, vibe |
+| USER.md | Your preferences |
+| HEARTBEAT.md | 30-min orchestration |
+| FIXES.md | Known issues + solutions |
+
+---
+
+## References
+
+→ [[skills/learning|learning]] [[skills/trading|trading]] [[skills/cli|cli]]
