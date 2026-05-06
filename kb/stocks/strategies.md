@@ -146,6 +146,20 @@ Stock at $50 (52W high at $55) → Breakout above $51 → Target $60
 
 ## Position Sizing Rules (CRITICAL)
 
+### Evolution of Strategy (As Capital Grows)
+
+| Phase | Capital | Strategy | Max Positions |
+|-------|---------|----------|---------------|
+| **1. Build** | $0-200 | Diversify (many small positions) | 5 |
+| **2. Grow** | $200-1000 | Concentrate on best setups | 3-4 |
+| **3. Scale** | $1000+ | Max 3 high-conviction trades | 2-3 |
+
+**Current Phase:** 1 (Build) - Diversify until we have meaningful capital
+
+**Why:** With $51, even 20% = $10. Need to spread to maximize chances. When we have $500+, then concentration makes sense.
+
+---
+
 ### Capital Allocation
 | Total Capital | Max Per Position | Max Positions |
 |--------------|------------------|---------------|
@@ -175,6 +189,22 @@ Stock at $50 (52W high at $55) → Breakout above $51 → Target $60
 max_position_size = min(total_capital × 0.20, cash_available) × 0.25 (if using margin)
 ```
 For cash account: `position_size = total_capital × 0.20` (strict 20%)
+
+### MANDATORY: Before ANY Recommendation
+
+Every stock recommendation MUST include:
+
+| Field | Required | Example |
+|-------|----------|---------|
+| **Catalyst** | Yes | "Q1 earnings beat", "AI momentum", "bitcoin up" |
+| **Timeframe** | Yes | "day trade", "swing 3-5 days", "hold 2 weeks" |
+| **Stop Loss** | Yes | $33.42 (-7% from entry) |
+| **Target** | Yes | $40.25 (+12% from entry) |
+| **Thesis** | Yes | 1-2 sentence why this will go up |
+
+**No recommendation without all 5.**
+
+---
 
 ### When CONFIDENT (90-100% deployed)
 - Win ratio >60% on last 10 trades
