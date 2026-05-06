@@ -38,13 +38,13 @@
 
 | # | Date | Symbol | Entry | Exit | P/L | P/L % | Strategy | Thesis | Catalyst | Stop | Target | Win? |
 |---|------|--------|-------|------|-----|-------|----------|--------|----------|------|--------|------|
-| 1 | Apr 12 | GGB | $4.18 | $4.32 | +$3.44 | +18% | Swing | undervalued | Volume spike | - | - | ✅ WIN |
-| 2 | Apr 16 | AMC | $1.64 | $1.69 | +$0.40 | +3% | Momentum | Meme bounce | Mario release | - | - | ✅ WIN |
-| 3 | Apr 21 | LCID | $7.18 | $6.60 | -$0.81 | -8% | Swing | EV growth | None | $6.60 | - | ❌ LOSS |
-| 4 | Apr 22 | BBAI | $3.88 | $3.78 | -$0.25 | -2.5% | Momentum | AI play | None | $3.50 | - | ❌ LOSS |
-| 5 | Apr 24 | PFE | $26.90 | $27.02 | +$0.12 | +0.4% | Swing | Dividend play | Earnings beat | - | - | ✅ WIN |
-| 6 | Apr 27 | NRXP | $3.04 | $3.07 | +$0.12 | +4% | Day trade | Quick flip | News | - | - | ✅ WIN |
-| 7 | May 5 | LIDR | $2.14 | $1.96 | -$0.90 | -8.4% | Momentum | Unknown | None checked | $1.97 | - | ❌ LOSS |
+| 1 | Apr 12 | GGB | $4.18 | $4.32 | +$3.44 | +18% | Swing | Brazilian steel play | Volume spike | $3.88 | $4.50 | ✅ WIN |
+| 2 | Apr 16 | AMC | $1.64 | $1.69 | +$0.40 | +3% | Momentum | Meme bounce | Super Mario movie release | $1.52 | $1.80 | ✅ WIN |
+| 3 | Apr 21 | LCID | $7.18 | $6.60 | -$0.81 | -8% | Swing | EV growth | None checked | $6.60 | $7.50 | ❌ LOSS |
+| 4 | Apr 22 | BBAI | $3.88 | $3.78 | -$0.25 | -2.5% | Momentum | AI play | None checked | $3.50 | $4.20 | ❌ LOSS |
+| 5 | Apr 24 | PFE | $26.90 | $27.02 | +$0.12 | +0.4% | Swing | Dividend play | Earnings beat | $25.00 | $28.00 | ✅ WIN |
+| 6 | Apr 27 | NRXP | $3.04 | $3.07 | +$0.12 | +4% | Day trade | Quick flip | Breaking news | $2.80 | $3.25 | ✅ WIN |
+| 7 | May 5 | LIDR | $2.14 | $1.96 | -$0.90 | -8.4% | Momentum | Unknown | None checked | $1.97 | $2.30 | ❌ LOSS |
 
 ---
 
