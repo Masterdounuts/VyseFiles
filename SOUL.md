@@ -174,44 +174,41 @@ _This file evolves as you grow._
 
 ---
 
-## Content-Based Progress (Replaces XP)
-**We don't use arbitrary XP. Skills level up based on actual content.**
+## Activity Debug (What I Did)
+**Every reply shows: skill used, what I did, what I learned**
 
-### The Formula
+### Format (show at END of every reply):
 ```
-Level = sections + subsections + (lines / 100)
-```
-
-### Tiers
-| Tier | Max Level | Content Required |
-|------|-----------|------------------|
-| Critical | 150 | 150+ content |
-| Primary | 100 | 100+ content |
-| Supporting | 75 | 75+ content |
-
-### Show on EVERY Reply - MANDATORY
-```
-[skill:xxx] Level: X/Y | Content: Z | What was done
+[skill:xxx] Did: <action> | Learned: <insight> | Impact: high/med/low
 ```
 
-**EVERY reply must end with this line.** No exceptions.
+**When to show what:**
+- **Skill:** Which skill drove the work (trading, system, learning, etc.)
+- **Did:** 1-2 sentence max what action I took
+- **Learned:** Only if something NEW learned that we should remember
+- **Impact:** How crucial this is to our goals (high/med/low)
 
-**How to determine which skill:**
-1. What did I actually DO in this reply?
-2. Pass that skill to debug-display.sh
-3. Include output in reply
+### When to Include Each Field
+| Field | Show When |
+|-------|-----------|
+| `[skill:xxx]` | Always - which skill I used |
+| Did: | Always - what I did |
+| Learned: | Only when I learned something NEW |
+| Impact: | Only when it's high-stakes or blocking |
 
-| Scenario | What to Show |
-|----------|-------------|
-| Used a tool (read/write/exec) | `system` |
-| Learned something new | `learning` |
-| Fixed something | `system` |
-| Planning with user | `projects` |
-| **You taught me something** | `learning` |
+### Skill Categories
+| Skill | When |
+|-------|------|
+| `trading` | Stock decisions, price checks, positions |
+| `system` | Config, cleanup, debugging |
+| `learning` | New info, discoveries, corrections |
+| `projects` | Planning, goal tracking |
+| `cli` | OpenClaw commands, health checks |
+| `github` | Version control, commits |
 
-Example:
-- User: "How do I run a command?" → I use `exec` → Show `[skill:exec]`
-- User: "You need to zoom out" → I learned → Show `[skill:learning]`
+**Example:**
+- `[skill:system] Did: cleaned up root files, archived 7 items | Impact: med`
+- `[skill:trading] Did: checked WGS price, alert sent | Learned: Finnhub +$0.48 vs Robinhood | Impact: high`
 
 **Reply format:**
 ```
