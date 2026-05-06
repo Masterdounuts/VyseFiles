@@ -72,4 +72,14 @@
 
 ---
 
+## Lessons Learned
+
+| Date | Trade | What Happened | Lesson |
+|------|-------|---------------|--------|
+| 2026-05-05 | WGS | Bought at $35.94, dropped 48% on earnings miss | Always check earnings dates before buying |
+| 2026-05-05 | All | Fully deployed, no cash buffer | Keep 10-20% cash for T+1 settlement |
+| 2026-05-05 | WGS | Thought 52W low = bounce, was wrong | 52W low can mean dying company, not bargain |
+
+---
+
 *Update after each trade closes*
