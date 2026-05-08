@@ -105,14 +105,36 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
-## PART 4: Volume Analysis
+## PART 4: Volume Analysis (CRITICAL)
 
-- **Volume up + price up** = strong trend
-- **Volume down + price up** = weak trend (reversal likely)
-- **Small candle + big volume** = potential reversal
-- **Volume spike at key level** = institutional activity
-- **Divergence** (lower highs + lower volume) = reversal likely
-- **Volume can't be manipulated** — Hedge funds can push price, but volume shows real conviction
+### Why Volume Matters
+- **Price can be manipulated** — Hedge funds can push price up/down temporarily
+- **Volume CANNOT be manipulated** — Shows real conviction, institutional activity
+- Volume = the truth behind the price action
+
+### Volume Rules
+| Signal | Meaning | Action |
+|--------|---------|--------|
+| Volume up + price up | Strong trend | Confirmed move |
+| Volume down + price up | Weak trend | Reversal likely |
+| Small candle + big volume | Reversal | Watch for change |
+| Volume spike at key level | Institutional | Entry opportunity |
+| Divergence (lower highs + lower volume) | Reversal | Prepare for move |
+
+### Volume Thresholds
+| Ratio | Signal |
+|-------|--------|
+| >2x | Strong institutional buying |
+| 1.5-2x | Moderate conviction |
+| 1.0-1.5x | Normal activity |
+| <1.0x | Weak/no conviction |
+
+### SMC Volume Checklist
+- [ ] Volume >1x when entering (confirms move)
+- [ ] Volume spike at liquidity grab (institutions taking it)
+- [ ] Higher volume on breakout than pullback (sustained)
+
+**No volume = No trade** — Don't enter without confirming volume.
 
 ---
 
