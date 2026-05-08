@@ -229,6 +229,8 @@ Buying Power = Total - Invested_in_positions
 
 | Date | Lesson |
 |------|--------|
+| 2026-05-08 | Scanner snapshots are point-in-time - always verify current price before recommending |
+| 2026-05-08 | Stale scanner data useful for pattern learning - compare yesterday's setups to today's moves |
 | 2026-05-07 | Catalyst = 80% win rate, no catalyst = 0% |
 | 2026-05-07 | 52W low = warning, not always bottom |
 | 2026-05-07 | "It's low" isn't a thesis — need "why" |
