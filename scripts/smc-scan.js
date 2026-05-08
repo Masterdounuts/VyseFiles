@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 // SMC Scanner v6 - Category-based filtering
 
-// CANDIDATES: Only include stocks that pass our broad criteria
+// CANDIDATES: Under $40, pass category filters, liquid stocks
 const candidates = [
-  'AAPL','GOOGL','TSLA','MSFT','AMZN','META','NVDA','AMD','INTC','MU','AVGO',
-  'MARA','RIOT','MSTR','COIN','SQ','HOOD','PLTR','SOUN','SMCI','ASTS',
-  'F','GM','TM','HMC',
-  'SNAP','PINS','DIS','PARA','WBD','NWSA',
-  'AMD','INTC','NVDA','MU','AMAT','LRCX','KLAC',
+  // Under $10 (most affordable)
+  'MARA','RIOT','NVDA','AMAT','LRCX','KLAC',
+  // $10-20
+  'SOUN','F','GM',
+  // $20-30
+  'HOOD','SMCI',
+  // $30-40
+  'AMD','INTC','MU',
 ];
 
 // CATEGORY FILTERS: Block by characteristics, not individual stocks
@@ -97,16 +100,16 @@ async function scan() {
       const volRatio = volume / avgVolume;
       const bouncePct = ((price - swingLow) / swingLow) * 100;
       
-      // Budget filter: must fit our buying power
-      if (price > 6.50) continue;
+      // Budget filter: must fit our buying power (~$40)
+      if (price > 40) continue;
       
-      // Early stage: 0-5% bounce only
-      if (bouncePct > 5) continue;
+      // Early stage: 0-15% bounce (not yet run up)
+      if (bouncePct > 15) continue;
       
-      // Must be near swing low
-      if (rangePct > 0.25) continue;
+      // Must be in lower half of range (not already run up)
+      if (rangePct > 0.50) continue;
       
-      if (rangePct < 0.25 && bouncePct < 15 && volRatio > 0.8) {
+      if (bouncePct < 15 && rangePct < 0.50 && volRatio > 0.5) {
         results.push({
           sym,
           price: price.toFixed(2),
