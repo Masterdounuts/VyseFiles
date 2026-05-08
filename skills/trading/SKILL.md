@@ -112,6 +112,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 - **Small candle + big volume** = potential reversal
 - **Volume spike at key level** = institutional activity
 - **Divergence** (lower highs + lower volume) = reversal likely
+- **Volume can't be manipulated** — Hedge funds can push price, but volume shows real conviction
 
 ---
 
