@@ -87,11 +87,22 @@ function classifyVolumePattern(prices, volumes) {
       return { pattern: 'V3', description: 'Downtrend weakening', bullish: true };
     }
   } else if (priceTrend < 0 && volumeTrend > 0) {
-    // Price DOWN + Volume UP = Accumulation (institutions buying)
-    if (volRatio > 1.5) {
-      return { pattern: 'V4', description: 'ACCUMULATION (smart money buying)', bullish: true };
+    // Price DOWN + Volume UP = Could be accumulation OR distribution
+    // CRITICAL: Depends on position in 52W range
+    
+    // Calculate position in 52W range
+    const yearLow = Math.min(...prices.slice(-252));
+    const yearHigh = Math.max(...prices.slice(-252));
+    const rangePosition = (lastPrice - yearLow) / (yearHigh - yearLow);
+    
+    // V4 is ONLY bullish if in lower half (accumulating near lows)
+    // In upper half = distribution (selling near highs)
+    if (rangePosition < 0.5 && volRatio > 1.5) {
+      return { pattern: 'V4', description: 'ACCUMULATION (smart money buying near lows)', bullish: true };
+    } else if (rangePosition < 0.5) {
+      return { pattern: 'V4', description: 'Potential accumulation (near lows)', bullish: true };
     } else {
-      return { pattern: 'V4', description: 'Potential accumulation', bullish: true };
+      return { pattern: 'V4', description: 'DISTRIBUTION (smart money selling near highs)', bullish: false };
     }
   } else if (volumeTrend > 0.5 && Math.abs(priceTrend) < 0.1) {
     // Volume spike with flat price = anomaly
