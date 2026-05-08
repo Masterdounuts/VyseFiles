@@ -138,6 +138,24 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+### Critical Volume Insight
+
+> Top 3% traders (hedge funds) trade LONG with capital. They push price DOWN to accumulate, then ride UP.
+
+**What this means:**
+- **Price down + Volume UP = Likely ACCUMULATION** (not panic selling)
+- Don't assume high volume on down = selling
+- Smart money takes liquidity, then pushes price up
+- Look for the FVG created on the way down — that's where they'll enter
+
+**Pattern:**
+1. Price drops (liquidity sweep)
+2. High volume on drop = institutions buying
+3. FVG created
+4. Price returns to FVG = ENTRY
+
+---
+
 ### TradingLab Volume Checklist
 
 🔳 **Volume trending up or down?** (volume up = strong trend) (volume down = weak trend)
@@ -263,7 +281,8 @@ Buying Power = Total - Invested_in_positions
 
 | Date | Lesson |
 |------|--------|
-| 2026-05-08 | Scanner snapshots are point-in-time - always verify current price before recommending |
+| 2026-05-08 | Scanner bounce calculation bug: Used 20-day swing low instead of 52W low - ALL candidates were actually already run up |
+| 2026-05-08 | GILD lesson: Price down + high volume = accumulation (smart money buying), not distribution |
 | 2026-05-08 | Stale scanner data useful for pattern learning - compare yesterday's setups to today's moves |
 | 2026-05-07 | Catalyst = 80% win rate, no catalyst = 0% |
 | 2026-05-07 | 52W low = warning, not always bottom |

@@ -4,13 +4,14 @@
 
 ---
 
-## Current Positions (as of May 7, 2026 PT) - SMC METHOD
+## Current Positions (as of May 8, 2026 PT) - SMC + ACCUMULATION
 
 | Symbol | Shares | Entry | Liquidity | CHOCH | SL | TP -1 | TP -2 | Current |
 |--------|--------|-------|-----------|-------|-----|-------|-------|--------|
-| NVDA | 0.05 | $198.31 | TBD | TBD | TBD | TBD | TBD | $207.85 |
-| NIO | 1 | $5.94 | $5.87 | $6.02 | $5.47 | $6.15 | $6.30 | $5.93 | SMC: Liquidity→Sweep→CHOCH→FVG |
-| WGS | **SOLD** | $35.94 | $32.21 | TBD | $32.00 | - | - | **$38.36 (+6.7%)** |
+| NVDA | 0.05 | $198.31 | TBD | TBD | TBD | TBD | TBD | ~$216 | David's pick |
+| NIO | 1 | $5.94 | $5.87 | $6.02 | $5.47 | $6.15 | $6.30 | $5.88 | ADR (exiting) |
+| **GILD** | TBD | ~$130 | $127 | $137 | $127 | $145 | $155 | $131 | **Accumulation setup** |
+| WGS | **SOLD** | $35.94 | - | - | - | - | - | - | +$38.36 (+6.7%) |
 | DOGE | ~Free | - | - | - | -5% | +15% | - | $0.11 |
 
 ---
@@ -28,7 +29,6 @@
 
 | Symbol | Status | Liquidity | CHOCH | SL | TP -1 | TP -2 | Notes |
 |--------|--------|-----------|-------|-----|-------|-------|-------|
-| RIVN | **ENTRY READY** | $14.24 | $15.00 | $14.04 | $15.76 | $16.52 | ✅ Pullback to $14.61 - VALID SETUP |
 | MSTR | WAIT | $116.40 | $188.26 | ~$115 | $260 | $332 | Bounced, waiting for FVG pullback |
 | ASTS | WAIT | $63.13 | $77 | ~$61 | $90.87 | $104.74 | Clean setup, waiting for pullback |
 | PLTR | SCAN | - | - | - | - | - | 37% range, show chart |
