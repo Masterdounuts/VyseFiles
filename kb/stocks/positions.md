@@ -15,7 +15,13 @@
 
 ---
 
-## Watchlist (SMC Candidates)
+## Long-Term Piggybank (Separate from SMC)
+
+| Symbol | Shares | Entry | Type | Thesis |
+|--------|--------|-------|------|--------|
+| QQQ | TBD | ~$706 | Piggybank | AI trend, Nasdaq-100, years hold |
+
+*Capital allocation: max 10% of total*
 
 | Symbol | Status | Liquidity | CHOCH | SL | TP -1 | TP -2 | Notes |
 |--------|--------|-----------|-------|-----|-------|-------|-------|
