@@ -153,6 +153,29 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 2. High volume on drop = institutions buying
 3. FVG created
 4. Price returns to FVG = ENTRY
+5. **Take profit +12% and exit** — don't ride their long position
+
+---
+
+### Volume + Price Action Strategy (Wyckoff Method)
+
+**The core question:** "Is volume decreasing, increasing, or spiking?"
+
+| Pattern | Meaning | Signal |
+|---------|---------|--------|
+| Big candle + Big volume | Healthy | ✅ Continue |
+| Small candle + Big volume | Absorption (seller absorbing buyers) | ❌ Price will fall |
+| Price up + Low volume | No supply (sellers absent) | ✅ Easy push |
+| Price up + Volume up | Uptrend | ✅ Bullish |
+| Price down + Volume down | Sellers weakening | ✅ Bottom forming |
+| Price up + Volume down | Weakness | ❌ Price about to fall |
+| Strong downtrend + decreasing volume | Selling exhausted | ✅ Bottom likely |
+
+**Application:**
+- Before any entry, ask: What is volume doing vs price?
+- If price up + volume down = weakness (don't enter)
+- If price down + volume down = bottom forming (look for bounce)
+- If price up + volume up = confirmed (OK to enter)
 
 ---
 
