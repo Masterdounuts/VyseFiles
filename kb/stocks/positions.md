@@ -19,9 +19,12 @@
 
 | Symbol | Shares | Entry | Type | Thesis |
 |--------|--------|-------|------|--------|
-| QQQ | TBD | ~$706 | Piggybank | AI trend, Nasdaq-100, years hold |
+| QQQ | DCA | ~$706 | Piggybank | AI trend, Nasdaq-100, years hold |
 
-*Capital allocation: max 10% of total*
+**DCA Rule:** 5% of all trade profits → QQQ piggybank
+- Profits from SMC trades go here
+- Fractional shares = any amount works
+- Set and forget
 
 | Symbol | Status | Liquidity | CHOCH | SL | TP -1 | TP -2 | Notes |
 |--------|--------|-----------|-------|-----|-------|-------|-------|
