@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// SMC Scanner v8 - Early bounce detection, broad universe
+// SMC Scanner v9 - Volume-First Detection
+// Rebuild May 8, 2026: Volume + Price Action as gatekeeper
 
 // BROAD UNIVERSE: Common US stocks (~200)
-// Mix of big tech, mid caps, small caps, sectors
 const universe = [
   // Tech
   'AAPL','MSFT','GOOGL','AMZN','META','NVDA','AMD','INTC','MU','AVGO','AMAT','LRCX','KLAC','TSM','QCOM','TXN','NXPI','MRVL','ON','MRAM','ARM','SNPS','CDNS','ANSS','KEYS','GLW','COHR','LITE','FLEX','IPG',
@@ -46,12 +46,84 @@ function passesFilters(sym) {
   return null;
 }
 
-console.log('=== SMC Scanner v8 ===\n');
+// VOLUME PATTERN CLASSIFICATION (Wyckoff Method)
+// Returns: { pattern: 'V1'-'V7', description: string, bullish: boolean }
+function classifyVolumePattern(prices, volumes) {
+  if (prices.length < 20 || volumes.length < 20) {
+    return { pattern: 'unknown', description: 'Insufficient data', bullish: false };
+  }
+  
+  // Use last 20 days for trend
+  const recentPrices = prices.slice(-20);
+  const recentVols = volumes.slice(-20);
+  
+  // Calculate trends (simple linear regression slope)
+  const priceTrend = calculateTrend(recentPrices);
+  const volumeTrend = calculateTrend(recentVols);
+  
+  // Recent vs average volume
+  const avgVol = recentVols.reduce((a,b) => a+b, 0) / 20;
+  const lastVol = recentVols[recentVols.length - 1];
+  const volRatio = lastVol / avgVol;
+  
+  // Classify based on price vs volume direction
+  if (priceTrend > 0 && volumeTrend > 0) {
+    // Price UP + Volume UP = Healthy Uptrend
+    if (volRatio > 1.8) {
+      return { pattern: 'V1', description: 'Strong uptrend (healthy)', bullish: true };
+    } else if (volRatio > 1.2) {
+      return { pattern: 'V1', description: 'Uptrend (confirmed)', bullish: true };
+    } else {
+      return { pattern: 'V1', description: 'Uptrend (low vol)', bullish: true };
+    }
+  } else if (priceTrend > 0 && volumeTrend < 0) {
+    // Price UP + Volume DOWN = Weakness
+    return { pattern: 'V2', description: 'Price up + vol down = WEAKNESS', bullish: false };
+  } else if (priceTrend < 0 && volumeTrend < 0) {
+    // Price DOWN + Volume DOWN = Bottom forming
+    if (volRatio < 0.7) {
+      return { pattern: 'V3', description: 'Bottom forming (selling exhausted)', bullish: true };
+    } else {
+      return { pattern: 'V3', description: 'Downtrend weakening', bullish: true };
+    }
+  } else if (priceTrend < 0 && volumeTrend > 0) {
+    // Price DOWN + Volume UP = Accumulation (institutions buying)
+    if (volRatio > 1.5) {
+      return { pattern: 'V4', description: 'ACCUMULATION (smart money buying)', bullish: true };
+    } else {
+      return { pattern: 'V4', description: 'Potential accumulation', bullish: true };
+    }
+  } else if (volumeTrend > 0.5 && Math.abs(priceTrend) < 0.1) {
+    // Volume spike with flat price = anomaly
+    return { pattern: 'V5', description: 'Volume spike (anomaly)', bullish: null };
+  } else if (priceTrend > 0 && volRatio > 2.0) {
+    // Price up + huge volume spike = possible absorption
+    return { pattern: 'V6', description: 'Absorption? (large vol spike)', bullish: false };
+  }
+  
+  return { pattern: 'V7', description: 'Mixed/Unclear', bullish: null };
+}
+
+// Simple trend calculation (slope of linear fit)
+function calculateTrend(values) {
+  const n = values.length;
+  const xSum = (n * (n - 1)) / 2;
+  const ySum = values.reduce((a, b) => a + b, 0);
+  const xySum = values.reduce((sum, y, x) => sum + x * y, 0);
+  const xxSum = (n * (n - 1) * (2 * n - 1)) / 6;
+  
+  const slope = (n * xySum - xSum * ySum) / (n * xxSum - xSum * xSum);
+  return slope; // Positive = up, negative = down
+}
+
+console.log('=== SMC Scanner v9 - Volume-First ===\n');
+console.log('Volume + Price Action = Profit\n');
 console.log('Scanning ' + universe.length + ' stocks...\n');
 
 async function scan() {
   const results = [];
-  const filtered = { ADR: 0, LEVERAGED: 0, Meme: 0, expensive: 0, noSetup: 0 };
+  const filtered = { ADR: 0, LEVERAGED: 0, Meme: 0, noSetup: 0 };
+  const patternCounts = {};
   
   for (const sym of universe) {
     const filterReason = passesFilters(sym);
@@ -70,73 +142,71 @@ async function scan() {
       const volume = r.meta.regularMarketVolume;
       const q = r.indicators.quote[0];
       
+      const closes = q.close.filter(x => x !== null);
       const lows = q.low.filter(x => x !== null);
       const highs = q.high.filter(x => x !== null);
       const volumes = q.volume.filter(x => x);
       
-      // 1-month lookback (20 trading days)
-      const recentLows = lows.slice(-20);
-      const recentHighs = highs.slice(-20);
-      const recentVols = volumes.slice(-20);
-      const swingLow = Math.min(...recentLows);
-      const swingHigh = Math.max(...recentHighs);
+      if (closes.length < 20) continue;
       
-      // ALSO calculate TRUE 52W (1 year) for bounce check
+      // STEP 1: Volume Pattern Classification (GATEKEEPER)
+      const volPattern = classifyVolumePattern(closes, volumes);
+      
+      // Track pattern counts
+      patternCounts[volPattern.pattern] = (patternCounts[volPattern.pattern] || 0) + 1;
+      
+      // SKIP non-bullish patterns
+      if (!volPattern.bullish) continue;
+      
+      // STEP 2: Calculate bounce from 52W low
       const yearLow = Math.min(...lows);
       const yearHigh = Math.max(...highs);
       const trueBouncePct = ((price - yearLow) / yearLow) * 100;
       
-      // USE TRUE 52W BOUNCE for filtering (not 20-day swing)
-      const avgVolume = recentVols.reduce((a,b) => a+b, 0) / 20;
-      
-      const rangePct = (price - swingLow) / (swingHigh - swingLow);
-      const volRatio = volume / avgVolume;
-      const bouncePct = ((price - swingLow) / swingLow) * 100;
-      
-      // EARLY STAGE FILTERS
-      // NO PRICE LIMIT - fractional shares available on Robinhood
-      // if (price > 40) { filtered.expensive++; continue; }
-      
-      // 2. EARLY STAGE: 2-15% bounce from TRUE 52W low (not recent swing)
+      // STEP 3: Early stage filter (2-15% bounce)
       if (trueBouncePct < 2 || trueBouncePct > 15) continue;
       
-      // 3. In lower half of range (not extended)
+      // STEP 4: In lower half of range
+      const swingLow = Math.min(...lows.slice(-20));
+      const swingHigh = Math.max(...highs.slice(-20));
+      const rangePct = (price - swingLow) / (swingHigh - swingLow);
       if (rangePct > 0.55) continue;
-      
-      // 4. Volume confirming the move
-      if (volRatio < 0.6) continue;
       
       results.push({
         sym,
         price: price.toFixed(2),
-        rangePct: (rangePct * 100).toFixed(0) + '%',
         bounce: trueBouncePct.toFixed(1) + '%',
-        vol: volRatio.toFixed(1) + 'x'
+        pattern: volPattern.pattern,
+        patternDesc: volPattern.description
       });
     } catch(e) {
       filtered.noSetup++;
     }
   }
   
-  // Sort by EARLIEST stage (closest to 3% bounce)
+  // Sort by earliest stage (closest to 3% bounce)
   results.sort((a, b) => parseFloat(a.bounce) - parseFloat(b.bounce));
   
-  console.log('--- EARLY STAGE CANDIDATES (3-12% bounce + volume) ---');
+  console.log('--- VOLUME-FIRST CANDIDATES ---\n');
   if (results.length === 0) {
-    console.log('(none found)');
+    console.log('(none found - try scanning with relaxed bounce limits)\n');
   } else {
-    console.log('Found ' + results.length + ' candidates:\n');
+    console.log('Found ' + results.length + ' bullish setups:\n');
     for (const r of results.slice(0,8)) {
-      console.log(r.sym + ': $' + r.price + ' | range ' + r.rangePct + ' | bounce +' + r.bounce + ' | vol ' + r.vol);
+      console.log(r.sym + ': $' + r.price + ' | bounce +' + r.bounce + ' | ' + r.pattern + ' - ' + r.patternDesc);
     }
   }
   
+  console.log('\n--- Pattern Distribution ---');
+  for (const [pat, count] of Object.entries(patternCounts)) {
+    console.log(pat + ': ' + count);
+  }
+  
   console.log('\n--- Filtered: ' + Object.values(filtered).reduce((a,b) => a+b, 0) + ' stocks ---');
-  console.log('Expensive (>30): ' + filtered.expensive);
   console.log('ADR: ' + filtered.ADR + ' | Leveraged: ' + filtered.LEVERAGED + ' | Meme: ' + filtered.Meme);
   
   if (results.length > 0) {
-    console.log('\n💡 Show chart: ' + results[0].sym);
+    console.log('\n💡 Best setup: ' + results[0].sym + ' (' + results[0].pattern + ')');
   }
 }
 
