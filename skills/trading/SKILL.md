@@ -138,6 +138,17 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+### TradingLab Volume Checklist
+
+🔳 **Volume trending up or down?** (volume up = strong trend) (volume down = weak trend)
+🔳 **Candle big or small? Volume big or small?** (small candle + lots of volume = potential reversal)
+🔳 **Are there any volume spikes at key levels?**
+🔳 **Is there divergence?** (If there are lower highs on the volume, a reversal is likely to happen)
+
+**Apply this checklist to every entry before trading.**
+
+---
+
 ## PART 5: Position Sizing & Risk
 
 ### Rules
