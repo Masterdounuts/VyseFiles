@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Jacques - Resume</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Georgia, serif; 
+            line-height: 1.6; 
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        h2 { font-size: 20px; border-bottom: 2px solid #333; padding-bottom: 5px; margin: 25px 0 15px; }
+        h3 { font-size: 16px; font-weight: bold; }
+        .contact { margin-bottom: 20px; }
+        .contact p { margin: 3px 0; font-size: 14px; }
+        .summary { margin-bottom: 20px; font-size: 15px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px; }
+        .skill-tag { 
+            background: #f0f0f0; 
+            padding: 5px 12px; 
+            border-radius: 4px; 
+            font-size: 13px;
+        }
+        .experience { margin-bottom: 20px; }
+        .job { margin-bottom: 15px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .job-title { font-weight: bold; }
+        .job-date { font-style: italic; font-size: 14px; }
+        .job-company { font-size: 14px; color: #666; margin-bottom: 8px; }
+        ul { margin-left: 20px; font-size: 14px; }
+        li { margin-bottom: 4px; }
+        .section { margin-bottom: 25px; }
+        .portfolio-link { 
+            display: inline-block;
+            background: #333;
+            color: white !important;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>David Jacques</h1>
+    <div class="contact">
+        <p>(442) 270-9989 | Jacquesdavid59@gmail.com | Astoria, OR</p>
+        <p><a href="https://jacquesdavid59.wixsite.com/website">Portfolio</a></p>
+    </div>
+
+    <h2>Summary</h2>
+    <p class="summary">
+        Driven game designer with a passion for creating meaningful player experiences. Inspired by "Skies of Arcadia" — a game that taught me at age 8 that actions don't define a person's worth. My goal is to create games that impact players the same way.
+        <br><br>
+        Military background (U.S. Army Infantry, 2013-2016) built discipline and teamwork skills. Full Sail University graduate (2019-2021, BS Game Design). Currently working on a full Skies of Arcadia fan remake in Unreal Engine 5.
+    </p>
+
+    <h2>Skills</h2>
+    <div class="section">
+        <h3>Core</h3>
+        <div class="skills">
+            <span class="skill-tag">Game Design</span>
+            <span class="skill-tag">Level Design</span>
+            <span class="skill-tag">Gameplay Mechanics</span>
+            <span class="skill-tag">UX/UI Design</span>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Technical</h3>
+        <div class="skills">
+            <span class="skill-tag">Unreal Engine 5</span>
+            <span class="skill-tag">Blueprint Programming</span>
+            <span class="skill-tag">Nanite & Lumen</span>
+            <span class="skill-tag">Asset Integration</span>
+            <span class="skill-tag">Blender</span>
+            <span class="skill-tag">Maya</span>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Tools</h3>
+        <div class="skills">
+            <span class="skill-tag">Perforce</span>
+            <span class="skill-tag">Trello</span>
+            <span class="skill-tag">OpenClaw</span>
+        </div>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="experience">
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Independent Development - Skies of Arcadia Fan Remake</span>
+                <span class="job-date">2021 - Present</span>
+            </div>
+            <p class="job-company">Building full game in Unreal Engine 5</p>
+            <ul>
+                <li>Modeled and textured environment assets and buildings</li>
+                <li>Implemented Nanite and Lumen for modern graphics</li>
+                <li>Created cinematic cutscenes</li>
+                <li>Full asset integration via Quixel Bridge</li>
+            </ul>
+        </div>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Game Designer - Spaceballs The Game</span>
+                <span class="job-date">April 2021 - July 2021</span>
+            </div>
+            <p class="job-company">SinDevSeven Team | Capstone project with 7-person team</p>
+            <ul>
+                <li>Scripted and implemented gameplay mechanics and transitions</li>
+                <li>Designed gameplay loops</li>
+                <li>Created UX/UI for menus, buttons, and player instructions</li>
+                <li>Communicated with team to deliver playable demo</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Education</h2>
+    <div class="section">
+        <p><strong>Full Sail University</strong> | 2019 - 2021</p>
+        <p>Bachelor of Science in Game Design</p>
+    </div>
+
+    <h2>Military</h2>
+    <div class="section">
+        <p><strong>U.S. Army Infantry</strong> | 2013 - 2016</p>
+        <p>Discipline, leadership, and teamwork fundamentals</p>
+    </div>
+
+    <h2>Portfolio</h2>
+    <p><a href="https://jacquesdavid59.wixsite.com/website" class="portfolio-link">View Portfolio</a></p>
+</body>
+</html>
