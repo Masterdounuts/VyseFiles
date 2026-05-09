@@ -300,18 +300,39 @@
             color: var(--text-muted);
         }
         
-        /* Gallery within project */
+        /* Gallery within project - horizontal scroll */
         .project-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            display: flex;
             gap: 16px;
+            overflow-x: auto;
+            padding: 8px 4px 16px;
+            scroll-behavior: smooth;
+        }
+        
+        .project-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .project-gallery::-webkit-scrollbar-track {
+            background: #1a1a24;
+            border-radius: 4px;
+        }
+        
+        .project-gallery::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        
+        .project-gallery::-webkit-scrollbar-thumb:hover {
+            background: #444;
         }
         
         .project-gallery img {
-            width: 100%;
-            height: 150px;
+            width: 300px;
+            height: 180px;
             object-fit: cover;
             border-radius: 8px;
+            flex-shrink: 0;
             cursor: pointer;
             transition: transform 0.2s, opacity 0.2s;
         }
@@ -749,46 +770,6 @@
                     <div class="project-gallery">
                         <img src="kb/portfolio/wix-spaceballs-1.jpg" alt="Spaceballs Title" onclick="openLightbox(this.src)">
                         <img src="kb/portfolio/wix-spaceballs-2.jpg" alt="Level Map" onclick="openLightbox(this.src)">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="weapons" style="background: var(--bg-alt);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Weapons I've Built</h2>
-                <p>3D modeling and texturing in Blender, implemented in UE5</p>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-video">
-                        <iframe src="https://www.youtube.com/embed/rjWDOO73AiI" title="Vyse's Cutlass" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Blender</span>
-                            <span class="tag">Unreal Engine 5</span>
-                        </div>
-                        <h3>Vyse's Cutlass</h3>
-                        <p>Second weapon modeled in Blender. Learned UV mapping, material editing, and Unreal Sequencer while bringing assets into UE5.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-video">
-                        <iframe src="https://www.youtube.com/embed/_xZRi81wKkI" title="Aika's Boomerang" allowfullscreen></iframe>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Blender</span>
-                            <span class="tag">Unreal Engine 5</span>
-                        </div>
-                        <h3>Aika's Boomerang</h3>
-                        <p>First fully modeled weapon — modeled, textured in Blender, then crystalized and set in level in Unreal. Very proud of this one.</p>
                     </div>
                 </div>
             </div>
