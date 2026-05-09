@@ -80,10 +80,18 @@
             margin: 0 auto 30px;
         }
         
+        .quote {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        
         .cta-buttons {
             display: flex;
             gap: 15px;
             justify-content: center;
+            margin-top: 30px;
         }
         
         .btn {
@@ -137,6 +145,7 @@
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid #222;
+            margin-bottom: 40px;
         }
         
         .project-video {
@@ -181,6 +190,41 @@
             color: var(--accent);
             text-decoration: none;
             margin-right: 20px;
+        }
+        
+        /* WEAPON CARD */
+        .weapon-card {
+            background: var(--bg-alt);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #222;
+            margin-bottom: 30px;
+        }
+        
+        .weapon-video {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+        }
+        
+        .weapon-video iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .weapon-info {
+            padding: 20px;
+        }
+        
+        .weapon-info h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+        
+        .weapon-info p {
+            color: var(--text-muted);
+            font-size: 14px;
         }
         
         /* PROJECTS GRID */
@@ -341,6 +385,7 @@
         <div class="container">
             <h1>Games That <span>Change Lives</span></h1>
             <p>I'm David. I build games inspired by the ones that shaped me — like Skies of Arcadia taught me at age 8 that a person's actions don't define their worth.</p>
+            <p class="quote">"Impossible is just a word to let people feel good about themselves when they quit." — Vyse</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">See My Work</a>
                 <a href="#resume" class="btn btn-secondary">Get My Resume</a>
@@ -357,30 +402,77 @@
 
     <section id="projects" class="featured">
         <div class="container">
-            <h2 class="section-title">Featured Project</h2>
+            <h2 class="section-title">Skies of Arcadia Fan Remake</h2>
             
+            <!-- Main Project -->
             <div class="project-card">
                 <div class="project-video">
                     <iframe src="https://www.youtube.com/embed/L8VTtYK3RN0" title="Skies of Arcadia Fan Remake" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
                     <span class="tag">Unreal Engine 5</span>
+                    <span class="tag">Nanite</span>
+                    <span class="tag">Lumen</span>
                     <h3>Skies of Arcadia Fan Remake</h3>
-                    <p>Building a full-scale remake of the classic game that inspired my journey into game design. Using Nanite, Lumen, and modern UE5 tech to bring this adventure into the modern age.</p>
+                    <p>My first project in which I try to bring SOA from scratch by myself into the modern age with new textures, models and technology such as Nanite and Lumen in Unreal Engine 5. SOA is a big influence in my pursuit into the gaming industry due to how it affected me when I was young. For a game to convince an adolescence that there is good in humanity and to treat everyone with respect has to be one heck of a game. This is going to be an ongoing project that I hope brings more attention to a game I found enlightening and adventurous.</p>
                     <div class="project-links">
-                        <a href="https://jacquesdavid59.wixsite.com/website/soa-project-videos-copy" target="_blank">View Project →</a>
+                        <a href="https://www.youtube.com/watch?v=L8VTtYK3RN0" target="_blank">Watch Trailer →</a>
+                        <a href="https://jacquesdavid59.wixsite.com/website/soa-project-videos-copy" target="_blank">View Project Page →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Weapons Section -->
+            <h3 class="section-title" style="font-size: 24px; margin-top: 40px;">Weapons I've Built</h3>
+            
+            <div class="weapon-card">
+                <div class="weapon-video">
+                    <iframe src="https://www.youtube.com/embed/rjWDOO73AiI" title="Vyse's Cutlass" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="weapon-info">
+                    <h4>Vyse's Cutlass</h4>
+                    <p>The second weapon I have modeled in Blender but this time around got a better understanding of the different tools in blender such as UV mapping and material editing as well as bringing those assets to Unreal to Crystalize and Film which also boost my knowledge about Unreal Sequencer, so a very nice double dipping into different skills.</p>
+                </div>
+            </div>
+            
+            <div class="weapon-card">
+                <div class="weapon-video">
+                    <iframe src="https://www.youtube.com/embed/_xZRi81wKkI" title="Aika's Boomerang" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="weapon-info">
+                    <h4>Aika's Boomerang</h4>
+                    <p>My first fully modeled weapon that I modeled/textured in Blender then moved over to Unreal to crystalize and set in the level. Later on will be implemented into battle and cutscenes. I know there are things that can be improved upon but I am very proud of this weapon.</p>
+                </div>
+            </div>
+            
+            <!-- Spaceballs -->
+            <h2 class="section-title" style="margin-top: 60px;">Spaceballs The Game</h2>
+            
+            <div class="project-card">
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/4b6aOTjbP3g" title="Spaceballs Trailer" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <span class="tag">Capstone Project</span>
+                    <span class="tag">7-Person Team</span>
+                    <h3>Spaceballs The Game</h3>
+                    <p>An attempt by myself and fellow students on my team to bring Spaceballs The Game to the public. My level that I brought to the game was Spaceball One which was a rescue mission style level to save the princess.</p>
+                    <p style="margin-top: 15px;">This level has breakable walls that could be broken with either a turret or the player's Schwartz push ability. Turrets are also able to dispatch enemies which some will drop keys to help the player reach the main goal, rescue the princess. After rescuing the princess the player must escort her back to where the player started.</p>
+                    <div class="project-links">
+                        <a href="https://www.youtube.com/watch?v=4b6aOTjbP3g" target="_blank">Watch Trailer →</a>
+                        <a href="https://www.youtube.com/watch?v=qdXHTSWpYNw" target="_blank">Post Mortem →</a>
                     </div>
                 </div>
             </div>
             
             <div class="projects-grid">
                 <div class="project-card-small">
-                    <h4>Spaceballs The Game</h4>
-                    <p>Capstone project with 7-person team. Designed gameplay mechanics, created levels, built UI. Rescue mission level with breakable walls, turrets, and escort mechanics.</p>
-                </div>
-                <div class="project-card-small">
                     <h4>Vyse's Cutlass</h4>
                     <p>First weapon modeled in Blender, textured, then brought into UE5. Learned UV mapping, materials, and Unreal Sequencer along the way.</p>
+                </div>
+                <div class="project-card-small">
+                    <h4>Spaceballs Level Design</h4>
+                    <p>Designed gameplay mechanics, created levels, built UI. Rescue mission level with breakable walls, turrets, and escort mechanics.</p>
                 </div>
             </div>
         </div>
