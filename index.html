@@ -79,12 +79,12 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(to bottom, rgba(10,10,15,0.5), rgba(10,10,15,0.98)), 
+            background: linear-gradient(to bottom, rgba(10,10,15,0.15), rgba(10,10,15,0.6)), 
                         url('kb/portfolio/soa-title-screen.jpg');
             background-size: contain;
-            background-position: center top;
+            background-position: center 30%;
             background-repeat: no-repeat;
-            padding: 120px 24px 80px;
+            padding: 80px 24px;
         }
         
         .hero-content {
@@ -165,11 +165,153 @@
             margin: 0 auto;
         }
         
-        /* PROJECT CARDS */
-        .projects-grid {
+        /* PROJECT SECTIONS - Full project in one place */
+        .project-section {
+            margin-bottom: 80px;
+        }
+        
+        .project-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .project-section h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .project-section .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+        
+        .project-main {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #252530;
+            margin-bottom: 24px;
+        }
+        
+        .project-video {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+        }
+        
+        .project-video iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .project-details {
+            padding: 28px;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: var(--accent-dim);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .project-details h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        
+        .project-details p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .project-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .project-links a:hover { text-decoration: underline; }
+        
+        /* SUBSECTIONS - Weapons, Screenshots */
+        .project-subsection {
+            margin-top: 24px;
+        }
+        
+        .project-subsection h4 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+        
+        .subsection-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .subsection-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #252530;
+        }
+        
+        .subsection-card .video-wrap {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+        }
+        
+        .subsection-card .video-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .subsection-card .desc {
+            padding: 16px;
+        }
+        
+        .subsection-card .desc h5 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        
+        .subsection-card .desc p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        /* Gallery within project */
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        
+        .project-gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
         }
         
         .project-card {
@@ -448,7 +590,6 @@
                 <a href="#" class="logo">David <span>Jacques</span></a>
                 <div class="nav-links">
                     <a href="#projects">Projects</a>
-                    <a href="#gallery">Gallery</a>
                     <a href="#about">About</a>
                     <a href="#resume">Resume</a>
                     <a href="#contact">Contact</a>
@@ -470,86 +611,110 @@
         </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS - All-in-one project sections -->
     <section id="projects">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p>Games I've built and levels I've designed</p>
+                <h2>My Projects</h2>
+                <p>Everything about each project in one place</p>
             </div>
             
-            <div class="projects-grid">
-                <!-- SOA Fan Remake -->
-                <div class="project-card">
+            <!-- SOA FAN REMAKE - COMPLETE -->
+            <div class="project-section">
+                <h2>Skies of Arcadia Fan Remake</h2>
+                <p class="subtitle">Bringing a classic into the modern era</p>
+                
+                <!-- Main Video -->
+                <div class="project-main">
                     <div class="project-video">
                         <iframe src="https://www.youtube.com/embed/dxSg6hVsPHE" title="SOA Fan Remake" allowfullscreen></iframe>
                     </div>
-                    <div class="project-info">
+                    <div class="project-details">
                         <div class="project-tags">
                             <span class="tag">Unreal Engine 5</span>
                             <span class="tag">Nanite</span>
                             <span class="tag">Lumen</span>
+                            <span class="tag">Solo Project</span>
                         </div>
-                        <h3>Skies of Arcadia Fan Remake</h3>
-                        <p>Bringing SOA into the modern age with new textures, models, and technology like Nanite and Lumen. This ongoing project showcases my growth as a solo developer.</p>
+                        <p>My first project attempting to bring SOA from scratch into the modern age with new textures, models and technology such as Nanite and Lumen in Unreal Engine 5. SOA is a big influence in my pursuit into the gaming industry due to how it affected me when I was young.</p>
                         <div class="project-links">
                             <a href="https://www.youtube.com/watch?v=dxSg6hVsPHE" target="_blank">Watch Demo →</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Spaceballs -->
-                <div class="project-card">
+                <!-- Weapons Subsection -->
+                <div class="project-subsection">
+                    <h4>Weapons I've Built</h4>
+                    <div class="subsection-grid">
+                        <div class="subsection-card">
+                            <div class="video-wrap">
+                                <iframe src="https://www.youtube.com/embed/rjWDOO73AiI" allowfullscreen></iframe>
+                            </div>
+                            <div class="desc">
+                                <h5>Vyse's Cutlass</h5>
+                                <p>Second weapon modeled in Blender. Learned UV mapping and Unreal Sequencer.</p>
+                            </div>
+                        </div>
+                        <div class="subsection-card">
+                            <div class="video-wrap">
+                                <iframe src="https://www.youtube.com/embed/_xZRi81wKkI" allowfullscreen></iframe>
+                            </div>
+                            <div class="desc">
+                                <h5>Aika's Boomerang</h5>
+                                <p>First fully modeled weapon. Proud of this one.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screenshots -->
+                <div class="project-subsection">
+                    <h4>Screenshots</h4>
+                    <div class="project-gallery">
+                        <img src="kb/portfolio/wix-soa-1.jpg" alt="Pirate Isle">
+                        <img src="kb/portfolio/wix-soa-2.jpg" alt="Aika">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SPACEBALLS - COMPLETE -->
+            <div class="project-section">
+                <h2>Spaceballs The Game</h2>
+                <p class="subtitle">Capstone project with a 7-person team</p>
+                
+                <!-- Main Video -->
+                <div class="project-main">
                     <div class="project-video">
                         <iframe src="https://www.youtube.com/embed/4b6aOTjbP3g" title="Spaceballs Trailer" allowfullscreen></iframe>
                     </div>
-                    <div class="project-info">
+                    <div class="project-details">
                         <div class="project-tags">
                             <span class="tag">Capstone Project</span>
                             <span class="tag">7-Person Team</span>
+                            <span class="tag">Level Design</span>
                         </div>
-                        <h3>Spaceballs The Game</h3>
-                        <p>Led level design for "Spaceball One" — a rescue mission to save the princess. Features breakable walls, turrets, escort mechanics, and key-based progression.</p>
+                        <p>An attempt by myself and fellow students to bring Spaceballs The Game to the public. I led level design for "Spaceball One" — a rescue mission to save the princess with breakable walls, turrets, escort mechanics, and key-based progression.</p>
                         <div class="project-links">
                             <a href="https://www.youtube.com/watch?v=4b6aOTjbP3g" target="_blank">Watch Trailer →</a>
                             <a href="https://www.youtube.com/watch?v=qdXHTSWpYNw" target="_blank">Post Mortem →</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2>Project Gallery</h2>
-                <p>Screenshots from my projects</p>
-            </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="kb/portfolio/wix-spaceballs-1.jpg" alt="Spaceballs Title">
-                    <div class="caption">Spaceballs Title Screen</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="kb/portfolio/wix-spaceballs-2.jpg" alt="Level Map">
-                    <div class="caption">Spaceball One Level Design</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="kb/portfolio/wix-soa-1.jpg" alt="Pirate Isle">
-                    <div class="caption">Pirate Isle - Cave Entrance</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="kb/portfolio/wix-soa-2.jpg" alt="Aika">
-                    <div class="caption">Aika's Boomerang</div>
+                
+                <!-- Screenshots -->
+                <div class="project-subsection">
+                    <h4>Level Design</h4>
+                    <div class="project-gallery">
+                        <img src="kb/portfolio/wix-spaceballs-1.jpg" alt="Spaceballs Title">
+                        <img src="kb/portfolio/wix-spaceballs-2.jpg" alt="Level Map">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- WEAPONS -->
+    <!-- ABOUT -->
     <section id="weapons" style="background: var(--bg-alt);">
         <div class="container">
             <div class="section-header">
