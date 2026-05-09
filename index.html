@@ -506,6 +506,37 @@
             text-align: center;
         }
         
+        .team-photos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .team-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            border: 1px solid #252530;
+            text-align: center;
+        }
+        
+        .team-card img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .team-card h4 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+        
+        .team-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
         .about-card .avatar {
             width: 100px;
             height: 100px;
@@ -826,11 +857,19 @@
                     </div>
                 </div>
                 
-                <div class="about-card">
-                    <div class="avatar">🐕</div>
-                    <h4>Navi Jacques</h4>
-                    <p>Mascot & Inspiration</p>
-                    <p style="margin-top: 12px; font-size: 12px; color: #666;">Named after Link's fairy from Zelda</p>
+                <!-- Team Photos -->
+                <div class="team-photos">
+                    <div class="team-card">
+                        <img src="kb/portfolio/david-me.jpg" alt="David & Navi" onclick="openLightbox(this.src)" style="cursor: pointer; width: 100%; border-radius: 12px; margin-bottom: 12px;">
+                        <h4>David Jacques</h4>
+                        <p>Game Designer</p>
+                    </div>
+                    <div class="team-card">
+                        <img src="kb/portfolio/navi-dog.jpg" alt="Navi Jacques" onclick="openLightbox(this.src)" style="cursor: pointer; width: 100%; border-radius: 12px; margin-bottom: 12px;">
+                        <h4>Navi Jacques</h4>
+                        <p>Mascot & Inspiration</p>
+                        <p style="margin-top: 8px; font-size: 12px; color: #666;">Named after Link's fairy from Zelda</p>
+                    </div>
                 </div>
             </div>
         </div>
