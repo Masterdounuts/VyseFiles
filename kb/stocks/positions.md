@@ -11,6 +11,7 @@
 | NVDA | 0.05 | $198.31 | TBD | TBD | TBD | TBD | TBD | ~$216 | David's pick |
 | NIO | 1 | $5.94 | $5.87 | $6.02 | $5.47 | $6.15 | $6.30 | $5.88 | ADR (exiting) |
 | **GILD** | TBD | ~$130 | $127 | $137 | $127 | $145 | $155 | $131 | **Accumulation setup** |
+| **WLFI** | 14.5 | $0.06851 | - | - | - | - | - | - | Crypto - Limit buy filled May 9 |
 | WGS | **SOLD** | $35.94 | - | - | - | - | - | - | +$38.36 (+6.7%) |
 | DOGE | ~Free | - | - | - | -5% | +15% | - | $0.11 |
 
@@ -41,8 +42,8 @@
 | Metric | Amount |
 |--------|--------|
 | Starting Capital | $51.32 |
-| **Buying Power** | **~$38.70** |
-| **Invested** | **~$16.65** |
+| **Buying Power** | **~$37.70** |
+| **Invested** | **~$17.65** |
 | **Total** | **~$55.35** |
 
 ---
@@ -55,6 +56,7 @@
 | 2026-05-05 | BUY | WGS | 1 | $35.94 | - | David's independent research - bull case |
 | 2026-05-07 | SELL | WGS | 1 | $38.36 | +$2.42 (+6.7%) | Exit at target |
 | 2026-05-07 | BUY | NIO | 1 | $5.94 | - | SMC: Liquidity→Sweep→CHOCH→FVG |
+| 2026-05-09 | BUY | WLFI | 14.5 | $0.06851 | - | Crypto limit buy filled May 9 |
 
 ---
 
