@@ -14,6 +14,14 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 
 ## Experience
 
+### Independent Game Developer
+**2018 - 2024**
+
+- Self-directed work and time management
+- Problem-solving skills
+- Computer proficiency
+- Worked on personal projects while seeking employment
+
 ### Domino's Delivery Driver
 **2024 - 2026**
 
@@ -21,8 +29,6 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Handled cash and credit card transactions
 - Maintained excellent customer service
 - Managed delivery schedule and routes
-- Ensured food quality during transport
-- Communicated with customers over the phone and in person
 
 ### Boyd and Associates Security
 **Santa Ana, CA**
@@ -38,12 +44,22 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Phone communications
 - Computer skills
 
-### L And R Jewelry Craftier
-**Fullerton, CA**
+---
 
-- Tool maintenance
-- Stocking materials
-- Workshop organization
+## Education
+
+### Full Sail University
+**2016 - 2018**
+Bachelor of Science in Computer Science — Game Design
+
+### Gilbert High School
+**Anaheim, CA — Diploma, 2012**
+
+### AKI Security Training Center
+**Huntington Beach, CA — Guard Card Certification, 2012**
+
+### U.S. Army Infantry School
+**Fort Benning, GA — Infantry Certificate, 2013**
 
 ---
 
@@ -67,19 +83,7 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Team player
 - Stress management
 - Strong work ethic
-
----
-
-## Education
-
-### Gilbert High School
-**Anaheim, CA — Diploma, 2012**
-
-### AKI Security Training Center
-**Huntington Beach, CA — Guard Card Certification, 2012**
-
-### U.S. Army Infantry School
-**Fort Benning, GA — Infantry Certificate, 2013**
+- Computer proficient
 
 ---
 
