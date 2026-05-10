@@ -14,13 +14,21 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 
 ## Experience
 
+### Boyd and Associates Security Guard
+**2011 - 2013**
+
+- Conflict resolution
+- Face-to-face communication
+- Maintaining security and safety
+- Monitoring and patrolling premises
+
 ### U.S. Army Infantry
 **2013 - 2016**
 
 - Discipline and accountability
 - Teamwork and leadership
 - Stress management under pressure
-- Followed orders and completed missions
+- Completed missions
 
 ### Independent Game Developer
 **2018 - 2024**
@@ -28,7 +36,6 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Self-directed work and time management
 - Problem-solving skills
 - Computer proficiency
-- Worked on personal projects while seeking employment
 
 ### Domino's Delivery Driver
 **2024 - 2026**
@@ -37,12 +44,6 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Handled cash and credit card transactions
 - Maintained excellent customer service
 - Managed delivery schedule and routes
-
-### Boyd and Associates Security
-**Santa Ana, CA**
-
-- Conflict resolution
-- Face-to-face communication
 
 ---
 
