@@ -29,7 +29,7 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Workshop organization
 
 ### Boyd and Associates Security Guard
-**2011 - 2013**
+**2012 - 2013**
 
 - Conflict resolution
 - Face-to-face communication
