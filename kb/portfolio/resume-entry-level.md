@@ -8,7 +8,7 @@
 
 ## Objective
 
-Reliable and motivated individual seeking entry-level employment. Ready to learn, work hard, and be a dependable team member.
+Reliable and motivated individual seeking gas station attendant position. Ready to learn, work hard, and provide excellent customer service.
 
 ---
 
@@ -21,7 +21,7 @@ Reliable and motivated individual seeking entry-level employment. Ready to learn
 - Handled cash and credit card transactions
 - Maintained excellent customer service
 - Managed delivery schedule and routes
-- Ensured food quality and temperature during transport
+- Ensured food quality during transport
 - Communicated with customers over the phone and in person
 
 ### Boyd and Associates Security
@@ -47,6 +47,29 @@ Reliable and motivated individual seeking entry-level employment. Ready to learn
 
 ---
 
+## Skills
+
+**Customer Service**
+- Face-to-face communication
+- Phone communications
+- Conflict resolution
+- Building rapport with customers
+
+**Operations**
+- Cash handling & transactions
+- Inventory stocking
+- Organization
+- Time management
+- Cleaning & maintenance
+
+**General**
+- Reliable & punctual
+- Team player
+- Stress management
+- Strong work ethic
+
+---
+
 ## Education
 
 ### Gilbert High School
@@ -57,25 +80,6 @@ Reliable and motivated individual seeking entry-level employment. Ready to learn
 
 ### U.S. Army Infantry School
 **Fort Benning, GA — Infantry Certificate, 2013**
-
----
-
-## Skills
-
-- Customer service
-- Delivery & logistics
-- Cash handling
-- Time management
-- Navigation
-- Phone & face-to-face communication
-- Conflict resolution
-- Computer skills
-- Tool maintenance
-- Organization & stocking
-- Supervision & leadership
-- Stress management
-- Team player
-- Reliable & punctual
 
 ---
 
