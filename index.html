@@ -261,6 +261,24 @@
             color: var(--text-muted);
         }
         
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 16px;
+        }
+        
+        .comparison-column h5 {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        
         .subsection-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -735,46 +753,53 @@
                     </div>
                 </div>
                 
-                <!-- Weapons Subsection - Each with own gallery -->
+                <!-- CUTLASS - Video + Gallery -->
                 <div class="project-subsection">
-                    <h4>Weapons I've Built</h4>
+                    <h4>Vyse's Cutlass</h4>
+                    <div class="video-wrap" style="max-width: 640px; margin-bottom: 16px;">
+                        <iframe src="https://www.youtube.com/embed/rjWDOO73AiI" allowfullscreen></iframe>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 16px;">Second weapon modeled in Blender. Learned UV mapping and Unreal Sequencer.</p>
                     
-                    <!-- CUTLASS -->
-                    <div class="weapon-block">
-                        <div class="video-wrap" style="max-width: 640px; margin-bottom: 16px;">
-                            <iframe src="https://www.youtube.com/embed/rjWDOO73AiI" allowfullscreen></iframe>
-                        </div>
-                        <h5 style="margin-bottom: 12px;">Vyse's Cutlass (Remake)</h5>
-                        <p style="color: var(--text-muted); margin-bottom: 12px;">Second weapon modeled in Blender. Learned UV mapping and Unreal Sequencer.</p>
+                    <h5 style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Before (Original Game)</h5>
+                    <div class="project-gallery">
+                        <img src="kb/portfolio/wix-soa-2.jpg" alt="Cutlass Original" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-soa-1.jpg" alt="Pirate Isle" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/soa-title-screen.jpg" alt="Title Screen" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-soa-3.jpg" alt="Aika Scythe" onclick="openLightbox(this.src)">
                     </div>
                     
-                    <!-- BOOMERANG -->
-                    <div class="weapon-block" style="margin-top: 32px;">
-                        <div class="video-wrap" style="max-width: 640px; margin-bottom: 16px;">
-                            <iframe src="https://www.youtube.com/embed/_xZRi81wKkI" allowfullscreen></iframe>
-                        </div>
-                        <h5 style="margin-bottom: 12px;">Aika's Boomerang (Remake)</h5>
-                        <p style="color: var(--text-muted); margin-bottom: 12px;">First fully modeled weapon. Proud of this one.</p>
+                    <h5 style="font-size: 12px; color: var(--accent); margin-top: 16px; margin-bottom: 8px;">After (My Remake)</h5>
+                    <div class="project-gallery">
+                        <img src="kb/portfolio/1499ac_1bd614e1f3d94bf4a89d55a9dd1df843.jpg" alt="Cutlass Remake 1" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_46d36a89eed949798ed8916de0e6d835.jpg" alt="Cutlass Remake 2" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_478ca54295c64809b8a7a1051c293425.jpg" alt="Cutlass Remake 3" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_48d8a16bc58f4d5f82513e810db01266.jpg" alt="Cutlass Remake 4" onclick="openLightbox(this.src)">
                     </div>
                 </div>
                 
-                <!-- BEFORE vs AFTER -->
-                <div class="project-subsection">
-                    <h4>Before (Original Dreamcast)</h4>
+                <!-- BOOMERANG - Video + Gallery -->
+                <div class="project-subsection" style="margin-top: 40px;">
+                    <h4>Aika's Boomerang</h4>
+                    <div class="video-wrap" style="max-width: 640px; margin-bottom: 16px;">
+                        <iframe src="https://www.youtube.com/embed/_xZRi81wKkI" allowfullscreen></iframe>
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 16px;">First fully modeled weapon. Proud of this one.</p>
+                    
+                    <h5 style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Before (Original Game)</h5>
                     <div class="project-gallery">
-                        <img src="kb/portfolio/wix-soa-1.jpg" alt="Pirate Isle - Original" onclick="openLightbox(this.src)">
-                        <img src="kb/portfolio/wix-soa-2.jpg" alt="Aika - Original" onclick="openLightbox(this.src)">
-                        <img src="kb/portfolio/wix-soa-3.jpg" alt="Aika Scythe - Original" onclick="openLightbox(this.src)">
-                        <img src="kb/portfolio/soa-title-screen.jpg" alt="Title Screen - Original" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-soa-3.jpg" alt="Boomerang Original" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-soa-1.jpg" alt="Pirate Isle" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/soa-title-screen.jpg" alt="Title Screen" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-soa-2.jpg" alt="Aika" onclick="openLightbox(this.src)">
                     </div>
                     
-                    <h4 style="margin-top: 24px;">After (My UE5 Remake)</h4>
+                    <h5 style="font-size: 12px; color: var(--accent); margin-top: 16px; margin-bottom: 8px;">After (My Remake)</h5>
                     <div class="project-gallery">
-                        <img src="https://img.youtube.com/vi/dxSg6hVsPHE/maxresdefault.jpg" alt="Remake Demo 1" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/dxSg6hVsPHE/sddefault.jpg" alt="Remake Demo 2" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/dxSg6hVsPHE/hqdefault.jpg" alt="Remake Demo 3" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/rjWDOO73AiI/maxresdefault.jpg" alt="Cutlass Remake" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/_xZRi81wKkI/maxresdefault.jpg" alt="Boomerang Remake" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_4f6972bd7f48476f9e080e7924306dd6~mv2.jpg" alt="Boomerang Remake 1" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_5a582cc5c3e245cb84321a8a6006f274~mv2.jpg" alt="Boomerang Remake 2" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_1bd614e1f3d94bf4a89d55a9dd1df843.jpg" alt="Boomerang Remake 3" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_46d36a89eed949798ed8916de0e6d835.jpg" alt="Boomerang Remake 4" onclick="openLightbox(this.src)">
                     </div>
                 </div>
             </div>
@@ -809,12 +834,12 @@
                     <div class="project-gallery">
                         <img src="kb/portfolio/wix-spaceballs-1.jpg" alt="Spaceballs Title" onclick="openLightbox(this.src)">
                         <img src="kb/portfolio/wix-spaceballs-2.jpg" alt="Level Map" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/4b6aOTjbP3g/maxresdefault.jpg" alt="Trailer 1" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/4b6aOTjbP3g/sddefault.jpg" alt="Trailer 2" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/4b6aOTjbP3g/hqdefault.jpg" alt="Trailer 3" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/qdXHTSWpYNw/maxresdefault.jpg" alt="Post Mortem 1" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/qdXHTSWpYNw/sddefault.jpg" alt="Post Mortem 2" onclick="openLightbox(this.src)">
-                        <img src="https://img.youtube.com/vi/qdXHTSWpYNw/hqdefault.jpg" alt="Post Mortem 3" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-spaceballs-1.jpg" alt="Spaceballs Title" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/wix-spaceballs-2.jpg" alt="Level Design" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_1bd614e1f3d94bf4a89d55a9dd1df843.jpg" alt="Gameplay 1" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_478ca54295c64809b8a7a1051c293425.jpg" alt="Gameplay 2" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_48d8a16bc58f4d5f82513e810db01266.jpg" alt="Gameplay 3" onclick="openLightbox(this.src)">
+                        <img src="kb/portfolio/1499ac_4f6972bd7f48476f9e080e7924306dd6~mv2.jpg" alt="Gameplay 4" onclick="openLightbox(this.src)">
                     </div>
                 </div>
             </div>
