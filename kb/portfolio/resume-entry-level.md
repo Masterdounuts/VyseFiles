@@ -12,35 +12,56 @@ Reliable and motivated individual seeking entry-level employment. Ready to learn
 
 ---
 
-## Education
+## Experience
 
-### Astoria High School
-**Graduated:** 2016
-Astoria, OR
+### Boyd and Associates Security
+**Santa Ana, CA**
+
+- Conflict resolution
+- Face-to-face communication
+- Stress management
+
+### Omega's Custom Slipcovers
+**Orange, CA**
+
+- Customer service
+- Phone communications
+- Computer skills
+
+### L And R Jewelry Craftier
+**Fullerton, CA**
+
+- Tool maintenance
+- Stocking materials
+- Workshop organization
 
 ---
 
-## Military Experience
+## Education
 
-### U.S. Army Infantry
-**2013 - 2016**
-Honorable Discharge
+### Gilbert High School
+**Anaheim, CA — Diploma, 2012**
 
-- Trained in discipline and physical fitness
-- Worked as part of a team to complete missions
-- Followed orders and maintained accountability
-- Built leadership and communication skills
+### AKI Security Training Center
+**Huntington Beach, CA — Guard Card Certification, 2012**
+
+### U.S. Army Infantry School
+**Fort Benning, GA — Infantry Certificate, 2013**
 
 ---
 
 ## Skills
 
-- Reliable and punctual
-- Strong work ethic
+- Customer service
+- Phone & face-to-face communication
+- Conflict resolution
+- Computer skills
+- Tool maintenance
+- Organization & stocking
+- Supervision & leadership
+- Stress management
 - Team player
-- Able to follow instructions
-- Good communication
-- Physical fitness and stamina
+- Reliable & punctual
 
 ---
 
