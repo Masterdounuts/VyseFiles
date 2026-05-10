@@ -14,6 +14,16 @@ Reliable and motivated individual seeking entry-level employment. Ready to learn
 
 ## Experience
 
+### Domino's Delivery Driver
+**2024 - 2026**
+
+- Delivered pizzas to customers in a timely manner
+- Handled cash and credit card transactions
+- Maintained excellent customer service
+- Managed delivery schedule and routes
+- Ensured food quality and temperature during transport
+- Communicated with customers over the phone and in person
+
 ### Boyd and Associates Security
 **Santa Ana, CA**
 
@@ -53,6 +63,10 @@ Reliable and motivated individual seeking entry-level employment. Ready to learn
 ## Skills
 
 - Customer service
+- Delivery & logistics
+- Cash handling
+- Time management
+- Navigation
 - Phone & face-to-face communication
 - Conflict resolution
 - Computer skills
