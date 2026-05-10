@@ -14,6 +14,14 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 
 ## Experience
 
+### U.S. Army Infantry
+**2013 - 2016**
+
+- Discipline and accountability
+- Teamwork and leadership
+- Stress management under pressure
+- Followed orders and completed missions
+
 ### Independent Game Developer
 **2018 - 2024**
 
@@ -35,14 +43,6 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 
 - Conflict resolution
 - Face-to-face communication
-- Stress management
-
-### Omega's Custom Slipcovers
-**Orange, CA**
-
-- Customer service
-- Phone communications
-- Computer skills
 
 ---
 
@@ -58,30 +58,24 @@ Bachelor of Science in Computer Science — Game Design
 ### AKI Security Training Center
 **Huntington Beach, CA — Guard Card Certification, 2012**
 
-### U.S. Army Infantry School
-**Fort Benning, GA — Infantry Certificate, 2013**
-
 ---
 
 ## Skills
 
 **Customer Service**
 - Face-to-face communication
-- Phone communications
 - Conflict resolution
 - Building rapport with customers
 
 **Operations**
 - Cash handling & transactions
 - Inventory stocking
-- Organization
 - Time management
 - Cleaning & maintenance
 
 **General**
 - Reliable & punctual
 - Team player
-- Stress management
 - Strong work ethic
 - Computer proficient
 
