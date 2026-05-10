@@ -15,14 +15,14 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 ## Experience
 
 ### Omega's Custom Slipcovers — Internship
-**2010 - 2011** (Senior Year)
+**2011 - 2012** (Senior Year)
 
 - Customer service
 - Phone communications
 - Computer skills
 
 ### L And R Jewelry Craftier — Internship
-**2010 - 2011** (Senior Year)
+**2011 - 2012** (Senior Year)
 
 - Tool maintenance
 - Stocking materials
