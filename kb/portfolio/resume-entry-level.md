@@ -8,95 +8,69 @@
 
 ## Objective
 
-Reliable and motivated individual seeking gas station attendant position. Ready to learn, work hard, and provide excellent customer service.
+Motivated and reliable individual seeking a gas station attendant position. Committed to providing exceptional customer service, maintaining a clean and organized work environment, and being a dependable team member. Eager to learn new skills and contribute to a fast-paced retail operation.
 
 ---
 
-## Experience
+## Work Experience
 
-### Omega's Custom Slipcovers — Internship
-**2011 - 2012** (Senior Year)
+### Domino's Delivery Driver | 2024 - 2026
+- Delivered food to customers in a timely and professional manner
+- Handled cash and credit card transactions accurately
+- Maintained excellent customer service standards
+- Managed delivery schedule and routes efficiently
 
-- Customer service
-- Phone communications
-- Computer skills
+### Independent Game Developer | 2018 - 2024
+- Self-directed project development and time management
+- Strong problem-solving and computer skills
+- Managed personal projects while pursuing career goals
 
-### L And R Jewelry Craftier — Internship
-**2011 - 2012** (Senior Year)
+### U.S. Army Infantry | 2013 - 2016
+- Demonstrated discipline, accountability, and reliability
+- Thrived in team-oriented environments
+- Managed stress effectively under pressure
 
-- Tool maintenance
-- Stocking materials
-- Workshop organization
+### Boyd and Associates Security | 2012 - 2013
+- Handled conflict resolution professionally
+- Communicated effectively face-to-face with clients
+- Maintained security and safety of premises
 
-### Boyd and Associates Security Guard
-**2012 - 2013**
+### Omega's Custom Slipcovers | 2011 - 2012
+- Provided customer service and assistance
+- Handled phone communications
+- Proficient with computer systems
 
-- Conflict resolution
-- Face-to-face communication
-- Maintaining security and safety
-
-### U.S. Army Infantry
-**2013 - 2016**
-
-- Discipline and accountability
-- Teamwork and leadership
-- Stress management under pressure
-
-### Independent Game Developer
-**2018 - 2024**
-
-- Self-directed work and time management
-- Problem-solving skills
-- Computer proficiency
-
-### Domino's Delivery Driver
-**2024 - 2026**
-
-- Delivered pizzas to customers in a timely manner
-- Handled cash and credit card transactions
-- Maintained excellent customer service
-- Managed delivery schedule and routes
+### L And R Jewelry Craftier | 2011 - 2012
+- Maintained crafting tools and equipment
+- Stocked materials and supplies
+- Organized workshop operations
 
 ---
 
 ## Education
 
-### Full Sail University
-**2016 - 2018**
-Bachelor of Science in Computer Science — Game Design
+**Full Sail University** — Bachelor of Science, Computer Science (Game Design) | 2016 - 2018
 
-### Gilbert High School
-**Anaheim, CA — Diploma, 2012**
+**Gilbert High School** — High School Diploma | 2012
 
-### AKI Security Training Center
-**Huntington Beach, CA — Guard Card Certification, 2012**
+**AKI Security Training Center** — Guard Card Certification | 2012
+
+**U.S. Army Infantry School** — Infantry Certificate | 2013
 
 ---
 
 ## Skills
 
-**Customer Service**
-- Face-to-face communication
-- Conflict resolution
-- Building rapport with customers
-
-**Operations**
-- Cash handling & transactions
-- Inventory stocking
-- Time management
-- Cleaning & maintenance
-
-**General**
-- Reliable & punctual
-- Team player
-- Strong work ethic
-- Computer proficient
-
----
-
-## References
-
-Available upon request
+- Customer Service & Communication
+- Cash Handling & Transactions
+- Conflict Resolution
+- Inventory Management & Stocking
+- Time Management
+- Cleaning & Maintenance
+- Computer Proficient
+- Reliable & Punctual
+- Team Player
+- Strong Work Ethic
 
 ---
 
