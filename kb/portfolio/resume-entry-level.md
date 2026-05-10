@@ -14,13 +14,26 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 
 ## Experience
 
+### Omega's Custom Slipcovers — Internship
+**2010 - 2011** (Senior Year)
+
+- Customer service
+- Phone communications
+- Computer skills
+
+### L And R Jewelry Craftier — Internship
+**2010 - 2011** (Senior Year)
+
+- Tool maintenance
+- Stocking materials
+- Workshop organization
+
 ### Boyd and Associates Security Guard
 **2011 - 2013**
 
 - Conflict resolution
 - Face-to-face communication
 - Maintaining security and safety
-- Monitoring and patrolling premises
 
 ### U.S. Army Infantry
 **2013 - 2016**
@@ -28,7 +41,6 @@ Reliable and motivated individual seeking gas station attendant position. Ready 
 - Discipline and accountability
 - Teamwork and leadership
 - Stress management under pressure
-- Completed missions
 
 ### Independent Game Developer
 **2018 - 2024**
