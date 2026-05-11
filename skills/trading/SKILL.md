@@ -548,6 +548,7 @@ node scripts/get-stock-news.js
 | 2026-05-11 | **FOCUS ON PRE-MARKET BIG MOVERS (>3%) - they keep running** | Today's win |
 | 202-05-11 | Bottom-fishing/accumulation picks FAILED - don't chase bottoms | LCID/RIVN fail |
 | 2026-05-11 | Enter at 6:30am PT (market open) - not after | Timing fix |
+| 2026-05-11 | **NEVER buy stocks above 80% of 52-week range - buying at top = losses** | QCOM/MU/RIOT analysis |
 
 ---
 
