@@ -110,6 +110,12 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 2. Find accumulation for tomorrow's bounce
 3. **Next Day** - Exit at target or end of day
 
+### 📅 Tomorrow's Watch (2026-05-12)
+- **RIVN** - Enter at open if ≤$14 (1 share)
+- **AMC** - Enter near close (~12:30pm), 17 shares
+- **Strategy**: Buy at close, sell next day
+- **Targets**: +12% for both
+
 ### What NOT to Do
 - ❌ Don't chase stocks down (accumulation plays)
 - ❌ Don't enter after 7am (missed the move)

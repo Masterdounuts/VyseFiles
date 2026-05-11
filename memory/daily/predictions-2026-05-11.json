@@ -1,7 +1,34 @@
 {
   "date": "2026-05-11",
-  "timestamp": "2026-05-11T17:53:17.902Z",
-  "accumulation": [],
-  "momentum": [],
+  "timestamp": "2026-05-11T18:20:49.773Z",
+  "accumulation": [
+    {
+      "symbol": "NET",
+      "price": 194.92999267578125,
+      "type": "V3_BOTTOM",
+      "priceDown": "-20.3",
+      "rangePos": "4"
+    }
+  ],
+  "momentum": [
+    {
+      "symbol": "SMCI",
+      "change": "24.3",
+      "price": 34.59000015258789,
+      "rangePos": 35.22621074155738
+    },
+    {
+      "symbol": "BTBT",
+      "change": "22.3",
+      "price": 2.190000057220459,
+      "rangePos": 28.48484857242188
+    },
+    {
+      "symbol": "NET",
+      "change": "-20.3",
+      "price": 194.92999267578125,
+      "rangePos": 47.3884126959844
+    }
+  ],
   "avoid": []
 }
