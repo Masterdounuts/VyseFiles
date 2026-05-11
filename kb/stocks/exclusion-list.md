@@ -17,7 +17,7 @@
 
 ## ADRs (American Depositary Receipts)
 These work differently - avoid:
-- LCID (Lucid)
+
 - NIO
 - XPEV
 - LI Auto
