@@ -54,6 +54,33 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## SMC WORKFLOW (Complete Process)
+
+### Step-by-Step: Find → Analyze → Enter
+
+| Step | What To Do | Tool |
+|------|------------|------|
+| **1. SCAN** | Find candidates with volume + pattern | `smc-scan.js` |
+| **2. FILTER** | Get price + 52W range | `get-stock-price.js` |
+| **3. CATALYST** | Search for news/event | `web_search` |
+| **4. FUNDAMENTALS** | Check P/E, debt, earnings | `web_fetch` (CNBC) |
+| **5. CHART** | Confirm SMC 6 steps | Browser → TradingView |
+| **6. RECOMMEND** | Only if all 6 steps complete | Present to David |
+
+### NEVER Skip Steps
+- ❌ Don't recommend without chart analysis
+- ❌ Don't enter before CHOCH + FVG
+- ❌ Don't trade without catalyst
+
+### The Rule
+**Only present trade when:**
+1. Liquidity swept ✅
+2. CHOCH confirmed (broke above prior high) ✅
+3. FVG pullback happened ✅
+4. Catalyst exists ✅
+
+---
+
 ## PART 2: Fundamental Filters (Peter Lynch + TradingLab)
 
 ### The 6 Rules
@@ -342,6 +369,49 @@ Buying Power = Total - Invested_in_positions
 
 ---
 
+## TRADING TOOLS (When to Use Each)
+
+### Tool Workflow
+
+| Phase | Tool | What It Does |
+|-------|------|---------------|
+| **1. Find Candidates** | `smc-scan.js` | Scans 215 stocks, finds V1/V2/V3 patterns with volume |
+| **2. Get Price** | `get-stock-price.js` | Current price, change, volume, 52W high/low |
+| **3. Find Catalyst** | `web_search` | Search for news, earnings, contracts |
+| **4. Get Fundamentals** | `web_fetch` (CNBC) | P/E, debt, earnings date, dividend |
+| **5. Analyze Chart** | `browser` → TradingView | Full SMC 6-step analysis |
+
+### Tool Commands
+
+```bash
+# 1. Find candidates (run first)
+node scripts/smc-scan.js
+
+# 2. Get price for specific stock
+node scripts/get-stock-price.js SYMBOL
+
+# 3. Get full fundamentals
+# Use web_fetch: https://www.cnbc.com/quotes/SYMBOL
+
+# 4. Search for catalyst
+web_search: "SYMBOL stock news catalyst May 2026"
+
+# 5. Open TradingView chart
+browser → https://www.tradingview.com/chart/?symbol=SYMBOL
+```
+
+### When to Use Each
+
+| Situation | Action |
+|-----------|--------|
+| Need candidates | Run `smc-scan.js` |
+| Got a candidate | Run `get-stock-price.js` |
+| Need catalyst | Use `web_search` |
+| Need P/E, earnings | Use `web_fetch` on CNBC |
+| Need chart analysis | Open TradingView with browser |
+
+---
+
 ## Scanner Commands
 
 ```bash
@@ -375,6 +445,17 @@ node scripts/get-stock-news.js
 | `scripts/smc-scan.js` | SMC candidate scanner |
 | `scripts/get-stock-price.js` | Price fetcher |
 | `scripts/get-stock-news.js` | News fetcher |
+
+---
+
+## Lessons Learned (From Trading)
+
+| Date | Lesson | Source |
+|------|--------|--------|
+| 2026-05-11 | "Price low" is NOT a thesis - need specific SMC setup | LCID fail |
+| 2026-05-11 | MUST confirm CHOCH before entry - no exceptions | SOFI wait |
+| 2026-05-11 | Without chart analysis = guessing, not trading | Analysis fail |
+| 2026-05-11 | SMC 6 steps ALL must complete before recommending | Process fix |
 
 ---
 
