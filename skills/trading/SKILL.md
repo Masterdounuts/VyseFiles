@@ -375,11 +375,14 @@ Buying Power = Total - Invested_in_positions
 
 | Phase | Tool | What It Does |
 |-------|------|---------------|
-| **1. Find Candidates** | `smc-scan.js` | Scans 215 stocks, finds V1/V2/V3 patterns with volume |
-| **2. Get Price** | `get-stock-price.js` | Current price, change, volume, 52W high/low |
-| **3. Find Catalyst** | `web_search` | Search for news, earnings, contracts |
-| **4. Get Fundamentals** | `web_fetch` (CNBC) | P/E, debt, earnings date, dividend |
-| **5. Analyze Chart** | `browser` → TradingView | Full SMC 6-step analysis |
+| **1. SCAN** | `smc-scan.js` | Find candidates with volume + pattern |
+| **2. FILTER** | `get-stock-price.js` | Price + 52W range |
+| **3. VOLUME** | `volume-check.js` | Institutional activity? |
+| **4. LEVELS** | `swing-levels.js` | Support/resistance clusters |
+| **5. CATALYST** | `web_search` | Search for news/event |
+| **6. FUNDAMENTALS** | `web_fetch` (CNBC) | P/E, debt, earnings |
+| **7. CHART** | Browser → TradingView | Visual confirmation |
+| **8. RECOMMEND** | Only if all 6 SMC steps complete | Present to David |
 
 ### Tool Commands
 
@@ -390,13 +393,19 @@ node scripts/smc-scan.js
 # 2. Get price for specific stock
 node scripts/get-stock-price.js SYMBOL
 
-# 3. Get full fundamentals
+# 3. Check volume (institutional activity)
+node scripts/volume-check.js SYMBOL
+
+# 4. Find swing levels (support/resistance)
+node scripts/swing-levels.js SYMBOL
+
+# 5. Get full fundamentals
 # Use web_fetch: https://www.cnbc.com/quotes/SYMBOL
 
-# 4. Search for catalyst
+# 6. Search for catalyst
 web_search: "SYMBOL stock news catalyst May 2026"
 
-# 5. Open TradingView chart
+# 7. Open TradingView chart (for visual confirmation)
 browser → https://www.tradingview.com/chart/?symbol=SYMBOL
 ```
 
