@@ -50,28 +50,36 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
-## ⏰ Trading Timeframes
+## ⏰ Trading Timeframes - Three Types
 
-We use the SAME strategy for two timeframes:
-
-### Intraday (Same-Day)
+### 1. MINI TRADING (Crypto/Weekend)
 | Rule | Detail |
 |------|--------|
-| **Enter** | 6:30am PT (market open) |
-| **Exit** | 12:30pm PT (latest, market closes 1pm) |
-| **Profit** | Same day, but T+1 settlement |
+| **When** | Any time, especially weekends when market closed |
+| **Max Profit** | $2 per trade (capped) |
+| **Reinvest** | Profit goes straight back into mini trading |
+| **Examples** | DOGE, WLFI, crypto plays |
 
-### Day-to-Day (Swing)
+### 2. INTRADAY TRADING (US Stocks - Same Day)
 | Rule | Detail |
 |------|--------|
-| **Enter** | Anytime (pre-market, open, after-hours) |
-| **Exit** | Next day or when target hit |
-| **Profit** | 1-2 days to realize |
+| **When** | 6:30am - 12:30pm PT (market 9:30am-1pm ET) |
+| **Enter** | 6:30am at market open |
+| **Exit** | By 12:30pm (latest, market closes 1pm PT) |
+| **Same day** | Profit in same trading day |
 
-### When to Use Which:
-1. **Morning (6-9am PT)** → Intraday (same-day movers)
-2. **Missed morning?** → Switch to day-to-day, find tomorrow's winner
-3. **Both use same scanner/analysis** → Just hold longer for day-to-day
+### 3. DAY-TO-DAY TRADING (Swing)
+| Rule | Detail |
+|------|--------|
+| **When** | Missed intraday entry OR setup needs more time |
+| **Enter** | Anytime today |
+| **Exit** | Tomorrow or when target hit |
+| **Profit** | 1-2 days to realize (T+1 settlement) |
+
+---
+
+
+## 🎯 CORE STRATEGY - What We're Actually Doing
 
 ### The Pattern
 1. **QS** pre-market +9.7% → ended +9.95%
@@ -80,13 +88,23 @@ We use the SAME strategy for two timeframes:
 4. **RIVN** pre-market down → stayed down
 
 ### Action Plan (Every Day)
+
+#### Mini Trading (Anytime)
+1. Check crypto prices anytime
+2. Max $2 profit per trade
+3. Reinvest profit back into mini
+
+#### Intraday (Morning)
 1. **6:00 AM PT** - Run `premarket-scanner.js`
-2. **6:10 AM PT** - Pick top 2-3 stocks with >3% pre-market move
-3. **6:30 AM PT** - ENTER (intraday) OR identify swing candidates
-4. **12:00 PM PT** - Start exit window (intraday)
-5. **12:30 PM PT** - INTRADAY EXIT (market closes 1pm PT)
-6. **After 12:30pm** - If no intraday entry, switch to day-to-day candidates
-7. **Next Day** - Exit day-to-day positions at target OR end of day
+2. **6:10 AM PT** - Analyze accumulation signals (price ↓ + volume ↑)
+3. **6:30 AM PT** - ENTER at market open
+4. **12:00 PM PT** - Start exit window
+5. **12:30 PM PT** - EXIT (market closes 1pm PT)
+
+#### Day-to-Day (Missed Morning)
+1. **After 12:30pm** - If no intraday entry, scan for tomorrow's candidates
+2. Look for accumulation that will bounce by tomorrow
+3. **Next Day** - Exit at target or end of day
 
 ### What NOT to Do
 - ❌ Don't chase stocks down (accumulation plays)
