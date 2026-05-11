@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-11",
+  "timestamp": "2026-05-11T16:23:16.215Z",
+  "topMovers": [
+    {
+      "symbol": "QS",
+      "change": "10.3",
+      "price": 8.320099830627441
+    },
+    {
+      "symbol": "QCOM",
+      "change": "7.8",
+      "price": 236.1199951171875
+    },
+    {
+      "symbol": "MARA",
+      "change": "5.9",
+      "price": 13.699999809265137
+    },
+    {
+      "symbol": "LCID",
+      "change": "-5.6",
+      "price": 5.985000133514404
+    },
+    {
+      "symbol": "MU",
+      "change": "5.5",
+      "price": 788.030029296875
+    }
+  ],
+  "chochReady": [
+    {
+      "symbol": "AAPL",
+      "distance": "0.8%",
+      "price": 292.375
+    },
+    {
+      "symbol": "GOOGL",
+      "distance": "2.1%",
+      "price": 393.81500244140625
+    },
+    {
+      "symbol": "AMZN",
+      "distance": "2.2%",
+      "price": 272.5299987792969
+    }
+  ],
+  "accumulation": [
+    {
+      "symbol": "RIVN",
+      "type": "V3_BOTTOM",
+      "price": 14.289999961853027
+    },
+    {
+      "symbol": "LCID",
+      "type": "V3_BOTTOM",
+      "price": 5.985000133514404
+    },
+    {
+      "symbol": "HD",
+      "type": "V3_BOTTOM",
+      "price": 313.1549987792969
+    }
+  ]
+}

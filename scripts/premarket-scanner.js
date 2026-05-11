@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 const https = require('https');
+const fs = require('fs');
+const path = require('path');
+
+const PREDICTION_LOG = path.join(__dirname, '..', 'memory', 'daily', 'predictions-' + new Date().toISOString().slice(0,10) + '.json');
+
 const universe = ['AAPL','MSFT','GOOGL','AMZN','META','NVDA','AMD','INTC','MU','AVGO','QCOM','TXN','NXPI','MRVL','ARM','PLTR','COIN','MARA','RIOT','HOOD','SOFI','BBAI','UPST','QS','RIVN','LCID','SMCI','SNOW','DDOG','CRWD','ZS','NET','MDB','OKTA','TSLA','WMT','HD','COST','TGT','LOW','BBY','JPM','BAC','WFC','C','GS','MS','BLK','SCHW','JNJ','UNH','PFE','MRK','ABBV','LLY','XOM','CVX','COP','SLB','EOG','CAT','BA','HON','UNP','RTX','NOC','LMT','DIS','NFLX','LIN','APD','SHW','KO','PEP','PG','GME','AMC','SPY','QQQ'];
 async function getStockData(sym) {
   return new Promise((resolve) => {
@@ -62,6 +67,22 @@ async function scan() {
   const watchlist = [...acc.slice(0, 3), ...choch.slice(0, 3)];
   const unique = [...new Set(watchlist.map(w => w.symbol))].slice(0, 6);
   console.log(unique.join(', '));
+  
+  // AUTO-LEARN: Save predictions for later comparison
+  const prediction = {
+    date: new Date().toISOString().slice(0,10),
+    timestamp: new Date().toISOString(),
+    topMovers: movers.slice(0, 5).map(m => ({symbol: m.symbol, change: m.change, price: m.price})),
+    chochReady: choch.slice(0, 3).map(c => ({symbol: c.symbol, distance: c.distance, price: c.price})),
+    accumulation: acc.slice(0, 3).map(a => ({symbol: a.symbol, type: a.type, price: a.price}))
+  };
+  
+  // Save prediction
+  const memDir = path.join(__dirname, '..', 'memory', 'daily');
+  if (!fs.existsSync(memDir)) fs.mkdirSync(memDir, {recursive:true});
+  fs.writeFileSync(PREDICTION_LOG, JSON.stringify(prediction, null, 2));
+  console.log('\n💾 Predictions saved for later analysis');
+  
   console.log('============================================');
 }
 scan().catch(console.error);
