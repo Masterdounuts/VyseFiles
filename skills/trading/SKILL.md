@@ -62,10 +62,12 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 |------|------------|------|
 | **1. SCAN** | Find candidates with volume + pattern | `smc-scan.js` |
 | **2. FILTER** | Get price + 52W range | `get-stock-price.js` |
-| **3. CATALYST** | Search for news/event | `web_search` |
-| **4. FUNDAMENTALS** | Check P/E, debt, earnings | `web_fetch` (CNBC) |
-| **5. CHART** | Confirm SMC 6 steps | Browser → TradingView |
-| **6. RECOMMEND** | Only if all 6 steps complete | Present to David |
+| **3. VOLUME** | Check institutional activity | `volume-check.js` |
+| **4. LEVELS** | Find support/resistance | `swing-levels.js` |
+| **5. CATALYST** | Search for news/event | `web_search` |
+| **6. FUNDAMENTALS** | Check P/E, debt, earnings | `web_fetch` (CNBC) |
+| **7. CHART** | Visual confirmation of SMC steps | Browser → TradingView |
+| **8. RECOMMEND** | Only if all 6 SMC steps complete | Present to David |
 
 ### NEVER Skip Steps
 - ❌ Don't recommend without chart analysis
@@ -214,6 +216,23 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 🔳 **Is there divergence?** (If there are lower highs on the volume, a reversal is likely to happen)
 
 **Apply this checklist to every entry before trading.**
+
+### ACCUMULATION vs DISTRIBUTION (Key SMC Concepts)
+
+| Phase | Price | Volume | Meaning |
+|-------|-------|--------|---------|
+| **ACCUMULATION** | ↓ Down | ↑ UP | Smart money buying (not panic) |
+| **ACCUMULATION** | Bouncing | High | Institutions loading |
+| **DISTRIBUTION** | ↑ Up | ↑ UP | Smart money selling |
+| **DISTRIBUTION** | Crashing | High | Institutions dumping |
+
+**Critical: Price down + Volume UP = ACCUMULATION** (smart money buying, not selling)
+
+**Pattern to find:**
+1. Price drops with high volume = accumulation zone
+2. Look for FVG created on drop
+3. Wait for price to return to FVG = ENTRY
+4. Take profit +12%
 
 ---
 
@@ -438,9 +457,10 @@ node scripts/get-stock-news.js
 
 ## Trigger Phrases
 
-- "stock", "trade", "buy", "sell"
-- "position", "price", "alert"
-- "stop loss", "target", "chart"
+- "stock", "trade", "buy", "sell", "trade"
+- "position", "price", "alert", "analysis"
+- "stop loss", "target", "chart", "SMC"
+- "volume", "catalyst", "entry", "exit"
 
 ---
 
@@ -454,10 +474,13 @@ node scripts/get-stock-news.js
 | `scripts/smc-scan.js` | SMC candidate scanner |
 | `scripts/get-stock-price.js` | Price fetcher |
 | `scripts/get-stock-news.js` | News fetcher |
+| `scripts/volume-check.js` | Volume analysis (institutional activity) |
+| `scripts/swing-levels.js` | Support/resistance levels |
 
 ---
 
 ## Lessons Learned (From Trading)
+
 
 | Date | Lesson | Source |
 |------|--------|--------|
@@ -465,6 +488,9 @@ node scripts/get-stock-news.js
 | 2026-05-11 | MUST confirm CHOCH before entry - no exceptions | SOFI wait |
 | 2026-05-11 | Without chart analysis = guessing, not trading | Analysis fail |
 | 2026-05-11 | SMC 6 steps ALL must complete before recommending | Process fix |
+| 2026-05-11 | Used tools inconsistently - need workflow discipline | Today's fail |
+| 2026-05-11 | Accumulation = price DOWN + volume UP (smart money) | Volume concept |
+| 2026-05-11 | Need 8-step workflow: Scan→Price→Volume→Levels→Catalyst→Fundamentals→Chart→Recommend | Skill fix |
 
 ---
 
