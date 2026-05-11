@@ -6,14 +6,12 @@
 
 ## Current Positions (as of May 11, 2026 PT) - SMC + ACCUMULATION
 
-| Symbol | Shares | Entry | Liquidity | CHOCH | SL | TP -1 | TP -2 | Current |
-|--------|--------|-------|-----------|-------|-----|-------|-------|--------|
-| **DOGE** | Crypto | Free | - | - | -5% | +15% | - | $0.11 | Free position (already own) |
-| **WLFI** | 14.5 | $0.06873 | $0.07105 | $0.06508 | $0.07342 | - | - | Crypto | Weekend crypto only |
-| **GILD** | TBD | ~$130 | $127 | $137 | $127 | $145 | $155 | $131 | **Accumulation setup** |
-| WGS | **SOLD** | $35.94 | - | - | - | - | - | - | +$38.36 (+6.7%) |
-| NVDA | **SOLD** | $198.31 | - | - | - | - | - | $215.00 | +$0.92 (+9.3%) May 8 |
-| NIO | **SOLD** | $5.94 | - | - | - | - | - | $5.87 | -$0.07 (-1.2%) May 8 |
+| Symbol | Shares | Entry | Current | Notes |
+|--------|--------|-------|---------|-------|
+| **DOGE** | 7.16 | $0.1118 | Crypto | Bought May 8 - $0.80 |
+| **QQQ** | ~0.02 | $708.78 | Piggybank | $15 invested from profits |
+| **WLFI** | 14.5 | $0.06873 | Crypto | Weekend only |
+| **GILD** | WATCH | - | - | Accumulation setup - not entered |
 
 ---
 
@@ -21,7 +19,7 @@
 
 | Symbol | Shares | Entry | Type | Thesis |
 |--------|--------|-------|------|--------|
-| QQQ | DCA | ~$706 | Piggybank | AI trend, Nasdaq-100, years hold |
+| QQQ | 0.021 | $708.78 | Piggybank | AI trend, Nasdaq-100, years hold |
 
 **DCA Rule:** 5% of all trade profits → QQQ piggybank
 - Profits from SMC trades go here
@@ -42,9 +40,10 @@
 | Metric | Amount |
 |--------|--------|
 | Starting Capital | $51.32 |
-| **Buying Power** | **~$52.17** |
-| **Invested (WLFI)** | **~$1.00** |
-| **Total** | **~$53.17** |
+| Realized Profits | +$2.27 (WGS +$2.42, NVDA +$0.92, NIO -$0.07) |
+| **Buying Power** | **~$54** |
+| **Invested** | **~$16** (QQQ $15 + WLFI ~$1) |
+| **Total** | **~$70** |
 
 ---
 
@@ -56,9 +55,12 @@
 | 2026-05-05 | BUY | WGS | 1 | $35.94 | - | David's independent research - bull case |
 | 2026-05-07 | SELL | WGS | 1 | $38.36 | +$2.42 (+6.7%) | Exit at target |
 | 2026-05-07 | BUY | NIO | 1 | $5.94 | - | SMC: Liquidity→Sweep→CHOCH→FVG |
-| 2026-05-08 | SELL | NVDA | 0.050426 | $215.00 | +$0.92 (+9.3%) | Exit May 8 |
-| 2026-05-08 | SELL | NIO | 1 | $5.87 | -$0.07 (-1.2%) | Exit May 8 (ADR rule) |
-| 2026-05-09 | BUY | WLFI | 14.5 | $0.06873 | - | Crypto limit buy - Your chart: Entry $0.06869, Sell 50% $0.07342, Stop $0.07105 |
+| 2026-05-08 | SELL | NVDA | 0.050426 | $215.00 | +$0.92 (+9.3%) | Exit |
+| 2026-05-08 | SELL | NIO | 1 | $5.87 | -$0.07 (-1.2%) | Exit (ADR rule) |
+| 2026-05-08 | BUY | QQQ | 0.021 | $708.78 | - | Piggybank from profits |
+| 2026-05-08 | SELL | DOGE | 1.00 | $0.11 | -$0.01 | Sold free DOGE |
+| 2026-05-08 | BUY | DOGE | 7.16 | $0.1118 | - | Rebought with $0.80 |
+| 2026-05-09 | BUY | WLFI | 14.5 | $0.06873 | - | Crypto weekend |
 
 ---
 
