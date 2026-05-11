@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // DAY-TO-DAY SCANNER - ACCUMULATION FIRST
-// Core Strategy: Hold for tomorrow - find setups that will bounce by next day with volume UP = smart money buying
+// Timeframe: Last 5+ days (weekly) - hold for tomorrow
+// Strategy: Find setups that will bounce by next day with volume UP = smart money buying
 
 const https = require('https');
 const fs = require('fs');
@@ -37,7 +38,7 @@ const universe = [
 
 async function getStockData(sym) {
   return new Promise((resolve) => {
-    https.get('https://query1.finance.yahoo.com/v8/finance/chart/'+sym+'?interval=1d&range=30d',{headers:{'User-Agent':'Mozilla/5.0'}},res=>{let d='';res.on('data',c=>d+=c);res.on('end',()=>{try{const j=JSON.parse(d);const r=j.chart?.result?.[0];if(!r)return resolve(null);const c=r.indicators?.quote?.[0]?.close,h=r.indicators?.quote?.[0]?.high,l=r.indicators?.quote?.[0]?.low,v=r.indicators?.quote?.[0]?.volume;if(!c||!h||!l||!v)return resolve(null);resolve({symbol:sym,closes:c,highs:h,lows:l,volumes:v})}catch(e){resolve(null)}}) }).on('error',()=>resolve(null));
+    https.get('https://query1.finance.yahoo.com/v8/finance/chart/'+sym+'?interval=1d&range=5d',{headers:{'User-Agent':'Mozilla/5.0'}},res=>{let d='';res.on('data',c=>d+=c);res.on('end',()=>{try{const j=JSON.parse(d);const r=j.chart?.result?.[0];if(!r)return resolve(null);const c=r.indicators?.quote?.[0]?.close,h=r.indicators?.quote?.[0]?.high,l=r.indicators?.quote?.[0]?.low,v=r.indicators?.quote?.[0]?.volume;if(!c||!h||!l||!v)return resolve(null);resolve({symbol:sym,closes:c,highs:h,lows:l,volumes:v})}catch(e){resolve(null)}}) }).on('error',()=>resolve(null));
   });
 }
 
@@ -49,8 +50,8 @@ async function get52WeekPos(sym) {
 
 // DETECT ACCUMULATION - Core Strategy!
 function detectAccumulation(data) {
-  const closes = data.closes.slice(-10);
-  const volumes = data.volumes.slice(-10);
+  const closes = data.closes.slice(-20);
+  const volumes = data.volumes.slice(-20);
   
   // Is price trending DOWN?
   const priceChange = closes[closes.length-1] - closes[0];
