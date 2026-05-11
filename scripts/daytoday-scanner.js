@@ -11,7 +11,7 @@ const PREDICTION_LOG = path.join(__dirname, '..', 'memory', 'daily', 'prediction
 const MAX_52WEEK_POS = 80;
 
 // EXCLUSION LIST
-const EXCLUDE = ['NIO', 'XPEV', 'AVCT'];
+const EXCLUDE = ['NIO', 'XPEV', 'BABA', 'AVCT', 'LCID'];
 
 const universe = [
   // Tech (primary)
