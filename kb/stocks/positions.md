@@ -4,14 +4,13 @@
 
 ---
 
-## Current Positions (as of May 11, 2026 PT) - SMC + ACCUMULATION
+## Current Positions (as of May 11, 2026 PT)
 
 | Symbol | Shares | Entry | Current | Notes |
 |--------|--------|-------|---------|-------|
-| **DOGE** | 7.16 | $0.1118 | Crypto | Bought May 8 - $0.80 |
-| **QQQ** | ~0.02 | $708.78 | Piggybank | $15 invested from profits |
+| **DOGE** | 7.16 | $0.1118 | Crypto | $0.80 position |
+| **QQQ** | 0.021 | $708.78 | Piggybank | Long-term hold |
 | **WLFI** | 14.5 | $0.06873 | Crypto | Weekend only |
-| **GILD** | WATCH | - | - | Accumulation setup - not entered |
 
 ---
 
@@ -25,15 +24,6 @@
 - Profits from SMC trades go here
 - Fractional shares = any amount works
 - Set and forget
-
-| Symbol | Status | Liquidity | CHOCH | SL | TP -1 | TP -2 | Notes |
-|--------|--------|-----------|-------|-----|-------|-------|-------|
-| MSTR | WAIT | $116.40 | $188.26 | ~$115 | $260 | $332 | Bounced, waiting for FVG pullback |
-| ASTS | WAIT | $63.13 | $77 | ~$61 | $90.87 | $104.74 | Clean setup, waiting for pullback |
-| PLTR | SCAN | - | - | - | - | - | 37% range, show chart |
-| HOOD | SCAN | - | - | - | - | - | 44% range, show chart |
-
----
 
 ## Capital Summary
 
