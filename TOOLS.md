@@ -8,6 +8,7 @@ Quick reference for all integrated tools. See tool-specific folders for detailed
 |------|------|----------|------|
 | **GitHub** | Version control, backups | Token in .env, repo: Masterdounuts/VyseFiles | skills/github/SKILL.md |
 | **Telegram** | Messaging | Bot enabled, DM open | docs/plugins/telegram.md |
+| **Web Search** | Stock/news research | DuckDuckGo (free), Brave backup | Built-in |
 | **Browser** | Web automation | Browserless profile, CDP at 144.126.154.152:3100 | docs/plugins/browser.md |
 | **OpenRouter** | AI models | Primary: minimax-m2.5, fallbacks: Gemini Flash, GPT-OSS | config in openclaw.json |
 
