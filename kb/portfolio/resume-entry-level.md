@@ -8,9 +8,11 @@
 
 ## Objective
 
-Motivated and reliable individual seeking a gas station attendant position. Committed to providing exceptional customer service, maintaining a clean and organized work environment, and being a dependable team member. Eager to learn new skills and contribute to a fast-paced retail operation.
+Motivated and reliable individual seeking a gas station attendant position. Committed to providing exceptional customer service, maintaining a clean and organized work environment, and being a dependable team member. Eager to learn new skills and contribute to a fast-paced retail environment.
 
 ---
+
+
 
 ## Work Experience
 
@@ -39,6 +41,38 @@ Motivated and reliable individual seeking a gas station attendant position. Comm
 - Provided customer service and assistance
 - Handled phone communications
 - Proficient with computer systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### L And R Jewelry Craftier | 2011 - 2012
 - Maintained crafting tools and equipment
