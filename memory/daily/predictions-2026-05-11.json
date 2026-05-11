@@ -1,61 +1,61 @@
 {
   "date": "2026-05-11",
-  "timestamp": "2026-05-11T17:21:15.779Z",
+  "timestamp": "2026-05-11T17:30:10.332Z",
   "accumulation": [
     {
       "symbol": "PLTR",
-      "price": 135.27000427246094,
+      "price": 135.14500427246094,
       "type": "ACCUMULATION",
-      "priceDown": "-4.2",
+      "priceDown": "-4.3",
       "rangePos": "37"
     },
     {
       "symbol": "NET",
-      "price": 193.32000732421875,
+      "price": 193.8350067138672,
       "type": "ACCUMULATION",
-      "priceDown": "-7.3",
+      "priceDown": "-7.0",
       "rangePos": "31"
     },
     {
       "symbol": "EOG",
-      "price": 132.6699981689453,
+      "price": 132.6999969482422,
       "type": "ACCUMULATION",
       "priceDown": "-2.3",
       "rangePos": "30"
     },
     {
       "symbol": "SOFI",
-      "price": 16.010000228881836,
+      "price": 16.045000076293945,
       "type": "V3_BOTTOM",
-      "priceDown": "-12.8",
+      "priceDown": "-12.6",
       "rangePos": "21"
     },
     {
       "symbol": "RIVN",
-      "price": 14.17199993133545,
+      "price": 14.229999542236328,
       "type": "V3_BOTTOM",
-      "priceDown": "-12.2",
-      "rangePos": "8"
+      "priceDown": "-11.8",
+      "rangePos": "9"
     }
   ],
   "momentum": [
     {
       "symbol": "SMCI",
-      "change": "24.7",
-      "price": 34.70000076293945,
-      "rangePos": 35.506067886130225
+      "change": "25.1",
+      "price": 34.81999969482422,
+      "rangePos": 35.78591613448764
+    },
+    {
+      "symbol": "BTBT",
+      "change": "21.8",
+      "price": 2.180000066757202,
+      "rangePos": 28.181818575898454
     },
     {
       "symbol": "NET",
-      "change": "-20.9",
-      "price": 193.32000732421875,
-      "rangePos": 46.086678020285504
-    },
-    {
-      "symbol": "QS",
-      "change": "13.2",
-      "price": 8.21720027923584,
-      "rangePos": 28.92731107665413
+      "change": "-20.7",
+      "price": 193.8350067138672,
+      "rangePos": 46.50307470539728
     }
   ],
   "avoid": []

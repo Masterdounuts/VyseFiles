@@ -12,7 +12,28 @@ const MAX_52WEEK_POS = 80;
 // EXCLUSION LIST
 const EXCLUDE = ['NIO', 'XPEV', 'AVCT'];
 
-const universe = ['AAPL','MSFT','GOOGL','AMZN','META','NVDA','AMD','INTC','MU','AVGO','QCOM','TXN','NXPI','MRVL','ARM','PLTR','COIN','MARA','RIOT','HOOD','SOFI','BBAI','UPST','QS','RIVN','LCID','SMCI','SNOW','DDOG','CRWD','ZS','NET','MDB','OKTA','TSLA','WMT','HD','COST','TGT','LOW','BBY','JPM','BAC','WFC','C','GS','MS','BLK','SCHW','JNJ','UNH','PFE','MRK','ABBV','LLY','XOM','CVX','COP','SLB','EOG','CAT','BA','HON','UNP','RTX','NOC','LMT','DIS','NFLX','LIN','APD','SHW','KO','PEP','PG','GME','AMC','SPY','QQQ'];
+const universe = [
+  // Tech (primary)
+  'NVDA','MSFT','AAPL','GOOGL','AMZN','META','AMD','INTC','AVGO','QCOM',
+  'TXN','NXPI','MRVL','ARM','PLTR','COIN','SMCI','SNOW','DDOG','CRWD',
+  'ZS','NET','MDB','OKTA','TSLA',
+  // Crypto mining
+  'MARA','RIOT','BTBT',
+  // Finance
+  'JPM','BAC','WFC','C','GS','MS','BLK','SCHW',
+  // Healthcare
+  'JNJ','UNH','PFE','MRK','ABBV','LLY',
+  // Energy
+  'XOM','CVX','COP','SLB','EOG','MPC','PSX','VLO',
+  // Industrial
+  'CAT','BA','HON','UNP','RTX','NOC','LMT',
+  // Consumer
+  'WMT','HD','COST','TGT','LOW','BBY','DIS','NFLX',
+  // Other
+  'SOFI','UPST','HOOD','RIVN',
+  // ETFs
+  'SPY','QQQ','IWM','TNA','TQQQ'
+];
 
 async function getStockData(sym) {
   return new Promise((resolve) => {
