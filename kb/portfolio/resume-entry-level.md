@@ -16,7 +16,7 @@ Motivated and reliable individual seeking a gas station attendant position. Comm
 
 ## Work Experience
 
-### Domino's Delivery Driver | 2024 - 2026
+### Domino's Delivery Driver | 2024 - 2025
 - Delivered food to customers in a timely and professional manner
 - Handled cash and credit card transactions accurately
 - Maintained excellent customer service standards
@@ -108,4 +108,4 @@ Motivated and reliable individual seeking a gas station attendant position. Comm
 
 ---
 
-*Last updated: 2026-05-10*
+*Last updated: 2026-05-11*
