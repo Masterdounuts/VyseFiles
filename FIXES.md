@@ -80,6 +80,6 @@
 
 ### CLI Cron Scope
 - **Problem:** openclaw cron add fails with "pairing required"
-- **Root Cause:** CLI has read-only scope
-- **Fix:** Use Control UI dashboard for cron management
-- **Status:** ✅ Documented
+- **Root Cause:** CLI has read-only scope, gateway requires scope approval
+- **Fix:** Edit ~/.openclaw/cron/jobs.json directly - gateway watches this file
+- **Status:** ✅ FIXED
