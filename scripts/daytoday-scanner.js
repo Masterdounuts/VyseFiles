@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // DAY-TO-DAY SCANNER - ACCUMULATION FIRST
-// Timeframe: Last 5+ days (weekly) - hold for tomorrow
-// Strategy: Find setups that will bounce by next day with volume UP = smart money buying
+// Timeframe: Last 5+ days (weekly) - enter today, exit tomorrow
+// Use when missed intraday entry or need more time for setup
 
 const https = require('https');
 const fs = require('fs');

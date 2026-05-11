@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // INTRADAY SCANNER - ACCUMULATION FIRST
-// Timeframe: Last 2 days (hourly) - same-day entries
-// Strategy: Find stocks pushed DOWN with volume UP = smart money buying
+// Timeframe: Last 2 days (hourly) - enter same day, exit same day
+// Profit goes to buying power for next day's trades
 
 const https = require('https');
 const fs = require('fs');
