@@ -196,9 +196,9 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | Rule | Value |
 |------|-------|
 | Max Position | **25%** of capital |
-| Max Positions | 5 stocks (Phase 1: $0-200) |
+| Max Positions | **1-2 stocks** (Phase 1: $0-200) - concentrate for bigger profits |
 | Phase 2 ($200-1000) | 3-4 positions |
-| Phase 3 ($1000+) | 2-3 positions |
+| Phase 3 ($1000+) | 5 positions (diversify)
 | Stop Loss (SMC) | Below liquidity |
 | Stop Loss (fallback) | -7% |
 | Take Profit (SMC) | -2 Fib extension OR +20%/$70 whichever first |
