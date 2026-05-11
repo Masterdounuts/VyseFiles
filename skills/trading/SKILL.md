@@ -195,10 +195,10 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 ### Rules
 | Rule | Value |
 |------|-------|
-| Max Position | 20% of capital |
+| Max Position | **25%** of capital |
 | Max Positions | 5 stocks |
 | Stop Loss (SMC) | Below liquidity |
-| Take Profit (SMC) | -2 Fib extension |
+| Take Profit (SMC) | -2 Fib extension OR +20%/$70 whichever first |
 | Stop Loss (fallback) | -7% |
 | Take Profit (fallback) | +12% |
 | Cash Reserve | 20% always |
