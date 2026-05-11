@@ -4,16 +4,16 @@
 
 ---
 
-## Current Positions (as of May 8, 2026 PT) - SMC + ACCUMULATION
+## Current Positions (as of May 11, 2026 PT) - SMC + ACCUMULATION
 
 | Symbol | Shares | Entry | Liquidity | CHOCH | SL | TP -1 | TP -2 | Current |
 |--------|--------|-------|-----------|-------|-----|-------|-------|--------|
-| NVDA | 0.05 | $198.31 | TBD | TBD | TBD | TBD | TBD | ~$216 | David's pick |
-| NIO | 1 | $5.94 | $5.87 | $6.02 | $5.47 | $6.15 | $6.30 | $5.88 | ADR (exiting) |
+| **DOGE** | Crypto | Free | - | - | -5% | +15% | - | $0.11 | Free position (already own) |
+| **WLFI** | 14.5 | $0.06873 | $0.07105 | $0.06508 | $0.07342 | - | - | Crypto | Weekend crypto only |
 | **GILD** | TBD | ~$130 | $127 | $137 | $127 | $145 | $155 | $131 | **Accumulation setup** |
-| **WLFI** | 14.5 | $0.06873 | $0.07105 | $0.06508 | $0.07342 | - | - | Crypto weekend mini - Your chart levels |
 | WGS | **SOLD** | $35.94 | - | - | - | - | - | - | +$38.36 (+6.7%) |
-| DOGE | ~Free | - | - | - | -5% | +15% | - | $0.11 |
+| NVDA | **SOLD** | $198.31 | - | - | - | - | - | $215.00 | +$0.92 (+9.3%) May 8 |
+| NIO | **SOLD** | $5.94 | - | - | - | - | - | $5.87 | -$0.07 (-1.2%) May 8 |
 
 ---
 
@@ -42,20 +42,22 @@
 | Metric | Amount |
 |--------|--------|
 | Starting Capital | $51.32 |
-| **Buying Power** | **~$37.70** |
-| **Invested** | **~$17.65** |
-| **Total** | **~$55.35** |
+| **Buying Power** | **~$52.17** |
+| **Invested (WLFI)** | **~$1.00** |
+| **Total** | **~$53.17** |
 
 ---
 
 ## Trade History
 
 | Date | Action | Symbol | Shares | Price | P/L | Notes |
-|------|--------|--------|--------|-------|-----|-------|
+|------|--------|--------|--------|-------|-------|-------|
 | 2026-05-05 | BUY | NVDA | 0.050426 | $198.31 | - | David's pick - AI/GPU play |
 | 2026-05-05 | BUY | WGS | 1 | $35.94 | - | David's independent research - bull case |
 | 2026-05-07 | SELL | WGS | 1 | $38.36 | +$2.42 (+6.7%) | Exit at target |
 | 2026-05-07 | BUY | NIO | 1 | $5.94 | - | SMC: Liquidity→Sweep→CHOCH→FVG |
+| 2026-05-08 | SELL | NVDA | 0.050426 | $215.00 | +$0.92 (+9.3%) | Exit May 8 |
+| 2026-05-08 | SELL | NIO | 1 | $5.87 | -$0.07 (-1.2%) | Exit May 8 (ADR rule) |
 | 2026-05-09 | BUY | WLFI | 14.5 | $0.06873 | - | Crypto limit buy - Your chart: Entry $0.06869, Sell 50% $0.07342, Stop $0.07105 |
 
 ---
