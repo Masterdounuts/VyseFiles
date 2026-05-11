@@ -30,6 +30,26 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## 🎯 CORE STRATEGY - What We're Actually Doing
+
+### The Real Edge:
+- **Big traders manipulate PRICE but NOT volume**
+- Find stocks **pushed DOWN** with **volume UP** = smart money buying
+- Ride the bounce back up
+
+### Scanner Priority (v6):
+| Priority | Signal | Meaning |
+|----------|--------|---------|
+| **1st** | ACCUMULATION | Price 📉 + Volume 📈 = Smart money buying ✅ |
+| **2nd** | V3_BOTTOM | Price 📉 + Near 52W low = Potential bounce |
+| **3rd** | MOMENTUM | Stocks already running (chase carefully) |
+
+### The Filter:
+- **NEVER** buy above 80% of 52-week range
+- Look for bottom 40% of range (room to run)
+
+---
+
 ## ⏰ Trading Timeframes
 
 We use the SAME strategy for two timeframes:
