@@ -39,11 +39,9 @@
 
 | Metric | Amount |
 |--------|--------|
-| Starting Capital | $51.32 |
-| Realized Profits | +$2.27 (WGS +$2.42, NVDA +$0.92, NIO -$0.07) |
-| **Buying Power** | **~$54** |
-| **Invested** | **~$16** (QQQ $15 + WLFI ~$1) |
-| **Total** | **~$70** |
+| **Total Capital** | **$55.46** |
+| **Buying Power** | **$38.72** |
+| **Invested** | **$16.64** |
 
 ---
 
