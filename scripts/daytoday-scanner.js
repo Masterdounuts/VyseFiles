@@ -9,6 +9,9 @@ const path = require('path');
 const PREDICTION_LOG = path.join(__dirname, '..', 'memory', 'daily', 'predictions-' + new Date().toISOString().slice(0,10) + '.json');
 const MAX_52WEEK_POS = 80;
 
+// EXCLUSION LIST
+const EXCLUDE = ['LCID', 'NIO', 'XPEV', 'AVCT'];
+
 const universe = ['AAPL','MSFT','GOOGL','AMZN','META','NVDA','AMD','INTC','MU','AVGO','QCOM','TXN','NXPI','MRVL','ARM','PLTR','COIN','MARA','RIOT','HOOD','SOFI','BBAI','UPST','QS','RIVN','LCID','SMCI','SNOW','DDOG','CRWD','ZS','NET','MDB','OKTA','TSLA','WMT','HD','COST','TGT','LOW','BBY','JPM','BAC','WFC','C','GS','MS','BLK','SCHW','JNJ','UNH','PFE','MRK','ABBV','LLY','XOM','CVX','COP','SLB','EOG','CAT','BA','HON','UNP','RTX','NOC','LMT','DIS','NFLX','LIN','APD','SHW','KO','PEP','PG','GME','AMC','SPY','QQQ'];
 
 async function getStockData(sym) {
@@ -99,7 +102,8 @@ async function scan() {
       if (!d) continue;
       const w52 = week52Data[d.symbol];
       const rangePos = w52 ? w52.rangePos : 50;
-      if (rangePos >= MAX_52WEEK_POS) continue; // Skip stocks at top
+      if (rangePos >= MAX_52WEEK_POS) continue;
+      if (EXCLUDE.includes(d.symbol)) continue; // Skip stocks at top
       
       const a = detectAccumulation(d);
       if (a) acc.push({ symbol: d.symbol, price: d.closes.slice(-1)[0], rangePos, ...a });
