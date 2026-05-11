@@ -58,6 +58,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | **When** | Any time, especially weekends when market closed |
 | **Max Profit** | $2 per trade (capped) |
 | **Reinvest** | Profit goes straight back into mini trading |
+| **Settlement** | Instant (but spread fee to withdraw profits) |
 | **Examples** | DOGE, WLFI, crypto plays |
 
 ### 2. INTRADAY TRADING (US Stocks - Same Day)
@@ -66,6 +67,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | **When** | 6:30am - 12:30pm PT (market 9:30am-1pm ET) |
 | **Enter** | 6:30am at market open |
 | **Exit** | By 12:30pm (latest, market closes 1pm PT) |
+| **Settlement** | T+1 - profit available NEXT day |
 | **Same day** | Profit in same trading day |
 
 ### 3. DAY-TO-DAY TRADING (Swing)
@@ -74,6 +76,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | **When** | Missed intraday entry OR setup needs more time |
 | **Enter** | Anytime today |
 | **Exit** | Tomorrow or when target hit |
+| **Settlement** | T+1 - profit available next day |
 | **Profit** | 1-2 days to realize (T+1 settlement) |
 
 ---
