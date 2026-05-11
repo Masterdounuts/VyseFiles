@@ -28,6 +28,31 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | Pre-market big movers (>3%) | ✅ KEPT RUNNING (+10% all day) |
 | Bottom-fishing / accumulation | ❌ FAILED (kept dropping) |
 
+---
+
+## ⏰ Trading Timeframes
+
+We use the SAME strategy for two timeframes:
+
+### Intraday (Same-Day)
+| Rule | Detail |
+|------|--------|
+| **Enter** | 6:30am PT (market open) |
+| **Exit** | 12:30pm PT (latest, market closes 1pm) |
+| **Profit** | Same day, but T+1 settlement |
+
+### Day-to-Day (Swing)
+| Rule | Detail |
+|------|--------|
+| **Enter** | Anytime (pre-market, open, after-hours) |
+| **Exit** | Next day or when target hit |
+| **Profit** | 1-2 days to realize |
+
+### When to Use Which:
+1. **Morning (6-9am PT)** → Intraday (same-day movers)
+2. **Missed morning?** → Switch to day-to-day, find tomorrow's winner
+3. **Both use same scanner/analysis** → Just hold longer for day-to-day
+
 ### The Pattern
 1. **QS** pre-market +9.7% → ended +9.95%
 2. **MARA** pre-market +4.3% → ended +6.18%
@@ -37,9 +62,11 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 ### Action Plan (Every Day)
 1. **6:00 AM PT** - Run `premarket-scanner.js`
 2. **6:10 AM PT** - Pick top 2-3 stocks with >3% pre-market move
-3. **6:30 AM PT** - ENTER at market open (NOT AFTER)
-4. **12:00 PM PT** - Start exit window
-5. **12:30 PM PT** - EXIT (market closes 1pm PT)
+3. **6:30 AM PT** - ENTER (intraday) OR identify swing candidates
+4. **12:00 PM PT** - Start exit window (intraday)
+5. **12:30 PM PT** - INTRADAY EXIT (market closes 1pm PT)
+6. **After 12:30pm** - If no intraday entry, switch to day-to-day candidates
+7. **Next Day** - Exit day-to-day positions at target OR end of day
 
 ### What NOT to Do
 - ❌ Don't chase stocks down (accumulation plays)
