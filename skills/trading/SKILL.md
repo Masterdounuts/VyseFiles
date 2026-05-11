@@ -20,6 +20,33 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## 🚨 CRITICAL: Pre-Market Strategy (MOST IMPORTANT)
+
+### What Works (Based on May 11 Data)
+| Strategy | Result |
+|----------|--------|
+| Pre-market big movers (>3%) | ✅ KEPT RUNNING (+10% all day) |
+| Bottom-fishing / accumulation | ❌ FAILED (kept dropping) |
+
+### The Pattern
+1. **QS** pre-market +9.7% → ended +9.95%
+2. **MARA** pre-market +4.3% → ended +6.18%
+3. **LCID** pre-market -6% → ended -6%
+4. **RIVN** pre-market down → stayed down
+
+### Action Plan (Every Day)
+1. **6:00 AM PT** - Run `premarket-scanner.js`
+2. **6:10 AM PT** - Pick top 2-3 stocks with >3% pre-market move
+3. **6:30 AM PT** - ENTER at market open (NOT AFTER)
+4. **12:00 PM PT** - Start exit window
+5. **12:30 PM PT** - EXIT (market closes 1pm PT)
+
+### What NOT to Do
+- ❌ Don't chase stocks down (accumulation plays)
+- ❌ Don't enter after 7am (missed the move)
+
+---
+
 ## PART 1: SMC (Smart Money Concepts) — Technical Entry
 
 ### The 6 Steps (All 6 Must Line Up)
@@ -491,6 +518,9 @@ node scripts/get-stock-news.js
 | 2026-05-11 | Used tools inconsistently - need workflow discipline | Today's fail |
 | 2026-05-11 | Accumulation = price DOWN + volume UP (smart money) | Volume concept |
 | 2026-05-11 | Need 8-step workflow: Scan→Price→Volume→Levels→Catalyst→Fundamentals→Chart→Recommend | Skill fix |
+| 2026-05-11 | **FOCUS ON PRE-MARKET BIG MOVERS (>3%) - they keep running** | Today's win |
+| 202-05-11 | Bottom-fishing/accumulation picks FAILED - don't chase bottoms | LCID/RIVN fail |
+| 2026-05-11 | Enter at 6:30am PT (market open) - not after | Timing fix |
 
 ---
 
