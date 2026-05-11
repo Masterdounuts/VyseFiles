@@ -2,6 +2,78 @@
   "trades": [],
   "outcomes": [
     {
+      "symbol": "GGB",
+      "entryPrice": 4.18,
+      "exitPrice": 4.28,
+      "pnl": "2.39%",
+      "date": "2026-04-14",
+      "result": "WIN",
+      "type": "historical"
+    },
+    {
+      "symbol": "AMC",
+      "entryPrice": 1.64,
+      "exitPrice": 1.69,
+      "pnl": "3.05%",
+      "date": "2026-04-17",
+      "result": "WIN",
+      "type": "historical"
+    },
+    {
+      "symbol": "LCID",
+      "entryPrice": 7.18,
+      "exitPrice": 6.6,
+      "pnl": "-8.08%",
+      "date": "2026-04-23",
+      "result": "LOSS",
+      "type": "historical"
+    },
+    {
+      "symbol": "BBAI",
+      "entryPrice": 3.88,
+      "exitPrice": 3.78,
+      "pnl": "-2.58%",
+      "date": "2026-04-23",
+      "result": "LOSS",
+      "type": "historical"
+    },
+    {
+      "symbol": "GGB",
+      "entryPrice": 4.18,
+      "exitPrice": 4.32,
+      "pnl": "3.35%",
+      "date": "2026-04-24",
+      "result": "WIN",
+      "type": "historical"
+    },
+    {
+      "symbol": "PFE",
+      "entryPrice": 26.9,
+      "exitPrice": 27.02,
+      "pnl": "0.45%",
+      "date": "2026-04-27",
+      "result": "WIN",
+      "type": "historical"
+    },
+    {
+      "symbol": "NRXP",
+      "entryPrice": 3.04,
+      "exitPrice": 2.91,
+      "pnl": "-4.28%",
+      "date": "2026-04-27",
+      "result": "LOSS",
+      "type": "historical"
+    },
+    {
+      "symbol": "LIDR",
+      "entryPrice": 2.14,
+      "exitPrice": 2.08,
+      "pnl": "-2.80%",
+      "date": "2026-04-27",
+      "result": "LOSS",
+      "type": "historical"
+    },
+    {
       "symbol": "WGS",
       "entryPrice": 35.94,
       "exitPrice": 38.36,
@@ -15,7 +87,7 @@
       "entryPrice": 198.31,
       "exitPrice": 215,
       "pnl": "8.42%",
-      "date": "2026-05-05",
+      "date": "2026-05-08",
       "result": "WIN",
       "type": "historical"
     },
@@ -24,7 +96,7 @@
       "entryPrice": 5.94,
       "exitPrice": 5.87,
       "pnl": "-1.18%",
-      "date": "2026-05-07",
+      "date": "2026-05-08",
       "result": "LOSS",
       "type": "historical"
     },
@@ -33,7 +105,7 @@
       "entryPrice": 708.78,
       "exitPrice": 714.2,
       "pnl": "0.76%",
-      "date": "2026-05-08",
+      "date": "2026-05-11",
       "result": "WIN",
       "type": "historical"
     }
