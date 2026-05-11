@@ -196,10 +196,12 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | Rule | Value |
 |------|-------|
 | Max Position | **25%** of capital |
-| Max Positions | 5 stocks |
+| Max Positions | 5 stocks (Phase 1: $0-200) |
+| Phase 2 ($200-1000) | 3-4 positions |
+| Phase 3 ($1000+) | 2-3 positions |
 | Stop Loss (SMC) | Below liquidity |
-| Take Profit (SMC) | -2 Fib extension OR +20%/$70 whichever first |
 | Stop Loss (fallback) | -7% |
+| Take Profit (SMC) | -2 Fib extension OR +20%/$70 whichever first |
 | Take Profit (fallback) | +12% |
 | Cash Reserve | 20% always |
 
@@ -207,6 +209,19 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 - 90-100% confidence = full position
 - Less confident = smaller position
 - **No catalyst = NO entry**
+
+---
+
+## Exit Strategy (MUST FOLLOW)
+
+1. **Break even** → Exit if price hits entry (no loss)
+2. **Take 50% at target** → Lock in half profit
+3. **Let remainder ride** → Capture more upside
+
+**Example:**
+- Target: +12%
+- At +6%: Sell 50% position → risk now ZERO
+- Remaining 50% can continue to +12%, +20%, etc.
 
 ---
 
@@ -240,6 +255,15 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 - Set alerts for TP/SL
 - Track in positions.md
 - Review after exit
+
+---
+
+## Piggybank Rule
+
+**5% of ALL trade profits → QQQ** (rounded down to nearest dollar)
+- ONLY deposit if profit ≥ $1
+- QQQ = long-term AI/Nasdaq-100 hold
+- Separate from SMC trades
 
 ---
 
