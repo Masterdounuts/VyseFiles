@@ -1,6 +1,6 @@
-# Document Skill
+# PDF Creation & Generation Skill
 
-*Create, format, and convert documents - PDFs, resumes, reports*
+*Create, format, and generate PDFs - resumes, reports, documents*
 
 ---
 
