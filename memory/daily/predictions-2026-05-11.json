@@ -1,65 +1,62 @@
 {
   "date": "2026-05-11",
-  "timestamp": "2026-05-11T16:23:16.215Z",
-  "topMovers": [
-    {
-      "symbol": "QS",
-      "change": "10.3",
-      "price": 8.320099830627441
-    },
-    {
-      "symbol": "QCOM",
-      "change": "7.8",
-      "price": 236.1199951171875
-    },
-    {
-      "symbol": "MARA",
-      "change": "5.9",
-      "price": 13.699999809265137
-    },
-    {
-      "symbol": "LCID",
-      "change": "-5.6",
-      "price": 5.985000133514404
-    },
-    {
-      "symbol": "MU",
-      "change": "5.5",
-      "price": 788.030029296875
-    }
-  ],
-  "chochReady": [
-    {
-      "symbol": "AAPL",
-      "distance": "0.8%",
-      "price": 292.375
-    },
-    {
-      "symbol": "GOOGL",
-      "distance": "2.1%",
-      "price": 393.81500244140625
-    },
-    {
-      "symbol": "AMZN",
-      "distance": "2.2%",
-      "price": 272.5299987792969
-    }
-  ],
+  "timestamp": "2026-05-11T17:21:15.779Z",
   "accumulation": [
     {
+      "symbol": "PLTR",
+      "price": 135.27000427246094,
+      "type": "ACCUMULATION",
+      "priceDown": "-4.2",
+      "rangePos": "37"
+    },
+    {
+      "symbol": "NET",
+      "price": 193.32000732421875,
+      "type": "ACCUMULATION",
+      "priceDown": "-7.3",
+      "rangePos": "31"
+    },
+    {
+      "symbol": "EOG",
+      "price": 132.6699981689453,
+      "type": "ACCUMULATION",
+      "priceDown": "-2.3",
+      "rangePos": "30"
+    },
+    {
+      "symbol": "SOFI",
+      "price": 16.010000228881836,
+      "type": "V3_BOTTOM",
+      "priceDown": "-12.8",
+      "rangePos": "21"
+    },
+    {
       "symbol": "RIVN",
+      "price": 14.17199993133545,
       "type": "V3_BOTTOM",
-      "price": 14.289999961853027
-    },
-    {
-      "symbol": "LCID",
-      "type": "V3_BOTTOM",
-      "price": 5.985000133514404
-    },
-    {
-      "symbol": "HD",
-      "type": "V3_BOTTOM",
-      "price": 313.1549987792969
+      "priceDown": "-12.2",
+      "rangePos": "8"
     }
-  ]
+  ],
+  "momentum": [
+    {
+      "symbol": "SMCI",
+      "change": "24.7",
+      "price": 34.70000076293945,
+      "rangePos": 35.506067886130225
+    },
+    {
+      "symbol": "NET",
+      "change": "-20.9",
+      "price": 193.32000732421875,
+      "rangePos": 46.086678020285504
+    },
+    {
+      "symbol": "QS",
+      "change": "13.2",
+      "price": 8.21720027923584,
+      "rangePos": 28.92731107665413
+    }
+  ],
+  "avoid": []
 }

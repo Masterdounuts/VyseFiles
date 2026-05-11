@@ -11,7 +11,7 @@ const MAX_52WEEK_POS = 80;
 
 // EXCLUSION LIST - Don't trade these
 const EXCLUDE = [
-  'LCID', 'NIO', 'XPEV', // ADRs
+  'NIO', 'XPEV', // ADRs
   'AVCT', // Penny far-OUT
 ];
 
