@@ -25,7 +25,7 @@ doc.font('Helvetica-Bold').fontSize(11).text('Work Experience', margin, y);
 y += 12;
 
 // Domino's
-doc.font('Helvetica-Bold').fontSize(10).text('Domino\'s Delivery Driver | 2024 - 2025', margin, y);
+doc.font('Helvetica-Bold').fontSize(10).text('Domino\'s Delivery Driver | 2024 - 2026', margin, y);
 y += 12;
 doc.font('Helvetica').fontSize(9).text('• Delivered food to customers in a timely and professional manner', margin, y);
 y += 12;
