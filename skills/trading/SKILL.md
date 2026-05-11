@@ -90,20 +90,19 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 ### Action Plan (Every Day)
 
 #### Mini Trading (Anytime)
-1. Check crypto prices anytime
-2. Max $2 profit per trade
-3. Reinvest profit back into mini
+1. **Run:** `node scripts/mini-scanner.js`
+2. Check crypto prices
+3. Max $2 profit per trade → reinvest to mini
 
 #### Intraday (Morning)
-1. **6:00 AM PT** - Run `premarket-scanner.js`
-2. **6:10 AM PT** - Analyze accumulation signals (price ↓ + volume ↑)
+1. **6:00 AM PT** - Run `node scripts/intraday-scanner.js`
+2. **6:10 AM PT** - Analyze accumulation signals
 3. **6:30 AM PT** - ENTER at market open
-4. **12:00 PM PT** - Start exit window
-5. **12:30 PM PT** - EXIT (market closes 1pm PT)
+4. **12:30 PM PT** - EXIT same day
 
 #### Day-to-Day (Missed Morning)
-1. **After 12:30pm** - If no intraday entry, scan for tomorrow's candidates
-2. Look for accumulation that will bounce by tomorrow
+1. **After 12:30pm** - Run `node scripts/daytoday-scanner.js`
+2. Find accumulation for tomorrow's bounce
 3. **Next Day** - Exit at target or end of day
 
 ### What NOT to Do
