@@ -12,13 +12,13 @@ let y = 50;
 doc.font('Helvetica-Bold').fontSize(18).text('David Jacques', margin, y);
 y += 24;
 doc.font('Helvetica').fontSize(10).text('Phone: (442)270-9989  |  Email: Jacquesdavid59@gmail.com  |  Location: Astoria, OR', margin, y);
-y += 25;
+y += 40;
 
 // Objective
 doc.font('Helvetica-Bold').fontSize(11).text('Objective', margin, y);
 y += 15;
 doc.font('Helvetica').fontSize(10).text('Motivated and reliable individual seeking a gas station attendant position. Committed to providing exceptional customer service, maintaining a clean and organized work environment, and being a dependable team member. Eager to learn new skills and contribute to a fast-paced retail operation.', margin, y, { width: 495 });
-y += 20;
+y += 40;
 
 // Work Experience
 doc.font('Helvetica-Bold').fontSize(11).text('Work Experience', margin, y);
