@@ -1,0 +1,41 @@
+{
+  "trades": [],
+  "outcomes": [
+    {
+      "symbol": "WGS",
+      "entryPrice": 35.94,
+      "exitPrice": 38.36,
+      "pnl": "6.73%",
+      "date": "2026-05-05",
+      "result": "WIN",
+      "type": "historical"
+    },
+    {
+      "symbol": "NVDA",
+      "entryPrice": 198.31,
+      "exitPrice": 215,
+      "pnl": "8.42%",
+      "date": "2026-05-05",
+      "result": "WIN",
+      "type": "historical"
+    },
+    {
+      "symbol": "NIO",
+      "entryPrice": 5.94,
+      "exitPrice": 5.87,
+      "pnl": "-1.18%",
+      "date": "2026-05-07",
+      "result": "LOSS",
+      "type": "historical"
+    },
+    {
+      "symbol": "QQQ",
+      "entryPrice": 708.78,
+      "exitPrice": 714.2,
+      "pnl": "0.76%",
+      "date": "2026-05-08",
+      "result": "WIN",
+      "type": "historical"
+    }
+  ]
+}
