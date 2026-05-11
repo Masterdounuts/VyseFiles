@@ -65,6 +65,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 | Rule | Detail |
 |------|--------|
 | **When** | 6:30am - 12:30pm PT (market 9:30am-1pm ET) |
+| **Premarket** | Check 15min/30min view for same-day accumulation |
 | **Enter** | 6:30am at market open |
 | **Exit** | By 12:30pm (latest, market closes 1pm PT) |
 | **Settlement** | T+1 - profit available NEXT day |
@@ -100,8 +101,9 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 #### Intraday (Morning)
 1. **6:00 AM PT** - Run `node scripts/intraday-scanner.js`
 2. **6:10 AM PT** - Analyze accumulation signals
-3. **6:30 AM PT** - ENTER at market open
-4. **12:30 PM PT** - EXIT same day → profit available next day (T+1 settlement)
+3. **6:15 AM PT** - Check premarket (15min/30min view) for same-day entries
+4. **6:30 AM PT** - ENTER at market open
+5. **12:30 PM PT** - EXIT same day → profit available next day (T+1 settlement)
 
 #### Day-to-Day (Missed Morning)
 1. **After 12:30pm** - Run `node scripts/daytoday-scanner.js`

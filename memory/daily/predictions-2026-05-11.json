@@ -1,62 +1,7 @@
 {
   "date": "2026-05-11",
-  "timestamp": "2026-05-11T17:30:10.332Z",
-  "accumulation": [
-    {
-      "symbol": "PLTR",
-      "price": 135.14500427246094,
-      "type": "ACCUMULATION",
-      "priceDown": "-4.3",
-      "rangePos": "37"
-    },
-    {
-      "symbol": "NET",
-      "price": 193.8350067138672,
-      "type": "ACCUMULATION",
-      "priceDown": "-7.0",
-      "rangePos": "31"
-    },
-    {
-      "symbol": "EOG",
-      "price": 132.6999969482422,
-      "type": "ACCUMULATION",
-      "priceDown": "-2.3",
-      "rangePos": "30"
-    },
-    {
-      "symbol": "SOFI",
-      "price": 16.045000076293945,
-      "type": "V3_BOTTOM",
-      "priceDown": "-12.6",
-      "rangePos": "21"
-    },
-    {
-      "symbol": "RIVN",
-      "price": 14.229999542236328,
-      "type": "V3_BOTTOM",
-      "priceDown": "-11.8",
-      "rangePos": "9"
-    }
-  ],
-  "momentum": [
-    {
-      "symbol": "SMCI",
-      "change": "25.1",
-      "price": 34.81999969482422,
-      "rangePos": 35.78591613448764
-    },
-    {
-      "symbol": "BTBT",
-      "change": "21.8",
-      "price": 2.180000066757202,
-      "rangePos": 28.181818575898454
-    },
-    {
-      "symbol": "NET",
-      "change": "-20.7",
-      "price": 193.8350067138672,
-      "rangePos": 46.50307470539728
-    }
-  ],
+  "timestamp": "2026-05-11T17:53:17.902Z",
+  "accumulation": [],
+  "momentum": [],
   "avoid": []
 }

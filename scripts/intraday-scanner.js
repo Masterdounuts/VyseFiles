@@ -182,3 +182,54 @@ async function scan() {
 }
 
 scan().catch(console.error);
+// === PREMARKET ANALYSIS (15min/30min for same-day entries) ===
+async function getPremarketData(symbols) {
+  console.log('📊 Checking premarket (15min view)...');
+  const results = await Promise.all(symbols.slice(0, 20).map(sym => new Promise(resolve => {
+    https.get(`https://query1.finance.yahoo.com/v8/finance/chart/${sym}?interval=15m&range=1d`, {headers: {'User-Agent': 'Mozilla/5.0'}}, res => {
+      let d = '';
+      res.on('data', c => d += c);
+      res.on('end', () => {
+        try {
+          const j = JSON.parse(d);
+          const r = j.chart?.result?.[0];
+          if (!r) return resolve(null);
+          const ts = r.timestamp || [];
+          const c = r.indicators?.quote?.[0]?.close || [];
+          const v = r.indicators?.quote?.[0]?.volume || [];
+          
+          // Get last 3 candles (last ~45min premarket)
+          const recentC = c.slice(-3).filter(x => x !== null);
+          const recentV = v.slice(-3).filter(x => x !== null);
+          
+          if (recentC.length < 2) return resolve(null);
+          
+          const priceChange = ((recentC[recentC.length-1] - recentC[0]) / recentC[0]) * 100;
+          const volChange = recentV.length > 1 ? (recentV[recentV.length-1] / recentV[0]) : 1;
+          
+          resolve({ symbol: sym, priceChange, volChange, lastPrice: recentC[recentC.length-1] });
+        } catch(e) { resolve(null); }
+      });
+    }).on('error', () => resolve(null));
+  })));
+  
+  return results.filter(r => r && r.priceChange);
+}
+
+// Run premarket if it's early morning (before 9:30am ET = 6:30am PT)
+const HOUR_PT = new Date().getHours();
+if (HOUR_PT >= 6 && HOUR_PT < 10) {
+  getPremarketData(universe).then(pm => {
+    if (pm.length) {
+      console.log('\n🌅 PREMARKET SIGNALS:');
+      // Sort by accumulation (price down + volume up)
+      const accumulation = pm.filter(p => p.priceChange < 0 && p.volChange > 1.5).sort((a, b) => b.volChange - a.volChange);
+      if (accumulation.length) {
+        console.log('  📉 ACCUMULATION (price↓ + volume↑):');
+        accumulation.slice(0, 5).forEach((p, i) => {
+          console.log(`     ${i+1}. ${p.symbol} ${p.priceChange?.toFixed(1)}% | Vol ${p.volChange?.toFixed(1)}x | $${p.lastPrice?.toFixed(2)}`);
+        });
+      }
+    }
+  }).catch(() => {});
+}
