@@ -49,6 +49,29 @@ Use skills when triggered. After work, update relevant skill if I learned someth
 | cli | Something breaks |
 | learning | Continuous improvement |
 | github | Version control |
+| pdf | Document creation |
+
+---
+
+## 5. Memory Vault (Session Context Extractor)
+
+### When to Run Distillation
+| Frequency | When | Command |
+|-----------|------|---------|
+| **Nightly** | Once per day (evening) | `npm run v2:distill` |
+| **Weekly** | Archive old data | `npm run v2:archive` |
+
+### Distillation Commands
+```bash
+cd skills/session-context-extractor-v2
+npm run v2:distill    # Extract session learnings
+npm run v2:query      # Query stored facts
+```
+
+### Vault Location
+- `context-vault/people/` - Contacts & relationships
+- `context-vault/errors/` - Error history
+- `context-vault/projects/` - Project decisions
 
 ---
 
