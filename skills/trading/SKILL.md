@@ -98,7 +98,7 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 1. **6:00 AM PT** - Run `node scripts/intraday-scanner.js`
 2. **6:10 AM PT** - Analyze accumulation signals
 3. **6:30 AM PT** - ENTER at market open
-4. **12:30 PM PT** - EXIT same day → profit goes to buying power for next trades
+4. **12:30 PM PT** - EXIT same day → profit available next day (T+1 settlement)
 
 #### Day-to-Day (Missed Morning)
 1. **After 12:30pm** - Run `node scripts/daytoday-scanner.js`
