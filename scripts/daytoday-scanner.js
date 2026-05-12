@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// DAY-TO-DAY SCANNER - ACCUMULATION FIRST
+// DAY-TO-DAY SCANNER - BIG TRADER FIRST
 // Timeframe: Last 5+ days (weekly) - enter today, exit tomorrow
 // Use when missed intraday entry or need more time for setup
 
@@ -98,9 +98,9 @@ function detectMomentum(data) {
 }
 
 async function scan() {
-  console.log('DAY-TO-DAY SCANNER - ACCUMULATION FIRST');
+  console.log('DAY-TO-DAY SCANNER - BIG TRADER FIRST');
   console.log('============================================');
-  console.log('🎯 Strategy: Hold for tomorrow - find setups that will bounce by next day with volume UP = smart money buying\n');
+  console.log('🎯 Priority: 1. Big Trader → 2. 52W → 3. Accum\n');
   
   const acc = [], movers = [];
   const week52Data = {};

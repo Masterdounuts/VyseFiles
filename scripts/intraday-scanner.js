@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// INTRADAY SCANNER - ACCUMULATION FIRST
+// INTRADAY SCANNER - BIG TRADER DETECTION FIRST
+// Priority: 1. Big Trader → 2. 52-week → 3. Accumulation
 // Timeframe: Last 2 days (hourly) - enter same day, exit same day
-// Profit goes to buying power for next day's trades
 
 const https = require('https');
 const fs = require('fs');
@@ -110,9 +110,9 @@ function detectMomentum(data) {
 }
 
 async function scan() {
-  console.log('INTRADAY SCANNER - ACCUMULATION FIRST');
+  console.log('INTRADAY SCANNER - BIG TRADER FIRST');
   console.log('============================================');
-  console.log('🎯 Strategy: Same-day entry, same-day exit with volume UP = smart money buying\n');
+  console.log('🎯 Priority: 1. Big Trader → 2. 52W → 3. Accum\n');
   
   const acc = [], movers = [];
   const week52Data = {};
