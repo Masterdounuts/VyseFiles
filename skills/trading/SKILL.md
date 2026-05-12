@@ -347,7 +347,10 @@ node scripts/intraday-scanner.js   # Stock setups
 #### Mini Trading (Anytime)
 1. **Run:** `node scripts/mini-scanner.js`
 2. Check crypto prices
-3. Max $2 profit per trade → reinvest to mini
+3. **Profit target:** 10% of position OR $0.10 minimum (whichever higher)
+   - Dynamic: Scales with portfolio size
+   - Example: $1 position → $0.10 min profit | $10 position → $1.00 min profit
+4. Exit when profit target hit → reinvest to mini
 
 #### Intraday (Morning)
 1. **6:00 AM PT** - Run `node scripts/intraday-scanner.js`
