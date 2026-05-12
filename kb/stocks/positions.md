@@ -12,6 +12,7 @@
 | **DOGE** | SOLD | $0.11027 | Exit -$0.02 | May 12 |
 | **QQQ** | 0.021 | $708.78 | Piggybank | Long-term hold |
 | **WLFI** | 14.5 | $0.06897 | Crypto | Target $0.07587 |
+| **MARA** | 1 | $11.78 | Pending | Limit buy @ $11.78 |
 
 ---
 

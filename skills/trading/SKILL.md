@@ -110,7 +110,7 @@ Timeline: 8-18 hours
 
 ### Example: WLFI (Previously Failed)
 ```
-Support: $0.065 | Target: $0.10
+Support: $0.065 | Target: $0.07587
 Timeline: Days to weeks (no clear bounce pattern)
 → Does NOT fit Crypto (≤24 hours) → FAIL ❌
 → But we hold because: big traders in profit (+5%)
@@ -364,10 +364,14 @@ node scripts/intraday-scanner.js   # Stock setups
 | Rule | Detail |
 |------|--------|
 | **When** | Any time, especially weekends when market closed |
-| **Max Profit** | $2 per trade (capped) |
+| **Min Profit** | 10% of position OR $0.10 minimum (whichever higher) |
 | **Reinvest** | Profit goes straight back into mini trading |
 | **Settlement** | Instant (but spread fee to withdraw profits) |
 | **Examples** | DOGE, WLFI, crypto plays |
+
+> **⚠️ Robinhood Crypto Fee:** 0.85% (under $50K volume)
+> - Target = Entry × 1.10 (10% profit accounts for fee)
+> - See `kb/stocks/crypto-profits.md` for full profit rules
 
 ### 2. INTRADAY TRADING (US Stocks - Same Day)
 | Rule | Detail |
