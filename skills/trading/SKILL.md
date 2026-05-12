@@ -20,6 +20,47 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## 🧠 HUMAN BEHAVIOR FRAMEWORK
+
+*Every market is controlled by humans. Humans have predictable behaviors.*
+
+### The Cycle
+```
+FOMO → FEAR → PANIC → EXHAUSTION → RECOVERY
+(buy)   (sell) (sell more) (done)   (bounce)
+```
+
+### How to Read It
+
+| Phase | Price | Volume | Signal |
+|-------|-------|--------|--------|
+| **FOMO** | Rising | HIGH | Top forming |
+| **FEAR** | Falling | HIGH | Keep falling |
+| **PANIC** | Falling fast | VERY HIGH | Don't catch knife |
+| **EXHAUSTION** | Flat/Low | LOW | Bottom forming 🟢 |
+| **RECOVERY** | Rising | INCREASING | Bounce starting |
+
+### Key Insight
+- **Volume tells the truth** - High volume = emotion (FOMO or panic)
+- **Low volume = exhaustion** - No more sellers = potential bottom
+- **Self-preservation** - Traders protect gains, cut losses
+
+### Applying to Positions
+
+| Position | Phase | Signal |
+|----------|-------|--------|
+| AMC | FEAR → EXHAUSTION | 🟢 Bottom forming (RSI oversold) |
+| DOGE | CONSOLIDATION | 🟡 Wait for volume |
+| WLFI | EXHAUSTION | 🟢 Near support |
+
+### Script for Analysis
+```bash
+# Check human behavior phase
+node scripts/indicators.js SYMBOL  # RSI shows fear level
+```
+
+---
+
 ## 🚨 CRITICAL: Pre-Market Strategy (MOST IMPORTANT)
 
 ### What Works (Based on May 11 Data)
