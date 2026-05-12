@@ -12,9 +12,13 @@ const MAX_52WEEK_POS = 80;
 
 // EXCLUSION LIST - Don't trade these
 const EXCLUDE = [
-  'NIO', 'XPEV', 'BABA', // ADRs
+  'NIO', 'XPEV', 'BABA', // ADRs - can't trade
   'AVCT', // Penny far-OUT
-  'LCID', // Listed in exclusion list
+  'LCID', // ADR - can't trade
+  // Penny stocks too risky/low volume
+  'WISH','TELL','OTRK','ENSC','AUVI','BCTX','GHS',
+  'JMDA','ANEB','SLVR','PLAG','HMBL','SRAX','CLOK',
+  'REFI','NXN','APPH','MTRY','DATS','CNTY'
 ];
 
 const universe = [
@@ -37,7 +41,12 @@ const universe = [
   // Other
   'SOFI','UPST','HOOD','RIVN',
   // ETFs
-  'SPY','QQQ','IWM','TNA','TQQQ'
+  'SPY','QQQ','IWM','TNA','TQQQ',
+  // Penny Stocks (under $10) - AFFORDABLE
+  'LCID','NIO','GOEV','TELL','SOFI','UPST','RIVN','ASTL','DNA',
+  'MRNA','NOVVUM','ENSC','WISH','OTRK','AUVI','BCTX','GHS',
+  'JMDA','ANEB','SLVR','PLAG','HMBL','SRAX','CLOK','Aeth',
+  'REFI','NXN','APPH','MTRY','DATS','CNTY','PLTY'
 ];
 
 async function getStockData(sym) {
