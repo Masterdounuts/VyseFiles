@@ -188,6 +188,63 @@ Average: ~9 hours
 
 ---
 
+## 📊 POSITION ANALYSIS FRAMEWORK
+
+*For evaluating current positions*
+
+### The Check List
+
+For every position, know:
+1. **Support level** - Where price bounced before
+2. **Times at support** - More = stronger
+3. **Big trader P/L** - Underwater = may pump to exit
+4. **Our entry vs their entry** - Near = good
+5. **Timeline to target** - From historical bounces
+
+### Example: AMC Analysis
+```
+Support: $1.35 | Held: 6 times today
+Big traders: -10.1% (underwater)
+Their entry: $1.52 | Our entry: $1.44
+Timeline: 8-18 hours
+→ VERDICT: Hold - they may pump to exit
+```
+
+### Example: WLFI Analysis
+```
+Support: $0.065 | Held: multiple times
+Big traders: +5.0% (in profit)
+All moves: Absorbing (building)
+Timeline: Days to weeks (less defined)
+→ VERDICT: Hold - big traders in profit
+```
+
+### Position Audit Questions
+
+| Question | Why It Matters |
+|----------|----------------|
+| How many times hit support? | More = stronger defense |
+| What's big trader P/L? | Underwater = pump motivation |
+| How far to target? | Reward vs risk |
+| What's the timeline? | Does it match trade type? |
+
+---
+
+## 📋 POSITION AUDIT CHECKLIST
+
+*Run before deciding to hold/sell*
+
+```
+Current price: ____
+Support level: ____
+Times at support: ____
+Big trader P/L: ____
+Timeline to target: ____
+→ HOLD / SELL / MOVE STOP
+```
+
+---
+
 ## 🎯 HOW TO FIND NEW CANDIDATES
 
 ### Step 1: Check Human Behavior Phase
@@ -351,6 +408,8 @@ node scripts/intraday-scanner.js   # Stock setups
    - Dynamic: Scales with portfolio size
    - Example: $1 position → $0.10 min profit | $10 position → $1.00 min profit
 4. Exit when profit target hit → reinvest to mini
+5. **Track profits:** Use `kb/stocks/crypto-profits.md` for logging wins
+6. **Redistribute:** When profit captured, check if position still valid → find new if not
 
 #### Intraday (Morning)
 1. **6:00 AM PT** - Run `node scripts/intraday-scanner.js`
