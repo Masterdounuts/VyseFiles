@@ -26,13 +26,31 @@
 
 - **Minimum profit target:** 10% of position OR $0.10 minimum (whichever higher)
 - **Dynamic:** Scales with portfolio size
-- When profit hits: record → check if still valid → redeploy if not
+- **Robinhood fee:** 0.85% (must account for in target)
+- **When profit hits:** record → check if still valid → redeploy if not
 
 ---
 
 ## Current Positions (Active)
 
-| Crypto | Shares | Entry | Target | Min Profit |
-|--------|--------|-------|--------|-------------|
-| WLFI | 14.5 | $0.06873 | $0.08 | $0.10 |
-| DOGE | 7.16 | $0.1118 | $0.12 | $0.10 |
+| Crypto | Shares | Entry | Target | Gap | Min Profit |
+|--------|--------|-------|--------|-----|------------|
+| **DOGE** | 7.16 | $0.111732 | **$0.12291** | +10% | $0.08 |
+| **WLFI** | 14.5 | $0.06897 | **$0.07587** | +10% | $0.10 |
+
+### Target Calculation
+
+- **Target = Entry × 1.10** (10% profit)
+- **Fee (0.85%)** factored into target
+- Actual profit after fee ≈ 10%
+
+---
+
+## Fee Note (Robinhood)
+
+| Volume | Fee |
+|--------|-----|
+| < $50K | 0.85% |
+| $50K-$250K | 0.25% |
+
+*Updated: 2026-05-12*
