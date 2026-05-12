@@ -48,6 +48,8 @@ The more you know, the better you can help. But remember — you're learning abo
 - Trading is side quest, not main thing _(learned 2026-05-12)_
 - Speed over perfection _(learned 2026-05-12)_
 - Resume one page, dates accurate _(learned 2026-05-12)_
+- Bullet points over walls _(learned 2026-05-12)_
+- Verify final output, not just source _(learned 2026-05-12)_
 
 ## What Works Well
 - Dream sessions generating ideas
@@ -67,3 +69,5 @@ The more you know, the better you can help. But remember — you're learning abo
 <!-- Auto-updated from session context -->
 - **[⚠️ Error]** Missed NIO is ADR - David caught it _(2026-05-12)_
 - **[⚠️ Error]** Context vault format mismatch (uses Decision:/Error: prefixes, we use ## headings) _(2026-05-12)_
+- **[⚠️ Error]** Session persistence returning 0 new messages - wrong directory _(2026-05-12)_
+- **[⚠️ Error]** Vault extracting 0 facts - wrong workspace path _(2026-05-12)_
