@@ -513,44 +513,102 @@ Buying Power = Total - Invested_in_positions
 
 ---
 
-## TRADING TOOLS (When to Use Each)
+## INTEGRATED WORKFLOW - SMC + Tools + Learning
 
-### Tool Workflow
+**The foundation is SMC (Smart Money Concepts). Tools enhance and confirm.**
 
-| Phase | Tool | What It Does |
-|-------|------|---------------|
-| **1. SCAN** | `smc-scan.js` | Find candidates with volume + pattern |
-| **2. FILTER** | `get-stock-price.js` | Price + 52W range |
-| **3. VOLUME** | `volume-check.js` | Institutional activity? |
-| **4. LEVELS** | `swing-levels.js` | Support/resistance clusters |
-| **5. CATALYST** | `web_search` | Search for news/event |
-| **6. FUNDAMENTALS** | `web_fetch` (CNBC) | P/E, debt, earnings |
-| **7. CHART** | Browser → TradingView | Visual confirmation |
-| **8. RECOMMEND** | Only if all 6 SMC steps complete | Present to David |
+### Phase 1: SMC Strategy (Required Foundation)
+| Step | What | Script |
+|------|------|--------|
+| 1. SCAN | Find candidates with volume + pattern | `smc-scan.js` |
+| 2. FILTER | Get price + 52W range | `get-stock-price.js` |
+| 3. VOLUME | Check institutional activity | `volume-check.js` |
+| 4. LEVELS | Find support/resistance | `swing-levels.js` |
+| 5. CATALYST | Search news/event | `web_search` |
+| 6. FUNDAMENTALS | P/E, debt, earnings | `web_fetch` (CNBC) |
+| 7. CHART | Visual confirmation | Browser → TradingView |
+| 8. SETUP VALID? | All 6 SMC steps complete | THEN proceed to Phase 2 |
 
-### Tool Commands
+### Phase 2: Tools Confirmation (If SMC says BUY)
+| Check | Tool | Command |
+|-------|------|---------|
+| **Indicators** | `indicators.js` | `node scripts/indicators.js SYMBOL` |
+| **Patterns** | `pattern-recognizer.js` | `node scripts/pattern-recognizer.js SYMBOL` |
+| **History** | `trade-learner.js` | `node scripts/trade-learner.js stats` |
+
+### Phase 3: Execute + Learn
+| Action | Tool | Command |
+|--------|------|---------|
+| **Enter Trade** | Manual | Based on Phases 1+2 |
+| **Record** | `trade-learner.js` | `node scripts/trade-learner.js record SYMBOL <setup> <win|loss> <profit>` |
+| **Add Lesson** | `trade-learner.js` | `node scripts/trade-learner.js lesson "<lesson>"` |
+
+### The Complete Workflow
 
 ```bash
-# 1. Find candidates (run first)
+# === PHASE 1: SMC (Foundation) ===
+
+# 1. Scan for candidates
 node scripts/smc-scan.js
+node scripts/intraday-scanner.js
 
-# 2. Get price for specific stock
+# 2. Check specific stock
 node scripts/get-stock-price.js SYMBOL
-
-# 3. Check volume (institutional activity)
 node scripts/volume-check.js SYMBOL
 
-# 4. Find swing levels (support/resistance)
-node scripts/swing-levels.js SYMBOL
+# 3. Verify SMC steps (all must complete)
+# - Liquidity taken?
+# - CHOCH confirmed?
+# - FVG pullback happened?
+# - Catalyst exists?
 
-# 5. Get full fundamentals
-# Use web_fetch: https://www.cnbc.com/quotes/SYMBOL
+# IF SMC SETUP IS VALID → GO TO PHASE 2
 
-# 6. Search for catalyst
-web_search: "SYMBOL stock news catalyst May 2026"
+# === PHASE 2: Tools Confirmation ===
 
-# 7. Open TradingView chart (for visual confirmation)
-browser → https://www.tradingview.com/chart/?symbol=SYMBOL
+# 4. Check indicators
+node scripts/indicators.js SYMBOL
+# Look for: RSI oversold, MACD bullish, price near lower Bollinger
+
+# 5. Check patterns
+node scripts/pattern-recognizer.js SYMBOL
+# Look for: Similar historical setups went up
+
+# 6. Check what worked before
+node scripts/trade-learner.js stats
+
+# IF ALL CONFIRM → ENTER TRADE
+
+# === PHASE 3: Execute + Learn ===
+
+# 7. Enter trade with stop/target
+# 8. Exit trade
+# 9. Record outcome
+node scripts/trade-learner.js record SYMBOL "accumulation" win 2.89
+node scripts/trade-learner.js record SYMBOL "bottom-fish" loss -1.05
+
+# 10. Add lesson if any
+node scripts/trade-learner.js lesson "Never chase stocks down"
+```
+
+### Tool Commands (Quick Reference)
+
+```bash
+# Scanning
+node scripts/smc-scan.js              # SMC candidates
+node scripts/intraday-scanner.js       # Intraday opportunities
+node scripts/premarket-scanner.js     # Pre-market movers
+
+# Analysis
+node scripts/get-stock-price.js SYMBOL  # Price + 52W
+node scripts/volume-check.js SYMBOL    # Volume analysis
+node scripts/indicators.js SYMBOL       # RSI, MACD, Bollinger, etc
+node scripts/pattern-recognizer.js SYMBOL # Find similar patterns
+
+# Learning
+node scripts/trade-learner.js stats              # Show all stats
+node scripts/trade-learner.js record SYM setup W|L profit
+node scripts/trade-learner.js lesson "text"       # Add lesson
 ```
 
 ### When to Use Each
