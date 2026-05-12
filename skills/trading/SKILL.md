@@ -53,10 +53,51 @@ FOMO → FEAR → PANIC → EXHAUSTION → RECOVERY
 | DOGE | CONSOLIDATION | 🟡 Wait for volume |
 | WLFI | EXHAUSTION | 🟢 Near support |
 
+---
+
+## 🎯 HOW TO FIND NEW CANDIDATES
+
+### Step 1: Check Human Behavior Phase
+
+| Phase | RSI | Volume | Price | Action |
+|-------|-----|--------|-------|--------|
+| FOMO | >70 | HIGH | Rising | SELL (top) |
+| FEAR | <40 | HIGH | Falling | WAIT |
+| PANIC | <30 | V.HIGH | Crashing | DON'T BUY |
+| EXHAUSTION | <30 | LOW | Flat | BUY 🟢 |
+| RECOVERY | >50 | Rising | Bounce | BUY EARLY 🟢 |
+
+### Step 2: Scan by Trading Mode
+
+**MINI (Crypto - $1, 15-30 min)**
+- Use 5-min data
+- Look for: VOLUME SPIKE + price moving
+- Exit: 15-30 min
+
+**INTRADAY (Stocks, same day)**
+- Enter: 6:30-9:30 AM PT
+- Need: Accumulation (price ↓ + volume ↑)
+- Exit: By 12:30 PM PT
+
+**DAY-TO-DAY (Swing)**
+- Buy at close, sell next close
+- 52-week rule: below 80% of range
+- Target +12%, Stop -7%
+
+### Step 3: Volume Analysis (The Truth)
+
+| Volume | Price | Signal |
+|--------|-------|--------|
+| HIGH | Rising | FOMO (sell) |
+| HIGH | Falling | PANIC (wait) |
+| LOW | Flat | EXHAUSTION (buy) |
+| INCREASING | Rising | RECOVERY (confirm)
+
 ### Script for Analysis
 ```bash
-# Check human behavior phase
 node scripts/indicators.js SYMBOL  # RSI shows fear level
+node scripts/mini-scanner.js       # Crypto setups
+node scripts/intraday-scanner.js   # Stock setups
 ```
 
 ---
