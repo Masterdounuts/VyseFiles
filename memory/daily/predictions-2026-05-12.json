@@ -1,7 +1,41 @@
 {
   "date": "2026-05-12",
-  "timestamp": "2026-05-12T13:13:54.128Z",
-  "accumulation": [],
-  "momentum": [],
+  "timestamp": "2026-05-12T20:25:18.542Z",
+  "accumulation": [
+    {
+      "symbol": "ARM",
+      "price": 207.9199981689453,
+      "type": "V3_BOTTOM",
+      "priceDown": "-12.4",
+      "rangePos": "18"
+    },
+    {
+      "symbol": "NET",
+      "price": 186.7899932861328,
+      "type": "V3_BOTTOM",
+      "priceDown": "-24.9",
+      "rangePos": "0"
+    }
+  ],
+  "momentum": [
+    {
+      "symbol": "NET",
+      "change": "-24.9",
+      "price": 186.7899932861328,
+      "rangePos": 37.4273446890024
+    },
+    {
+      "symbol": "MDB",
+      "change": "16.4",
+      "price": 308.7200012207031,
+      "rangePos": 48.148997075995155
+    },
+    {
+      "symbol": "ARM",
+      "change": "-12.4",
+      "price": 207.9199981689453,
+      "rangePos": 77.35876034484994
+    }
+  ],
   "avoid": []
 }
