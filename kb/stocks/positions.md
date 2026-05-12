@@ -9,9 +9,9 @@
 | Symbol | Shares | Entry | Current | Notes |
 |--------|--------|-------|---------|-------|
 | **AMC** | 17 | $1.44 | Day-to-Day | Entered May 11 |
-| **DOGE** | 7.16 | $0.1118 | Crypto | $0.80 position |
+| **DOGE** | SOLD | $0.11027 | Exit -$0.02 | May 12 |
 | **QQQ** | 0.021 | $708.78 | Piggybank | Long-term hold |
-| **WLFI** | 14.5 | $0.06873 | Crypto | Weekend only |
+| **WLFI** | 14.5 | $0.06897 | Crypto | Target $0.07587 |
 
 ---
 
