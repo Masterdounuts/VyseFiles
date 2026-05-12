@@ -1,0 +1,95 @@
+{
+  "wins": 5,
+  "losses": 3,
+  "totalProfit": 7.3,
+  "totalLoss": 1.78,
+  "byPattern": {
+    "momentum-long-hold": {
+      "wins": 1,
+      "losses": 0
+    },
+    "momentum-quick": {
+      "wins": 1,
+      "losses": 0
+    },
+    "unknown": {
+      "wins": 0,
+      "losses": 2
+    },
+    "dividend": {
+      "wins": 1,
+      "losses": 0
+    },
+    "breakout": {
+      "wins": 1,
+      "losses": 0
+    },
+    "smc-adr-trigger": {
+      "wins": 0,
+      "losses": 1
+    },
+    "ai-play": {
+      "wins": 1,
+      "losses": 0
+    }
+  },
+  "byIndicator": {},
+  "lessons": [
+    {
+      "date": "2026-05-12",
+      "lesson": "GGB was best trade - +18%, held 12 days, patience paid off"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "LCID lost -8% - learned later it was ADR, can't trade"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "NIO lost - ADR rule triggered - ADRs have forced selling risk"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "WGS won +6.7% - quick exit at target worked"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "NVDA won +9.3% - AI play, held 3 days"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "LIDR lost -8.4% - no strategy, manual exit"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "AMC day-to-day still holding - entry .44"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "Quick losses happen - cut quickly, don't hold losers"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "Dividend plays work - PFE small profit + dividends"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "Momentum works - AMC quick 3% in 1 day"
+    },
+    {
+      "date": "2026-05-12",
+      "lesson": "Pre-market big movers keep running - focus on >3% pre-market"
+    }
+  ],
+  "bestSetup": {
+    "setup": "momentum-long-hold",
+    "winRate": 100,
+    "wins": 1,
+    "losses": 0
+  },
+  "worstSetup": {
+    "setup": "unknown",
+    "winRate": 0,
+    "wins": 0,
+    "losses": 1
+  }
+}
