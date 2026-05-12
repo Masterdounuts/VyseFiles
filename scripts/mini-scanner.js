@@ -1,7 +1,19 @@
 #!/usr/bin/env node
 // MINI SCANNER - Crypto/Weekend Trading (Robinhood Supported)
 // Max $2 profit per trade, profit reinvests to mini
-// Volume + Price Action = Same as stocks (smart money works in crypto too)
+//
+// CRYPTO IS DIFFERENT FROM STOCKS:
+// - No "smart money" - decentralized
+// - 24/7 trading - no market hours
+// - Driven by: sentiment, social media, news, whale movements
+// - BTC leads - alts follow BTC
+// - Market cap tiers matter (blue chip > mid > micro)
+//
+// WHAT STILL WORKS:
+// - Volume spikes = big moves
+// - Momentum continuation
+// - Support/resistance
+// - News catalysts
 
 const https = require('https');
 const fs = require('fs');
@@ -119,11 +131,37 @@ async function getVolumeData(coinIds) {
   return results;
 }
 
+// Get BTC sentiment - crypto market leader
+async function getBTCSentiment() {
+  return new Promise((resolve) => {
+    https.get(`https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=1`, {headers: {'User-Agent': 'Mozilla/5.0'}}, res => {
+      let d = '';
+      res.on('data', c => d += c);
+      res.on('end', () => {
+        try {
+          const j = JSON.parse(d);
+          const prices = j.prices || [];
+          if (prices.length > 1) {
+            const change = ((prices[prices.length-1][1] - prices[0][1]) / prices[0][1]) * 100;
+            resolve(change);
+          }
+        } catch(e) {}
+        resolve(0);
+      });
+    }).on('error', () => resolve(0));
+  });
+}
+
 async function scan() {
   console.log('🪙 MINI SCANNER (Robinhood Crypto)');
   console.log('==================================');
   console.log(`🎯 Max profit per trade: $${MAX_PROFIT}`);
   console.log(`📊 Scanning ${cryptoUniverse.length} cryptos...\n`);
+  
+  // Check BTC first - market sentiment
+  const btcChange = await getBTCSentiment();
+  console.log(`📌 BTC SENTIMENT: ${btcChange > 0 ? '🟢 BULLISH' : btcChange < 0 ? '🔴 BEARISH' : '🟡 NEUTRAL'} (${btcChange?.toFixed(1)}% 24h)`);
+  console.log('');
   
   const prices = await getPrices(cryptoUniverse);
   const volumes = await getVolumeData(TOP_CRYPTOS);
@@ -145,29 +183,39 @@ async function scan() {
     console.log(`  ${i+1}. ${p.symbol}: $${price} ${arrow} ${p.change?.toFixed(1)}%`);
   });
   
-  // Volume Analysis - Check for ACCUMULATION
-  console.log('\n🎯 ACCUMULATION SIGNALS (7d):');
-  console.log('(Price down + Volume up = Smart Money Buying) 🟢');
+  // Volume Analysis - CRYPTO SPECIFIC
+  // No "smart money" - look for momentum + volume spikes instead
+  console.log('\n🎯 MOMENTUM SIGNALS (7d):');
+  console.log('(Crypto driven by sentiment, not institutional money)');
   console.log('----------------------------------------');
   
-  const accumulation = [];
-  const weak = [];
+  const strong = [];   // Price UP + Volume UP (momentum)
+  const dip = [];       // Price DOWN + Volume UP (potential bounce)
+  const weak = [];      // Price DOWN + Volume DOWN
   
   Object.entries(volumes).forEach(([id, v]) => {
     const sym = cryptoUniverse.find(c => c.id === id)?.symbol || id;
-    const signal = v.priceChange < 0 && v.volChange > 0 ? 'ACCUMULATION 🟢' : 
-                   v.priceChange < 0 && v.volChange < 0 ? 'WEAK 🔴' : 'NEUTRAL 🟡';
-    if (v.priceChange < 0 && v.volChange > 0) {
-      accumulation.push({ symbol: sym, ...v, signal });
+    if (v.priceChange > 0 && v.volChange > 0) {
+      strong.push({ symbol: sym, ...v });
+    } else if (v.priceChange < 0 && v.volChange > 0) {
+      dip.push({ symbol: sym, ...v });
     } else if (v.priceChange < 0 && v.volChange < 0) {
-      weak.push({ symbol: sym, ...v, signal });
+      weak.push({ symbol: sym, ...v });
     }
   });
   
-  if (accumulation.length > 0) {
-    console.log('✅ ACCUMULATION (Price ↓ + Volume ↑):');
-    accumulation.slice(0, 5).forEach(a => {
-      console.log(`  ${a.symbol}: ${a.priceChange?.toFixed(1)}% price | +${a.volChange?.toFixed(0)}% volume`);
+  if (strong.length > 0) {
+    console.log('✅ STRONG MOMENTUM (Price ↑ + Volume ↑):');
+    strong.slice(0, 5).forEach(s => {
+      console.log(`  ${s.symbol}: +${s.priceChange?.toFixed(1)}% price | +${s.volChange?.toFixed(0)}% volume`);
+    });
+  }
+  
+  if (dip.length > 0) {
+    console.log('\n🟢 DIP OPPORTUNITY (Price ↓ + Volume ↑):');
+    console.log('   (Volume spike = potential bounce - crypto swings fast)');
+    dip.slice(0, 5).forEach(d => {
+      console.log(`  ${d.symbol}: ${d.priceChange?.toFixed(1)}% price | +${d.volChange?.toFixed(0)}% volume`);
     });
   }
   
@@ -178,16 +226,18 @@ async function scan() {
     });
   }
   
-  if (accumulation.length === 0 && weak.length === 0) {
-    console.log('  No clear signals - checking top coins');
+  if (strong.length === 0 && dip.length === 0 && weak.length === 0) {
+    console.log('  Checking top coins...');
   }
   
-  console.log('\n💡 For mini trading:');
+  console.log('\n💡 CRYPTO TRADING RULES:');
   console.log('- Max $2 profit per trade');
   console.log('- Reinvest profit back to mini');
   console.log('- Trade 24/7, especially weekends');
-  console.log('- Look for ACCUMULATION: Price down + Volume up');
-  console.log('- Use web_search for news/catalysts');
+  console.log('- Watch BTC first - alts follow BTC');
+  console.log('- Volume spike + price dip = potential bounce');
+  console.log('- Use web_search for news/catalysts (partnerships, launches)');
+  console.log('- Crypto swings faster - take profits fast');
   
   console.log('\n==================================');
 }
