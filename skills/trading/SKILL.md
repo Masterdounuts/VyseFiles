@@ -66,6 +66,64 @@ node scripts/big-trader-detector.js AMC
 
 ---
 
+## ⏱️ TIMELINE REQUIREMENT (CRITICAL)
+
+*Every trade MUST have a timeline estimate BEFORE entering*
+
+### Timeline by Trade Type
+
+| Trade Type | Max Timeline | Example |
+|------------|---------------|----------|
+| **Mini (Crypto)** | 24 hours | 30 min - 24 hours |
+| **Intraday** | Same day | 6:30 AM - 12:30 PM PT |
+| **Day-to-Day** | 1-2 days | Enter at close, exit next day |
+| **Piggybank** | Weeks+ | Long-term hold |
+
+### How to Calculate Timeline
+
+1. **Find support** - Recent lows (where price bounced)
+2. **Find target** - Recent highs / big trader targets
+3. **Analyze historical bounces** - Get hourly data, find similar bounces
+4. **Calculate average time** - How long did previous bounces take?
+5. **Verify** - Does timeline match trade type?
+
+### The Timeline Test
+
+**Before entering ANY trade:**
+- Calculate expected timeline to profit
+- If timeline doesn't match trade type → NOT A GOOD CANDIDATE
+
+| Trade Type | Timeline Must Be... | Pass/Fail |
+|------------|---------------------|-----------|
+| Crypto | ≤24 hours | Must pass |
+| Intraday | Same day | Must pass |
+| Day-to-Day | 1-2 days | Must pass |
+| Piggybank | Weeks+ | Must pass |
+
+### Example: AMC
+```
+Support: $1.35 | Target: $1.61
+Historical bounces: 8-18 hours avg
+Timeline: 8-18 hours
+→ Fits Day-to-Day (1-2 days) → PASS ✅
+```
+
+### Example: WLFI (Previously Failed)
+```
+Support: $0.065 | Target: $0.10
+Timeline: Days to weeks (no clear bounce pattern)
+→ Does NOT fit Crypto (≤24 hours) → FAIL ❌
+→ But we hold because: big traders in profit (+5%)
+```
+
+---
+
+### NO TIMELINE = NO TRADE
+
+*Every candidate must pass the timeline test before entering.*
+
+---
+
 ## 🧠 HUMAN BEHAVIOR FRAMEWORK
 
 *Every market is controlled by humans. Humans have predictable behaviors.*
