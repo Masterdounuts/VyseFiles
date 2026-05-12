@@ -20,6 +20,32 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## 🎯 STOCK ANALYSIS PRIORITY (CRITICAL)
+
+*For stocks - crypto works differently*
+
+### Priority Order (MUST FOLLOW)
+
+**1. BIG TRADER DETECTION (FIRST)**
+- Find their entries (where they absorbed positions)
+- Find their targets (where price is heading)
+- Find their supports (accumulation zones)
+- Find their stops (recent lows)
+- If we track their moves → predict market → profit
+
+**2. THEN check:**
+- 52-week rule (<80%)
+- RSI (oversold = fear maximized)
+- Accumulation (price ↓ + volume ↑)
+
+### Why Priority Matters
+- Big traders move price with LOW volume
+- Retail moves price with HIGH volume
+- Finding their positions = predicting the move
+- Everything else is secondary validation
+
+---
+
 ## 🧠 HUMAN BEHAVIOR FRAMEWORK
 
 *Every market is controlled by humans. Humans have predictable behaviors.*
