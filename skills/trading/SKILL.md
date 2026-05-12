@@ -102,6 +102,42 @@ node scripts/intraday-scanner.js   # Stock setups
 
 ---
 
+## 📚 CASE STUDIES - Our Positions
+
+### Our Positions Analyzed (May 12)
+
+| Position | Entry | Range % | Verdict | Why |
+|----------|-------|---------|---------|-----|
+| AMC | $1.44 | 80%+ | ❌ BAD | FOMO bought, broke 52-week rule |
+| DOGE | $0.112 | 70% | 🟡 MEDIOCRE | No clear signal |
+| WLFI | $0.069 | 44% | ✅ GOOD | Bought at bottom of range |
+
+### What We Learned
+
+**✅ WLFI = GOOD**
+- Bought at 44% of range (near bottom)
+- Waited for EXHAUSTION phase
+- Correct human behavior
+
+**❌ AMC = BAD**
+- Bought at 80%+ of range (expensive)
+- FOMO bought the peak
+- Ignored 52-week rule
+- Wrong human behavior phase
+
+**🟡 DOGE = MEDIOCRE**
+- No clear signal
+- Crypto was consolidating
+
+### Rules to Remember
+
+1. **NEVER buy above 80% of 52-week range**
+2. **Wait for EXHAUSTION (low volume + flat)** to buy
+3. **FOMO buying = usually wrong time**
+4. **Best entries = near bottom of range**
+
+---
+
 ## 🚨 CRITICAL: Pre-Market Strategy (MOST IMPORTANT)
 
 ### What Works (Based on May 11 Data)
