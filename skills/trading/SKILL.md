@@ -20,6 +20,108 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## 🎯 STOP VS ENTRY (CRITICAL)
+
+*This is the foundation of sniper trading*
+
+### The Difference
+
+| | Stop | Entry |
+|---|------|-------|
+| **What** | Price level where we were WRONG | Price where ALL 5 checks passed |
+| **Use** | Feedback indicator | Decision point |
+| **Action** | REFLECT on why analysis failed | This is where we decide to buy |
+| **Meaning** | "My analysis failed" | "My data says this will work" |
+
+### The Mindset
+
+```
+STOP = "I was wrong about this trade"
+      → Fix the strategy/analysis
+      → Don't just "manage the loss"
+      
+ENTRY = "All 5 checks passed"
+       → This is my sniper shot
+       → I expect to hit target
+```
+
+### If We Hit The Stop
+
+| Old Way | New Way |
+|---------|---------|
+| "Cut loss and move on" | "Why did my analysis fail?" |
+| Hope for recovery | Check: Did I run all 5 checks? |
+| Emotionally attached | Cold data reflection |
+
+**Stop = Strategy feedback, not exit signal.**
+
+---
+
+## ✅ THE 5 ENTRY CHECKS (MUST ALL PASS)
+
+*For EVERY trade, ALL of these must be true:*
+
+### 1. BIG TRADER CHECK (MUST PASS)
+```
+Run: node scripts/big-trader-detector.js SYMBOL
+
+✅ PASS if:
+   - Big trader P/L is + (they'll pump to exit)
+   - OR Big trader P/L is < -3% (panic motivation)
+
+❌ FAIL if:
+   - Big trader P/L is between 0% and -3% (stuck)
+   - No clear big trader activity
+```
+
+### 2. TIMELINE CHECK (MUST PASS)
+```
+✅ PASS if:
+   - Timeline to target < trade type max
+   - Crypto: < 24 hours
+   - Intraday: < same day
+   - Day-to-Day: < 2 days
+
+❌ FAIL if:
+   - Timeline unclear or too long
+```
+
+### 3. SUPPORT CHECK (MUST PASS)
+```
+✅ PASS if:
+   - Support tested 3+ times
+   - Clear bounce history
+
+❌ FAIL if:
+   - Support never tested
+   - First time at level
+```
+
+### 4. ACCUMULATION CHECK (MUST PASS)
+```
+✅ PASS if:
+   - High volume + small candle = absorbing
+   - Big traders loading up
+
+❌ FAIL if:
+   - Distribution (big traders selling)
+   - Low volume moves
+```
+
+### 5. CAPITAL ADEQUACY (MUST PASS)
+```
+✅ PASS if:
+   - Crypto: Min $5 position (cover fees)
+   - Stocks: Can afford at least 1 share
+```
+
+---
+
+**ALL 5 MUST PASS = ENTER**
+**ANY 1 FAILS = DON'T ENTER**
+
+---
+
 ## 🎯 STOCK ANALYSIS PRIORITY (CRITICAL)
 
 *For stocks - crypto works differently*
