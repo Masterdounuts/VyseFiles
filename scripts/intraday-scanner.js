@@ -12,9 +12,8 @@ const MAX_52WEEK_POS = 80;
 
 // EXCLUSION LIST - Don't trade these
 const EXCLUDE = [
-  'NIO', 'XPEV', 'BABA', // ADRs - can't trade
+  'NIO', 'XPEV', 'BABA', // ADRs - forced selling risk
   'AVCT', // Penny far-OUT
-  'LCID', // ADR - can't trade
   // Penny stocks too risky/low volume
   'WISH','TELL','OTRK','ENSC','AUVI','BCTX','GHS',
   'JMDA','ANEB','SLVR','PLAG','HMBL','SRAX','CLOK',
