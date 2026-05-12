@@ -71,3 +71,4 @@ The more you know, the better you can help. But remember — you're learning abo
 - **[⚠️ Error]** Context vault format mismatch (uses Decision:/Error: prefixes, we use ## headings) _(2026-05-12)_
 - **[⚠️ Error]** Session persistence returning 0 new messages - wrong directory _(2026-05-12)_
 - **[⚠️ Error]** Vault extracting 0 facts - wrong workspace path _(2026-05-12)_
+- **[⚠️ Error]** * Hybrid approach: manual memory + automated extraction Used web_search for stock prices - WRONG TOOL. web_search is for news/catalyst only. Use direct API (curl) for prices. _(2026-05-12)_
