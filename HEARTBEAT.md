@@ -51,9 +51,34 @@ Use skills when triggered. After work, update relevant skill if I learned someth
 | github | Version control |
 | pdf | Document creation |
 
+### Superpowers Import (Every 4th Heartbeat ~2hr)
+```bash
+python3 skills/session-persistence/persist.py --import
+```
+*Note: Cron unavailable in container - using heartbeat instead*
+
 ---
 
-## 5. Memory Vault (Session Context Extractor)
+## 5. Superpowers Memory (Hybrid System)
+
+### Our Hybrid Approach
+- **Keep:** Manual MEMORY.md + daily files (our format)
+- **Use superpowers for:** Search, auto-compaction, hygiene
+- **Trading:** HEARTBEAT stays independent
+
+### Manual Runs (when cron unavailable)
+```bash
+# Import all messages to searchable SQLite
+python3 skills/session-persistence/persist.py --import
+
+# Compact memory to DAG hierarchy
+python3 skills/memory-dag-compactor --compact
+
+# Search across all sessions
+python3 skills/session-persistence/persist.py --search "trading decision"
+```
+
+## 6. Memory Vault (Session Context Extractor)
 
 ### When to Run Distillation
 | Frequency | When | Command |

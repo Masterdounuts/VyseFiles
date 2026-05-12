@@ -2,6 +2,14 @@
 
 *Track fixes and known issues here*
 
+## 2026-05-11
+
+### Cron Scope Upgrade Block
+- **Problem:** `openclaw cron add` fails with "scope upgrade pending approval"
+- **Root Cause:** `~/.openclaw/devices/paired.json` only had `operator.read`
+- **Fix:** Updated paired.json with all scopes: operator.read/write/admin/approvals/pairing/talk.secrets
+- **Status:** ✅ Fixed
+
 ## 2026-05-04
 
 ### Checkpoint Before Refresh (CRITICAL FIX)

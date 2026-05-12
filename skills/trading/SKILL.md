@@ -110,11 +110,34 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 2. Find accumulation for tomorrow's bounce
 3. **Next Day** - Exit at target or end of day
 
-### 📅 Tomorrow's Watch (2026-05-12)
-- **RIVN** - Enter at open if ≤$14 (1 share)
-- **AMC** - Enter near close (~12:30pm), 17 shares
+### 📅 Today's Watch (2026-05-12)
+- **AMC** - 17 shares @ $1.44, exit at 12:30pm PT
 - **Strategy**: Buy at close, sell next day
-- **Targets**: +12% for both
+- **Targets**: +12% ($1.61) / -7% ($1.34)
+
+---
+
+## ⚠️ CRITICAL: WAKE-UP PROTOCOL
+
+### Every Morning:
+1. **READ** `memory/HANDOFF.md` first
+2. **RUN** scanner: `node scripts/premarket-scanner.js`
+3. **CHECK** positions from HANDOFF.md
+4. **UPDATE** HANDOFF.md with results
+5. **ALERT** David of opportunities
+
+### Scripts Location:
+```
+~/.openclaw/workspace-vyse/scripts/
+├── premarket-scanner.js  (6am PT)
+├── intraday-scanner.js   (6:30am PT) 
+├── daytoday-scanner.js   (after 12:30pm)
+└── mini-scanner.js       (crypto anytime)
+```
+
+### Cron Jobs:
+- `premarket-scan` - runs 6am PT weekdays
+- Check: `openclaw cron list`
 
 ### What NOT to Do
 - ❌ Don't chase stocks down (accumulation plays)
