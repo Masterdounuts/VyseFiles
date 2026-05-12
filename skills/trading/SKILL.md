@@ -27,22 +27,42 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 ### Priority Order (MUST FOLLOW)
 
 **1. BIG TRADER DETECTION (FIRST)**
+- Run: `node scripts/big-trader-detector.js SYMBOL`
 - Find their entries (where they absorbed positions)
+- Find their P/L (are they in profit or loss?)
 - Find their targets (where price is heading)
 - Find their supports (accumulation zones)
 - Find their stops (recent lows)
-- If we track their moves → predict market → profit
+- **KEY INSIGHT:** High volume + small candle = they're absorbing (building position)
+- **KEY INSIGHT:** Small volume + big candle = manipulation (pump/dump)
 
 **2. THEN check:**
 - 52-week rule (<80%)
 - RSI (oversold = fear maximized)
-- Accumulation (price ↓ + volume ↑)
+- Support history (how many times bounced?)
 
 ### Why Priority Matters
 - Big traders move price with LOW volume
 - Retail moves price with HIGH volume
 - Finding their positions = predicting the move
 - Everything else is secondary validation
+
+### The Big Trader Detector Script
+
+```bash
+node scripts/big-trader-detector.js MARA
+node scripts/big-trader-detector.js RIVN
+node scripts/big-trader-detector.js AMC
+```
+
+**Output shows:**
+- Absorbing vs Distributing count
+- Their avg entry price
+- Their P/L (profit/loss)
+- Support level
+- Target level
+- Trade setup (Entry, Stop, Target, R/R)
+- Time estimate (how long to recover from support)
 
 ---
 
@@ -78,6 +98,35 @@ FOMO → FEAR → PANIC → EXHAUSTION → RECOVERY
 | AMC | FEAR → EXHAUSTION | 🟢 Bottom forming (RSI oversold) |
 | DOGE | CONSOLIDATION | 🟡 Wait for volume |
 | WLFI | EXHAUSTION | 🟢 Near support |
+
+---
+
+## ⏱️ TIME ESTIMATION
+
+*How long to reach target from support*
+
+### Method
+1. Get hourly data for last 30 days
+2. Find bounces from support (similar price)
+3. Calculate average recovery time
+4. Project to current target
+
+### Example: AMC
+```
+Support: $1.35 (held 6x today)
+Current: $1.38
+Target:  $1.61
+
+Historical bounces: 2-18 hours
+Average: ~9 hours
+
+→ Estimated time to target: 8-18 hours
+```
+
+### Why Time Matters
+- Big traders underwater = faster pump (they want out)
+- Support holding multiple times = strong bounce
+- Use time to set expectations, not guarantees
 
 ---
 
