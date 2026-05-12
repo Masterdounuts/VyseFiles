@@ -410,6 +410,39 @@ node scripts/intraday-scanner.js   # Stock setups
 
 ---
 
+### 🎯 Big Trader Detection (CRITICAL)
+
+*From David - the key to finding manipulation*
+
+**The Insight:**
+- HIGH volume + small price move = Retail (many participants)
+- **LOW volume + BIG price move = BIG TRADER manipulating**
+
+**How to Detect:**
+1. Find sudden price moves (>$0.10 in 5 min)
+2. Check if volume is LOW (<30% of average)
+3. That's a big trader - they're absorbing or shorting
+
+**What It Means:**
+| Pattern | Meaning | Trade |
+|---------|---------|------|
+| Price DOWN + LOW vol | Big shorting | They're pushing down = will push UP later |
+| Price UP + LOW vol | Big absorbing | They're holding = will dump later |
+
+**The Strategy:**
+1. Find their manipulation (low vol + big move)
+2. Find their stops (recent lows, round numbers)
+3. Enter slightly above their stop
+4. Ride the wave when they push back
+
+**How to Find Their Stops:**
+- Recent lows
+- Round numbers ($10, $15, $20)
+- 52-week lows
+- Enter $0.10 above = catch the ride up
+
+---
+
 ### Critical Volume Insight
 
 > Top 3% traders (hedge funds) trade LONG with capital. They push price DOWN to accumulate, then ride UP.
