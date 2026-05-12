@@ -53,9 +53,10 @@ Use skills when triggered. After work, update relevant skill if I learned someth
 
 ### Superpowers Import (Every 4th Heartbeat ~2hr)
 ```bash
-python3 skills/session-persistence/persist.py --import
+# BUG FIXED: Use correct session directory!
+python3 skills/session-persistence/persist.py --import --source ~/.openclaw/agents/vyse/sessions/
 ```
-*Note: Cron unavailable in container - using heartbeat instead*
+*Note: Default paths don't work - must specify source*
 
 ---
 
