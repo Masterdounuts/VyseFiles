@@ -44,6 +44,10 @@ The more you know, the better you can help. But remember — you're learning abo
 - Don't run health checks (can affect other systems)
 - Always check FIXES.md before fixing known issues
 - Verify final output (PDFs) not just source
+- Focus beats breadth - build can opener not Swiss army knife _(learned 2026-05-12)_
+- Trading is side quest, not main thing _(learned 2026-05-12)_
+- Speed over perfection _(learned 2026-05-12)_
+- Resume one page, dates accurate _(learned 2026-05-12)_
 
 ## What Works Well
 - Dream sessions generating ideas
@@ -53,3 +57,13 @@ The more you know, the better you can help. But remember — you're learning abo
 ## What to Avoid
 - Waiting too long to alert (e.g., TSLA move)
 - Assuming changes will translate across mediums (test first)
+
+## Active Projects
+<!-- Projects and decisions -->
+- Build can opener, not Swiss army knife - focus on core tools _(2026-05-12)_
+- Continue building trading system _(2026-05-12)_
+
+## Recently Learned
+<!-- Auto-updated from session context -->
+- **[⚠️ Error]** Missed NIO is ADR - David caught it _(2026-05-12)_
+- **[⚠️ Error]** Context vault format mismatch (uses Decision:/Error: prefixes, we use ## headings) _(2026-05-12)_
