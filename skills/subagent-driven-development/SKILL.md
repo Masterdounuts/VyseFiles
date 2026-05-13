@@ -1,6 +1,7 @@
 ---
 name: subagent-driven-development
-description: Parallel subagent execution for complex tasks. Use when a task has independent parallel workstreams.
+description: OBSOLETE - Subagents disabled per SOUL.md (2026-05-05). Do not use.
+state: deprecated
 ---
 
 # Subagent-Driven Development
