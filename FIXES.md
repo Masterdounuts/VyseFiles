@@ -2,6 +2,29 @@
 
 *Track fixes and known issues here*
 
+
+## 2026-05-13
+
+### Session Rehydration - Cron-Based (CRITICAL FIX)
+- **Problem:** Session reset (/new) didn't rehydrate - context started empty
+- **Root Cause:** OpenClaw workspace hooks don't actually fire on events (known bug)
+- **Fix:** Disabled hooks config, set up 2-minute cron job (vyse-session-rehydrate)
+- **Cron ID:** c9637f8f-c2b5-46e9-85fb-f98c720f45470
+- **Verification:** Added success/error capture to session-start-handoff.sh
+- **Status:** ✅ Fixed 2026-05-13
+
+### Config Invalid - hooks.internal.extraDirs
+- **Problem:** Gateway error: "Unrecognized key: extraDirs"
+- **Root Cause:** Invalid key in hooks.internal config
+- **Fix:** Removed hooks.internal section from openclaw.json
+- **Status:** ✅ Fixed 2026-05-13
+
+### Full Strategy Check BEFORE Presenting Candidates
+- **Problem:** Presented EOSE before running ALL 5 SMC checks
+- **Rule:** ALL 5 checks (Big Trader, Timeline, Support, Accumulation, Capital) MUST pass BEFORE presenting any candidate
+- **Fix:** Never present without full validation - run complete check first, then recommend
+- **Status:** ⚠️ MEMORIZED
+
 ## 2026-05-11
 
 ### Cron Scope Upgrade Block
