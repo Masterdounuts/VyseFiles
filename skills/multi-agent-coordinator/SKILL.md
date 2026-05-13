@@ -2,8 +2,9 @@
 name: multi-agent-coordinator
 version: "1.0"
 category: openclaw-native
-description: Orchestrates multiple parallel OpenClaw agents — tracks health, detects timeouts, reconciles conflicting outputs, and manages structured handoffs
+description: OBSOLETE - Subagents disabled per SOUL.md (2026-05-05). Do not use.
 stateful: true
+state: deprecated
 ---
 
 # multi-agent-coordinator

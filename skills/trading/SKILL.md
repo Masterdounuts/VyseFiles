@@ -168,6 +168,28 @@ node scripts/big-trader-detector.js AMC
 
 ---
 
+## ⏱️ INTRADAY ENTRY RULE (CRITICAL)
+
+*For intraday trades - wait for the dust to settle*
+
+### The Rule
+1. **Wait 30 minutes** after market open (6:30 AM PT → 7:00 AM PT)
+2. **Watch for support** - buy near big trader accumulation zones
+3. **NEVER buy gap-ups** - wait for pullback to support
+
+### Why This Works
+- First 30 min = wild swings, retail overreaction
+- After 30 min = true price action emerges
+- Buying near support = tight stop, high R/R
+
+### The Pattern to Avoid
+```
+❌ GAP-UP SPIKE: Buy at open → immediate dump
+✅ SUPPORT BOUNCE: Wait for pullback → buy at support
+```
+
+---
+
 ## ⏱️ TIMELINE REQUIREMENT (CRITICAL)
 
 *Every trade MUST have a timeline estimate BEFORE entering*
