@@ -14,6 +14,13 @@ echo "=== Vyse Session Start - Auto Recovery ==="
 echo "Time: $TIMESTAMP"
 
 # ============================================
+# STEP 0: REHYDRATE FROM SESSION PERSISTENCE
+# ============================================
+echo ""
+echo "=== Rehydrating from session-persistence ==="
+python3 "$WORKSPACE/skills/session-persistence/persist.py" --import --source ~/.openclaw/agents/vyse/sessions/ 2>/dev/null
+
+# ============================================
 # STEP 1: LOAD RON-MEMORY (KEY-VALUE) FIRST
 # ============================================
 echo ""
