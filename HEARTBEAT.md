@@ -51,12 +51,12 @@ Use skills when triggered. After work, update relevant skill if I learned someth
 | github | Version control |
 | pdf | Document creation |
 
-### Superpowers Import (Every 4th Heartbeat ~2hr)
+### Superpowers Import (Every Heartbeat - Safety Net)
 ```bash
-# BUG FIXED: Use correct session directory!
+# Rehydrate on every heartbeat - catches session reset/refresh
 python3 skills/session-persistence/persist.py --import --source ~/.openclaw/agents/vyse/sessions/
 ```
-*Note: Default paths don't work - must specify source*
+*Note: This ensures context survives session reset, refresh, and new sessions*
 
 ---
 
