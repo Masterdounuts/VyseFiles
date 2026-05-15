@@ -4,6 +4,24 @@
 
 ---
 
+## 0. NOTION SYNC (First thing!)
+```bash
+# Query context from Notion - instant from local backup
+node ~/.openclaw/workspace-vyse/notion-query.cjs active
+node ~/.openclaw/workspace-vyse/notion-query.cjs decisions 3
+node ~/.openclaw/workspace-vyse/notion-query.cjs positions
+```
+
+**Before ANY fix:**
+```bash
+node ~/.openclaw/workspace-vyse/notion-query.cjs check "<issue>"
+```
+
+**Before trading decisions:**
+```bash
+node ~/.openclaw/workspace-vyse/notion-query.cjs preferences trading_hours
+```
+
 ## 1. System Check
 ```bash
 openclaw status    # Quick overview
@@ -24,6 +42,12 @@ openclaw status    # Quick overview
 - State what evidence you'll provide
 
 ## 3. Trading (When Active)
+
+### Auto-Log EVERY trade
+```bash
+# After ANY trade, log immediately:
+node ~/.openclaw/workspace-vyse/composio-notion.cjs trade <BUY/SELL> <SYMBOL> <SHARES> <PRICE>
+```
 
 ### Price Sources
 | Priority | Source | When |
