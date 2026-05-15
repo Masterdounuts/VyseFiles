@@ -294,6 +294,14 @@ if (require.main === module) {
           console.log('Skill logged');
           break;
           
+        case 'fix':
+          const fixIssue = args[1] || 'Unknown';
+          const fixApply = args.slice(2).join(' ') || 'Applied';
+          await cn.logError(fixIssue, fixApply);
+          await cn.logKnowledge(fixIssue, 'Fixed: ' + fixApply);
+          console.log('Error + Knowledge logged');
+          break;
+          
         case 'list':
           const all = await execute('NOTION_SEARCH_NOTION_PAGE', 'list all pages');
           all.results?.forEach(p => {
