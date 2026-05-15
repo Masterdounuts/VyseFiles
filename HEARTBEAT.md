@@ -10,6 +10,7 @@
 node ~/.openclaw/workspace-vyse/notion-query.cjs active
 node ~/.openclaw/workspace-vyse/notion-query.cjs decisions 3
 node ~/.openclaw/workspace-vyse/notion-query.cjs positions
+node ~/.openclaw/workspace-vyse/notion-query.cjs query knowledge
 ```
 
 **Before ANY fix:**
@@ -20,6 +21,11 @@ node ~/.openclaw/workspace-vyse/notion-query.cjs check "<issue>"
 **Before trading decisions:**
 ```bash
 node ~/.openclaw/workspace-vyse/notion-query.cjs preferences trading_hours
+```
+
+**Log project work:**
+```bash
+node ~/.openclaw/workspace-vyse/composio-notion.cjs log-project <name> <action>
 ```
 
 ## 1. System Check

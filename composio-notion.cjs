@@ -302,6 +302,13 @@ if (require.main === module) {
           console.log('Error + Knowledge logged');
           break;
           
+        case 'log-project':
+          const projName = args[1] || 'unknown';
+          const projAction = args.slice(2).join(' ') || 'worked on';
+          await cn.logKnowledge(projName, projAction);
+          console.log('Project logged');
+          break;
+          
         case 'list':
           const all = await execute('NOTION_SEARCH_NOTION_PAGE', 'list all pages');
           all.results?.forEach(p => {
