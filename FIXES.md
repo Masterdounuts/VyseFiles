@@ -104,6 +104,16 @@
 
 ## 2026-04-30
 
+## 2026-05-15
+
+### Stock Price API (CRITICAL FIX)
+- **Problem:** Tried Finnhub API directly + web_fetch - both returned errors
+- **Root Cause:** Using wrong tool for the job
+- **Fix:** Use `node scripts/get-stock-price.js SYMBOL` - Yahoo Finance API (no rate limits)
+- **Works for:** AMC, QQQ, BTC, ETH, stocks
+- **Crypto:** Use `node scripts/crypto-tracker.js`
+- **Status:** ✅ Fixed 2026-05-15
+
 ### Telegram Session Context
 - **Problem:** Telegram messages created fresh sessions
 - **Fix:** Added session.dmScope: "main" to openclaw.json
