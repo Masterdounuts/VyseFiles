@@ -13,18 +13,18 @@
         },
         {
           "coin": "WLFI",
-          "scans": 5,
-          "valid": 5,
+          "scans": 6,
+          "valid": 6,
           "failed": 0,
-          "avgValidity": 76.05737286599229,
+          "avgValidity": 75.79319944361445,
           "successRate": 100
         },
         {
           "coin": "PEPE",
-          "scans": 5,
-          "valid": 5,
+          "scans": 6,
+          "valid": 6,
           "failed": 0,
-          "avgValidity": 78.463299881729,
+          "avgValidity": 82.05274990144083,
           "successRate": 100
         }
       ],
@@ -32,8 +32,8 @@
     },
     {
       "type": "scan_frequency",
-      "value": 6,
-      "description": "6 scans in recent history"
+      "value": 7,
+      "description": "7 scans in recent history"
     }
   ],
   "insights": [
@@ -58,7 +58,7 @@
       "text": "Keep using current crypto scanning criteria"
     }
   ],
-  "totalScans": 6,
+  "totalScans": 7,
   "tradeHistory": [
     {
       "time": "2026-05-13T23:26:33.117Z",
@@ -130,6 +130,17 @@
         "WLFI:84",
         "PEPE:97"
       ]
+    },
+    {
+      "time": "2026-05-15T18:50:51.152Z",
+      "type": "scan",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "WLFI:74",
+        "PEPE:100"
+      ]
     }
   ],
   "coinSuccess": {
@@ -140,16 +151,16 @@
       "avgValidity": 66.40325941838562
     },
     "WLFI": {
-      "scans": 5,
-      "valid": 5,
+      "scans": 6,
+      "valid": 6,
       "failed": 0,
-      "avgValidity": 76.05737286599229
+      "avgValidity": 75.79319944361445
     },
     "PEPE": {
-      "scans": 5,
-      "valid": 5,
+      "scans": 6,
+      "valid": 6,
       "failed": 0,
-      "avgValidity": 78.463299881729
+      "avgValidity": 82.05274990144083
     }
   }
 }

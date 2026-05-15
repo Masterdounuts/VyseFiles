@@ -3,7 +3,7 @@
     {
       "symbol": "WLFI",
       "score": 78,
-      "validity": 83.93110154372926,
+      "validity": 74.47233233172528,
       "firstSeen": "9:26 AM",
       "checks": [
         {
@@ -25,13 +25,17 @@
         {
           "time": "9:26 AM",
           "validity": 83.93110154372926
+        },
+        {
+          "time": "4:50 AM",
+          "validity": 74.47233233172528
         }
       ]
     },
     {
       "symbol": "PEPE",
       "score": 70,
-      "validity": 97.06063215486476,
+      "validity": 100,
       "firstSeen": "9:26 AM",
       "checks": [
         {
@@ -53,11 +57,15 @@
         {
           "time": "9:26 AM",
           "validity": 97.06063215486476
+        },
+        {
+          "time": "4:50 AM",
+          "validity": 100
         }
       ]
     }
   ],
-  "lastUpdated": "9:26 AM",
-  "lastCheck": "9:26 AM",
+  "lastUpdated": "4:50 AM",
+  "lastCheck": "4:50 AM",
   "failedCandidates": []
 }
