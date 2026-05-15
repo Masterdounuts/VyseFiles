@@ -11,7 +11,8 @@ const PAGES = {
   'positions': { id: '3614f051-c508-81a2-b92b-c3e2d486fb28', name: 'Trading Positions' },
   'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' },
   'errors': { id: '3614f051-c508-813f-b99a-c62d62516f6b', name: 'Errors & Fixes' },
-  'knowledge': { id: '3614f051-c508-81fe-aadd-e1edcc4359b7', name: 'Knowledge Base' }
+  'knowledge': { id: '3614f051-c508-81fe-aadd-e1edcc4359b7', name: 'Knowledge Base' },
+  'preferences': { id: '3614f051-c508-812b-9717-c77a87f3a7c4', name: 'User Preferences' }
 };
 
 async function execute(toolSlug, text) {
@@ -81,8 +82,14 @@ class ComposioNotion {
   // Log knowledge
   async logKnowledge(topic, insight, applyWhen) {
     const ts = new Date().toISOString().split('T')[0];
-    const content = `**${ts}**\n\n**Topic:** ${topic}\n\n**Insight:** ${insight}\n\n**Apply When:** ${applyWhen || 'TBD'}`;
+    const content = ts + ' | ' + topic + ' | ' + insight + ' | ' + (applyWhen || 'TBD');
     return this.appendToPage('knowledge', content);
+  }
+  
+  // Set preference
+  async setPreference(key, value) {
+    const content = key + ': ' + value;
+    return this.appendToPage('preferences', content);
   }
   
   getUrl(pageKey) {
@@ -116,6 +123,10 @@ if (require.main === module) {
           console.log('✅ Active updated');
           break;
           
+        case 'decisions':
+          console.log(cn.getUrl('decisions'));
+          break;
+
         case 'positions':
           console.log(cn.getUrl('positions'));
           break;
@@ -137,6 +148,14 @@ if (require.main === module) {
           const why = whyPart ? whyPart.trim() : 'TBD';
           await cn.logDecision(decision.trim(), why);
           console.log('✅ Decision logged');
+          break;
+          
+        case 'preference':
+          // Format: preference <key> <value>
+          const prefKey = args.slice(1, -1).join(' ');
+          const prefValue = args.slice(2).join(' ');
+          await cn.setPreference(prefKey, prefValue);
+          console.log('Preference saved');
           break;
           
         case 'create':
@@ -167,6 +186,10 @@ if (require.main === module) {
           const [knowInsight, knowApply] = knowRest.split('|');
           await cn.logKnowledge(knowText, knowInsight.trim(), knowApply?.trim());
           console.log('✅ Knowledge logged');
+          break;
+          
+        case 'preferences':
+          console.log(cn.getUrl('preferences'));
           break;
           
         case 'list':
