@@ -12,7 +12,8 @@ const PAGES = {
   'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' },
   'errors': { id: '3614f051-c508-813f-b99a-c62d62516f6b', name: 'Errors & Fixes' },
   'knowledge': { id: '3614f051-c508-81fe-aadd-e1edcc4359b7', name: 'Knowledge Base' },
-  'preferences': { id: '3614f051-c508-812b-9717-c77a87f3a7c4', name: 'User Preferences' }
+  'preferences': { id: '3614f051-c508-812b-9717-c77a87f3a7c4', name: 'User Preferences' },
+  'skills': { id: '3614f051-c508-8190-810e-ec627d9d7e51', name: 'Skills Index' }
 };
 
 async function execute(toolSlug, text) {
@@ -90,6 +91,13 @@ class ComposioNotion {
   async setPreference(key, value) {
     const content = key + ': ' + value;
     return this.appendToPage('preferences', content);
+  }
+  
+  // Log skill usage
+  async logSkill(skill, usedFor) {
+    const ts = new Date().toISOString().split('T')[0];
+    const content = ts + ' | ' + skill + ' | Used for: ' + usedFor;
+    return this.appendToPage('skills', content);
   }
   
   getUrl(pageKey) {
@@ -190,6 +198,17 @@ if (require.main === module) {
           
         case 'preferences':
           console.log(cn.getUrl('preferences'));
+          break;
+          
+        case 'skills':
+          console.log(cn.getUrl('skills'));
+          break;
+          
+        case 'log-skill':
+          const skillName = args.slice(1).join(' ').split('--')[0].trim() || 'TBD';
+          const skillUse = args.join(' ').split('--')[1]?.trim() || 'TBD';
+          await cn.logSkill(skillName, skillUse);
+          console.log('Skill logged');
           break;
           
         case 'list':
