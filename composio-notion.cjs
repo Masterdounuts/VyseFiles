@@ -4,6 +4,8 @@
 const API_KEY = process.env.COMPOSIO_API_KEY || 'ak_rqw4yFTcvTeLfd9TWpmn';
 const ENTITY_ID = 'Vyse notion';
 const PARENT_PAGE_ID = '3614f051-c508-8064-b995-cd38be6f896c';
+const fs = require('fs');
+const path = require('path');
 
 // Page IDs - using explicit IDs that work
 const PAGES = {
@@ -28,7 +30,7 @@ async function execute(toolSlug, text) {
   
   const result = await response.json();
   if (!result.successful) {
-    throw new Error(result.error || result.data?.message);
+    throw new Error(typeof result.error === 'string' ? result.error : JSON.stringify(result.error));
   }
   return result.data;
 }
@@ -106,6 +108,87 @@ class ComposioNotion {
     return `https://www.notion.so/${page.name.replace(/ /g, '-')}-${page.id}`;
   }
 }
+
+
+// BACKUP: Also write to local files for query capability
+const BACKUP_DIR = './notion-backup';
+
+function ensureBackupDir() {
+  if (!fs.existsSync(BACKUP_DIR)) {
+    fs.mkdirSync(BACKUP_DIR, { recursive: true });
+  }
+}
+
+function backup(pageKey, entry) {
+  ensureBackupDir();
+  const fileMap = {
+    'active': 'active.json', 'positions': 'positions.json', 
+    'decisions': 'decisions.json', 'errors': 'errors.json',
+    'knowledge': 'knowledge.json', 'preferences': 'preferences.json',
+    'skills': 'skills.json'
+  };
+  const file = fileMap[pageKey];
+  if (!file) return;
+  
+  const filePath = path.join(BACKUP_DIR, file);
+  let data = [];
+  if (fs.existsSync(filePath)) {
+    try { data = JSON.parse(fs.readFileSync(filePath, 'utf8')); } catch(e) {}
+  }
+  data.push({ timestamp: new Date().toISOString(), entry });
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+}
+
+// Patch each log method to also backup
+const originalSetActive = ComposioNotion.prototype.setActive;
+ComposioNotion.prototype.setActive = async function(task, goal) {
+  const result = await originalSetActive.call(this, task, goal);
+  backup('active', new Date().toLocaleString('en-US', {timeZone:'America/Los_Angeles', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}) + ' PT | Task: ' + task + (goal ? ' | Goal: ' + goal : ''));
+  return result;
+};
+
+const originalLogDecision = ComposioNotion.prototype.logDecision;
+ComposioNotion.prototype.logDecision = async function(decision, why) {
+  const result = await originalLogDecision.call(this, decision, why);
+  backup('decisions', new Date().toISOString().split('T')[0] + ' | Decision: ' + decision + ' | Why: ' + why);
+  return result;
+};
+
+const originalLogTrade = ComposioNotion.prototype.logTrade;
+ComposioNotion.prototype.logTrade = async function(symbol, action, shares, price, note) {
+  const result = await originalLogTrade.call(this, symbol, action, shares, price, note);
+  backup('positions', new Date().toISOString().split('T')[0] + ' | ' + action + ' ' + shares + ' ' + symbol + ' @ $' + price + (note ? ' - ' + note : ''));
+  return result;
+};
+
+const originalLogError = ComposioNotion.prototype.logError;
+ComposioNotion.prototype.logError = async function(error, fix) {
+  const result = await originalLogError.call(this, error, fix);
+  backup('errors', new Date().toISOString().split('T')[0] + ' | Error: ' + error + ' | Fix: ' + fix);
+  return result;
+};
+
+const originalLogKnowledge = ComposioNotion.prototype.logKnowledge;
+ComposioNotion.prototype.logKnowledge = async function(topic, insight) {
+  const result = await originalLogKnowledge.call(this, topic, insight);
+  backup('knowledge', new Date().toISOString().split('T')[0] + ' | ' + topic + ': ' + insight);
+  return result;
+};
+
+const originalSetPreference = ComposioNotion.prototype.setPreference;
+ComposioNotion.prototype.setPreference = async function(key, value) {
+  const result = await originalSetPreference.call(this, key, value);
+  backup('preferences', key + ': ' + value);
+  return result;
+};
+
+const originalLogSkill = ComposioNotion.prototype.logSkill;
+ComposioNotion.prototype.logSkill = async function(skill, usedFor) {
+  const result = await originalLogSkill.call(this, skill, usedFor);
+  backup('skills', new Date().toISOString().split('T')[0] + ' | ' + skill + ' | Used for: ' + usedFor);
+  return result;
+};
+
 
 module.exports = { ComposioNotion, PAGES };
 
