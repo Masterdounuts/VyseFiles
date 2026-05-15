@@ -1,21 +1,15 @@
-// Composio Notion helper - WORKING with READ/WRITE
+// Composio Notion helper - FIXED v2
 // Usage: node composio-notion.cjs <command> [args]
 
 const API_KEY = process.env.COMPOSIO_API_KEY || 'ak_rqw4yFTcvTeLfd9TWpmn';
 const ENTITY_ID = 'Vyse notion';
 const PARENT_PAGE_ID = '3614f051-c508-8064-b995-cd38be6f896c';
 
-const TOOLS = {
-  createPage: 'NOTION_CREATE_NOTION_PAGE',
-  searchPages: 'NOTION_SEARCH_NOTION_PAGE',
-  addContent: 'NOTION_ADD_PAGE_CONTENT'
-};
-
-const PAGE_IDS = {
-  'vyse-brain': '3614f051-c508-8110-bcf1da45b7684b10',
-  'active-context': '3614f051-c508-81f4-9dce-c34c35f2e128',
-  'positions': '3614f051-c508-81a2-b92bc3e2d486fb28',
-  'decisions': '3614f051-c508-818d-8e72f60abf962929'
+// Page IDs - using explicit IDs that work
+const PAGES = {
+  'active': { id: '3614f051-c508-81f4-9dce-c34c35f2e128', name: 'Active Context' },
+  'positions': { id: '3614f051-c508-81a2-b92b-c3e2d486fb28', name: 'Trading Positions' },
+  'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' }
 };
 
 async function execute(toolSlug, text) {
@@ -29,145 +23,129 @@ async function execute(toolSlug, text) {
   });
   
   const result = await response.json();
-  
   if (!result.successful) {
     throw new Error(result.error || result.data?.message);
   }
-  
   return result.data;
 }
 
 class ComposioNotion {
+  // CREATE new page
   async createPage(title, content = '') {
-    const text = content 
-      ? `create a page titled "${title}" under the page with ID ${PARENT_PAGE_ID} with content: ${content}`
-      : `create a page titled "${title}" under the page with ID ${PARENT_PAGE_ID}`;
-    return execute(TOOLS.createPage, text);
+    return execute('NOTION_CREATE_NOTION_PAGE', 
+      `create a page titled "${title}" under the page with ID ${PARENT_PAGE_ID} with content: ${content}`
+    );
   }
   
-  async searchPages(query = '') {
-    const text = query 
-      ? `search for pages matching "${query}"`
-      : 'list all pages in my workspace';
-    return execute(TOOLS.searchPages, text);
+  // APPEND to existing page (using explicit ID in prompt - THIS IS THE KEY FIX)
+  async appendToPage(pageKey, content) {
+    const page = PAGES[pageKey];
+    if (!page) throw new Error(`Unknown page: ${pageKey}. Use: active, positions, decisions`);
+    
+    // Using explicit page ID in prompt - this works!
+    return execute('NOTION_ADD_PAGE_CONTENT',
+      `add the following new section to the page with ID ${page.id}: ${content}`
+    );
   }
   
-  async updatePage(pageKey, newContent) {
-    // Add content to existing page
-    return execute(TOOLS.addContent,
-      `replace the content of the page with ID ${PAGE_IDS[pageKey]} with: ${newContent}`);
-  }
-  
-  async addToPage(pageKey, content) {
-    return execute(TOOLS.addContent,
-      `add the following to the page with ID ${PAGE_IDS[pageKey]}: ${content}`);
-  }
-  
-  // QUICK: Get active context (1 sentence)
-  async getActive() {
-    const result = await this.searchPages('Active Context');
-    return result.results?.[0] || null;
-  }
-  
-  // QUICK: Get positions
-  async getPositions() {
-    const result = await this.searchPages('Trading Positions');
-    return result.results?.[0] || null;
-  }
-  
-  // QUICK: Log decision
-  async logDecision(decision, why) {
-    const entry = `\n### ${new Date().toISOString().split('T')[0]}\n**Decision:** ${decision}\n**Why:** ${why}`;
-    return this.addToPage('decisions', entry);
-  }
-  
-  // QUICK: Update active context
+  // Set active context
   async setActive(task, goal = '') {
-    const content = `# Active Context\n\n*Last updated: ${new Date().toISOString()}*\n\n## Current Task\n${task}\n\n## Goal\n${goal || '_TBD_'}\n`;
-    return this.updatePage('active-context', content);
+    const ts = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+    const content = `**${ts} PT**\n\n### Task: ${task}\n\n${goal ? '**Goal:** ' + goal + '\n' : ''}`;
+    return this.appendToPage('active', content);
   }
   
-  // QUICK: Update positions
-  async setPositions(positions) {
-    let table = '\n| Symbol | Shares | Entry | Target | Stop | Status |\n|--------|--------|-------|--------|------|--------|\n';
-    for (const p of positions) {
-      table += `| ${p.symbol} | ${p.shares} | ${p.entry} | ${p.target || '-'} | ${p.stop || '-'} | ${p.status} |\n`;
-    }
-    const content = `# Trading Positions\n\n*Last updated: ${new Date().toISOString()}*\n\n## Current Holdings${table}\n`;
-    return this.updatePage('positions', content);
+  // Log decision
+  async logDecision(decision, why) {
+    const ts = new Date().toISOString().split('T')[0];
+    const content = `**${ts}**\n\n**Decision:** ${decision}\n\n**Why:** ${why}`;
+    return this.appendToPage('decisions', content);
+  }
+  
+  // Log trade
+  async logTrade(symbol, action, shares, price, note = '') {
+    const ts = new Date().toISOString().split('T')[0];
+    const content = `**${ts}**\n\n**${action}** ${shares} ${symbol} @ $${price}${note ? ' - ' + note : ''}`;
+    return this.appendToPage('positions', content);
+  }
+  
+  getUrl(pageKey) {
+    const page = PAGES[pageKey];
+    if (!page) return null;
+    return `https://www.notion.so/${page.name.replace(/ /g, '-')}-${page.id}`;
   }
 }
 
-module.exports = { ComposioNotion, PAGE_IDS, TOOLS };
+module.exports = { ComposioNotion, PAGES };
 
 // CLI
 if (require.main === module) {
   const args = process.argv.slice(2);
   const cmd = args[0];
-  
   const cn = new ComposioNotion();
   
   (async () => {
     try {
       switch (cmd) {
         case 'active':
-          // Get active context
-          const active = await cn.getActive();
-          console.log('Active Context:', active?.url || 'Not found');
+          console.log(cn.getUrl('active'));
           break;
           
         case 'set-active':
-          // node composio-notion.cjs set-active "Working on X" "Goal: Y"
-          const task = args[1] || 'Nothing specific';
-          const goal = args[2] || '';
-          await cn.setActive(task, goal);
-          console.log('✅ Active context updated');
+          // Format: set-active <task> [--goal]
+          const taskText = args.slice(1).join(' ');
+          const [task, goalPart] = taskText.split('--');
+          const goal = goalPart ? goalPart.trim() : '';
+          await cn.setActive(task.trim(), goal);
+          console.log('✅ Active updated');
           break;
           
         case 'positions':
-          const pos = await cn.getPositions();
-          console.log('Positions:', pos?.url || 'Not found');
+          console.log(cn.getUrl('positions'));
           break;
           
-        case 'set-positions':
-          // Simplified: just update with text
-          const posText = args.slice(1).join(' ') || 'Updated';
-          await cn.updatePage('positions', posText);
-          console.log('✅ Positions updated');
+        case 'trade':
+          // Format: trade BUY AMC 17 1.44
+          const action = args[1] || 'BUY';
+          const symbol = args[2] || '?';
+          const shares = args[3] || '0';
+          const price = args[4] || '0';
+          await cn.logTrade(symbol, action, shares, price);
+          console.log('✅ Trade logged');
           break;
           
         case 'log-decision':
-          // node composio-notion.cjs log-decision "Decision" "Why"
-          const decision = args[1] || 'TBD';
-          const why = args[2] || 'TBD';
-          await cn.logDecision(decision, why);
+          // Format: log-decision <what> [--why]
+          const decText = args.slice(1).join(' ');
+          const [decision, whyPart] = decText.split('--');
+          const why = whyPart ? whyPart.trim() : 'TBD';
+          await cn.logDecision(decision.trim(), why);
           console.log('✅ Decision logged');
           break;
           
         case 'create':
-          const title = args[1] || 'Test Page';
+          const title = args[1] || 'Test';
           const content = args.slice(2).join(' ') || '';
           const page = await cn.createPage(title, content);
           console.log('Created:', page.url);
           break;
           
         case 'list':
-          const all = await cn.searchPages('');
+          const all = await execute('NOTION_SEARCH_NOTION_PAGE', 'list all pages');
           all.results?.forEach(p => {
-            console.log(`- ${p.properties?.title?.title?.[0]?.plain_text || 'Untitled'} (${p.id})`);
+            console.log(`- ${p.properties?.title?.title?.[0]?.plain_text || 'Untitled'}`);
           });
           break;
           
         default:
-          console.log('Usage: node composio-notion.cjs <command> [args]');
           console.log('Commands:');
-          console.log('  active                    - Get active context URL');
-          console.log('  set-active <task> [goal]  - Update active context');
-          console.log('  positions                 - Get positions URL');
-          console.log('  set-positions <text>     - Update positions');
-          console.log('  log-decision <what> <why>- Log a decision');
-          console.log('  create <title> [content] - Create new page');
-          console.log('  list                     - List all pages');
+          console.log('  active                  - Get URL');
+          console.log('  set-active <task> [--goal]');
+          console.log('  positions               - Get URL');
+          console.log('  trade <BUY/SELL> <sym> <shares> <price>');
+          console.log('  log-decision <what> [--why]');
+          console.log('  create <title> [content]');
+          console.log('  list                    - List all');
       }
     } catch (e) {
       console.error('Error:', e.message);
