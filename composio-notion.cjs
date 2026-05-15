@@ -9,7 +9,9 @@ const PARENT_PAGE_ID = '3614f051-c508-8064-b995-cd38be6f896c';
 const PAGES = {
   'active': { id: '3614f051-c508-81f4-9dce-c34c35f2e128', name: 'Active Context' },
   'positions': { id: '3614f051-c508-81a2-b92b-c3e2d486fb28', name: 'Trading Positions' },
-  'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' }
+  'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' },
+  'errors': { id: '3614f051-c508-813f-b99ac62d62516f6b', name: 'Errors & Fixes' },
+  'knowledge': { id: '3614f051-c508-81feaadde1edcc4359b7', name: 'Knowledge Base' }
 };
 
 async function execute(toolSlug, text) {
@@ -67,6 +69,20 @@ class ComposioNotion {
     const ts = new Date().toISOString().split('T')[0];
     const content = `**${ts}**\n\n**${action}** ${shares} ${symbol} @ $${price}${note ? ' - ' + note : ''}`;
     return this.appendToPage('positions', content);
+  }
+  
+  // Log error + fix
+  async logError(error, fix) {
+    const ts = new Date().toISOString().split('T')[0];
+    const content = `**${ts}**\n\n**Error:** ${error}\n\n**Fix:** ${fix}`;
+    return this.appendToPage('errors', content);
+  }
+  
+  // Log knowledge
+  async logKnowledge(topic, insight, applyWhen) {
+    const ts = new Date().toISOString().split('T')[0];
+    const content = `**${ts}**\n\n**Topic:** ${topic}\n\n**Insight:** ${insight}\n\n**Apply When:** ${applyWhen || 'TBD'}`;
+    return this.appendToPage('knowledge', content);
   }
   
   getUrl(pageKey) {
@@ -130,6 +146,29 @@ if (require.main === module) {
           console.log('Created:', page.url);
           break;
           
+        case 'errors':
+          console.log(cn.getUrl('errors'));
+          break;
+          
+        case 'log-error':
+          const errText = args.slice(1).join(' ').split('--')[0].trim() || 'TBD';
+          const errFix = args.join(' ').split('--')[1]?.trim() || 'TBD';
+          await cn.logError(errText, errFix);
+          console.log('✅ Error logged');
+          break;
+          
+        case 'knowledge':
+          console.log(cn.getUrl('knowledge'));
+          break;
+          
+        case 'log-knowledge':
+          const knowText = args.slice(1).join(' ').split('--')[0].trim() || 'TBD';
+          const knowRest = args.join(' ').split('--')[1] || 'TBD';
+          const [knowInsight, knowApply] = knowRest.split('|');
+          await cn.logKnowledge(knowText, knowInsight.trim(), knowApply?.trim());
+          console.log('✅ Knowledge logged');
+          break;
+          
         case 'list':
           const all = await execute('NOTION_SEARCH_NOTION_PAGE', 'list all pages');
           all.results?.forEach(p => {
@@ -144,6 +183,10 @@ if (require.main === module) {
           console.log('  positions               - Get URL');
           console.log('  trade <BUY/SELL> <sym> <shares> <price>');
           console.log('  log-decision <what> [--why]');
+          console.log('  errors                  - Get URL');
+          console.log('  log-error <error> --<fix>');
+          console.log('  knowledge               - Get URL');
+          console.log('  log-knowledge <topic> --<insight>|<applyWhen>');
           console.log('  create <title> [content]');
           console.log('  list                    - List all');
       }
