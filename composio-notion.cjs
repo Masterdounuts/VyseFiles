@@ -10,8 +10,8 @@ const PAGES = {
   'active': { id: '3614f051-c508-81f4-9dce-c34c35f2e128', name: 'Active Context' },
   'positions': { id: '3614f051-c508-81a2-b92b-c3e2d486fb28', name: 'Trading Positions' },
   'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' },
-  'errors': { id: '3614f051-c508-813f-b99ac62d62516f6b', name: 'Errors & Fixes' },
-  'knowledge': { id: '3614f051-c508-81feaadde1edcc4359b7', name: 'Knowledge Base' }
+  'errors': { id: '3614f051-c508-813f-b99a-c62d62516f6b', name: 'Errors & Fixes' },
+  'knowledge': { id: '3614f051-c508-81fe-aadd-e1edcc4359b7', name: 'Knowledge Base' }
 };
 
 async function execute(toolSlug, text) {
@@ -53,28 +53,28 @@ class ComposioNotion {
   // Set active context
   async setActive(task, goal = '') {
     const ts = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
-    const content = `**${ts} PT**\n\n### Task: ${task}\n\n${goal ? '**Goal:** ' + goal + '\n' : ''}`;
+    const content = ts + ' PT | ' + task + (goal ? ' | Goal: ' + goal : '');
     return this.appendToPage('active', content);
   }
   
   // Log decision
   async logDecision(decision, why) {
     const ts = new Date().toISOString().split('T')[0];
-    const content = `**${ts}**\n\n**Decision:** ${decision}\n\n**Why:** ${why}`;
+    const content = ts + ' | ' + decision + ' | ' + why;
     return this.appendToPage('decisions', content);
   }
   
   // Log trade
   async logTrade(symbol, action, shares, price, note = '') {
     const ts = new Date().toISOString().split('T')[0];
-    const content = `**${ts}**\n\n**${action}** ${shares} ${symbol} @ $${price}${note ? ' - ' + note : ''}`;
+    const content = ts + ' | ' + action + ' ' + shares + ' ' + symbol + ' @ ' + price + (note ? ' - ' + note : '');
     return this.appendToPage('positions', content);
   }
   
   // Log error + fix
   async logError(error, fix) {
     const ts = new Date().toISOString().split('T')[0];
-    const content = `**${ts}**\n\n**Error:** ${error}\n\n**Fix:** ${fix}`;
+    const content = ts + ' | Error: ' + error + ' | Fix: ' + fix;
     return this.appendToPage('errors', content);
   }
   
