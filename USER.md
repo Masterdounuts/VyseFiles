@@ -42,6 +42,7 @@ The more you know, the better you can help. But remember — you're learning abo
 
 **Triggers:**
 - Don't run health checks (can affect other systems)
+- **CRITICAL:** Browser = Stock DATA and PRICES. web_search = News only.
 - Always check FIXES.md before fixing known issues
 - Verify final output (PDFs) not just source
 - Focus beats breadth - build can opener not Swiss army knife _(learned 2026-05-12)_

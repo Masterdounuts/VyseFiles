@@ -1,0 +1,63 @@
+{
+  "candidates": [
+    {
+      "symbol": "WLFI",
+      "score": 78,
+      "validity": 83.93110154372926,
+      "firstSeen": "9:26 AM",
+      "checks": [
+        {
+          "time": "9:26 AM",
+          "validity": 72.7251905392567
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 78.76408112866864
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 71.64558097045112
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 73.22091014785576
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 83.93110154372926
+        }
+      ]
+    },
+    {
+      "symbol": "PEPE",
+      "score": 70,
+      "validity": 97.06063215486476,
+      "firstSeen": "9:26 AM",
+      "checks": [
+        {
+          "time": "9:26 AM",
+          "validity": 52.121315460521714
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 62.479321357736815
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 80.65523043552167
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 100
+        },
+        {
+          "time": "9:26 AM",
+          "validity": 97.06063215486476
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "9:26 AM",
+  "lastCheck": "9:26 AM",
+  "failedCandidates": []
+}

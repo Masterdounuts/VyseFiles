@@ -1,0 +1,193 @@
+{
+  "patterns": [
+    {
+      "type": "valid_streak",
+      "value": [
+        10
+      ],
+      "avg": 10,
+      "description": "Average checks candidates stay valid"
+    },
+    {
+      "type": "failure_rate",
+      "value": 0.1,
+      "description": "10% candidates fail per check"
+    }
+  ],
+  "insights": [
+    {
+      "level": "GOOD",
+      "text": "Candidates stay valid ~10.0 checks",
+      "action": "Good duration for setup stability"
+    },
+    {
+      "level": "INFO",
+      "text": "Strongest candidate: NVDA at 80%",
+      "action": "Focus research on this symbol"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "action",
+      "text": "Good duration for setup stability",
+      "from": "Candidates stay valid ~10.0 checks"
+    }
+  ],
+  "totalChecks": 14,
+  "candidateHistory": [
+    {
+      "time": "2026-05-13T23:02:05.446Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:83",
+        "NVDA:74",
+        "MARA:68"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:02:17.554Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:76",
+        "NVDA:73",
+        "MARA:61"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:02:17.617Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:80",
+        "NVDA:78",
+        "MARA:53"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:02:17.676Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:77",
+        "NVDA:85",
+        "MARA:59"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:02:17.716Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:80",
+        "NVDA:76",
+        "MARA:67"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:02:17.777Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:87",
+        "NVDA:83",
+        "MARA:57"
+      ]
+    },
+    {
+      "time": "2026-05-14T09:00:14.519Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:77",
+        "NVDA:80",
+        "MARA:57"
+      ]
+    },
+    {
+      "time": "2026-05-14T09:30:06.881Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:82",
+        "NVDA:83",
+        "MARA:59"
+      ]
+    },
+    {
+      "time": "2026-05-14T10:00:08.400Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:84",
+        "NVDA:87",
+        "MARA:60"
+      ]
+    },
+    {
+      "time": "2026-05-14T10:30:06.633Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:76",
+        "NVDA:77",
+        "MARA:59"
+      ]
+    },
+    {
+      "time": "2026-05-14T11:00:11.197Z",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:73",
+        "NVDA:78",
+        "MARA:51"
+      ]
+    },
+    {
+      "time": "2026-05-14T11:30:08.907Z",
+      "candidatesCount": 3,
+      "validCount": 2,
+      "failedCount": 1,
+      "symbols": [
+        "AMC:65",
+        "NVDA:83",
+        "MARA:47"
+      ]
+    },
+    {
+      "time": "2026-05-14T12:00:11.585Z",
+      "candidatesCount": 3,
+      "validCount": 2,
+      "failedCount": 1,
+      "symbols": [
+        "AMC:57",
+        "NVDA:79",
+        "MARA:45"
+      ]
+    },
+    {
+      "time": "2026-05-14T12:30:05.405Z",
+      "candidatesCount": 3,
+      "validCount": 2,
+      "failedCount": 1,
+      "symbols": [
+        "AMC:65",
+        "NVDA:80",
+        "MARA:48"
+      ]
+    }
+  ]
+}

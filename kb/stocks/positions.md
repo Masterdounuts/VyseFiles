@@ -4,15 +4,15 @@
 
 ---
 
-## Current Positions (as of May 11, 2026 PT)
+## Current Positions (as of May 13, 2026 PT)
+
 
 | Symbol | Shares | Entry | Current | Notes |
 |--------|--------|-------|---------|-------|
-| **AMC** | 17 | $1.44 | Day-to-Day | Entered May 11 |
-| **DOGE** | SOLD | $0.11027 | Exit -$0.02 | May 12 |
+| **AMC** | SOLD | $1.44 | $1.34 | Exit -$1.70 (-7%) |
+| **EOSE** | 1 | $9.27 | Intraday | Entered May 13 |
 | **QQQ** | 0.021 | $708.78 | Piggybank | Long-term hold |
-| **WLFI** | 14.5 | $0.06897 | Crypto | Target $0.07587 |
-| **MARA** | 1 | $11.78 | Pending | Limit buy @ $11.78 |
+| **XCN** | 391 | $2.02 | Crypto | OnyxCoin - $2.02 total |
 
 ---
 
@@ -31,9 +31,9 @@
 
 | Metric | Amount |
 |--------|--------|
-| **Total Capital** | **$55.46** |
-| **Buying Power** | **$38.72** |
-| **Invested** | **$16.64** |
+| **Total Capital** | **~$31** |
+| **Buying Power** | **$4.73** |
+| **Invested** | **~$26** |
 
 ---
 
@@ -51,6 +51,11 @@
 | 2026-05-08 | SELL | DOGE | 1.00 | $0.11 | -$0.01 | Sold free DOGE |
 | 2026-05-08 | BUY | DOGE | 7.16 | $0.1118 | - | Rebought with $0.80 |
 | 2026-05-09 | BUY | WLFI | 14.5 | $0.06873 | - | Crypto weekend |
+| 2026-05-12 | SELL | DOGE | 7.16 | $0.11 | -$0.02 | Exited |
+| 2026-05-12 | SELL | WLFI | 14.5 | $0.067 | -$0.02 | Exited |
+| 2026-05-12 | BUY | XCN | 391 | $2.02 | - | OnyxCoin |
+| 2026-05-13 | BUY | EOSE | 1 | $9.27 | - | Big trader +34.8%, R/R 21:1 |
+| 2026-05-13 | SELL | AMC | 17 | $1.34 | -$1.70 (-7%) | Big traders distributing -13.6% |
 
 ---
 
@@ -74,11 +79,17 @@
 
 **If all 6 line up = SETUP VALID**
 
-### Fib Settings (EXTENSIONS)
-- Use: 0, -1, -2 (REMOVE standard retracement levels)
-- 0 = Entry point (at CHOCH)
+### Fib Settings (VIDEO 73 - CORRECT SETTINGS)
+- Use: 0, 0.706, 0.618, 1, 0.79 (NOT standard retracement!)
+- **0.706 = GOLDEN ZONE** - highest probability reversal (PRIMARY ENTRY)
+- 0.618 = Secondary level
+- 0.79 = Additional level
 - -1 = First target (1x range expansion)
 - -2 = Second target (2x range expansion)
+
+### R:R MINIMUM (VIDEO 65)
+- **MUST BE >2.5:1** - "If the risk to reward is under 2.5, we do not take the trade"
+- If calculated R:R ≤ 2.5:1 → DO NOT ENTER
 
 ### Position Rules (SMC)
 - **Take Profit:** -2 level (2x expansion)

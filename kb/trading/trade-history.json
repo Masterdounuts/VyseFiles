@@ -1,0 +1,80 @@
+{
+  "trades": [
+    {
+      "date": "2026-05-13",
+      "symbol": "WGS",
+      "type": "intraday",
+      "strategy": "smc",
+      "setup": "fundamental",
+      "result": "win",
+      "profit": 2.42
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "NVDA",
+      "type": "intraday",
+      "strategy": "smc",
+      "setup": "sector-momentum",
+      "result": "win",
+      "profit": 0.92
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "NIO",
+      "type": "intraday",
+      "strategy": "smc",
+      "setup": "fvg-pullback",
+      "result": "loss",
+      "profit": -0.07
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "DOGE",
+      "type": "mini",
+      "strategy": "smc",
+      "setup": "accumulation",
+      "result": "loss",
+      "profit": -0.02
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "WLFI",
+      "type": "mini",
+      "strategy": "smc",
+      "setup": "accumulation",
+      "result": "loss",
+      "profit": -0.02
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "AMC",
+      "type": "intraday",
+      "strategy": "smc",
+      "setup": "fvg-pullback",
+      "result": "loss",
+      "profit": -1.7
+    }
+  ],
+  "lessons": [
+    {
+      "date": "2026-05-13",
+      "text": "Never enter at top of 45% run - wait for pullback"
+    },
+    {
+      "date": "2026-05-13",
+      "text": "Enter AT or BELOW big trader entry, never above"
+    },
+    {
+      "date": "2026-05-13",
+      "text": "Always wait for FVG pullback before entry"
+    },
+    {
+      "date": "2026-05-13",
+      "text": "Cut losses quickly - dont hope for bounce"
+    },
+    {
+      "date": "2026-05-13",
+      "text": "SMC = Strategy; Type = Intraday/Day-to-Day/Mini; Setup = Entry trigger"
+    }
+  ]
+}

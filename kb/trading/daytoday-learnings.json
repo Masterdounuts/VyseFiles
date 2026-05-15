@@ -1,0 +1,125 @@
+{
+  "patterns": [
+    {
+      "type": "overnight_hold",
+      "value": 7,
+      "description": "Candidates held overnight for ~7 hours"
+    },
+    {
+      "type": "daily_success_rate",
+      "value": 1,
+      "description": "100% candidates survive each hour"
+    }
+  ],
+  "insights": [
+    {
+      "level": "GOOD",
+      "text": "Strong overnight hold rate (100%)",
+      "action": "Day-to-day strategy working well - good overnight candidates"
+    },
+    {
+      "level": "GOOD",
+      "text": "Candidates holding 7+ hours",
+      "action": "Good stability - these are solid overnight picks"
+    },
+    {
+      "level": "INFO",
+      "text": "Best overnight pick: AMC at 91%",
+      "action": "Research this symbol for tomorrow"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "strategy",
+      "text": "Current day-to-day criteria working - keep using same setup"
+    },
+    {
+      "category": "action",
+      "text": "Day-to-day strategy working well - good overnight candidates",
+      "from": "Strong overnight hold rate (100%)"
+    },
+    {
+      "category": "action",
+      "text": "Good stability - these are solid overnight picks",
+      "from": "Candidates holding 7+ hours"
+    },
+    {
+      "category": "action",
+      "text": "Research this symbol for tomorrow",
+      "from": "Best overnight pick: AMC at 91%"
+    }
+  ],
+  "totalChecks": 7,
+  "candidateHistory": [
+    {
+      "time": "2026-05-13T23:19:27.488Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:94",
+        "GGB:89"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:19:33.645Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:82",
+        "GGB:82"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:19:33.680Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:93",
+        "GGB:69"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:19:33.717Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:86",
+        "GGB:77"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:19:33.753Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:96",
+        "GGB:69"
+      ]
+    },
+    {
+      "time": "2026-05-14T14:30:12.591Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:100",
+        "GGB:59"
+      ]
+    },
+    {
+      "time": "2026-05-14T15:30:11.502Z",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "AMC:91",
+        "GGB:63"
+      ]
+    }
+  ]
+}

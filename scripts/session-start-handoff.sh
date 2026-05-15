@@ -18,7 +18,22 @@ echo "Time: $TIMESTAMP"
 # ============================================
 echo ""
 echo "=== Rehydrating from session-persistence ==="
-python3 "$WORKSPACE/skills/session-persistence/persist.py" --import --source ~/.openclaw/agents/vyse/sessions/ 2>/dev/null
+IMPORT_OUTPUT=$(python3 "$WORKSPACE/skills/session-persistence/persist.py" --import --source ~/.openclaw/agents/vyse/sessions/ 2>&1)
+IMPORT_EXIT=$?
+echo "$IMPORT_OUTPUT"
+
+if [ $IMPORT_EXIT -ne 0 ]; then
+    echo "⚠️  REHYDRATION FAILED (exit code: $IMPORT_OUTPUT)"
+    echo "   Fallback: Heartbeat will retry in ~30 min"
+else
+    # Verify rehydration worked
+    MSG_COUNT=$(echo "$IMPORT_OUTPUT" | grep -oP 'Messages imported:\s*\K\d+' || echo "0")
+    if [ "$MSG_COUNT" -gt 0 ]; then
+        echo "✅ Rehydration SUCCESS: +$MSG_COUNT messages"
+    else
+        echo "⚠️  REHYDRATION WARNING: 0 messages imported - may indicate failure"
+    fi
+fi
 
 # ============================================
 # STEP 1: LOAD RON-MEMORY (KEY-VALUE) FIRST

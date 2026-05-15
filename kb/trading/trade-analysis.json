@@ -1,0 +1,74 @@
+{
+  "generated": "2026-05-13T20:46:02.620Z",
+  "total": 6,
+  "wins": 2,
+  "losses": 4,
+  "winRate": "33.3",
+  "totalProfit": 1.53,
+  "setupStats": {
+    "unknown": {
+      "wins": 2,
+      "losses": 3,
+      "profit": 3.23,
+      "trades": 5
+    },
+    "big-trader": {
+      "wins": 0,
+      "losses": 1,
+      "profit": -1.7,
+      "trades": 1
+    }
+  },
+  "symbolStats": {
+    "WGS": {
+      "wins": 1,
+      "losses": 0,
+      "profit": 2.42,
+      "trades": 1
+    },
+    "NVDA": {
+      "wins": 1,
+      "losses": 0,
+      "profit": 0.92,
+      "trades": 1
+    },
+    "NIO": {
+      "wins": 0,
+      "losses": 1,
+      "profit": -0.07,
+      "trades": 1
+    },
+    "DOGE": {
+      "wins": 0,
+      "losses": 1,
+      "profit": -0.02,
+      "trades": 1
+    },
+    "WLFI": {
+      "wins": 0,
+      "losses": 1,
+      "profit": -0.02,
+      "trades": 1
+    },
+    "AMC": {
+      "wins": 0,
+      "losses": 1,
+      "profit": -1.7,
+      "trades": 1
+    }
+  },
+  "bestSetup": {
+    "name": "unknown",
+    "wins": 2,
+    "losses": 3,
+    "profit": 3.23,
+    "trades": 5
+  },
+  "worstSetup": {
+    "name": "big-trader",
+    "wins": 0,
+    "losses": 1,
+    "profit": -1.7,
+    "trades": 1
+  }
+}

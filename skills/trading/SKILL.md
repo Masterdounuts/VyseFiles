@@ -20,6 +20,39 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## ⚠️ HONESTY SECTION - What I Actually Know vs Infer
+
+### What I Actually Know (Real Data)
+| Source | What It Tells Me |
+|--------|-----------------|
+| Price history | Real prices, real movement |
+| Volume | Real trading activity |
+| Support/resistance | Swing lows/highs |
+| RSI, MACD, Bollinger | Standard indicators |
+| 52-week range | Real high/low |
+
+### What I Infer (Not Direct Knowledge)
+| What | Reality |
+|------|----------|
+| "Big trader entry" | Volume heuristic - guesses based on high vol + small move |
+| "Big trader stops" | Assumes below support - not real data |
+| "Big trader targets" | Uses swing highs - not their actual targets |
+
+### What Videos Taught (Order Blocks - Video 37)
+- **Order blocks** = specific candle patterns before institutional moves
+- Green rectangle = institutions bought there
+- Red rectangle = institutions sold there
+- Price returns to these zones = bounce opportunity
+
+**My scripts CANNOT see order flow directly** - they infer from volume/price patterns.
+
+### ALWAYS SAY THIS IN RECOMMENDATIONS:
+> "This is what the data suggests" vs "This is what big traders are doing"
+
+**Never present inferences as facts.**
+
+---
+
 ## 🎯 STOP VS ENTRY (CRITICAL)
 
 *This is the foundation of sniper trading*
@@ -597,11 +630,18 @@ node scripts/intraday-scanner.js   # Stock setups
 5. **Draw Fib** — From liquidity → CHOCH (extensions 0, -1, -2)
 6. **Set TP/SL** — TP at -2, SL below liquidity
 
-### Fib Settings (EXTENSIONS ONLY)
-- **Use:** 0, -1, -2 (REMOVE standard retracement levels)
+### Fib Settings (VIDEO 73 - CORRECT)
+- **Use:** 0, 0.706, 0.618, 1, 0.79 (NOT standard retracement!)
+- **0.706 = GOLDEN ZONE** - highest probability reversal (PRIMARY ENTRY)
+- 0.618 = Secondary level
+- 0.79 = Additional level
 - 0 = Entry point (at CHOCH)
 - -1 = First target (1x range expansion)
 - -2 = Second target (2x range expansion)
+
+### R:R MINIMUM (VIDEO 65)
+- **MUST BE >2.5:1** - "If the risk to reward is under 2.5, we do not take the trade"
+- If calculated R:R ≤ 2.5:1 → DO NOT ENTER
 
 ### Entry Rules
 - **MUST have catalyst BEFORE entry** — 80% win rate vs 0% without
@@ -1006,6 +1046,8 @@ Buying Power = Total - Invested_in_positions
 ### Phase 2: Tools Confirmation (If SMC says BUY)
 | Check | Tool | Command |
 |-------|------|---------|
+| **Order Blocks** | `order-block-detector.js` | `node scripts/order-block-detector.js SYMBOL` |
+| **AMD Phase** | `order-block-detector.js` | `node scripts/order-block-detector.js SYMBOL` |
 | **Indicators** | `indicators.js` | `node scripts/indicators.js SYMBOL` |
 | **Patterns** | `pattern-recognizer.js` | `node scripts/pattern-recognizer.js SYMBOL` |
 | **History** | `trade-learner.js` | `node scripts/trade-learner.js stats` |
@@ -1161,3 +1203,193 @@ node scripts/get-stock-news.js
 - learning - Self-improvement pattern
 - kb/stocks/robinhood-platform.md - Robinhood knowledge
 - kb/stocks/trading-strategy.md - Full TradingLab strategy
+
+---
+
+## VIDEO UPDATES (May 13, 2026)
+
+### TWO STEPS DOWN RULE (Video 67)
+| Starting TF | Max Down To |
+|-------------|------------|
+| Daily | 4hr → 1hr (max) |
+| 4hr | 1hr → 30min (max) |
+| 30min | 15min → 5min (max) |
+
+> "You can only go down two steps from the original time frame you started on"
+
+### Delta/CVD (Video 69)
+| Price | CVD | Signal |
+|-------|-----|--------|
+| Higher highs | Lower lows | WEAKNESS - buyers exhausted |
+| Lower lows | Higher lows | STRENGTH - sellers absorbed |
+
+### Inversion FVG (Video 71)
+- Bearish FVG inside bullish FVG = extremely bearish
+- Wait for price to return to inverse FVG → Enter SHORT
+
+---
+
+## FVG 6 VALIDATION FACTORS (Video 56) - REQUIRED
+
+ALL 6 factors must pass before entering:
+
+| # | Factor | Check |
+|---|--------|-------|
+| 1 | **Unmitigated** | FVG not tested yet |
+| 2 | **Candle Reaction** | Close inside FVG or in direction |
+| 3 | **S/R Confluence** | Support (longs) or resistance (shorts) near FVG |
+| 4 | **Priority Location** | Lowest FVG = strongest (for longs) |
+| 5 | **Gann Box** | FVG in lower portion for longs |
+| 6 | **BOS First** | Must have BOS BEFORE FVG created |
+
+**Command:** `node scripts/fvg-detector.js SYMBOL`
+
+---
+
+## VALID STRUCTURE BREAK (Video 61) - REQUIRED
+
+> "The only way you can get a valid low is by breaking the previous high"
+
+| Rule | What |
+|------|------|
+| Valid Uptrend | Low breaks previous HIGH |
+| Valid Downtrend | High breaks previous LOW |
+
+**Until previous high is broken = NOT a valid low**
+
+---
+
+## ATR STOP LOSS (Video 11)
+
+**Smart Stop = Swing Low - ATR**
+
+| Calculation | Example |
+|-------------|---------|
+| Entry | $100 |
+| ATR | $0.75 |
+| Smart Stop | $99.25 |
+
+**Why:** Gives price room for normal volatility, prevents premature stop-outs
+
+**Command:** `node scripts/fvg-detector.js SYMBOL` → shows ATR stop
+
+---
+
+## 🪙 CRYPTO TOOLS (Video 53) - Robinhood Compatible
+
+### Bitcoin Rainbow Zones
+| Zone | Price | Action |
+|------|-------|--------|
+| 🔥 Fire Sale | <$15K | MAX BUY |
+| 🟢 Buy | <$30K | Accumulate |
+| 🔵 Accumulate | <$60K | Still cheap |
+| 🟡 Still Cheap | <$100K | Hold |
+| 🔴 Bubble | >$150K | Take profits |
+
+### Robinhood Crypto (72 Coins - ALL TRADABLE)
+BTC, ETH, DOGE, LTC, SHIB, AAVE, AERO, ARB, AVAX, BCH, BNB, BONK, ADA, MEW, LINK, COMP, CRV, WIF, ENA, ETC, FLOKI, HBAR, HYPE, LDO, NEAR, TRUMP, ONDO, XCN, OP, PNUT, PEPE, DOT, POPCAT, PENGU, SOL, SUI, XLM, GRT, TON, UNI, WLFI, XRP, ZORA
+
+**Includes:** SOL ✅, ADA ✅, XRP ✅, SHIB ✅, PEPE ✅, DOGE ✅, and 65 more!
+
+**Command:** `node scripts/crypto-tools.js`
+
+---
+
+## 🎓 TRADING LEARNING SYSTEM
+
+### Categories (CORRECTED)
+```
+TRADING TYPE:  Intraday | Day-to-Day | Mini (Crypto)
+    ↓
+STRATEGY:      SMC (Smart Money Concepts)
+    ↓
+COMPONENTS:    Liquidity, Big Trader, S/D Zones, FVG, Order Blocks, CHOCH, Fib-Golden, AMD
+    ↓
+SETUP:         The specific entry trigger
+```
+
+### Commands
+```bash
+# View stats and recommendations
+node scripts/trade-learner-v2.js stats
+
+# Get AI recommendation
+node scripts/trade-learner-v2.js recommend
+
+# Record a trade (TYPE = intraday/daytoday/mini, SETUP = entry trigger)
+node scripts/trade-learner-v2.js record SYMBOL TYPE SETUP win|loss PROFIT
+
+# Add a lesson
+node scripts/trade-learner-v2.js lesson "Never chase stocks"
+
+# Show categories
+node scripts/trade-learner-v2.js categories
+```
+
+### Examples
+```bash
+# Record an intraday trade
+node scripts/trade-learner-v2.js record NVDA intraday sector-momentum win 0.92
+node scripts/trade-learner-v2.js record EOSE intraday fvg-pullback loss -0.99
+
+# Record a crypto (mini) trade  
+node scripts/trade-learner-v2.js record DOGE mini accumulation loss -0.02
+```
+
+---
+
+## 🎯 TRADING SYSTEM - Bulletproof
+
+### All-in-One Commands
+```bash
+# 1. Entry Checklist - Verify all SMC conditions
+node scripts/trading-system.js check SYMBOL ENTRY STOP TARGET
+
+# 2. Rule Validator - Did we break any rules?
+node scripts/trading-system.js validate ENTRY BIGTRADER_PRICE
+
+# 3. Position Calculator - Calculate shares for 2% risk
+node scripts/trading-system.js calc ENTRY STOP CAPITAL
+
+# 4. Exit Rules - When to exit
+node scripts/trading-system.js exit intraday|daytoday|mini
+
+# 5. Capital Status - How much we have per type
+node scripts/trading-system.js capital
+
+# 6. Active Positions
+node scripts/trading-system.js positions
+
+# 7. All Rules
+node scripts/trading-system.js rules
+```
+
+### Example: Before Entering a Trade
+```bash
+# Check the entry
+node scripts/trading-system.js check AAPL 150 145 168
+
+# Validate against rules  
+node scripts/trading-system.js validate 150 148
+
+# Calculate position size
+node scripts/trading-system.js calc 150 145 25
+```
+
+### The 7-Point SMC Checklist (BEFORE EVERY ENTRY)
+1. **Trend** - HH+HL or LL+LH identified
+2. **Liquidity** - Stop sweep occurred
+3. **Zone** - At supply or demand zone
+4. **Confirmation** - FVG + CHoCH + Volume + Order Block
+5. **Entry** - At golden zone (71% Fib)
+6. **Risk** - R:R > 2.5:1, ATR stop set
+7. **Big Trader** - Entry at or below big trader price
+
+### Rules Summary
+- Max Risk: 2% per trade
+- Min R:R: 2.5:1
+- Intraday: 6:30 AM - 12:30 PM PT
+- Stop Loss: -7%
+- Exit: 12:30 PM PT max
+
+**ALWAYS run checklist before entering!**

@@ -1,0 +1,286 @@
+{
+  "generated": "2026-05-13T21:34:51.988Z",
+  "totalTrades": 16,
+  "stocks": {
+    "NVDA": {
+      "behavior": "Strong momentum stock, rides AI trend",
+      "patterns": [
+        "tends to run",
+        "good for momentum plays"
+      ],
+      "lessons": [
+        "AI sector play worked"
+      ]
+    },
+    "WGS": {
+      "behavior": "Unknown/SPECULATIVE",
+      "patterns": [],
+      "lessons": [
+        "fundamental thesis can work"
+      ]
+    },
+    "NIO": {
+      "behavior": "Chinese EV - ADR risk",
+      "patterns": [
+        "ADR = can gap down",
+        "volatile"
+      ],
+      "lessons": [
+        "Check ADR status before entry"
+      ]
+    },
+    "DOGE": {
+      "behavior": "Meme coin, follows Bitcoin",
+      "patterns": [
+        "moves with BTC sentiment"
+      ],
+      "lessons": [
+        "Crypto needs different strategy"
+      ]
+    },
+    "WLFI": {
+      "behavior": "New token, political",
+      "patterns": [
+        "new token = unpredictable"
+      ],
+      "lessons": [
+        "Avoid new tokens"
+      ]
+    },
+    "XCN": {
+      "behavior": "OnyxCoin - relatively new",
+      "patterns": [],
+      "lessons": []
+    },
+    "EOSE": {
+      "behavior": "Small cap, volatile",
+      "patterns": [
+        "big traders drove up",
+        "can drop fast"
+      ],
+      "lessons": [
+        "Never enter above big trader entry"
+      ]
+    },
+    "AMC": {
+      "behavior": "Meme stock, heavily shorted",
+      "patterns": [
+        "big traders control it",
+        "can gap down when they exit"
+      ],
+      "lessons": [
+        "Follow big trader exits"
+      ]
+    },
+    "QQQ": {
+      "behavior": "Nasdaq-100 ETF, steady growth",
+      "patterns": [
+        "long-term uptrend"
+      ],
+      "lessons": [
+        "good for piggybank"
+      ]
+    },
+    "GGB": {
+      "behavior": "Unknown",
+      "patterns": [],
+      "lessons": []
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-04-24",
+      "symbol": "GGB",
+      "action": "SELL",
+      "price": 4.35,
+      "profit": null,
+      "strategyLevel": "none",
+      "learningStatus": "experimental",
+      "notes": "Early trade, no real strategy"
+    },
+    {
+      "date": "2026-05-05",
+      "symbol": "NVDA",
+      "action": "BUY",
+      "price": 198.31,
+      "profit": null,
+      "strategyLevel": "learning",
+      "learningStatus": "experimental",
+      "notes": "David's pick - AI/GPU play"
+    },
+    {
+      "date": "2026-05-05",
+      "symbol": "WGS",
+      "action": "BUY",
+      "price": 35.94,
+      "profit": null,
+      "strategyLevel": "learning",
+      "learningStatus": "experimental",
+      "notes": "David's research"
+    },
+    {
+      "date": "2026-05-07",
+      "symbol": "WGS",
+      "action": "SELL",
+      "price": 38.36,
+      "profit": 2.42,
+      "strategyLevel": "learning",
+      "learningStatus": "experimental",
+      "notes": "Exit at target"
+    },
+    {
+      "date": "2026-05-07",
+      "symbol": "NIO",
+      "action": "BUY",
+      "price": 5.94,
+      "profit": null,
+      "strategyLevel": "partial",
+      "learningStatus": "experimental",
+      "notes": "First SMC attempt"
+    },
+    {
+      "date": "2026-05-08",
+      "symbol": "NVDA",
+      "action": "SELL",
+      "price": 215,
+      "profit": 0.92,
+      "strategyLevel": "learning",
+      "learningStatus": "experimental",
+      "notes": "AI momentum"
+    },
+    {
+      "date": "2026-05-08",
+      "symbol": "NIO",
+      "action": "SELL",
+      "price": 5.87,
+      "profit": -0.07,
+      "strategyLevel": "partial",
+      "learningStatus": "experimental",
+      "notes": "ADR rule miss"
+    },
+    {
+      "date": "2026-05-08",
+      "symbol": "DOGE",
+      "action": "BUY",
+      "price": 0.1118,
+      "profit": null,
+      "strategyLevel": "mini",
+      "learningStatus": "still-learning",
+      "notes": "First crypto trade"
+    },
+    {
+      "date": "2026-05-09",
+      "symbol": "WLFI",
+      "action": "BUY",
+      "price": 0.06873,
+      "profit": null,
+      "strategyLevel": "mini",
+      "learningStatus": "still-learning",
+      "notes": "World Liberty token"
+    },
+    {
+      "date": "2026-05-12",
+      "symbol": "DOGE",
+      "action": "SELL",
+      "price": 0.11,
+      "profit": -0.02,
+      "strategyLevel": "mini",
+      "learningStatus": "still-learning",
+      "notes": "Small loss on crypto"
+    },
+    {
+      "date": "2026-05-12",
+      "symbol": "WLFI",
+      "action": "SELL",
+      "price": 0.067,
+      "profit": -0.02,
+      "strategyLevel": "mini",
+      "learningStatus": "still-learning",
+      "notes": "Small loss on crypto"
+    },
+    {
+      "date": "2026-05-12",
+      "symbol": "XCN",
+      "action": "BUY",
+      "price": 2.02,
+      "profit": null,
+      "strategyLevel": "mini",
+      "learningStatus": "still-learning",
+      "notes": "OnyxCoin - current"
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "EOSE",
+      "action": "BUY",
+      "price": 9.27,
+      "profit": null,
+      "strategyLevel": "full-smc",
+      "learningStatus": "still-learning",
+      "notes": "Full SMC but violated rule"
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "AMC",
+      "action": "BUY",
+      "price": 1.44,
+      "profit": null,
+      "strategyLevel": "full-smc",
+      "learningStatus": "still-learning",
+      "notes": "Full SMC setup"
+    },
+    {
+      "date": "2026-05-13",
+      "symbol": "AMC",
+      "action": "SELL",
+      "price": 1.34,
+      "profit": -1.7,
+      "strategyLevel": "full-smc",
+      "learningStatus": "still-learning",
+      "notes": "Big traders distributed"
+    },
+    {
+      "date": "2026-05-08",
+      "symbol": "QQQ",
+      "action": "BUY",
+      "price": 708.78,
+      "profit": null,
+      "strategyLevel": "piggybank",
+      "learningStatus": "hold",
+      "notes": "Long-term hold"
+    }
+  ],
+  "learnings": [
+    {
+      "type": "Strategy",
+      "learn": "Full SMC - still learning, expect losses"
+    },
+    {
+      "type": "Strategy",
+      "learn": "Crypto/Mini - still learning, expect losses"
+    },
+    {
+      "type": "Stock",
+      "learn": "AMC = follows big traders, exit when they exit"
+    },
+    {
+      "type": "Stock",
+      "learn": "NIO = ADR risk, check before entry"
+    },
+    {
+      "type": "Stock",
+      "learn": "EOSE = never enter above big trader"
+    },
+    {
+      "type": "Stock",
+      "learn": "NVDA = good for momentum"
+    },
+    {
+      "type": "Pattern",
+      "learn": "Enter above big trader = loss"
+    },
+    {
+      "type": "Pattern",
+      "learn": "Big traders distributing = exit immediately"
+    }
+  ]
+}

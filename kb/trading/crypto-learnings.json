@@ -1,0 +1,155 @@
+{
+  "patterns": [
+    {
+      "type": "coin_rankings",
+      "value": [
+        {
+          "coin": "DOGE",
+          "scans": 4,
+          "valid": 4,
+          "failed": 0,
+          "avgValidity": 66.40325941838562,
+          "successRate": 100
+        },
+        {
+          "coin": "WLFI",
+          "scans": 5,
+          "valid": 5,
+          "failed": 0,
+          "avgValidity": 76.05737286599229,
+          "successRate": 100
+        },
+        {
+          "coin": "PEPE",
+          "scans": 5,
+          "valid": 5,
+          "failed": 0,
+          "avgValidity": 78.463299881729,
+          "successRate": 100
+        }
+      ],
+      "description": "Top performing coins by success rate"
+    },
+    {
+      "type": "scan_frequency",
+      "value": 6,
+      "description": "6 scans in recent history"
+    }
+  ],
+  "insights": [
+    {
+      "level": "GOOD",
+      "text": "Best coin: DOGE (100% success)",
+      "action": "Prioritize DOGE for next trade"
+    },
+    {
+      "level": "GOOD",
+      "text": "Strong scan success: 100%",
+      "action": "Current criteria working well for crypto"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "coin_selection",
+      "text": "Focus on top 3: DOGE, WLFI, PEPE"
+    },
+    {
+      "category": "strategy",
+      "text": "Keep using current crypto scanning criteria"
+    }
+  ],
+  "totalScans": 6,
+  "tradeHistory": [
+    {
+      "time": "2026-05-13T23:26:33.117Z",
+      "type": "scan",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "DOGE:80",
+        "WLFI:75",
+        "PEPE:70"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:26:34.738Z",
+      "type": "scan",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "DOGE:76",
+        "WLFI:73",
+        "PEPE:52"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:26:34.771Z",
+      "type": "scan",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "DOGE:61",
+        "WLFI:79",
+        "PEPE:62"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:26:34.804Z",
+      "type": "scan",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "DOGE:74",
+        "WLFI:72",
+        "PEPE:81"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:26:34.864Z",
+      "type": "scan",
+      "candidatesCount": 3,
+      "validCount": 3,
+      "failedCount": 0,
+      "symbols": [
+        "DOGE:55",
+        "WLFI:73",
+        "PEPE:100"
+      ]
+    },
+    {
+      "time": "2026-05-13T23:26:34.927Z",
+      "type": "scan",
+      "candidatesCount": 2,
+      "validCount": 2,
+      "failedCount": 0,
+      "symbols": [
+        "WLFI:84",
+        "PEPE:97"
+      ]
+    }
+  ],
+  "coinSuccess": {
+    "DOGE": {
+      "scans": 4,
+      "valid": 4,
+      "failed": 0,
+      "avgValidity": 66.40325941838562
+    },
+    "WLFI": {
+      "scans": 5,
+      "valid": 5,
+      "failed": 0,
+      "avgValidity": 76.05737286599229
+    },
+    "PEPE": {
+      "scans": 5,
+      "valid": 5,
+      "failed": 0,
+      "avgValidity": 78.463299881729
+    }
+  }
+}

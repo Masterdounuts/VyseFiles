@@ -1,0 +1,46 @@
+{
+  "total": 55,
+  "lastUpdated": "2026-05-13",
+  "types": {
+    "mini": {
+      "name": "Crypto (Mini)",
+      "allocated": 5,
+      "available": 5,
+      "used": 0,
+      "profitCycle": "same-day",
+      "reinvest": "crypto",
+      "strategy": {
+        "primary": "Quick flip - same day",
+        "hold": "1-2 days if strong setup",
+        "bolster": "Add to position with profits if upward expected"
+      },
+      "note": "Profits available same day for more crypto or to bolster"
+    },
+    "intraday": {
+      "name": "Intraday",
+      "allocated": 25,
+      "available": 25,
+      "used": 0,
+      "profitCycle": "same-day",
+      "reinvest": "next-intraday",
+      "strategy": {
+        "entry": "6:30 AM - 12:30 PM PT",
+        "exit": "Same day by 12:30 PM PT"
+      },
+      "note": "Profits available next trading day"
+    },
+    "daytoday": {
+      "name": "Day-to-Day",
+      "allocated": 25,
+      "available": 25,
+      "used": 0,
+      "profitCycle": "2-days",
+      "reinvest": "next-daytoday",
+      "strategy": {
+        "entry": "At market close",
+        "exit": "Next day close (T+1)"
+      },
+      "note": "Buy Day 1, Sell Day 2, profit Day 3"
+    }
+  }
+}

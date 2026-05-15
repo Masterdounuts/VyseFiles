@@ -1,224 +1,168 @@
 #!/usr/bin/env node
-// SMC Scanner v9 - Volume-First Detection
-// Rebuild May 8, 2026: Volume + Price Action as gatekeeper
+// SMC SCANNER - Unified SMC analysis combining ALL detections
+// Combines: Trend + Liquidity + CHOCH + 52-week (local)
+// FVG, Order Blocks, Big Trader - use separate live tools
 
-// BROAD UNIVERSE: Common US stocks (~200)
-const universe = [
-  // Tech
-  'AAPL','MSFT','GOOGL','AMZN','META','NVDA','AMD','INTC','MU','AVGO','AMAT','LRCX','KLAC','TSM','QCOM','TXN','NXPI','MRVL','ON','MRAM','ARM','SNPS','CDNS','ANSS','KEYS','GLW','COHR','LITE','FLEX','IPG',
-  // Consumer/Retail
-  'TSLA','AMZN','WMT','HD','COST','TGT','LOW','DLTR','BBY','ROST','TJX','GPS','URBN','ANF','EXPR','JWN','KSS','M','BBWI',
-  // Auto
-  'F','GM','RIVN','LCID','WORK',
-  // Finance
-  'JPM','BAC','WFC','C','GS','MS','BLK','SCHW','COF','USB','PNC','TFC','COF','AXP','DFS','SYF','MET','PRU','AFL','TRV','CME','ICE',
-  // Healthcare
-  'JNJ','UNH','PFE','MRK','ABBV','LLY','BMY','AMGN','GILD','BIIB','MRNA','REGN','VRTX','ALGN','ISRG','MDT','SYK','BSX','ZTS','DHR','EW','ABT',
-  // Energy
-  'XOM','CVX','COP','SLB','EOG','PSX','VLO','MPC','OXY','HAL','DVN','FANG','PXD','MTDR',
-  // Industrial
-  'CAT','BA','HON','UNP','GE','MMM','DE','LLY','UPS','FDX','RTX','NOC','LMT','GD','ITW','ETN','EMR','PH','ROK','FTV','CMI','SWK','IDXX',
-  // Crypto/AI/Tech plays
-  'COIN','MARA','RIOT','HOOD','PLTR','SOUN','SMCI','ASTS','PATH','U','ESTC','SNOW','DDOG','CRWD','ZS','NET','MDB','OKTA','TWLO','SNAP','PINS','RBLX','U','MTCH','CHWY','W','POSH',
-  // Communication
-  'DIS','NFLX','CMCSA','T','VZ','TMUS','AMC','NWSA',
-  // Real Estate/REITs
-  'AMT','PLD','CCI','EQIX','PSA','O','SPG','KIM','VTR','AVB','EQR','WELL',
-  // Materials
-  'LIN','APD','ECL','SHW','NEM','FCX','AA','NUE','STLD','X',
-  // Consumer Staples
-  'KO','PEP','PG','PM','MO','STZ','KMB','GIS','K','HSY','MDLZ','KHC','MKC',
-  // ETFs (major indices)
-  'SPY','QQQ','IWM','DIA','VTI','VOO','VEA','VWO','BND','GLD',
-];
+// ============================================
+// UNIFIED SMC SCANNER
+// ============================================
 
-// CATEGORY FILTERS
-const filters = {
-  ADR: ['NIO','LCID','XPEV','LI','BABA','TAL','EDU','IQ','CDLX','GOT','TM','HMC','SNP','ING','AXP','Mitsubishi','Sony','Softbank'],
-  LEVERAGED: ['TNA','TZA','SQQQ','DUST','JNUG','JDST','NERD','SOXL','TECL','FNGU','UVXY','SVOL','SPXL','SPXS','TQQQ','SQQQ'],
-  MEME: ['GME','AMC','BB','BBBY','WKHS','CLNE','CEI','ATER','KOSS','NAKD','SOFI','LC','RBLX','HOOD','PTON','COIN','MARA','RIOT'],
-};
+const { detectTrend, validateTrendForTrade } = require('./trend-detector.js');
+const { findLiquidityZones, detectLiquiditySweep, getActiveLiquidity } = require('./liquidity-detector.js');
+const { getStructureState } = require('./choch-detector.js');
+const { check52WeekRule } = require('./52week-check.js');
 
-function passesFilters(sym) {
-  if (filters.ADR.includes(sym)) return 'ADR';
-  if (filters.LEVERAGED.includes(sym)) return 'Leveraged';
-  if (filters.MEME.includes(sym)) return 'Meme';
-  return null;
-}
-
-// VOLUME PATTERN CLASSIFICATION (Wyckoff Method)
-// Returns: { pattern: 'V1'-'V7', description: string, bullish: boolean }
-function classifyVolumePattern(prices, volumes) {
-  if (prices.length < 20 || volumes.length < 20) {
-    return { pattern: 'unknown', description: 'Insufficient data', bullish: false };
+/**
+ * Run complete SMC analysis on any stock
+ */
+function smcScan(symbol, candles, week52 = null) {
+  console.log(`\n${'═'.repeat(60)}`);
+  console.log(`🔍 SMC SCAN: ${symbol}`);
+  console.log(`   Candles: ${candles.length}`);
+  console.log(`${'═'.repeat(60)}`);
+  
+  const results = {
+    symbol,
+    timestamp: new Date().toISOString(),
+    trend: null,
+    liquidity: null,
+    choch: null,
+    fvg: null,
+    orderBlocks: null,
+    bigTrader: null,
+    week52: null,
+    validEntry: false,
+    recommendation: null,
+    violations: []
+  };
+  
+  // 1. TREND
+  console.log('\n📈 1. TREND ANALYSIS');
+  results.trend = detectTrend(candles);
+  console.log(`   Trend: ${results.trend.trend.toUpperCase()}`);
+  
+  const trendValidation = validateTrendForTrade(results.trend);
+  if (!trendValidation.valid) {
+    results.violations.push(`Trend: ${trendValidation.reason}`);
   }
+  console.log(`   Status: ${trendValidation.valid ? '✅' : '❌'} ${trendValidation.reason}`);
   
-  // Use last 20 days for trend
-  const recentPrices = prices.slice(-20);
-  const recentVols = volumes.slice(-20);
+  // 2. LIQUIDITY
+  console.log('\n💧 2. LIQUIDITY');
+  results.liquidity = {
+    zones: findLiquidityZones(candles),
+    sweep: null,
+    active: null
+  };
+  results.liquidity.sweep = detectLiquiditySweep(candles, results.liquidity.zones);
+  results.liquidity.active = getActiveLiquidity(candles, results.liquidity.zones);
   
-  // Calculate trends (simple linear regression slope)
-  const priceTrend = calculateTrend(recentPrices);
-  const volumeTrend = calculateTrend(recentVols);
-  
-  // Recent vs average volume
-  const avgVol = recentVols.reduce((a,b) => a+b, 0) / 20;
-  const lastVol = recentVols[recentVols.length - 1];
-  const volRatio = lastVol / avgVol;
-  
-  // Classify based on price vs volume direction
-  if (priceTrend > 0 && volumeTrend > 0) {
-    // Price UP + Volume UP = Healthy Uptrend
-    if (volRatio > 1.8) {
-      return { pattern: 'V1', description: 'Strong uptrend (healthy)', bullish: true };
-    } else if (volRatio > 1.2) {
-      return { pattern: 'V1', description: 'Uptrend (confirmed)', bullish: true };
-    } else {
-      return { pattern: 'V1', description: 'Uptrend (low vol)', bullish: true };
-    }
-  } else if (priceTrend > 0 && volumeTrend < 0) {
-    // Price UP + Volume DOWN = Weakness
-    return { pattern: 'V2', description: 'Price up + vol down = WEAKNESS', bullish: false };
-  } else if (priceTrend < 0 && volumeTrend < 0) {
-    // Price DOWN + Volume DOWN = Bottom forming
-    if (volRatio < 0.7) {
-      return { pattern: 'V3', description: 'Bottom forming (selling exhausted)', bullish: true };
-    } else {
-      return { pattern: 'V3', description: 'Downtrend weakening', bullish: true };
-    }
-  } else if (priceTrend < 0 && volumeTrend > 0) {
-    // Price DOWN + Volume UP = Could be accumulation OR distribution
-    // CRITICAL: Depends on position in 52W range
-    
-    // Calculate position in 52W range
-    const yearLow = Math.min(...prices.slice(-252));
-    const yearHigh = Math.max(...prices.slice(-252));
-    const rangePosition = (lastPrice - yearLow) / (yearHigh - yearLow);
-    
-    // V4 is ONLY bullish if in lower half (accumulating near lows)
-    // In upper half = distribution (selling near highs)
-    if (rangePosition < 0.5 && volRatio > 1.5) {
-      return { pattern: 'V4', description: 'ACCUMULATION (smart money buying near lows)', bullish: true };
-    } else if (rangePosition < 0.5) {
-      return { pattern: 'V4', description: 'Potential accumulation (near lows)', bullish: true };
-    } else {
-      return { pattern: 'V4', description: 'DISTRIBUTION (smart money selling near highs)', bullish: false };
-    }
-  } else if (volumeTrend > 0.5 && Math.abs(priceTrend) < 0.1) {
-    // Volume spike with flat price = anomaly
-    return { pattern: 'V5', description: 'Volume spike (anomaly)', bullish: null };
-  } else if (priceTrend > 0 && volRatio > 2.0) {
-    // Price up + huge volume spike = possible absorption
-    return { pattern: 'V6', description: 'Absorption? (large vol spike)', bullish: false };
-  }
-  
-  return { pattern: 'V7', description: 'Mixed/Unclear', bullish: null };
-}
-
-// Simple trend calculation (slope of linear fit)
-function calculateTrend(values) {
-  const n = values.length;
-  const xSum = (n * (n - 1)) / 2;
-  const ySum = values.reduce((a, b) => a + b, 0);
-  const xySum = values.reduce((sum, y, x) => sum + x * y, 0);
-  const xxSum = (n * (n - 1) * (2 * n - 1)) / 6;
-  
-  const slope = (n * xySum - xSum * ySum) / (n * xxSum - xSum * xSum);
-  return slope; // Positive = up, negative = down
-}
-
-console.log('=== SMC Scanner v9 - Volume-First ===\n');
-console.log('Volume + Price Action = Profit\n');
-console.log('Scanning ' + universe.length + ' stocks...\n');
-
-async function scan() {
-  const results = [];
-  const filtered = { ADR: 0, LEVERAGED: 0, Meme: 0, noSetup: 0 };
-  const patternCounts = {};
-  
-  for (const sym of universe) {
-    const filterReason = passesFilters(sym);
-    if (filterReason) {
-      filtered[filterReason]++;
-      continue;
-    }
-    
-    try {
-      const res = await fetch('https://query1.finance.yahoo.com/v8/finance/chart/' + sym + '?interval=1d&range=2mo');
-      const data = await res.json();
-      const r = data.chart?.result?.[0];
-      if (!r) continue;
-      
-      const price = r.meta.regularMarketPrice;
-      const volume = r.meta.regularMarketVolume;
-      const q = r.indicators.quote[0];
-      
-      const closes = q.close.filter(x => x !== null);
-      const lows = q.low.filter(x => x !== null);
-      const highs = q.high.filter(x => x !== null);
-      const volumes = q.volume.filter(x => x);
-      
-      if (closes.length < 20) continue;
-      
-      // STEP 1: Volume Pattern Classification (GATEKEEPER)
-      const volPattern = classifyVolumePattern(closes, volumes);
-      
-      // Track pattern counts
-      patternCounts[volPattern.pattern] = (patternCounts[volPattern.pattern] || 0) + 1;
-      
-      // SKIP non-bullish patterns
-      if (!volPattern.bullish) continue;
-      
-      // STEP 2: Calculate bounce from 52W low
-      const yearLow = Math.min(...lows);
-      const yearHigh = Math.max(...highs);
-      const trueBouncePct = ((price - yearLow) / yearLow) * 100;
-      
-      // STEP 3: Early stage filter (2-15% bounce)
-      if (trueBouncePct < 2 || trueBouncePct > 15) continue;
-      
-      // STEP 4: In lower half of range
-      const swingLow = Math.min(...lows.slice(-20));
-      const swingHigh = Math.max(...highs.slice(-20));
-      const rangePct = (price - swingLow) / (swingHigh - swingLow);
-      if (rangePct > 0.55) continue;
-      
-      results.push({
-        sym,
-        price: price.toFixed(2),
-        bounce: trueBouncePct.toFixed(1) + '%',
-        pattern: volPattern.pattern,
-        patternDesc: volPattern.description
-      });
-    } catch(e) {
-      filtered.noSetup++;
-    }
-  }
-  
-  // Sort by earliest stage (closest to 3% bounce)
-  results.sort((a, b) => parseFloat(a.bounce) - parseFloat(b.bounce));
-  
-  console.log('--- VOLUME-FIRST CANDIDATES ---\n');
-  if (results.length === 0) {
-    console.log('(none found - try scanning with relaxed bounce limits)\n');
+  if (results.liquidity.sweep.swept) {
+    console.log(`   Sweep: ✅ ${results.liquidity.sweep.direction.toUpperCase()} @ $${results.liquidity.sweep.sweepPrice.toFixed(2)}`);
   } else {
-    console.log('Found ' + results.length + ' bullish setups:\n');
-    for (const r of results.slice(0,8)) {
-      console.log(r.sym + ': $' + r.price + ' | bounce +' + r.bounce + ' | ' + r.pattern + ' - ' + r.patternDesc);
+    console.log(`   Sweep: ⏳ Waiting for sweep`);
+    results.violations.push('Liquidity: No sweep detected yet');
+  }
+  
+  // 3. CHOCH
+  console.log('\n🔄 3. CHANGE OF CHARACTER');
+  results.choch = getStructureState(candles);
+  if (results.choch.choch.detected) {
+    console.log(`   CHOCH: ✅ ${results.choch.choch.direction.toUpperCase()}`);
+  } else {
+    console.log(`   CHOCH: ⏳ ${results.choch.choch.reason || 'No clear break'}`);
+    results.violations.push('CHOCH: No clear change of character');
+  }
+  
+  // 4. FVG (manual check)
+  console.log('\n📊 4. FAIR VALUE GAP');
+  console.log(`   FVG: ⏳ Use: node fvg-detector.js <SYMBOL>`);
+  
+  // 5. ORDER BLOCKS (manual check)
+  console.log('\n🧱 5. ORDER BLOCKS');
+  console.log(`   OB: ⏳ Use: node order-block-detector.js <SYMBOL>`);
+  
+  // 6. BIG TRADER (manual check)
+  console.log('\n🏦 6. BIG TRADER');
+  console.log(`   Big Trader: ⏳ Use: node big-trader-detector.js <SYMBOL>`);
+  
+  // 7. 52-WEEK RULE
+  console.log('\n📅 7. 52-WEEK RULE');
+  if (week52) {
+    results.week52 = check52WeekRule(
+      candles[candles.length - 1].close,
+      week52.high,
+      week52.low
+    );
+    console.log(`   Position: ${results.week52.percentage}%`);
+    console.log(`   Status: ${results.week52.inRange ? '✅' : '❌'} ${results.week52.message}`);
+    
+    if (!results.week52.inRange) {
+      results.violations.push(`52-Week: Above 80% of range (${results.week52.percentage}%)`);
     }
+  } else {
+    console.log(`   Status: ⚠️ No 52-week data`);
+    results.violations.push('52-Week: No data provided');
   }
   
-  console.log('\n--- Pattern Distribution ---');
-  for (const [pat, count] of Object.entries(patternCounts)) {
-    console.log(pat + ': ' + count);
+  // FINAL VALIDATION
+  console.log('\n' + '─'.repeat(60));
+  console.log('\n🎯 ENTRY VALIDATION');
+  
+  let greenLights = 0;
+  let total = 4;
+  
+  if (trendValidation.valid) greenLights++;
+  if (results.liquidity.sweep.swept) greenLights++;
+  if (results.choch.choch.detected) greenLights++;
+  if (results.week52 && results.week52.inRange) greenLights++;
+  
+  console.log(`\nGreen Lights: ${greenLights}/${total}`);
+  
+  results.validEntry = greenLights >= 3;
+  
+  if (results.validEntry) {
+    console.log(`\n✅ VALID ENTRY - Core criteria met`);
+    results.recommendation = {
+      action: results.trend.trend === 'up' ? 'LONG' : 'SHORT',
+      confidence: Math.round((greenLights / total) * 100),
+      nextSteps: 'Run fvg-detector, order-block-detector, big-trader-detector for full picture'
+    };
+  } else {
+    console.log(`\n❌ NOT READY - Violations:`);
+    results.violations.forEach(v => console.log(`   • ${v}`));
+    results.recommendation = {
+      action: 'WAIT',
+      confidence: Math.round((greenLights / total) * 100),
+      nextSteps: 'Fix violations before proceeding'
+    };
   }
   
-  console.log('\n--- Filtered: ' + Object.values(filtered).reduce((a,b) => a+b, 0) + ' stocks ---');
-  console.log('ADR: ' + filtered.ADR + ' | Leveraged: ' + filtered.LEVERAGED + ' | Meme: ' + filtered.Meme);
-  
-  if (results.length > 0) {
-    console.log('\n💡 Best setup: ' + results[0].sym + ' (' + results[0].pattern + ')');
-  }
+  return results;
 }
 
-scan();
+// ============================================
+// CLI
+// ============================================
+
+if (require.main === module) {
+  // Demo candles
+  const demoCandles = [];
+  let price = 100;
+  for (let i = 0; i < 30; i++) {
+    const move = (Math.random() - 0.45) * 2;
+    price += move;
+    demoCandles.push({
+      time: `2026-05-${String(i+1).padStart(2,'0')}`,
+      open: price,
+      high: price + Math.random(),
+      low: price - Math.random(),
+      close: price + (Math.random() - 0.5),
+      volume: 1000
+    });
+  }
+  
+  smcScan('DEMO', demoCandles, { high: 120, low: 85 });
+}
+
+module.exports = { smcScan };
