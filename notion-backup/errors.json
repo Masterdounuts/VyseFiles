@@ -2,5 +2,33 @@
   {
     "timestamp": "2026-05-15T18:17:07.866Z",
     "entry": "2026-05-15 | Error: API key wrong | Fix: Used correct key from env"
+  },
+  {
+    "timestamp": "2026-05-15T18:44:50.845Z",
+    "entry": "2026-05-15 | Error: Wrong Composio API key in .env.composio | Fix: Used working key ak_rqw4yFTcvTeLfd9TWpmn"
+  },
+  {
+    "timestamp": "2026-05-15T18:51:00.613Z",
+    "entry": "2026-05-15 | Error: Wrong API for stock prices | Fix: Use node scripts/get-stock-price.js (Yahoo Finance) NOT Finnhub direct curl"
+  },
+  {
+    "timestamp": "2026-05-15T18:55:50.634Z",
+    "entry": "2026-05-15 | Error: Session Rehydration Cron-based (2026-05-13) | Fix: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:55:54.809Z",
+    "entry": "2026-05-15 | Error: Memory Handoff Stacking Rewrote save scripts to pull from memory/core (2026-05-02) | Fix: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:01.667Z",
+    "entry": "2026-05-15 | Error: Checkpoint Before Refresh Save to HANDOFF + resume-point + PENDING (2026-05-04) | Fix: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:07.673Z",
+    "entry": "2026-05-15 | Error: Cron Scope Updated paired.json with all scopes (2026-05-11) | Fix: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:11.471Z",
+    "entry": "2026-05-15 | Error: Stock Price API Use scripts/get-stock-price.js (Yahoo) (2026-05-15) | Fix: TBD"
   }
 ]

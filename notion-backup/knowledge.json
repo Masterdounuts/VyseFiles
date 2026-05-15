@@ -6,5 +6,41 @@
   {
     "timestamp": "2026-05-15T18:26:38.647Z",
     "entry": "2026-05-15 | website: Updated Sky Pirate Studios portfolio"
+  },
+  {
+    "timestamp": "2026-05-15T18:44:36.686Z",
+    "entry": "2026-05-15 | memory: Analyzing Composio for memory optimization"
+  },
+  {
+    "timestamp": "2026-05-15T18:44:55.661Z",
+    "entry": "2026-05-15 | Wrong Composio API key in .env.composio: Fixed: Used working key ak_rqw4yFTcvTeLfd9TWpmn"
+  },
+  {
+    "timestamp": "2026-05-15T18:51:09.205Z",
+    "entry": "2026-05-15 | Wrong API for stock prices: Fixed: Use node scripts/get-stock-price.js (Yahoo Finance) NOT Finnhub direct curl"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:34.800Z",
+    "entry": "2026-05-15 | Trading Rules Max 25% position, -7% stop, +12% target, exit 12:30 PM PT: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:41.320Z",
+    "entry": "2026-05-15 | Trading Types Mini (crypto), Intraday (same day), Day-to-Day (swing), Piggybank (long-term): TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:46.321Z",
+    "entry": "2026-05-15 | Big Trader Detection High volume + small candle = absorbing (building position): TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:52.497Z",
+    "entry": "2026-05-15 | Price API Fix Use node scripts/get-stock-price.js NOT Finnhub curl: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:56:56.454Z",
+    "entry": "2026-05-15 | Notion Query Use notion-query.cjs for instant local queries: TBD"
+  },
+  {
+    "timestamp": "2026-05-15T18:57:13.465Z",
+    "entry": "2026-05-15 | Composio Key ak_rqw4yFTcvTeLfd9TWpmn (check .env.composio): TBD"
   }
 ]
