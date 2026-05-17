@@ -487,3 +487,4 @@
 {"type":"memory.dream.completed","timestamp":"2026-05-17T03:00:08.870Z","phase":"rem","reportPath":"/home/openclaw/.openclaw/workspace-vyse/memory/dreaming/rem/2026-05-17.md","lineCount":7,"storageMode":"separate"}
 {"type":"memory.dream.completed","timestamp":"2026-05-17T03:00:08.870Z","phase":"deep","reportPath":"/home/openclaw/.openclaw/workspace-vyse/memory/dreaming/deep/2026-05-17.md","lineCount":3,"storageMode":"separate"}
 {"type":"memory.recall.recorded","timestamp":"2026-05-17T17:59:29.047Z","query":"scalp stock YouTube video setup entry","resultCount":1,"results":[{"path":"memory/archive/2026-04/2026-04-16.md","startLine":1170,"endLine":1238,"score":1}]}
+{"type":"memory.recall.recorded","timestamp":"2026-05-17T20:06:06.434Z","query":"EZGO reverse split May 19 positions","resultCount":1,"results":[{"path":"memory/archive/2026-04/2026-04-16.md","startLine":3030,"endLine":3085,"score":1}]}
