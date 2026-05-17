@@ -79,16 +79,29 @@
 
 ---
 
-## Capital Summary (LIVE - From Screenshot May 17)
+## Capital Summary (LIVE - Verified May 17, 2026)
 
 | Metric | Amount |
 |--------|--------|
 | **Initial Deposit** | **$20** (account start) |
 | **Additional Deposit** | **$25** (Apr 12) |
-| **Total Capital In** | **$45** |
+| **Rewards/Gifts** | **$0.21** |
+| **Total Capital In** | **$45.21** |
 | **Current Value** | **$51.27** ✅ |
+| **Cash Balance** | **$16.78** |
+| **Pending Orders** | **$5.00** (Onyx Coin) |
 | **Buying Power** | **$11.78** |
-| **3-Month P/L** | **+$6.16 (13.66%)** |
+| **3-Month P/L** | **+$6.06 (13.3%)** |
+
+## Current Positions (Verified)
+
+| Symbol | Shares | Avg Cost | Current Value |
+|--------|--------|----------|---------------|
+| DOGE | 28.23 | $0.11548 | $3.26 |
+| BTC | 0.00002159 | $79,203.33 | $1.71 |
+| QQQ | 0.021116 | $710.36 | $15.00 |
+| EZGO | 864 | $0.0181 | $15.64 |
+| **Total** | | | **$35.61** |
 
 ---
 
