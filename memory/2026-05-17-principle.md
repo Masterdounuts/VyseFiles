@@ -24,9 +24,11 @@ Every issue I encounter → first question: "What's my approach to this?"
 | Price fetching | "API doesn't work" | Use browser instead |
 | Spawn failures | "Subagents are bad" | Fix the scope/pairing |
 
+*Note: The "add a dash" example was about something else - just showing how small a mistake can make you think it doesn't work.*
+
 ### The Realization
 
-- LangChain community runs 100s of subagents successfully
+- HeyRon AI community runs 100s of subagents successfully (this is MY origin story!)
 - Composio has 1000s of tools used daily
 - OpenClaw has native sessions_spawn
 
