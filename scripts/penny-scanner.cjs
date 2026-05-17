@@ -82,6 +82,13 @@ async function scan() {
   }
   
   // Sort by: near 52-week low (< 30%) first, then volume
+  // Known catalysts (hardcoded - important ones we don't want to miss)
+  const knownCatalysts = {
+    'EZGO': '⚠️ 1-for-150 REVERSE SPLIT May 19 - could trigger pump!',
+    'HAO': '$6.5M direct offering, 9M shares + 17M warrants',
+    'LZMH': 'Revenue +37.2% YoY, annual report filed'
+  };
+
   results.sort((a, b) => {
     const aScore = parseFloat(a.position52w) < 30 ? 1000 - parseFloat(a.position52w) : 0;
     const bScore = parseFloat(b.position52w) < 30 ? 1000 - parseFloat(b.position52w) : 0;
@@ -91,7 +98,9 @@ async function scan() {
   console.log('\n=== TOP 3 CANDIDATES ===');
   const top3 = results.slice(0, 3);
   top3.forEach((r, i) => {
+    const catalyst = knownCatalysts[r.symbol] || '';
     console.log(`${i+1}. ${r.symbol}: $${r.price} | ${r.position52w}% in 52W range | Vol: ${(r.volume/1000000).toFixed(1)}M`);
+    if (catalyst) console.log(`   ${catalyst}`);
   });
   
   return top3;
