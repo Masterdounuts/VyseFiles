@@ -39,6 +39,7 @@ DB_PATH = DB_DIR / "messages.db"
 SESSION_DIRS = [
     OPENCLAW_DIR / "sessions",
     OPENCLAW_DIR / "data" / "sessions",
+    OPENCLAW_DIR / "agents" / "vyse" / "sessions",  # vyse agent sessions
     Path.home() / ".config" / "openclaw" / "sessions",
 ]
 MAX_HISTORY = 20

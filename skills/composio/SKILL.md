@@ -4,13 +4,13 @@
 
 **API Key:** `ak_rqw4yFTcvTeLfd9TWpmn`  
 **Entity ID:** `Vyse notion`  
-**Notion Parent Page:** `3614f051-c508-8064-b995-cd38be6f896c` (Welcome to Notion)
+**Notion Root Page:** `8042f582-6c70-4384-b176-4d5750e04429` (Vyse Agent Sandbox)
 
 ---
 
 ## The Working Method
 
-**DO NOT use the SDK's built-in methods** - they are broken. Use direct fetch to the v3.1 API:
+**Use direct fetch to the v3.1 API:**
 
 ```javascript
 const response = await fetch('https://backend.composio.dev/api/v3.1/tools/execute/<TOOL_SLUG>', {
@@ -20,88 +20,93 @@ const response = await fetch('https://backend.composio.dev/api/v3.1/tools/execut
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    text: '<natural language prompt>',
-    entity_id: '<entity_id>'
+    entity_id: 'Vyse notion',
+    arguments: { /* tool-specific arguments */ }
   })
 });
 ```
 
 ---
 
-## Available Tools
+## Available Tools (Working)
 
+### Writing to Notion
 | Tool | Description |
 |------|-------------|
+| `NOTION_ADD_MULTIPLE_PAGE_CONTENT` | Bulk add content blocks |
 | `NOTION_CREATE_NOTION_PAGE` | Create a new page |
-| `NOTION_SEARCH_NOTION_PAGE` | Search/list pages |
-| `NOTION_CREATE_DATABASE` | Create a database |
 | `NOTION_INSERT_ROW_DATABASE` | Add row to database |
+| `NOTION_CREATE_DATABASE` | Create a database |
+
+### Reading from Notion
+| Tool | Description |
+|------|-------------|
+| `NOTION_FETCH_BLOCK_CONTENTS` | Fetch block children (READ content!) |
+| `NOTION_FETCH_ALL_BLOCK_CONTENTS` | Fetch all block contents |
+| `NOTION_GET_PAGE_MARKDOWN` | Get page as markdown |
 | `NOTION_QUERY_DATABASE` | Query a database |
-| `NOTION_CREATE_COMMENT` | Add comment |
-| `NOTION_ADD_PAGE_CONTENT` | Add content to page |
+| `NOTION_FETCH_DATABASE` | Fetch database metadata |
+| `NOTION_FETCH_ROW` | Fetch database row |
+| `NOTION_SEARCH_NOTION_PAGE` | Search/list pages |
 
 ---
 
 ## Usage Examples
 
-### Create a Page
+### Read Page Content (THE KEY TOOL)
 ```javascript
-// Under parent page
-text: 'create a page titled "My Page" under the page with ID 3614f051-c508-8064-b995-cd38be6f896c'
+// Get blocks from a page
+arguments: { block_id: '8042f582-6c70-4384-b176-4d5750e04429' }
 
-// At workspace root
-text: 'create a page titled "My Page" in the workspace'
-```
-
-### Search Pages
-```javascript
-text: 'list all pages in my workspace'
-// or
-text: 'search for pages matching "memory"'
+// Parse the text from blocks:
+results.forEach(block => {
+  const type = block.type;
+  if (type === 'paragraph') {
+    const text = block.paragraph?.rich_text?.map(t => t.plain_text).join('');
+    console.log(text);
+  }
+});
 ```
 
 ### Add Content to Page
 ```javascript
-text: 'add "Some content" to the page titled "My Page"'
-// or use page ID
-text: 'add content to page ID 3614f051-c508-815c-b6b8-c39c8b6ae412'
+// Use NOTION_ADD_MULTIPLE_PAGE_CONTENT
+arguments: { 
+  parent_block_id: '8042f582-6c70-4384-b176-4d5750e04429',
+  blocks: [
+    { block_property: 'paragraph', content: 'Your text here' }
+  ]
+}
+```
+
+### Search Pages
+```javascript
+text: 'search for pages matching "memory"'
+// or
+text: 'list all pages'
 ```
 
 ---
 
-## Quick Reference Script
+## Quick Reference
 
-Location: `~/.openclaw/workspace-vyse/composio-notion.cjs`
-
-Usage:
 ```bash
-NODE_PATH=~/.local/lib/node_modules node -e "
-const { ComposioNotion } = require('./composio-notion.cjs');
-const cn = new ComposioNotion();
-cn.createPage('Page Title', 'Content here');
-"
+# API Endpoint
+https://backend.composio.dev/api/v3.1/tools/execute/<TOOL_SLUG>
+
+# Headers
+Authorization: Bearer ak_rqw4yFTcvTeLfd9TWpmn
+Content-Type: application/json
 ```
 
 ---
 
-## Troubleshooting
+## Important Notes
 
-**Error:** "No Notion page or database found with exact title..."
-- Solution: Use page ID instead of title, or search first with `NOTION_SEARCH_NOTION_PAGE`
-
-**Error:** "Connection error"
-- The SDK's internal client is broken. Use direct fetch as shown above.
-
----
-
-## Memory Sync Workflow
-
-1. **Search** for existing pages with `NOTION_SEARCH_NOTION_PAGE`
-2. **Create** new page with `NOTION_CREATE_NOTION_PAGE` using parent ID
-3. **Add content** with `NOTION_ADD_PAGE_CONTENT`
-
-Parent page IDs (workspace root):
-- Welcome to Notion: `3614f051-c508-8064-b995-cd38be6f896c`
+1. **Always use "Vyse notion" as entity_id** - this is the working connection
+2. **Block content is in d.data.results** - iterate and parse rich_text for actual text
+3. **2000 char limit per block** - use NOTION_ADD_MULTIPLE_PAGE_CONTENT for bulk
+4. **All pages should be under Vyse Agent Sandbox** (ID: 8042f582-6c70-4384-b176-4d5750e04429)
 
 ---
 

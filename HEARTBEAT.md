@@ -4,6 +4,19 @@
 
 ---
 
+## ⚠️ WAKE-UP SEQUENCE (RUN THIS FIRST!)
+**On EVERY session start, run these BEFORE responding to user:**
+```bash
+node ~/.openclaw/workspace-vyse/notion-query.cjs active
+node ~/.openclaw/workspace-vyse/notion-query.cjs decisions 3
+node ~/.openclaw/workspace-vyse/notion-query.cjs positions
+node ~/.openclaw/workspace-vyse/notion-query.cjs query knowledge
+node ~/.openclaw/workspace-vyse/notion-query.cjs preferences
+```
+*This is your context. Without running this, you have NO memory.*
+
+---
+
 ## 0. NOTION SYNC (First thing!)
 ```bash
 # Query context from Notion - instant from local backup

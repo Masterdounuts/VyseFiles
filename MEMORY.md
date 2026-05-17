@@ -225,3 +225,69 @@
 - ### Key Principles Established - **Scan** → What I'm observing - **Think** → Show tradeoffs before recommending - **Act** → Execute with approval on ambiguous issues; fix known issues and flag ### Resolution Decision protocol is solid. Problem was execution, not framework. - For known fixes (Telegram delivery): Fix and flag (autonomy-aligned) - For ambiguous issues: Ask first --- ## Cron Job Fixes (23:14 UTC) ### Issue 7 cron jobs failed - Telegram delivery issues ### Fixes Applied 1. **Vyse-Readiness-Check** - Added numeric `delivery.to` chat ID 2. **GGB-price-watch** - Fixed from @VyseAgent_bot to numeric chat ID ### Logged Added to FIXES.md: "230416 - Cron Telegram delivery - use numeric chat_id not username" --- ## System Analysis for Automation (23:16 UTC) ### David's Goal Automation and autonomy using decision protocol as guide ### Current System Layers | Layer | Status | |-------|--------| | Data (portfolio, stocks, research) | ✅ Working | | Automation (7 cron jobs) | ⚠️ 2 fixed, 5 stale alerts | | Memory (memory/, FIXES.md) | ✅ Working | | Action (messaging, alerts) | ⚠️ Telegram fixed | ### Recommendation for Next Goal **Price monitoring** - Core to day trading, GGB-price-watch exists but fails silently ### Options Presented to David A) Fix GGB/Tesla price fetching B) Build self-healing cron system C) Something else Awaiting David's decision. --- ## Self-Healing Cron System Built (23:24 UTC) ### Created 1. **scripts/cron-health-monitor.sh** - Checks job health, auto-restarts failures [score=0.853 recalls=3 avg=1.000 source=memory/archive/2026-04/2026-04-16.md:1130-1184]
 <!-- openclaw-memory-promotion:memory:memory/archive/2026-04/2026-04-16.md:3276:3294 -->
 - | **Buying Power** | $24.29 waiting | **On wake:** Check if TSLA hit $8 yet. If yes → execute GGB/AMC trades. --- See you on the other side, David! 🦜🚀 === 2026-04-16-website-memory-capture.md === # Session: 2026-04-16 08:24:19 UTC - **Session Key**: agent:main:main - **Session ID**: df7b2461-6964-4de9-9abc-88b07c44bfe9 - **Source**: webchat ## Conversation Summary user: A new session was started via /new or /reset. Run your Session Startup sequence - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning. Current time: Thursday, April 16th, 2026 - 8:15 AM (UTC) / 2026-04-16 08:15 UTC assistant: Hey David! 🦜 I’m Vyse, your adventurous sky‑pirate assistant (running on gpt‑oss‑120b, default is minimax‑m2.5). What would you like to work on today? [score=0.829 recalls=3 avg=1.000 source=memory/archive/2026-04/2026-04-16.md:3276-3294]
+
+## Promoted From Short-Term Memory (2026-05-16)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-10.md:3:3 -->
+- Loaded from active.md (goal-aligned) [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-10.md:3-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-09.md:308:310 -->
+- - Candidate: Possible Lasting Truths: # Memory 2026-05-02 ## Memory Integration - Phases 1-3 Complete ### Phase 1: Critical Memory (Done) - Created memory/core/ with 3 files: user.md, goals.md, contacts.md - Modified session-start-handoff.sh to load core/ FIRST - Core memory now survives comp - confidence: 0.62 - evidence: memory/2026-05-08.md:218-220 [score=0.840 recalls=0 avg=0.620 source=memory/2026-05-09.md:13-15]
+
+
+## Session Handoff - 2026-05-16
+*Auto-inserted by session-start-handoff.sh*
+
+# Session Handoff - 2026-05-05 17:15 PT
+
+## What We Accomplished
+1. Skills cleanup - merged, renamed, fixed YAML frontmatter
+2. All 18 skills now showing on dashboard
+3. Removed arbitrary leveling system
+4. Deleted all subagent files
+5. Cleaned workspace of obsolete files
+
+## Current State
+- **NVDA:** 0.05 shares @ $198.31
+- **Capital:** $51.32 (+$6.32 profit)
+- **Skills:** 18 working, use GitHub for tracking changes
+
+## Key Info For Next Session
+- No subagents - I do the work directly
+- If I learn something, add to relevant skill
+- GitHub commits persist across sessions
+- Dashboard shows all 18 skills now
+
+## Files to Reference
+- HEARTBEAT.md - my orchestration
+- kb/stocks/positions.md - trading positions
+- skills/trading/SKILL.md - trading workflow
+- skills/skill-creator/SKILL.md - skill template
+
+## Session Handoff - 2026-05-17
+*Auto-inserted by session-start-handoff.sh*
+
+# Session Handoff - 2026-05-05 17:15 PT
+
+## What We Accomplished
+1. Skills cleanup - merged, renamed, fixed YAML frontmatter
+2. All 18 skills now showing on dashboard
+3. Removed arbitrary leveling system
+4. Deleted all subagent files
+5. Cleaned workspace of obsolete files
+
+## Current State
+- **NVDA:** 0.05 shares @ $198.31
+- **Capital:** $51.32 (+$6.32 profit)
+- **Skills:** 18 working, use GitHub for tracking changes
+
+## Key Info For Next Session
+- No subagents - I do the work directly
+- If I learn something, add to relevant skill
+- GitHub commits persist across sessions
+- Dashboard shows all 18 skills now
+
+## Files to Reference
+- HEARTBEAT.md - my orchestration
+- kb/stocks/positions.md - trading positions
+- skills/trading/SKILL.md - trading workflow
+- skills/skill-creator/SKILL.md - skill template

@@ -11,6 +11,43 @@ trigger phrases: "stock, trade, buy, sell, position, price, alert, stop loss, ta
 
 ---
 
+## 📊 DAVID'S ACTUAL TRADING STYLE (From History)
+
+- **Cancel rate:** ~67% (40 cancels, 20 fills) - THIS IS HIS STRATEGY
+- **Order style:** Multiple limit orders at different price points
+- **Entry:** Averaging in (EZGO: 8 buys at different prices)
+- **Exit:** Same-day scalps +12% or stop -7%
+- **Favorite symbols:** EZGO, DOGE, BTC, EOSE, XCN
+- **Range:** Penny stocks under $1, small caps
+- **Adaptation:** Re-evaluates every 5-min candle
+
+---
+
+## ⚠️ CRITICAL: TOOL USAGE RULES
+
+| Tool | What For | NEVER Use For |
+|------|----------|---------------|
+| **Browser** | Stock/crypto PRICES, numeric data, charts | News articles |
+| **web_search** | News, catalysts, events | Prices, numeric data |
+
+**Why:**
+- Browser navigates to Yahoo Finance → extracts real-time prices
+- web_search finds news/catalysts → price research
+- Confused use = wrong data (e.g., getting $34 instead of $77K for BTC)
+
+**Price Sources:**
+```javascript
+// Crypto & Stocks: Use browser to Yahoo Finance
+browser(action=navigate, targetUrl="https://finance.yahoo.com/quote/BTC-USD")
+browser(action=snapshot) → extract price from output
+
+// For quick crypto check, can use CoinGecko API directlycurl -s "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+```
+
+**Scanner rebuild needed:** Change from intraday (6:30am-12:30pm) to **scalp in morning** approach.
+
+---
+
 ## Core Philosophy
 
 > "I focused less on predicting and more on emotional discipline."
@@ -502,20 +539,37 @@ node scripts/intraday-scanner.js   # Stock setups
 - Find stocks **pushed DOWN** with **volume UP** = smart money buying
 - Ride the bounce back up
 
-### Scanner Priority (v6):
+### Scanner Priority (v7 - Updated for Scalping):
 | Priority | Signal | Meaning |
 |----------|--------|---------|
-| **1st** | ACCUMULATION | Price 📉 + Volume 📈 = Smart money buying ✅ |
-| **2nd** | V3_BOTTOM | Price 📉 + Near 52W low = Potential bounce |
-| **3rd** | MOMENTUM | Stocks already running (chase carefully) |
+| **1st** | SCALP SETUP | Multiple limit orders, adaptable entries |
+| **2nd** | ACCUMULATION | Price 📉 + Volume 📈 = Smart money buying ✅ |
+| **3rd** | V3_BOTTOM | Price 📉 + Near 52W low = Potential bounce |
 
 ### The Filter:
 - **NEVER** buy above 80% of 52-week range
 - Look for bottom 40% of range (room to run)
+- **For scalping:** Find stocks with multiple price points for entry
 
 ---
 
 ## ⏰ Trading Timeframes - Three Types
+
+### UPDATED: SCALPING METHOD (David's Style)
+| Rule | Detail |
+|------|--------|
+| **When** | Morning (exact TBD with David) |
+| **Strategy** | Multiple limit orders at different prices |
+| **Adapt** | Cancel and re-enter every 5-minute candle |
+| **Exit** | Same-day for scalps |
+
+**Key Differences from SMC:**
+- Heavy use of limit orders at multiple levels
+- Adaptive entries based on 5-min candles
+- Aggressive cancel/re-enter (~$67% cancel rate normal)
+- Quick same-day exits
+
+---
 
 ### 1. MINI TRADING (Crypto/Weekend)
 | Rule | Detail |
@@ -922,7 +976,11 @@ node scripts/intraday-scanner.js   # Stock setups
 - No news = no trade
 
 ### Step 3: Research
-- **Fetch price:** `node scripts/get-stock-price.js SYMBOL`
+- **Fetch price:** Use **browser** tool → Yahoo Finance
+  ```
+  browser(action=navigate, targetUrl="https://finance.yahoo.com/quote/SYMBOL")
+  browser(action=snapshot) → extract price from output
+  ```
 - Check fundamentals (P/E, growth, debt)
 - Verify 52W not dying
 
@@ -1139,18 +1197,22 @@ node scripts/trade-learner.js lesson "text"       # Add lesson
 
 ---
 
-## Scanner Commands
+## Scanner Commands (UPDATED)
 
 ```bash
-# SMC Scanner (finds early-stage candidates)
-node scripts/smc-scan.js
+# NOTE: Scripts may be outdated - verify before using
+# Price checks: Use BROWSER tool → Yahoo Finance
 
-# Get stock price
-node scripts/get-stock-price.js SYMBOL
+# For analysis (if working):
+node scripts/smc-scan.js              # SMC candidates
+node scripts/intraday-scanner.js     # Intraday (update for scalp)
 
-# Get news
-node scripts/get-stock-news.js
+
+# News (working):
+web_search query="SYMBOL news"       # News only!
 ```
+
+**CRITICAL:** Never use web_search for prices. Only browser or direct APIs.
 
 ---
 

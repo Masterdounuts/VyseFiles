@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-// Notion Query Layer - Hybrid approach
+// Notion Query Layer - Hybrid approach (CLI-based)
 // Writes to Notion + local files, queries local for speed
 
-const API_KEY = process.env.COMPOSIO_API_KEY || 'ak_rqw4yFTcvTeLfd9TWpmn';
-const ENTITY_ID = 'Vyse notion';
+const { execSync } = require('child_process');
+const CLI = '/home/openclaw/.composio/composio';
 const BACKUP_DIR = './notion-backup';
 
-// Page IDs
+// Page IDs - MATCHED with composio-notion.cjs
 const PAGES = {
   'active': { id: '3614f051-c508-81f4-9dce-c34c35f2e128', file: 'active.json' },
   'positions': { id: '3614f051-c508-81a2-b92b-c3e2d486fb28', file: 'positions.json' },
-  'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', file: 'decisions.json' },
+  'decisions': { id: '3614f051-c508-818d-8e72-f60abf962929', file: 'decisions.json' },
   'errors': { id: '3614f051-c508-813f-b99a-c62d62516f6b', file: 'errors.json' },
   'knowledge': { id: '3614f051-c508-81fe-aadd-e1edcc4359b7', file: 'knowledge.json' },
   'preferences': { id: '3614f051-c508-812b-9717-c77a87f3a7c4', file: 'preferences.json' },
@@ -25,18 +25,19 @@ if (!fs.existsSync(BACKUP_DIR)) {
   fs.mkdirSync(BACKUP_DIR, { recursive: true });
 }
 
-async function execute(toolSlug, text) {
-  const response = await fetch(`https://backend.composio.dev/api/v3.1/tools/execute/${toolSlug}`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ text, entity_id: ENTITY_ID })
-  });
-  const result = await response.json();
-  if (!result.successful) throw new Error(result.error);
-  return result.data;
+async function execute(toolSlug, params) {
+  // Use CLI instead of direct API
+  const dataStr = JSON.stringify(params).replace(/"/g, '\\"');
+  const cmd = `${CLI} execute ${toolSlug} -d "${dataStr}"`;
+  
+  try {
+    const output = execSync(cmd, { encoding: 'utf8' });
+    const result = JSON.parse(output);
+    if (!result.successful) throw new Error(result.error || 'Unknown error');
+    return result.data;
+  } catch (e) {
+    throw new Error(e.message);
+  }
 }
 
 class NotionQuery {
@@ -45,11 +46,17 @@ class NotionQuery {
     const page = PAGES[pageKey];
     if (!page) throw new Error('Unknown page: ' + pageKey);
     
-    // 1. Write to Notion
+    // 1. Write to Notion via CLI
     try {
-      await execute('NOTION_ADD_PAGE_CONTENT',
-        `add to page ${page.id}: ${entry}`
-      );
+      await execute('NOTION_ADD_PAGE_CONTENT', {
+        parent_block_id: page.id,
+        content_block: {
+          type: 'paragraph',
+          paragraph: {
+            rich_text: [{ type: 'text', text: { content: entry } }]
+          }
+        }
+      });
     } catch (e) {
       console.log('Notion write failed, using local only:', e.message);
     }
@@ -77,117 +84,91 @@ class NotionQuery {
     }
     
     const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    let entries = data;
     
-    if (!search) return { entries: data, count: data.length };
+    if (search) {
+      entries = data.filter(e => e.entry.toLowerCase().includes(search.toLowerCase()));
+    }
     
-    // Filter by search term
-    const matches = data.filter(d => 
-      d.entry.toLowerCase().includes(search.toLowerCase())
-    );
-    
-    return { entries: matches, count: matches.length, total: data.length };
+    return { entries: entries.slice(-20).reverse() };
   }
   
-  // Get all entries from a page
-  all(pageKey) {
-    return this.query(pageKey);
-  }
-  
-  // Check errors before fixing
-  checkError(fixType) {
-    const errors = this.query('errors', fixType);
-    return errors;
-  }
-  
-  // Get preferences
-  getPreference(key) {
-    const prefs = this.query('preferences', key);
-    return prefs.entries[0]?.entry || null;
-  }
-  
-  // Get recent decisions
-  recentDecisions(limit = 5) {
-    const all = this.query('decisions');
-    return all.entries.slice(-limit).reverse();
-  }
-  
-  // Get active task
-  getActive() {
-    const active = this.query('active');
-    return active.entries[active.entries.length - 1] || null;
-  }
-  
-  // Get positions
-  getPositions() {
-    return this.query('positions');
+  getUrl(pageKey) {
+    const page = PAGES[pageKey];
+    if (!page) return null;
+    return `https://www.notion.so/${page.name.replace(/ /g, '-')}-${page.id}`;
   }
 }
 
 module.exports = { NotionQuery, PAGES };
 
-// CLI
+// CLI handler
 if (require.main === module) {
   const args = process.argv.slice(2);
   const cmd = args[0];
-  const nq = new NotionQuery();
-  
-  const pageKeys = Object.keys(PAGES);
+  const cn = new NotionQuery();
   
   (async () => {
     try {
       switch (cmd) {
         case 'query':
-          // node query.cjs query <page> [search]
           const page = args[1];
-          const search = args.slice(2).join(' ');
-          const result = nq.query(page, search);
-          console.log(`Found ${result.count} of ${result.total || result.count} entries:`);
-          result.entries.forEach(e => console.log('-', e.entry));
+          const search = args[2] || '';
+          const result = cn.query(page, search);
+          console.log(result.entries.map(e => e.entry).join('\n'));
           break;
           
         case 'active':
-          console.log(nq.getActive()?.entry || 'No active task');
-          break;
-          
-        case 'errors':
-          const errCheck = args[1] ? nq.checkError(args[1]) : nq.all('errors');
-          console.log('Errors:', errCheck.entries.length);
-          errCheck.entries.slice(-3).forEach(e => console.log('-', e.entry));
-          break;
-          
-        case 'prefs':
-        case 'preferences':
-          const key = args[1];
-          if (key) {
-            console.log(nq.getPreference(key));
-          } else {
-            const all = nq.all('preferences');
-            all.entries.forEach(e => console.log(e.entry));
-          }
+          const active = cn.query('active');
+          console.log(active.entries.map(e => e.entry).join('\n'));
           break;
           
         case 'decisions':
-          const decisions = nq.recentDecisions(parseInt(args[1]) || 5);
-          decisions.forEach(d => console.log(d.entry));
+          const limit = parseInt(args[1]) || 5;
+          const decisions = cn.query('decisions');
+          console.log(decisions.entries.slice(0, limit).map(e => e.entry).join('\n'));
+          break;
+          
+        case 'errors':
+          const errSearch = args[1] || '';
+          const errors = cn.query('errors', errSearch);
+          console.log('Errors:', errors.entries.length);
+          console.log(errors.entries.map(e => e.entry).join('\n'));
+          break;
+          
+        case 'knowledge':
+          const knowSearch = args[1] || '';
+          const knowledge = cn.query('knowledge', knowSearch);
+          console.log(knowledge.entries.map(e => e.entry).join('\n'));
+          break;
+          
+        case 'preferences':
+          const prefSearch = args[1] || '';
+          const prefs = cn.query('preferences', prefSearch);
+          console.log(prefs.entries.map(e => e.entry).join('\n'));
           break;
           
         case 'positions':
-          const positions = nq.getPositions();
-          positions.entries.forEach(e => console.log(e.entry));
+          const positions = cn.query('positions');
+          console.log(positions.entries.map(e => e.entry).join('\n'));
           break;
           
         case 'check':
-          // Before any fix: check if error exists
-          const fix = args.slice(1).join(' ');
-          const existing = nq.checkError(fix);
-          if (existing.count > 0) {
-            console.log('⚠️ Found', existing.count, 'prior errors with similar fix:');
-            existing.entries.forEach(e => console.log(' ', e.entry));
+          // Check if a fix exists in errors
+          const fix = args[1];
+          if (!fix) {
+            console.log('Usage: check <fix-name>');
+            break;
+          }
+          const errors2 = cn.query('errors', fix);
+          if (errors2.entries.length > 0) {
+            console.log('Found fix:', errors2.entries[0].entry);
           } else {
-            console.log('✅ No prior errors for:', fix);
+            console.log('No existing fix for:', fix);
           }
           break;
           
+        case 'list':
         default:
           console.log('Commands:');
           console.log('  query <page> [search]  - Query a page');
@@ -197,10 +178,11 @@ if (require.main === module) {
           console.log('  decisions [limit]       - Recent decisions');
           console.log('  positions               - Get all positions');
           console.log('  check <fix>             - Check error before fixing');
-          console.log('  Pages:', pageKeys.join(', '));
+          console.log('Pages:', Object.keys(PAGES).join(', '));
       }
     } catch (e) {
       console.error('Error:', e.message);
+      process.exit(1);
     }
   })();
 }

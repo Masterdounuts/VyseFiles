@@ -1,26 +1,36 @@
 #!/usr/bin/env node
-const API_KEY = "ak_rqw4yFTcvTeLfd9TWpmn";
-const repo = process.argv[2] || "Masterdounuts/VyseFiles";
+// GitHub commits via Composio CLI
+// Usage: node github-commits.js [owner/repo] [per_page]
 
-(async () => {
-  const response = await fetch("https://backend.composio.dev/api/v3.1/tools/execute/GITHUB_LIST_COMMITS", {
-    method: "POST",
-    headers: { 
-      "Authorization": "Bearer " + API_KEY, 
-      "Content-Type": "application/json" 
-    },
-    body: JSON.stringify({ 
-      entity_id: "Vyse Github", 
-      text: repo 
-    })
+const { execSync } = require('child_process');
+const CLI = '/home/openclaw/.composio/composio';
+
+const args = process.argv.slice(2);
+const repo = args[0] || "Masterdounuts/VyseFiles";
+const perPage = args[1] || 5;
+
+const [owner, repoName] = repo.split('/');
+
+try {
+  const output = execSync(`${CLI} execute GITHUB_LIST_COMMITS -d '{"owner": "${owner}", "repo": "${repoName}", "per_page": ${perPage}}'`, {
+    encoding: 'utf8'
   });
   
-  const data = await response.json();
-  const commits = data.data?.commits || [];
+  const result = JSON.parse(output);
   
-  console.log("=== Recent Commits ===");
+  if (!result.successful) {
+    console.error('Error:', result.error);
+    process.exit(1);
+  }
+  
+  const commits = result.data?.commits || [];
+  
+  console.log(`=== Recent Commits (${repo}) ===`);
   commits.forEach(c => {
     const msg = c.commit.message.split("\n")[0].substring(0,60);
     console.log(msg);
   });
-})();
+} catch (e) {
+  console.error('Failed:', e.message);
+  process.exit(1);
+}

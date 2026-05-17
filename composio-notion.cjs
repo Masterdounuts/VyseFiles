@@ -1,38 +1,56 @@
 // Composio Notion helper - FIXED v2
 // Usage: node composio-notion.cjs <command> [args]
 
-const API_KEY = process.env.COMPOSIO_API_KEY || 'ak_rqw4yFTcvTeLfd9TWpmn';
+const API_KEY = process.env.COMPOSIO_API_KEY || 'ak_F8bSxNXpHLEqCBPwbxH8';
 const ENTITY_ID = 'Vyse notion';
-const PARENT_PAGE_ID = '3614f051-c508-8064-b995-cd38be6f896c';
+const SANDBOX_ID = '8042f582-6c70-4384-b176-4d5750e04429'; // Vyse Agent Sandbox
+const PARENT_PAGE_ID = '3614f051-c508-81f4-9dce-c34c35f2e128'; // Use active as parent (valid ID)
 const fs = require('fs');
 const path = require('path');
 
 // Page IDs - using explicit IDs that work
 const PAGES = {
+  'sandbox': { id: SANDBOX_ID, name: 'Vyse Agent Sandbox' },
   'active': { id: '3614f051-c508-81f4-9dce-c34c35f2e128', name: 'Active Context' },
   'positions': { id: '3614f051-c508-81a2-b92b-c3e2d486fb28', name: 'Trading Positions' },
-  'decisions': { id: '3614f051-c508-8174-837e-d441600c77b2', name: 'Decisions Log' },
+  'decisions': { id: '3614f051-c508-818d-8e72-f60abf962929', name: 'Decisions Log' },
   'errors': { id: '3614f051-c508-813f-b99a-c62d62516f6b', name: 'Errors & Fixes' },
   'knowledge': { id: '3614f051-c508-81fe-aadd-e1edcc4359b7', name: 'Knowledge Base' },
   'preferences': { id: '3614f051-c508-812b-9717-c77a87f3a7c4', name: 'User Preferences' },
   'skills': { id: '3614f051-c508-8190-810e-ec627d9d7e51', name: 'Skills Index' }
 };
 
-async function execute(toolSlug, text) {
-  const response = await fetch(`https://backend.composio.dev/api/v3.1/tools/execute/${toolSlug}`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ text, entity_id: ENTITY_ID })
-  });
+const { execSync } = require('child_process');
+const CLI = '/home/openclaw/.composio/composio';
+
+async function execute(toolSlug, params) {
+  // Use CLI instead of direct API - it handles auth better
+  // Write params to temp file to avoid shell escaping issues
+  const dataStr = JSON.stringify(params);
+  const tmpFile = '/tmp/composio-' + Date.now() + '.json';
+  fs.writeFileSync(tmpFile, dataStr);
   
-  const result = await response.json();
-  if (!result.successful) {
-    throw new Error(typeof result.error === 'string' ? result.error : JSON.stringify(result.error));
+  const cmd = `${CLI} execute ${toolSlug} -d @${tmpFile}`;
+  
+  try {
+    const output = execSync(cmd, { encoding: 'utf8' });
+    fs.unlinkSync(tmpFile); // Clean up
+    const result = JSON.parse(output);
+    if (!result.successful) {
+      throw new Error(result.error || 'Unknown error');
+    }
+    return result.data;
+  } catch (e) {
+    // Clean up temp file on error too
+    try { fs.unlinkSync(tmpFile); } catch {}
+    // Try to parse error as JSON
+    try {
+      const result = JSON.parse(e.message);
+      throw new Error(result.error || e.message);
+    } catch (inner) {
+      throw new Error(e.message);
+    }
   }
-  return result.data;
 }
 
 class ComposioNotion {
@@ -43,15 +61,21 @@ class ComposioNotion {
     );
   }
   
-  // APPEND to existing page (using explicit ID in prompt - THIS IS THE KEY FIX)
+  // APPEND to existing page - using proper JSON format
   async appendToPage(pageKey, content) {
     const page = PAGES[pageKey];
     if (!page) throw new Error(`Unknown page: ${pageKey}. Use: active, positions, decisions`);
     
-    // Using explicit page ID in prompt - this works!
-    return execute('NOTION_ADD_PAGE_CONTENT',
-      `add the following new section to the page with ID ${page.id}: ${content}`
-    );
+    // Use proper JSON schema format for CLI
+    return execute('NOTION_ADD_PAGE_CONTENT', {
+      parent_block_id: page.id,
+      content_block: {
+        type: 'paragraph',
+        paragraph: {
+          rich_text: [{ type: 'text', text: { content: content } }]
+        }
+      }
+    });
   }
   
   // Set active context
@@ -100,6 +124,53 @@ class ComposioNotion {
     const ts = new Date().toISOString().split('T')[0];
     const content = ts + ' | ' + skill + ' | Used for: ' + usedFor;
     return this.appendToPage('skills', content);
+  }
+  
+  // READ page content - THE NEW KEY FEATURE!
+  async getPageContent(pageKey) {
+    const page = PAGES[pageKey];
+    if (!page) throw new Error(`Unknown page: ${pageKey}`);
+    
+    const response = await fetch('https://backend.composio.dev/api/v3.1/tools/execute/NOTION_FETCH_BLOCK_CONTENTS', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        entity_id: ENTITY_ID,
+        arguments: { block_id: page.id }
+      })
+    });
+    
+    const result = await response.json();
+    if (!result.successful) {
+      throw new Error(result.error?.message || JSON.stringify(result.error));
+    }
+    
+    // Parse blocks to extract text
+    const blocks = result.data?.results || [];
+    return blocks.map(block => {
+      const type = block.type;
+      let text = '';
+      
+      if (type === 'paragraph') {
+        text = block.paragraph?.rich_text?.map(t => t.plain_text).join('') || '';
+      } else if (type === 'heading_1') {
+        text = '## ' + (block.heading_1?.rich_text?.map(t => t.plain_text).join('') || '');
+      } else if (type === 'heading_2') {
+        text = '### ' + (block.heading_2?.rich_text?.map(t => t.plain_text).join('') || '');
+      } else if (type === 'heading_3') {
+        text = '#### ' + (block.heading_3?.rich_text?.map(t => t.plain_text).join('') || '');
+      } else if (type === 'to_do') {
+        const checked = block.to_do?.checked ? '☑' : '☐';
+        text = checked + ' ' + (block.to_do?.rich_text?.map(t => t.plain_text).join('') || '');
+      } else if (type === 'callout') {
+        text = '💬 ' + (block.callout?.rich_text?.map(t => t.plain_text).join('') || '');
+      }
+      
+      return { type, text };
+    }).filter(b => b.text);
   }
   
   getUrl(pageKey) {

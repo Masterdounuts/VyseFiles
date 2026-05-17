@@ -6,5 +6,13 @@
   {
     "timestamp": "2026-05-15T18:12:53.010Z",
     "entry": "May 15, 11:12 AM PT | Task: Query layer live | Goal: BothNotionAndLocal"
+  },
+  {
+    "timestamp": "2026-05-17T16:21:33.668Z",
+    "entry": "May 17, 9:21 AM PT | Task: Stress test | Goal: goal Full test"
+  },
+  {
+    "timestamp": "2026-05-17T16:33:55.071Z",
+    "entry": "May 17, 9:33 AM PT | Task: Stress test v2 | Goal: goal Verify all fixes"
   }
 ]
