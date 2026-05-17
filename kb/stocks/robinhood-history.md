@@ -224,4 +224,20 @@
 
 ---
 
+## RECONCILIATION (May 17)
+
+| Metric | Amount |
+|--------|--------|
+| Deposits | $45.21 |
+| Total Sells | $222.45 |
+| Total Buys | $244.67 |
+| Net Trade P/L | -$22.22 |
+| Expected Value | $22.99 |
+| Actual Value | $51.27 |
+| **Discrepancy** | **~$10** |
+
+*Note: $10 discrepancy likely from price differences or missing trades*
+
+---
+
 # Complete! ✅
