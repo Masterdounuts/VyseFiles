@@ -20,8 +20,10 @@
 | Symbol | Shares | Entry | Type | Notes |
 |--------|--------|-------|------|-------|
 | **BTC** | 0.00002159 | ~$79K | Crypto | 3 buys, 1 pending sell |
+| **QQQ** | 0.021116 | $710.36 | Piggybank | Long-term hold |
 | **EZGO** | 864 | ~$0.017 | Scalp | Multiple avg entries |
 | **DOGE** | 28.23 | ~$0.114 | Crypto | 2 buys |
+| **WLFI** | 0 | - | - | Bought & sold May 9-12 |
 
 ---
 
