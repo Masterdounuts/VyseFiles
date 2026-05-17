@@ -79,15 +79,16 @@
 
 ---
 
-## Capital Summary (From History)
+## Capital Summary (LIVE - From Screenshot May 17)
 
 | Metric | Amount |
 |--------|--------|
 | **Initial Deposit** | **$20** (account start) |
 | **Additional Deposit** | **$25** (Apr 12) |
 | **Total Capital In** | **$45** |
-| **Current Value** | **~$20** (positions below) |
-| **P/L** | **-$25** (realized losses + open positions) |
+| **Current Value** | **$51.27** ✅ |
+| **Buying Power** | **$11.78** |
+| **3-Month P/L** | **+$6.16 (13.66%)** |
 
 ---
 
