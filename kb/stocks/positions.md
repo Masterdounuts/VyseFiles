@@ -79,13 +79,15 @@
 
 ---
 
-## Capital Summary (Needs Update)
+## Capital Summary (From History)
 
 | Metric | Amount |
 |--------|--------|
-| **Total Capital** | **TBD** |
-| **Buying Power** | **TBD** |
-| **Invested** | **TBD** |
+| **Initial Deposit** | **$20** (account start) |
+| **Additional Deposit** | **$25** (Apr 12) |
+| **Total Capital In** | **$45** |
+| **Current Value** | **~$20** (positions below) |
+| **P/L** | **-$25** (realized losses + open positions) |
 
 ---
 
