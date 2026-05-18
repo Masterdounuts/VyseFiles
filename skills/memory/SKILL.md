@@ -59,7 +59,7 @@ Key decisions go to `memory/decisions.md`:
 ### References
 - vyse-core - Identity
 - learning - Improvement
-- system - Health recovery
+- agent-self-recovery - Health recovery
 ---
 
 ## Reflection 2026-05-04
