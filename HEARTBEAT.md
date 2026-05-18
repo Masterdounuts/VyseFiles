@@ -57,6 +57,9 @@ Run these to keep me healthy:
 - **skill-doctor** - Diagnose broken skills: `skills/skill-doctor/SKILL.md`
 - **agent-self-recovery** - Check if stuck: `skills/agent-self-recovery/SKILL.md`
 - **identity** - Remember who I am: I'm Vyse, the sky pirate
+- **context-budget-guard** - Check context % before it overflows
+- **workspace-integrity-guardian** - Check for file drift/tampering
+- **persistent-memory-hygiene** - Clean old memory files
 
 ## 2. Context Health
 
