@@ -17,14 +17,14 @@ This skill hashes all critical workspace files on first run, then checks for dri
 
 By default, the following files are monitored:
 
-- `~/.openclaw/workspace/SOUL.md`
-- `~/.openclaw/workspace/AGENTS.md`
-- `~/.openclaw/workspace/MEMORY.md`
-- `~/.openclaw/workspace/IDENTITY.md`
+- `~/.openclaw/workspace-vyse/SOUL.md`
+- `~/.openclaw/workspace-vyse/AGENTS.md`
+- `~/.openclaw/workspace-vyse/MEMORY.md`
+- `~/.openclaw/workspace-vyse/IDENTITY.md`
 
 Add custom files:
 ```
-python3 guard.py --add-file ~/.openclaw/workspace/MY_RULES.md
+python3 guard.py --add-file ~/.openclaw/workspace-vyse/MY_RULES.md
 ```
 
 ## Cron Wakeup Behaviour
