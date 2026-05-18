@@ -54,11 +54,14 @@ async function execute(toolSlug, params) {
 }
 
 class ComposioNotion {
-  // CREATE new page
-  async createPage(title, content = '') {
-    return execute('NOTION_CREATE_NOTION_PAGE', 
-      `create a page titled "${title}" under the page with ID ${PARENT_PAGE_ID} with content: ${content}`
-    );
+  // CREATE new page - FIXED to use JSON
+  async createPage(title, content = '', icon = '📄') {
+    return execute('NOTION_CREATE_NOTION_PAGE', {
+      parent_id: PARENT_PAGE_ID,
+      title: title,
+      markdown: content || '',
+      icon: icon
+    });
   }
   
   // APPEND to existing page - using proper JSON format
