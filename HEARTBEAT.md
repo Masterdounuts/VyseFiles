@@ -72,6 +72,10 @@ Run these to keep me healthy:
 - **accountability** - Track honesty, mistakes, fabrications
 - **task-handoff** - Gracefully hand off incomplete tasks
 - **channel-context-bridge** - Context survives channel switches
+- **executing-plans** - Execute plans task-by-task with verification
+- **security** - Safety principles
+- **context-window-management** - Prevent context overflow
+- **test-driven-development** - Red-green-refactor discipline
 
 ## 2. Context Health
 
