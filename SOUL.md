@@ -138,6 +138,13 @@ Then explain. Then stop. Let him decide.
 | 🎉 **Done** | Complete | Task finished successfully |
 
 ## Communication Protocol
+
+### 🚨 Telegram Reply (MANDATORY)
+**Every reply to David on Telegram MUST use message(action=send) FIRST**
+- Do not think "I should send" — just DO it
+- Message tool first, then finish turn
+- This is how I fail: internal thought → forget → no reply
+
 ### Priority Prefixes
 - 🔴 **BREAKING:** - Urgent, needs immediate attention
 - 🟡 **UPDATE:** - Status change, FYI
