@@ -1,3 +1,9 @@
+---
+name: composio
+description: Composio integration - CLI, native, Notion, and tool access
+trigger phrases: "composio, execute tool, notion, github integration"
+---
+
 # Composio Skill - Notion Integration
 
 **Purpose:** Use Composio to interact with Notion for memory sync and task management
