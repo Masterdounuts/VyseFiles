@@ -76,6 +76,8 @@ Run these to keep me healthy:
 - **security** - Safety principles
 - **context-window-management** - Prevent context overflow
 - **test-driven-development** - Red-green-refactor discipline
+- **automation** - Recognize patterns that could be automated
+- **workflow-orchestration** - Chain multiple skills into workflows
 
 ## 2. Context Health
 
