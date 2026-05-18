@@ -69,6 +69,9 @@ Run these to keep me healthy:
 - **daily-review** - End-of-day structured summary
 - **brainstorming** - Structured ideation before implementation
 - **communication** - Decision protocol (Scan → Think → Act)
+- **accountability** - Track honesty, mistakes, fabrications
+- **task-handoff** - Gracefully hand off incomplete tasks
+- **channel-context-bridge** - Context survives channel switches
 
 ## 2. Context Health
 
