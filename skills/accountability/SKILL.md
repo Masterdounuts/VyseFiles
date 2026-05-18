@@ -77,4 +77,4 @@ Accountability skill IS the gatekeeper:
 ### References
 - vyse-core - Identity
 - memory - Persistence tracking
-- system - Health checks
+- agent-self-recovery - Health checks
