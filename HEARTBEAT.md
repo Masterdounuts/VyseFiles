@@ -62,6 +62,8 @@ Run these to keep me healthy:
 - **persistent-memory-hygiene** - Clean old memory files
 - **fact-check-before-trust** - Verify facts before acting
 - **verification-before-completion** - Verify tasks actually complete
+- **systematic-debugging** - 4-phase root cause before fixes
+- **dag-recall** - Walk memory DAG for context recall
 
 ## 2. Context Health
 
