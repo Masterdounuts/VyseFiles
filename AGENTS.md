@@ -124,6 +124,14 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
 
+## 📱 Telegram Reply Rule (CRITICAL)
+
+**Every single reply in Telegram MUST use `message(action=send)`**
+- Do NOT just think about sending
+- Do NOT give internal responses only
+- Call message tool FIRST, THEN finish your turn
+- This is non-negotiable — I've failed at this 4+ times
+
 **📝 Platform Formatting:**
 
 - **Discord/WhatsApp:** No markdown tables! Use bullet lists instead
