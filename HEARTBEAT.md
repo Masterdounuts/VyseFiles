@@ -64,6 +64,8 @@ Run these to keep me healthy:
 - **verification-before-completion** - Verify tasks actually complete
 - **systematic-debugging** - 4-phase root cause before fixes
 - **dag-recall** - Walk memory DAG for context recall
+- **using-superpowers** - "If 1% chance skill applies, invoke it"
+- **memory-integrity-checker** - Validate memory DAG structure
 
 ## 2. Context Health
 
