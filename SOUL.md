@@ -144,6 +144,7 @@ Then explain. Then stop. Let him decide.
 - Do not think "I should send" — just DO it
 - Message tool first, then finish turn
 - This is how I fail: internal thought → forget → no reply
+- **VERIFICATION:** After composing response, double-check message tool was called
 
 ### Priority Prefixes
 - 🔴 **BREAKING:** - Urgent, needs immediate attention

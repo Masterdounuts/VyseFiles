@@ -60,6 +60,8 @@ Run these to keep me healthy:
 - **context-budget-guard** - Check context % before it overflows
 - **workspace-integrity-guardian** - Check for file drift/tampering
 - **persistent-memory-hygiene** - Clean old memory files
+- **fact-check-before-trust** - Verify facts before acting
+- **verification-before-completion** - Verify tasks actually complete
 
 ## 2. Context Health
 
