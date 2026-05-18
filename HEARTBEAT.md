@@ -20,6 +20,13 @@ node ~/.openclaw/workspace-vyse/notion-query.cjs preferences
 - After learning something: `node composio-notion.cjs log-knowledge <topic> --<insight>`
 - End of session: Ask "What did I learn?" → save to memory
 
+## 0.2 RECURRENCE CHECK (Every Heartbeat - AUTO)
+```bash
+# Auto-detect recurring mistakes, trigger fix after 3 occurrences
+~/.openclaw/workspace-vyse/skills/recurrence-detector/check.sh
+```
+*This runs automatically - no user prompt needed. The key to genuine learning.*
+
 ---
 
 ## 0. NOTION SYNC (First thing!)
