@@ -6,6 +6,13 @@ description: Shell command execution, sandbox, PTY, and background processes.
 ---
 
 # Exec - Shell Execution
+
+## After Exec Failure (MANDATORY)
+When ANY exec returns non-zero exit code or error:
+1. Log to Notion: `node composio-notion.cjs log-error "<error>" --<fix>`
+2. Update relevant skill if I learned something new
+3. Mention it to David if it's important
+
 ## Core Parameters
 
 | Parameter | Use | Example |
