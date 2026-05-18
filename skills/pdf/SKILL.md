@@ -1,8 +1,9 @@
-# PDF Creation & Generation Skill
+---
+name: pdf
+description: Create, format, and generate PDFs and documents
+---
 
 *Create, format, and generate PDFs - resumes, reports, documents*
-
----
 
 ## What This Skill Does
 
