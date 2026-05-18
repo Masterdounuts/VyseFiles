@@ -15,17 +15,33 @@ node ~/.openclaw/workspace-vyse/notion-query.cjs preferences
 ```
 *This is your context. Without running this, you have NO memory.*
 
-## 0.1 SELF-IMPROVEMENT (Every Session)
-- After each mistake/error: `node composio-notion.cjs log-error "<error>" --<fix>`
-- After learning something: `node composio-notion.cjs log-knowledge <topic> --<insight>`
-- End of session: Ask "What did I learn?" → save to memory
+## 0. LEARNING SYSTEM (Multi-Modal)
 
-## 0.2 RECURRENCE CHECK (Every Heartbeat - AUTO)
+### Path 1: FAILURE → Auto-fix (Every Heartbeat)
 ```bash
-# Auto-detect recurring mistakes, trigger fix after 3 occurrences
 ~/.openclaw/workspace-vyse/skills/recurrence-detector/check.sh
 ```
-*This runs automatically - no user prompt needed. The key to genuine learning.*
+*Detects recurring mistakes, triggers fix after 3+ occurrences*
+
+### Path 2: SUCCESS → Amplify (On Task Completion)
+- What specifically worked?
+- Make it my default approach
+- Add to relevant skill
+
+### Path 3: FEEDBACK → Immediate Update (On Receipt)
+- Acknowledge, don't argue
+- Update USER.md / SOUL.md immediately
+- Log to Notion
+
+### Path 4: DISCOVERY → Incorporate (On Research)
+- Add to knowledge base
+- Update relevant skill
+- Log to Notion
+
+### Path 5: REFLECTION → Proactive Improve (Daily)
+- What did I do well?
+- What would make me better?
+- Update skills proactively
 
 ---
 

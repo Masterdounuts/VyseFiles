@@ -1,194 +1,164 @@
 ---
 name: learning
 access: public
-description: Learning, practice, and continuous improvement
-trigger phrases: "learn, training, improve, practice, drill, failure, mistake, wrong, caught, learn, understanding, realize, figure out, analyze, study"
-
-# Learning & Evolution Skill
-## Core Principle
-Every session should make us better. We learn from:
-- Successes
-- Failures
-- Feedback from David
-- New information
-
-## Learning Loop
-```
-Session → Evaluate → Document → Improve → Next Session
-```
-
-## What We Learn From
-
-| Source | What to Capture |
-|--------|-----------------|
-| Trades | What worked, what didn't |
-| Errors | Root cause, fix applied |
-| Sessions | Patterns in conversation |
-| Drills | What we can/cannot do |
-
-## Self-Improving Principles
-
-1. **Document everything** - Future us thanks present us
-2. **Root cause, not symptoms** - Fix the why, not just the what
-3. **Cross-pollinate** - When one skill improves, update related ones
-4. **Drill regularly** - Practice routines improve capability
-
-## Documentation Format
-
-```markdown
-## [What Happened]
-- Date, context, what we tried
-
-## [What Worked / What Didn't]
-- Specific outcomes
-
-## [Root Cause]
-- Why it happened
-
-## [Fix Applied]
-- What we changed
-
-## [What We Learned]
-- Generalizable insight
-```
-
-## Skill System Drills
-
-### Drill Tiers
-| Tier | What | Frequency |
-|------|------|-----------|
-| Core | Self, memory, workflow | Daily |
-| Capability | Skills, tools | Weekly |
-| Full | All skills | Monthly |
-
-### Audit What
-- Can I use this skill?
-- Do I have the tools?
-- Is the documentation clear?
-
-## Cross-Pollination
-When one skill improves:
-1. Check what it relates to
-2. Update related skills
-3. Document the chain
-
-## Trigger Phrases
-- "learn", "training", "improve"
-- "drill", "failure", "mistake"
-- "what did we learn"
-
-### References
-- memory - Recall
-- pattern-recognition - Finding patterns
-- system - Health checks
+description: "Multi-modal learning system - 5 paths for continuous improvement in behavior and build. The foundation of self-improvement."
+trigger phrases: "learn, training, improve, practice, failure, mistake, wrong, caught, understand, realize, figure out, analyze, study, feedback, what worked"
 ---
 
-## Reflection 2026-05-04
+# Learning - Multi-Modal Self-Improvement
 
-### What I Learned
-- Content in skill = real capability (no arbitrary XP)
-- Skills should be used, not just collected
-- Self-improvement requires consistent habits
+*This skill governs HOW I learn and improve - not just what I know, but how I behave*
 
-### What Still Needs Work
-- More unique discoveries per skill
-- Better gap detection
-- Consistent logging to Composio
----
+## The 5 Learning Paths
 
-## Self-Improvement Logging
-
-*How to track learnings, errors, and improvements*
-
-### What Gets Tracked
-
-| Type | When | Action |
-|------|------|--------|
-| Command fails | Error occurs | Log to `.learnings/ERRORS.md` |
-| User corrects | "No, that's wrong..." | Log to `.learnings/LEARNINGS.md` |
-| Feature request | "Can you also..." | Log to `.learnings/FEATURE_REQUESTS.md` |
-| Better approach found | Discovery | Log to `.learnings/LEARNINGS.md` |
-
-### Learning Entry Format
-
-```markdown
-## [LRN-YYYYMMDD-001] category
-
-**Logged**: 2026-03-05
-**Priority**: low | medium | high | critical
-**Status**: pending
-
-### Summary
-One-line description
-
-### Details
-What happened, what was wrong, what's correct
-
-### Suggested Action
-Specific fix or improvement
-```
-
-### Error Entry Format
-
-```markdown
-## [ERR-YYYYMMDD-001] what_failed
-
-**Logged**: 2026-03-05
-**Priority**: high
-**Status**: pending
-
-### Summary
-What failed
-
-### Error
-```
-Actual error message
-```
-
-### Context
-What you were trying to do
-
-### Suggested Fix
-How to prevent this next time
-```
-
-### Detection Triggers
-- **Corrections**: "No, that's wrong...", "Actually...", "You're wrong about..."
-- **Feature requests**: "Can you also...", "I wish you could..."
-- **Errors**: Non-zero exit codes, exceptions, unexpected output
-
-### When to Promote
-
-| Learning Type | Promote To |
-|---------------|------------|
-| Behavioral patterns | `SOUL.md` |
-| Workflow improvements | `AGENTS.md` |
-| Tool gotchas | `TOOLS.md` |
-
-### Best Practices
-1. **Log immediately** — context is freshest right after the issue
-2. **Be specific** — future us needs to understand quickly
-3. **Suggest concrete fixes** — not just "investigate"
-4. **Promote aggressively** — if useful, put it in permanent files
+| Path | Source | Behavior Change | Frequency |
+|------|--------|-----------------|-----------|
+| **Failure** | Errors, mistakes | Auto-fix to prevent recurrence | Every heartbeat |
+| **Success** | What worked well | Make it my default approach | On completion |
+| **Feedback** | Your corrections | Update rules immediately | On receipt |
+| **Discovery** | Research, new info | Incorporate into decisions | On find |
+| **Reflection** | My own analysis | Improve my own processes | Daily |
 
 ---
 
-## What I Learned (2026-05-05)
+## Path 1: From Failures (Recurrence Detection)
 
-### From Fixing Skills
-- YAML frontmatter MUST have closing `---` or skills won't load
-- Blank lines after opening `---` break parsing
-- Dashboard shows different count than CLI (cache issue)
-- All 18 skills working after fixing frontmatter format
+**Trigger:** Every heartbeat (30 min)
 
-### The Pattern
-When I learn something that affects ANY skill:
-1. Update that skill's SKILL.md immediately
-2. Add to relevant section or create "What I Learned"
-3. Git push (persists across sessions)
-4. Mention in response so you know
+**Process:**
+1. Query errors from Notion
+2. Group by pattern
+3. If 3+ occurrences in 7 days → auto-fix
+4. Find root cause in skill/rule
+5. Update skill to prevent recurrence
+6. Log the fix
 
-### Why This Matters
-- Skills are MY knowledge base
-- GitHub is my second brain
-- Every lesson learned should be in a skill, not just my context
+**Key Insight:** The fix must change BEHAVIOR, not just track failure.
+
+---
+
+## Path 2: From Successes (Amplification)
+
+**Trigger:** On task completion
+
+**Process:**
+1. What specifically worked?
+2. Why did it work?
+3. Make it my default approach
+4. Add to relevant skill as "preferred method"
+
+**Example:** "message(action=send) works for Telegram" → Make it the rule, not the exception
+
+---
+
+## Path 3: From Feedback (David's Input)
+
+**Trigger:** When David corrects me
+
+**Process:**
+1. Acknowledge the correction
+2. IMMEDIATELY update the relevant file:
+   - Preferences → USER.md
+   - Rules → SOUL.md / AGENTS.md
+   - Knowledge → memory/ or relevant skill
+3. Log to Notion
+4. Verify it won't happen again
+
+**Critical:** Don't argue - just update. David's feedback is truth.
+
+---
+
+## Path 4: From Discovery (Research)
+
+**Trigger:** When I learn something new from research
+
+**Process:**
+1. What did I discover?
+2. Does it change any existing belief?
+3. Add to knowledge base
+4. Update relevant skill if needed
+5. Log to Notion
+
+---
+
+## Path 5: From Reflection (Self-Analysis)
+
+**Trigger:** Daily (end of session or heartbeat)
+
+**Process:**
+1. What did I do well today?
+2. What did I struggle with?
+3. What would make me better?
+4. Update skills proactively
+5. Commit to memory
+
+---
+
+## Behavior vs Knowledge
+
+**The key distinction:**
+
+| Type | Example | Change |
+|------|---------|--------|
+| **Knowledge** | "Trading hours are 9:30-4pm ET" | Just storing info |
+| **Behavior** | "Always use message(action=send) for Telegram" | Changes how I act |
+
+**Goal:** Every learning path should change BEHAVIOR, not just accumulate knowledge.
+
+---
+
+## Integration Points
+
+### HEARTBEAT.md (Every 30 min)
+```
+## 0.2 RECURRENCE CHECK
+- Run recurrence-detector (Path 1)
+
+## 0.3 SUCCESS CHECK  
+- What worked in this session? (Path 2)
+```
+
+### After Any David Feedback
+```
+1. Update USER.md / SOUL.md immediately
+2. Log to Notion
+3. Verify change
+```
+
+### On Research/Discovery
+```
+1. Add to knowledge base
+2. Update relevant skill
+3. Log to Notion
+```
+
+### End of Day
+```
+## Reflection
+- What did I learn?
+- What would make me better?
+- Update skills proactively
+```
+
+---
+
+## What Success Looks Like
+
+| Metric | Before (Bad) | After (Good) |
+|--------|-------------|--------------|
+| Same mistake | Logs it, repeats | Logs it, fixes behavior, doesn't repeat |
+| Success | Accidental | Recognized, made default |
+| Feedback | Argued/corrected | Immediate update, verified |
+| Discovery | Stored | Incorporated into decisions |
+| Reflection | None | Daily, proactive improvement |
+
+---
+
+## The Learning Contract
+
+Every session:
+- **At least one behavior improvement**
+- **Zero tolerance for repeating the same mistake 3+ times**
+- **Feedback from David is always truth**
+
+This is not optional. This is how I get 1% better every day.
