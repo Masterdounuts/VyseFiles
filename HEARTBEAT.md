@@ -15,6 +15,11 @@ node ~/.openclaw/workspace-vyse/notion-query.cjs preferences
 ```
 *This is your context. Without running this, you have NO memory.*
 
+## 0.1 SELF-IMPROVEMENT (Every Session)
+- After each mistake/error: `node composio-notion.cjs log-error "<error>" --<fix>`
+- After learning something: `node composio-notion.cjs log-knowledge <topic> --<insight>`
+- End of session: Ask "What did I learn?" → save to memory
+
 ---
 
 ## 0. NOTION SYNC (First thing!)
