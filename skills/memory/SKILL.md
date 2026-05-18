@@ -22,16 +22,16 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 0. Read SOUL.md → protocol (accountability, content format, rules)
 
-1. Read active.md → current work
-2. Read PENDING.md → queued items
-3. Read HANDOFF.md → manual handoff from last session
-4. Read memory/active.md → context from today
+1. Run notion-query.cjs to get context from Notion:
+   - active tasks, recent decisions, positions, knowledge, preferences
+2. Check context % (use session_status)
+3. Show debug status
 
 ## On Context Reset
 
-- At 60% context: update resume-point.md
+- At 60% context: generate handoff summary
 - At 70% context: force-save to memory/YYYY-MM-DD.md
-- "Remember?" → read active.md + resume-point.md
+- "Remember?" → run notion-query.cjs for context
 
 ## Checkpoint System
 

@@ -22,16 +22,17 @@ trigger phrases: "project, game, skies of arcadia"
 
 | Project | Status | Notes |
 |---------|--------|-------|
-| Content-Based Leveling | ✅ DONE | All 29 skills migrated |
-| Debug Shows Skill Used | ✅ DONE | Fixed in SOUL.md |
+| Learning System Rebuild | ✅ DONE | 5-path system for behavior change |
+| Recurrence Detector | ✅ DONE | Auto-fix after 3+ mistakes |
+| Health Check Skills | ✅ DONE | 25 skills in HEARTBEAT.md |
 
 ## 🚢 Vyse Rebuild Plan
 
-### Phase 1: CLI (Self) — IN PROGRESS
-- [x] Content-based leveling
-- [x] Debug shows skill USED not discussed
-- [ ] Verify session refresh works ← YOU'RE TESTING THIS
-- [ ] Test: session start → handoff → debug → reply
+### Phase 1: Self-Improvement — IN PROGRESS
+- [x] Multi-modal learning system (5 paths)
+- [x] Recurrence detector (auto-fix)
+- [x] Health check skills (25 in rotation)
+- [ ] Verify improvement over time
 
 ### 🚀 Our Projects (Shared Vision)
 
@@ -54,4 +55,4 @@ trigger phrases: "project, game, skies of arcadia"
 
 ### References
 - learning - Improvement
-- system - Health
+- agent-self-recovery - Health
