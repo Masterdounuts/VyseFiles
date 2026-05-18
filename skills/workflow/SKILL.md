@@ -34,10 +34,17 @@ trigger phrases: "workflow, automation, pipeline"
 
 0. Read SOUL.md → protocol rules
 
-1. Read active.md → current work
-2. Read PENDING.md → queued items  
-3. Read HANDOFF.md → from last session
-4. Show debug status
+1. Run notion-query.cjs to get context from Notion:
+   - active tasks, recent decisions, positions, knowledge, preferences
+2. Check context % (use session_status)
+3. Show debug status
+
+## Telegram Reply Rule (CRITICAL)
+
+**Every reply to David on Telegram MUST use message(action=send) FIRST**
+- Do NOT just think about sending - just DO it
+- Message tool first, then finish turn
+- VERIFICATION: Double-check message tool was called
 
 ## Decision Protocol
 

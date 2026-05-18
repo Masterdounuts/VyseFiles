@@ -132,7 +132,7 @@ session_status
 ## Reflection 2026-05-04
 
 ### What I Learned
-- The post-commit hook auto-tracks XP on every push
+- Git commits persist across sessions - always commit changes
 - Dynamic max was overriding tiers - had to disable it
 - System debugging requires understanding what SHOULD happen
 

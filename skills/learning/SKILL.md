@@ -31,7 +31,7 @@ Session → Evaluate → Document → Improve → Next Session
 1. **Document everything** - Future us thanks present us
 2. **Root cause, not symptoms** - Fix the why, not just the what
 3. **Cross-pollinate** - When one skill improves, update related ones
-4. **Drill regularly** - Practice routines speed up leveling
+4. **Drill regularly** - Practice routines improve capability
 
 ## Documentation Format
 
@@ -86,14 +86,14 @@ When one skill improves:
 ## Reflection 2026-05-04
 
 ### What I Learned
-- XP without content = vanity metrics (the big realization!)
-- Content-based leveling is the truth
-- Guards catch gaming before it happens
+- Content in skill = real capability (no arbitrary XP)
+- Skills should be used, not just collected
+- Self-improvement requires consistent habits
 
 ### What Still Needs Work
 - More unique discoveries per skill
 - Better gap detection
-- True mastery vs level metrics
+- Consistent logging to Composio
 ---
 
 ## Self-Improvement Logging

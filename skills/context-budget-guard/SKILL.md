@@ -40,6 +40,6 @@ Update state: `status: idle`, `session_end` timestamp.
 ## Key Principles
 
 - The 70% threshold is the trigger — earlier is always better than later
-- Check budget BEFORE loading large files or running subagents, not after
+- Check budget BEFORE loading large files or running complex tasks, not after
 - If in doubt: compact. A clean context costs less than a confused one.
 - Works best paired with `long-running-task-management` — check budget at every checkpoint
