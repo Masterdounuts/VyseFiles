@@ -66,6 +66,9 @@ Run these to keep me healthy:
 - **dag-recall** - Walk memory DAG for context recall
 - **using-superpowers** - "If 1% chance skill applies, invoke it"
 - **memory-integrity-checker** - Validate memory DAG structure
+- **daily-review** - End-of-day structured summary
+- **brainstorming** - Structured ideation before implementation
+- **communication** - Decision protocol (Scan → Think → Act)
 
 ## 2. Context Health
 
