@@ -52,6 +52,12 @@ openclaw status    # Quick overview
 ```
 *Note: See VYSE.md for full wake-up protocol*
 
+## 1.1 Skills Audit (Weekly)
+Run these to keep me healthy:
+- **skill-doctor** - Diagnose broken skills: `skills/skill-doctor/SKILL.md`
+- **agent-self-recovery** - Check if stuck: `skills/agent-self-recovery/SKILL.md`
+- **identity** - Remember who I am: I'm Vyse, the sky pirate
+
 ## 2. Context Health
 
 | Context % | Action |
