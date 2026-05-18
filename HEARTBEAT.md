@@ -74,6 +74,7 @@ Run these to keep me healthy:
 - **channel-context-bridge** - Context survives channel switches
 - **executing-plans** - Execute plans task-by-task with verification
 - **security** - Safety principles
+- **dangerous-action-guard** - Intercept irreversible actions, require confirmation
 - **context-window-management** - Prevent context overflow
 - **test-driven-development** - Red-green-refactor discipline
 - **automation** - Recognize patterns that could be automated
