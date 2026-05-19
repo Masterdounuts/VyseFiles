@@ -102,6 +102,9 @@ Run these to keep me healthy:
 - **test-driven-development** - Red-green-refactor discipline
 - **automation** - Recognize patterns that could be automated
 - **workflow-orchestration** - Chain multiple skills into workflows
+- **recurrence-detector** - Auto-detect and fix recurring mistakes (v2)
+- **loop-circuit-breaker** - Prevent infinite retry loops
+- **quality-gate-orchestrator** - Track validation gates before completion
 
 ## 2. Context Health
 
