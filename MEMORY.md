@@ -90,6 +90,30 @@
 - No subagents - I do work directly
 - GitHub persists across sessions
 - Check relevant files before acting
+- **Learning = Behavior Change** - make mistake → NEVER repeat it
+
+---
+
+## Recent Learnings (2026-05-19)
+
+### Self-Improvement System Built
+- 5 learning paths: Failure (auto-fix), Success (amplify), Feedback (immediate), Discovery (research), Reflection (proactive)
+- Recurrence detector v2: runs every 30 min, detects 3+ same mistakes in 7 days
+- Decision validation: rejects test data going forward
+- Query filter: excludes test patterns for clean metrics
+
+### Memory System Rebuilt
+- Active context → Notion (notion-query.cjs)
+- Daily logs → memory/YYYY-MM-DD.md
+- Long-term → MEMORY.md
+- Search → session-persistence SQLite
+- Session persistence now works with correct paths
+
+### What's Different
+- No XP/leveling (was fabrication)
+- Learning = behavior change, not knowledge accumulation
+- Test data filtered from queries
+- Clean metrics = accurate learning
 
 ---
 
