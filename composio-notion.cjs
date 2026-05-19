@@ -238,7 +238,9 @@ ComposioNotion.prototype.setActive = async function(task, goal) {
 const originalLogDecision = ComposioNotion.prototype.logDecision;
 ComposioNotion.prototype.logDecision = async function(decision, why) {
   const result = await originalLogDecision.call(this, decision, why);
-  backup('decisions', new Date().toISOString().split('T')[0] + ' | Decision: ' + decision + ' | Why: ' + why);
+  if (!result.error) {
+    backup('decisions', new Date().toISOString().split('T')[0] + ' | Decision: ' + decision + ' | Why: ' + why);
+  }
   return result;
 };
 
@@ -325,8 +327,12 @@ if (require.main === module) {
           const decText = args.slice(1).join(' ');
           const [decision, whyPart] = decText.split('--');
           const why = whyPart ? whyPart.trim() : 'TBD';
-          await cn.logDecision(decision.trim(), why);
-          console.log('✅ Decision logged');
+          const decResult = await cn.logDecision(decision.trim(), why);
+          if (decResult.error) {
+            console.log('❌ ' + decResult.error);
+          } else {
+            console.log('✅ Decision logged');
+          }
           break;
           
         case 'preference':
