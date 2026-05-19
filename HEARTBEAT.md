@@ -6,28 +6,27 @@
 
 ## ⚠️ WAKE-UP SEQUENCE (RUN THIS FIRST!)
 
-### Option A: Verification Capsule (NEW - Lightweight)
+### DEFAULT: Verification Capsule (Lightweight)
 ```bash
-# Generate tiny JSON capsule (~100 tokens vs 4000+)
 bash ~/.openclaw/workspace-vyse/scripts/verification-capsule.sh
 ```
-*Use for status queries. Minimal token cost.*
+*~100 tokens - Use as DEFAULT for most heartbeats.*
 
-### Option B: Full Notion Sync (Heavy)
+### Only Escalate to Full Sync When:
+- Trading decisions needed (positions, targets, entries)
+- User asks for detailed status
+- Ambiguity exists after capsule
+- Explicit user request
+
 ```bash
+# Full context (heavy) - ONLY when needed
 node ~/.openclaw/workspace-vyse/notion-query.cjs active
 node ~/.openclaw/workspace-vyse/notion-query.cjs decisions 3
 node ~/.openclaw/workspace-vyse/notion-query.cjs positions
 node ~/.openclaw/workspace-vyse/notion-query.cjs query knowledge
 node ~/.openclaw/workspace-vyse/notion-query.cjs preferences
 ```
-*This is your context. Without running this, you have NO memory.*
-
-### When to Use Which
-| Intent | Use | Tokens |
-|--------|-----|--------|
-| Status check | Capsule | ~100 |
-| Trading decisions | Notion sync | ~4000 |
+*Tokens: ~4000 - Use sparingly.*
 | Complex tasks | Notion sync | ~4000 |
 
 ## 0. LEARNING SYSTEM (Multi-Modal)
