@@ -5,7 +5,15 @@
 ---
 
 ## ⚠️ WAKE-UP SEQUENCE (RUN THIS FIRST!)
-**On EVERY session start, run these BEFORE responding to user:**
+
+### Option A: Verification Capsule (NEW - Lightweight)
+```bash
+# Generate tiny JSON capsule (~100 tokens vs 4000+)
+bash ~/.openclaw/workspace-vyse/scripts/verification-capsule.sh
+```
+*Use for status queries. Minimal token cost.*
+
+### Option B: Full Notion Sync (Heavy)
 ```bash
 node ~/.openclaw/workspace-vyse/notion-query.cjs active
 node ~/.openclaw/workspace-vyse/notion-query.cjs decisions 3
@@ -14,6 +22,13 @@ node ~/.openclaw/workspace-vyse/notion-query.cjs query knowledge
 node ~/.openclaw/workspace-vyse/notion-query.cjs preferences
 ```
 *This is your context. Without running this, you have NO memory.*
+
+### When to Use Which
+| Intent | Use | Tokens |
+|--------|-----|--------|
+| Status check | Capsule | ~100 |
+| Trading decisions | Notion sync | ~4000 |
+| Complex tasks | Notion sync | ~4000 |
 
 ## 0. LEARNING SYSTEM (Multi-Modal)
 
