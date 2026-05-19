@@ -409,6 +409,24 @@ if (require.main === module) {
             console.log(`- ${p.properties?.title?.title?.[0]?.plain_text || 'Untitled'}`);
           });
           break;
+        
+        case 'query':
+          // Format: query <page> [days]
+          const qPage = args[1] || 'active';
+          const qDays = parseInt(args[2]) || 7;
+          const cutoff = new Date();
+          cutoff.setDate(cutoff.getDate() - qDays);
+          
+          const backupFile = `./notion-backup/${qPage}.json`;
+          if (!fs.existsSync(backupFile)) {
+            console.log('No data for:', qPage);
+            break;
+          }
+          
+          const qData = JSON.parse(fs.readFileSync(backupFile, 'utf8'));
+          const qFiltered = qData.filter(item => new Date(item.timestamp) > cutoff);
+          qFiltered.forEach(item => console.log(item.entry || item.timestamp));
+          break;
           
         default:
           console.log('Commands:');
