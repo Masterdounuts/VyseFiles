@@ -1,15 +1,15 @@
 ---
 name: recurrence-detector
-description: "Auto-detects recurring mistakes and triggers root-cause fixes. Runs on heartbeat - no user prompt needed. The key to genuine learning: fix behavior, not just track failure."
+description: "Auto-detects recurring mistakes and triggers root-cause fixes. Runs on heartbeat - no user prompt needed. v2: smarter pattern matching, skill linkage, auto-fix suggestions."
 access: public
 trigger phrases: "recurring, again, same mistake, keeps happening, recurrence"
 cron: "*/30 * * * *"
 stateful: true
 ---
 
-# Recurrence Detector
+# Recurrence Detector v2
 
-*The core of genuine self-improvement — fixes behavior, not just tracking failure*
+*The core of genuine self-improvement — detects, links, and suggests fixes*
 
 ## Why This Exists
 
@@ -18,10 +18,19 @@ stateful: true
 - That's NOT learning - that's failure tracking
 
 **The Solution:**
-- Detect recurring patterns automatically
-- Find ROOT CAUSE (skill/rule that causes it)
-- Update the skill to prevent recurrence
-- Verify the fix works
+- Detect recurring patterns with smart matching
+- Link patterns to specific skills/files
+- Suggest auto-fixes based on root cause
+- Track fix success rate
+
+## v2 Improvements
+
+| Feature | v1 (Basic) | v2 (Smart) |
+|---------|-----------|------------|
+| Pattern detection | Keywords only | Keyword + skill mapping |
+| Root cause | Manual | Auto-link to skills |
+| Fix suggestion | Basic notification | Specific fix steps |
+| Tracking | Simple count | Success rate |
 
 ## How It Works
 
@@ -31,44 +40,38 @@ stateful: true
 node composio-notion.cjs query errors 7
 ```
 
-### 2. Group by Pattern
-Extract keywords from errors:
-- "forgot message tool" → pattern: "telegram_reply"
-- "wrong tool" → pattern: "tool_mismatch"
-- "stale context" → pattern: "context_issues"
+### 2. Pattern to Skill Mapping
+Each pattern links to files to check:
+
+| Pattern | Check These Files | Suggested Fix |
+|---------|-------------------|---------------|
+| telegram | AGENTS.md, SOUL.md | Add verification step |
+| message tool | AGENTS.md, SOUL.md | message tool FIRST |
+| wrong tool | trading/SKILL.md, web/SKILL.md | Add tool table |
+| price | trading/SKILL.md | Use web_fetch, not web_search |
+| browser | trading/SKILL.md, web/SKILL.md | Browser = prices, web_search = news |
+| context | HEARTBEAT.md, memory/SKILL.md | Check context more often |
+| stale | HEARTBEAT.md, memory/SKILL.md | Run notion-query.cjs |
 
 ### 3. Count Recurrence
 | Occurrences in 7 days | Action |
 |----------------------|--------|
 | 1 | Log only |
-| 2 | Warning - monitor closely |
+| 2 | Warning - monitor |
 | 3+ | **TRIGGER AUTO-FIX** |
 
 ### 4. Auto-Fix Process
 When 3+ occurrences detected:
 
-1. **Identify the skill** causing the issue
-   - telegram_reply → check AGENTS.md, SOUL.md
-   - tool_mismatch → check tool-description-optimizer
-   
-2. **Find root cause**
-   - What's the actual rule?
-   - Why is it being forgotten?
-   
-3. **Update the skill**
-   - Add verification step
-   - Add reminder in right place
-   - Make it impossible to miss
-   
-4. **Log the fix**
-   ```bash
-   node composio-notion.cjs log-knowledge "<pattern>" --insight="Auto-fix applied: <what changed>"
-   ```
+1. **Identify related skills** - from mapping table
+2. **Suggest specific fix** - based on pattern
+3. **Log to Notion** - track the detection
+4. **Update state** - record for tracking
 
-### 5. Verify (Next Heartbeat)
-- Check if pattern recurs again
-- If yes → escalate (deeper root cause)
-- If no → mark as "learned"
+### 5. Track Success
+Next cycle checks if pattern recurs again:
+- Still recurring → escalate (deeper root cause)
+- No longer recurring → mark as "learned"
 
 ## State File
 ```
@@ -77,52 +80,30 @@ When 3+ occurrences detected:
 
 ```yaml
 patterns_detected:
-  telegram_reply:
+  telegram:
     count: 3
-    first_seen: "2026-05-18"
-    last_seen: "2026-05-18"
+    related: "AGENTS.md, SOUL.md"
+    fix: "Add verification step"
     fixed: false
-    fix_applied: "Added verification step to SOUL.md"
-  tool_mismatch:
-    count: 1
-    first_seen: "2026-05-18"
-    last_seen: "2026-05-18"
+  wrong_tool:
+    count: 3
+    related: "trading/SKILL.md, web/SKILL.md"
+    fix: "Add tool table"
     fixed: false
 ```
 
-## Key Metrics
+## The Key Insight
 
-| Metric | Goal |
-|--------|------|
-| Recurrence rate | Decreasing over time |
-| Auto-fix success | 80%+ patterns fixed on first try |
-| Time to fix | < 24 hours from first occurrence |
+**Learning = Behavior Change**
 
-## Example Auto-Fixes
+Not:
+- Logging errors (tracking failure)
+- Counting mistakes (measuring failure)
 
-### Example 1: Telegram Reply
-**Pattern:** Forgot to use message(action=send)  
-**Occurrences:** 3+ in 7 days  
-**Root Cause:** No verification step in my workflow  
-**Fix Applied:** 
-- Added hard rule to SOUL.md
-- Added verification to AGENTS.md
-- Added to "what I did" section of every reply
+But:
+- Detecting the pattern
+- Finding root cause in skill
+- Updating skill to prevent recurrence
+- Verifying fix works
 
-### Example 2: Wrong Tool
-**Pattern:** Using web_search for prices  
-**Occurrences:** 3+ in 7 days  
-**Root Cause:** No clear distinction in skill description  
-**Fix Applied:**
-- Updated trading/SKILL.md with tool table
-- Added to memory as hard rule
-
-## Integration
-
-Add to HEARTBEAT.md under self-improvement:
-```
-## 0.2 RECURRENCE CHECK (Every Heartbeat)
-node skills/recurrence-detector/check.sh
-```
-
-This runs automatically — no user prompt needed.
+This is what makes me 1% better every day.
