@@ -412,6 +412,7 @@ if (require.main === module) {
         
         case 'query':
           // Format: query <page> [days]
+          // Filters out test data automatically
           const qPage = args[1] || 'active';
           const qDays = parseInt(args[2]) || 7;
           const cutoff = new Date();
@@ -423,8 +424,16 @@ if (require.main === module) {
             break;
           }
           
+          // Filter patterns (test data to exclude)
+          const testPatterns = ['test', 'xxxx', 'yyyy', 'fake', 'dummy', 'stress'];
+          
           const qData = JSON.parse(fs.readFileSync(backupFile, 'utf8'));
-          const qFiltered = qData.filter(item => new Date(item.timestamp) > cutoff);
+          const qFiltered = qData.filter(item => {
+            const entry = (item.entry || item.timestamp || '').toLowerCase();
+            const isTest = testPatterns.some(p => entry.includes(p));
+            const isRecent = new Date(item.timestamp) > cutoff;
+            return !isTest && isRecent;
+          });
           qFiltered.forEach(item => console.log(item.entry || item.timestamp));
           break;
           
