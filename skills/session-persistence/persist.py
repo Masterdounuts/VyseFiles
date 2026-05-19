@@ -33,13 +33,15 @@ except ImportError:
     HAS_YAML = False
 
 OPENCLAW_DIR = Path(os.environ.get("OPENCLAW_HOME", Path.home() / ".openclaw"))
-STATE_FILE = OPENCLAW_DIR / "skill-state" / "session-persistence" / "state.yaml"
-DB_DIR = OPENCLAW_DIR / "lcm-db"
+WORKSPACE_DIR = Path(os.environ.get("OPENCLAW_WORKSPACE", Path.home() / ".openclaw" / "workspace-vyse"))
+STATE_FILE = WORKSPACE_DIR / "skill-state" / "session-persistence" / "state.yaml"
+DB_DIR = WORKSPACE_DIR / "session-persistence-db"
 DB_PATH = DB_DIR / "messages.db"
 SESSION_DIRS = [
+    OPENCLAW_DIR / "agents" / "vyse" / "sessions",  # vyse agent sessions
+    OPENCLAW_DIR / "agents" / "quartermaster" / "sessions",
     OPENCLAW_DIR / "sessions",
     OPENCLAW_DIR / "data" / "sessions",
-    OPENCLAW_DIR / "agents" / "vyse" / "sessions",  # vyse agent sessions
     Path.home() / ".config" / "openclaw" / "sessions",
 ]
 MAX_HISTORY = 20

@@ -1,0 +1,40 @@
+conversation_cursors:
+  15551e86-ad77-4112-8600-22707d2f01b0: 18
+  26300517-114e-4d48-b42b-f37cb12def04: 5
+  2906966a-6603-4009-867c-a7e1f2c9254f: 37
+  6e2a3292-4303-43ef-b4ab-d3a32db5b3b8.checkpoint.0437d97c-ff4f-4c81-b2d4-cc5264657c97: 810
+  6e2a3292-4303-43ef-b4ab-d3a32db5b3b8.checkpoint.12b22142-4d58-466f-b94b-4d4c2234ec79: 1842
+  6e2a3292-4303-43ef-b4ab-d3a32db5b3b8.checkpoint.488760c1-4678-4e06-9fd6-f3a354892136: 592
+  6e2a3292-4303-43ef-b4ab-d3a32db5b3b8.checkpoint.5788efd9-2500-42fe-a944-f4267c00460d: 2120
+  6e2a3292-4303-43ef-b4ab-d3a32db5b3b8.checkpoint.bb670ced-8c00-45ab-8f9c-3eacc4551558: 1686
+  6ebf3884-b39a-456c-88af-5086d37a5281: 1033
+  76d70a5a-6947-4caa-843a-7459b5b13a2c.checkpoint.d06efe3a-b66b-474e-be4e-53ad394a015d: 305
+  7fbaa5fa-588d-45b4-be12-906c4cfa883e: 5
+  948cdbcd-b100-4bc5-b57d-530f00feec46: 28
+  a1a1190f-f4c8-4b59-8415-abe5485e485c: 5
+  boot-2026-05-05_17-51-52-912-7d57c9e4: 9
+  boot-2026-05-05_21-36-43-114-2c7a1d1b: 9
+  boot-2026-05-05_23-48-16-546-66b9925f: 9
+  boot-2026-05-06_17-11-00-532-3552ccfd: 12
+  boot-2026-05-06_17-13-34-475-f72b314e: 12
+  boot-2026-05-06_17-14-27-852-8a97011c: 12
+  boot-2026-05-06_17-35-23-952-c99f41bc: 4
+  boot-2026-05-06_17-46-36-265-46bf9a83: 12
+  boot-2026-05-06_18-05-46-535-7ba5e511: 4
+  boot-2026-05-06_23-43-36-341-8d87b369: 9
+  boot-2026-05-07_00-14-03-364-203ed822: 9
+  boot-2026-05-07_16-46-28-552-840bee80: 4
+  boot-2026-05-08_13-38-52-852-7595057d: 4
+  boot-2026-05-08_22-28-36-566-ab90d18b: 4
+  c76111cb-9a44-4db8-b166-9579b3beff90: 5
+  d7ddf805-a81a-493e-95a6-2a676ff6ce1c: 5
+  db472c6c-eb8d-4437-a4f6-e716a317071f: 5
+db_path: /home/openclaw/.openclaw/workspace-vyse/session-persistence-db/messages.db
+import_history:
+- conversations_added: 30
+  imported_at: '2026-05-19T00:38:55.374485'
+  messages_added: 4784
+  source: default
+last_import_at: '2026-05-19T00:38:55.374485'
+total_conversations: 30
+total_messages: 4784
