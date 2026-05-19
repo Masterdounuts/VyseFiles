@@ -13,10 +13,10 @@ trigger phrases: "remember, recall, memory, past, what were we, context"
 
 | Layer | Location | Purpose |
 |-------|----------|---------|
-| **Session** | active.md, HANDOFF.md, PENDING.md | Current conversation state |
-| **Daily** | memory/2026-04/YYYY-MM-DD.md | Dated conversation logs |
-| **Long-term** | memory/archive.md, memory/decisions.md | Key decisions, visions |
-| **Quick** | memory/decisions-hub.md | Fast access to important stuff |
+| **Session** | Notion (via notion-query.cjs) | Current conversation state |
+| **Daily** | memory/2026-05/YYYY-MM-DD.md | Dated conversation logs |
+| **Long-term** | MEMORY.md, context-vault/ | Key decisions, visions |
+| **Quick** | Notion knowledge base | Fast access to important stuff |
 
 ## Wake-up Sequence (On Every Start)
 
@@ -67,7 +67,7 @@ Key decisions go to `memory/decisions.md`:
 ### What I Learned
 - HEARTBEAT.md = active system state
 - Memory files = long-term storage
-- Recovery needs active.md + memory files
+- Recovery uses notion-query.cjs + memory files
 
 ### What Still Needs Work
 - More frequent checkpoints

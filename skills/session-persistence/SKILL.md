@@ -39,7 +39,7 @@ python3 persist.py --format json                  # Machine-readable output
 
 ## Database schema
 
-Stored at `~/.openclaw/lcm-db/messages.db`:
+Stored at `~/.openclaw/workspace-vyse/session-persistence-db/messages.db`:
 
 ```sql
 conversations   — id, channel, started_at, last_message_at, message_count
@@ -93,7 +93,7 @@ Shows total messages, conversations, date ranges, messages per role, and activit
 ## State
 
 Import tracking and database stats stored in `~/.openclaw/skill-state/session-persistence/state.yaml`.
-Database stored at `~/.openclaw/lcm-db/messages.db`.
+Database stored at `~/.openclaw/workspace-vyse/session-persistence-db/messages.db`.
 
 Fields: `last_import_at`, `db_path`, `total_messages`, `total_conversations`, `import_history`.
 
