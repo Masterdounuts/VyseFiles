@@ -26,6 +26,11 @@ Technical discoveries, user preferences, gotchas.
 ### 5. Tomorrow's Priorities
 Top 3 things to do next session, in order.
 
+### 6. Promote to MEMORY.md (Weekly)
+- Identify 1-3 key learnings from the week
+- Add to MEMORY.md under appropriate section
+- Keep MEMORY.md updated with durable learnings
+
 ## Format
 
 ```
@@ -52,9 +57,20 @@ Top 3 things to do next session, in order.
 ## After the Review
 
 - Update memory/YYYY-MM-DD.md with full review
-- Update MEMORY.md with any durable learnings
+- **Promote key learnings to MEMORY.md** (Step 6)
 - Update open task files with current progress
 - Update state: `last_review_date` (today's date), `priorities` (Tomorrow list), `status: done`, `last_review_at`
+
+## MEMORY.md Promotion Process
+
+1. Read current MEMORY.md to see what's already there
+2. Identify 1-3 learnings from daily file worth keeping
+3. Add to relevant section in MEMORY.md:
+   - David's preferences → USER.md section
+   - Technical learnings → Skills section
+   - Decisions → Decisions section
+4. Update MEMORY.md timestamp
+5. Commit to GitHub
 
 ## Cron Wakeup Behavior
 

@@ -174,6 +174,9 @@ python3 skills/session-persistence/persist.py --import --source ~/.openclaw/agen
 # Import all messages to searchable SQLite
 python3 skills/session-persistence/persist.py --import
 
+# Memory hygiene - clean old files
+python3 skills/persistent-memory-hygiene/clean.py
+
 # Compact memory to DAG hierarchy
 python3 skills/memory-dag-compactor --compact
 

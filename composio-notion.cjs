@@ -90,6 +90,20 @@ class ComposioNotion {
   
   // Log decision
   async logDecision(decision, why) {
+    // Validation: reject test data
+    const testPatterns = ['test', 'xxxx', 'yyyy', 'fake', 'dummy'];
+    const isTest = testPatterns.some(p => 
+      decision.toLowerCase().includes(p) || 
+      why.toLowerCase().includes(p)
+    );
+    if (isTest) {
+      console.log('⚠️ Rejected test decision. Use real decisions only.');
+      return { error: 'Test data not allowed' };
+    }
+    if (decision.length < 3 || why.length < 3) {
+      console.log('⚠️ Decision and why must be at least 3 characters.');
+      return { error: 'Too short' };
+    }
     const ts = new Date().toISOString().split('T')[0];
     const content = ts + ' | ' + decision + ' | ' + why;
     return this.appendToPage('decisions', content);
